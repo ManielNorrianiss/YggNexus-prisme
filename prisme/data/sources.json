@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "vendor": "n8n GmbH",
+    "website_url": "https://n8n.io",
+    "categories": ["automation", "no-code", "developer-tools"],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "vendor": "Zapier Inc.",
+    "website_url": "https://zapier.com",
+    "categories": ["automation", "no-code"],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "openai",
+    "name": "OpenAI",
+    "vendor": "OpenAI",
+    "website_url": "https://openai.com",
+    "categories": ["ai-assistants", "ai-writing", "developer-tools"],
+    "primary_category": "ai-assistants"
+  },
+  {
+    "slug": "anthropic-claude",
+    "name": "Claude by Anthropic",
+    "vendor": "Anthropic",
+    "website_url": "https://claude.ai",
+    "categories": ["ai-assistants", "ai-writing"],
+    "primary_category": "ai-assistants"
+  },
+  {
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "vendor": "Perplexity AI",
+    "website_url": "https://www.perplexity.ai",
+    "categories": ["ai-assistants", "research"],
+    "primary_category": "ai-assistants"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "vendor": "Notion Labs",
+    "website_url": "https://www.notion.so",
+    "categories": ["productivity", "no-code"],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "vendor": "Airtable",
+    "website_url": "https://airtable.com",
+    "categories": ["productivity", "no-code", "data-scraping"],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "pipedream",
+    "name": "Pipedream",
+    "vendor": "Pipedream Inc.",
+    "website_url": "https://pipedream.com",
+    "categories": ["automation", "developer-tools"],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "vendor": "ElevenLabs",
+    "website_url": "https://elevenlabs.io",
+    "categories": ["ai-audio", "ai-voice"],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "make",
+    "name": "Make",
+    "vendor": "Celonis",
+    "website_url": "https://www.make.com",
+    "categories": ["automation", "no-code"],
+    "primary_category": "automation"
+  }
+]

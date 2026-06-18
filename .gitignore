@@ -1,0 +1,30 @@
+# --- Frontend (a son propre repo GitHub) ---
+frontend/
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+
+# --- Python (prisme) ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Secrets / env ---
+.env
+.env.local
+*.local
+
+# --- Donnees locales / staging / logs ---
+prisme/staging.db
+*.db
+prisme/logs/
+
+# --- OS ---
+.DS_Store
+Thumbs.db

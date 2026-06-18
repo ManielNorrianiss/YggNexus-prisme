@@ -1,0 +1,305 @@
+[
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "vendor": "Anthropic",
+    "website_url": "https://claude.ai",
+    "pricing": "freemium",
+    "pricing_note": "Free tier, paid from 20/mo",
+    "short_desc": "AI assistant for writing, analysis and coding.",
+    "description_md": "Claude is an AI assistant by Anthropic, strong at long-form writing, reasoning and document analysis.",
+    "application_category": "BusinessApplication",
+    "quality_score": 9.3,
+    "status": "published",
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "apify",
+    "name": "Apify",
+    "vendor": "Apify",
+    "website_url": "https://apify.com",
+    "pricing": "freemium",
+    "pricing_note": "Free tier, paid from 49/mo",
+    "short_desc": "Web scraping and browser automation platform.",
+    "description_md": "Apify lets you build, run and share web scrapers and automation actors at scale.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.4,
+    "status": "published",
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "vendor": "Airtable",
+    "website_url": "https://airtable.com",
+    "source_url": "https://www.airtable.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan with limitations",
+    "short_desc": "Airtable for real-time collaboration and workflow automation.",
+    "description_md": "Airtable is a powerful no-code platform that unifies data, workflows, and teams. Build AI-powered apps and agents without coding knowledge. Streamline processes with sophisticated workflows in minutes.",
+    "application_category": "BusinessApplication",
+    "quality_score": 92.0,
+    "status": "published",
+    "seo_title": "Airtable: No-Code Workflow Automation",
+    "seo_description": "Build AI-powered apps & agents without coding. Unify workflows, teams, and data.",
+    "pros_jsonb": [
+      "No-code interface",
+      "Real-time collaboration",
+      "AI-driven automation",
+      "Customizable templates",
+      "Scalable for enterprise"
+    ],
+    "cons_jsonb": [
+      "Learning curve",
+      "Limited free plan",
+      "Can be complex for beginners"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Airtable free?",
+        "a": "Yes, with limited features."
+      },
+      {
+        "q": "Does it require coding skills?",
+        "a": "No, no-code interface available."
+      },
+      {
+        "q": "How does Airtable handle data security?",
+        "a": "Data encryption and strict access controls are in place."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "vendor": "ElevenLabs",
+    "website_url": "https://elevenlabs.io",
+    "source_url": "https://elevenlabs.io/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "AI voice generator for text-to-speech applications.",
+    "description_md": "ElevenLabs offers an AI voice generation platform with over 5,000 voices in 70+ languages. Ideal for creating lifelike speech in various applications like customer service, content creation, and audiobooks. Secure APIs and SDKs included.\n\nAccess a wide range of expressive voices tailored for different use cases such as narration, persuasion, and social media.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 92.0,
+    "status": "published",
+    "seo_title": "ElevenLabs AI Voice Generator",
+    "seo_description": "Create lifelike speech with ElevenLabs' AI voice generator. Access 5,000+ voices for text-to-speech applications.",
+    "pros_jsonb": [
+      "Large voice library",
+      "Multi-language support",
+      "Customizable voices"
+    ],
+    "cons_jsonb": [
+      "Subscription required",
+      "Limited free tier"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is there a free trial?",
+        "a": "Yes, sign up for a free account to explore the platform."
+      },
+      {
+        "q": "Can I use ElevenLabs for commercial projects?",
+        "a": "Yes, but check pricing and terms for details."
+      },
+      {
+        "q": "How many voices are available?",
+        "a": "Over 5,000 voices in 70+ languages."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "vendor": "Notion Labs",
+    "website_url": "https://www.notion.so",
+    "source_url": "https://www.notion.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan with limited features",
+    "short_desc": "Collaborative knowledge base and project management tool.",
+    "description_md": "Notion is a versatile workspace that combines note-taking, task management, and database features. It supports custom agents for automation, integrates with various apps, and offers a unified platform for teams to collaborate efficiently.",
+    "application_category": "WebApplication",
+    "quality_score": 90.0,
+    "status": "published",
+    "seo_title": "Notion - AI Workspace for Teams",
+    "seo_description": "Build Custom Agents & Automate Tasks. Notion is the AI workspace that works for you.",
+    "pros_jsonb": [
+      "Unified interface",
+      "Custom agent creation",
+      "Rich feature set"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Limited free plan",
+      "Complex pricing model"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Notion free?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I use Notion for personal projects?",
+        "a": "Absolutely, it’s great for individuals and teams."
+      },
+      {
+        "q": "How do custom agents work?",
+        "a": "They automate tasks like Q&A, task routing, and reporting."
+      }
+    ],
+    "categories": [
+      "productivity",
+      "no-code"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "openai",
+    "name": "OpenAI",
+    "vendor": "OpenAI",
+    "website_url": "https://openai.com",
+    "source_url": "https://openai.com/",
+    "pricing": "freemium",
+    "pricing_note": "Some services are free, others require payment.",
+    "short_desc": "OpenAI's research and deployment platform for AI models.",
+    "description_md": "OpenAI is a research institute focused on advancing artificial intelligence in ways that are safe and beneficial. Their tools include the Codex, ChatGPT, and various APIs designed to integrate advanced AI capabilities into applications and workflows.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 90.0,
+    "status": "published",
+    "seo_title": "OpenAI - AI Research & Deployment",
+    "seo_description": "Advance your projects with OpenAI's cutting-edge AI tools and APIs. Focus on safety, ethics, and innovation.",
+    "pros_jsonb": [
+      "Advanced AI technology",
+      "Focus on safety and ethics",
+      "Versatile API offerings"
+    ],
+    "cons_jsonb": [
+      "Limited public access",
+      "Commercial use restrictions",
+      "Ongoing development phase"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is OpenAI free to use?",
+        "a": "Some services are freemium, others require payment."
+      },
+      {
+        "q": "Can I use OpenAI for commercial projects?",
+        "a": "Commercial use is subject to licensing agreements."
+      },
+      {
+        "q": "How often do you update the models?",
+        "a": "Models are updated regularly based on research advancements."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "vendor": "Perplexity AI",
+    "website_url": "https://www.perplexity.ai",
+    "source_url": "https://www.perplexity.ai/",
+    "pricing": "free",
+    "pricing_note": "",
+    "short_desc": "AI-powered answer engine for accurate and real-time information.",
+    "description_md": "Perplexity is an AI tool that provides quick, reliable answers to any question. It uses advanced natural language processing to ensure accuracy and relevance in its responses.\n\nIdeal for researchers, students, or anyone needing instant access to factual information.",
+    "application_category": "WebApplication",
+    "quality_score": 95.0,
+    "status": "published",
+    "seo_title": "Perplexity AI - Free Answer Engine",
+    "seo_description": "Get accurate, real-time answers with Perplexity's AI-powered tool.",
+    "pros_jsonb": [
+      "Highly accurate",
+      "Real-time updates",
+      "Easy to use"
+    ],
+    "cons_jsonb": [
+      "Limited depth of knowledge on niche topics",
+      "May require internet connection"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Perplexity free?",
+        "a": "Yes, it's a free tool."
+      },
+      {
+        "q": "How accurate are the answers?",
+        "a": "Answers are highly accurate due to advanced NLP."
+      },
+      {
+        "q": "Does it require an internet connection?",
+        "a": "Internet is needed for real-time updates."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "pipedream",
+    "name": "Pipedream",
+    "vendor": "Pipedream Inc.",
+    "website_url": "https://pipedream.com",
+    "source_url": "https://pipedream.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available, paid for advanced features.",
+    "short_desc": "Automate workflows by connecting APIs and services.",
+    "description_md": "Pipedream is a no-code/low-code platform that enables users to build automated workflows by connecting various APIs, databases, and services. It supports both code-based and visual flow creation for integrating different applications and automating tasks with AI agents.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Pipedream - Automate Workflows",
+    "seo_description": "Build powerful apps by connecting APIs & services with Pipedream.",
+    "pros_jsonb": [
+      "No-code/low-code interface",
+      "Extensive API library",
+      "AI agent integration"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Complex setup for beginners"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Pipedream free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Can I use it without coding?",
+        "a": "Yes, via visual flow builder."
+      },
+      {
+        "q": "How do I get started?",
+        "a": "Sign up and explore pre-built templates."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "automation"
+  }
+]
