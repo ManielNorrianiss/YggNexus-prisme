@@ -75,8 +75,8 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "automation",
+      "no-code"
     ],
     "primary_category": "automation"
   },
@@ -164,8 +164,8 @@
       }
     ],
     "categories": [
-      "productivity",
-      "no-code"
+      "automation",
+      "productivity"
     ],
     "primary_category": "productivity"
   },
@@ -297,8 +297,632 @@
       }
     ],
     "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "bright-data",
+    "name": "Bright Data",
+    "vendor": "Bright Data Ltd.",
+    "website_url": "https://brightdata.com",
+    "source_url": "https://brightdata.com/",
+    "pricing": "paid",
+    "pricing_note": "Starts free, then paid plans available.",
+    "short_desc": "Bright Data offers proxies and web scraping tools for data extraction.",
+    "description_md": "Bright Data is an all-in-one platform providing proxies, web scrapers, datasets, and AI tools. It enables users to access, extract, and interact with public websites, offering structured, reliable, real-time or historical data at petabyte scale. The Scraper Studio allows for easy creation of data pipelines from any website.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Bright Data - Web Scraping & Proxies",
+    "seo_description": "Access and extract data from public websites with Bright Data's comprehensive web scraping tools.",
+    "pros_jsonb": [
+      "Comprehensive suite of web scraping tools",
+      "Large dataset marketplace",
+      "AI-powered scraping capabilities"
+    ],
+    "cons_jsonb": [
+      "High cost for extensive features",
+      "Limited free trial period",
+      "Steep learning curve for beginners"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is there a free plan?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "How many proxies are available?",
+        "a": "Over 400M from 195 countries."
+      },
+      {
+        "q": "Can I use it for personal projects?",
+        "a": "Yes, but business usage may require paid plans."
+      }
+    ],
+    "categories": [
+      "automation",
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "bubble",
+    "name": "Bubble",
+    "vendor": "Bubble Group Inc.",
+    "website_url": "https://bubble.io",
+    "source_url": "https://bubble.io/",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free, advanced paid",
+    "short_desc": "Build web & mobile apps with Bubble's no-code AI tool.",
+    "description_md": "Bubble is a no-code platform that allows users to build web and mobile applications using AI-driven automation. It offers visual design tools, database management, logic building, and privacy rules for quick app development from idea to launch.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Bubble: No-Code AI App Builder",
+    "seo_description": "Build apps with speed & precision using Bubble's no-code AI platform.",
+    "pros_jsonb": [
+      "AI-driven automation",
+      "Visual design tools",
+      "Database and logic building"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Higher costs for advanced features",
+      "Learning curve for new users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Bubble free?",
+        "a": "Bubble offers a freemium model with basic features available for free."
+      },
+      {
+        "q": "Can I use Bubble without coding?",
+        "a": "Yes, Bubble is designed for no-code development using AI and visual tools."
+      },
+      {
+        "q": "Does Bubble support mobile app building?",
+        "a": "Yes, Bubble supports both web and mobile app development."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "vendor": "Mango Technologies Inc.",
+    "website_url": "https://clickup.com",
+    "source_url": "https://clickup.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available, limited features.",
+    "short_desc": "All-in-one productivity platform with AI and automation.",
+    "description_md": "ClickUp is an all-in-one productivity tool that combines task management, document collaboration, goal setting, and chat in one app. It leverages AI agents and workflows to enhance efficiency and automate tasks. Users can customize their workspace and access features like time tracking, calendars, and whiteboards.",
+    "application_category": "BusinessApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "ClickUp - All-in-One Productivity Platform",
+    "seo_description": "Maximize productivity with ClickUp's comprehensive suite of tools and AI-driven automation. Try it now!",
+    "pros_jsonb": [
+      "Comprehensive suite of tools",
+      "AI-driven automation",
+      "Customizable workspace"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve for new users",
+      "Limited free plan features",
+      "Complex interface"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is ClickUp free?",
+        "a": "Yes, it offers a free plan with limited features."
+      },
+      {
+        "q": "Does ClickUp have AI agents?",
+        "a": "Yes, it includes AI agents for automation and assistance."
+      },
+      {
+        "q": "Can I try ClickUp before subscribing?",
+        "a": "Yes, you can sign up for the free trial to test its features."
+      }
+    ],
+    "categories": [
+      "automation",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "coda",
+    "name": "Coda",
+    "vendor": "Coda",
+    "website_url": "https://coda.io",
+    "source_url": "https://coda.io/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan with limited features",
+    "short_desc": "Coda is an all-in-one collaborative workspace.",
+    "description_md": "Coda integrates the flexibility of docs, structure of spreadsheets, power of applications, and intelligence of AI. It brings teams and tools together for a more organized workday, replacing multiple apps with one seamless platform.",
+    "application_category": "BusinessApplication",
+    "quality_score": 90.0,
+    "status": "published",
+    "seo_title": "Coda: All-in-One Collaborative Workspace",
+    "seo_description": "Unified platform combining docs, spreadsheets, apps & AI for efficient teamwork.",
+    "pros_jsonb": [
+      "Unified interface for documents, spreadsheets, and applications",
+      "Real-time collaboration features",
+      "AI-driven insights and automation"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve for new users",
+      "Limited free plan options",
+      "Higher cost compared to some alternatives"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Coda free?",
+        "a": "Yes, with limited features."
+      },
+      {
+        "q": "Can I use Coda on mobile?",
+        "a": "Yes, available for iOS and Android."
+      },
+      {
+        "q": "Does Coda have AI capabilities?",
+        "a": "Yes, it offers AI-driven insights and automation."
+      }
+    ],
+    "categories": [
+      "automation",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "vendor": "Grammarly Inc.",
+    "website_url": "https://www.grammarly.com",
+    "source_url": "https://www.grammarly.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free version available, upgrade for full features.",
+    "short_desc": "AI-powered writing assistant for grammar and style.",
+    "description_md": "Grammarly enhances your writing with real-time suggestions, improving clarity, tone, and structure. Perfect for students, professionals, and anyone looking to refine their text across various platforms.\n\nFeatures include paragraph rewrites, tone adjustments, proofreading tools, and AI detection of generated content. Trusted by millions, Grammarly ensures your writing is clear, professional, and effective.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 95.0,
+    "status": "published",
+    "seo_title": "Grammarly: AI Writing Assistant",
+    "seo_description": "Enhance your writing with Grammarly's real-time suggestions and tools. Perfect for professionals and students.",
+    "pros_jsonb": [
+      "Real-time suggestions",
+      "Improves clarity and flow",
+      "Tone adjustment options"
+    ],
+    "cons_jsonb": [
+      "Limited free version",
+      "May require internet connection",
+      "Some features are premium"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Grammarly free?",
+        "a": "Yes, but with limited features. Upgrade for full access."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "No, requires internet connection."
+      },
+      {
+        "q": "Can I use it on multiple devices?",
+        "a": "Yes, syncs across all supported platforms."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "ideogram",
+    "name": "Ideogram",
+    "vendor": "Ideogram AI",
+    "website_url": "https://ideogram.ai",
+    "source_url": "https://ideogram.ai/",
+    "pricing": "open_source",
+    "pricing_note": "Free to use; requires technical setup.",
+    "short_desc": "Visual intelligence model for product workflows and creative teams.",
+    "description_md": "Ideogram 4.0 is an open-source visual intelligence model designed for products, agents, and creative teams. It offers API integration, MCP for agents, and a user-friendly app for direct image creation with high fidelity and editing controls.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Ideogram 4.0 - Open Visual Intelligence Model",
+    "seo_description": "Open-source visual intelligence for products, agents, and creative teams with API, MCP, and App layers.",
+    "pros_jsonb": [
+      "Open-source",
+      "High prompt fidelity",
+      "Multiple usage layers (API, MCP, App)"
+    ],
+    "cons_jsonb": [
+      "Limited documentation",
+      "Steep learning curve",
+      "Requires technical expertise"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Ideogram free to use?",
+        "a": "Yes, it's open source."
+      },
+      {
+        "q": "Does it require coding skills?",
+        "a": "Some technical knowledge is needed for API and MCP layers."
+      },
+      {
+        "q": "Can I use it without an internet connection?",
+        "a": "The app requires an internet connection; APIs can be hosted locally."
+      }
+    ],
+    "categories": [
+      "ai-images",
+      "productivity"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "ifttt",
+    "name": "IFTTT",
+    "vendor": "IFTTT Inc.",
+    "website_url": "https://ifttt.com",
+    "source_url": "https://ifttt.com/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free features; paid plans available for advanced use.",
+    "short_desc": "Automate workflows between apps and devices.",
+    "description_md": "IFTTT connects over 1,000 services to automate tasks. Create Applets with triggers and actions without coding. Easily manage your automations for business or home use.",
+    "application_category": "WebApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "IFTTT - Automate Apps & Devices",
+    "seo_description": "Connect over 1,000 apps and devices to automate tasks. No code needed.",
+    "pros_jsonb": [
+      "No code required",
+      "Extensive app integration",
+      "Customizable workflows"
+    ],
+    "cons_jsonb": [
+      "Limited control over complex flows",
+      "Free tier limitations"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Can I create my own Applets?",
+        "a": "Yes, but some require paid plans."
+      },
+      {
+        "q": "How many services can I connect?",
+        "a": "Up to 1,000+ services."
+      },
+      {
+        "q": "Is there a free plan available?",
+        "a": "Yes, with limited features."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "jasper",
+    "name": "Jasper",
+    "vendor": "Jasper",
+    "website_url": "https://www.jasper.ai",
+    "source_url": "https://www.jasper.ai/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $99/month",
+    "short_desc": "AI-driven marketing automation platform.",
+    "description_md": "Jasper automates end-to-end marketing workflows with AI agents, optimizing content and campaigns for maximum impact. It integrates advanced language models and context-aware intelligence to streamline marketing processes.\n\nFeatures include GEO & AI optimization, purpose-built agents, and content pipelines, enabling marketers to deliver scalable, brand-governed content.",
+    "application_category": "BusinessApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "AI Marketing Automation | Jasper",
+    "seo_description": "Automate end-to-end marketing workflows with Jasper’s AI agents for speed, control, and measurable impact.",
+    "pros_jsonb": [
+      "AI-driven automation",
+      "End-to-end workflow management",
+      "Context-aware intelligence"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "High cost for enterprise features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Jasper free?",
+        "a": "Jasper offers a free trial, but full features require payment."
+      },
+      {
+        "q": "Does it integrate with other tools?",
+        "a": "Yes, Jasper integrates with various marketing and AI platforms."
+      },
+      {
+        "q": "How does it handle data privacy?",
+        "a": "Jasper complies with GDPR and other data protection regulations."
+      }
+    ],
+    "categories": [
       "ai-writing",
       "automation"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "vendor": "n8n GmbH",
+    "website_url": "https://n8n.io",
+    "source_url": "https://n8n.io/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $25/month",
+    "short_desc": "n8n - AI-driven workflow automation platform.",
+    "description_md": "n8n is a powerful no-code/low-code platform that integrates AI with business processes. Technical teams can automate workflows, generate insights, and manage updates efficiently. It supports various integrations and offers both hosted and self-hosted options.\n\n* Automate complex tasks with ease.\n* Integrate over 1900+ services effortlessly.\n* Leverage AI for smarter decision-making.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "AI Workflow Automation - n8n",
+    "seo_description": "Automate workflows and generate insights with AI-driven n8n. Over 1900+ integrations available.",
+    "pros_jsonb": [
+      "AI-driven automation",
+      "Extensive integration library",
+      "Flexible deployment options"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Limited free tier",
+      "Requires technical knowledge"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is n8n open source?",
+        "a": "No, it's a paid platform."
+      },
+      {
+        "q": "Does n8n support custom integrations?",
+        "a": "Yes, through its API."
+      },
+      {
+        "q": "Can I use n8n without coding?",
+        "a": "Yes, with some no-code features."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "octoparse",
+    "name": "Octoparse",
+    "vendor": "Octopus Data Inc.",
+    "website_url": "https://www.octoparse.com",
+    "source_url": "https://www.octoparse.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "No-code web scraping tool for data collection.",
+    "description_md": "Octoparse is a user-friendly web scraping tool that allows anyone to collect structured data from websites without coding. It offers templates, auto-detection features, and support for dynamic content like infinite scrolling and CAPTCHAs.\n\nEasily scrape any website with just point-and-click functionality.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Octoparse - No-code Web Scraping Tool",
+    "seo_description": "Collect structured data from websites without coding. Try free now!",
+    "pros_jsonb": [
+      "No-code interface",
+      "Supports complex web pages",
+      "Auto-detection feature"
+    ],
+    "cons_jsonb": [
+      "Limited customization options for advanced users",
+      "Free plan has usage limits"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Octoparse free?",
+        "a": "Yes, it offers a free trial."
+      },
+      {
+        "q": "Can I scrape any website with Octoparse?",
+        "a": "Yes, including dynamic and complex sites."
+      },
+      {
+        "q": "Do I need coding skills to use Octoparse?",
+        "a": "No, it's designed for non-technical users."
+      }
+    ],
+    "categories": [
+      "data-scraping",
+      "no-code"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "stability-ai",
+    "name": "Stability AI",
+    "vendor": "Stability AI Ltd.",
+    "website_url": "https://stability.ai",
+    "source_url": "https://stability.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "Stability AI offers professional-grade generative AI tools for content production.",
+    "description_md": "Stability AI is an enterprise-ready creative partner, providing high-quality image and video generation tools tailored for marketing, gaming, and entertainment. With Stability AI, teams can produce on-brand assets, build immersive worlds, and streamline the creative process without technical barriers.\n\n* Image and video generation\n* Customization and managed hosting\n* Support for real-world outcomes",
+    "application_category": "DeveloperApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Stability AI - Creative Partner for Teams & Creators",
+    "seo_description": "Professional-grade generative AI tools from Stability AI for marketing, gaming, and entertainment. Start for free.",
+    "pros_jsonb": [
+      "Professional-grade tools",
+      "Customizable solutions",
+      "Managed hosting"
+    ],
+    "cons_jsonb": [
+      "High cost",
+      "Technical setup required",
+      "Limited free tier"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Stability AI suitable for small businesses?",
+        "a": "Yes, but the paid plans are recommended for enterprise-level use."
+      },
+      {
+        "q": "Can I try Stability AI for free?",
+        "a": "Yes, there is a free trial available."
+      },
+      {
+        "q": "What kind of support does Stability AI offer?",
+        "a": "They provide implementation and technical support."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "webflow",
+    "name": "Webflow",
+    "vendor": "Webflow Inc.",
+    "website_url": "https://webflow.com",
+    "source_url": "https://webflow.com/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $25/month",
+    "short_desc": "Design and build websites with Webflow’s visual editor.",
+    "description_md": "Webflow is a web development platform that allows designers and developers to create, manage, and optimize websites using a visual interface. It includes features like design systems, content management, SEO optimization, and analytics.\n\nWith Webflow AEO, you can also rank in AI search engines. Trusted by over 300k teams.",
+    "application_category": "WebApplication",
+    "quality_score": 90.0,
+    "status": "published",
+    "seo_title": "Webflow: Design & Build Websites",
+    "seo_description": "Create and optimize websites with Webflow’s visual editor. Trusted by over 300k teams.",
+    "pros_jsonb": [
+      "Visual drag-and-drop editor",
+      "Built-in SEO tools",
+      "AI-driven optimization"
+    ],
+    "cons_jsonb": [
+      "Steeper learning curve for beginners",
+      "Limited free plan features",
+      "Higher cost compared to some alternatives"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Webflow suitable for beginners?",
+        "a": "Yes, but the interface can be complex."
+      },
+      {
+        "q": "Does it offer mobile responsiveness?",
+        "a": "Yes, all projects are responsive by default."
+      },
+      {
+        "q": "Can I use my own domain with Webflow?",
+        "a": "Yes, you can connect your custom domain."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "workato",
+    "name": "Workato",
+    "vendor": "Workato Inc.",
+    "website_url": "https://www.workato.com",
+    "source_url": "https://www.workato.com/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $5,000/month",
+    "short_desc": "Workato connects AI agents with over 1400 business apps.",
+    "description_md": "Workato is an enterprise-level integration platform that enables secure, scalable, and predictable agentic AI workflows. It integrates more than 1,400 business applications to streamline operations and enhance productivity. Trusted by leading organizations for its robust orchestration capabilities.",
+    "application_category": "BusinessApplication",
+    "quality_score": 92.0,
+    "status": "published",
+    "seo_title": "Workato - Agentic AI Integration",
+    "seo_description": "Enterprise MCP for agentic AI workflows. Connect over 1400 apps securely and scalably.",
+    "pros_jsonb": [
+      "Over 1,400 integrated apps",
+      "Secure and scalable",
+      "Predictable performance"
+    ],
+    "cons_jsonb": [
+      "High cost",
+      "Steep learning curve",
+      "Limited free tier"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Workato open source?",
+        "a": "No, it is a paid service."
+      },
+      {
+        "q": "What types of integrations does Workato support?",
+        "a": "Over 1,400 business apps and services."
+      },
+      {
+        "q": "Does Workato offer a free trial?",
+        "a": "Yes, sign up for a trial."
+      }
+    ],
+    "categories": [
+      "automation",
+      "productivity"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "vendor": "Zapier Inc.",
+    "website_url": "https://zapier.com",
+    "source_url": "https://zapier.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available",
+    "short_desc": "Automate workflows across apps with Zapier.",
+    "description_md": "Zapier is an AI-driven automation platform that connects over 9,000 applications. Automate tasks, manage access, and scale your operations without coding. Start free with email or Google accounts.",
+    "application_category": "BusinessApplication",
+    "quality_score": 85.0,
+    "status": "published",
+    "seo_title": "Zapier: Automate AI Workflows",
+    "seo_description": "Connect over 9,000 apps with Zapier. Start free today!",
+    "pros_jsonb": [
+      "Integrates over 9,000 apps",
+      "No-code automation for teams",
+      "AI governance tools included"
+    ],
+    "cons_jsonb": [
+      "Requires some setup",
+      "Pricing may be high for small businesses"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Zapier free?",
+        "a": "Yes, with a free plan available."
+      },
+      {
+        "q": "How many apps can I connect?",
+        "a": "Over 9,000 apps supported."
+      },
+      {
+        "q": "Do I need coding skills?",
+        "a": "No-code automation is the main feature."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
     ],
     "primary_category": "automation"
   }

@@ -4,7 +4,11 @@
     "name": "n8n",
     "vendor": "n8n GmbH",
     "website_url": "https://n8n.io",
-    "categories": ["automation", "no-code", "developer-tools"],
+    "categories": [
+      "automation",
+      "no-code",
+      "developer-tools"
+    ],
     "primary_category": "automation"
   },
   {
@@ -12,7 +16,10 @@
     "name": "Zapier",
     "vendor": "Zapier Inc.",
     "website_url": "https://zapier.com",
-    "categories": ["automation", "no-code"],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
     "primary_category": "automation"
   },
   {
@@ -20,7 +27,11 @@
     "name": "OpenAI",
     "vendor": "OpenAI",
     "website_url": "https://openai.com",
-    "categories": ["ai-assistants", "ai-writing", "developer-tools"],
+    "categories": [
+      "ai-assistants",
+      "ai-writing",
+      "developer-tools"
+    ],
     "primary_category": "ai-assistants"
   },
   {
@@ -28,7 +39,10 @@
     "name": "Claude by Anthropic",
     "vendor": "Anthropic",
     "website_url": "https://claude.ai",
-    "categories": ["ai-assistants", "ai-writing"],
+    "categories": [
+      "ai-assistants",
+      "ai-writing"
+    ],
     "primary_category": "ai-assistants"
   },
   {
@@ -36,7 +50,10 @@
     "name": "Perplexity",
     "vendor": "Perplexity AI",
     "website_url": "https://www.perplexity.ai",
-    "categories": ["ai-assistants", "research"],
+    "categories": [
+      "ai-assistants",
+      "research"
+    ],
     "primary_category": "ai-assistants"
   },
   {
@@ -44,7 +61,10 @@
     "name": "Notion",
     "vendor": "Notion Labs",
     "website_url": "https://www.notion.so",
-    "categories": ["productivity", "no-code"],
+    "categories": [
+      "productivity",
+      "no-code"
+    ],
     "primary_category": "productivity"
   },
   {
@@ -52,7 +72,11 @@
     "name": "Airtable",
     "vendor": "Airtable",
     "website_url": "https://airtable.com",
-    "categories": ["productivity", "no-code", "data-scraping"],
+    "categories": [
+      "productivity",
+      "no-code",
+      "data-scraping"
+    ],
     "primary_category": "productivity"
   },
   {
@@ -60,7 +84,10 @@
     "name": "Pipedream",
     "vendor": "Pipedream Inc.",
     "website_url": "https://pipedream.com",
-    "categories": ["automation", "developer-tools"],
+    "categories": [
+      "automation",
+      "developer-tools"
+    ],
     "primary_category": "automation"
   },
   {
@@ -68,7 +95,10 @@
     "name": "ElevenLabs",
     "vendor": "ElevenLabs",
     "website_url": "https://elevenlabs.io",
-    "categories": ["ai-audio", "ai-voice"],
+    "categories": [
+      "ai-audio",
+      "ai-voice"
+    ],
     "primary_category": "ai-audio"
   },
   {
@@ -76,7 +106,135 @@
     "name": "Make",
     "vendor": "Celonis",
     "website_url": "https://www.make.com",
-    "categories": ["automation", "no-code"],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
     "primary_category": "automation"
+  },
+  {
+    "slug": "jasper",
+    "name": "Jasper",
+    "vendor": "Jasper",
+    "website_url": "https://www.jasper.ai",
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "vendor": "Grammarly Inc.",
+    "website_url": "https://www.grammarly.com",
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "ifttt",
+    "name": "IFTTT",
+    "vendor": "IFTTT Inc.",
+    "website_url": "https://ifttt.com",
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "workato",
+    "name": "Workato",
+    "vendor": "Workato Inc.",
+    "website_url": "https://www.workato.com",
+    "categories": [
+      "automation"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "octoparse",
+    "name": "Octoparse",
+    "vendor": "Octopus Data Inc.",
+    "website_url": "https://www.octoparse.com",
+    "categories": [
+      "data-scraping",
+      "no-code"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "bright-data",
+    "name": "Bright Data",
+    "vendor": "Bright Data Ltd.",
+    "website_url": "https://brightdata.com",
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "vendor": "Mango Technologies Inc.",
+    "website_url": "https://clickup.com",
+    "categories": [
+      "productivity",
+      "automation"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "coda",
+    "name": "Coda",
+    "vendor": "Coda",
+    "website_url": "https://coda.io",
+    "categories": [
+      "productivity",
+      "no-code"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "webflow",
+    "name": "Webflow",
+    "vendor": "Webflow Inc.",
+    "website_url": "https://webflow.com",
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "bubble",
+    "name": "Bubble",
+    "vendor": "Bubble Group Inc.",
+    "website_url": "https://bubble.io",
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "ideogram",
+    "name": "Ideogram",
+    "vendor": "Ideogram AI",
+    "website_url": "https://ideogram.ai",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "stability-ai",
+    "name": "Stability AI",
+    "vendor": "Stability AI Ltd.",
+    "website_url": "https://stability.ai",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
   }
 ]
