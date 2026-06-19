@@ -37,8 +37,9 @@ export_tools.staging.get_tool_categories = lambda slug: []
 import test_export_tools
 import test_b6_seo
 import test_b4_classification
+import test_b6_pages
 
-modules = [test_export_tools, test_b6_seo, test_b4_classification]
+modules = [test_export_tools, test_b6_seo, test_b4_classification, test_b6_pages]
 
 passed = failed = 0
 failures = []

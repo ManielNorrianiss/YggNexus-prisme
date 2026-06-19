@@ -23,8 +23,10 @@ Avant de repondre, lis tes memoires YggNexus : `yggnexus-repos`, `yggnexus-pipel
 
 - Nuit autonome (2026-06-19) : publish.py revalide aussi /best/<cat> et /categories/<cat> (+ index /categories ; lit toutes les categories Supabase pour couvrir les retraits). Nouveau dossier prisme/tests/ : 39 tests purs (score/10 + SEO export_tools, content_hash + anti-mince b6_seo, validation b4) -> 39/39 verts. A committer/pusher cote prisme (voir exports/nuit/2026-06-19.md). Residu : effacer prisme/publish.py.bak.
 
+- B6 phase 2 (2026-06-19, autonome) : prose compare/alternatives livree EN CODE (table page_seo, batch b6_pages.py, etape run_nightly `pages`, frontend resilient, 16 tests -> 55/55, tsc OK). Reste a activer : migration_page_seo.sql + python b6_pages.py + push prisme/frontend. Detail : exports/nuit/2026-06-19.md.
+
 ## Prochaines etapes (on priorise ensemble)
-- **B6 phase 2** : prose pages X vs Y / alternatives (table de stockage + frontend).
+- **B6 phase 2** : CODE PRET. Reste a activer (migration page_seo + b6_pages.py + push). Voir exports/nuit/2026-06-19.md.
 - Verifier staging.db (`PRAGMA integrity_check`) : lu comme malformed depuis le sandbox.
 - Coder B6 (generation SEO contenus longs) et B8 (sante) — pas encore ecrits.
 - Grossir le catalogue (nouvelles sources, relancer B1->B5). Automatiser la chaine de nuit + recherche semantique.
