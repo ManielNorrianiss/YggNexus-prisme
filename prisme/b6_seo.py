@@ -3,7 +3,7 @@
 b6_seo.py - Batch B6 : generation SEO des pages de regroupement.
 
 v1 : intros de categorie. Pour chaque categorie publiee, le LLM local redige
-un texte d'intro riche (description_md) + raffine seo_title / seo_description,
+un texte d'intro riche (seo_intro_md) + raffine seo_title / seo_description,
 en s'appuyant sur la liste des outils de la categorie. Ecrit directement dans
 la table Supabase `categories`.
 
@@ -44,7 +44,7 @@ SERVICE_KEY  = os.environ.get("SUPABASE_SERVICE_KEY", "")
 import staging
 from llm_local import generer_json, MODELE_GEN, LLMError
 
-MIN_DESC = 200      # longueur mini de description_md (anti contenu mince)
+MIN_DESC = 200      # longueur mini de l'intro (anti contenu mince)
 MAX_DESC = 1400
 MAX_TITLE = 60
 MAX_SEO_DESC = 155
@@ -56,7 +56,7 @@ SYSTEM_PROMPT = (
     "You are given a category and the list of tools it contains. "
     "Write a helpful category introduction. Be specific and grounded in the tools "
     "provided; never invent tools or features. No fluff, no thin content. "
-    "Return ONLY valid JSON with keys: description_md (string, 2 short paragraphs, "
+    "Return ONLY valid JSON with keys: intro_md (string, 2 short paragraphs, "
     "plain markdown, no headings), seo_title (string, max 60 chars), "
     "seo_description (string, max 155 chars). No extra keys, no markdown fences."
 )
@@ -72,9 +72,9 @@ def build_prompt(category, tools):
     return (
         f"Category: {name}\n"
         f"Tools in this category:\n{lignes}\n\n"
-        "Write the JSON now. description_md must introduce the category and give "
+        "Write the JSON now. intro_md must introduce the category and give "
         "the reader a quick sense of what these tools do and how to choose. "
-        f"description_md between {MIN_DESC} and {MAX_DESC} characters. "
+        f"intro_md between {MIN_DESC} and {MAX_DESC} characters. "
         f"seo_title max {MAX_TITLE} chars. seo_description max {MAX_SEO_DESC} chars."
     )
 
@@ -90,7 +90,7 @@ def validate_category_content(raw_out, category):
     """
     name = category.get("name", "") or category.get("slug", "")
 
-    desc = str(raw_out.get("description_md") or "").strip()
+    desc = str(raw_out.get("intro_md") or "").strip()
     title = _clean(raw_out.get("seo_title"))
     seo_desc = _clean(raw_out.get("seo_description"))
 
@@ -107,7 +107,7 @@ def validate_category_content(raw_out, category):
     seo_desc = seo_desc[:MAX_SEO_DESC]
 
     return {
-        "description_md":  desc,
+        "seo_intro_md":    desc,
         "seo_title":       title,
         "seo_description": seo_desc,
     }, is_thin
@@ -163,7 +163,7 @@ def set_cached_hash(db, slug, chash, now):
 
 def fake_llm(prompt, system, modele=None, timeout=120, _appel=None):
     return {
-        "description_md": ("This category groups tools that help with the task at "
+        "intro_md": ("This category groups tools that help with the task at "
                            "hand. " * 8).strip(),
         "seo_title": "Best Demo Tools",
         "seo_description": "Compare the best tools in this category.",
@@ -260,13 +260,13 @@ def main():
         fields, is_thin = validate_category_content(out, c)
         if is_thin:
             nb_thin += 1
-            print(f"  contenu mince (desc {len(fields['description_md'])} car) "
+            print(f"  contenu mince (intro {len(fields['seo_intro_md'])} car) "
                   f"-> ignore, pas d'ecriture.")
             continue
 
         if args.dry_run:
             print(f"  [dry-run] title={fields['seo_title']!r} "
-                  f"desc_md={len(fields['description_md'])} car")
+                  f"intro_md={len(fields['seo_intro_md'])} car")
         else:
             update_category(sb, c["id"], fields)
             set_cached_hash(db, c["slug"], chash, now)
