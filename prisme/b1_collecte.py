@@ -36,7 +36,13 @@ except ImportError:
 import staging
 
 
-UA = "YggNexusBot/1.0 (+https://yggnexus.com/bot)"
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+HEADERS = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9,fr;q=0.8",
+}
 TIMEOUT = 15
 SLEEP_BETWEEN = 1.0
 MAX_TEXT = 2000
@@ -52,12 +58,12 @@ def load_sources():
 def fetch_page(url):
     """Fetche l'URL et retourne (content_bytes, final_url)."""
     if _REQUESTS:
-        r = _requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, allow_redirects=True)
+        r = _requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
         r.raise_for_status()
         return r.content, r.url
     else:
         import urllib.request
-        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
             return resp.read(), resp.url
 

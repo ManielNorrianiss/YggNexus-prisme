@@ -3,14 +3,41 @@
     "slug": "claude",
     "name": "Claude",
     "vendor": "Anthropic",
-    "website_url": "https://claude.ai",
-    "pricing": "freemium",
-    "pricing_note": "Free tier, paid from 20/mo",
-    "short_desc": "AI assistant for writing, analysis and coding.",
-    "description_md": "Claude is an AI assistant by Anthropic, strong at long-form writing, reasoning and document analysis.",
-    "application_category": "BusinessApplication",
-    "quality_score": 9.3,
+    "website_url": "https://www.anthropic.com/claude",
+    "source_url": "https://claude.com/product/overview",
+    "pricing": "unknown",
+    "pricing_note": "",
+    "short_desc": "Claude by Anthropic for complex problem-solving tasks.",
+    "description_md": "Claude is an AI assistant designed for tackling complex challenges, analyzing data, writing code, and solving difficult problems. It serves as a thinking partner to help with big, bold, and bewildering tasks.\n\nUse Claude to develop unique voices, write content, analyze data, or brainstorm ideas.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.5,
     "status": "published",
+    "seo_title": "Claude AI by Anthropic",
+    "seo_description": "Tackle complex challenges with Claude, Anthropic's AI assistant for problem solvers.",
+    "pros_jsonb": [
+      "Versatile for various problem-solving tasks",
+      "Friendly and conversational interface",
+      "Accesses external tools for better performance"
+    ],
+    "cons_jsonb": [
+      "Limited by current AI capabilities",
+      "May require additional context for complex tasks",
+      "No explicit mention of pricing or subscription model"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Can Claude help with writing content?",
+        "a": "Yes, it can assist in developing unique voices and writing content."
+      },
+      {
+        "q": "Is there a cost for using Claude?",
+        "a": "Pricing details are not publicly available."
+      },
+      {
+        "q": "How does Claude access external tools?",
+        "a": "It uses Google Drive, web search, etc., if needed."
+      }
+    ],
     "categories": [
       "ai-writing"
     ],
@@ -21,13 +48,40 @@
     "name": "Apify",
     "vendor": "Apify",
     "website_url": "https://apify.com",
-    "pricing": "freemium",
-    "pricing_note": "Free tier, paid from 49/mo",
-    "short_desc": "Web scraping and browser automation platform.",
-    "description_md": "Apify lets you build, run and share web scrapers and automation actors at scale.",
+    "source_url": "https://apify.com/",
+    "pricing": "paid",
+    "pricing_note": "Subscription required for full access",
+    "short_desc": "Apify marketplace for AI tools and web scraping.",
+    "description_md": "Apify offers a vast collection of trusted tools for automating business processes, including real-time web data extraction, competitor tracking, lead generation, and app integration. With over 41,755 tools available, users can find and deploy actors like TikTok Scraper and Google Maps Scraper to gather valuable insights.",
     "application_category": "DeveloperApplication",
-    "quality_score": 8.4,
+    "quality_score": 8.7,
     "status": "published",
+    "seo_title": "Apify: AI Tools Marketplace",
+    "seo_description": "Automate your business with real-time web data extraction, competitor tracking, lead generation, and app integration.",
+    "pros_jsonb": [
+      "Large selection of trusted tools",
+      "Real-time web data extraction capabilities",
+      "Integration with various apps and AI agents"
+    ],
+    "cons_jsonb": [
+      "Subscription required for full access",
+      "Some tools may have usage limits",
+      "Complex setup process for beginners"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "How many tools are available?",
+        "a": "Over 41,755 tools."
+      },
+      {
+        "q": "Do I need a subscription?",
+        "a": "Yes, some features require a paid plan."
+      },
+      {
+        "q": "Can I integrate with other apps?",
+        "a": "Yes, supports integration with various tools and platforms."
+      }
+    ],
     "categories": [
       "data-scraping"
     ],
@@ -657,7 +711,7 @@
       "ai-writing",
       "automation"
     ],
-    "primary_category": "automation"
+    "primary_category": "ai-writing"
   },
   {
     "slug": "n8n",
@@ -743,8 +797,8 @@
       }
     ],
     "categories": [
-      "data-scraping",
-      "no-code"
+      "automation",
+      "data-scraping"
     ],
     "primary_category": "data-scraping"
   },
@@ -924,5 +978,141 @@
       "no-code"
     ],
     "primary_category": "automation"
+  },
+  {
+    "slug": "make",
+    "name": "Make",
+    "vendor": "Make (Celonis)",
+    "website_url": "https://www.make.com",
+    "source_url": "https://www.make.com",
+    "pricing": "freemium",
+    "pricing_note": "Free plan has limitations.",
+    "short_desc": "Visual automation platform for connecting apps without code.",
+    "description_md": "Make is a visual no-code/low-code automation platform that connects thousands of applications and APIs through drag-and-drop scenarios. Teams can automate complex workflows by routing, filtering, iterating, and aggregating data across multiple steps without writing any code.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Make - Visual Automation Platform",
+    "seo_description": "Automate workflows without code by connecting thousands of apps with Make’s visual interface.",
+    "pros_jsonb": [
+      "Visual interface",
+      "Connects many apps",
+      "No coding required",
+      "Complex workflow support",
+      "Drag-and-drop"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Can be complex for beginners",
+      "Vendor lock-in risk",
+      "Requires internet access"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Make free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Does it require coding skills?",
+        "a": "No, it's visual and no-code."
+      },
+      {
+        "q": "How many apps can I connect?",
+        "a": "Thousands of integrations available."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "vendor": "Midjourney",
+    "website_url": "https://midjourney.com",
+    "source_url": "https://midjourney.com",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, paid plans available.",
+    "short_desc": "AI tool for generating artistic images from text prompts.",
+    "description_md": "Midjourney is a generative AI that transforms natural-language text into high-quality, artistic images. Accessible via Discord and web app, it offers controls for aspect ratio, style, and variations. Ideal for designers, artists, and marketers seeking creative visuals.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Midjourney AI Image Generator",
+    "seo_description": "Generate artistic images from text prompts with Midjourney. Accessible via Discord and web app.",
+    "pros_jsonb": [
+      "Highly artistic output",
+      "User-friendly interface",
+      "Versatile across industries"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Dependent on Discord",
+      "May require learning curve"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Midjourney free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Can I use it without Discord?",
+        "a": "No, it's primarily through Discord."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Paid plans available beyond free tier."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "vendor": "Copy.ai",
+    "website_url": "https://copy.ai",
+    "source_url": "https://www.copy.ai/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $99/month",
+    "short_desc": "Automate GTM tasks with Copy.ai’s AI platform.",
+    "description_md": "Future-proof your business with the first-ever GTM AI platform from Copy.ai. Automate hundreds of repetitive tasks and scale success by unifying data, connecting teams, and eliminating bloat. Codify best practices and drive every use case with a single, AI-native solution.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "GTM AI Platform | Copy.ai",
+    "seo_description": "Future-proof your business with Copy.ai’s GTM AI platform. Automate tasks & scale success.",
+    "pros_jsonb": [
+      "Unified AI solution for all GTM use cases",
+      "Automates tedious, repetitive tasks",
+      "Empowers team scalability"
+    ],
+    "cons_jsonb": [
+      "High initial setup cost",
+      "Steep learning curve",
+      "Limited free tier options"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Copy.ai freemium or paid?",
+        "a": "Paid, with a limited free trial."
+      },
+      {
+        "q": "Does it require technical expertise?",
+        "a": "Moderate tech knowledge needed for setup."
+      },
+      {
+        "q": "Can I try it before buying?",
+        "a": "Yes, sign up for the free trial."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
   }
 ]

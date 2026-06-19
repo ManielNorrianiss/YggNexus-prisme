@@ -115,6 +115,18 @@ def build_entry(raw, enriched):
         "categories":           cats,
         "primary_category":     primary,
     }
+
+    # --- Modif 3 : filet SEO deterministe (si le LLM n'a pas produit les champs) ---
+    if not (entry["seo_title"] or "").strip():
+        base = entry["name"] or entry["slug"]
+        titre = base
+        if entry["short_desc"]:
+            titre = f"{base} — {entry['short_desc']}"
+        entry["seo_title"] = titre.strip(" —")[:60]
+    if not (entry["seo_description"] or "").strip():
+        src_txt = entry["short_desc"] or entry["description_md"] or entry["name"]
+        entry["seo_description"] = " ".join(src_txt.split())[:155]
+
     return entry
 
 

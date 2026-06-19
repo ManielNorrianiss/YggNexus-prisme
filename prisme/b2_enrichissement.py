@@ -144,6 +144,8 @@ def main():
     parser.add_argument("--only",  type=str, default="")
     parser.add_argument("--model", type=str, default=MODELE_GEN,
                         help="Modele Ollama (defaut: " + MODELE_GEN + ")")
+    parser.add_argument("--force", action="store_true",
+                        help="Re-enrichir meme si le content_hash est inchange")
     args = parser.parse_args()
 
     fn_gen   = fake_llm   if args.dry_run else generer_json
@@ -161,7 +163,7 @@ def main():
     for r in raws:
         chash = content_hash_for(r)
         existing = staging.get_enriched(r["slug"])
-        if existing and existing.get("content_hash") == chash:
+        if not args.force and existing and existing.get("content_hash") == chash:
             continue
         to_enrich.append((r, chash))
 

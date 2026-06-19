@@ -236,5 +236,45 @@
       "ai-images"
     ],
     "primary_category": "ai-images"
+  },
+  {
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "vendor": "Copy.ai",
+    "website_url": "https://copy.ai",
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "vendor": "Midjourney",
+    "website_url": "https://midjourney.com",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "vendor": "Anthropic",
+    "website_url": "https://www.anthropic.com/claude",
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "apify",
+    "name": "Apify",
+    "vendor": "Apify",
+    "website_url": "https://apify.com",
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
   }
 ]
