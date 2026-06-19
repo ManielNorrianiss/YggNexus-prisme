@@ -63,7 +63,9 @@ def build_entry(raw, enriched):
     except (TypeError, ValueError):
         qs = None
     if qs is not None:
-        qs = max(0.0, min(99.99, qs))
+        if qs > 10:                  # echelle 0-100 heritee -> ramener sur 10
+            qs = qs / 10.0
+        qs = round(max(0.0, min(10.0, qs)), 1)
 
     # --- Modif 1 : categories depuis B4 (tool_categories) avec fallback sources.json ---
     cats_raw = raw.get("categories_json")

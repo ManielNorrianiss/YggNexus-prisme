@@ -63,7 +63,7 @@ def build_prompt(raw):
         "BusinessApplication, DeveloperApplication, MultimediaApplication, UtilitiesApplication.\n"
         "- pricing: exactly one of: free, freemium, paid, open_source, unknown.\n"
         "- pricing_note: short string (max 80 chars).\n"
-        "- quality_score: integer 0 to 100.\n"
+        "- quality_score: number from 0.0 to 10.0 (one decimal, e.g. 8.5).\n"
     )
 
 
@@ -88,7 +88,7 @@ def fake_llm(prompt, system, modele=None, timeout=120, _appel=None):
         "application_category": "BusinessApplication",
         "pricing": "freemium",
         "pricing_note": "Free tier available, paid plans from $10/mo",
-        "quality_score": 75,
+        "quality_score": 7.5,
     }
 
 
@@ -125,12 +125,14 @@ def validate_enriched(d):
     pricing = str(d.get("pricing") or "unknown").lower().strip()
     result["pricing"]             = pricing if pricing in PRICING_ENUM else "unknown"
     result["pricing_note"]        = str(d.get("pricing_note") or "")[:80]
-    qs = d.get("quality_score", 50)
+    qs = d.get("quality_score", 5.0)
     try:
         qs = float(qs)
     except (TypeError, ValueError):
-        qs = 50.0
-    result["quality_score"] = max(0.0, min(100.0, qs))
+        qs = 5.0
+    if qs > 10:                      # echelle 0-100 heritee -> ramener sur 10
+        qs = qs / 10.0
+    result["quality_score"] = round(max(0.0, min(10.0, qs)), 1)
     return result
 
 
