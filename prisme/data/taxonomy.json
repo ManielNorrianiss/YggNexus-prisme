@@ -2,6 +2,7 @@
   {"slug": "ai-writing",    "name": "AI Writing",      "description": "Tools that generate and edit text with AI."},
   {"slug": "automation",    "name": "Automation",      "description": "No-code/low-code automation platforms."},
   {"slug": "ai-images",     "name": "AI Images",       "description": "Generate and edit images with AI."},
+  {"slug": "ai-audio",     "name": "AI Audio",        "description": "Generate voice, speech and music with AI (text-to-speech, voice cloning, audio)."},
   {"slug": "data-scraping", "name": "Data & Scraping", "description": "Collect, enrich and structure data."},
   {"slug": "productivity",  "name": "Productivity",    "description": "Workspaces and tools to organize work and collaborate."},
   {"slug": "no-code",       "name": "No-Code",         "description": "Build apps and workflows without writing code."}

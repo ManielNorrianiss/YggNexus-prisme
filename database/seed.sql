@@ -3,7 +3,7 @@
 --  Cible    : exécuter APRÈS schema.sql
 --  Usage    : Supabase → SQL Editor → Run  (ou psql -f seed.sql)
 --  Idempotent : ON CONFLICT (slug) DO NOTHING ; relations via slug.
---  Contenu  : 4 catégories, 6 outils, 6 tags, 2 automatisations,
+--  Contenu  : 7 catégories, 6 outils, 6 tags, 2 automatisations,
 --             liaisons + alternatives. Tout en 'published' pour
 --             voir les pages s'afficher immédiatement.
 --  NB : les embeddings ne sont PAS seedés ici — c'est le Prisme (B2)
@@ -18,6 +18,7 @@ INSERT INTO categories (slug, name, description_md, seo_title, seo_description, 
   ('ai-writing',     'AI Writing',     'Tools that generate and edit text with AI.',        'Best AI Writing Tools',     'Compare the best AI writing assistants.',     'published'),
   ('automation',     'Automation',     'No-code/low-code automation platforms.',            'Best Automation Tools',     'Connect your apps and automate workflows.',   'published'),
   ('ai-images',      'AI Images',      'Generate and edit images with AI.',                 'Best AI Image Generators',  'Create visuals from text prompts.',           'published'),
+  ('ai-audio',       'AI Audio',       'Generate voice, speech and music with AI.',         'Best AI Audio Tools',       'AI voice, speech and music generators.',      'published'),
   ('data-scraping',  'Data & Scraping','Collect, enrich and structure data.',               'Best Data Tools',           'Scrape, clean and enrich datasets.',          'published'),
   ('productivity',   'Productivity',   'Workspaces and tools to organize work and collaborate.', 'Best Productivity Tools', 'Organize work and collaborate with AI.', 'published'),
   ('no-code',        'No-Code',        'Build apps and workflows without writing code.',         'Best No-Code Tools',      'Build apps and automate without code.',  'published')
@@ -50,7 +51,6 @@ FROM (VALUES
   ('zapier','automation', true),
   ('make','automation', true),
   ('n8n','automation', true),
-  ('n8n','data-scraping', false),
   ('jasper','ai-writing', true),
   ('copy-ai','ai-writing', true),
   ('midjourney','ai-images', true)
