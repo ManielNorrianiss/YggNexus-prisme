@@ -276,5 +276,161 @@
       "data-scraping"
     ],
     "primary_category": "data-scraping"
+  },
+  {
+    "slug": "gemini",
+    "name": "Google Gemini",
+    "vendor": "Google",
+    "website_url": "https://gemini.google.com",
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "microsoft-copilot",
+    "name": "Microsoft Copilot",
+    "vendor": "Microsoft",
+    "website_url": "https://copilot.microsoft.com",
+    "categories": [
+      "productivity",
+      "ai-writing"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "mistral",
+    "name": "Mistral AI",
+    "vendor": "Mistral AI",
+    "website_url": "https://mistral.ai",
+    "categories": [
+      "ai-writing",
+      "developer-tools"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "deepseek",
+    "name": "DeepSeek",
+    "vendor": "DeepSeek",
+    "website_url": "https://www.deepseek.com",
+    "categories": [
+      "ai-writing",
+      "developer-tools"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "gamma",
+    "name": "Gamma",
+    "vendor": "Gamma",
+    "website_url": "https://gamma.app",
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "runway",
+    "name": "Runway",
+    "vendor": "Runway",
+    "website_url": "https://runwayml.com",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "synthesia",
+    "name": "Synthesia",
+    "vendor": "Synthesia",
+    "website_url": "https://www.synthesia.io",
+    "categories": [
+      "ai-images",
+      "ai-audio"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "lovable",
+    "name": "Lovable",
+    "vendor": "Lovable",
+    "website_url": "https://lovable.dev",
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "murf",
+    "name": "Murf AI",
+    "vendor": "Murf",
+    "website_url": "https://murf.ai",
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "suno",
+    "name": "Suno",
+    "vendor": "Suno",
+    "website_url": "https://suno.com",
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "descript",
+    "name": "Descript",
+    "vendor": "Descript",
+    "website_url": "https://www.descript.com",
+    "categories": [
+      "ai-audio",
+      "productivity"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "leonardo-ai",
+    "name": "Leonardo AI",
+    "vendor": "Leonardo.Ai",
+    "website_url": "https://leonardo.ai",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "vendor": "Adobe",
+    "website_url": "https://www.adobe.com/products/firefly.html",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "recraft",
+    "name": "Recraft",
+    "vendor": "Recraft",
+    "website_url": "https://www.recraft.ai",
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "writesonic",
+    "name": "Writesonic",
+    "vendor": "Writesonic",
+    "website_url": "https://writesonic.com",
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
   }
 ]

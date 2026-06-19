@@ -49,6 +49,71 @@ FICHES = [
         "categories": ["ai-images"],
         "primary_category": "ai-images",
     },
+    {
+        "slug": "gamma",
+        "name": "Gamma",
+        "vendor": "Gamma",
+        "website_url": "https://gamma.app",
+        "raw_title": "Gamma - AI presentations, documents and websites",
+        "raw_meta_desc": ("Gamma uses AI to generate polished presentations, "
+                          "documents and websites from a simple prompt or outline."),
+        "raw_text": ("Gamma is an AI-powered tool that turns a prompt or outline "
+                     "into formatted presentations, documents and webpages. It "
+                     "handles layout, design and images automatically, lets you "
+                     "edit with flexible card-based blocks, and exports to PDF or "
+                     "PowerPoint. Used to create decks and one-pagers fast."),
+        "categories": ["productivity"],
+        "primary_category": "productivity",
+    },
+    {
+        "slug": "lovable",
+        "name": "Lovable",
+        "vendor": "Lovable",
+        "website_url": "https://lovable.dev",
+        "raw_title": "Lovable - AI app builder",
+        "raw_meta_desc": ("Lovable turns natural-language prompts into full-stack "
+                          "web apps, no coding required."),
+        "raw_text": ("Lovable is an AI app builder that generates full-stack web "
+                     "applications from natural-language prompts. It produces the "
+                     "frontend, backend and database wiring, supports live editing "
+                     "and deployment, and targets founders and teams who want to "
+                     "ship software without writing code."),
+        "categories": ["no-code"],
+        "primary_category": "no-code",
+    },
+    {
+        "slug": "leonardo-ai",
+        "name": "Leonardo AI",
+        "vendor": "Leonardo.Ai",
+        "website_url": "https://leonardo.ai",
+        "raw_title": "Leonardo.Ai - AI image and art generation",
+        "raw_meta_desc": ("Leonardo.Ai generates production-quality images, art and "
+                          "game assets from text prompts."),
+        "raw_text": ("Leonardo.Ai is a generative AI platform for creating images "
+                     "and art from text prompts. It offers fine-tuned and custom "
+                     "models, real-time canvas, image-to-image and control tools, "
+                     "and is popular for game assets, concept art and marketing "
+                     "visuals."),
+        "categories": ["ai-images"],
+        "primary_category": "ai-images",
+    },
+    {
+        "slug": "adobe-firefly",
+        "name": "Adobe Firefly",
+        "vendor": "Adobe",
+        "website_url": "https://www.adobe.com/products/firefly.html",
+        "raw_title": "Adobe Firefly - generative AI for creatives",
+        "raw_meta_desc": ("Adobe Firefly is a family of generative AI models for "
+                          "images, text effects and video, designed for commercial "
+                          "safety and integrated across Creative Cloud."),
+        "raw_text": ("Adobe Firefly is Adobe's generative AI for creatives, able to "
+                     "produce images, text effects, vectors and video from prompts. "
+                     "Trained on licensed and public-domain content for commercial "
+                     "safety, it is built into Photoshop, Illustrator and Express "
+                     "via Generative Fill and related features."),
+        "categories": ["ai-images"],
+        "primary_category": "ai-images",
+    },
 ]
 
 

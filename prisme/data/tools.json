@@ -39,7 +39,8 @@
       }
     ],
     "categories": [
-      "ai-writing"
+      "ai-writing",
+      "automation"
     ],
     "primary_category": "ai-writing"
   },
@@ -49,40 +50,41 @@
     "vendor": "Apify",
     "website_url": "https://apify.com",
     "source_url": "https://apify.com/",
-    "pricing": "paid",
-    "pricing_note": "Subscription required for full access",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, paid subscriptions",
     "short_desc": "Apify marketplace for AI tools and web scraping.",
-    "description_md": "Apify offers a vast collection of trusted tools for automating business processes, including real-time web data extraction, competitor tracking, lead generation, and app integration. With over 41,755 tools available, users can find and deploy actors like TikTok Scraper and Google Maps Scraper to gather valuable insights.",
+    "description_md": "Apify offers a vast collection of trusted tools for automating business processes, including real-time web data extraction, competitor tracking, lead generation, and app integration. With over 41,799 tools available, users can find and deploy actors to perform specific tasks like TikTok scraping or Google Maps data extraction.",
     "application_category": "DeveloperApplication",
-    "quality_score": 8.7,
+    "quality_score": 8.5,
     "status": "published",
     "seo_title": "Apify: AI Tools Marketplace",
-    "seo_description": "Automate your business with real-time web data extraction, competitor tracking, lead generation, and app integration.",
+    "seo_description": "Automate your business with real-time web data, competitor tracking, and app integration. Over 41,799 trusted tools available.",
     "pros_jsonb": [
       "Large selection of trusted tools",
       "Real-time web data extraction capabilities",
       "Integration with various apps and AI agents"
     ],
     "cons_jsonb": [
-      "Subscription required for full access",
-      "Some tools may have usage limits",
-      "Complex setup process for beginners"
+      "May require technical knowledge for setup",
+      "Pricing varies by tool",
+      "Some tools may have usage limits"
     ],
     "faq_jsonb": [
       {
         "q": "How many tools are available?",
-        "a": "Over 41,755 tools."
+        "a": "Over 41,799 tools."
       },
       {
-        "q": "Do I need a subscription?",
-        "a": "Yes, some features require a paid plan."
+        "q": "Can I use any tool without payment?",
+        "a": "Many require a subscription or payment."
       },
       {
-        "q": "Can I integrate with other apps?",
-        "a": "Yes, supports integration with various tools and platforms."
+        "q": "Is technical knowledge required?",
+        "a": "Some tools may need setup expertise."
       }
     ],
     "categories": [
+      "automation",
       "data-scraping"
     ],
     "primary_category": "data-scraping"
@@ -94,43 +96,44 @@
     "website_url": "https://airtable.com",
     "source_url": "https://www.airtable.com/",
     "pricing": "freemium",
-    "pricing_note": "Free plan with limitations",
+    "pricing_note": "Limited free plan available.",
     "short_desc": "Airtable for real-time collaboration and workflow automation.",
-    "description_md": "Airtable is a powerful no-code platform that unifies data, workflows, and teams. Build AI-powered apps and agents without coding knowledge. Streamline processes with sophisticated workflows in minutes.",
+    "description_md": "Airtable is a powerful no-code platform that enables teams to build enterprise-ready AI workflows, apps, and agents in minutes. Unify data, automate tasks, and streamline processes without coding knowledge. Trusted by over 500,000 leading teams for seamless collaboration and productivity gains.",
     "application_category": "BusinessApplication",
-    "quality_score": 9.2,
+    "quality_score": 8.7,
     "status": "published",
-    "seo_title": "Airtable: No-Code Workflow Automation",
-    "seo_description": "Build AI-powered apps & agents without coding. Unify workflows, teams, and data.",
+    "seo_title": "Airtable: Build AI Workflows | Airtable",
+    "seo_description": "500,000+ teams use Airtable for real-time collaboration and workflow automation. Start building today!",
     "pros_jsonb": [
-      "No-code interface",
+      "No code required",
       "Real-time collaboration",
-      "AI-driven automation",
-      "Customizable templates",
-      "Scalable for enterprise"
+      "AI-powered workflows",
+      "Customizable apps",
+      "Scalable solutions"
     ],
     "cons_jsonb": [
-      "Learning curve",
+      "Steep learning curve",
       "Limited free plan",
-      "Can be complex for beginners"
+      "Complex for beginners"
     ],
     "faq_jsonb": [
       {
         "q": "Is Airtable free?",
-        "a": "Yes, with limited features."
+        "a": "Yes, with a limited free plan."
       },
       {
         "q": "Does it require coding skills?",
-        "a": "No, no-code interface available."
+        "a": "No, no-code platform."
       },
       {
-        "q": "How does Airtable handle data security?",
-        "a": "Data encryption and strict access controls are in place."
+        "q": "How many users can I have?",
+        "a": "Depends on the plan."
       }
     ],
     "categories": [
       "automation",
-      "no-code"
+      "no-code",
+      "productivity"
     ],
     "primary_category": "automation"
   },
@@ -229,22 +232,22 @@
     "website_url": "https://openai.com",
     "source_url": "https://openai.com/",
     "pricing": "freemium",
-    "pricing_note": "Some services are free, others require payment.",
-    "short_desc": "OpenAI's research and deployment platform for AI models.",
-    "description_md": "OpenAI is a research institute focused on advancing artificial intelligence in ways that are safe and beneficial. Their tools include the Codex, ChatGPT, and various APIs designed to integrate advanced AI capabilities into applications and workflows.",
+    "pricing_note": "Some services require payment.",
+    "short_desc": "AI research and deployment platform.",
+    "description_md": "OpenAI is a leading AI research lab focused on developing safe and beneficial artificial general intelligence. It offers various tools for researchers and businesses, including the ChatGPT API and Codex. Explore advanced AI capabilities designed to enhance productivity and innovation across multiple domains.",
     "application_category": "DeveloperApplication",
-    "quality_score": 9.0,
+    "quality_score": 8.7,
     "status": "published",
-    "seo_title": "OpenAI - AI Research & Deployment",
-    "seo_description": "Advance your projects with OpenAI's cutting-edge AI tools and APIs. Focus on safety, ethics, and innovation.",
+    "seo_title": "OpenAI | AI Research & Deployment",
+    "seo_description": "Explore advanced AI research, ChatGPT API, and Codex for businesses. Safe AGI mission.",
     "pros_jsonb": [
-      "Advanced AI technology",
-      "Focus on safety and ethics",
-      "Versatile API offerings"
+      "Advanced AI research",
+      "Safe and beneficial AGI mission",
+      "Versatile tool offerings"
     ],
     "cons_jsonb": [
       "Limited public access",
-      "Commercial use restrictions",
+      "Commercial focus may affect availability",
       "Ongoing development phase"
     ],
     "faq_jsonb": [
@@ -253,12 +256,12 @@
         "a": "Some services are freemium, others require payment."
       },
       {
-        "q": "Can I use OpenAI for commercial projects?",
-        "a": "Commercial use is subject to licensing agreements."
+        "q": "What is Codex?",
+        "a": "Codex integrates AI into software development tools."
       },
       {
-        "q": "How often do you update the models?",
-        "a": "Models are updated regularly based on research advancements."
+        "q": "Can I access all features of OpenAI?",
+        "a": "Access depends on the specific service and subscription level."
       }
     ],
     "categories": [
@@ -452,36 +455,36 @@
     "website_url": "https://clickup.com",
     "source_url": "https://clickup.com/",
     "pricing": "freemium",
-    "pricing_note": "Free plan available, limited features.",
+    "pricing_note": "Free plan available, additional features require paid plans",
     "short_desc": "All-in-one productivity platform with AI and automation.",
-    "description_md": "ClickUp is an all-in-one productivity tool that combines task management, document collaboration, goal setting, and chat in one app. It leverages AI agents and workflows to enhance efficiency and automate tasks. Users can customize their workspace and access features like time tracking, calendars, and whiteboards.",
+    "description_md": "ClickUp is an all-in-one productivity tool that combines task management, document collaboration, goal setting, and communication in one app. It leverages AI agents and workflows to enhance efficiency and automate tasks. Users can customize their workspace and access features like projects, chat, brain (AI), time tracking, calendar, docs, whiteboards, sprints, and automations.",
     "application_category": "BusinessApplication",
-    "quality_score": 8.5,
+    "quality_score": 8.7,
     "status": "published",
-    "seo_title": "ClickUp - All-in-One Productivity Platform",
-    "seo_description": "Maximize productivity with ClickUp's comprehensive suite of tools and AI-driven automation. Try it now!",
+    "seo_title": "ClickUp - All-in-One Productivity App",
+    "seo_description": "Maximize productivity with ClickUp's comprehensive suite of tools and AI agents. Free forever.",
     "pros_jsonb": [
-      "Comprehensive suite of tools",
-      "AI-driven automation",
-      "Customizable workspace"
+      "Comprehensive suite of productivity tools",
+      "Integrates AI agents for automation",
+      "Customizable workspace with multiple features"
     ],
     "cons_jsonb": [
-      "Steep learning curve for new users",
-      "Limited free plan features",
-      "Complex interface"
+      "Learning curve due to extensive feature set",
+      "Limited free plan options",
+      "Some advanced features require paid plans"
     ],
     "faq_jsonb": [
       {
         "q": "Is ClickUp free?",
-        "a": "Yes, it offers a free plan with limited features."
+        "a": "Yes, it offers a free forever plan with limited features."
       },
       {
-        "q": "Does ClickUp have AI agents?",
-        "a": "Yes, it includes AI agents for automation and assistance."
+        "q": "Does ClickUp have AI capabilities?",
+        "a": "Yes, it includes AI agents and workflows to automate tasks."
       },
       {
-        "q": "Can I try ClickUp before subscribing?",
-        "a": "Yes, you can sign up for the free trial to test its features."
+        "q": "Can I try ClickUp before committing?",
+        "a": "Yes, you can sign up for the free trial or use the free forever plan."
       }
     ],
     "categories": [
@@ -720,36 +723,36 @@
     "website_url": "https://n8n.io",
     "source_url": "https://n8n.io/",
     "pricing": "paid",
-    "pricing_note": "Starts at $25/month",
-    "short_desc": "n8n - AI-driven workflow automation platform.",
-    "description_md": "n8n is a powerful no-code/low-code platform that integrates AI with business processes. Technical teams can automate workflows, generate insights, and manage updates efficiently. It supports various integrations and offers both hosted and self-hosted options.\n\n* Automate complex tasks with ease.\n* Integrate over 1900+ services effortlessly.\n* Leverage AI for smarter decision-making.",
+    "pricing_note": "Starts at $20/month",
+    "short_desc": "n8n - AI-driven workflow automation for technical teams.",
+    "description_md": "n8n is an AI-powered workflow automation platform designed for technical teams. It combines no-code flexibility with advanced coding capabilities, enabling users to automate complex business processes quickly and efficiently. With n8n, you can easily integrate various services, generate customer insights, and manage security incidents.",
     "application_category": "DeveloperApplication",
-    "quality_score": 8.5,
+    "quality_score": 9.1,
     "status": "published",
     "seo_title": "AI Workflow Automation - n8n",
-    "seo_description": "Automate workflows and generate insights with AI-driven n8n. Over 1900+ integrations available.",
+    "seo_description": "Automate workflows with AI and no-code options. n8n for technical teams.",
     "pros_jsonb": [
       "AI-driven automation",
-      "Extensive integration library",
-      "Flexible deployment options"
+      "No-code and code options",
+      "Extensive integration library"
     ],
     "cons_jsonb": [
-      "Steep learning curve",
+      "Steep learning curve for coding users",
       "Limited free tier",
       "Requires technical knowledge"
     ],
     "faq_jsonb": [
       {
         "q": "Is n8n open source?",
-        "a": "No, it's a paid platform."
+        "a": "No, it's a paid service."
       },
       {
-        "q": "Does n8n support custom integrations?",
-        "a": "Yes, through its API."
+        "q": "Can I use n8n without any code?",
+        "a": "Yes, for some tasks."
       },
       {
-        "q": "Can I use n8n without coding?",
-        "a": "Yes, with some no-code features."
+        "q": "How many integrations does n8n offer?",
+        "a": "Over 1900+ integrations available."
       }
     ],
     "categories": [
@@ -842,7 +845,8 @@
       }
     ],
     "categories": [
-      "ai-images"
+      "ai-images",
+      "automation"
     ],
     "primary_category": "ai-images"
   },
@@ -897,41 +901,41 @@
     "website_url": "https://www.workato.com",
     "source_url": "https://www.workato.com/",
     "pricing": "paid",
-    "pricing_note": "Starts at $5,000/month",
-    "short_desc": "Workato connects AI agents with over 1400 business apps.",
-    "description_md": "Workato is an enterprise-level integration platform that enables secure, scalable, and predictable agentic AI workflows. It integrates more than 1,400 business applications to streamline operations and enhance productivity. Trusted by leading organizations for its robust orchestration capabilities.",
+    "pricing_note": "Varies based on features and scale",
+    "short_desc": "Workato connects AI agents with over 1400 business apps for secure and scalable workflows.",
+    "description_md": "Workato is an enterprise-grade integration platform that enables the seamless connection of artificial intelligence (AI) agents to more than 1,400 business applications. It provides a trusted orchestration layer ensuring predictability, scalability, and security in agentic AI workflows. Built on the #1 iPaaS, Workato supports various departments with unified management.",
     "application_category": "BusinessApplication",
-    "quality_score": 9.2,
+    "quality_score": 8.7,
     "status": "published",
-    "seo_title": "Workato - Agentic AI Integration",
-    "seo_description": "Enterprise MCP for agentic AI workflows. Connect over 1400 apps securely and scalably.",
+    "seo_title": "Workato - AI Integration Platform",
+    "seo_description": "Connect AI agents with over 1400 apps for secure, scalable workflows. Trusted by leaders in integration.",
     "pros_jsonb": [
-      "Over 1,400 integrated apps",
+      "Extensive app integration",
       "Secure and scalable",
-      "Predictable performance"
+      "AI agent support"
     ],
     "cons_jsonb": [
-      "High cost",
-      "Steep learning curve",
-      "Limited free tier"
+      "Complex setup process",
+      "Higher cost compared to alternatives",
+      "Steep learning curve"
     ],
     "faq_jsonb": [
       {
-        "q": "Is Workato open source?",
-        "a": "No, it is a paid service."
+        "q": "Is Workato free?",
+        "a": "Workato is a paid service with various pricing plans."
       },
       {
-        "q": "What types of integrations does Workato support?",
-        "a": "Over 1,400 business apps and services."
+        "q": "What industries can use Workato?",
+        "a": "Workato serves multiple industries including finance, healthcare, and retail."
       },
       {
-        "q": "Does Workato offer a free trial?",
-        "a": "Yes, sign up for a trial."
+        "q": "How does Workato ensure security?",
+        "a": "It uses advanced encryption and access controls to protect data during integration processes."
       }
     ],
     "categories": [
       "automation",
-      "productivity"
+      "no-code"
     ],
     "primary_category": "automation"
   },
@@ -1067,7 +1071,8 @@
       }
     ],
     "categories": [
-      "ai-images"
+      "ai-images",
+      "automation"
     ],
     "primary_category": "ai-images"
   },
@@ -1111,7 +1116,681 @@
       }
     ],
     "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "vendor": "Adobe",
+    "website_url": "https://www.adobe.com/products/firefly.html",
+    "source_url": "https://www.adobe.com/products/firefly.html",
+    "pricing": "paid",
+    "pricing_note": "Included in Adobe Creative Cloud subscription",
+    "short_desc": "Adobe Firefly for AI-generated content in Creative Cloud.",
+    "description_md": "Adobe Firefly is a generative AI tool that helps creatives generate images, text effects, vectors and video from prompts. Trained on licensed and public-domain content, it integrates seamlessly into Photoshop, Illustrator, and Express via Generative Fill and related features.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Adobe Firefly - AI for Creatives",
+    "seo_description": "Generate images, text effects & videos using Adobe Firefly's AI tools in Creative Cloud.",
+    "pros_jsonb": [
+      "Integrates with Adobe Creative Cloud",
+      "Generates high-quality AI art and design elements",
+      "Trained on safe and commercial-friendly content"
+    ],
+    "cons_jsonb": [
+      "Limited to Adobe ecosystem",
+      "May require subscription for full access"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Firefly free?",
+        "a": "Firefly is part of the paid Adobe Creative Cloud suite."
+      },
+      {
+        "q": "Can I use Firefly outside Photoshop and Illustrator?",
+        "a": "Currently, it's integrated into these applications only."
+      },
+      {
+        "q": "What types of content can I generate with Firefly?",
+        "a": "Images, text effects, vectors, and video from prompts."
+      }
+    ],
+    "categories": [
+      "ai-images",
       "ai-writing"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "deepseek",
+    "name": "DeepSeek",
+    "vendor": "DeepSeek",
+    "website_url": "https://www.deepseek.com",
+    "source_url": "https://www.deepseek.com/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free tier available",
+    "short_desc": "DeepSeek - Advanced AI models for natural language and coding tasks.",
+    "description_md": "DeepSeek is a cutting-edge AI tool that offers advanced models like DeepSeek-LLM and DeepSeek-Coder. These models are designed to handle complex natural language processing and code generation tasks, providing state-of-the-art performance in both areas.\n\nDeveloped by the DeepSeek team, these models leverage proprietary training frameworks and extensive computational resources.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "DeepSeek - AI Models for NLP & Coding",
+    "seo_description": "Explore advanced AI models from DeepSeek, including LLMs and Coders. State-of-the-art performance in natural language and coding tasks.",
+    "pros_jsonb": [
+      "State-of-the-art performance",
+      "Open-source availability",
+      "Versatile model offerings"
+    ],
+    "cons_jsonb": [
+      "Limited public documentation",
+      "Steep learning curve for new users",
+      "Commercially focused models"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is DeepSeek free to use?",
+        "a": "DeepSeek offers a freemium model with limited features. Full access requires a paid subscription."
+      },
+      {
+        "q": "Can I integrate DeepSeek into my project?",
+        "a": "Yes, DeepSeek provides API access for integration into various applications."
+      },
+      {
+        "q": "What models does DeepSeek offer?",
+        "a": "DeepSeek offers LLMs and Coder models for natural language processing and code generation."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "descript",
+    "name": "Descript",
+    "vendor": "Descript",
+    "website_url": "https://www.descript.com",
+    "source_url": "https://www.descript.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan with limited features.",
+    "short_desc": "AI-powered video and audio editing tool.",
+    "description_md": "Descript is an AI-driven platform for creating and editing videos and podcasts. It allows users to record, transcribe, edit, and publish content directly within the application. With features like automated design and script generation, it simplifies the creation process for both individuals and teams.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Descript – AI Video & Podcast Editor",
+    "seo_description": "AI-powered video and podcast editor. Record, transcribe, edit, publish. Try free now!",
+    "pros_jsonb": [
+      "AI-assisted editing",
+      "Integrated transcription",
+      "User-friendly interface"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Subscription required for advanced features",
+      "Learning curve for new users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Descript free to use?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I edit videos without any technical skills?",
+        "a": "Yes, AI tools help simplify the process."
+      },
+      {
+        "q": "Does it support multiple languages?",
+        "a": "Yes, supports various languages for transcription and editing."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "gamma",
+    "name": "Gamma",
+    "vendor": "Gamma",
+    "website_url": "https://gamma.app",
+    "source_url": "https://gamma.app",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free; advanced require subscription.",
+    "short_desc": "AI tool for creating presentations, documents and websites.",
+    "description_md": "Gamma is an AI-powered platform that transforms simple prompts or outlines into professional presentations, documents, and webpages. It automates layout, design, and image handling while allowing flexible editing through card-based blocks. Export options include PDF and PowerPoint.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Gamma - AI for Presentations & Documents",
+    "seo_description": "Create professional presentations, documents, and websites with Gamma's AI tool. Fast and easy content creation.",
+    "pros_jsonb": [
+      "AI-driven content creation",
+      "Flexible editing interface",
+      "Automated design and images",
+      "Quick export to various formats",
+      "Suitable for decks and one-pagers"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "May require learning the card-based system",
+      "Cost associated with advanced features",
+      "Dependent on internet connection",
+      "AI limitations may affect output quality"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Gamma free to use?",
+        "a": "Yes, but some features are paid."
+      },
+      {
+        "q": "How does it handle images?",
+        "a": "Automatically sources and integrates images."
+      },
+      {
+        "q": "Can I export directly to Google Slides?",
+        "a": "Currently exports to PDF or PowerPoint only."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "gemini",
+    "name": "Google Gemini",
+    "vendor": "Google",
+    "website_url": "https://gemini.google.com",
+    "source_url": "https://gemini.google.com/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free access available.",
+    "short_desc": "Google Gemini for AI writing and planning.",
+    "description_md": "Google Gemini is an AI assistant designed to help with writing, planning, brainstorming, and more. It leverages generative AI to provide creative solutions and insights.\n\nGemini can assist in generating content, suggesting ideas, and optimizing your projects. Its advanced natural language processing capabilities make it a valuable tool for professionals across various industries.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Google Gemini - AI Writing Assistant",
+    "seo_description": "Experience Gemini, Google’s AI assistant for writing and planning. Get creative solutions today!",
+    "pros_jsonb": [
+      "Generates high-quality content",
+      "Enhances creativity and productivity",
+      "Supports multiple use cases"
+    ],
+    "cons_jsonb": [
+      "Limited free tier access",
+      "Dependent on internet connection",
+      "May require adjustment to prompts"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Gemini free?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I use Gemini for commercial projects?",
+        "a": "Yes, within terms of service."
+      },
+      {
+        "q": "How does Gemini work?",
+        "a": "It uses AI to generate text based on your input."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "leonardo-ai",
+    "name": "Leonardo AI",
+    "vendor": "Leonardo.Ai",
+    "website_url": "https://leonardo.ai",
+    "source_url": "https://leonardo.ai",
+    "pricing": "paid",
+    "pricing_note": "Starts at $29/month",
+    "short_desc": "AI-driven image and art generation tool.",
+    "description_md": "Leonardo.Ai is a generative AI platform for creating high-quality images and art from text prompts. It offers fine-tuned models, real-time canvas editing, and advanced control tools, making it ideal for game assets, concept art, and marketing visuals.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Leonardo.Ai - AI Image & Art Generation",
+    "seo_description": "Generate high-quality images and art from text prompts with Leonardo.Ai.",
+    "pros_jsonb": [
+      "High-quality image generation",
+      "Fine-tuned and custom models available",
+      "Real-time canvas and control tools"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "May require technical knowledge",
+      "Costs can add up for extensive use"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is it easy to use?",
+        "a": "Yes, with a user-friendly interface."
+      },
+      {
+        "q": "Can I generate game assets?",
+        "a": "Absolutely, popular for this purpose."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Paid plan required for full features."
+      }
+    ],
+    "categories": [
+      "ai-images",
+      "automation"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "lovable",
+    "name": "Lovable",
+    "vendor": "Lovable",
+    "website_url": "https://lovable.dev",
+    "source_url": "https://lovable.dev",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free",
+    "short_desc": "AI app builder for non-coders",
+    "description_md": "Lovable is an AI app builder that turns natural-language prompts into full-stack web apps with no coding required. It generates frontend, backend and database wiring, supports live editing and deployment, ideal for founders and teams aiming to ship software quickly.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "AI App Builder - No Coding Required",
+    "seo_description": "Lovable turns natural-language prompts into full-stack web apps. No coding needed, live editing & deployment.",
+    "pros_jsonb": [
+      "No coding needed",
+      "Full-stack generation",
+      "Live editing & deployment"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Cost for advanced features",
+      "Learning curve for non-tech users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Lovable free?",
+        "a": "Lovable offers a freemium model with basic features free."
+      },
+      {
+        "q": "Can I customize the apps?",
+        "a": "Customization is limited; best for quick prototyping."
+      },
+      {
+        "q": "Who uses Lovable?",
+        "a": "Founders and teams who need to ship software fast without coding."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "microsoft-copilot",
+    "name": "Microsoft Copilot",
+    "vendor": "Microsoft",
+    "website_url": "https://copilot.microsoft.com",
+    "source_url": "https://copilot.microsoft.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, limited features.",
+    "short_desc": "Microsoft Copilot for AI assistance",
+    "description_md": "Microsoft Copilot is an AI tool designed to assist users in various tasks such as writing emails, creating documents, and generating code snippets. It offers real-time suggestions and feedback to enhance productivity.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Microsoft Copilot: AI Companion",
+    "seo_description": "Get real-time assistance with Microsoft Copilot. Enhance your productivity today!",
+    "pros_jsonb": [
+      "Real-time suggestions",
+      "Enhances productivity",
+      "Cross-platform support"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Dependent on internet connection",
+      "May require adjustment to AI responses"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Microsoft Copilot free?",
+        "a": "Yes, it offers a free trial with limited features."
+      },
+      {
+        "q": "Does Copilot work offline?",
+        "a": "No, it requires an internet connection to function."
+      },
+      {
+        "q": "Can I use Copilot for personal projects?",
+        "a": "Yes, but the free tier may have limitations."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "mistral",
+    "name": "Mistral AI",
+    "vendor": "Mistral AI",
+    "website_url": "https://mistral.ai",
+    "source_url": "https://mistral.ai/",
+    "pricing": "paid",
+    "pricing_note": "Freemium options available",
+    "short_desc": "Mistral AI for custom enterprise-level AI solutions.",
+    "description_md": "Mistral AI provides powerful AI platforms for enterprises to customize and deploy advanced AI assistants, agents, and services. Tailored for financial services, technology, logistics, and public sectors, it accelerates innovation and problem-solving with open models.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Mistral AI - Custom Enterprise AI Solutions",
+    "seo_description": "Tailored AI assistants and agents for financial, tech, logistics, and public sectors. Open-source models available.",
+    "pros_jsonb": [
+      "Customizable AI solutions",
+      "Open-source models available",
+      "Industry-specific applications"
+    ],
+    "cons_jsonb": [
+      "Complex setup required",
+      "Higher cost for advanced features",
+      "Steep learning curve"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Mistral AI open source?",
+        "a": "Yes, some models are open-source."
+      },
+      {
+        "q": "What industries can use Mistral AI?",
+        "a": "Financial services, technology, logistics, public sector."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Paid with freemium options."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "murf",
+    "name": "Murf AI",
+    "vendor": "Murf",
+    "website_url": "https://murf.ai",
+    "source_url": "https://murf.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, paid plans available",
+    "short_desc": "Generate ultra-realistic AI voices for content creation.",
+    "description_md": "Murf AI is a powerful text-to-speech tool that creates natural and lifelike voices for podcasting, audiobooks, video voiceovers, and more. With its fast API and customizable options, it supports over 10 million users across various industries.\n\nFeatures include ultra-realistic voice generation, customizable settings, and instant AI dubbing.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Murf AI - Free AI Voice Generator",
+    "seo_description": "Generate ultra-realistic voices with Murf AI for content creation. Fast API & customizable options.",
+    "pros_jsonb": [
+      "Ultra-realistic voices",
+      "Fast API for text-to-speech",
+      "Customizable voice settings"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "API integration requires payment",
+      "Not open source"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Murf AI free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Can I use it for commercial projects?",
+        "a": "Yes, but pricing varies."
+      },
+      {
+        "q": "How long does voice generation take?",
+        "a": "Instantaneous."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "recraft",
+    "name": "Recraft",
+    "vendor": "Recraft",
+    "website_url": "https://www.recraft.ai",
+    "source_url": "https://www.recraft.ai/",
+    "pricing": "paid",
+    "pricing_note": "Subscription required",
+    "short_desc": "AI-driven design platform for images and mockups.",
+    "description_md": "Recraft is an advanced text-to-image AI tool designed for designers, creatives, sellers, and teams. It offers photorealistic image generation, vector graphics, custom styles, and more. Beyond prompt accuracy, it delivers a real design vision in every generation.\n\nStart creating with Recraft V4.1, the most advanced model to date.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Recraft AI - Design Platform",
+    "seo_description": "AI-driven design for images, mockups, and vector graphics. Try Recraft V4.1 now!",
+    "pros_jsonb": [
+      "Photorealistic image generation",
+      "Vector graphics support",
+      "Custom style options"
+    ],
+    "cons_jsonb": [
+      "Complex prompt understanding needed",
+      "Higher cost compared to simpler tools",
+      "Limited free tier available"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Recraft suitable for beginners?",
+        "a": "Yes, but some experience with design is recommended."
+      },
+      {
+        "q": "Can I use Recraft for commercial projects?",
+        "a": "Yes, it supports both personal and commercial use."
+      },
+      {
+        "q": "How does the pricing work?",
+        "a": "Paid subscription required; free trial available."
+      }
+    ],
+    "categories": [
+      "ai-images",
+      "ai-writing"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "runway",
+    "name": "Runway",
+    "vendor": "Runway",
+    "website_url": "https://runwayml.com",
+    "source_url": "https://runwayml.com/",
+    "pricing": "paid",
+    "pricing_note": "Subscription-based pricing",
+    "short_desc": "AI tool for simulating worlds and experiences.",
+    "description_md": "Runway is an AI platform focused on developing General World Models that simulate various environments and scenarios. It offers tools for media and entertainment, robotics, and research in interactive world simulation. Ideal for organizations aiming to advance their industries through cutting-edge AI technologies.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Runway - AI for World Simulation",
+    "seo_description": "Advanced AI platform for simulating worlds and experiences. Ideal for media, robotics, and research.",
+    "pros_jsonb": [
+      "Advanced world modeling capabilities",
+      "State-of-the-art motion quality and visual fidelity",
+      "Versatile applications across multiple sectors"
+    ],
+    "cons_jsonb": [
+      "High cost of entry",
+      "Complex setup for non-experts",
+      "Limited public documentation"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Runway suitable for beginners?",
+        "a": "Yes, but some experience with AI is recommended."
+      },
+      {
+        "q": "What sectors can benefit from Runway?",
+        "a": "Media and entertainment, robotics, scientific research."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Paid subscription required."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "suno",
+    "name": "Suno",
+    "vendor": "Suno",
+    "website_url": "https://suno.com",
+    "source_url": "https://suno.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free with limitations",
+    "short_desc": "AI music generator for creating original tracks.",
+    "description_md": "Suno is an AI music generator that allows users to create stunning original songs in seconds with just a simple prompt or advanced editing tools. Perfect for musicians, producers, and anyone looking to make their own masterpieces.\n\n* Create any song you can imagine\n* High-quality music creation accessible to all\n* Free 10-song starter pack",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "AI Music Generator | Suno",
+    "seo_description": "Create original music for free with Suno's AI generator. Make your own masterpieces today!",
+    "pros_jsonb": [
+      "High-quality music generation",
+      "Free to use with a freemium model",
+      "User-friendly interface and advanced editing tools"
+    ],
+    "cons_jsonb": [
+      "Limited features in the free version",
+      "Dependent on AI for creativity",
+      "No human composers involved"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Suno free to use?",
+        "a": "Yes, with a freemium model."
+      },
+      {
+        "q": "Can I create my own songs?",
+        "a": "Absolutely, just use prompts or advanced tools."
+      },
+      {
+        "q": "Are there any limitations in the free version?",
+        "a": "Yes, limited features and song count."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "synthesia",
+    "name": "Synthesia",
+    "vendor": "Synthesia",
+    "website_url": "https://www.synthesia.io",
+    "source_url": "https://www.synthesia.io/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available, paid plans offer more features.",
+    "short_desc": "AI video creation tool for businesses.",
+    "description_md": "Synthesia is an AI video platform that enables businesses to create professional videos quickly and easily from text. Utilize advanced avatars and voiceovers in over 160 languages for training, marketing, sales enablement, operations, internal communications, employee training, compliance, and more.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Video Platform for Business",
+    "seo_description": "Create professional videos quickly with Synthesia's AI avatars & voiceovers in 160+ languages.",
+    "pros_jsonb": [
+      "Enterprise-ready",
+      "Easy video creation",
+      "Multi-language support"
+    ],
+    "cons_jsonb": [
+      "Cost involved",
+      "Learning curve for advanced features",
+      "Limited free plan"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Synthesia free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "How many languages does it support?",
+        "a": "Over 160 languages."
+      },
+      {
+        "q": "Who uses Synthesia?",
+        "a": "Fortune 100 companies and global teams."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "writesonic",
+    "name": "Writesonic",
+    "vendor": "Writesonic",
+    "website_url": "https://writesonic.com",
+    "source_url": "https://writesonic.com/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $99/month",
+    "short_desc": "AI-driven SEO tool for content optimization and growth.",
+    "description_md": "Writesonic is an AI search growth engine designed to enhance your online visibility through SEO, AEO, and GEO strategies. It helps track multiple platforms, optimize content, and measure the impact on traffic and revenue.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Writesonic - AI SEO Growth Engine",
+    "seo_description": "Boost your online presence with Writesonic's AI-driven SEO tools. Track, optimize, and grow.",
+    "pros_jsonb": [
+      "AI-driven insights for content optimization",
+      "Comprehensive platform tracking",
+      "Proven results with major brands"
+    ],
+    "cons_jsonb": [
+      "Higher cost compared to basic tools",
+      "Limited free trial duration"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Writesonic free?",
+        "a": "Yes, it offers a 7-day free trial."
+      },
+      {
+        "q": "Does it work for small businesses?",
+        "a": "Absolutely, suitable for all sizes."
+      },
+      {
+        "q": "How does it measure impact?",
+        "a": "Through traffic and revenue metrics."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "automation"
     ],
     "primary_category": "ai-writing"
   }
