@@ -40,6 +40,7 @@ STEPS = [
     ("publish",        "publish.py",              True),
     ("embeddings",     "publish_embeddings.py",   True),
     ("liens",          "b5_liens.py",             False),
+    ("seo",            "b6_seo.py",               False),
     ("sante",          "b8_sante.py",             False),
 ]
 

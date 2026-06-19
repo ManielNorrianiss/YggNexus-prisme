@@ -18,10 +18,12 @@ Avant de repondre, lis tes memoires YggNexus : `yggnexus-repos`, `yggnexus-pipel
 - ETAPE 2 : categorie ai-audio creee ; elevenlabs -> ai-audio ; n8n sorti de data-scraping.
 - ETAPE 3 : tous les quality_score ramenes sur 10 (etaient sur 100). tools.json repare (corruption NUL). Verifie live.
 - B8 sante code (b8_sante.py) + branche dans run_nightly. A detecte puis on a repare 5 outils hors pipeline (make/copy-ai/midjourney/claude/apify). B8 final : 0 partout.
-- Ameliorations pipeline : B1 UA navigateur+headers, seed_raw.py (fiches manuelles pour sites Cloudflare), filet SEO deterministe dans export_tools, B2 --force.
+- Ameliorations pipeline : B1 UA navigateur+headers, seed_raw.py (sites Cloudflare), filet SEO deterministe dans export_tools, B2 --force.
+- B6 v1 code (b6_seo.py) : intros de categorie -> Supabase, branche dans run_nightly. 7 categories ecrites.
 
 ## Prochaines etapes (on priorise ensemble)
-- **Coder B6** (le redacteur SEO des pages de regroupement) — pas encore ecrit.
+- **Afficher les intros de categorie** (frontend) : B6 v1 ecrit categories.description_md mais /categories/[slug] ne l'affiche pas dans le corps (juste en meta). Petite modif frontend a faire.
+- **B6 phase 2** : prose pages X vs Y / alternatives (table de stockage + frontend).
 - Verifier staging.db (`PRAGMA integrity_check`) : lu comme malformed depuis le sandbox.
 - Ameliorer publish.py pour revalider aussi /best/<cat> et /categories/<cat> (eviter le cache perime apres reclassification).
 - Coder B6 (generation SEO contenus longs) et B8 (sante) — pas encore ecrits.
