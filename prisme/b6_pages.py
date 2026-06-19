@@ -49,7 +49,7 @@ MIN_INTRO = 200
 MAX_INTRO = 1600
 MAX_TITLE = 60
 MAX_SEO_DESC = 155
-PROMPT_VERSION = "b6pages-v1"
+PROMPT_VERSION = "b6pages-v2"
 
 
 # ---------------------------------------------------------------------------
@@ -128,6 +128,10 @@ SYSTEM_PROMPT = (
     "You write concise, factual SEO intro copy for a directory of AI and SaaS tools. "
     "Be specific and grounded ONLY in the data provided; never invent tools, prices, "
     "or features. No fluff, no thin content, neutral and helpful tone. "
+    "Interpret acronyms in their marketing / SaaS sense: 'GTM' means go-to-market "
+    "(NOT Google Tag Manager), 'CRM' means customer relationship management, 'SEO' "
+    "means search engine optimization, 'TTS' means text-to-speech. Do not introduce "
+    "any acronym or product name that is not present in the data provided. "
     "Return ONLY valid JSON with keys: intro_md (string, 2 short paragraphs, plain "
     "markdown, no headings), seo_title (string, max 60 chars), seo_description "
     "(string, max 155 chars). No extra keys, no markdown fences."
