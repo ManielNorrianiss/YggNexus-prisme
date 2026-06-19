@@ -1,4 +1,4 @@
-# Prompt de reprise — YggNexus (mis a jour 2026-06-19)
+# Prompt de reprise — YggNexus (mis a jour 2026-06-19, nuit)
 
 > Copie-colle ce bloc dans une nouvelle conversation Cowork (space Emperor, branche sur D:\Emperor) pour continuer le projet sans recharger tout le contexte.
 
@@ -19,13 +19,13 @@ Avant de repondre, lis tes memoires YggNexus : `yggnexus-repos`, `yggnexus-pipel
 - ETAPE 3 : tous les quality_score ramenes sur 10 (etaient sur 100). tools.json repare (corruption NUL). Verifie live.
 - B8 sante code (b8_sante.py) + branche dans run_nightly. A detecte puis on a repare 5 outils hors pipeline (make/copy-ai/midjourney/claude/apify). B8 final : 0 partout.
 - Ameliorations pipeline : B1 UA navigateur+headers, seed_raw.py (sites Cloudflare), filet SEO deterministe dans export_tools, B2 --force.
-- B6 v1 code (b6_seo.py) : intros de categorie -> Supabase, branche dans run_nightly. 7 categories ecrites.
+- B6 v1 (b6_seo.py) : ecrit categories.seo_intro_md (rendu en corps de page, verifie sur data-scraping) + meta. Petites categories sautees (garde-fou anti-mince). Branche run_nightly.
+
+- Nuit autonome (2026-06-19) : publish.py revalide aussi /best/<cat> et /categories/<cat> (+ index /categories ; lit toutes les categories Supabase pour couvrir les retraits). Nouveau dossier prisme/tests/ : 39 tests purs (score/10 + SEO export_tools, content_hash + anti-mince b6_seo, validation b4) -> 39/39 verts. A committer/pusher cote prisme (voir exports/nuit/2026-06-19.md). Residu : effacer prisme/publish.py.bak.
 
 ## Prochaines etapes (on priorise ensemble)
-- **Afficher les intros de categorie** (frontend) : B6 v1 ecrit categories.description_md mais /categories/[slug] ne l'affiche pas dans le corps (juste en meta). Petite modif frontend a faire.
 - **B6 phase 2** : prose pages X vs Y / alternatives (table de stockage + frontend).
 - Verifier staging.db (`PRAGMA integrity_check`) : lu comme malformed depuis le sandbox.
-- Ameliorer publish.py pour revalider aussi /best/<cat> et /categories/<cat> (eviter le cache perime apres reclassification).
 - Coder B6 (generation SEO contenus longs) et B8 (sante) — pas encore ecrits.
 - Grossir le catalogue (nouvelles sources, relancer B1->B5). Automatiser la chaine de nuit + recherche semantique.
 
