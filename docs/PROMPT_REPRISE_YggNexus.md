@@ -1,4 +1,4 @@
-# Prompt de reprise — YggNexus (mis a jour 2026-06-19, nuit)
+# Prompt de reprise — YggNexus (mis a jour 2026-06-19)
 
 > Copie-colle ce bloc dans une nouvelle conversation Cowork (space Emperor, branche sur D:\Emperor) pour continuer le projet sans recharger tout le contexte.
 
@@ -6,34 +6,33 @@
 
 Reprends le projet YggNexus.com avec moi.
 
-Avant de repondre, lis tes memoires YggNexus : `yggnexus-repos`, `yggnexus-pipeline-execution`, `yggnexus-etat`, et `montage-windows-tronque-fichiers`. Elles contiennent l'architecture, l'etat a jour et les pieges — pas besoin que je reexplique. (Elles sont dans D:\Emperor\memory.)
+Avant de repondre, lis tes memoires YggNexus : `yggnexus-repos`, `yggnexus-pipeline-execution`, `yggnexus-etat`, et `montage-windows-tronque-fichiers` (dans D:\Emperor\memory). Architecture, etat a jour, pieges — pas besoin que je reexplique.
 
 ## Etat actuel (2026-06-19)
-- Catalogue : 22 outils publies sur https://www.yggnexus.com (fiche enrichie, embedding 768d, categories, alternatives B5).
-- Taxonomie : 7 categories (ai-writing, automation, ai-images, ai-audio, data-scraping, productivity, no-code).
+- Catalogue : 40 outils publies sur https://www.yggnexus.com. Taxonomie 7 categories.
+- B6 phase 2 (prose compare + alternatives) : LIVE.
+- Recherche : LIVE. /search + barre dans le header. (1) plein-texte (searchTools ILIKE, wildcard * dans .or). (2) semantique : table search_embeddings vector(1024) + RPC match_tools ; embeddings via Jina v3 (retrieval.passage/query, multilingue) ; script local prisme/embed_search_jina.py ; /search embed la requete via Jina + repli texte. JINA_API_KEY dans prisme/.env ET en var Vercel.
 - Deux repos : pipeline = D:\Emperor\YggNexus (GitHub YggNexus-prisme) ; frontend = D:\Emperor\YggNexus\frontend (GitHub YggNexus, Vercel).
-- Le pipeline B1->B7 tourne sur ma machine Windows (Supabase et PyPI bloques dans le sandbox Cowork) : je lance les commandes, tu guides UNE etape a la fois avec des boutons.
+- Le pipeline tourne sur ma machine Windows (Supabase/PyPI bloques dans le sandbox Cowork) : je lance, tu guides UNE etape a la fois avec des boutons.
 
-## Fait la derniere fois
-- ETAPE 2 : categorie ai-audio creee ; elevenlabs -> ai-audio ; n8n sorti de data-scraping.
-- ETAPE 3 : tous les quality_score ramenes sur 10 (etaient sur 100). tools.json repare (corruption NUL). Verifie live.
-- B8 sante code (b8_sante.py) + branche dans run_nightly. A detecte puis on a repare 5 outils hors pipeline (make/copy-ai/midjourney/claude/apify). B8 final : 0 partout.
-- Ameliorations pipeline : B1 UA navigateur+headers, seed_raw.py (sites Cloudflare), filet SEO deterministe dans export_tools, B2 --force.
-- B6 v1 (b6_seo.py) : ecrit categories.seo_intro_md (rendu en corps de page, verifie sur data-scraping) + meta. Petites categories sautees (garde-fou anti-mince). Branche run_nightly.
+## Pieges confirmes (importants)
+- Supabase Edge gte-small (Supabase.ai.Session) plante en WORKER_RESOURCE_LIMIT meme pour 1 embedding -> charger un modele dans l'Edge worker = non viable sur ce plan. On embed via API distante (Jina).
+- Deux repos git imbriques : toujours verifier le prompt (...\prisme> vs ...\frontend>) AVANT git add. Source de plusieurs "pathspec did not match" / "Everything up-to-date".
+- b1_collecte insere en status=draft ; la run de nuit republie -> verifier l'etat reel avec prisme/etat_sources.py.
 
-- Nuit autonome (2026-06-19) : publish.py revalide aussi /best/<cat> et /categories/<cat> (+ index /categories ; lit toutes les categories Supabase pour couvrir les retraits). Nouveau dossier prisme/tests/ : 39 tests purs (score/10 + SEO export_tools, content_hash + anti-mince b6_seo, validation b4) -> 39/39 verts. A committer/pusher cote prisme (voir exports/nuit/2026-06-19.md). Residu : effacer prisme/publish.py.bak.
-
-- B6 phase 2 (2026-06-19, autonome) : prose compare/alternatives livree EN CODE (table page_seo, batch b6_pages.py, etape run_nightly `pages`, frontend resilient, 16 tests -> 55/55, tsc OK). Reste a activer : migration_page_seo.sql + python b6_pages.py + push prisme/frontend. Detail : exports/nuit/2026-06-19.md.
+## A finir / menage
+- Supprimer dans Supabase les Edge Functions semantic-search et reindex-tools (deployees mais inutiles, l'approche Edge a ete abandonnee).
+- del les fichiers obsoletes : prisme/embed_search_openai.py, database/migration_search_embeddings_openai.sql.
+- Recherche : seuil de similarite optionnel dans match_tools (renvoie toujours match_count resultats). Re-lancer embed_search_jina.py apres ajout d'outils.
 
 ## Prochaines etapes (on priorise ensemble)
-- **B6 phase 2** : CODE PRET. Reste a activer (migration page_seo + b6_pages.py + push). Voir exports/nuit/2026-06-19.md.
-- Verifier staging.db (`PRAGMA integrity_check`) : lu comme malformed depuis le sandbox.
-- Coder B6 (generation SEO contenus longs) et B8 (sante) — pas encore ecrits.
-- Grossir le catalogue (nouvelles sources, relancer B1->B5). Automatiser la chaine de nuit + recherche semantique.
+- Continuer a grossir le catalogue (nouvelles sources, B1->B5 + embed_search_jina.py).
+- Resserrer le prompt compare B6 (GTM=Go-To-Market) ; reclasser Runway hors ai-audio.
+- Brancher la barre de recherche/UX (autocomplete, seuil), analytics, etc.
 
 ## Facon de travailler
-Francais quebecois, ton humain, resultat avant le chemin, UNE etape a la fois avec des boutons (jamais de texte libre a remplir), zero jargon technique inutile, Underdark en touches legeres. Editer le code sous D:\ via le terminal bash (Edit/Write tronque). Verifier (JSON/tsc/import) avant de donner les commandes de push. Routine de fin d'etape : mettre a jour la memoire + produire un nouveau prompt de reprise.
+Francais quebecois, ton humain, resultat avant le chemin, UNE etape a la fois avec des boutons (jamais de texte libre a remplir), zero jargon inutile. Editer le code sous D:\ via le terminal bash (Edit/Write tronque). Verifier (JSON/tsc/py_compile/pglast) avant les commandes de push. Donner les commandes git a Josue (verrous .lock si commit depuis le sandbox). Fin d'etape : maj memoire + nouveau prompt de reprise.
 
-Confirme que tu as le contexte (via tes memoires), puis propose-moi la prochaine etape.
+Confirme que tu as le contexte, puis propose la prochaine etape.
 
 ---
