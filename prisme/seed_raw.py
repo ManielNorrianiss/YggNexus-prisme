@@ -224,6 +224,17 @@ FICHES = [
         "categories": ['productivity', 'no-code'],
         "primary_category": 'productivity',
     },
+    {
+        "slug": 'freepik',
+        "name": 'Freepik',
+        "vendor": 'Freepik Company',
+        "website_url": 'https://www.freepik.com',
+        "raw_title": 'Freepik - AI image generation and graphic resources',
+        "raw_meta_desc": 'Freepik offers AI image generation plus a huge library of stock photos, vectors, icons and templates.',
+        "raw_text": 'Freepik is a graphic resources platform that pairs a large library of stock photos, vectors, icons and templates with an AI suite. Its AI tools turn text prompts into images, upscale and retouch visuals, remove or replace backgrounds and generate video, helping designers and marketers create assets fast.',
+        "categories": ['ai-images'],
+        "primary_category": 'ai-images',
+    },
 ]
 
 

@@ -538,5 +538,111 @@
    "no-code"
   ],
   "primary_category": "productivity"
+ },
+ {
+  "slug": "heygen",
+  "name": "HeyGen",
+  "vendor": "HeyGen",
+  "website_url": "https://www.heygen.com",
+  "categories": [
+   "ai-audio",
+   "ai-images"
+  ],
+  "primary_category": "ai-audio"
+ },
+ {
+  "slug": "pika",
+  "name": "Pika",
+  "vendor": "Pika Labs",
+  "website_url": "https://pika.art",
+  "categories": [
+   "ai-audio",
+   "ai-images"
+  ],
+  "primary_category": "ai-audio"
+ },
+ {
+  "slug": "luma-dream-machine",
+  "name": "Luma Dream Machine",
+  "vendor": "Luma AI",
+  "website_url": "https://lumalabs.ai/dream-machine",
+  "categories": [
+   "ai-audio",
+   "ai-images"
+  ],
+  "primary_category": "ai-audio"
+ },
+ {
+  "slug": "freepik",
+  "name": "Freepik",
+  "vendor": "Freepik Company",
+  "website_url": "https://www.freepik.com",
+  "categories": [
+   "ai-images"
+  ],
+  "primary_category": "ai-images"
+ },
+ {
+  "slug": "sudowrite",
+  "name": "Sudowrite",
+  "vendor": "Sudowrite",
+  "website_url": "https://www.sudowrite.com",
+  "categories": [
+   "ai-writing"
+  ],
+  "primary_category": "ai-writing"
+ },
+ {
+  "slug": "otter-ai",
+  "name": "Otter.ai",
+  "vendor": "Otter.ai",
+  "website_url": "https://otter.ai",
+  "categories": [
+   "productivity",
+   "ai-audio"
+  ],
+  "primary_category": "productivity"
+ },
+ {
+  "slug": "fireflies-ai",
+  "name": "Fireflies.ai",
+  "vendor": "Fireflies.ai",
+  "website_url": "https://fireflies.ai",
+  "categories": [
+   "productivity",
+   "ai-audio"
+  ],
+  "primary_category": "productivity"
+ },
+ {
+  "slug": "framer",
+  "name": "Framer",
+  "vendor": "Framer",
+  "website_url": "https://www.framer.com",
+  "categories": [
+   "no-code"
+  ],
+  "primary_category": "no-code"
+ },
+ {
+  "slug": "gumloop",
+  "name": "Gumloop",
+  "vendor": "Gumloop",
+  "website_url": "https://www.gumloop.com",
+  "categories": [
+   "automation",
+   "no-code"
+  ],
+  "primary_category": "automation"
+ },
+ {
+  "slug": "firecrawl",
+  "name": "Firecrawl",
+  "vendor": "Firecrawl",
+  "website_url": "https://www.firecrawl.dev",
+  "categories": [
+   "data-scraping"
+  ],
+  "primary_category": "data-scraping"
  }
 ]

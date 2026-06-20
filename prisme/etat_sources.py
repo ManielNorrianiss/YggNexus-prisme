@@ -5,9 +5,8 @@ import json
 from collections import Counter
 import staging
 
-NOUVEAUX = ["gemini","microsoft-copilot","mistral","deepseek","gamma","runway",
-            "synthesia","lovable","murf","suno","descript","leonardo-ai",
-            "adobe-firefly","recraft","writesonic"]
+NOUVEAUX = ["heygen","pika","luma-dream-machine","freepik","sudowrite",
+            "otter-ai","fireflies-ai","framer","gumloop","firecrawl"]
 
 db = staging.connect()
 rows = {r[0]: r[1] for r in db.execute("SELECT slug, status FROM raw_tools").fetchall()}
