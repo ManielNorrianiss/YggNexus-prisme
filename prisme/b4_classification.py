@@ -204,6 +204,13 @@ PRIMARY_OVERRIDE = {
     "microsoft-copilot": "ai-writing", "perplexity": "ai-writing",
     # audio/podcast
     "podcastle": "ai-audio",
+    # --- Chantier B (reclassement force, 2026-06-20) ---
+    # NB slugs : verifier dans Supabase avant le run (cf. runbook). Si un slug
+    # reel differe (ex. "wellsaid-labs"), corriger la cle ci-dessous.
+    "wellsaid": "ai-audio",
+    "canva": "ai-images",
+    "freepik": "ai-images",
+    # "tana": deja force vers "productivity" plus haut.
 }
 
 

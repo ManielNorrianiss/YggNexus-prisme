@@ -1,0 +1,3365 @@
+{
+  "tools": {
+    "activepieces": {
+      "short_desc_fr": "Activepieces automatise les flux de travail entre applications et API.",
+      "description_md_fr": "Activepieces est une plateforme d'automatisation no-code open source qui connecte des applications et des API via des flux visuels. Elle prend en charge des étapes IA et des pièces personnalisées écrites en TypeScript, ce qui en fait une alternative flexible à Zapier pour créer des flux de travail automatisés.\n\nElle peut être hébergée sur vos propres serveurs ou utilisée dans le nuage, avec des plans gratuits et payants.",
+      "pros_jsonb_fr": [
+        "Open source",
+        "Prend en charge les étapes IA",
+        "Personnalisable avec TypeScript"
+      ],
+      "cons_jsonb_fr": [
+        "Soutien communautaire limité",
+        "Courbe d'apprentissage pour les pièces personnalisées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Activepieces est-il gratuit ?",
+          "a": "Oui, il offre des plans gratuits et payants."
+        },
+        {
+          "q": "Puis-je héberger Activepieces moi-même ?",
+          "a": "Oui, l'auto-hébergement est supporté."
+        },
+        {
+          "q": "Faut-il savoir coder ?",
+          "a": "Non pour les flux de base, mais TypeScript est requis pour les pièces personnalisées."
+        }
+      ],
+      "seo_title_fr": "Activepieces - Automatisation no-code open source",
+      "seo_description_fr": "Automatisez vos flux entre applications et API avec Activepieces, une plateforme no-code open source."
+    },
+    "adobe-firefly": {
+      "short_desc_fr": "Adobe Firefly pour la création de contenu par IA dans Creative Cloud.",
+      "description_md_fr": "Adobe Firefly est un outil d'IA générative qui aide les créatifs à générer des images, des effets de texte, des vecteurs et des vidéos à partir de descriptions textuelles. Entraîné sur du contenu sous licence et du domaine public, il s'intègre parfaitement à Photoshop, Illustrator et Express via Remplissage génératif et d'autres fonctionnalités connexes.",
+      "pros_jsonb_fr": [
+        "S'intègre à Adobe Creative Cloud",
+        "Génère des visuels et éléments de design de haute qualité",
+        "Entraîné sur du contenu sécurisé et adapté à un usage commercial"
+      ],
+      "cons_jsonb_fr": [
+        "Limité à l'écosystème Adobe",
+        "Un abonnement peut être nécessaire pour un accès complet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Firefly est-il gratuit ?",
+          "a": "Firefly fait partie de la suite payante Adobe Creative Cloud."
+        },
+        {
+          "q": "Puis-je utiliser Firefly en dehors de Photoshop et Illustrator ?",
+          "a": "Actuellement, il est intégré uniquement à ces applications."
+        },
+        {
+          "q": "Quels types de contenu puis-je générer avec Firefly ?",
+          "a": "Des images, des effets de texte, des vecteurs et des vidéos à partir de descriptions."
+        }
+      ],
+      "seo_title_fr": "Adobe Firefly - IA pour les créatifs",
+      "seo_description_fr": "Générez images, effets de texte et vidéos avec les outils IA Adobe Firefly dans Creative Cloud."
+    },
+    "adobe-podcast": {
+      "short_desc_fr": "Enregistrement et amélioration audio par IA pour les baladodiffusions.",
+      "description_md_fr": "Adobe Podcast est une suite d'outils IA conçue pour les créateurs et podcasteurs. Elle offre un enregistrement multipiste dans le navigateur, une amélioration de la parole pour éliminer le bruit et l'écho, ainsi qu'une édition basée sur la transcription pour simplifier la post-production.\n\nIdéal pour quiconque souhaite produire facilement du contenu audio parlé de haute qualité.",
+      "pros_jsonb_fr": [
+        "Amélioration de la parole par IA",
+        "Enregistrement multipiste dans le navigateur",
+        "Édition basée sur la transcription"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Nécessite une connexion internet",
+        "Courbe d'apprentissage pour les fonctions avancées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Adobe Podcast est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit avec les fonctions de base."
+        },
+        {
+          "q": "Fonctionne-t-il hors ligne ?",
+          "a": "Non, une connexion internet est nécessaire."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets commerciaux ?",
+          "a": "Oui, mais consultez les conditions d'utilisation pour les détails."
+        }
+      ],
+      "seo_title_fr": "Adobe Podcast - Outils audio IA",
+      "seo_description_fr": "Enregistrement et amélioration audio par IA pour baladodiffusions. Multipiste, suppression du bruit."
+    },
+    "airtable": {
+      "short_desc_fr": "Airtable pour la collaboration en temps réel et l'automatisation des flux.",
+      "description_md_fr": "Airtable est une puissante plateforme no-code qui permet aux équipes de créer des flux IA, des applications et des agents prêts pour l'entreprise en quelques minutes. Centralisez vos données, automatisez les tâches et simplifiez vos processus sans avoir besoin de coder. Adoptée par plus de 500 000 équipes pour une collaboration fluide et des gains de productivité.",
+      "pros_jsonb_fr": [
+        "Aucun code requis",
+        "Collaboration en temps réel",
+        "Flux de travail propulsés par IA",
+        "Applications personnalisables",
+        "Solutions évolutives"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Plan gratuit limité",
+        "Complexe pour les débutants"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Airtable est-il gratuit ?",
+          "a": "Oui, avec un plan gratuit limité."
+        },
+        {
+          "q": "Faut-il des compétences en programmation ?",
+          "a": "Non, c'est une plateforme no-code."
+        },
+        {
+          "q": "Combien d'utilisateurs puis-je avoir ?",
+          "a": "Cela dépend du plan choisi."
+        }
+      ],
+      "seo_title_fr": "Airtable : Créez des flux IA",
+      "seo_description_fr": "Plus de 500 000 équipes utilisent Airtable pour collaborer et automatiser leurs flux. Commencez aujourd'hui !"
+    },
+    "apify": {
+      "short_desc_fr": "Apify, la place de marché d'outils IA et de scraping web.",
+      "description_md_fr": "Apify propose une vaste collection d'outils fiables pour automatiser les processus d'affaires, notamment l'extraction de données web en temps réel, le suivi de la concurrence, la génération de prospects et l'intégration d'applications. Avec plus de 41 799 outils disponibles, les utilisateurs peuvent trouver et déployer des acteurs pour des tâches précises comme le scraping TikTok ou l'extraction de données Google Maps.",
+      "pros_jsonb_fr": [
+        "Large sélection d'outils fiables",
+        "Capacités d'extraction de données web en temps réel",
+        "Intégration avec diverses applications et agents IA"
+      ],
+      "cons_jsonb_fr": [
+        "Peut nécessiter des connaissances techniques pour la configuration",
+        "Tarification variable selon l'outil",
+        "Certains outils ont des limites d'utilisation"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Combien d'outils sont disponibles ?",
+          "a": "Plus de 41 799 outils."
+        },
+        {
+          "q": "Puis-je utiliser un outil sans payer ?",
+          "a": "Beaucoup nécessitent un abonnement ou un paiement."
+        },
+        {
+          "q": "Des connaissances techniques sont-elles requises ?",
+          "a": "Certains outils peuvent nécessiter une expertise en configuration."
+        }
+      ],
+      "seo_title_fr": "Apify : Place de marché d'outils IA",
+      "seo_description_fr": "Automatisez votre entreprise avec extraction web, suivi concurrentiel et intégrations. Plus de 41 799 outils."
+    },
+    "bardeen": {
+      "short_desc_fr": "Outil de scraping web et de qualification de prospects par IA.",
+      "description_md_fr": "Bardeen est un outil SaaS qui trouve des prospects par scraping web, les qualifie avec l'IA et enrichit les coordonnées pour la prospection. Utilisez les scrapers intégrés ou créez les vôtres pour trouver des clients potentiels sur le web.",
+      "pros_jsonb_fr": [
+        "Qualification de prospects par IA",
+        "Modèles de scraping web personnalisables",
+        "Fonctions d'enrichissement des contacts"
+      ],
+      "cons_jsonb_fr": [
+        "Configuration technique requise",
+        "Tarification potentiellement élevée pour les petites entreprises",
+        "Plan gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Bardeen est-il un service freemium ?",
+          "a": "Oui, il offre un plan gratuit limité."
+        },
+        {
+          "q": "Puis-je utiliser mes propres scrapers avec Bardeen ?",
+          "a": "Oui, vous pouvez en créer ou utiliser des scrapers premium."
+        },
+        {
+          "q": "Comment fonctionne la qualification par IA ?",
+          "a": "Décrivez vos prospects idéaux et l'IA les priorise pour vous."
+        }
+      ],
+      "seo_title_fr": "Bardeen : Sourcing et qualification de prospects IA",
+      "seo_description_fr": "Trouvez, qualifiez et rejoignez vos clients potentiels avec les outils de scraping et d'IA de Bardeen."
+    },
+    "bolt-new": {
+      "short_desc_fr": "Outil propulsé par IA pour créer des sites web et des applications.",
+      "description_md_fr": "Bolt.new est un constructeur IA qui vous permet de créer des applications web et des sites impressionnants en discutant simplement avec l'IA. Il prend en charge divers systèmes de design comme Material UI, Chakra UI et d'autres. Bolt fait le gros du travail pour que vous vous concentriez sur votre vision sans vous soucier des erreurs de code.",
+      "pros_jsonb_fr": [
+        "Propulsé par IA",
+        "Prend en charge plusieurs systèmes de design",
+        "Achemine automatiquement vers le meilleur modèle"
+      ],
+      "cons_jsonb_fr": [
+        "Offre de domaine gratuit limitée",
+        "Peut nécessiter des connaissances techniques pour les usages avancés",
+        "Tarification non explicitement indiquée sur le site"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Bolt.new est-il gratuit ?",
+          "a": "Oui, avec un plan gratuit limité."
+        },
+        {
+          "q": "Prend-il en charge les importations Figma ?",
+          "a": "Oui, vous pouvez importer depuis Figma."
+        },
+        {
+          "q": "Quels systèmes de design sont supportés ?",
+          "a": "Les systèmes supportés incluent Material UI, Chakra UI et d'autres."
+        }
+      ],
+      "seo_title_fr": "Bolt.new : Constructeur IA pour sites et apps",
+      "seo_description_fr": "Créez des applications web et sites impressionnants avec l'IA de Bolt. Essayez maintenant !"
+    },
+    "bright-data": {
+      "short_desc_fr": "Bright Data propose des proxies et outils de scraping web pour l'extraction de données.",
+      "description_md_fr": "Bright Data est une plateforme tout-en-un offrant des proxies, des scrapers web, des jeux de données et des outils IA. Elle permet aux utilisateurs d'accéder, d'extraire et d'interagir avec des sites publics, en fournissant des données structurées, fiables, en temps réel ou historiques à l'échelle du pétaoctet. Le Scraper Studio facilite la création de pipelines de données depuis n'importe quel site.",
+      "pros_jsonb_fr": [
+        "Suite complète d'outils de scraping web",
+        "Grande place de marché de jeux de données",
+        "Capacités de scraping propulsées par IA"
+      ],
+      "cons_jsonb_fr": [
+        "Coût élevé pour les fonctions étendues",
+        "Période d'essai gratuit limitée",
+        "Courbe d'apprentissage prononcée pour les débutants"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Y a-t-il un plan gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Combien de proxies sont disponibles ?",
+          "a": "Plus de 400 millions provenant de 195 pays."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets personnels ?",
+          "a": "Oui, mais l'usage commercial peut nécessiter des plans payants."
+        }
+      ],
+      "seo_title_fr": "Bright Data - Scraping web et proxies",
+      "seo_description_fr": "Accédez et extrayez des données de sites publics avec les outils de scraping complets de Bright Data."
+    },
+    "browse-ai": {
+      "short_desc_fr": "Scraper web et outil de surveillance no-code pour n'importe quel site.",
+      "description_md_fr": "Browse AI est la plateforme no-code numéro 1 pour extraire et surveiller des données depuis des sites web. Créez facilement des scrapers IA par pointer-cliquer, ou utilisez des fonctions intégrées comme la capture de contenu dynamique et la gestion des proxies pour extraire des données complexes. Surveillez les changements et exportez vos données vers des API ou des intégrations avec plus de 7 000 outils.",
+      "pros_jsonb_fr": [
+        "Aucune programmation requise",
+        "Prise en charge du contenu dynamique",
+        "Contournement de bots intégré"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Abonnement mensuel requis"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Est-ce gratuit ?",
+          "a": "Payant, à partir de 29 $/mois."
+        },
+        {
+          "q": "Fonctionne-t-il avec du contenu dynamique ?",
+          "a": "Oui, prend en charge les pages dynamiques et les requêtes AJAX."
+        },
+        {
+          "q": "Puis-je l'intégrer à d'autres outils ?",
+          "a": "Oui, s'intègre avec plus de 7 000 applications via API ou webhooks."
+        }
+      ],
+      "seo_title_fr": "Scraper web no-code - Browse AI",
+      "seo_description_fr": "Extrayez et surveillez des données de n'importe quel site sans coder. Créez des flux automatisés facilement."
+    },
+    "bubble": {
+      "short_desc_fr": "Créez des applications web et mobiles avec l'outil no-code IA Bubble.",
+      "description_md_fr": "Bubble est une plateforme no-code qui permet aux utilisateurs de créer des applications web et mobiles grâce à l'automatisation pilotée par IA. Elle offre des outils de conception visuelle, la gestion de bases de données, la construction de logique et des règles de confidentialité pour un développement rapide, de l'idée au lancement.",
+      "pros_jsonb_fr": [
+        "Automatisation pilotée par IA",
+        "Outils de conception visuelle",
+        "Construction de bases de données et de logique"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Coûts plus élevés pour les fonctions avancées",
+        "Courbe d'apprentissage pour les nouveaux utilisateurs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Bubble est-il gratuit ?",
+          "a": "Bubble offre un modèle freemium avec des fonctions de base disponibles gratuitement."
+        },
+        {
+          "q": "Puis-je utiliser Bubble sans coder ?",
+          "a": "Oui, Bubble est conçu pour le développement no-code avec l'IA et des outils visuels."
+        },
+        {
+          "q": "Bubble prend-il en charge les applications mobiles ?",
+          "a": "Oui, Bubble supporte le développement d'applications web et mobiles."
+        }
+      ],
+      "seo_title_fr": "Bubble : Constructeur d'applications no-code IA",
+      "seo_description_fr": "Créez des applications rapidement avec la plateforme no-code IA de Bubble."
+    },
+    "canva": {
+      "short_desc_fr": "Canva est un outil de conception graphique convivial.",
+      "description_md_fr": "Canva est une plateforme de conception graphique en ligne qui permet aux utilisateurs de créer des publications pour réseaux sociaux, des présentations, des affiches, des vidéos et bien plus encore grâce à des outils IA comme Magic Eraser et Magic Write. Elle propose des modèles, des animations et des kits de marque pour des designs professionnels.\n\n*Présentations IA*\n*Vidéo sociale*\n*Boutique d'impression*\n*Outils IA 2.0*\n*Calques magiques*\n*Kit de marque*\n*Animations*",
+      "pros_jsonb_fr": [
+        "Interface conviviale",
+        "Large gamme de modèles et d'outils",
+        "Fonctions IA pour l'automatisation"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation avancée limitées",
+        "Certaines fonctions premium nécessitent un abonnement",
+        "Peut être lent avec les grands projets"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Canva est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit avec les fonctions de base."
+        },
+        {
+          "q": "Canva propose-t-il des modèles ?",
+          "a": "Oui, il fournit des milliers de modèles prêts à l'emploi pour divers besoins."
+        },
+        {
+          "q": "Puis-je exporter mes designs depuis Canva ?",
+          "a": "Oui, vous pouvez télécharger ou partager vos designs en plusieurs formats."
+        }
+      ],
+      "seo_title_fr": "Canva : Outil de conception graphique",
+      "seo_description_fr": "Créez publications, présentations et plus avec l'outil de conception graphique gratuit Canva."
+    },
+    "capcut": {
+      "short_desc_fr": "Éditeur vidéo propulsé par IA pour créer du contenu sur les réseaux sociaux.",
+      "description_md_fr": "CapCut est un outil de montage vidéo piloté par IA qui simplifie la création de vidéos attrayantes pour des plateformes comme YouTube et Instagram. Il offre des modèles intelligents, la synthèse vocale et des outils IA avancés pour générer des visuels et des vidéos à partir de texte ou d'images.",
+      "pros_jsonb_fr": [
+        "Fonctions propulsées par IA",
+        "Version en ligne gratuite disponible",
+        "Création vidéo simplifiée"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctions premium limitées",
+        "Publicités dans l'application mobile",
+        "Abonnement requis pour un accès complet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "CapCut est-il gratuit ?",
+          "a": "Oui, la version de base est gratuite."
+        },
+        {
+          "q": "Dispose-t-il d'une application mobile ?",
+          "a": "Oui, disponible sur iOS et Android."
+        },
+        {
+          "q": "Puis-je l'utiliser à des fins commerciales ?",
+          "a": "Oui, mais certaines fonctions nécessitent un abonnement."
+        }
+      ],
+      "seo_title_fr": "CapCut - Éditeur vidéo IA",
+      "seo_description_fr": "Éditeur vidéo IA pour créer du contenu sur les réseaux sociaux. Essai gratuit disponible."
+    },
+    "claude": {
+      "short_desc_fr": "Claude par Anthropic pour résoudre des problèmes complexes.",
+      "description_md_fr": "Claude est un assistant IA conçu pour relever des défis complexes, analyser des données, écrire du code et résoudre des problèmes difficiles. Il agit comme un partenaire de réflexion pour vous aider dans vos tâches les plus ambitieuses et complexes.\n\nUtilisez Claude pour développer des voix uniques, rédiger du contenu, analyser des données ou générer des idées.",
+      "pros_jsonb_fr": [
+        "Polyvalent pour diverses tâches de résolution de problèmes",
+        "Interface conviviale et conversationnelle",
+        "Accède à des outils externes pour de meilleures performances"
+      ],
+      "cons_jsonb_fr": [
+        "Limité par les capacités actuelles de l'IA",
+        "Peut nécessiter du contexte supplémentaire pour les tâches complexes",
+        "Modèle de tarification non explicitement mentionné"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Claude peut-il aider à rédiger du contenu ?",
+          "a": "Oui, il peut aider à développer des voix uniques et rédiger du contenu."
+        },
+        {
+          "q": "L'utilisation de Claude est-elle payante ?",
+          "a": "Les détails de tarification ne sont pas disponibles publiquement."
+        },
+        {
+          "q": "Comment Claude accède-t-il aux outils externes ?",
+          "a": "Il utilise Google Drive, la recherche web, etc., selon les besoins."
+        }
+      ],
+      "seo_title_fr": "Claude IA par Anthropic",
+      "seo_description_fr": "Relevez vos défis complexes avec Claude, l'assistant IA d'Anthropic pour les esprits curieux."
+    },
+    "clickup": {
+      "short_desc_fr": "Plateforme de productivité tout-en-un avec IA et automatisation.",
+      "description_md_fr": "ClickUp est un outil de productivité tout-en-un qui combine la gestion des tâches, la collaboration sur des documents, la définition d'objectifs et la communication dans une seule application. Il exploite des agents IA et des flux de travail pour améliorer l'efficacité et automatiser les tâches. Les utilisateurs peuvent personnaliser leur espace de travail et accéder à des fonctions comme les projets, le chat, le cerveau (IA), le suivi du temps, le calendrier, les docs, les tableaux blancs, les sprints et les automatisations.",
+      "pros_jsonb_fr": [
+        "Suite complète d'outils de productivité",
+        "Intègre des agents IA pour l'automatisation",
+        "Espace de travail personnalisable avec de multiples fonctions"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage due à l'étendue des fonctionnalités",
+        "Options du plan gratuit limitées",
+        "Certaines fonctions avancées nécessitent des plans payants"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "ClickUp est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit à vie avec des fonctions limitées."
+        },
+        {
+          "q": "ClickUp dispose-t-il de capacités IA ?",
+          "a": "Oui, il intègre des agents IA et des flux de travail pour automatiser les tâches."
+        },
+        {
+          "q": "Puis-je essayer ClickUp avant de m'engager ?",
+          "a": "Oui, vous pouvez vous inscrire à l'essai gratuit ou utiliser le plan gratuit à vie."
+        }
+      ],
+      "seo_title_fr": "ClickUp - Application de productivité tout-en-un",
+      "seo_description_fr": "Maximisez votre productivité avec la suite d'outils et les agents IA de ClickUp. Gratuit à vie."
+    },
+    "clipdrop": {
+      "short_desc_fr": "Outil de retouche d'image par IA de Stability AI.",
+      "description_md_fr": "Clipdrop est une puissante suite d'outils IA pour la retouche et la génération d'images, incluant la suppression d'arrière-plan, le rééclairage, la mise à l'échelle et la conversion texte-en-image via Stable Diffusion. Disponible en application web, API et plugins, il simplifie les processus de design et de marketing avec des retouches visuelles rapides et efficaces.",
+      "pros_jsonb_fr": [
+        "Fonctions propulsées par IA",
+        "Options d'édition polyvalentes",
+        "Rapide et facile à utiliser"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "L'accès à l'API est payant",
+        "La prise en charge des plugins peut varier"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Clipdrop est-il gratuit ?",
+          "a": "Oui, mais avec des fonctions limitées."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets commerciaux ?",
+          "a": "Oui, mais consultez les conditions d'utilisation et la tarification."
+        },
+        {
+          "q": "Fonctionne-t-il sur les appareils mobiles ?",
+          "a": "Actuellement disponible uniquement en application web."
+        }
+      ],
+      "seo_title_fr": "Clipdrop - Outil de retouche d'image IA",
+      "seo_description_fr": "Retouche d'image par IA : suppression d'arrière-plan, rééclairage et mise à l'échelle. Essayez Clipdrop !"
+    },
+    "coda": {
+      "short_desc_fr": "Coda est un espace de travail collaboratif tout-en-un.",
+      "description_md_fr": "Coda intègre la flexibilité des documents, la structure des feuilles de calcul, la puissance des applications et l'intelligence de l'IA. Il rassemble les équipes et les outils pour une journée de travail mieux organisée, remplaçant plusieurs applications par une seule plateforme fluide.",
+      "pros_jsonb_fr": [
+        "Interface unifiée pour documents, feuilles de calcul et applications",
+        "Fonctions de collaboration en temps réel",
+        "Analyses et automatisation pilotées par IA"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée pour les nouveaux utilisateurs",
+        "Options du plan gratuit limitées",
+        "Coût plus élevé comparé à certaines alternatives"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Coda est-il gratuit ?",
+          "a": "Oui, avec des fonctions limitées."
+        },
+        {
+          "q": "Puis-je utiliser Coda sur mobile ?",
+          "a": "Oui, disponible sur iOS et Android."
+        },
+        {
+          "q": "Coda dispose-t-il de capacités IA ?",
+          "a": "Oui, il offre des analyses et une automatisation pilotées par IA."
+        }
+      ],
+      "seo_title_fr": "Coda : Espace de travail collaboratif tout-en-un",
+      "seo_description_fr": "Plateforme unifiée combinant docs, feuilles de calcul, applications et IA pour un travail d'équipe efficace."
+    },
+    "consensus": {
+      "short_desc_fr": "Moteur de recherche académique alimenté par l'IA pour explorer des articles scientifiques.",
+      "description_md_fr": "Consensus est un outil de recherche académique propulsé par l'IA qui fournit des conclusions fondées sur des preuves, tirées directement de la littérature scientifique révisée par des pairs. Il met en évidence les résultats clés avec des citations et un indicateur de consensus, garantissant des réponses fiables pour les chercheurs, les étudiants, les cliniciens et les professionnels.\n\nPlutôt que de retourner de simples liens, Consensus analyse des millions d'articles pour faire remonter des insights appuyés par des données probantes.",
+      "pros_jsonb_fr": [
+        "Conclusions fondées sur des preuves",
+        "Citations fournies avec chaque réponse",
+        "Indicateur de consensus qui mesure le niveau d'accord"
+      ],
+      "cons_jsonb_fr": [
+        "Limité au contenu académique",
+        "Accès complet possiblement réservé aux abonnés",
+        "Les résultats reposent sur l'interprétation de l'IA"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Consensus est-il gratuit ?",
+          "a": "Il offre un essai gratuit, mais certaines fonctionnalités peuvent être limitées."
+        },
+        {
+          "q": "Comment ça fonctionne ?",
+          "a": "Consensus analyse des millions d'articles et fait remonter des conclusions appuyées par des données probantes."
+        },
+        {
+          "q": "À qui s'adresse-t-il ?",
+          "a": "Aux chercheurs, étudiants, cliniciens et professionnels qui ont besoin de réponses fiables."
+        }
+      ],
+      "seo_title_fr": "Moteur de recherche académique IA – Consensus",
+      "seo_description_fr": "Trouvez des insights issus de la recherche révisée par des pairs grâce au moteur de recherche académique IA de Consensus."
+    },
+    "copy-ai": {
+      "short_desc_fr": "Automatisez vos tâches de mise en marché avec la plateforme IA de Copy.ai.",
+      "description_md_fr": "Préparez votre entreprise pour l'avenir avec la première plateforme GTM IA de Copy.ai. Automatisez des centaines de tâches répétitives et faites croître vos résultats en unifiant vos données, en connectant vos équipes et en éliminant les processus superflus. Codifiez les meilleures pratiques et propulsez chaque cas d'usage avec une solution unique, native à l'IA.",
+      "pros_jsonb_fr": [
+        "Solution IA unifiée pour tous les cas d'usage GTM",
+        "Automatise les tâches fastidieuses et répétitives",
+        "Favorise la montée en charge des équipes"
+      ],
+      "cons_jsonb_fr": [
+        "Coût de configuration initial élevé",
+        "Courbe d'apprentissage prononcée",
+        "Options limitées en version gratuite"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Copy.ai est-il en mode freemium ou payant ?",
+          "a": "Payant, avec un essai gratuit limité."
+        },
+        {
+          "q": "Faut-il des compétences techniques ?",
+          "a": "Des connaissances techniques modérées sont nécessaires pour la configuration."
+        },
+        {
+          "q": "Puis-je l'essayer avant d'acheter ?",
+          "a": "Oui, inscrivez-vous à l'essai gratuit."
+        }
+      ],
+      "seo_title_fr": "Plateforme GTM IA | Copy.ai",
+      "seo_description_fr": "Préparez votre entreprise pour l'avenir avec la plateforme GTM IA de Copy.ai. Automatisez vos tâches et faites croître vos résultats."
+    },
+    "cursor": {
+      "short_desc_fr": "Agent de codage IA pour développer des logiciels ambitieux.",
+      "description_md_fr": "Cursor est un assistant de codage IA conçu pour améliorer la productivité en développement logiciel. Il propose une interface de bureau et une interface CLI, et aide à des tâches comme la génération de code, la gestion de projet et le pilotage des priorités. Idéal pour les développeurs qui souhaitent optimiser leur flux de travail.",
+      "pros_jsonb_fr": [
+        "Améliore la productivité des développeurs",
+        "Prise en charge de plusieurs interfaces (bureau et CLI)",
+        "Facilite la génération de code et la gestion de projet"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Version gratuite limitée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Cursor convient-il aux débutants ?",
+          "a": "Cursor s'adresse davantage aux développeurs expérimentés en raison de sa complexité."
+        },
+        {
+          "q": "Puis-je essayer Cursor sans payer ?",
+          "a": "Oui, un essai gratuit est disponible."
+        },
+        {
+          "q": "Quelles plateformes Cursor supporte-t-il ?",
+          "a": "Actuellement macOS. Windows et Linux arrivent bientôt."
+        }
+      ],
+      "seo_title_fr": "Cursor : Agent de codage IA",
+      "seo_description_fr": "Boostez votre efficacité avec Cursor, l'agent de codage IA pour les projets logiciels ambitieux."
+    },
+    "d-id": {
+      "short_desc_fr": "Plateforme de création vidéo IA pour les humains numériques.",
+      "description_md_fr": "D-ID est une plateforme de création vidéo générée par l'IA qui permet aux organisations de produire du contenu de haute qualité en quelques minutes. Elle prend en charge les interactions multilingues et une intégration API fluide, facilitant la diffusion de messages à grande échelle sur différents canaux.\n\n* Rapidité et simplicité : personnalisez rapidement vos avatars et vidéos pour correspondre à votre identité de marque.\n* Support multilingue : créez du contenu dans plus de 120 langues pour toucher des audiences mondiales.",
+      "pros_jsonb_fr": [
+        "Rapidité et simplicité",
+        "Support multilingue",
+        "Intégration API fluide",
+        "Adaptable à votre marque",
+        "Rentable"
+      ],
+      "cons_jsonb_fr": [
+        "Version gratuite limitée",
+        "Configuration complexe pour les débutants",
+        "Documentation API perfectible"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "D-ID est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Combien de langues sont supportées ?",
+          "a": "Plus de 120 langues."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets commerciaux ?",
+          "a": "Oui, il convient aux entreprises."
+        }
+      ],
+      "seo_title_fr": "D-ID – Plateforme de création vidéo IA",
+      "seo_description_fr": "Créez rapidement des vidéos d'humains numériques avec D-ID. Support multilingue et intégration API fluide."
+    },
+    "deepseek": {
+      "short_desc_fr": "DeepSeek – Modèles IA avancés pour le traitement du langage naturel et le codage.",
+      "description_md_fr": "DeepSeek est un outil IA de pointe qui propose des modèles avancés comme DeepSeek-LLM et DeepSeek-Coder. Ces modèles sont conçus pour traiter des tâches complexes de traitement du langage naturel et de génération de code, offrant des performances de premier plan dans les deux domaines.\n\nDéveloppés par l'équipe DeepSeek, ces modèles s'appuient sur des cadres d'entraînement propriétaires et des ressources de calcul étendues.",
+      "pros_jsonb_fr": [
+        "Performances de premier plan",
+        "Disponibilité en version libre",
+        "Offre de modèles polyvalente"
+      ],
+      "cons_jsonb_fr": [
+        "Documentation publique limitée",
+        "Courbe d'apprentissage prononcée pour les nouveaux utilisateurs",
+        "Modèles à orientation commerciale"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "DeepSeek est-il gratuit ?",
+          "a": "DeepSeek propose un modèle freemium avec des fonctionnalités limitées. L'accès complet nécessite un abonnement payant."
+        },
+        {
+          "q": "Puis-je intégrer DeepSeek à mon projet ?",
+          "a": "Oui, DeepSeek offre un accès API pour l'intégration dans diverses applications."
+        },
+        {
+          "q": "Quels modèles DeepSeek propose-t-il ?",
+          "a": "DeepSeek propose des modèles LLM et Coder pour le traitement du langage naturel et la génération de code."
+        }
+      ],
+      "seo_title_fr": "DeepSeek – Modèles IA pour TNL et codage",
+      "seo_description_fr": "Explorez les modèles IA avancés de DeepSeek, dont LLM et Coder. Performances de pointe en langage naturel et en codage."
+    },
+    "descript": {
+      "short_desc_fr": "Outil de montage vidéo et audio propulsé par l'IA.",
+      "description_md_fr": "Descript est une plateforme IA pour créer et monter des vidéos et des balados. Elle permet aux utilisateurs d'enregistrer, de transcrire, de monter et de publier du contenu directement dans l'application. Grâce à des fonctionnalités comme la conception automatisée et la génération de scripts, elle simplifie le processus de création pour les individus comme pour les équipes.",
+      "pros_jsonb_fr": [
+        "Montage assisté par l'IA",
+        "Transcription intégrée",
+        "Interface conviviale"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Abonnement requis pour les fonctionnalités avancées",
+        "Courbe d'apprentissage pour les nouveaux utilisateurs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Descript est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je monter des vidéos sans compétences techniques ?",
+          "a": "Oui, les outils IA aident à simplifier le processus."
+        },
+        {
+          "q": "Prend-il en charge plusieurs langues ?",
+          "a": "Oui, il supporte plusieurs langues pour la transcription et le montage."
+        }
+      ],
+      "seo_title_fr": "Descript – Éditeur vidéo et balado IA",
+      "seo_description_fr": "Éditeur vidéo et balado propulsé par l'IA. Enregistrez, transcrivez, montez, publiez. Essai gratuit !"
+    },
+    "devin": {
+      "short_desc_fr": "Agent de codage IA pour accélérer le développement logiciel.",
+      "description_md_fr": "Devin est un assistant de codage IA conçu pour aider les développeurs à créer de meilleurs logiciels plus rapidement. Il automatise les tâches répétitives et les processus de refactorisation, permettant aux équipes de se concentrer sur l'innovation. Des agents cloud en parallèle assurent une gestion efficace des projets de grande envergure, réduisant considérablement le temps et les coûts d'ingénierie.",
+      "pros_jsonb_fr": [
+        "Automatise les tâches répétitives",
+        "Améliore l'efficacité en ingénierie",
+        "Réduit les coûts de développement"
+      ],
+      "cons_jsonb_fr": [
+        "Coût de configuration initial élevé",
+        "Peut nécessiter une formation importante",
+        "Support limité pour les projets complexes"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Devin convient-il aux petites équipes ?",
+          "a": "Oui, mais les bénéfices peuvent varier."
+        },
+        {
+          "q": "Devin peut-il gérer des projets complexes ?",
+          "a": "Il supporte la plupart des projets, mais peut nécessiter une personnalisation."
+        },
+        {
+          "q": "Faut-il des connaissances en codage pour utiliser Devin ?",
+          "a": "Une compréhension de base est utile ; Devin peut aider avec les tâches de codage."
+        }
+      ],
+      "seo_title_fr": "Devin – Agent de codage IA",
+      "seo_description_fr": "Ingénieur logiciel IA pour un développement plus rapide. Automatise la refactorisation et réduit les coûts."
+    },
+    "diffbot": {
+      "short_desc_fr": "Outil d'extraction et d'exploration de données web propulsé par l'IA.",
+      "description_md_fr": "Diffbot transforme le contenu web non structuré en données structurées grâce à l'IA, à la vision par ordinateur et à l'apprentissage machine. Extrayez des types de données incluant des organisations, des actualités et articles, des produits de vente au détail et des discussions, avec plus de 246 M d'entreprises et plus de 1,6 G d'articles dans son graphe de connaissances.",
+      "pros_jsonb_fr": [
+        "Propulsé par l'IA",
+        "Couverture de données étendue",
+        "Extraction automatisée",
+        "Accès API pour l'intégration",
+        "Version gratuite disponible"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Configuration complexe requise",
+        "Tarification variable selon le cas d'usage"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Diffbot est-il gratuit ?",
+          "a": "Oui, avec un niveau gratuit disponible."
+        },
+        {
+          "q": "Quelle est la couverture de données ?",
+          "a": "Plus de 246 M d'entreprises et plus de 1,6 G d'articles."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets commerciaux ?",
+          "a": "Oui, mais la tarification varie."
+        }
+      ],
+      "seo_title_fr": "Diffbot – Extraction de données web IA",
+      "seo_description_fr": "Transformez le contenu web en données structurées avec l'outil IA de Diffbot."
+    },
+    "elevenlabs": {
+      "short_desc_fr": "Générateur de voix IA pour la synthèse vocale.",
+      "description_md_fr": "ElevenLabs propose une plateforme de génération vocale IA avec plus de 5 000 voix dans plus de 70 langues. Idéale pour créer des synthèses vocales réalistes dans diverses applications comme le service client, la création de contenu et les livres audio. API et SDK sécurisés inclus.\n\nAccédez à une large gamme de voix expressives adaptées à différents cas d'usage comme la narration, la persuasion et les réseaux sociaux.",
+      "pros_jsonb_fr": [
+        "Vaste bibliothèque de voix",
+        "Support multilingue",
+        "Voix personnalisables"
+      ],
+      "cons_jsonb_fr": [
+        "Abonnement requis",
+        "Version gratuite limitée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Y a-t-il un essai gratuit ?",
+          "a": "Oui, créez un compte gratuit pour explorer la plateforme."
+        },
+        {
+          "q": "Puis-je utiliser ElevenLabs pour des projets commerciaux ?",
+          "a": "Oui, mais vérifiez les tarifs et les conditions pour les détails."
+        },
+        {
+          "q": "Combien de voix sont disponibles ?",
+          "a": "Plus de 5 000 voix dans plus de 70 langues."
+        }
+      ],
+      "seo_title_fr": "ElevenLabs – Générateur de voix IA",
+      "seo_description_fr": "Créez des synthèses vocales réalistes avec ElevenLabs. Plus de 5 000 voix pour vos applications."
+    },
+    "elicit": {
+      "short_desc_fr": "Outil IA pour rechercher et résumer des articles scientifiques.",
+      "description_md_fr": "Elicit est une plateforme IA qui aide les chercheurs à trouver, résumer et extraire des données de plus de 125 millions d'articles académiques. Elle prend en charge des réponses rapides ou des revues exhaustives, rendant la recherche plus efficace. Essayez-la dès maintenant pour découvrir comment Elicit peut améliorer votre approche fondée sur les preuves en science.\n\nLes fonctionnalités incluent des capacités de recherche avancées, la génération automatique de rapports et une interface conviviale.",
+      "pros_jsonb_fr": [
+        "Recherche IA avancée",
+        "Génération automatique de rapports",
+        "Grande base de données d'articles académiques",
+        "Interface conviviale",
+        "Prend en charge les réponses rapides et les revues exhaustives"
+      ],
+      "cons_jsonb_fr": [
+        "Version gratuite limitée",
+        "Connexion internet requise",
+        "Coût pour une utilisation intensive",
+        "Courbe d'apprentissage pour les nouveaux utilisateurs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Elicit est-il gratuit ?",
+          "a": "Oui, mais avec des limitations. Essayez la version gratuite maintenant."
+        },
+        {
+          "q": "Combien ça coûte ?",
+          "a": "La tarification varie selon l'utilisation et les fonctionnalités."
+        },
+        {
+          "q": "Fonctionne-t-il hors ligne ?",
+          "a": "Elicit nécessite une connexion internet pour fonctionner pleinement."
+        }
+      ],
+      "seo_title_fr": "IA pour la recherche scientifique – Elicit",
+      "seo_description_fr": "Recherchez, résumez et extrayez des données de plus de 125 millions d'articles. Essayez Elicit !"
+    },
+    "fathom": {
+      "short_desc_fr": "Outil de prise de notes de réunion IA pour équipes et individus.",
+      "description_md_fr": "Fathom AI Notetaker capture et résume automatiquement vos réunions, vous permettant de rester concentré sur la conversation. Avec des intégrations vers ChatGPT et Claude, Fathom s'assure que vous ne manquez jamais les moments critiques. Adapté aux équipes de toutes tailles, il fournit une source d'information partagée à travers toutes vos conversations avec vos clients.",
+      "pros_jsonb_fr": [
+        "Capture automatiquement les notes de réunion",
+        "S'intègre aux outils IA populaires",
+        "Option sans bot disponible"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Connexion internet requise pour les mises à jour en temps réel"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Fathom est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit."
+        },
+        {
+          "q": "Fathom fonctionne-t-il hors ligne ?",
+          "a": "Non, il nécessite une connexion internet."
+        },
+        {
+          "q": "Puis-je utiliser Fathom avec ChatGPT ?",
+          "a": "Oui, il s'intègre de façon transparente avec ChatGPT."
+        }
+      ],
+      "seo_title_fr": "Fathom AI – Prise de notes de réunion",
+      "seo_description_fr": "Prise de notes de réunion IA pour équipes et individus. Restez concentré grâce aux résumés automatiques."
+    },
+    "firecrawl": {
+      "short_desc_fr": "Outil d'exploration et d'extraction web pour les agents IA.",
+      "description_md_fr": "Firecrawl est une puissante API contextuelle conçue pour rechercher, extraire et interagir avec le web à grande échelle. Elle produit des sorties propres en Markdown ou en données structurées, ce qui la rend idéale pour la recherche et le développement en IA/ML. Avec des fonctionnalités comme l'index de recherche et le support libre, Firecrawl simplifie l'interaction avec le web pour les développeurs.",
+      "pros_jsonb_fr": [
+        "Extensible pour les projets de grande envergure",
+        "Produit des sorties propres en Markdown et JSON",
+        "Inclut un index de recherche pour l'IA/ML"
+      ],
+      "cons_jsonb_fr": [
+        "Version gratuite limitée",
+        "Courbe d'apprentissage prononcée pour les nouveaux utilisateurs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Firecrawl est-il libre ?",
+          "a": "Oui, il est en libre accès."
+        },
+        {
+          "q": "Qu'est-ce que l'index de recherche ?",
+          "a": "Un index spécialisé pour la recherche en IA/ML avec un rappel de pointe."
+        },
+        {
+          "q": "Firecrawl offre-t-il un essai gratuit ?",
+          "a": "Oui, un essai gratuit de 2 mois est disponible."
+        }
+      ],
+      "seo_title_fr": "Firecrawl – Outil d'exploration et d'extraction web",
+      "seo_description_fr": "Extrayez et interagissez avec le web à grande échelle grâce à Firecrawl. Idéal pour la recherche en IA/ML."
+    },
+    "fireflies-ai": {
+      "short_desc_fr": "Assistant IA pour les réunions et les courriels.",
+      "description_md_fr": "Fireflies.ai est un outil IA qui transcrit, résume et gère les tâches issues de réunions, courriels, clavardages et CRM. Il offre une grande précision, un support multilingue et des résumés complets pour optimiser votre flux de travail.",
+      "pros_jsonb_fr": [
+        "Grande précision de transcription",
+        "Support multilingue",
+        "Reconnaissance des intervenants",
+        "Détection automatique de la langue",
+        "Résumés IA complets"
+      ],
+      "cons_jsonb_fr": [
+        "Coût possiblement élevé pour les petites entreprises",
+        "Essai gratuit limité",
+        "Connexion internet requise"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Fireflies.ai est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Prend-il en charge plusieurs langues ?",
+          "a": "Oui, plus de 100 langues sont supportées."
+        },
+        {
+          "q": "Quelle est la précision de la transcription ?",
+          "a": "95 % de précision dans les réunions et les enregistrements."
+        }
+      ],
+      "seo_title_fr": "Assistant IA pour réunions et courriels",
+      "seo_description_fr": "Fireflies.ai transcrit, résume et gère vos tâches issues de réunions, courriels et CRM. Haute précision, multilingue."
+    },
+    "flutterflow": {
+      "short_desc_fr": "Constructeur d'applications visuel pour mobile et web.",
+      "description_md_fr": "FlutterFlow est une plateforme de développement visuel qui permet de créer rapidement des applications de haute qualité sur plusieurs plateformes. Utilisez des éléments d'interface préconçus et un éditeur de flux d'actions visuel pour développer une logique complexe sans coder. Testez, personnalisez et intégrez des services tiers de façon transparente pour lancer votre application plus rapidement.",
+      "pros_jsonb_fr": [
+        "Interface visuelle par glisser-déposer",
+        "Prototypage et développement rapides",
+        "Large éventail d'intégrations"
+      ],
+      "cons_jsonb_fr": [
+        "Personnalisation limitée pour les utilisateurs avancés",
+        "Courbe d'apprentissage pour les débutants",
+        "Coût pour les fonctionnalités premium"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "FlutterFlow est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit avec des limitations."
+        },
+        {
+          "q": "Puis-je utiliser FlutterFlow pour des projets commerciaux ?",
+          "a": "Oui, mais certains plans ont des restrictions."
+        },
+        {
+          "q": "FlutterFlow prend-il en charge les composants personnalisés ?",
+          "a": "Oui, vous pouvez créer et personnaliser vos propres composants."
+        }
+      ],
+      "seo_title_fr": "FlutterFlow – Créez de belles applications",
+      "seo_description_fr": "Constructeur d'applications visuel pour développer rapidement des apps mobiles et web de haute qualité."
+    },
+    "flux": {
+      "short_desc_fr": "Modèles FLUX pour l'intelligence visuelle et la conception générative.",
+      "description_md_fr": "FLUX de Black Forest Labs est un outil IA de pointe conçu pour générer des images et vidéos de haute qualité avec des contrôles précis. Il permet aux utilisateurs de créer du contenu cohérent et photoréaliste, de l'imagination à l'image, ce qui le rend idéal pour la visualisation de produits, le marketing et les projets créatifs.",
+      "pros_jsonb_fr": [
+        "Résultats très détaillés et réalistes",
+        "Contrôles de précision pour la retouche",
+        "Cohérence dans les éléments générés"
+      ],
+      "cons_jsonb_fr": [
+        "Options de modèles actuellement limitées",
+        "L'accès via API peut nécessiter des connaissances techniques",
+        "Coût associé aux fonctionnalités avancées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "FLUX est-il gratuit ?",
+          "a": "FLUX offre un essai gratuit, mais certaines fonctionnalités sont payantes."
+        },
+        {
+          "q": "Comment débuter avec FLUX ?",
+          "a": "Contactez l'équipe commerciale pour la configuration et l'accès API."
+        },
+        {
+          "q": "Quel type de contenu puis-je générer avec FLUX ?",
+          "a": "FLUX supporte les images, les vidéos et les modèles en coupe détaillés."
+        }
+      ],
+      "seo_title_fr": "Black Forest Labs – Modèles IA FLUX",
+      "seo_description_fr": "Générez des visuels de haute qualité avec FLUX. Essai gratuit disponible."
+    },
+    "framer": {
+      "short_desc_fr": "Framer est un créateur de sites web IA pour les professionnels.",
+      "description_md_fr": "Framer est un créateur de sites web IA sans code qui permet aux designers et développeurs de créer des sites professionnels facilement. Il propose un canevas de conception, une gestion de contenu CMS, l'optimisation pour les moteurs de recherche, des outils de collaboration et des capacités de publication rapide.\n\nConçu librement grâce à l'interface intuitive, gérez le contenu de votre site via un CMS intégré et optimisez votre référencement. Collaborez facilement avec les membres de votre équipe et publiez votre site rapidement.",
+      "pros_jsonb_fr": [
+        "Conception pilotée par l'IA",
+        "CMS intégré",
+        "Optimisation pour les moteurs de recherche",
+        "Outils de collaboration",
+        "Publication rapide"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Options de personnalisation limitées pour les utilisateurs avancés",
+        "Modèle de tarification par abonnement"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Framer est-il gratuit ?",
+          "a": "Framer offre un plan freemium avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je utiliser Framer sans compétences en codage ?",
+          "a": "Oui, il est conçu pour les non-développeurs et les designers."
+        },
+        {
+          "q": "Comment Framer optimise-t-il le référencement ?",
+          "a": "Il inclut des outils de référencement intégrés pour améliorer votre positionnement dans les moteurs de recherche."
+        }
+      ],
+      "seo_title_fr": "Framer : Créateur de sites web IA",
+      "seo_description_fr": "Créez des sites professionnels avec Framer, le créateur de sites IA sans code. Design, CMS, référencement et plus."
+    },
+    "frase": {
+      "short_desc_fr": "Frase automatise le référencement et la création de contenu.",
+      "description_md_fr": "Frase est une plateforme propulsée par l'IA qui analyse votre marché, génère du contenu optimisé et suit votre visibilité sur Google, ChatGPT et Perplexity. Elle fournit des pistes concrètes pour améliorer votre présence en ligne et progresser dans les résultats de recherche.\n\nSes fonctionnalités clés comprennent l'analyse de la concurrence, la création de briefs SEO avec optimisation GEO, et le suivi continu de la performance de vos contenus.",
+      "pros_jsonb_fr": [
+        "Génération de contenu automatisée",
+        "Outil d'analyse de la concurrence",
+        "Optimisation GEO pour la visibilité IA"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Fonctionnalités limitées sur le plan gratuit",
+        "Nécessite une connexion internet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Peut-on essayer Frase gratuitement?",
+          "a": "Oui, un essai gratuit de 7 jours est disponible."
+        },
+        {
+          "q": "Fonctionne-t-il avec tous les types de contenu?",
+          "a": "Conçu principalement pour le contenu SEO et marketing."
+        },
+        {
+          "q": "Peut-on utiliser Frase sans connexion internet?",
+          "a": "Non, une connexion internet stable est nécessaire pour fonctionner correctement."
+        }
+      ],
+      "seo_title_fr": "Frase - Automatisation SEO et contenu IA",
+      "seo_description_fr": "Automatisez votre SEO avec Frase. Analysez la concurrence, générez du contenu optimisé et suivez votre visibilité sur Google, ChatGPT et Perplexity."
+    },
+    "freepik": {
+      "short_desc_fr": "Freepik offre des images générées par IA et une vaste bibliothèque de ressources graphiques.",
+      "description_md_fr": "Freepik est une plateforme tout-en-un pour les designers et les spécialistes marketing qui combine une immense collection de photos, vecteurs, icônes et gabarits avec des outils IA avancés. Utilisez des invites textuelles pour générer des images, agrandir des visuels, supprimer des arrière-plans ou créer des vidéos rapidement et efficacement.\n\nLa plateforme couvre de nombreux usages, de la création de contenu aux campagnes marketing, offrant aux utilisateurs la flexibilité d'enrichir leurs projets avec des graphiques de haute qualité.",
+      "pros_jsonb_fr": [
+        "Grande bibliothèque de ressources graphiques",
+        "Outils IA pour la génération et l'édition d'images",
+        "Polyvalent pour les designers et les spécialistes marketing"
+      ],
+      "cons_jsonb_fr": [
+        "Abonnement requis pour l'accès complet",
+        "Contenu gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Freepik est-il gratuit?",
+          "a": "Freepik propose un modèle freemium avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je générer des images à partir d'une description textuelle?",
+          "a": "Oui, la suite IA permet de générer des images depuis des invites textuelles."
+        },
+        {
+          "q": "Quels types de fichiers puis-je télécharger?",
+          "a": "Vous pouvez télécharger des photos, vecteurs, icônes et gabarits dans divers formats."
+        }
+      ],
+      "seo_title_fr": "Freepik - Génération d'images IA et graphiques",
+      "seo_description_fr": "Freepik propose une vaste bibliothèque de ressources graphiques et des outils IA pour générer et retoucher des images."
+    },
+    "gamma": {
+      "short_desc_fr": "Outil IA pour créer des présentations, des documents et des sites web.",
+      "description_md_fr": "Gamma est une plateforme propulsée par l'IA qui transforme de simples invites ou plans en présentations, documents et pages web professionnels. Elle automatise la mise en page, le design et la gestion des images, tout en permettant une édition flexible via des blocs en carte. L'exportation est disponible en PDF et PowerPoint.",
+      "pros_jsonb_fr": [
+        "Création de contenu pilotée par IA",
+        "Interface d'édition flexible",
+        "Design et images automatisés",
+        "Export rapide vers divers formats",
+        "Adapté aux présentations et aux fiches synthèse"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Le système de blocs en carte demande une période d'adaptation",
+        "Fonctionnalités avancées payantes",
+        "Nécessite une connexion internet",
+        "Les limites de l'IA peuvent affecter la qualité du résultat"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Gamma est-il gratuit?",
+          "a": "Oui, mais certaines fonctionnalités sont payantes."
+        },
+        {
+          "q": "Comment gère-t-il les images?",
+          "a": "Il recherche et intègre automatiquement les images."
+        },
+        {
+          "q": "Puis-je exporter directement vers Google Slides?",
+          "a": "Pour l'instant, l'export est limité au PDF ou au PowerPoint."
+        }
+      ],
+      "seo_title_fr": "Gamma - IA pour présentations et documents",
+      "seo_description_fr": "Créez des présentations, documents et sites web professionnels avec Gamma. Création de contenu rapide et simple."
+    },
+    "gemini": {
+      "short_desc_fr": "Google Gemini pour la rédaction et la planification assistées par IA.",
+      "description_md_fr": "Google Gemini est un assistant IA conçu pour aider à la rédaction, la planification, le remue-méninges et bien plus encore. Il s'appuie sur l'IA générative pour fournir des solutions créatives et des pistes d'action.\n\nGemini peut aider à produire du contenu, suggérer des idées et optimiser vos projets. Ses capacités avancées en traitement du langage naturel en font un outil précieux pour les professionnels de nombreux secteurs.",
+      "pros_jsonb_fr": [
+        "Génère du contenu de haute qualité",
+        "Stimule la créativité et la productivité",
+        "Couvre de nombreux cas d'usage"
+      ],
+      "cons_jsonb_fr": [
+        "Accès limité en version gratuite",
+        "Nécessite une connexion internet",
+        "Les invites peuvent nécessiter des ajustements"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Gemini est-il gratuit?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je utiliser Gemini pour des projets commerciaux?",
+          "a": "Oui, dans le respect des conditions d'utilisation."
+        },
+        {
+          "q": "Comment fonctionne Gemini?",
+          "a": "Il utilise l'IA pour générer du texte à partir de vos saisies."
+        }
+      ],
+      "seo_title_fr": "Google Gemini - Assistant IA pour la rédaction",
+      "seo_description_fr": "Découvrez Gemini, l'assistant IA de Google pour la rédaction et la planification. Obtenez des solutions créatives dès maintenant!"
+    },
+    "github-copilot": {
+      "short_desc_fr": "Assistant de code IA pour les développeurs.",
+      "description_md_fr": "GitHub Copilot est un binôme de programmation IA qui suggère du code directement dans votre éditeur. Il accélère le développement en proposant des lignes ou des fonctions entières, améliorant productivité et créativité.",
+      "pros_jsonb_fr": [
+        "Augmente la vitesse de codage",
+        "Améliore la qualité du code",
+        "Compatible avec plusieurs environnements de développement"
+      ],
+      "cons_jsonb_fr": [
+        "Peut suggérer du code incorrect",
+        "Payant pour un usage en entreprise"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Copilot est-il gratuit?",
+          "a": "Essai gratuit disponible; formules payantes pour les équipes."
+        },
+        {
+          "q": "Fonctionne-t-il avec tous les éditeurs?",
+          "a": "Oui, compatible avec les environnements de développement et éditeurs populaires."
+        },
+        {
+          "q": "Puis-je utiliser mes propres modèles?",
+          "a": "Oui, vous pouvez utiliser des agents personnalisés."
+        }
+      ],
+      "seo_title_fr": "GitHub Copilot - Assistant de code IA",
+      "seo_description_fr": "Accélérez votre développement avec les suggestions IA de GitHub Copilot. Essayez-le maintenant!"
+    },
+    "glide": {
+      "short_desc_fr": "Créez des applications propulsées par IA sans coder.",
+      "description_md_fr": "Glide est un constructeur d'applications sans code qui transforme des feuilles de calcul en applications intelligentes. Créez facilement des flux de travail personnalisés et automatisez les tâches manuelles grâce à l'intégration IA. Idéal pour les entreprises ayant besoin de solutions logicielles rapides et adaptables.",
+      "pros_jsonb_fr": [
+        "Aucune programmation requise",
+        "Automatisation pilotée par IA",
+        "Déploiement rapide"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités avancées limitées",
+        "Courbe d'apprentissage prononcée pour les non-techniciens"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Glide est-il gratuit?",
+          "a": "Oui, essayez-le gratuitement."
+        },
+        {
+          "q": "Glide requiert-il des compétences en programmation?",
+          "a": "Non, c'est une plateforme sans code."
+        },
+        {
+          "q": "Combien de temps faut-il pour créer une application?",
+          "a": "Quelques minutes de l'idée à l'application."
+        }
+      ],
+      "seo_title_fr": "Glide : constructeur d'apps sans code",
+      "seo_description_fr": "Créez des applications IA personnalisées sans programmer. Essayez Glide gratuitement."
+    },
+    "grammarly": {
+      "short_desc_fr": "Assistant de rédaction IA pour la grammaire et le style.",
+      "description_md_fr": "Grammarly améliore votre écriture avec des suggestions en temps réel qui renforcent la clarté, le ton et la structure. Idéal pour les étudiants, les professionnels et quiconque souhaite peaufiner ses textes sur diverses plateformes.\n\nSes fonctionnalités comprennent la réécriture de paragraphes, l'ajustement du ton, des outils de correction et la détection de contenu généré par IA. Utilisé par des millions de personnes, Grammarly garantit une écriture claire, professionnelle et efficace.",
+      "pros_jsonb_fr": [
+        "Suggestions en temps réel",
+        "Améliore la clarté et la fluidité",
+        "Options d'ajustement du ton"
+      ],
+      "cons_jsonb_fr": [
+        "Version gratuite limitée",
+        "Nécessite une connexion internet",
+        "Certaines fonctionnalités sont réservées aux abonnés"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Grammarly est-il gratuit?",
+          "a": "Oui, mais avec des fonctionnalités limitées. Passez à la version payante pour un accès complet."
+        },
+        {
+          "q": "Fonctionne-t-il hors ligne?",
+          "a": "Non, une connexion internet est nécessaire."
+        },
+        {
+          "q": "Puis-je l'utiliser sur plusieurs appareils?",
+          "a": "Oui, la synchronisation est assurée sur toutes les plateformes compatibles."
+        }
+      ],
+      "seo_title_fr": "Grammarly : assistant de rédaction IA",
+      "seo_description_fr": "Améliorez votre écriture avec les suggestions en temps réel de Grammarly. Idéal pour les professionnels et les étudiants."
+    },
+    "gumloop": {
+      "short_desc_fr": "Plateforme d'automatisation IA pour les tâches d'entreprise.",
+      "description_md_fr": "Gumloop est un cadre d'automatisation IA qui permet aux équipes de créer et d'héberger des agents personnalisés sans programmation. Automatisez des tâches comme l'analyse de données, la gestion des tickets de support, les mises à jour CRM, la préparation de réunions et l'analyse d'appels avec une configuration minimale.",
+      "pros_jsonb_fr": [
+        "Plateforme sans code",
+        "Agents personnalisables pour divers besoins d'entreprise",
+        "Déploiement rapide d'agents spécialisés"
+      ],
+      "cons_jsonb_fr": [
+        "Requiert une bonne compréhension de la tâche à automatiser",
+        "Limité par les capacités de l'IA",
+        "Peut nécessiter une configuration initiale"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Gumloop est-il gratuit?",
+          "a": "La tarification varie; contactez l'équipe commerciale pour les détails."
+        },
+        {
+          "q": "Puis-je personnaliser les agents?",
+          "a": "Oui, adaptez les agents aux processus métier spécifiques de votre organisation."
+        },
+        {
+          "q": "Combien de temps faut-il pour configurer un agent?",
+          "a": "Quelques minutes pour déployer des agents spécialisés."
+        }
+      ],
+      "seo_title_fr": "Gumloop - Automatisation IA pour entreprises",
+      "seo_description_fr": "Créez et hébergez des agents IA pour automatiser vos tâches d'entreprise sans programmer. Analyse de données, support, CRM et plus."
+    },
+    "hailuo": {
+      "short_desc_fr": "Générez des vidéos et des images IA pour les créateurs de contenu.",
+      "description_md_fr": "Hailuo AI est un puissant générateur de vidéos et d'images conçu pour les créateurs de contenu. Les utilisateurs peuvent créer des visuels époustouflants à partir de textes ou de photos en toute simplicité. La plateforme propose divers outils comme Light Studio, le pack d'images créatives tendance et bien d'autres pour enrichir vos projets créatifs en ligne.",
+      "pros_jsonb_fr": [
+        "Interface conviviale",
+        "Large gamme d'outils",
+        "Création pilotée par IA"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Abonnement requis pour les fonctionnalités complètes",
+        "Courbe d'apprentissage pour les fonctions avancées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Hailuo AI est-il gratuit?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Quel est le tarif?",
+          "a": "10 $/mois ou 50 $/an pour l'accès complet."
+        },
+        {
+          "q": "Puis-je essayer avant de m'abonner?",
+          "a": "Oui, inscrivez-vous pour un essai gratuit."
+        }
+      ],
+      "seo_title_fr": "Hailuo AI - Générateur de vidéos et d'images",
+      "seo_description_fr": "Créez des vidéos et images IA à partir de textes ou de photos. Rejoignez Hailuo CPP pour des avantages exclusifs."
+    },
+    "heygen": {
+      "short_desc_fr": "Générateur de vidéos IA pour créer des contenus percutants.",
+      "description_md_fr": "HeyGen est un générateur de vidéos IA qui vous permet de créer des vidéos de qualité professionnelle à partir de textes, d'images ou de fichiers audio. Transformez vos idées en vidéos prêtes à partager en quelques minutes, sans aucune compétence en production. Parfait pour les créateurs de contenu et les entreprises souhaitant produire rapidement des contenus multimédias engageants.",
+      "pros_jsonb_fr": [
+        "Prise en main facile",
+        "Aucune compétence en montage requise",
+        "Hautement personnalisable"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités avancées limitées",
+        "La version gratuite a des restrictions",
+        "Nécessite une connexion internet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "HeyGen est-il gratuit?",
+          "a": "Oui, il propose un plan gratuit avec les fonctionnalités de base."
+        },
+        {
+          "q": "Puis-je utiliser mes propres images?",
+          "a": "Oui, vous pouvez importer vos propres images et vidéos."
+        },
+        {
+          "q": "Combien de temps prend la génération d'une vidéo?",
+          "a": "Le temps varie selon la complexité, mais c'est généralement rapide."
+        }
+      ],
+      "seo_title_fr": "HeyGen - Générateur de vidéos IA",
+      "seo_description_fr": "Créez des vidéos IA percutantes à partir de textes, images ou fichiers audio. Facile et gratuit."
+    },
+    "hyperwrite": {
+      "short_desc_fr": "Assistant de rédaction IA pour la création de contenu et la recherche.",
+      "description_md_fr": "HyperWrite est un assistant de rédaction IA conçu pour aider les professionnels, les étudiants et les créateurs à produire du contenu plus vite et plus intelligemment. Il propose des outils comme AutoWrite, TypeAhead, Email Response, HyperChat et des outils personnalisés adaptés à divers flux de travail.\n\nUtilisez-le pour rédiger des paragraphes, obtenir des suggestions contextuelles, créer des outils IA personnalisés ou discuter avec l'IA pour vos recherches.",
+      "pros_jsonb_fr": [
+        "Rédaction prédictive avancée",
+        "Outils IA personnalisables",
+        "Fonction AutoWrite flexible"
+      ],
+      "cons_jsonb_fr": [
+        "Version gratuite limitée",
+        "Nécessite une connexion internet",
+        "Certaines fonctionnalités demandent une période d'apprentissage"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "HyperWrite est-il gratuit?",
+          "a": "Oui, il propose un plan gratuit avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je utiliser HyperWrite hors ligne?",
+          "a": "La plupart des fonctionnalités nécessitent une connexion internet active."
+        },
+        {
+          "q": "Comment créer des outils IA personnalisés?",
+          "a": "Utilisez la fonction Outils personnalisés pour adapter les flux de travail à vos besoins spécifiques."
+        }
+      ],
+      "seo_title_fr": "HyperWrite | Assistant de rédaction IA",
+      "seo_description_fr": "Assistant IA pour la création de contenu, la recherche et plus encore. Utilisez AutoWrite, TypeAhead et les outils personnalisés."
+    },
+    "ideogram": {
+      "short_desc_fr": "Modèle d'intelligence visuelle pour les équipes produit et créatives.",
+      "description_md_fr": "Ideogram 4.0 est un modèle d'intelligence visuelle en source ouverte conçu pour les produits, les agents et les équipes créatives. Il offre une intégration API, un MCP pour les agents et une application conviviale pour la création d'images en haute fidélité avec des contrôles d'édition.",
+      "pros_jsonb_fr": [
+        "Source ouverte",
+        "Haute fidélité aux invites",
+        "Plusieurs niveaux d'utilisation (API, MCP, application)"
+      ],
+      "cons_jsonb_fr": [
+        "Documentation limitée",
+        "Courbe d'apprentissage prononcée",
+        "Requiert une expertise technique"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Ideogram est-il gratuit?",
+          "a": "Oui, il est en source ouverte."
+        },
+        {
+          "q": "Des compétences en programmation sont-elles nécessaires?",
+          "a": "Certaines connaissances techniques sont requises pour les niveaux API et MCP."
+        },
+        {
+          "q": "Peut-on l'utiliser sans connexion internet?",
+          "a": "L'application nécessite une connexion internet; les API peuvent être hébergées localement."
+        }
+      ],
+      "seo_title_fr": "Ideogram 4.0 - Modèle visuel IA en source ouverte",
+      "seo_description_fr": "Intelligence visuelle en source ouverte pour les produits, agents et équipes créatives. Niveaux API, MCP et application."
+    },
+    "ifttt": {
+      "short_desc_fr": "Automatisez vos flux de travail entre applications et appareils.",
+      "description_md_fr": "IFTTT connecte plus de 1 000 services pour automatiser vos tâches. Créez des Applets avec des déclencheurs et des actions sans programmer. Gérez facilement vos automatisations pour un usage professionnel ou domestique.",
+      "pros_jsonb_fr": [
+        "Aucune programmation requise",
+        "Intégration étendue d'applications",
+        "Flux de travail personnalisables"
+      ],
+      "cons_jsonb_fr": [
+        "Contrôle limité sur les flux complexes",
+        "Restrictions du plan gratuit"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Puis-je créer mes propres Applets?",
+          "a": "Oui, mais certaines nécessitent un plan payant."
+        },
+        {
+          "q": "Combien de services puis-je connecter?",
+          "a": "Plus de 1 000 services disponibles."
+        },
+        {
+          "q": "Y a-t-il un plan gratuit?",
+          "a": "Oui, avec des fonctionnalités limitées."
+        }
+      ],
+      "seo_title_fr": "IFTTT - Automatisez vos apps et appareils",
+      "seo_description_fr": "Connectez plus de 1 000 applications et appareils pour automatiser vos tâches. Aucune programmation requise."
+    },
+    "invideo": {
+      "short_desc_fr": "Outil de création vidéo IA pour les professionnels.",
+      "description_md_fr": "InVideo Agent One est une plateforme de création vidéo propulsée par l'IA, conçue pour les créatifs exigeants. Elle automatise le processus de production vidéo, permettant aux utilisateurs de se concentrer sur leur contenu pendant que l'IA s'occupe du montage et de l'optimisation. Idéale pour les bandes-annonces, les publicités de performance et les microdrames.",
+      "pros_jsonb_fr": [
+        "L'automatisation IA fait gagner du temps",
+        "Contexte de projet cohérent",
+        "Applications polyvalentes selon les types de médias"
+      ],
+      "cons_jsonb_fr": [
+        "Coût élevé pouvant être un frein",
+        "Nécessite une connexion internet",
+        "Essai gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "InVideo Agent One est-il adapté aux débutants?",
+          "a": "Oui, mais les fonctionnalités avancées requièrent de l'expérience."
+        },
+        {
+          "q": "Puis-je utiliser mes propres images et vidéos avec InVideo?",
+          "a": "Oui, vous pouvez importer vos propres ressources médias."
+        },
+        {
+          "q": "Quel est le tarif d'InVideo?",
+          "a": "Plan payant à partir de 9 $/mois."
+        }
+      ],
+      "seo_title_fr": "InVideo Agent One - Création vidéo IA",
+      "seo_description_fr": "Créez et montez des vidéos IA avec Agent One. Gagnez du temps et assurez la cohérence de vos projets."
+    },
+    "jasper": {
+      "short_desc_fr": "Plateforme d'automatisation marketing pilotée par IA.",
+      "description_md_fr": "Jasper automatise les flux de travail marketing de bout en bout grâce à des agents IA, optimisant le contenu et les campagnes pour un impact maximal. Il intègre des modèles de langage avancés et une intelligence contextuelle pour rationaliser les processus marketing.\n\nSes fonctionnalités comprennent l'optimisation GEO et IA, des agents dédiés et des pipelines de contenu, permettant aux spécialistes marketing de livrer du contenu évolutif et conforme à la marque.",
+      "pros_jsonb_fr": [
+        "Automatisation pilotée par IA",
+        "Gestion des flux de travail de bout en bout",
+        "Intelligence contextuelle"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Coût élevé pour les fonctionnalités entreprise"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Jasper est-il gratuit?",
+          "a": "Jasper propose un essai gratuit, mais l'accès complet est payant."
+        },
+        {
+          "q": "S'intègre-t-il avec d'autres outils?",
+          "a": "Oui, Jasper s'intègre avec diverses plateformes marketing et IA."
+        },
+        {
+          "q": "Comment gère-t-il la confidentialité des données?",
+          "a": "Jasper est conforme au RGPD et aux autres réglementations sur la protection des données."
+        }
+      ],
+      "seo_title_fr": "Automatisation marketing IA | Jasper",
+      "seo_description_fr": "Automatisez vos flux marketing de bout en bout avec les agents IA Jasper. Rapidité, contrôle et impact mesurable."
+    },
+    "jenni-ai": {
+      "short_desc_fr": "Outil de rédaction académique et de recherche IA pour étudiants et chercheurs.",
+      "description_md_fr": "Jenni AI est un assistant intelligent conçu pour les académiques et les chercheurs. Il facilite la rédaction d'essais, d'articles scientifiques et la gestion des citations, en s'assurant que chaque affirmation peut être retracée à sa source. Avec une bibliothèque de plus de 5 032 sources, Jenni simplifie le processus de recherche.",
+      "pros_jsonb_fr": [
+        "Traçabilité intelligente des affirmations",
+        "Grande base de données académique",
+        "Version gratuite disponible"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités limitées sur le plan gratuit",
+        "Un abonnement peut être nécessaire pour un accès complet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Jenni AI est-il gratuit?",
+          "a": "Oui, la version de base est gratuite."
+        },
+        {
+          "q": "Combien de sources contient-il?",
+          "a": "Plus de 5 032 sources académiques."
+        },
+        {
+          "q": "Prend-il en charge tous les types d'articles de recherche?",
+          "a": "Il couvre un large éventail, mais peut ne pas traiter les sujets de niche."
+        }
+      ],
+      "seo_title_fr": "Jenni AI - Outil de recherche et rédaction académique",
+      "seo_description_fr": "Assistant IA pour étudiants et chercheurs. Rédigez, citez et gérez vos articles académiques avec facilité."
+    },
+    "kling": {
+      "short_desc_fr": "Outil créatif propulsé par l'IA pour images et vidéos.",
+      "description_md_fr": "Kling AI est une plateforme d'IA avancée conçue pour générer des visuels et des animations imaginatifs. Elle prend en charge la narration complexe grâce à des instructions multimodales et des transitions fluides, offrant une suite complète d'outils dans une seule interface.\n\nAvec la dernière série de modèles 3.0, Kling AI redéfinit la liberté créative en intégrant des éléments audio et visuels, assurant une cohérence à travers plusieurs scènes.",
+      "pros_jsonb_fr": [
+        "Prise en charge des instructions multimodales",
+        "Intégration fluide entre les tâches",
+        "Grande liberté créative"
+      ],
+      "cons_jsonb_fr": [
+        "Configuration initiale complexe",
+        "Coût élevé pour les fonctions avancées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Kling AI est-il gratuit ?",
+          "a": "Kling AI propose un modèle freemium avec des fonctions de base accessibles gratuitement."
+        },
+        {
+          "q": "Comment gère-t-il les scènes complexes ?",
+          "a": "VIDEO 3.0 prend en charge des transitions et des storyboards élaborés, assurant la cohérence à travers plusieurs scènes."
+        },
+        {
+          "q": "Des compétences techniques sont-elles requises ?",
+          "a": "Bien que convivial, quelques connaissances techniques sont utiles pour en tirer le meilleur parti."
+        }
+      ],
+      "seo_title_fr": "Kling AI - Studio créatif nouvelle génération",
+      "seo_description_fr": "Générez des images et vidéos imaginatifs avec les outils d'IA générative avancés de Kling AI."
+    },
+    "krea-ai": {
+      "short_desc_fr": "Outil de génération et d'amélioration d'images en temps réel.",
+      "description_md_fr": "Krea AI est une plateforme d'images générative qui permet aux utilisateurs d'esquisser ou de saisir des invites et de voir les résultats se mettre à jour en direct. Elle prend en charge le contrôle du style, les ajustements de composition et l'agrandissement pour des sorties haute résolution. Idéale pour l'art conceptuel, les visuels marketing et les itérations rapides.",
+      "pros_jsonb_fr": [
+        "Génération en temps réel",
+        "Contrôle du style et de la composition",
+        "Agrandissement haute résolution"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Connexion internet requise",
+        "Courbe d'apprentissage pour les fonctions avancées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Krea AI est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Puis-je l'utiliser hors ligne ?",
+          "a": "Non, une connexion internet est nécessaire."
+        },
+        {
+          "q": "Comment démarrer ?",
+          "a": "Esquissez ou saisissez des invites et regardez les résultats se mettre à jour en direct."
+        }
+      ],
+      "seo_title_fr": "Krea AI - Génération d'images en temps réel",
+      "seo_description_fr": "Générez et améliorez des images en temps réel avec Krea AI. Esquissez, tapez des invites, contrôlez le style."
+    },
+    "lalal-ai": {
+      "short_desc_fr": "Outil IA de suppression de voix et d'instruments.",
+      "description_md_fr": "LALAL.AI est un outil propulsé par l'IA pour retirer rapidement et précisément les voix et les instruments des fichiers audio. Idéal pour les producteurs de musique, les DJ et les créateurs de contenu souhaitant isoler des pistes ou nettoyer des enregistrements.\n\n* Prend en charge divers formats de fichiers et plusieurs pistes séparées.\n* Utilise une technologie de transformeurs avancée pour des résultats de haute qualité.",
+      "pros_jsonb_fr": [
+        "Haute précision",
+        "Traitement rapide",
+        "Prise en charge de plusieurs pistes"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Pas d'application mobile",
+        "Connexion internet requise"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "LALAL.AI est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Fonctionne-t-il avec tous les types de fichiers ?",
+          "a": "Les formats audio les plus courants sont pris en charge."
+        },
+        {
+          "q": "Peut-on l'utiliser hors ligne ?",
+          "a": "Non, une connexion internet est requise."
+        }
+      ],
+      "seo_title_fr": "Suppresseur de voix et d'instruments IA | LALAL.AI",
+      "seo_description_fr": "Retirez voix et instruments de n'importe quel fichier audio avec LALAL.AI. Résultats de haute qualité en secondes."
+    },
+    "leonardo-ai": {
+      "short_desc_fr": "Outil de génération d'images et d'art par l'IA.",
+      "description_md_fr": "Leonardo.Ai est une plateforme d'IA générative pour créer des images et des œuvres d'art de haute qualité à partir d'invites textuelles. Elle propose des modèles affinés, une édition sur canevas en temps réel et des outils de contrôle avancés, idéale pour les assets de jeux, l'art conceptuel et les visuels marketing.",
+      "pros_jsonb_fr": [
+        "Génération d'images de haute qualité",
+        "Modèles affinés et personnalisés disponibles",
+        "Canevas en temps réel et outils de contrôle"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Peut nécessiter des connaissances techniques",
+        "Les coûts peuvent s'accumuler pour une utilisation intensive"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Est-ce facile à utiliser ?",
+          "a": "Oui, avec une interface conviviale."
+        },
+        {
+          "q": "Puis-je générer des assets pour jeux vidéo ?",
+          "a": "Absolument, c'est une utilisation très répandue."
+        },
+        {
+          "q": "Combien ça coûte ?",
+          "a": "Un abonnement payant est requis pour accéder à toutes les fonctions."
+        }
+      ],
+      "seo_title_fr": "Leonardo.Ai - Génération d'images et d'art par IA",
+      "seo_description_fr": "Générez des images et œuvres d'art de haute qualité à partir d'invites textuelles avec Leonardo.Ai."
+    },
+    "lindy": {
+      "short_desc_fr": "Assistante de direction IA pour gérer les courriels et l'agenda.",
+      "description_md_fr": "Lindy est une assistante de direction propulsée par l'IA qui automatise des tâches comme la gestion des courriels, la préparation des réunions et l'organisation du calendrier pour vous faire gagner du temps. Elle s'intègre à divers outils et services pour améliorer votre productivité.\n\nParmi ses fonctions : gestion proactive de la boîte de réception, préparation des réunions, réservation de vols et bien plus. Essayez-la gratuitement dès aujourd'hui.",
+      "pros_jsonb_fr": [
+        "Automatise les tâches administratives répétitives",
+        "Améliore l'efficacité des courriels et du calendrier",
+        "S'intègre à de nombreuses applications"
+      ],
+      "cons_jsonb_fr": [
+        "Peut nécessiter un temps de configuration initial",
+        "Fonctions limitées sur le plan gratuit",
+        "Dépend de la connexion internet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Lindy est-elle gratuite ?",
+          "a": "Oui, essayez-la gratuitement avec des fonctions limitées."
+        },
+        {
+          "q": "Comment Lindy gère-t-elle les données sensibles ?",
+          "a": "Lindy assure la confidentialité et la sécurité des données grâce à un chiffrement robuste."
+        },
+        {
+          "q": "Puis-je annuler mon abonnement ?",
+          "a": "Absolument, vous pouvez annuler à tout moment depuis les paramètres de votre compte."
+        }
+      ],
+      "seo_title_fr": "Lindy - Assistante de direction IA",
+      "seo_description_fr": "Lindy vous fait gagner 2 heures par jour en gérant vos courriels et votre agenda. Essayez gratuitement !"
+    },
+    "looka": {
+      "short_desc_fr": "Créateur de logos IA pour une identité de marque rapide et professionnelle.",
+      "description_md_fr": "Looka est une plateforme propulsée par l'IA qui simplifie la création de logos professionnels et de kits d'identité visuelle complets. Les utilisateurs saisissent le nom de leur entreprise et leurs préférences de style, puis les algorithmes avancés de Looka génèrent plusieurs options de logos personnalisables en couleur, police et mise en page. La plateforme fournit également des kits de marque complets incluant cartes d'affaires, éléments pour les médias sociaux et gabarits.",
+      "pros_jsonb_fr": [
+        "Conception assistée par l'IA",
+        "Options personnalisables",
+        "Délai d'exécution rapide",
+        "Kits de marque complets",
+        "Tarification abordable"
+      ],
+      "cons_jsonb_fr": [
+        "Personnalisation limitée pour les utilisateurs avancés",
+        "Dépend de la précision de l'IA",
+        "Pas de soutien d'un designer humain",
+        "Abonnement requis"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Looka est-il gratuit ?",
+          "a": "Oui, il propose un modèle freemium avec des fonctions de base accessibles gratuitement."
+        },
+        {
+          "q": "Combien de temps faut-il pour créer un logo ?",
+          "a": "Looka génère généralement des logos en quelques minutes."
+        },
+        {
+          "q": "Puis-je obtenir l'aide d'un designer humain ?",
+          "a": "Non, Looka est une plateforme entièrement automatisée sans designers humains."
+        }
+      ],
+      "seo_title_fr": "Créateur de logos IA | Looka",
+      "seo_description_fr": "Créez des logos professionnels et des kits de marque rapidement avec l'outil de design IA de Looka."
+    },
+    "lovable": {
+      "short_desc_fr": "Créateur d'applications IA pour non-développeurs.",
+      "description_md_fr": "Lovable est un créateur d'applications IA qui transforme des invites en langage naturel en applications web full-stack sans aucune programmation. Il génère le frontend, le backend et la configuration de la base de données, prend en charge l'édition en direct et le déploiement — idéal pour les fondateurs et les équipes qui veulent livrer des logiciels rapidement.",
+      "pros_jsonb_fr": [
+        "Aucune programmation requise",
+        "Génération full-stack",
+        "Édition en direct et déploiement"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Coût pour les fonctions avancées",
+        "Courbe d'apprentissage pour les non-techniciens"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Lovable est-il gratuit ?",
+          "a": "Lovable propose un modèle freemium avec des fonctions de base gratuites."
+        },
+        {
+          "q": "Puis-je personnaliser les applications ?",
+          "a": "La personnalisation est limitée ; idéal pour le prototypage rapide."
+        },
+        {
+          "q": "Qui utilise Lovable ?",
+          "a": "Les fondateurs et les équipes qui ont besoin de livrer des logiciels rapidement sans programmation."
+        }
+      ],
+      "seo_title_fr": "Lovable - Créateur d'apps IA sans code",
+      "seo_description_fr": "Lovable transforme des invites en langage naturel en apps web full-stack. Sans code, édition et déploiement en direct."
+    },
+    "luma-dream-machine": {
+      "short_desc_fr": "Luma Dream Machine automatise les flux créatifs pour les équipes.",
+      "description_md_fr": "Luma Dream Machine est un outil SaaS qui améliore la productivité des équipes en intégrant des agents créatifs dans vos flux de travail. Ces agents planifient, génèrent, itèrent et affinent le contenu avec un contexte complet à toutes les étapes du travail créatif, permettant une collaboration plus rapide et un rendement accru.\n\nAgents créatifs : intégrés aux flux de travail pour faire avancer les projets de bout en bout avec un contexte partagé.\nContexte partagé : synchronisé entre tous les formats et flux de travail pour une collaboration sans friction.",
+      "pros_jsonb_fr": [
+        "Améliore la productivité des équipes",
+        "Automatise les processus créatifs",
+        "Cycles d'itération plus rapides"
+      ],
+      "cons_jsonb_fr": [
+        "Coût élevé pour certaines fonctions",
+        "Courbe d'apprentissage pour les nouveaux utilisateurs",
+        "Options de niveau gratuit limitées"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Luma Dream Machine convient-il aux petites équipes ?",
+          "a": "Oui, mais certaines fonctions avancées nécessitent un abonnement payant."
+        },
+        {
+          "q": "Puis-je l'essayer avant de m'engager ?",
+          "a": "Un essai gratuit est disponible pour tester la plateforme."
+        },
+        {
+          "q": "Comment gère-t-il les données sensibles ?",
+          "a": "La sécurité et la confidentialité des données sont prioritaires grâce au chiffrement de bout en bout."
+        }
+      ],
+      "seo_title_fr": "Luma Dream Machine - Agents créatifs pour équipes",
+      "seo_description_fr": "Boostez la créativité de votre équipe avec Luma Dream Machine. Automatisez les flux, améliorez la collaboration."
+    },
+    "magnific": {
+      "short_desc_fr": "Agrandisseur et améliorateur d'images IA pour une résolution détaillée.",
+      "description_md_fr": "Magnific AI est un outil avancé qui agrandit les images tout en ajoutant des détails réalistes. Il améliore les photos, illustrations et rendus 3D pour les rendre nets et professionnels. Au-delà du simple agrandissement, il offre des contrôles créatifs pour ajuster la texture, la netteté et le style.\n\nIl est largement utilisé par les designers, photographes et artistes IA pour la finition et les sorties prêtes à imprimer.",
+      "pros_jsonb_fr": [
+        "Ajout de détails réalistes",
+        "Options de contrôle créatif",
+        "Prise en charge polyvalente des types d'images"
+      ],
+      "cons_jsonb_fr": [
+        "Peut nécessiter une courbe d'apprentissage",
+        "Niveau gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Est-ce facile à utiliser ?",
+          "a": "Oui, avec des contrôles intuitifs."
+        },
+        {
+          "q": "Fonctionne-t-il avec tous les types d'images ?",
+          "a": "Prend en charge les photos, illustrations et rendus 3D."
+        },
+        {
+          "q": "Puis-je l'essayer gratuitement ?",
+          "a": "Oui, mais avec des fonctions limitées."
+        }
+      ],
+      "seo_title_fr": "Magnific AI - Agrandisseur d'images IA",
+      "seo_description_fr": "Outil IA avancé pour agrandir et améliorer les images. Boostez la résolution avec des détails réalistes."
+    },
+    "make": {
+      "short_desc_fr": "Plateforme d'automatisation visuelle pour connecter des applications sans code.",
+      "description_md_fr": "Make est une plateforme d'automatisation visuelle sans code / low-code qui connecte des milliers d'applications et d'API via des scénarios par glisser-déposer. Les équipes peuvent automatiser des flux de travail complexes en acheminant, filtrant, itérant et agrégeant des données sur plusieurs étapes, sans écrire une seule ligne de code.",
+      "pros_jsonb_fr": [
+        "Interface visuelle",
+        "Connecte de nombreuses applications",
+        "Aucune programmation requise",
+        "Prise en charge des flux complexes",
+        "Glisser-déposer"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Peut être complexe pour les débutants",
+        "Risque de dépendance au fournisseur",
+        "Connexion internet requise"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Make est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Des compétences en programmation sont-elles requises ?",
+          "a": "Non, c'est visuel et sans code."
+        },
+        {
+          "q": "Combien d'applications puis-je connecter ?",
+          "a": "Des milliers d'intégrations sont disponibles."
+        }
+      ],
+      "seo_title_fr": "Make - Plateforme d'automatisation visuelle",
+      "seo_description_fr": "Automatisez vos flux sans code en connectant des milliers d'apps grâce à l'interface visuelle de Make."
+    },
+    "mem": {
+      "short_desc_fr": "Application de notes IA pour organiser vos idées et réflexions.",
+      "description_md_fr": "Mem est une application de notes propulsée par l'IA qui vous aide à organiser vos pensées et idées au même endroit. Elle mémorise ce que vous créez et remonte les informations pertinentes au bon moment, facilitant la gestion de vos tâches et projets. Avec Mem, vous pouvez verser vos idées, comptes rendus de réunions et recherches dans l'application, qui s'occupe ensuite de les organiser à votre place.",
+      "pros_jsonb_fr": [
+        "Organisation assistée par l'IA",
+        "Saisie vocale prise en charge",
+        "Prise de notes en réunion"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Courbe d'apprentissage pour les fonctions avancées",
+        "Dépend de la connexion internet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Mem est-il gratuit ?",
+          "a": "Oui, avec un plan gratuit limité."
+        },
+        {
+          "q": "Puis-je l'utiliser hors ligne ?",
+          "a": "Non, une connexion internet est requise."
+        },
+        {
+          "q": "Comment Mem apprend-il ma façon de penser ?",
+          "a": "Grâce à vos notes et à vos interactions au fil du temps."
+        }
+      ],
+      "seo_title_fr": "Mem - Application de notes IA",
+      "seo_description_fr": "Organisez vos idées avec l'app de notes IA Mem. Versez idées, réunions, recherches — Mem s'occupe du reste."
+    },
+    "microsoft-copilot": {
+      "short_desc_fr": "Microsoft Copilot pour une assistance IA au quotidien.",
+      "description_md_fr": "Microsoft Copilot est un outil d'IA conçu pour aider les utilisateurs dans diverses tâches comme la rédaction de courriels, la création de documents et la génération de blocs de code. Il offre des suggestions et des retours en temps réel pour améliorer la productivité.",
+      "pros_jsonb_fr": [
+        "Suggestions en temps réel",
+        "Améliore la productivité",
+        "Prise en charge multiplateforme"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Dépend de la connexion internet",
+        "Peut nécessiter un ajustement aux réponses de l'IA"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Microsoft Copilot est-il gratuit ?",
+          "a": "Oui, il propose un essai gratuit avec des fonctions limitées."
+        },
+        {
+          "q": "Copilot fonctionne-t-il hors ligne ?",
+          "a": "Non, une connexion internet est requise pour fonctionner."
+        },
+        {
+          "q": "Puis-je utiliser Copilot pour des projets personnels ?",
+          "a": "Oui, mais le niveau gratuit peut avoir des limitations."
+        }
+      ],
+      "seo_title_fr": "Microsoft Copilot : votre assistant IA",
+      "seo_description_fr": "Obtenez une assistance en temps réel avec Microsoft Copilot. Boostez votre productivité dès aujourd'hui !"
+    },
+    "midjourney": {
+      "short_desc_fr": "Outil IA pour générer des images artistiques à partir d'invites textuelles.",
+      "description_md_fr": "Midjourney est une IA générative qui transforme du texte en langage naturel en images artistiques de haute qualité. Accessible via Discord et une application web, il offre des contrôles de format, de style et de variations. Idéal pour les designers, artistes et spécialistes du marketing en quête de visuels créatifs.",
+      "pros_jsonb_fr": [
+        "Rendu très artistique",
+        "Interface conviviale",
+        "Polyvalent pour de nombreux secteurs"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Dépend de Discord",
+        "Peut nécessiter une courbe d'apprentissage"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Midjourney est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Puis-je l'utiliser sans Discord ?",
+          "a": "Non, l'accès se fait principalement via Discord."
+        },
+        {
+          "q": "Combien ça coûte ?",
+          "a": "Des abonnements payants sont disponibles au-delà du niveau gratuit."
+        }
+      ],
+      "seo_title_fr": "Midjourney - Générateur d'images IA",
+      "seo_description_fr": "Générez des images artistiques à partir d'invites textuelles avec Midjourney. Accessible via Discord et le web."
+    },
+    "mistral": {
+      "short_desc_fr": "Mistral AI pour des solutions IA personnalisées en entreprise.",
+      "description_md_fr": "Mistral AI propose de puissantes plateformes d'IA permettant aux entreprises de personnaliser et de déployer des assistants, agents et services IA avancés. Adaptée aux secteurs de la finance, de la technologie, de la logistique et du secteur public, elle accélère l'innovation et la résolution de problèmes grâce à des modèles ouverts.",
+      "pros_jsonb_fr": [
+        "Solutions IA personnalisables",
+        "Modèles à code ouvert disponibles",
+        "Applications spécifiques à chaque secteur"
+      ],
+      "cons_jsonb_fr": [
+        "Configuration initiale complexe",
+        "Coût élevé pour les fonctions avancées",
+        "Courbe d'apprentissage prononcée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Mistral AI est-il à code ouvert ?",
+          "a": "Oui, certains modèles sont à code ouvert."
+        },
+        {
+          "q": "Quels secteurs peuvent utiliser Mistral AI ?",
+          "a": "Services financiers, technologie, logistique, secteur public."
+        },
+        {
+          "q": "Combien ça coûte ?",
+          "a": "Payant avec des options freemium."
+        }
+      ],
+      "seo_title_fr": "Mistral AI - Solutions IA personnalisées en entreprise",
+      "seo_description_fr": "Assistants et agents IA sur mesure pour la finance, la tech, la logistique et le secteur public. Modèles ouverts."
+    },
+    "motion": {
+      "short_desc_fr": "Plateforme de productivité IA pour équipes et particuliers.",
+      "description_md_fr": "Motion est une super-application de travail propulsée par l'IA, offrant des projets IA, des tâches, un calendrier, des réunions, des documents, des notes, des rapports et des flux de travail. Utilisée par plus d'un million de personnes, elle simplifie vos tâches quotidiennes et booste votre productivité.\n\n*Projets IA* : automatisez la gestion de projets avec une allocation intelligente des tâches.\n*Tâches IA* : restez à jour sur vos échéances grâce à des rappels intelligents.",
+      "pros_jsonb_fr": [
+        "Automatisation assistée par l'IA",
+        "Suite d'outils complète",
+        "Témoignages d'utilisateurs"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Coût élevé pour certaines fonctions",
+        "Niveau gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Motion convient-il aux petites équipes ?",
+          "a": "Oui, il prend en charge les particuliers et les équipes de toutes tailles."
+        },
+        {
+          "q": "Comment Motion fait-il gagner du temps ?",
+          "a": "En automatisant les tâches et en simplifiant les flux de travail."
+        },
+        {
+          "q": "Puis-je essayer Motion gratuitement ?",
+          "a": "Oui, mais avec des fonctions limitées."
+        }
+      ],
+      "seo_title_fr": "Motion - Plateforme de productivité IA",
+      "seo_description_fr": "Motion : super-app de travail propulsée par l'IA. Boostez votre productivité avec projets, tâches intelligentes."
+    },
+    "murf": {
+      "short_desc_fr": "Générez des voix IA ultra-réalistes pour la création de contenu.",
+      "description_md_fr": "Murf AI est un puissant outil de synthèse vocale qui crée des voix naturelles et réalistes pour les balados, les livres audio, les doublages vidéo et bien plus. Grâce à son API rapide et ses options personnalisables, il soutient plus de 10 millions d'utilisateurs dans divers secteurs.\n\nSes fonctions incluent la génération de voix ultra-réalistes, des paramètres personnalisables et le doublage IA instantané.",
+      "pros_jsonb_fr": [
+        "Voix ultra-réalistes",
+        "API rapide pour la synthèse vocale",
+        "Paramètres de voix personnalisables"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "L'intégration API nécessite un abonnement payant",
+        "Non disponible en code ouvert"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Murf AI est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets commerciaux ?",
+          "a": "Oui, mais les tarifs varient."
+        },
+        {
+          "q": "Combien de temps prend la génération vocale ?",
+          "a": "Elle est instantanée."
+        }
+      ],
+      "seo_title_fr": "Murf AI - Générateur de voix IA gratuit",
+      "seo_description_fr": "Générez des voix ultra-réalistes avec Murf AI pour la création de contenu. API rapide et options personnalisables."
+    },
+    "n8n": {
+      "short_desc_fr": "n8n — automatisation de flux de travail par IA pour les équipes techniques.",
+      "description_md_fr": "n8n est une plateforme d'automatisation de flux de travail propulsée par l'IA, conçue pour les équipes techniques. Elle combine la flexibilité sans code avec des capacités de programmation avancées, permettant aux utilisateurs d'automatiser des processus d'affaires complexes rapidement et efficacement. Avec n8n, il est facile d'intégrer différents services, de générer des insights clients et de gérer des incidents de sécurité.",
+      "pros_jsonb_fr": [
+        "Automatisation pilotée par l'IA",
+        "Options sans code et avec code",
+        "Bibliothèque d'intégrations étendue"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée pour les utilisateurs qui codent",
+        "Niveau gratuit limité",
+        "Requiert des connaissances techniques"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "n8n est-il open source ?",
+          "a": "Non, c'est un service payant."
+        },
+        {
+          "q": "Puis-je utiliser n8n sans écrire de code ?",
+          "a": "Oui, pour certaines tâches."
+        },
+        {
+          "q": "Combien d'intégrations n8n propose-t-il ?",
+          "a": "Plus de 1 900 intégrations disponibles."
+        }
+      ],
+      "seo_title_fr": "Automatisation de flux par IA — n8n",
+      "seo_description_fr": "Automatisez vos flux de travail avec l'IA et les options sans code. n8n pour les équipes techniques."
+    },
+    "notebooklm": {
+      "short_desc_fr": "Assistant de recherche et de prise de notes par IA, signé Google.",
+      "description_md_fr": "NotebookLM est un outil de recherche et de prise de notes propulsé par l'IA qui ancre ses réponses dans les sources que vous importez, comme des documents, des PDF, des présentations et des pages web. Il résume le contenu, répond aux questions avec des citations et offre un résumé au format balado grâce à sa fonctionnalité Aperçu audio.\n\nIl est précieux pour les étudiants, les chercheurs et les professionnels qui doivent digérer de grandes quantités d'information.",
+      "pros_jsonb_fr": [
+        "Intègre les sources directement dans les réponses",
+        "Résumés audio au format balado",
+        "Cite le texte original"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Dépend de la qualité du contenu importé",
+        "Peut nécessiter une configuration importante pour les grandes collections"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "NotebookLM est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Puis-je importer n'importe quel type de fichier ?",
+          "a": "Prend en charge les documents, PDF, présentations et pages web."
+        },
+        {
+          "q": "Comment gère-t-il les grandes collections ?",
+          "a": "Peut nécessiter une optimisation pour les contenus volumineux."
+        }
+      ],
+      "seo_title_fr": "NotebookLM — Assistant de recherche par IA",
+      "seo_description_fr": "Outil de recherche IA de Google qui ancre ses réponses dans vos documents et sources."
+    },
+    "notion": {
+      "short_desc_fr": "Base de connaissances collaborative et outil de gestion de projets.",
+      "description_md_fr": "Notion est un espace de travail polyvalent qui combine la prise de notes, la gestion des tâches et les fonctionnalités de base de données. Il prend en charge les agents personnalisés pour l'automatisation, s'intègre à diverses applications et offre une plateforme unifiée permettant aux équipes de collaborer efficacement.",
+      "pros_jsonb_fr": [
+        "Interface unifiée",
+        "Création d'agents personnalisés",
+        "Ensemble de fonctionnalités riche"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Plan gratuit limité",
+        "Modèle de tarification complexe"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Notion est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je utiliser Notion pour des projets personnels ?",
+          "a": "Absolument, c'est excellent pour les individus comme pour les équipes."
+        },
+        {
+          "q": "Comment fonctionnent les agents personnalisés ?",
+          "a": "Ils automatisent des tâches comme les questions-réponses, l'acheminement des tâches et la production de rapports."
+        }
+      ],
+      "seo_title_fr": "Notion — Espace de travail IA pour les équipes",
+      "seo_description_fr": "Créez des agents personnalisés et automatisez vos tâches. Notion, l'espace de travail IA qui travaille pour vous."
+    },
+    "octoparse": {
+      "short_desc_fr": "Outil de collecte de données web sans code.",
+      "description_md_fr": "Octoparse est un outil de capture de données web convivial qui permet à n'importe qui de collecter des données structurées à partir de sites web sans programmer. Il offre des modèles, des fonctionnalités de détection automatique et la prise en charge de contenus dynamiques comme le défilement infini et les CAPTCHA.\n\nCapturez facilement les données de n'importe quel site web par simple pointer-cliquer.",
+      "pros_jsonb_fr": [
+        "Interface sans code",
+        "Prend en charge les pages web complexes",
+        "Fonctionnalité de détection automatique"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées pour les utilisateurs avancés",
+        "Le plan gratuit a des limites d'utilisation"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Octoparse est-il gratuit ?",
+          "a": "Oui, il offre un essai gratuit."
+        },
+        {
+          "q": "Puis-je capturer n'importe quel site web avec Octoparse ?",
+          "a": "Oui, y compris les sites dynamiques et complexes."
+        },
+        {
+          "q": "Ai-je besoin de compétences en programmation pour utiliser Octoparse ?",
+          "a": "Non, il est conçu pour les utilisateurs non techniques."
+        }
+      ],
+      "seo_title_fr": "Octoparse — Outil de capture web sans code",
+      "seo_description_fr": "Collectez des données structurées depuis des sites web sans programmer. Essayez gratuitement !"
+    },
+    "openai": {
+      "short_desc_fr": "Plateforme de recherche et de déploiement en intelligence artificielle.",
+      "description_md_fr": "OpenAI est un laboratoire de recherche en IA de premier plan axé sur le développement d'une intelligence artificielle générale sûre et bénéfique. Il propose divers outils pour les chercheurs et les entreprises, notamment l'API ChatGPT et Codex. Explorez des capacités d'IA avancées conçues pour améliorer la productivité et l'innovation dans de multiples domaines.",
+      "pros_jsonb_fr": [
+        "Recherche en IA de pointe",
+        "Mission axée sur une AGI sûre et bénéfique",
+        "Offre d'outils polyvalente"
+      ],
+      "cons_jsonb_fr": [
+        "Accès public limité",
+        "La vocation commerciale peut affecter la disponibilité",
+        "En phase de développement continue"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "OpenAI est-il gratuit ?",
+          "a": "Certains services sont en mode freemium, d'autres sont payants."
+        },
+        {
+          "q": "Qu'est-ce que Codex ?",
+          "a": "Codex intègre l'IA dans les outils de développement logiciel."
+        },
+        {
+          "q": "Puis-je accéder à toutes les fonctionnalités d'OpenAI ?",
+          "a": "L'accès dépend du service spécifique et du niveau d'abonnement."
+        }
+      ],
+      "seo_title_fr": "OpenAI | Recherche et déploiement en IA",
+      "seo_description_fr": "Explorez la recherche IA de pointe, l'API ChatGPT et Codex pour les entreprises. Mission AGI sûre."
+    },
+    "opus-clip": {
+      "short_desc_fr": "Plateforme de découpage et de montage vidéo par IA.",
+      "description_md_fr": "Opus Clip est une plateforme pilotée par l'IA qui simplifie la création de clips viraux de haute qualité à partir de longues vidéos. Elle prend en charge divers genres et peut automatiquement redimensionner le contenu pour différentes plateformes de médias sociaux en un seul clic.\n\n*Modifiez n'importe quel type de vidéo sans effort.*\n*Optimisez automatiquement vos clips pour plusieurs réseaux sociaux.*",
+      "pros_jsonb_fr": [
+        "Modèles de montage pilotés par l'IA",
+        "Prend en charge des genres vidéo variés",
+        "Redimensionnement automatique pour les médias sociaux"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités du plan gratuit limitées",
+        "Peut nécessiter un abonnement pour une utilisation avancée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Opus Clip est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je modifier n'importe quel type de vidéo ?",
+          "a": "Oui, y compris les vlogs, jeux vidéo, sports et bien plus."
+        },
+        {
+          "q": "Comment optimise-t-il pour les médias sociaux ?",
+          "a": "Redimensionne automatiquement les clips pour s'adapter aux différentes plateformes."
+        }
+      ],
+      "seo_title_fr": "Opus Clip : outil de découpage vidéo par IA",
+      "seo_description_fr": "Créez des clips viraux de haute qualité à partir de longues vidéos avec Opus Clip. Multi-genres, optimisé pour les réseaux sociaux."
+    },
+    "otter-ai": {
+      "short_desc_fr": "Outil de transcription de réunions et de prise de notes par IA.",
+      "description_md_fr": "Otter.ai est un preneur de notes de réunion piloté par l'IA qui transcrit les réunions en temps réel, génère des résumés et assure le suivi des points d'action. Il améliore la productivité en transformant les conversations en connaissances consultables. Adapté aux équipes de toutes tailles, Otter prend en charge les appareils Mac et Windows et propose un plan gratuit.",
+      "pros_jsonb_fr": [
+        "Transcription en temps réel",
+        "Résumés automatisés",
+        "Suivi des points d'action",
+        "Notes de réunion consultables",
+        "Intégration multi-applications"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Peut nécessiter une connexion Internet",
+        "Le prix augmente avec les fonctionnalités"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Otter.ai est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Fonctionne-t-il hors ligne ?",
+          "a": "Non, une connexion Internet est requise."
+        },
+        {
+          "q": "Puis-je l'utiliser sur Mac et Windows ?",
+          "a": "Oui, disponible pour les deux plateformes."
+        }
+      ],
+      "seo_title_fr": "Otter.ai — Preneur de notes de réunion par IA",
+      "seo_description_fr": "Transcription de réunions par IA avec notes en temps réel, résumés et points d'action. Commencez gratuitement !"
+    },
+    "perplexity": {
+      "short_desc_fr": "Moteur de réponses par IA pour des informations précises et en temps réel.",
+      "description_md_fr": "Perplexity est un outil d'IA qui fournit des réponses rapides et fiables à n'importe quelle question. Il utilise un traitement avancé du langage naturel pour assurer l'exactitude et la pertinence de ses réponses.\n\nIdéal pour les chercheurs, les étudiants ou toute personne ayant besoin d'un accès instantané à de l'information factuelle.",
+      "pros_jsonb_fr": [
+        "Très haute précision",
+        "Mises à jour en temps réel",
+        "Facile à utiliser"
+      ],
+      "cons_jsonb_fr": [
+        "Profondeur limitée sur les sujets de niche",
+        "Peut nécessiter une connexion Internet"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Perplexity est-il gratuit ?",
+          "a": "Oui, c'est un outil gratuit."
+        },
+        {
+          "q": "Quelle est la précision des réponses ?",
+          "a": "Les réponses sont très précises grâce au traitement avancé du langage naturel."
+        },
+        {
+          "q": "Nécessite-t-il une connexion Internet ?",
+          "a": "Internet est nécessaire pour les mises à jour en temps réel."
+        }
+      ],
+      "seo_title_fr": "Perplexity AI — Moteur de réponses gratuit",
+      "seo_description_fr": "Obtenez des réponses précises et en temps réel avec l'outil IA de Perplexity."
+    },
+    "phantombuster": {
+      "short_desc_fr": "Automatisez l'extraction de prospects et les campagnes de prospection avec PhantomBuster.",
+      "description_md_fr": "PhantomBuster est une plateforme d'extraction de données et d'automatisation sans code qui capture des profils sur LinkedIn et d'autres sites, enrichit les données de contact et automatise les séquences de prospection. Idéal pour les équipes de vente et de croissance souhaitant constituer des listes de prospects et automatiser la prospection.",
+      "pros_jsonb_fr": [
+        "Utilisation sans code",
+        "Automatise l'extraction de prospects et la prospection",
+        "Prend en charge plusieurs plateformes"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Le coût peut être prohibitif pour les petites entreprises",
+        "Dépend des « phantoms » du fournisseur"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "PhantomBuster est-il facile à utiliser ?",
+          "a": "Oui, il est sans code et convivial."
+        },
+        {
+          "q": "Puis-je personnaliser le processus de capture ?",
+          "a": "Les options de personnalisation sont limitées."
+        },
+        {
+          "q": "Quelles plateformes prend-il en charge ?",
+          "a": "Prend en charge LinkedIn et d'autres plateformes web et sociales."
+        }
+      ],
+      "seo_title_fr": "PhantomBuster — Extraction de prospects et automatisation",
+      "seo_description_fr": "Automatisez l'extraction de prospects avec la plateforme sans code de PhantomBuster. Constituez vos listes et automatisez la prospection."
+    },
+    "photoroom": {
+      "short_desc_fr": "Éditeur de photos par IA et studio de fiches produits pour le commerce en ligne.",
+      "description_md_fr": "PhotoRoom est un outil piloté par l'IA conçu pour les entreprises de commerce en ligne et les créateurs de contenu sur les médias sociaux. Il automatise la création d'images, formate les images pour plusieurs places de marché et produit des fiches prêtes à publier à grande échelle. Avec PhotoRoom, il est facile de créer des visuels de qualité professionnelle sans studio photo.",
+      "pros_jsonb_fr": [
+        "Retouche par lots propulsée par l'IA",
+        "Production d'images automatisée",
+        "Capacités de synchronisation avec les places de marché"
+      ],
+      "cons_jsonb_fr": [
+        "Nécessite une intégration API pour l'automatisation complète",
+        "Coût plus élevé pour les fonctionnalités entreprise"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "PhotoRoom est-il gratuit ?",
+          "a": "Il propose un modèle freemium avec des plans payants."
+        },
+        {
+          "q": "Puis-je l'utiliser sans programmer ?",
+          "a": "Oui, l'application web est conviviale."
+        },
+        {
+          "q": "Prend-il en charge plusieurs places de marché ?",
+          "a": "Oui, y compris Shopify et d'autres."
+        }
+      ],
+      "seo_title_fr": "Éditeur de photos IA pour le commerce en ligne",
+      "seo_description_fr": "Automatisez la création d'images et de fiches produits avec PhotoRoom. Idéal pour les boutiques en ligne."
+    },
+    "pika": {
+      "short_desc_fr": "Plateforme de création vidéo pilotée par l'IA.",
+      "description_md_fr": "Pika est un outil propulsé par l'IA pour créer et automatiser des flux de travail vidéo. Les utilisateurs peuvent générer du contenu créatif à l'aide d'agents, de scènes et d'effets. Parfait pour suivre les tendances ou créer des vidéos uniques.",
+      "pros_jsonb_fr": [
+        "Automatisation par IA",
+        "Génération créative par agents",
+        "Outils de montage polyvalents"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Courbe d'apprentissage prononcée",
+        "Abonnement requis"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Pika est-il gratuit ?",
+          "a": "La tarification commence à 9,99 $/mois."
+        },
+        {
+          "q": "Puis-je utiliser Pika pour mon entreprise ?",
+          "a": "Oui, convient aux entreprises et aux créateurs."
+        },
+        {
+          "q": "Combien de temps faut-il pour créer une vidéo ?",
+          "a": "Dépend de la complexité, mais généralement rapide."
+        }
+      ],
+      "seo_title_fr": "Pika — Création vidéo par IA",
+      "seo_description_fr": "Plateforme de création vidéo pilotée par l'IA avec flux automatisés et agents créatifs."
+    },
+    "pipedream": {
+      "short_desc_fr": "Automatisez vos flux de travail en connectant des API et des services.",
+      "description_md_fr": "Pipedream est une plateforme sans code / low-code qui permet aux utilisateurs de construire des flux de travail automatisés en connectant diverses API, bases de données et services. Elle prend en charge la création de flux visuels et de flux basés sur du code pour intégrer différentes applications et automatiser des tâches avec des agents IA.",
+      "pros_jsonb_fr": [
+        "Interface sans code / low-code",
+        "Bibliothèque d'API étendue",
+        "Intégration d'agents IA"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Configuration complexe pour les débutants"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Pipedream est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Puis-je l'utiliser sans programmer ?",
+          "a": "Oui, via le constructeur de flux visuel."
+        },
+        {
+          "q": "Comment commencer ?",
+          "a": "Inscrivez-vous et explorez les modèles préconstruits."
+        }
+      ],
+      "seo_title_fr": "Pipedream — Automatisez vos flux de travail",
+      "seo_description_fr": "Créez des applications puissantes en connectant des API et des services avec Pipedream."
+    },
+    "play-ht": {
+      "short_desc_fr": "Plateforme de synthèse vocale et de clonage de voix par IA.",
+      "description_md_fr": "PlayHT est un outil de synthèse vocale et de génération de voix piloté par l'IA qui crée des voix au son naturel dans plusieurs langues et accents. Il prend en charge le clonage vocal pour des contenus audio réalistes, des balados, des systèmes RVI et des applications d'IA conversationnelle.\n\nSes fonctionnalités comprennent une API conviviale et un produit d'agent vocal en temps réel.",
+      "pros_jsonb_fr": [
+        "Clonage vocal ultra-réaliste",
+        "Prend en charge de nombreuses langues et accents",
+        "API et agent vocal en temps réel disponibles"
+      ],
+      "cons_jsonb_fr": [
+        "Peut nécessiter une configuration technique",
+        "Détails de tarification peu clairs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "PlayHT est-il gratuit ?",
+          "a": "Il propose un modèle freemium avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je cloner n'importe quelle voix ?",
+          "a": "Oui, mais cela nécessite des autorisations spécifiques et des données."
+        },
+        {
+          "q": "Quelles langues prend-il en charge ?",
+          "a": "Plusieurs langues et accents sont pris en charge."
+        }
+      ],
+      "seo_title_fr": "PlayHT — Synthèse vocale et clonage de voix par IA",
+      "seo_description_fr": "Transformez votre texte en discours naturel avec la plateforme avancée de génération vocale IA de PlayHT."
+    },
+    "playground-ai": {
+      "short_desc_fr": "Outil de design par IA pour logos, t-shirts et visuels pour les médias sociaux.",
+      "description_md_fr": "Playground AI est une plateforme de design par IA facile à utiliser qui permet aux utilisateurs de créer des designs personnalisés comme des logos, des t-shirts et des visuels pour les médias sociaux sans aucune expérience en design. Avec des milliers de modèles répartis en 24 catégories, les utilisateurs peuvent personnaliser leurs créations facilement. L'outil prend en charge des fonctionnalités telles que la couleur, le style, la mise en page et bien plus encore via une simple saisie de texte.",
+      "pros_jsonb_fr": [
+        "Aucune expérience en design requise",
+        "Des milliers de modèles personnalisables",
+        "Suggestions de design propulsées par l'IA"
+      ],
+      "cons_jsonb_fr": [
+        "Options de retouche avancée limitées",
+        "Les modèles peuvent ne pas convenir à tous les besoins",
+        "Certaines fonctionnalités nécessitent des achats intégrés"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Playground AI est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit avec des fonctionnalités de base."
+        },
+        {
+          "q": "Puis-je exporter mes designs depuis Playground AI ?",
+          "a": "Oui, vous pouvez télécharger vos designs en format PNG ou SVG."
+        },
+        {
+          "q": "Combien de modèles sont disponibles dans Playground AI ?",
+          "a": "Il y a plus de 24 catégories avec des milliers de modèles au choix."
+        }
+      ],
+      "seo_title_fr": "Outil de design IA pour logos et t-shirts",
+      "seo_description_fr": "Créez des designs et visuels personnalisés avec Playground AI, la plateforme de design par IA facile à utiliser."
+    },
+    "podcastle": {
+      "short_desc_fr": "Plateforme de montage vidéo et audio pilotée par l'IA.",
+      "description_md_fr": "Podcastle est un studio créatif propulsé par l'IA pour la production de contenu vidéo et audio. Il offre la création vidéo par chat, l'enregistrement à distance, le montage, les sous-titres, le doublage et la génération de clips. Idéal pour les podcasteurs, les créateurs et les narrateurs souhaitant simplifier leur flux de travail avec un minimum de compétences techniques.",
+      "pros_jsonb_fr": [
+        "Interface basée sur le chat",
+        "L'IA gère les tâches complexes",
+        "Flux de travail unifié pour la vidéo et l'audio"
+      ],
+      "cons_jsonb_fr": [
+        "Nécessite une connexion Internet",
+        "Modèle par abonnement",
+        "Essai gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Est-ce facile à utiliser ?",
+          "a": "Oui, aucune expérience requise."
+        },
+        {
+          "q": "Puis-je l'essayer gratuitement ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Prend-il en charge plusieurs langues ?",
+          "a": "Oui, 15 langues disponibles."
+        }
+      ],
+      "seo_title_fr": "Podcastle — Éditeur vidéo et audio par IA",
+      "seo_description_fr": "Montage vidéo et audio par IA pour les créateurs. Interface par chat, flux de travail unifié."
+    },
+    "quillbot": {
+      "short_desc_fr": "Outil IA de reformulation de texte et de vérification grammaticale.",
+      "description_md_fr": "QuillBot est un assistant d'écriture par IA qui aide les utilisateurs à reformuler des phrases selon différents tons et longueurs, à corriger la grammaire et la ponctuation, à vérifier le plagiat et à générer des citations. Idéal pour les étudiants, les rédacteurs et les professionnels souhaitant peaufiner leurs textes.\n\nIl offre une gamme de fonctionnalités incluant la paraphrase, le résumé, la correction grammaticale et la génération de citations.",
+      "pros_jsonb_fr": [
+        "Outils IA polyvalents",
+        "Améliore la qualité de l'écriture",
+        "Détection du plagiat"
+      ],
+      "cons_jsonb_fr": [
+        "Plan gratuit limité",
+        "Peut nécessiter un abonnement pour les fonctionnalités complètes",
+        "Courbe d'apprentissage pour les utilisateurs avancés"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "QuillBot est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des projets commerciaux ?",
+          "a": "Oui, mais vérifiez les conditions d'utilisation."
+        },
+        {
+          "q": "Quelle est la précision de la vérification grammaticale ?",
+          "a": "Très précise, avec quelques erreurs occasionnelles."
+        }
+      ],
+      "seo_title_fr": "QuillBot — Paraphrase et vérification grammaticale IA",
+      "seo_description_fr": "Reformulez et améliorez vos textes avec les outils IA de QuillBot. Vérifiez la grammaire, paraphrasez et évitez le plagiat."
+    },
+    "reclaim": {
+      "short_desc_fr": "Calendrier IA pour la planification et la gestion du temps.",
+      "description_md_fr": "Reclaim est une application pilotée par l'IA qui optimise votre emploi du temps en gérant automatiquement les tâches, les réunions, les pauses et les habitudes. Elle s'intègre parfaitement à Google Calendar et Outlook pour améliorer la productivité et libérer du temps pour le travail comme pour la vie personnelle.",
+      "pros_jsonb_fr": [
+        "Planifie automatiquement les tâches et les réunions",
+        "S'intègre aux principaux agendas (Google et Outlook)",
+        "Améliore la gestion des plages de concentration et des temps tampons"
+      ],
+      "cons_jsonb_fr": [
+        "Forfait gratuit limité",
+        "Peut nécessiter une certaine configuration et un ajustement initial",
+        "Principalement conçu pour les équipes, l'usage individuel peut être restreint"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Reclaim est-il gratuit à l'essai ?",
+          "a": "Oui, un essai gratuit est disponible."
+        },
+        {
+          "q": "Puis-je l'utiliser avec mon agenda existant ?",
+          "a": "Oui, il s'intègre aux agendas Google et Outlook."
+        },
+        {
+          "q": "Comment l'IA protège-t-elle mon temps ?",
+          "a": "L'IA planifie les tâches et les réunions pour maximiser la productivité."
+        }
+      ],
+      "seo_title_fr": "Reclaim - Calendrier IA pour le travail et la vie",
+      "seo_description_fr": "Économisez 30 % sur les forfaits Starter et Business de Reclaim. Planifiez automatiquement tâches, réunions, pauses et habitudes."
+    },
+    "recraft": {
+      "short_desc_fr": "Plateforme de design IA pour images et maquettes.",
+      "description_md_fr": "Recraft est un outil IA avancé de génération d'images à partir de texte, conçu pour les designers, les créatifs, les vendeurs et les équipes. Il propose la génération d'images photoréalistes, des graphiques vectoriels, des styles personnalisés et bien plus encore. Au-delà de la précision des descriptions, il offre une vraie vision créative à chaque génération.\n\nCommencez à créer avec Recraft V4.1, le modèle le plus avancé à ce jour.",
+      "pros_jsonb_fr": [
+        "Génération d'images photoréalistes",
+        "Prise en charge des graphiques vectoriels",
+        "Options de styles personnalisés"
+      ],
+      "cons_jsonb_fr": [
+        "Rédaction de descriptions complexes requise",
+        "Coût plus élevé que les outils simples",
+        "Niveau gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Recraft convient-il aux débutants ?",
+          "a": "Oui, mais une certaine expérience en design est recommandée."
+        },
+        {
+          "q": "Puis-je utiliser Recraft pour des projets commerciaux ?",
+          "a": "Oui, il supporte l'usage personnel et commercial."
+        },
+        {
+          "q": "Comment fonctionne la tarification ?",
+          "a": "Un abonnement payant est requis ; un essai gratuit est disponible."
+        }
+      ],
+      "seo_title_fr": "Recraft AI - Plateforme de design",
+      "seo_description_fr": "Design IA pour images, maquettes et graphiques vectoriels. Essayez Recraft V4.1 maintenant !"
+    },
+    "relevance-ai": {
+      "short_desc_fr": "Relevance AI pour la gestion évolutive d'agents IA.",
+      "description_md_fr": "Relevance AI est une plateforme d'entreprise conçue pour gérer et faire évoluer des agents IA au sein des organisations. Elle permet aux experts métier de créer et de gouverner des solutions pilotées par l'IA, en assurant la responsabilité et l'impact commercial à grande échelle. Idéale pour les équipes GTM et en forte croissance souhaitant automatiser leurs processus et augmenter leurs conversions.",
+      "pros_jsonb_fr": [
+        "Gouvernance de niveau entreprise",
+        "Géré par des experts métier",
+        "Plus de 100 intégrations disponibles"
+      ],
+      "cons_jsonb_fr": [
+        "Processus de configuration complexe",
+        "Coût plus élevé que les alternatives"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Relevance AI est-il gratuit ?",
+          "a": "Non, c'est un service payant."
+        },
+        {
+          "q": "Faut-il une expertise technique ?",
+          "a": "Oui, des experts métier sont nécessaires."
+        },
+        {
+          "q": "Combien d'intégrations propose-t-il ?",
+          "a": "Plus de 100 intégrations sont disponibles."
+        }
+      ],
+      "seo_title_fr": "Relevance AI - Plateforme entreprise agents IA",
+      "seo_description_fr": "Gérez et faites évoluer vos agents IA avec une gouvernance de niveau entreprise. Conçu par des experts métier."
+    },
+    "replit": {
+      "short_desc_fr": "Plateforme de développement collaboratif et assisté par IA.",
+      "description_md_fr": "Replit est un environnement de développement intégré (IDE) en nuage qui combine la programmation en direct, des fonctionnalités de collaboration et une assistance IA pour simplifier le développement logiciel. Il prend en charge plusieurs langages de programmation et offre des outils de collaboration en temps réel pour les équipes.",
+      "pros_jsonb_fr": [
+        "Collaboration en temps réel",
+        "Suggestions de code assistées par IA",
+        "Environnement de développement intégré"
+      ],
+      "cons_jsonb_fr": [
+        "Forfait gratuit limité",
+        "Basé sur navigateur, peut être lent sur les appareils moins performants"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Replit est-il gratuit ?",
+          "a": "Oui, avec des limitations."
+        },
+        {
+          "q": "Puis-je collaborer avec d'autres personnes ?",
+          "a": "Oui, la collaboration en temps réel est supportée."
+        },
+        {
+          "q": "Supporte-t-il plusieurs langages de programmation ?",
+          "a": "Oui, dont Python, JavaScript et bien d'autres."
+        }
+      ],
+      "seo_title_fr": "Replit - Programmation IA et collaboration",
+      "seo_description_fr": "Créez des applications avec l'IA en quelques minutes. Collaborez en direct avec Replit."
+    },
+    "resemble-ai": {
+      "short_desc_fr": "Plateforme de clonage vocal et de génération vocale par IA.",
+      "description_md_fr": "Resemble AI est un outil puissant pour créer des voix IA personnalisées et générer de la parole à partir de texte. Il prend en charge la synthèse en temps réel, le doublage multilingue, et comprend des outils pour filigrane et détecter les contenus audio générés par IA.\n\nIdéal pour les jeux vidéo, la production médiatique, l'accessibilité et plus encore, Resemble AI propose une suite complète de fonctionnalités conçues pour enrichir vos projets de clonage vocal.",
+      "pros_jsonb_fr": [
+        "Voix IA personnalisables",
+        "Synthèse vocale en temps réel",
+        "Prise en charge multilingue"
+      ],
+      "cons_jsonb_fr": [
+        "Nécessite de courts échantillons vocaux pour le clonage",
+        "Les fonctionnalités avancées peuvent être complexes",
+        "Certains forfaits sont payants"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Puis-je utiliser Resemble AI gratuitement ?",
+          "a": "Oui, un forfait gratuit est disponible."
+        },
+        {
+          "q": "L'audio généré est-il réaliste ?",
+          "a": "Très réaliste, avec une bonne qualité sonore."
+        },
+        {
+          "q": "Supporte-t-il plusieurs langues ?",
+          "a": "Oui, le doublage multilingue est pris en charge."
+        }
+      ],
+      "seo_title_fr": "Resemble AI - Clonage vocal et génération vocale",
+      "seo_description_fr": "Créez des voix IA sur mesure et générez de la parole. Synthèse en temps réel, multilingue, outils de filigrane."
+    },
+    "retool": {
+      "short_desc_fr": "Créez des outils internes avec le moteur unifié de Retool.",
+      "description_md_fr": "Retool est un outil puissant pour concevoir et déployer rapidement des logiciels internes. Connectez n'importe quelle base de données ou API, exploitez l'IA et gérez vos applications depuis un seul endroit. Créez des applications qui s'intègrent parfaitement à votre flux de travail sans écrire de code.",
+      "pros_jsonb_fr": [
+        "Plateforme unifiée pour le développement d'applications",
+        "S'intègre à diverses bases de données et API",
+        "Exploite l'IA pour accélérer le développement"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Nécessite quelques connaissances techniques",
+        "Non adapté aux applications destinées aux utilisateurs externes"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Retool est-il gratuit ?",
+          "a": "Oui, avec un forfait gratuit limité."
+        },
+        {
+          "q": "Puis-je utiliser Retool pour des applications externes ?",
+          "a": "Non, il est principalement destiné aux outils internes."
+        },
+        {
+          "q": "Retool prend-il en charge l'IA ?",
+          "a": "Oui, vous pouvez exploiter l'IA dans l'ensemble de votre entreprise."
+        }
+      ],
+      "seo_title_fr": "Créez des outils internes avec Retool",
+      "seo_description_fr": "Concevez et déployez rapidement vos logiciels internes avec Retool. Connectez bases de données, API et LLM."
+    },
+    "runway": {
+      "short_desc_fr": "Outil IA pour simuler des mondes et des expériences.",
+      "description_md_fr": "Runway est une plateforme IA axée sur le développement de modèles généraux du monde qui simulent divers environnements et scénarios. Elle propose des outils pour les médias et le divertissement, la robotique et la recherche en simulation mondiale interactive. Idéale pour les organisations souhaitant faire progresser leur secteur grâce à des technologies IA de pointe.",
+      "pros_jsonb_fr": [
+        "Capacités avancées de modélisation du monde",
+        "Qualité de mouvement et fidélité visuelle de pointe",
+        "Applications polyvalentes dans de nombreux secteurs"
+      ],
+      "cons_jsonb_fr": [
+        "Coût d'entrée élevé",
+        "Configuration complexe pour les non-experts",
+        "Documentation publique limitée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Runway convient-il aux débutants ?",
+          "a": "Oui, mais une certaine expérience en IA est recommandée."
+        },
+        {
+          "q": "Quels secteurs peuvent bénéficier de Runway ?",
+          "a": "Médias et divertissement, robotique, recherche scientifique."
+        },
+        {
+          "q": "Combien ça coûte ?",
+          "a": "Un abonnement payant est requis."
+        }
+      ],
+      "seo_title_fr": "Runway - IA pour la simulation de mondes",
+      "seo_description_fr": "Plateforme IA avancée pour simuler des mondes et des expériences. Idéale pour les médias, la robotique et la recherche."
+    },
+    "rytr": {
+      "short_desc_fr": "Générateur de contenu IA pour le marketing et les réseaux sociaux.",
+      "description_md_fr": "Rytr est un outil de rédaction IA conçu pour générer du contenu court comme des textes publicitaires, des courriels, des descriptions de produits et des publications sur les réseaux sociaux. Il propose une variété de gabarits, de tons et de langues pour répondre à différents besoins. Avec son modèle tarifaire abordable, il est populaire auprès des spécialistes du marketing indépendants et des petites entreprises.",
+      "pros_jsonb_fr": [
+        "Abordable",
+        "Nombreux gabarits selon les cas d'usage",
+        "Multiples tons et langues disponibles"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités avancées limitées",
+        "Peut nécessiter quelques retouches",
+        "Interface utilisateur perfectible"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Rytr est-il gratuit ?",
+          "a": "Non, c'est un service payant."
+        },
+        {
+          "q": "Puis-je l'essayer avant d'acheter ?",
+          "a": "Oui, un essai gratuit est disponible."
+        },
+        {
+          "q": "Supporte-t-il plusieurs langues ?",
+          "a": "Oui, plusieurs langues sont prises en charge."
+        }
+      ],
+      "seo_title_fr": "Rytr - Rédacteur IA pour le marketing",
+      "seo_description_fr": "Générez des textes publicitaires, courriels et publications avec l'outil de rédaction IA abordable de Rytr."
+    },
+    "scrapingbee": {
+      "short_desc_fr": "ScrapingBee est une API d'extraction web qui gère les proxies et les navigateurs sans interface.",
+      "description_md_fr": "ScrapingBee simplifie l'extraction web en gérant les proxies et les défenses anti-bot. Extrayez facilement des données de sites web grâce à l'extraction assistée par IA ou à des règles JSON. Intégrez des outils IA comme ChatGPT pour un traitement des données sans friction.",
+      "pros_jsonb_fr": [
+        "Gère les proxies et les navigateurs sans interface",
+        "Extraction de données assistée par IA",
+        "Facile à intégrer"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité (1 000 crédits)",
+        "Nécessite des connaissances en API",
+        "Tarification potentiellement élevée pour les petits projets"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "ScrapingBee est-il gratuit ?",
+          "a": "Oui, avec un forfait gratuit limité."
+        },
+        {
+          "q": "Puis-je utiliser l'IA avec ScrapingBee ?",
+          "a": "Oui, intégrez des outils IA comme ChatGPT."
+        },
+        {
+          "q": "Comment m'inscrire ?",
+          "a": "Inscrivez-vous par courriel ou via Google."
+        }
+      ],
+      "seo_title_fr": "ScrapingBee - API d'extraction web",
+      "seo_description_fr": "Extrayez des sites web sans gérer les proxies. Intégrez des outils IA pour l'extraction de données."
+    },
+    "softr": {
+      "short_desc_fr": "Créez des applications web sur Airtable ou Google Sheets sans coder.",
+      "description_md_fr": "Softr est un créateur d'applications sans code qui transforme Airtable et Google Sheets en applications web fonctionnelles, portails clients, outils internes et répertoires, grâce à des blocs glisser-déposer, une authentification des utilisateurs, des permissions et des paiements. Les non-développeurs peuvent lancer des applications rapidement grâce à son interface intuitive.",
+      "pros_jsonb_fr": [
+        "Aucune programmation requise",
+        "Interface glisser-déposer",
+        "Authentification des utilisateurs et permissions",
+        "Intégration des paiements",
+        "Déploiement rapide"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Dépendant d'Airtable ou de Google Sheets",
+        "Coûts plus élevés pour les fonctionnalités avancées",
+        "Courbe d'apprentissage pour les utilisateurs non techniques",
+        "Risque de dépendance envers le fournisseur"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Softr est-il gratuit ?",
+          "a": "Softr propose un modèle freemium avec des fonctionnalités de base disponibles gratuitement."
+        },
+        {
+          "q": "Puis-je utiliser ma propre base de données ?",
+          "a": "Oui, mais il est recommandé d'utiliser Airtable ou Google Sheets pour une fonctionnalité optimale."
+        },
+        {
+          "q": "Combien de temps faut-il pour créer une application ?",
+          "a": "Le délai varie selon la complexité et le design, mais Softr annonce des temps de configuration rapides."
+        }
+      ],
+      "seo_title_fr": "Softr - Applications sans code sur Airtable",
+      "seo_description_fr": "Créez des apps web, portails clients et outils internes sans coder. Transformez Airtable ou Google Sheets en applications fonctionnelles."
+    },
+    "speechify": {
+      "short_desc_fr": "Speechify convertit du texte en parole et prend en charge la saisie vocale.",
+      "description_md_fr": "Speechify est un outil IA polyvalent qui lit tout texte à voix haute avec des voix naturelles, prenant en charge les PDF, les pages web et bien plus encore. Il inclut également la saisie vocale pour une saisie mains libres. Idéal pour écouter des livres, des articles ou des documents à tout moment et en tout lieu.",
+      "pros_jsonb_fr": [
+        "Voix au son naturel",
+        "Compatible avec plusieurs appareils",
+        "Fonctionnalité de saisie vocale"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Certaines fonctionnalités nécessitent un abonnement",
+        "Peut présenter des bugs occasionnels"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Speechify est-il gratuit ?",
+          "a": "Oui, mais certaines fonctionnalités sont réservées aux abonnés."
+        },
+        {
+          "q": "Fonctionne-t-il sur tous les appareils ?",
+          "a": "Disponible sur le web, Chrome, iOS, Windows, Mac et Android."
+        },
+        {
+          "q": "Puis-je l'utiliser hors ligne ?",
+          "a": "La plupart des fonctionnalités nécessitent une connexion internet."
+        }
+      ],
+      "seo_title_fr": "Speechify - Synthèse vocale et saisie vocale",
+      "seo_description_fr": "Convertissez du texte en parole avec Speechify. Écoutez des livres, PDF et plus encore. Essayez gratuitement !"
+    },
+    "stability-ai": {
+      "short_desc_fr": "Stability AI propose des outils d'IA générative de niveau professionnel pour la production de contenu.",
+      "description_md_fr": "Stability AI est un partenaire créatif prêt pour l'entreprise, offrant des outils de génération d'images et de vidéos de haute qualité adaptés au marketing, aux jeux vidéo et au divertissement. Avec Stability AI, les équipes peuvent produire des ressources conformes à leur image de marque, créer des univers immersifs et simplifier le processus créatif sans obstacle technique.\n\n* Génération d'images et de vidéos\n* Personnalisation et hébergement géré\n* Support pour des résultats concrets",
+      "pros_jsonb_fr": [
+        "Outils de niveau professionnel",
+        "Solutions personnalisables",
+        "Hébergement géré"
+      ],
+      "cons_jsonb_fr": [
+        "Coût élevé",
+        "Configuration technique requise",
+        "Niveau gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Stability AI convient-il aux petites entreprises ?",
+          "a": "Oui, mais les forfaits payants sont recommandés pour un usage de niveau entreprise."
+        },
+        {
+          "q": "Puis-je essayer Stability AI gratuitement ?",
+          "a": "Oui, un essai gratuit est disponible."
+        },
+        {
+          "q": "Quel type de support Stability AI propose-t-il ?",
+          "a": "Ils fournissent une assistance à l'implémentation et un support technique."
+        }
+      ],
+      "seo_title_fr": "Stability AI - Partenaire créatif pour équipes",
+      "seo_description_fr": "Outils d'IA générative professionnels de Stability AI pour le marketing, les jeux et le divertissement. Commencez gratuitement."
+    },
+    "sudowrite": {
+      "short_desc_fr": "Outil de rédaction IA pour la fiction avec le modèle Muse 1.5.",
+      "description_md_fr": "Sudowrite est un partenaire de rédaction IA conçu spécifiquement pour les auteurs de fiction. Grâce à ses capacités avancées d'intelligence narrative, il aide les utilisateurs à créer des récits captivants plus rapidement et plus efficacement. Essayez la version gratuite pour découvrir son assistance sans jugement et ses fonctionnalités innovantes.",
+      "pros_jsonb_fr": [
+        "Spécialisé pour la rédaction de fiction",
+        "Modèle IA narratif avancé (Muse 1.5)",
+        "Assistance sans jugement"
+      ],
+      "cons_jsonb_fr": [
+        "Forfait gratuit limité",
+        "Principalement conçu pour l'écriture créative"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Sudowrite convient-il à la non-fiction ?",
+          "a": "Sudowrite est principalement conçu pour la fiction. Les auteurs de non-fiction pourraient le trouver moins efficace."
+        },
+        {
+          "q": "Puis-je utiliser Sudowrite pour des projets commerciaux ?",
+          "a": "Oui, mais consultez les conditions d'utilisation pour les détails spécifiques."
+        },
+        {
+          "q": "Un essai gratuit est-il disponible ?",
+          "a": "Oui, inscrivez-vous pour essayer Sudowrite gratuitement."
+        }
+      ],
+      "seo_title_fr": "Sudowrite - Partenaire IA pour la fiction",
+      "seo_description_fr": "Rédigez votre roman plus vite avec l'IA spécialisée en fiction de Sudowrite. Essayez-le et voyez pourquoi les grands auteurs l'adorent."
+    },
+    "suno": {
+      "short_desc_fr": "Générateur de musique IA pour créer des pistes originales.",
+      "description_md_fr": "Suno est un outil de génération musicale IA qui permet aux utilisateurs de créer des chansons originales époustouflantes en quelques secondes, à partir d'une simple description ou d'outils d'édition avancés. Parfait pour les musiciens, les producteurs et quiconque souhaite créer ses propres chefs-d'œuvre.\n\n* Accessible à tous les niveaux\n* Création de chansons de haute qualité\n* Gratuit",
+      "pros_jsonb_fr": [
+        "Génération musicale de haute qualité",
+        "Gratuit",
+        "Outils d'édition avancés"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités limitées pour les utilisateurs gratuits",
+        "Dépend de la précision de l'IA"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Suno est-il gratuit ?",
+          "a": "Oui, gratuit avec quelques limitations."
+        },
+        {
+          "q": "Puis-je utiliser Suno à des fins commerciales ?",
+          "a": "Consultez les conditions d'utilisation pour l'usage commercial."
+        },
+        {
+          "q": "Comment démarrer ?",
+          "a": "Inscrivez-vous et commencez à créer avec une simple description."
+        }
+      ],
+      "seo_title_fr": "Générateur de musique IA | Suno",
+      "seo_description_fr": "Créez de la musique originale en quelques secondes avec le générateur IA de Suno. Gratuit, chansons de haute qualité."
+    },
+    "superhuman": {
+      "short_desc_fr": "Superhuman améliore la gestion des courriels et la productivité avec l'IA.",
+      "description_md_fr": "Superhuman est une suite de productivité pilotée par l'IA qui simplifie la gestion des courriels et des documents dans toutes les applications. Elle propose des fonctionnalités avancées comme les réponses intelligentes, les suggestions contextuelles et une interface épurée pour améliorer l'efficacité et la créativité au quotidien.",
+      "pros_jsonb_fr": [
+        "Gestion des courriels assistée par IA",
+        "Édition de documents améliorée",
+        "Boîte de réception unifiée pour une meilleure organisation"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Toutes les fonctionnalités ne sont pas gratuites",
+        "Support mobile limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Superhuman est-il gratuit ?",
+          "a": "Un essai gratuit est disponible, mais certaines fonctionnalités nécessitent un abonnement payant."
+        },
+        {
+          "q": "Fonctionne-t-il sur mobile ?",
+          "a": "Oui, mais l'application mobile est moins complète que la version bureau."
+        },
+        {
+          "q": "Puis-je l'utiliser avec Gmail ?",
+          "a": "Oui, Superhuman s'intègre parfaitement à Gmail et aux autres fournisseurs de messagerie."
+        }
+      ],
+      "seo_title_fr": "Superhuman : Suite de productivité IA",
+      "seo_description_fr": "Boostez votre productivité avec la gestion des courriels et les outils d'édition IA de Superhuman."
+    },
+    "surfer-seo": {
+      "short_desc_fr": "Outil SEO assisté par IA pour la croissance organique.",
+      "description_md_fr": "Surfer SEO est une plateforme propulsée par l'IA conçue pour les équipes marketing et SEO souhaitant améliorer leur visibilité en ligne sur Google et les autres moteurs de recherche. Elle offre des fonctionnalités avancées de recherche de mots-clés, d'optimisation de contenu et d'analyse concurrentielle pour augmenter le trafic organique et les classements.\n\n* Suivez la visibilité de votre marque en temps réel.\n* Obtenez des recommandations personnalisées grâce à l'IA.\n* Gardez une longueur d'avance sur vos concurrents avec des analyses complètes.",
+      "pros_jsonb_fr": [
+        "Recommandations basées sur l'IA",
+        "Suivi en temps réel",
+        "Analyses complètes"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Coût élevé pour certaines fonctionnalités",
+        "Forfait gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Surfer SEO est-il gratuit ?",
+          "a": "Surfer propose un modèle freemium avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Comment se compare-t-il aux autres outils SEO ?",
+          "a": "Surfer se distingue par ses recommandations IA et ses capacités de suivi en temps réel."
+        },
+        {
+          "q": "Puis-je l'essayer avant d'acheter ?",
+          "a": "Oui, un essai gratuit est disponible."
+        }
+      ],
+      "seo_title_fr": "Outil SEO IA pour la croissance organique",
+      "seo_description_fr": "Suivez et améliorez la visibilité de votre marque avec Surfer SEO. Obtenez des recommandations IA et des analyses en temps réel."
+    },
+    "synthesia": {
+      "short_desc_fr": "Outil de création vidéo par IA pour les entreprises.",
+      "description_md_fr": "Synthesia est une plateforme vidéo alimentée par l'IA qui permet aux entreprises de créer des vidéos professionnelles rapidement et facilement à partir de texte. Utilisez des avatars et des voix synthétiques avancés dans plus de 160 langues pour la formation, le marketing, l'activation des ventes, les opérations, les communications internes, la conformité et bien plus encore.",
+      "pros_jsonb_fr": [
+        "Prêt pour les grandes entreprises",
+        "Création vidéo simplifiée",
+        "Prise en charge multilingue"
+      ],
+      "cons_jsonb_fr": [
+        "Service payant",
+        "Courbe d'apprentissage pour les fonctions avancées",
+        "Plan gratuit limité"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Synthesia est-il gratuit ?",
+          "a": "Oui, mais avec des limitations."
+        },
+        {
+          "q": "Combien de langues prend-il en charge ?",
+          "a": "Plus de 160 langues."
+        },
+        {
+          "q": "Qui utilise Synthesia ?",
+          "a": "Les entreprises du Fortune 100 et les équipes mondiales."
+        }
+      ],
+      "seo_title_fr": "Plateforme vidéo IA pour les entreprises",
+      "seo_description_fr": "Créez des vidéos professionnelles rapidement avec les avatars et voix IA de Synthesia en 160+ langues."
+    },
+    "tana": {
+      "short_desc_fr": "Plateforme de réunion assistée par IA pour la gestion des tâches en temps réel.",
+      "description_md_fr": "Tana est une plateforme de réunion agentique où des agents IA gèrent des tâches comme la création de documents et l'enregistrement de tickets pendant les appels vidéo. Elle assure la synchronisation de tous les membres de l'équipe, agents IA inclus, et transforme les réunions en résultats concrets.",
+      "pros_jsonb_fr": [
+        "Automatisation des tâches par IA",
+        "Partage de contexte en temps réel",
+        "Améliore la productivité des réunions"
+      ],
+      "cons_jsonb_fr": [
+        "Intégrations encore limitées",
+        "Courbe d'apprentissage prononcée pour les nouveaux utilisateurs",
+        "Coût élevé comparé aux concurrents"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Tana est-il gratuit ?",
+          "a": "Essai gratuit de 30 jours disponible."
+        },
+        {
+          "q": "Quelles intégrations Tana prend-il en charge ?",
+          "a": "Inclut GitHub, Slack, HubSpot et plus encore."
+        },
+        {
+          "q": "Puis-je annuler mon abonnement ?",
+          "a": "Oui, vous pouvez annuler à tout moment."
+        }
+      ],
+      "seo_title_fr": "Tana - Plateforme de réunion IA",
+      "seo_description_fr": "Plateforme de réunion IA pour la gestion des tâches en temps réel. Commencez votre essai gratuit."
+    },
+    "taskade": {
+      "short_desc_fr": "Plateforme de gestion de tâches et de collaboration assistée par IA.",
+      "description_md_fr": "Taskade est un espace de travail propulsé par l'IA qui intègre tâches, notes, cartes mentales et clavardage pour une gestion de projet et une collaboration d'équipe fluides. Il permet de créer des agents IA personnalisés, d'automatiser des flux de travail et de collaborer en temps réel sur plusieurs vues.\n\nIdéal pour les équipes qui souhaitent améliorer leur productivité grâce à l'assistance IA.",
+      "pros_jsonb_fr": [
+        "Plateforme unifiée pour les tâches, notes et cartes mentales",
+        "Intégration d'agents IA pour l'automatisation",
+        "Fonctions de collaboration en temps réel"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage prononcée",
+        "Options du plan gratuit limitées",
+        "La personnalisation nécessite des connaissances techniques"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Taskade est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Puis-je utiliser des agents IA ?",
+          "a": "Oui, pour l'automatisation de projets personnalisés."
+        },
+        {
+          "q": "Comment se compare-t-il à Trello ?",
+          "a": "Taskade offre des fonctions IA avancées et une collaboration en temps réel plus poussées."
+        }
+      ],
+      "seo_title_fr": "Taskade - Espace de travail IA pour équipes",
+      "seo_description_fr": "Plateforme unifiée pour tâches, notes, cartes mentales et clavardage. Automatisez avec des agents IA."
+    },
+    "tldv": {
+      "short_desc_fr": "Outil de prise de notes de réunion par IA pour la collaboration d'équipe.",
+      "description_md_fr": "tl;dv est un assistant de prise de notes IA conçu pour la collaboration d'équipe. Il capture les connaissances, trouve des réponses et automatise les flux de travail liés aux réunions. Les résumés post-réunion sont envoyés instantanément vers vos applications préférées, pour qu'aucune information ne soit perdue.",
+      "pros_jsonb_fr": [
+        "Résumés générés par IA",
+        "Mises à jour post-réunion instantanées",
+        "Formats de notes personnalisables",
+        "Intégration CRM automatisée",
+        "Gratuit à vie"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités limitées dans le plan gratuit",
+        "Nécessite une connexion Internet",
+        "Configuration requise pour certains utilisateurs",
+        "Pas d'accès hors ligne"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Est-ce gratuit ?",
+          "a": "Oui, gratuit à vie avec des fonctionnalités limitées."
+        },
+        {
+          "q": "Fonctionne-t-il sans connexion Internet ?",
+          "a": "Une connexion Internet est actuellement requise."
+        },
+        {
+          "q": "Puis-je l'utiliser pour des notes personnelles ?",
+          "a": "Il est principalement conçu pour la collaboration d'équipe."
+        }
+      ],
+      "seo_title_fr": "tl;dv - Prise de notes IA pour réunions",
+      "seo_description_fr": "tl;dv - Prise de notes IA pour les équipes. Gratuit à vie, conforme RGPD et SOC2."
+    },
+    "todoist": {
+      "short_desc_fr": "Todoist est un puissant outil de gestion des tâches pour les individus et les équipes.",
+      "description_md_fr": "Todoist vous aide à organiser votre travail et votre vie grâce à son interface intuitive et ses fonctionnalités robustes. Capturez des tâches rapidement, définissez des priorités et collaborez avec vos coéquipiers sans effort. Parfait pour la gestion de projet, le suivi du temps et la formation d'habitudes.\n\n*Capturez vos tâches à la vitesse de la pensée*\n*Priorisez et catégorisez vos projets facilement*\n*Collaborez avec vos équipes en temps réel*\n*Intégrations avec des applications populaires comme Slack et Google Calendar*\n*Modèles pour différents cas d'utilisation*\n",
+      "pros_jsonb_fr": [
+        "Interface conviviale",
+        "Collaboration en temps réel",
+        "Nombreuses intégrations"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités limitées dans le plan gratuit",
+        "Certaines fonctions avancées nécessitent le plan Pro",
+        "Courbe d'apprentissage pour les nouveaux utilisateurs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Todoist est-il gratuit ?",
+          "a": "Oui, il offre un plan gratuit avec les fonctionnalités de base."
+        },
+        {
+          "q": "Todoist permet-il la collaboration d'équipe ?",
+          "a": "Oui, vous pouvez collaborer en temps réel avec vos coéquipiers."
+        },
+        {
+          "q": "Puis-je utiliser Todoist sur plusieurs appareils ?",
+          "a": "Oui, disponible sur le web et les applications mobiles."
+        }
+      ],
+      "seo_title_fr": "Todoist - Application de gestion des tâches",
+      "seo_description_fr": "Organisez votre travail et votre vie avec Todoist. Plan gratuit disponible."
+    },
+    "udio": {
+      "short_desc_fr": "Outil de génération musicale par IA pour créer des chansons complètes.",
+      "description_md_fr": "Udio est une plateforme de création musicale par IA qui génère des chansons complètes de qualité studio à partir de simples descriptions textuelles. Les utilisateurs décrivent un genre, une ambiance, un sujet ou des paroles, et Udio produit des pistes avec des voix réalistes, des instruments et une structure musicale cohérente. Il prend en charge l'extension de clips, le remixage et un contrôle précis du style.\n\nPopulaire auprès des amateurs, des créateurs de contenu et des musiciens qui souhaitent prototyper rapidement des idées musicales.",
+      "pros_jsonb_fr": [
+        "Propulsé par l'IA",
+        "Résultat de qualité studio",
+        "Conversion texte vers musique"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Coût pour les fonctions avancées",
+        "Dépendant de la précision de l'IA"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Udio est-il gratuit ?",
+          "a": "Il propose un modèle freemium avec les fonctionnalités de base."
+        },
+        {
+          "q": "Combien de temps faut-il pour générer de la musique ?",
+          "a": "Génère des chansons rapidement à partir de descriptions textuelles."
+        },
+        {
+          "q": "Puis-je utiliser Udio pour des projets commerciaux ?",
+          "a": "Oui, mais vérifiez les conditions d'utilisation."
+        }
+      ],
+      "seo_title_fr": "Udio - Génération musicale par IA",
+      "seo_description_fr": "Créez des chansons complètes avec voix et instruments à partir de simples descriptions textuelles sur Udio."
+    },
+    "v0": {
+      "short_desc_fr": "v0 par Vercel - Constructeur d'applications web complètes assisté par IA.",
+      "description_md_fr": "v0 par Vercel est une plateforme alimentée par l'IA pour créer des applications web complètes. Elle offre des modèles, des modes de conception et une intégration automatique avec les outils populaires. Les utilisateurs peuvent créer, modifier et déployer des applications rapidement sans connaissances en programmation.\n\nCommencez avec des composants prêts à l'emploi ou utilisez l'interface par invite pour générer du code. Publiez directement sur Vercel pour un déploiement en direct instantané.",
+      "pros_jsonb_fr": [
+        "Génération de code assistée par IA",
+        "Mode de conception visuel",
+        "Intégration automatique avec les outils"
+      ],
+      "cons_jsonb_fr": [
+        "Options de personnalisation limitées",
+        "Nécessite une connexion Internet",
+        "Limitations du plan gratuit"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "v0 est-il gratuit ?",
+          "a": "Oui, mais avec des fonctionnalités limitées dans le plan gratuit."
+        },
+        {
+          "q": "Puis-je utiliser mon propre nom de domaine ?",
+          "a": "Oui, vous pouvez connecter votre domaine personnalisé."
+        },
+        {
+          "q": "Des compétences en programmation sont-elles nécessaires ?",
+          "a": "Non, il convient aussi bien aux développeurs qu'aux non-développeurs."
+        }
+      ],
+      "seo_title_fr": "v0 par Vercel - Constructeur d'apps web IA",
+      "seo_description_fr": "Créez des apps web complètes avec l'IA. Démarrez vite avec des modèles, modifiez visuellement, déployez instantanément."
+    },
+    "webflow": {
+      "short_desc_fr": "Concevez et créez des sites web avec l'éditeur visuel de Webflow.",
+      "description_md_fr": "Webflow est une plateforme de développement web qui permet aux designers et développeurs de créer, gérer et optimiser des sites web grâce à une interface visuelle. Elle comprend des systèmes de design, la gestion de contenu, l'optimisation SEO et des analyses.\n\nAvec Webflow AEO, vous pouvez également vous positionner dans les moteurs de recherche IA. Approuvé par plus de 300 000 équipes.",
+      "pros_jsonb_fr": [
+        "Éditeur visuel par glisser-déposer",
+        "Outils SEO intégrés",
+        "Optimisation assistée par IA"
+      ],
+      "cons_jsonb_fr": [
+        "Courbe d'apprentissage plus prononcée pour les débutants",
+        "Fonctionnalités limitées dans le plan gratuit",
+        "Coût plus élevé comparé à certaines alternatives"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Webflow convient-il aux débutants ?",
+          "a": "Oui, mais l'interface peut être complexe."
+        },
+        {
+          "q": "Offre-t-il la réactivité mobile ?",
+          "a": "Oui, tous les projets sont réactifs par défaut."
+        },
+        {
+          "q": "Puis-je utiliser mon propre domaine avec Webflow ?",
+          "a": "Oui, vous pouvez connecter votre domaine personnalisé."
+        }
+      ],
+      "seo_title_fr": "Webflow : Concevoir et créer des sites web",
+      "seo_description_fr": "Créez et optimisez vos sites web avec l'éditeur visuel de Webflow. Approuvé par plus de 300 000 équipes."
+    },
+    "wellsaid": {
+      "short_desc_fr": "Générateur de voix IA pour une synthèse vocale de qualité professionnelle.",
+      "description_md_fr": "WellSaid Labs propose un outil de génération vocale IA de pointe qui crée des voix de synthèse réalistes dans différents dialectes et styles. Avec plus de 120 voix IA au naturel saisissant, il est idéal pour les entreprises ayant besoin de contenu audio de haute qualité. Essayez la version gratuite dès aujourd'hui pour constater la différence.",
+      "pros_jsonb_fr": [
+        "Voix IA très réalistes",
+        "Créées avec de vrais comédiens de doublage",
+        "Large gamme de dialectes et de styles"
+      ],
+      "cons_jsonb_fr": [
+        "Niveau gratuit limité",
+        "Peut nécessiter une configuration technique"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "L'essai gratuit est-il disponible ?",
+          "a": "Oui, essayez-le gratuitement."
+        },
+        {
+          "q": "Combien de voix sont incluses dans le plan gratuit ?",
+          "a": "Limité à quelques voix."
+        },
+        {
+          "q": "Puis-je utiliser ces voix à des fins commerciales ?",
+          "a": "Oui, avec la licence appropriée."
+        }
+      ],
+      "seo_title_fr": "Générateur de voix IA | WellSaid Labs",
+      "seo_description_fr": "Créez des voix professionnelles dans n'importe quel dialecte ou style. Essayez gratuitement les voix IA de WellSaid."
+    },
+    "windsurf": {
+      "short_desc_fr": "Gérez vos agents locaux et cloud depuis une interface unifiée.",
+      "description_md_fr": "Devin Desktop est une interface unifiée pour gérer des groupes d'agents locaux et cloud. Planifiez, déléguez, révisez et livrez des tâches directement depuis votre éditeur sans changer de contexte. Idéal pour les développeurs qui travaillent avec plusieurs environnements et projets.",
+      "pros_jsonb_fr": [
+        "Interface unifiée",
+        "Prise en charge multiplateforme",
+        "Intégration directe avec les éditeurs"
+      ],
+      "cons_jsonb_fr": [
+        "Limité à l'écosystème Codeium",
+        "Courbe d'apprentissage pour les nouveaux utilisateurs"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Devin Desktop est-il gratuit ?",
+          "a": "Il offre un plan gratuit, mais les fonctions avancées sont payantes."
+        },
+        {
+          "q": "Puis-je l'utiliser avec n'importe quel éditeur ?",
+          "a": "Oui, il s'intègre avec des éditeurs populaires comme VSCode."
+        },
+        {
+          "q": "Prend-il en charge les agents cloud ?",
+          "a": "Oui, les agents locaux et cloud sont tous deux pris en charge."
+        }
+      ],
+      "seo_title_fr": "Devin Desktop - Gérez vos agents en un seul endroit",
+      "seo_description_fr": "Interface unifiée pour gérer vos agents locaux et cloud. Planifiez, déléguez et révisez depuis votre éditeur."
+    },
+    "wordtune": {
+      "short_desc_fr": "Assistant de rédaction par IA pour perfectionner votre anglais.",
+      "description_md_fr": "Wordtune est un assistant de rédaction IA qui vous aide à reformuler, corriger la grammaire et perfectionner votre anglais. Passez facilement d'un ton formel à un ton décontracté, et profitez de fonctions de correction avancées pour garantir l'exactitude avant d'envoyer. Commencez gratuitement, sans carte de crédit requise.",
+      "pros_jsonb_fr": [
+        "Gratuit",
+        "Suggestions de reformulation par IA",
+        "Adaptation contextuelle du ton",
+        "Correction grammaticale avancée",
+        "Intégration fluide"
+      ],
+      "cons_jsonb_fr": [
+        "Fonctionnalités limitées dans la version gratuite",
+        "Peut nécessiter un certain temps pour la personnalisation complète",
+        "Pas encore d'application mobile"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Wordtune est-il gratuit ?",
+          "a": "Oui, commencez sans carte de crédit requise."
+        },
+        {
+          "q": "Puis-je passer d'un ton formel à un ton informel ?",
+          "a": "Absolument, il suffit de cliquer sur un bouton pour changer le ton."
+        },
+        {
+          "q": "Fonctionne-t-il sur les appareils mobiles ?",
+          "a": "Actuellement disponible uniquement sur bureau. Une application mobile est en développement."
+        }
+      ],
+      "seo_title_fr": "Wordtune - Assistant de rédaction IA",
+      "seo_description_fr": "Perfectionnez votre anglais avec l'assistant IA gratuit de Wordtune pour la reformulation et la correction."
+    },
+    "workato": {
+      "short_desc_fr": "Workato connecte les agents IA à plus de 1 400 applications d'entreprise pour des flux de travail sécurisés et évolutifs.",
+      "description_md_fr": "Workato est une plateforme d'intégration de niveau entreprise qui permet la connexion transparente d'agents d'intelligence artificielle (IA) à plus de 1 400 applications d'entreprise. Elle fournit une couche d'orchestration fiable assurant la prévisibilité, l'évolutivité et la sécurité des flux de travail IA agentiques. Basée sur le iPaaS numéro 1, Workato prend en charge différents services grâce à une gestion unifiée.",
+      "pros_jsonb_fr": [
+        "Intégration étendue avec de nombreuses applications",
+        "Sécurisé et évolutif",
+        "Prise en charge des agents IA"
+      ],
+      "cons_jsonb_fr": [
+        "Processus de configuration complexe",
+        "Coût plus élevé comparé aux alternatives",
+        "Courbe d'apprentissage prononcée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Workato est-il gratuit ?",
+          "a": "Workato est un service payant avec différents plans tarifaires."
+        },
+        {
+          "q": "Quels secteurs peuvent utiliser Workato ?",
+          "a": "Workato dessert plusieurs secteurs, dont la finance, la santé et le commerce de détail."
+        },
+        {
+          "q": "Comment Workato assure-t-il la sécurité ?",
+          "a": "Il utilise un chiffrement avancé et des contrôles d'accès pour protéger les données lors des processus d'intégration."
+        }
+      ],
+      "seo_title_fr": "Workato - Plateforme d'intégration IA",
+      "seo_description_fr": "Connectez vos agents IA à plus de 1 400 applications pour des flux de travail sécurisés et évolutifs."
+    },
+    "writesonic": {
+      "short_desc_fr": "Outil SEO assisté par IA pour l'optimisation de contenu et la croissance.",
+      "description_md_fr": "Writesonic est un moteur de croissance IA conçu pour améliorer votre visibilité en ligne grâce aux stratégies SEO, AEO et GEO. Il vous aide à suivre plusieurs plateformes, optimiser votre contenu et mesurer l'impact sur le trafic et les revenus.",
+      "pros_jsonb_fr": [
+        "Analyses IA pour l'optimisation de contenu",
+        "Suivi complet des plateformes",
+        "Résultats prouvés avec de grandes marques"
+      ],
+      "cons_jsonb_fr": [
+        "Coût plus élevé comparé aux outils de base",
+        "Durée d'essai gratuit limitée"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Writesonic est-il gratuit ?",
+          "a": "Oui, il offre un essai gratuit de 7 jours."
+        },
+        {
+          "q": "Convient-il aux petites entreprises ?",
+          "a": "Absolument, adapté à toutes les tailles d'entreprise."
+        },
+        {
+          "q": "Comment mesure-t-il l'impact ?",
+          "a": "Via les indicateurs de trafic et de revenus."
+        }
+      ],
+      "seo_title_fr": "Writesonic - Moteur SEO IA",
+      "seo_description_fr": "Boostez votre présence en ligne avec les outils SEO IA de Writesonic. Suivez, optimisez et croissez."
+    },
+    "zapier": {
+      "short_desc_fr": "Automatisez vos flux de travail entre applications avec Zapier.",
+      "description_md_fr": "Zapier est une plateforme d'automatisation propulsée par l'IA qui connecte plus de 9 000 applications. Automatisez des tâches, gérez les accès et faites évoluer vos opérations sans programmation. Commencez gratuitement avec votre adresse courriel ou votre compte Google.",
+      "pros_jsonb_fr": [
+        "Intègre plus de 9 000 applications",
+        "Automatisation sans code pour les équipes",
+        "Outils de gouvernance IA inclus"
+      ],
+      "cons_jsonb_fr": [
+        "Nécessite une certaine configuration",
+        "Tarification peut être élevée pour les petites entreprises"
+      ],
+      "faq_jsonb_fr": [
+        {
+          "q": "Zapier est-il gratuit ?",
+          "a": "Oui, un plan gratuit est disponible."
+        },
+        {
+          "q": "Combien d'applications puis-je connecter ?",
+          "a": "Plus de 9 000 applications prises en charge."
+        },
+        {
+          "q": "Des compétences en programmation sont-elles nécessaires ?",
+          "a": "L'automatisation sans code est la fonctionnalité principale."
+        }
+      ],
+      "seo_title_fr": "Zapier : Automatiser les flux IA",
+      "seo_description_fr": "Connectez plus de 9 000 applications avec Zapier. Commencez gratuitement dès aujourd'hui !"
+    }
+  },
+  "categories": {
+    "ai-audio": {
+      "description_md_fr": "Générez de la voix, de la parole et de la musique avec l'IA (synthèse vocale, clonage de voix, audio).",
+      "seo_intro_md_fr": "Explorez des outils IA pour l'audio conçus pour améliorer la création, la transcription et l'édition de contenu sonore. Que vous souhaitiez générer des voix réalistes, créer de la musique ou transcrire des réunions, ces plateformes offrent des solutions puissantes adaptées à vos besoins. Choisissez selon les fonctionnalités spécifiques : synthèse vocale, clonage de voix ou génération musicale.",
+      "seo_title_fr": "Répertoire d'outils IA pour l'audio",
+      "seo_description_fr": "Découvrez des outils IA pour l'édition audio, le clonage de voix et la transcription. Idéal pour les créateurs et entreprises."
+    },
+    "ai-coding": {
+      "description_md_fr": "Assistants, agents et environnements de développement IA qui écrivent, complètent, refactorisent et déboguent du code.",
+      "seo_intro_md_fr": "Explorez des outils de développement assistés par IA pour améliorer votre processus avec Replit, Windsurf, Cursor, Devin et GitHub Copilot. Chaque outil propose des fonctionnalités uniques comme le codage collaboratif, la gestion d'agents et l'assistance IA, facilitant la réalisation de projets logiciels ambitieux. Choisissez selon vos besoins : collaboration, automatisation ou vitesse de développement.",
+      "seo_title_fr": "Répertoire d'outils IA pour le développement",
+      "seo_description_fr": "Découvrez Replit, Windsurf, Cursor, Devin et GitHub Copilot pour coder plus intelligemment et développer plus rapidement."
+    },
+    "ai-images": {
+      "description_md_fr": "Générez et modifiez des images avec l'IA.",
+      "seo_intro_md_fr": "Explorez la génération, l'édition et le design d'images assistés par IA avec Adobe Firefly, Leonardo AI, Recraft, Clipdrop, Krea AI, Ideogram, Stability AI, Midjourney, Freepik, Canva, FLUX et Looka. Choisissez selon vos besoins : des outils de niveau professionnel comme Stability AI ou des options accessibles comme Canva pour créer un logo rapidement.",
+      "seo_title_fr": "Répertoire d'outils IA pour les images",
+      "seo_description_fr": "Découvrez des outils IA pour la génération, l'édition et le design d'images, d'Adobe Firefly à Looka."
+    },
+    "ai-video": {
+      "description_md_fr": "Générez et éditez des vidéos avec l'IA : texte vers vidéo, avatars, montage de clips et animation.",
+      "seo_intro_md_fr": "Explorez des outils IA pour la vidéo conçus pour créer, éditer et générer des vidéos facilement. Que vous soyez une entreprise souhaitant produire du contenu professionnel ou un particulier désirant créer des visuels percutants, ces plateformes offrent des fonctionnalités puissantes : humains numériques, automatisation créative et génération vidéo par IA. Choisissez l'outil adapté à vos besoins — réseaux sociaux, présentations d'affaires ou projets créatifs.",
+      "seo_title_fr": "Répertoire d'outils IA pour la vidéo",
+      "seo_description_fr": "Découvrez des outils IA pour la création vidéo, des humains numériques à l'automatisation créative, pour entreprises et particuliers."
+    },
+    "ai-writing": {
+      "description_md_fr": "Outils qui génèrent et éditent du texte avec l'IA.",
+      "seo_intro_md_fr": "Explorez des outils IA pour la rédaction, conçus pour la création de contenu, l'optimisation et l'automatisation. De la génération de textes marketing à la correction grammaticale, ces outils répondent à diverses exigences rédactionnelles. Choisissez selon vos besoins : assistance avancée à l'écriture de code ou amélioration du référencement de vos contenus.",
+      "seo_title_fr": "Répertoire d'outils IA pour la rédaction",
+      "seo_description_fr": "Découvrez des outils IA pour la rédaction : génération de contenu, optimisation SEO et bien plus encore."
+    },
+    "automation": {
+      "description_md_fr": "Plateformes d'automatisation sans code ou à faible code.",
+      "seo_intro_md_fr": "Explorez des outils d'automatisation qui rationalisent les flux de travail entre applications, des intégrations API d'Activepieces aux connexions pilotées par IA de Workato avec plus de 1 400 applications d'affaires. Choisissez l'outil adapté à vos besoins : plateformes visuelles sans code comme Make et Gumloop, ou solutions IA avancées comme Lindy pour l'assistance exécutive et Relevance AI pour la gestion d'agents IA.",
+      "seo_title_fr": "Répertoire d'outils d'automatisation",
+      "seo_description_fr": "Découvrez Activepieces, Pipedream et Workato pour automatiser vos flux de travail entre applications. La solution idéale pour votre entreprise."
+    },
+    "data-scraping": {
+      "description_md_fr": "Collectez, enrichissez et structurez des données.",
+      "seo_intro_md_fr": "Cette catégorie regroupe des outils IA et SaaS essentiels pour l'extraction et le scraping de données, des solutions sans code comme Octoparse et ScrapingBee aux plateformes avancées telles que PhantomBuster et Apify. Choisissez selon vos besoins : automatisez l'extraction de prospects avec PhantomBuster ou exploitez la place de marché d'Apify pour une vaste gamme d'outils IA. Que vous ayez besoin de proxies Bright Data ou de scraping sans code avec Browse AI, ces outils offrent des solutions robustes pour la collecte de données.",
+      "seo_title_fr": "Outils IA et SaaS pour le scraping de données",
+      "seo_description_fr": "Explorez des outils IA et SaaS pour le scraping web, l'extraction de prospects et la collecte de données, de PhantomBuster à Apify."
+    },
+    "no-code": {
+      "description_md_fr": "Créez des applications et des flux de travail sans écrire de code.",
+      "seo_intro_md_fr": "Explorez des solutions sans code comme Lovable, Bubble et Pipedream qui permettent aux non-développeurs de créer des applications et d'automatiser des flux de travail sans programmer. Choisissez selon vos besoins : développement d'applications web et mobiles (Webflow, FlutterFlow), automatisation de tâches d'affaires (Workato, Gumloop) ou espaces de travail collaboratifs (Coda).",
+      "seo_title_fr": "Répertoire d'outils sans code",
+      "seo_description_fr": "Découvrez des outils sans code pour créer des applications et automatiser vos flux de travail. Idéal pour les non-développeurs."
+    },
+    "productivity": {
+      "description_md_fr": "Espaces de travail et outils pour organiser le travail et collaborer.",
+      "seo_intro_md_fr": "Boostez votre productivité avec cette sélection d'outils IA et SaaS conçus pour la collaboration en temps réel, la gestion de projets et l'automatisation. Que vous souhaitiez rationaliser vos flux de travail ou améliorer l'efficacité de vos réunions, ces outils offrent un éventail de fonctionnalités — de la gestion de tâches à la transcription et la création de présentations. Choisissez celui qui correspond le mieux à vos besoins en explorant leurs capacités distinctives.",
+      "seo_title_fr": "Outils IA et SaaS de productivité",
+      "seo_description_fr": "Découvrez des outils IA pour la collaboration, la gestion de projets et l'automatisation. La solution parfaite pour votre équipe."
+    }
+  }
+}

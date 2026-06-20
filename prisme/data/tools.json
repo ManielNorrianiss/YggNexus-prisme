@@ -39,8 +39,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -84,7 +83,6 @@
       }
     ],
     "categories": [
-      "automation",
       "data-scraping"
     ],
     "primary_category": "data-scraping"
@@ -131,11 +129,9 @@
       }
     ],
     "categories": [
-      "automation",
-      "no-code",
       "productivity"
     ],
-    "primary_category": "automation"
+    "primary_category": "productivity"
   },
   {
     "slug": "elevenlabs",
@@ -220,7 +216,6 @@
       }
     ],
     "categories": [
-      "automation",
       "productivity"
     ],
     "primary_category": "productivity"
@@ -265,8 +260,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -309,8 +303,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -398,7 +391,6 @@
       }
     ],
     "categories": [
-      "automation",
       "data-scraping"
     ],
     "primary_category": "data-scraping"
@@ -443,7 +435,6 @@
       }
     ],
     "categories": [
-      "automation",
       "no-code"
     ],
     "primary_category": "no-code"
@@ -488,7 +479,6 @@
       }
     ],
     "categories": [
-      "automation",
       "productivity"
     ],
     "primary_category": "productivity"
@@ -533,7 +523,7 @@
       }
     ],
     "categories": [
-      "automation",
+      "no-code",
       "productivity"
     ],
     "primary_category": "productivity"
@@ -578,8 +568,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "productivity"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -667,8 +656,7 @@
       }
     ],
     "categories": [
-      "automation",
-      "no-code"
+      "automation"
     ],
     "primary_category": "automation"
   },
@@ -711,8 +699,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -800,7 +787,6 @@
       }
     ],
     "categories": [
-      "automation",
       "data-scraping"
     ],
     "primary_category": "data-scraping"
@@ -845,8 +831,7 @@
       }
     ],
     "categories": [
-      "ai-images",
-      "automation"
+      "ai-images"
     ],
     "primary_category": "ai-images"
   },
@@ -978,8 +963,7 @@
       }
     ],
     "categories": [
-      "automation",
-      "no-code"
+      "automation"
     ],
     "primary_category": "automation"
   },
@@ -1071,8 +1055,7 @@
       }
     ],
     "categories": [
-      "ai-images",
-      "automation"
+      "ai-images"
     ],
     "primary_category": "ai-images"
   },
@@ -1116,10 +1099,9 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
-    "primary_category": "automation"
+    "primary_category": "ai-writing"
   },
   {
     "slug": "adobe-firefly",
@@ -1160,8 +1142,7 @@
       }
     ],
     "categories": [
-      "ai-images",
-      "ai-writing"
+      "ai-images"
     ],
     "primary_category": "ai-images"
   },
@@ -1205,8 +1186,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -1299,7 +1279,7 @@
     ],
     "categories": [
       "ai-writing",
-      "automation"
+      "productivity"
     ],
     "primary_category": "ai-writing"
   },
@@ -1343,8 +1323,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "productivity"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -1388,8 +1367,7 @@
       }
     ],
     "categories": [
-      "ai-images",
-      "automation"
+      "ai-images"
     ],
     "primary_category": "ai-images"
   },
@@ -1433,10 +1411,9 @@
       }
     ],
     "categories": [
-      "automation",
       "no-code"
     ],
-    "primary_category": "automation"
+    "primary_category": "no-code"
   },
   {
     "slug": "microsoft-copilot",
@@ -1478,8 +1455,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "productivity"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -1523,8 +1499,7 @@
       }
     ],
     "categories": [
-      "ai-writing",
-      "automation"
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   },
@@ -1612,8 +1587,7 @@
       }
     ],
     "categories": [
-      "ai-images",
-      "ai-writing"
+      "ai-images"
     ],
     "primary_category": "ai-images"
   },
@@ -1657,10 +1631,9 @@
       }
     ],
     "categories": [
-      "ai-audio",
-      "ai-images"
+      "ai-video"
     ],
-    "primary_category": "ai-images"
+    "primary_category": "ai-video"
   },
   {
     "slug": "suno",
@@ -1671,34 +1644,33 @@
     "pricing": "freemium",
     "pricing_note": "Free with limitations",
     "short_desc": "AI music generator for creating original tracks.",
-    "description_md": "Suno is an AI music generator that allows users to create stunning original songs in seconds with just a simple prompt or advanced editing tools. Perfect for musicians, producers, and anyone looking to make their own masterpieces.\n\n* Create any song you can imagine\n* High-quality music creation accessible to all\n* Free 10-song starter pack",
+    "description_md": "Suno is an AI music generation tool that allows users to create stunning original songs in seconds with just a simple prompt or advanced editing tools. Perfect for musicians, producers, and anyone looking to make their own masterpieces.\n\n* Accessible to all skill levels\n* High-quality song creation\n* Free to use",
     "application_category": "MultimediaApplication",
     "quality_score": 8.5,
     "status": "published",
     "seo_title": "AI Music Generator | Suno",
-    "seo_description": "Create original music for free with Suno's AI generator. Make your own masterpieces today!",
+    "seo_description": "Create original music in seconds using Suno's AI generator. Free to use, high-quality songs.",
     "pros_jsonb": [
       "High-quality music generation",
-      "Free to use with a freemium model",
-      "User-friendly interface and advanced editing tools"
+      "Free to use",
+      "Advanced editing tools"
     ],
     "cons_jsonb": [
-      "Limited features in the free version",
-      "Dependent on AI for creativity",
-      "No human composers involved"
+      "Limited features for free users",
+      "Dependent on AI accuracy"
     ],
     "faq_jsonb": [
       {
-        "q": "Is Suno free to use?",
-        "a": "Yes, with a freemium model."
+        "q": "Is Suno free?",
+        "a": "Yes, it's free with some limitations."
       },
       {
-        "q": "Can I create my own songs?",
-        "a": "Absolutely, just use prompts or advanced tools."
+        "q": "Can I use Suno commercially?",
+        "a": "Check terms and conditions for commercial use."
       },
       {
-        "q": "Are there any limitations in the free version?",
-        "a": "Yes, limited features and song count."
+        "q": "How do I get started?",
+        "a": "Sign up and start creating with a simple prompt."
       }
     ],
     "categories": [
@@ -1746,9 +1718,9 @@
       }
     ],
     "categories": [
-      "ai-audio"
+      "ai-video"
     ],
-    "primary_category": "ai-audio"
+    "primary_category": "ai-video"
   },
   {
     "slug": "writesonic",
@@ -1789,8 +1761,3112 @@
       }
     ],
     "categories": [
-      "ai-writing",
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "activepieces",
+    "name": "Activepieces",
+    "vendor": "Activepieces",
+    "website_url": "https://www.activepieces.com",
+    "source_url": "https://www.activepieces.com",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available",
+    "short_desc": "Activepieces automates workflows between apps and APIs.",
+    "description_md": "Activepieces is an open-source no-code automation platform that connects applications and APIs through visual flows. It supports AI steps and custom pieces written in TypeScript, making it a flexible alternative to Zapier for building automated workflows.\n\nIt can be self-hosted or used in the cloud, offering both free and paid plans.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Activepieces - Open-source No-Code Automation",
+    "seo_description": "Automate workflows between apps and APIs with Activepieces, an open-source no-code platform.",
+    "pros_jsonb": [
+      "Open-source",
+      "Supports AI steps",
+      "Customizable with TypeScript"
+    ],
+    "cons_jsonb": [
+      "Limited community support",
+      "Learning curve for custom pieces"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Activepieces free?",
+        "a": "Yes, it offers both free and paid plans."
+      },
+      {
+        "q": "Can I self-host Activepieces?",
+        "a": "Yes, it supports self-hosting."
+      },
+      {
+        "q": "Does it require coding skills?",
+        "a": "No-code for basic flows, but TypeScript for custom pieces."
+      }
+    ],
+    "categories": [
       "automation"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "clipdrop",
+    "name": "Clipdrop",
+    "vendor": "Stability AI",
+    "website_url": "https://clipdrop.co",
+    "source_url": "https://clipdrop.co",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available.",
+    "short_desc": "AI-driven image editing tool by Stability AI.",
+    "description_md": "Clipdrop is a powerful suite of AI tools for image editing and generation, including background removal, relighting, upscaling, and text-to-image conversion via Stable Diffusion. Available as a web app, API, and plugins, it streamlines the design and marketing processes with quick and efficient visual edits.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Clipdrop - AI Image Editing Tool",
+    "seo_description": "AI-driven image editing with background removal, relighting & upscaling. Try Clipdrop now!",
+    "pros_jsonb": [
+      "AI-powered features",
+      "Versatile editing options",
+      "Quick and easy to use"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "API access requires payment",
+      "Plugin support may vary"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Clipdrop free?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I use it for commercial projects?",
+        "a": "Yes, but check the terms and pricing."
+      },
+      {
+        "q": "Does it work on mobile devices?",
+        "a": "Currently available as a web app only."
+      }
+    ],
+    "categories": [
+      "ai-images",
+      "ai-writing"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "krea-ai",
+    "name": "Krea AI",
+    "vendor": "Krea",
+    "website_url": "https://www.krea.ai",
+    "source_url": "https://www.krea.ai",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "Real-time image generation and enhancement tool.",
+    "description_md": "Krea AI is a generative image platform that allows users to sketch or type prompts and see results update live. It supports style control, composition adjustments, and upscaling for high-resolution outputs. Ideal for concept art, marketing visuals, and rapid iteration.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Krea AI - Real-time Image Generation",
+    "seo_description": "Generate and enhance images in real time with Krea AI. Sketch, type prompts, control style & composition.",
+    "pros_jsonb": [
+      "Real-time generation",
+      "Style and composition control",
+      "High-resolution upscaling"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Requires internet connection",
+      "Learning curve for advanced features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Krea AI free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Can I use it offline?",
+        "a": "No, requires an internet connection."
+      },
+      {
+        "q": "How do I get started?",
+        "a": "Sketch or type prompts and see results update live."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "phantombuster",
+    "name": "PhantomBuster",
+    "vendor": "PhantomBuster",
+    "website_url": "https://phantombuster.com",
+    "source_url": "https://phantombuster.com",
+    "pricing": "paid",
+    "pricing_note": "Varies by plan",
+    "short_desc": "Automate lead extraction and outreach with PhantomBuster.",
+    "description_md": "PhantomBuster is a code-free data extraction and automation platform that scrapes profiles from LinkedIn and other sites, enriches contact data, and automates outreach sequences. Ideal for sales and growth teams looking to build lead lists and automate prospecting.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "PhantomBuster - Lead Extraction & Outreach Automation",
+    "seo_description": "Automate lead extraction and outreach with PhantomBuster's code-free platform. Build lead lists and automate prospecting.",
+    "pros_jsonb": [
+      "Code-free operation",
+      "Automates lead extraction and outreach",
+      "Supports multiple platforms"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Cost may be prohibitive for small businesses",
+      "Dependent on vendor's 'phantoms'"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is PhantomBuster easy to use?",
+        "a": "Yes, it is code-free and user-friendly."
+      },
+      {
+        "q": "Can I customize the scraping process?",
+        "a": "Customization options are limited."
+      },
+      {
+        "q": "What platforms does it support?",
+        "a": "Supports LinkedIn and other web/social platforms."
+      }
+    ],
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "play-ht",
+    "name": "PlayHT",
+    "vendor": "PlayHT",
+    "website_url": "https://play.ht",
+    "source_url": "https://play.ht",
+    "pricing": "freemium",
+    "pricing_note": "Limited free tier available",
+    "short_desc": "AI text-to-speech and voice cloning platform.",
+    "description_md": "PlayHT is an AI-driven text-to-speech and voice generation tool that creates natural-sounding voices in multiple languages and accents. It supports voice cloning for realistic audio content, podcasts, IVR systems, and conversational AI applications.\n\nFeatures include a user-friendly API and real-time voice agent product.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "PlayHT - AI Text-to-Speech & Voice Cloning",
+    "seo_description": "Turn text into lifelike speech with PlayHT's advanced AI voice generation platform.",
+    "pros_jsonb": [
+      "Ultra-realistic voice cloning",
+      "Supports many languages and accents",
+      "API and real-time voice agent available"
+    ],
+    "cons_jsonb": [
+      "May require technical setup",
+      "Pricing details not clearly stated"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is PlayHT free?",
+        "a": "It offers a freemium model with limited features."
+      },
+      {
+        "q": "Can I clone any voice?",
+        "a": "Yes, but requires specific permissions and data."
+      },
+      {
+        "q": "What languages does it support?",
+        "a": "Multiple languages and accents are supported."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "ai-writing"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "quillbot",
+    "name": "QuillBot",
+    "vendor": "QuillBot (Learneo)",
+    "website_url": "https://quillbot.com",
+    "source_url": "https://quillbot.com",
+    "pricing": "freemium",
+    "pricing_note": "Limited free plan available",
+    "short_desc": "AI tool for text rephrasing and grammar checking.",
+    "description_md": "QuillBot is an AI writing assistant that helps users rewrite sentences in various tones and lengths, fix grammar and punctuation, check plagiarism, and generate citations. Ideal for students, writers, and professionals looking to polish their text.\n\nIt offers a range of features including paraphrasing, summarization, grammar correction, and citation generation.",
+    "application_category": "WebApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "QuillBot - AI Paraphrasing & Grammar Checker",
+    "seo_description": "Rewrite and improve your text with QuillBot's AI tools. Check grammar, paraphrase sentences, and avoid plagiarism.",
+    "pros_jsonb": [
+      "Versatile AI tools",
+      "Improves writing quality",
+      "Plagiarism detection"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "May require subscription for full features",
+      "Learning curve for advanced users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is QuillBot free to use?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I use it for commercial projects?",
+        "a": "Yes, but check the terms of service."
+      },
+      {
+        "q": "How accurate is the grammar checking?",
+        "a": "Highly accurate with occasional errors."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "resemble-ai",
+    "name": "Resemble AI",
+    "vendor": "Resemble AI",
+    "website_url": "https://www.resemble.ai",
+    "source_url": "https://www.resemble.ai",
+    "pricing": "paid",
+    "pricing_note": "Free trial available",
+    "short_desc": "AI voice cloning and speech generation platform.",
+    "description_md": "Resemble AI is a powerful tool for creating custom AI voices and generating speech from text. It supports real-time synthesis, multilingual dubbing, and includes tools to watermark and detect AI-generated audio.\n\nIdeal for gaming, media production, accessibility, and more, Resemble AI offers a comprehensive suite of features designed to enhance voice cloning projects.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Resemble AI - Voice Cloning & Speech Generation",
+    "seo_description": "Create custom AI voices and generate speech. Real-time synthesis, multilingual support, watermarking tools.",
+    "pros_jsonb": [
+      "Customizable AI voices",
+      "Real-time speech synthesis",
+      "Multilingual support"
+    ],
+    "cons_jsonb": [
+      "Requires short voice samples for cloning",
+      "Advanced features may be complex",
+      "Cost involved in some plans"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Can I use Resemble AI for free?",
+        "a": "Yes, there's a free plan available."
+      },
+      {
+        "q": "Is the generated audio realistic?",
+        "a": "Highly realistic with good quality."
+      },
+      {
+        "q": "Does it support multiple languages?",
+        "a": "Yes, supports multilingual dubbing."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "rytr",
+    "name": "Rytr",
+    "vendor": "Rytr",
+    "website_url": "https://rytr.me",
+    "source_url": "https://rytr.me",
+    "pricing": "paid",
+    "pricing_note": "Low-cost model",
+    "short_desc": "AI-driven content generator for marketing and social media.",
+    "description_md": "Rytr is an AI writing tool designed for generating short-form content like ad copy, emails, product descriptions, and social posts. It offers a variety of templates, tones, and languages to cater to different needs. With its low-cost pricing model, it's popular among solo marketers and small businesses.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Rytr - AI Writer for Marketing",
+    "seo_description": "Generate ad copy, emails, and social posts with Rytr's affordable AI writing tool.",
+    "pros_jsonb": [
+      "Affordable",
+      "Multiple use-case templates",
+      "Various tones and languages"
+    ],
+    "cons_jsonb": [
+      "Limited advanced features",
+      "May require some editing",
+      "User interface could be improved"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Rytr free?",
+        "a": "No, it's a paid service."
+      },
+      {
+        "q": "Can I try it before buying?",
+        "a": "Yes, there’s a free trial available."
+      },
+      {
+        "q": "Does it support multiple languages?",
+        "a": "Yes, it supports several languages."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "softr",
+    "name": "Softr",
+    "vendor": "Softr",
+    "website_url": "https://www.softr.io",
+    "source_url": "https://www.softr.io",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free, advanced paid",
+    "short_desc": "Build web apps on Airtable or Google Sheets without coding.",
+    "description_md": "Softr is a no-code app builder that transforms Airtable and Google Sheets into functional web applications, client portals, internal tools, and directories with drag-and-drop blocks, user authentication, permissions, and payments. Non-developers can quickly ship apps using its intuitive interface.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Softr - No-code Apps on Airtable",
+    "seo_description": "Build web apps, client portals & internal tools without coding. Transform Airtable or Google Sheets into functional applications.",
+    "pros_jsonb": [
+      "No coding required",
+      "Drag-and-drop interface",
+      "User authentication & permissions",
+      "Payments integration",
+      "Quick deployment"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Dependent on Airtable/Google Sheets",
+      "Higher costs for advanced features",
+      "Learning curve for non-technical users",
+      "Vendor lock-in risk"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Softr free?",
+        "a": "Softr offers a freemium model with basic features available for free."
+      },
+      {
+        "q": "Can I use my own database?",
+        "a": "Yes, but it's recommended to use Airtable or Google Sheets for optimal functionality."
+      },
+      {
+        "q": "How long does it take to build an app?",
+        "a": "The time varies based on complexity and design, but Softr claims quick setup times."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "taskade",
+    "name": "Taskade",
+    "vendor": "Taskade",
+    "website_url": "https://www.taskade.com",
+    "source_url": "https://www.taskade.com",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available but limited",
+    "short_desc": "AI-driven task management and collaboration platform.",
+    "description_md": "Taskade is an AI-powered workspace that integrates tasks, notes, mind maps, and chat for seamless project management and team collaboration. It allows users to build custom AI agents, automate workflows, and work in real-time across multiple views.\n\nIdeal for teams looking to enhance productivity with AI assistance.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Taskade - AI Workspace for Teams",
+    "seo_description": "Unified platform for tasks, notes, mind maps & chat. Automate workflows with custom AI agents.",
+    "pros_jsonb": [
+      "Unified platform for tasks, notes, and mind maps",
+      "AI agent integration for automation",
+      "Real-time collaboration features"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Limited free plan options",
+      "Customization requires technical knowledge"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Taskade free?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I use AI agents?",
+        "a": "Yes, for custom project automation."
+      },
+      {
+        "q": "How does it compare to Trello?",
+        "a": "Taskade offers more advanced AI and real-time collaboration features."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "firecrawl",
+    "name": "Firecrawl",
+    "vendor": "Firecrawl",
+    "website_url": "https://www.firecrawl.dev",
+    "source_url": "https://www.firecrawl.dev/",
+    "pricing": "freemium",
+    "pricing_note": "2 months free, then paid annually",
+    "short_desc": "Web scraping and crawling tool for AI agents.",
+    "description_md": "Firecrawl is a powerful context API designed for searching, scraping, and interacting with the web at scale. It offers clean Markdown or structured data outputs, making it ideal for AI/ML research and development. With features like Research Index and open-source support, Firecrawl simplifies web interaction for developers.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Firecrawl - Web Scraping & Crawling Tool",
+    "seo_description": "Scrape and interact with the web at scale using Firecrawl. Ideal for AI/ML research and development.",
+    "pros_jsonb": [
+      "Scalable for large-scale projects",
+      "Provides clean Markdown and JSON outputs",
+      "Includes Research Index for AI/ML"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Steep learning curve for new users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Firecrawl open source?",
+        "a": "Yes, it is open-source."
+      },
+      {
+        "q": "What is the Research Index?",
+        "a": "A specialized index for AI/ML research with SOTA recall."
+      },
+      {
+        "q": "Does Firecrawl offer a free trial?",
+        "a": "Yes, there's a 2-month free trial available."
+      }
+    ],
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "fireflies-ai",
+    "name": "Fireflies.ai",
+    "vendor": "Fireflies.ai",
+    "website_url": "https://fireflies.ai",
+    "source_url": "https://fireflies.ai/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $20/month per user",
+    "short_desc": "AI assistant for meetings and emails.",
+    "description_md": "Fireflies.ai is an AI-driven tool that transcribes, summarizes, and manages tasks from meetings, emails, chats, and CRMs. It offers high accuracy, multi-language support, and comprehensive summaries to streamline your workflow.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Assistant for Meetings & Emails",
+    "seo_description": "Fireflies.ai transcribes, summarizes, and manages tasks from meetings, emails, chats, CRMs. High accuracy, multi-language support.",
+    "pros_jsonb": [
+      "High transcription accuracy",
+      "Multi-language support",
+      "Speaker recognition",
+      "Auto-language detection",
+      "Comprehensive AI summaries"
+    ],
+    "cons_jsonb": [
+      "Cost may be prohibitive for small businesses",
+      "Limited free trial",
+      "Requires internet connection"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Fireflies.ai free?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Does it support multiple languages?",
+        "a": "Yes, over 100 languages supported."
+      },
+      {
+        "q": "How accurate is the transcription?",
+        "a": "95% accuracy in meetings and recordings."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "framer",
+    "name": "Framer",
+    "vendor": "Framer",
+    "website_url": "https://www.framer.com",
+    "source_url": "https://www.framer.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available",
+    "short_desc": "Framer is an AI-powered website builder for professionals.",
+    "description_md": "Framer is a no-code AI website builder that allows designers and developers to create professional websites with ease. It features a design canvas, CMS content management, SEO optimization, collaboration tools, and rapid publishing capabilities.\n\nDesign freely using the intuitive interface, manage your site's content through an integrated CMS, and optimize for search engines. Collaborate seamlessly with team members and publish your website quickly.",
+    "application_category": "WebApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Framer: AI Website Builder",
+    "seo_description": "Create professional websites with Framer’s no-code AI builder. Design, CMS, SEO, and more.",
+    "pros_jsonb": [
+      "AI-driven design",
+      "Integrated CMS",
+      "SEO optimization",
+      "Collaboration tools",
+      "Rapid publishing"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Limited customization options for advanced users",
+      "Subscription-based pricing model"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Framer free?",
+        "a": "Framer offers a freemium plan with limited features."
+      },
+      {
+        "q": "Can I use Framer without coding skills?",
+        "a": "Yes, it is designed for non-coders and designers."
+      },
+      {
+        "q": "How does Framer optimize SEO?",
+        "a": "It includes built-in SEO tools to help you rank higher on search engines."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "freepik",
+    "name": "Freepik",
+    "vendor": "Freepik Company",
+    "website_url": "https://www.freepik.com",
+    "source_url": "https://www.freepik.com",
+    "pricing": "freemium",
+    "pricing_note": "Limited free content available",
+    "short_desc": "Freepik offers AI-generated images and a vast library of graphic resources.",
+    "description_md": "Freepik is an all-in-one platform for designers and marketers that combines a massive collection of stock photos, vectors, icons, and templates with advanced AI tools. Utilize text prompts to generate images, upscale visuals, remove backgrounds, or create videos quickly and efficiently.\n\nThe platform supports various use cases, from content creation to marketing campaigns, providing users with the flexibility to enhance their projects with high-quality graphics.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Freepik - AI Image Generation & Graphics",
+    "seo_description": "Freepik provides a vast library of graphic resources plus AI tools for image generation and editing.",
+    "pros_jsonb": [
+      "Large library of graphic resources",
+      "AI tools for image generation and editing",
+      "Versatile for designers and marketers"
+    ],
+    "cons_jsonb": [
+      "Subscription required for full access",
+      "Limited free content available"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Freepik free to use?",
+        "a": "Freepik offers a freemium model with limited features."
+      },
+      {
+        "q": "Can I generate images using text prompts?",
+        "a": "Yes, the AI suite supports generating images from text prompts."
+      },
+      {
+        "q": "What types of files can I download?",
+        "a": "You can download photos, vectors, icons, and templates in various formats."
+      }
+    ],
+    "categories": [
+      "ai-images",
+      "ai-writing"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "gumloop",
+    "name": "Gumloop",
+    "vendor": "Gumloop",
+    "website_url": "https://www.gumloop.com",
+    "source_url": "https://www.gumloop.com/",
+    "pricing": "paid",
+    "pricing_note": "Contact sales for pricing details.",
+    "short_desc": "AI automation platform for business tasks.",
+    "description_md": "Gumloop is an AI automation framework that enables teams to build and host custom agents without coding. Automate tasks like data analysis, support ticket management, CRM updates, meeting prep, and call analysis with minimal setup.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Gumloop AI Automation Framework",
+    "seo_description": "Build and host custom AI agents for business tasks without coding. Automate data analysis, support, CRM, meetings, calls.",
+    "pros_jsonb": [
+      "No-code platform",
+      "Customizable agents for various business needs",
+      "Quick deployment of specialized agents"
+    ],
+    "cons_jsonb": [
+      "Requires understanding of task to automate",
+      "Limited by AI capabilities",
+      "May require initial configuration"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Gumloop free?",
+        "a": "Pricing varies; contact sales for details."
+      },
+      {
+        "q": "Can I customize the agents?",
+        "a": "Yes, tailor agents to specific business processes."
+      },
+      {
+        "q": "How long does it take to set up an agent?",
+        "a": "Minutes to roll out specialized agents."
+      }
+    ],
+    "categories": [
+      "automation",
+      "no-code"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "heygen",
+    "name": "HeyGen",
+    "vendor": "HeyGen",
+    "website_url": "https://www.heygen.com",
+    "source_url": "https://www.heygen.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan with limitations",
+    "short_desc": "AI video generator for creating stunning videos.",
+    "description_md": "HeyGen is an AI video generator that allows you to create professional-quality videos from text, images, or audio inputs. Turn your ideas into share-ready videos in minutes without any production skills required. Perfect for content creators and businesses looking to produce engaging multimedia content quickly.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "AI Video Generator HeyGen",
+    "seo_description": "Create stunning AI videos from text, images, or audio. Easy and free.",
+    "pros_jsonb": [
+      "Easy to use",
+      "No editing skills needed",
+      "Highly customizable"
+    ],
+    "cons_jsonb": [
+      "Limited advanced features",
+      "Free version has limitations",
+      "Dependent on internet connection"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is HeyGen free?",
+        "a": "Yes, it offers a free plan with basic features."
+      },
+      {
+        "q": "Can I use my own images?",
+        "a": "Yes, you can upload your own images and videos."
+      },
+      {
+        "q": "How long does it take to generate a video?",
+        "a": "Video generation time varies based on complexity but is usually quick."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "luma-dream-machine",
+    "name": "Luma Dream Machine",
+    "vendor": "Luma AI",
+    "website_url": "https://lumalabs.ai/dream-machine",
+    "source_url": "https://lumalabs.ai/app",
+    "pricing": "paid",
+    "pricing_note": "Starts at $99/month",
+    "short_desc": "Luma Dream Machine automates creative workflows for teams.",
+    "description_md": "Luma Dream Machine is a SaaS tool that enhances team productivity by embedding creative agents into your workflow. These agents plan, generate, iterate, and refine content with full context across all stages of creative work, enabling faster collaboration and higher output.\n\nCreative Agents: Embedded in workflows to advance projects end-to-end with shared context.\nShared Context: Synced across every format and workflow for seamless teamwork.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Luma Dream Machine - Creative Agents for Teams",
+    "seo_description": "Boost your team's creativity with Luma Dream Machine. Automate workflows, enhance collaboration, and increase output.",
+    "pros_jsonb": [
+      "Enhances team productivity",
+      "Automates creative processes",
+      "Faster iteration cycles"
+    ],
+    "cons_jsonb": [
+      "High cost for some features",
+      "Learning curve for new users",
+      "Limited free tier options"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Luma Dream Machine suitable for small teams?",
+        "a": "Yes, but some advanced features require a paid plan."
+      },
+      {
+        "q": "Can I try it before committing?",
+        "a": "A free trial is available to test the platform."
+      },
+      {
+        "q": "How does it handle sensitive data?",
+        "a": "Data security and privacy are prioritized with end-to-end encryption."
+      }
+    ],
+    "categories": [
+      "ai-video",
+      "ai-writing"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "otter-ai",
+    "name": "Otter.ai",
+    "vendor": "Otter.ai",
+    "website_url": "https://otter.ai",
+    "source_url": "https://otter.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available but limited.",
+    "short_desc": "AI-powered meeting transcription and notetaking tool.",
+    "description_md": "Otter.ai is an AI-driven meeting notetaker that transcribes meetings in real-time, generates summaries, and tracks action items. It enhances productivity by turning conversations into searchable knowledge. Suitable for teams of all sizes, Otter supports Mac and Windows devices and offers a free plan.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Otter.ai - AI Meeting Notetaker",
+    "seo_description": "AI-powered meeting transcription tool with real-time notes, summaries, and action items. Start free today!",
+    "pros_jsonb": [
+      "Real-time transcription",
+      "Automated summaries",
+      "Action item tracking",
+      "Searchable meeting notes",
+      "Cross-app integration"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "May require internet connection",
+      "Price increases with features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Otter.ai free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "No, requires an internet connection."
+      },
+      {
+        "q": "Can I use it on both Mac and Windows?",
+        "a": "Yes, available for both platforms."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "pika",
+    "name": "Pika",
+    "vendor": "Pika Labs",
+    "website_url": "https://pika.art",
+    "source_url": "https://pika.art/",
+    "pricing": "paid",
+    "pricing_note": "$9.99/month",
+    "short_desc": "AI-driven video creation platform.",
+    "description_md": "Pika is an AI-powered tool for creating and automating video workflows. Users can generate creative content using agents, scenes, and effects. Perfect for trend-following or unique video creations.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Pika - AI Video Creation",
+    "seo_description": "AI-driven video creation platform with automated workflows and creative agents.",
+    "pros_jsonb": [
+      "AI automation",
+      "Creative agent generation",
+      "Versatile editing tools"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Steep learning curve",
+      "Subscription required"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Pika free?",
+        "a": "Pricing starts at $9.99/month."
+      },
+      {
+        "q": "Can I use Pika for business?",
+        "a": "Yes, suitable for businesses and creators."
+      },
+      {
+        "q": "How long does it take to create a video?",
+        "a": "Depends on complexity but usually quick."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "sudowrite",
+    "name": "Sudowrite",
+    "vendor": "Sudowrite",
+    "website_url": "https://www.sudowrite.com",
+    "source_url": "https://sudowrite.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "AI writing tool for fiction with Muse 1.5 model.",
+    "description_md": "Sudowrite is an AI writing partner designed specifically for fiction writers. With its advanced story-smart capabilities, it helps users craft compelling narratives faster and more efficiently. Try the free version today to experience its non-judgmental support and innovative features.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Sudowrite - AI Writing Partner for Fiction",
+    "seo_description": "Write your novel faster with Sudowrite's advanced fiction-specific AI. Try it now and see why top authors love it.",
+    "pros_jsonb": [
+      "Specialized for fiction writing",
+      "Advanced story-smart AI model (Muse 1.5)",
+      "Non-judgmental assistance"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Primarily designed for creative writing"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Sudowrite suitable for non-fiction?",
+        "a": "Sudowrite is primarily designed for fiction. Non-fiction writers may find it less effective."
+      },
+      {
+        "q": "Can I use Sudowrite for commercial projects?",
+        "a": "Yes, but check the terms and conditions for specific details."
+      },
+      {
+        "q": "Is there a free trial available?",
+        "a": "Yes, sign up to try Sudowrite for free."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "adobe-podcast",
+    "name": "Adobe Podcast",
+    "vendor": "Adobe",
+    "website_url": "https://podcast.adobe.com",
+    "source_url": "https://podcast.adobe.com",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with limitations.",
+    "short_desc": "AI-powered audio recording and enhancement for podcasts.",
+    "description_md": "Adobe Podcast is a suite of AI tools designed for creators and podcasters. It offers multitrack browser-based recording, speech enhancement to remove noise and echo, and transcript-based editing to streamline post-production processes.\n\nIdeal for anyone looking to produce high-quality spoken audio content with ease.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Adobe Podcast - AI Audio Tools",
+    "seo_description": "AI-powered audio recording & enhancement for podcasts. Multitrack browser-based recording, speech enhancement.",
+    "pros_jsonb": [
+      "AI-powered speech enhancement",
+      "Multitrack browser-based recording",
+      "Transcript-based editing"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Requires internet connection",
+      "May require learning curve for advanced features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Adobe Podcast free?",
+        "a": "Yes, it offers a free plan with basic features."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "No, it requires an internet connection to function."
+      },
+      {
+        "q": "Can I use it for commercial projects?",
+        "a": "Yes, but check the terms and conditions for details."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "productivity"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "bardeen",
+    "name": "Bardeen",
+    "vendor": "Bardeen",
+    "website_url": "https://www.bardeen.ai",
+    "source_url": "https://www.bardeen.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free plan available",
+    "short_desc": "Web scraper and AI lead qualification tool.",
+    "description_md": "Bardeen is a SaaS tool that sources leads through web scraping, qualifies them with AI, and enriches contact information for outreach. Use built-in scrapers or create your own to find potential customers across the internet.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Bardeen: AI Lead Sourcing & Qualification",
+    "seo_description": "Find, qualify, and reach potential customers with Bardeen’s web scraping and AI tools.",
+    "pros_jsonb": [
+      "AI-driven lead qualification",
+      "Customizable web scraping templates",
+      "Contact enrichment features"
+    ],
+    "cons_jsonb": [
+      "Requires technical setup knowledge",
+      "Pricing may be high for small businesses",
+      "Limited free plan available"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Bardeen a freemium service?",
+        "a": "Yes, it offers a limited free plan."
+      },
+      {
+        "q": "Can I use my own scrapers with Bardeen?",
+        "a": "Yes, you can build your own or use premium ones."
+      },
+      {
+        "q": "How does the AI qualification work?",
+        "a": "Describe ideal leads and AI prioritizes them for you."
+      }
+    ],
+    "categories": [
+      "automation",
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "bolt-new",
+    "name": "Bolt.new",
+    "vendor": "StackBlitz",
+    "website_url": "https://bolt.new",
+    "source_url": "https://bolt.new/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free plan available.",
+    "short_desc": "AI-driven tool for building websites and apps.",
+    "description_md": "Bolt.new is an AI builder that allows you to create stunning web applications and websites by simply chatting with the AI. It supports various design systems like Material UI, Chakra UI, and more. Bolt does the heavy lifting, enabling you to focus on your vision without dealing with coding errors.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Bolt.new: AI Builder for Websites & Apps",
+    "seo_description": "Build stunning web apps & sites with Bolt's AI. Try it now!",
+    "pros_jsonb": [
+      "AI-driven",
+      "Supports multiple design systems",
+      "Automatically routes to the best model"
+    ],
+    "cons_jsonb": [
+      "Limited free domain offer",
+      "May require some technical knowledge for advanced users",
+      "Pricing not explicitly stated on website"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Bolt.new free?",
+        "a": "Yes, with a limited free plan."
+      },
+      {
+        "q": "Does it support Figma imports?",
+        "a": "Yes, you can import from Figma."
+      },
+      {
+        "q": "What design systems are supported?",
+        "a": "Supported systems include Material UI, Chakra UI, and more."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "browse-ai",
+    "name": "Browse AI",
+    "vendor": "Browse AI",
+    "website_url": "https://www.browse.ai",
+    "source_url": "https://www.browse.ai/",
+    "pricing": "paid",
+    "pricing_note": "$29/month minimum",
+    "short_desc": "No-code web scraper and monitor for any website.",
+    "description_md": "Browse AI is the #1 no-code platform for scraping and monitoring data from websites. Easily build AI scrapers by pointing and clicking, or use built-in features like dynamic content capture and proxy management to extract complex data. Monitor changes and export data into APIs or integrations with over 7,000 tools.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "No-Code Web Scraper - Browse AI",
+    "seo_description": "Scrape and monitor data from any website without coding. Build automated workflows easily.",
+    "pros_jsonb": [
+      "No coding required",
+      "Dynamic content support",
+      "Built-in bot evasion"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Monthly subscription fee"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is it free?",
+        "a": "Paid, starting at $29/month."
+      },
+      {
+        "q": "Does it work with dynamic content?",
+        "a": "Yes, supports dynamic pages and AJAX requests."
+      },
+      {
+        "q": "Can I integrate with other tools?",
+        "a": "Yes, integrates with over 7,000 apps via API or webhooks."
+      }
+    ],
+    "categories": [
+      "data-scraping",
+      "no-code"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "canva",
+    "name": "Canva",
+    "vendor": "Canva",
+    "website_url": "https://www.canva.com",
+    "source_url": "https://www.canva.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with premium features for subscription",
+    "short_desc": "Canva is a user-friendly graphic design tool.",
+    "description_md": "Canva is an online graphic design platform that allows users to create social media posts, presentations, posters, videos, and more using AI-powered tools like Magic Eraser and Magic Write. It offers templates, animations, and brand kits for professional designs.\n\n*AI Presentations*\n*Social Video*\n*Print Shop*\n*AI 2.0 Tools*\n*Magic Layers*\n*Brand Kit*\n*Animations*",
+    "application_category": "WebApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Canva: Graphic Design Tool",
+    "seo_description": "Create social media posts, presentations, and more with Canva's free online graphic design tool.",
+    "pros_jsonb": [
+      "User-friendly interface",
+      "Wide range of templates and tools",
+      "AI-powered features for automation"
+    ],
+    "cons_jsonb": [
+      "Limited advanced customization options",
+      "Some premium features require subscription",
+      "Can be slow with large projects"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Canva free?",
+        "a": "Yes, it offers a free plan with basic features."
+      },
+      {
+        "q": "Does Canva have templates?",
+        "a": "Yes, it provides thousands of pre-designed templates for various needs."
+      },
+      {
+        "q": "Can I export my designs from Canva?",
+        "a": "Yes, you can download or share your designs in multiple formats."
+      }
+    ],
+    "categories": [
+      "ai-images",
+      "ai-writing"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "capcut",
+    "name": "CapCut",
+    "vendor": "ByteDance",
+    "website_url": "https://www.capcut.com",
+    "source_url": "https://www.capcut.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free with limited features",
+    "short_desc": "AI-powered video editor for creating social media content.",
+    "description_md": "CapCut is an AI-driven video editing tool that simplifies the creation of engaging videos for platforms like YouTube and Instagram. It offers smart templates, text-to-speech functionality, and advanced AI tools to generate visuals and videos from text or images.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "CapCut AI Video Editor",
+    "seo_description": "AI-powered video editor for social media content creation. Free trial available.",
+    "pros_jsonb": [
+      "AI-powered features",
+      "Free online version available",
+      "Easy video creation"
+    ],
+    "cons_jsonb": [
+      "Limited premium features",
+      "Mobile app ads",
+      "Subscription required for full access"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is CapCut free?",
+        "a": "Yes, the basic version is free."
+      },
+      {
+        "q": "Does it have a mobile app?",
+        "a": "Yes, available on iOS and Android."
+      },
+      {
+        "q": "Can I use it for business?",
+        "a": "Yes, but some features require a subscription."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "consensus",
+    "name": "Consensus",
+    "vendor": "Consensus",
+    "website_url": "https://consensus.app",
+    "source_url": "https://consensus.app",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available, subscription for full access",
+    "short_desc": "AI-powered academic search engine for research papers.",
+    "description_md": "Consensus is an AI-driven academic search tool that provides evidence-based conclusions directly from peer-reviewed scientific literature. It surfaces key findings with citations and a consensus meter, ensuring trustworthy answers for researchers, students, clinicians, and professionals.\n\nInstead of returning links, Consensus reads across millions of papers to surface evidence-backed insights.",
+    "application_category": "WebApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Academic Search Engine - Consensus",
+    "seo_description": "Find evidence-backed insights from peer-reviewed research with Consensus's AI-powered academic search engine.",
+    "pros_jsonb": [
+      "Evidence-based conclusions",
+      "Citations provided",
+      "Consensus meter shows agreement"
+    ],
+    "cons_jsonb": [
+      "Limited to academic content",
+      "May require subscription for full access",
+      "Results are based on AI interpretation"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Consensus free?",
+        "a": "It offers a free trial, but some features may be limited."
+      },
+      {
+        "q": "How does it work?",
+        "a": "Consensus reads millions of papers and surfaces evidence-based conclusions."
+      },
+      {
+        "q": "Who is it for?",
+        "a": "Researchers, students, clinicians, and professionals needing trustworthy answers."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "vendor": "Anysphere",
+    "website_url": "https://www.cursor.com",
+    "source_url": "https://cursor.com/",
+    "pricing": "paid",
+    "pricing_note": "Free trial available",
+    "short_desc": "AI coding agent for building ambitious software.",
+    "description_md": "Cursor is an AI coding assistant designed to enhance productivity in software development. It offers a desktop and CLI interface, helping with tasks like code generation, mission control, and project management. Ideal for developers looking to streamline their workflow.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Cursor: AI Coding Agent",
+    "seo_description": "Boost your coding efficiency with Cursor, the AI coding agent for ambitious software projects.",
+    "pros_jsonb": [
+      "Enhances developer productivity",
+      "Supports multiple interfaces (Desktop & CLI)",
+      "Aids in code generation and mission control"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Limited free tier available"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Cursor suitable for beginners?",
+        "a": "Cursor is geared towards experienced developers due to its complexity."
+      },
+      {
+        "q": "Can I try Cursor without paying?",
+        "a": "Yes, there's a free trial available."
+      },
+      {
+        "q": "What platforms does Cursor support?",
+        "a": "Currently supports macOS. Windows and Linux coming soon."
+      }
+    ],
+    "categories": [
+      "ai-coding"
+    ],
+    "primary_category": "ai-coding"
+  },
+  {
+    "slug": "d-id",
+    "name": "D-ID",
+    "vendor": "D-ID",
+    "website_url": "https://www.d-id.com",
+    "source_url": "https://www.d-id.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available, paid plans for full features.",
+    "short_desc": "AI-driven video creation platform for digital humans.",
+    "description_md": "D-ID is a leading AI-generated video creation platform that enables organizations to create high-quality content in minutes. It supports multilingual interactions and seamless API integration, making it easy to scale messaging across various channels.\n\n* Speed & simplicity: Quickly customize avatars and videos to fit your brand identity.\n* Multilingual support: Create content in over 120 languages for global audiences.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "D-ID AI Video Creation Platform",
+    "seo_description": "Create high-quality digital human videos quickly with D-ID. Multilingual support and seamless API integration.",
+    "pros_jsonb": [
+      "Speed & simplicity",
+      "Multilingual support",
+      "Seamless API integration",
+      "Brand-adaptable",
+      "Cost-effective"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Complex setup for beginners",
+      "API documentation could be better"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is D-ID free?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "How many languages does it support?",
+        "a": "Over 120 languages."
+      },
+      {
+        "q": "Can I use it for commercial projects?",
+        "a": "Yes, it's suitable for businesses."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "devin",
+    "name": "Devin",
+    "vendor": "Cognition",
+    "website_url": "https://devin.ai",
+    "source_url": "https://devin.ai/",
+    "pricing": "paid",
+    "pricing_note": "Initial setup fee applies.",
+    "short_desc": "AI coding agent for faster software development.",
+    "description_md": "Devin is an AI coding assistant designed to help developers build better software faster. It automates repetitive tasks and refactoring processes, allowing teams to focus on innovation. Parallel cloud agents ensure efficient handling of large-scale projects, significantly reducing engineering time and costs.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Devin AI Coding Agent",
+    "seo_description": "AI software engineer for faster development. Automates refactoring, reduces costs.",
+    "pros_jsonb": [
+      "Automates repetitive tasks",
+      "Improves engineering efficiency",
+      "Reduces development costs"
+    ],
+    "cons_jsonb": [
+      "High initial setup cost",
+      "May require significant training",
+      "Limited support for complex projects"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Devin suitable for small teams?",
+        "a": "Yes, but benefits may vary."
+      },
+      {
+        "q": "Can Devin handle complex projects?",
+        "a": "It supports most projects but may need customization."
+      },
+      {
+        "q": "Does Devin require coding knowledge?",
+        "a": "Basic understanding helps; Devin can assist with coding tasks."
+      }
+    ],
+    "categories": [
+      "ai-coding"
+    ],
+    "primary_category": "ai-coding"
+  },
+  {
+    "slug": "diffbot",
+    "name": "Diffbot",
+    "vendor": "Diffbot",
+    "website_url": "https://www.diffbot.com",
+    "source_url": "https://www.diffbot.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free tier available, paid plans for larger usage.",
+    "short_desc": "AI-driven web data extraction and crawling tool.",
+    "description_md": "Diffbot transforms unstructured web content into structured data using AI, computer vision, and machine learning. Extract data types including organizations, news & articles, retail products, and discussions with over 246M companies and 1.6B+ articles in its Knowledge Graph.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Diffbot - AI Web Data Extraction",
+    "seo_description": "Transform web content into structured data with Diffbot's AI-driven tool.",
+    "pros_jsonb": [
+      "AI-driven",
+      "Extensive data coverage",
+      "Automated extraction",
+      "API access for integration",
+      "Free tier available"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Complex setup required",
+      "Pricing details vary by use case"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Diffbot free?",
+        "a": "Yes, with a free tier."
+      },
+      {
+        "q": "How much data does it cover?",
+        "a": "Over 246M companies and 1.6B+ articles."
+      },
+      {
+        "q": "Can I use it for commercial projects?",
+        "a": "Yes, but pricing varies."
+      }
+    ],
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "elicit",
+    "name": "Elicit",
+    "vendor": "Elicit",
+    "website_url": "https://elicit.com",
+    "source_url": "https://elicit.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available.",
+    "short_desc": "AI tool for searching and summarizing scientific papers.",
+    "description_md": "Elicit is an AI-driven platform that helps researchers find, summarize, and extract data from over 125 million academic papers. It supports quick answers or comprehensive reviews, making research more efficient. Try now to see how Elicit can enhance your evidence-based approach in science.\n\nFeatures include advanced search capabilities, automatic report generation, and a user-friendly interface.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI for Scientific Research - Elicit",
+    "seo_description": "Search, summarize & extract data from over 125 million papers. Try Elicit now!",
+    "pros_jsonb": [
+      "Advanced AI search",
+      "Automated report generation",
+      "Large academic paper database",
+      "User-friendly interface",
+      "Supports quick answers and comprehensive reviews"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "May require internet connection",
+      "Cost for extensive use",
+      "Learning curve for new users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Elicit free to use?",
+        "a": "Yes, but with limitations. Try the free version now."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Pricing varies based on usage and features."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "Elicit requires an internet connection for full functionality."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "fathom",
+    "name": "Fathom",
+    "vendor": "Fathom",
+    "website_url": "https://fathom.video",
+    "source_url": "https://www.fathom.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available, paid plans offer more features.",
+    "short_desc": "AI-driven meeting notetaker for teams and individuals.",
+    "description_md": "Fathom AI Notetaker automatically captures and summarizes your meetings, allowing you to stay focused on the conversation. With integrations into ChatGPT and Claude, Fathom ensures you never miss critical moments. Suitable for teams of all sizes, it provides a shared source of truth across customer conversations.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Fathom AI Notetaker - Meeting Summarization",
+    "seo_description": "AI-driven meeting notetaking for teams and individuals. Stay focused on conversations with automatic summaries.",
+    "pros_jsonb": [
+      "Automatically captures meeting notes",
+      "Integrates with popular AI tools",
+      "Bot-free option available"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "May require internet connection for real-time updates"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Fathom free?",
+        "a": "Yes, it offers a free plan."
+      },
+      {
+        "q": "Does Fathom work offline?",
+        "a": "No, it requires an internet connection."
+      },
+      {
+        "q": "Can I use Fathom with ChatGPT?",
+        "a": "Yes, it integrates seamlessly with ChatGPT."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "flutterflow",
+    "name": "FlutterFlow",
+    "vendor": "FlutterFlow",
+    "website_url": "https://www.flutterflow.io",
+    "source_url": "https://flutterflow.io/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with limitations",
+    "short_desc": "Visual app builder for mobile and web apps.",
+    "description_md": "FlutterFlow is a visual development platform that enables rapid creation of high-quality applications across multiple platforms. Utilize pre-designed UI elements and a visual Action Flow Editor to build complex logic without coding. Test, customize, and integrate third-party services seamlessly to launch your app faster.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "FlutterFlow - Build Beautiful Apps",
+    "seo_description": "Visual app builder for fast development of high-quality mobile & web apps.",
+    "pros_jsonb": [
+      "Visual drag-and-drop interface",
+      "Quick prototyping and development",
+      "Wide range of integrations"
+    ],
+    "cons_jsonb": [
+      "Limited customization for advanced users",
+      "Learning curve for beginners",
+      "Cost for premium features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is FlutterFlow free?",
+        "a": "Yes, it offers a free plan with limitations."
+      },
+      {
+        "q": "Can I use FlutterFlow for commercial projects?",
+        "a": "Yes, but some plans have restrictions."
+      },
+      {
+        "q": "Does FlutterFlow support custom widgets?",
+        "a": "Yes, you can create and customize your own widgets."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "flux",
+    "name": "FLUX",
+    "vendor": "Black Forest Labs",
+    "website_url": "https://blackforestlabs.ai",
+    "source_url": "https://bfl.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, paid features available.",
+    "short_desc": "FLUX models for visual intelligence and generative design.",
+    "description_md": "Black Forest Labs' FLUX is a cutting-edge AI tool designed for generating high-quality images and videos with precise controls. It allows users to create consistent, photorealistic content from imagination to image, making it ideal for product visualization, marketing, and creative projects.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Black Forest Labs - FLUX AI Models",
+    "seo_description": "Generate high-quality visual assets with FLUX. Try for free now.",
+    "pros_jsonb": [
+      "Highly detailed and realistic output",
+      "Precision controls for editing",
+      "Consistency in generated assets"
+    ],
+    "cons_jsonb": [
+      "Limited model options currently available",
+      "API-based access may require technical knowledge",
+      "Cost associated with advanced features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is FLUX free to use?",
+        "a": "FLUX offers a free trial, but some features are paid."
+      },
+      {
+        "q": "How do I get started with FLUX?",
+        "a": "Contact sales for setup and API access."
+      },
+      {
+        "q": "What kind of content can I generate with FLUX?",
+        "a": "FLUX supports images, videos, and detailed cutaway models."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "frase",
+    "name": "Frase",
+    "vendor": "Frase",
+    "website_url": "https://www.frase.io",
+    "source_url": "https://www.frase.io/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "Frase automates SEO and content creation.",
+    "description_md": "Frase is an AI-driven platform that analyzes your market, generates optimized content, and tracks your visibility on Google, ChatGPT, and Perplexity. It provides actionable insights to improve your online presence and rank higher in search results.\n\nKey features include competitor analysis, SEO brief creation with GEO optimization, and continuous monitoring of your content's performance.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Frase - AI SEO & Content Automation",
+    "seo_description": "Automate your SEO and content creation with Frase. Analyze competitors, generate optimized content, and track visibility on Google, ChatGPT, and Perplexity",
+    "pros_jsonb": [
+      "Automated content generation",
+      "Competitor analysis tool",
+      "GEO optimization for AI readiness"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Limited free plan features",
+      "Requires internet connection"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Frase free to try?",
+        "a": "Yes, a 7-day free trial is available."
+      },
+      {
+        "q": "Does it work with all types of content?",
+        "a": "Primarily designed for SEO and marketing content."
+      },
+      {
+        "q": "Can I use Frase without an internet connection?",
+        "a": "No, it requires a stable internet connection to function properly."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "vendor": "GitHub",
+    "website_url": "https://github.com/features/copilot",
+    "source_url": "https://github.com/features/copilot",
+    "pricing": "paid",
+    "pricing_note": "Free trial available",
+    "short_desc": "AI code assistant for developers",
+    "description_md": "GitHub Copilot is an AI pair programmer that suggests code directly in your editor. It accelerates development by offering whole lines or functions, enhancing productivity and creativity.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "GitHub Copilot - AI Code Assistant",
+    "seo_description": "Accelerate your coding with GitHub Copilot's AI suggestions. Try it now!",
+    "pros_jsonb": [
+      "Increases coding speed",
+      "Enhances code quality",
+      "Works across multiple IDEs"
+    ],
+    "cons_jsonb": [
+      "May suggest incorrect code",
+      "Cost for enterprise use"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Copilot free?",
+        "a": "Free trial available, paid plans for teams."
+      },
+      {
+        "q": "Does it work with all editors?",
+        "a": "Yes, supports popular IDEs and editors."
+      },
+      {
+        "q": "Can I use my own models?",
+        "a": "Yes, you can use custom agents."
+      }
+    ],
+    "categories": [
+      "ai-coding"
+    ],
+    "primary_category": "ai-coding"
+  },
+  {
+    "slug": "glide",
+    "name": "Glide",
+    "vendor": "Glide",
+    "website_url": "https://www.glideapps.com",
+    "source_url": "https://www.glideapps.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available",
+    "short_desc": "Build AI-powered apps without coding.",
+    "description_md": "Glide is a no-code app builder that transforms spreadsheets into intelligent applications. Easily create custom workflows and automate manual tasks with AI integration. Ideal for businesses needing quick, adaptable software solutions.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Glide: No Code App Builder",
+    "seo_description": "Build custom AI-powered apps without coding. Try Glide for free.",
+    "pros_jsonb": [
+      "No code required",
+      "AI-driven automation",
+      "Quick deployment"
+    ],
+    "cons_jsonb": [
+      "Limited advanced features",
+      "Steep learning curve for non-technical users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Glide free?",
+        "a": "Yes, try it for free."
+      },
+      {
+        "q": "Does Glide require coding skills?",
+        "a": "No, no-code platform."
+      },
+      {
+        "q": "How long does it take to build an app?",
+        "a": "Minutes from idea to app."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "hailuo",
+    "name": "Hailuo AI",
+    "vendor": "MiniMax",
+    "website_url": "https://hailuoai.video",
+    "source_url": "https://hailuoai.video/",
+    "pricing": "freemium",
+    "pricing_note": "$10/month after free trial",
+    "short_desc": "Generate AI videos and images for creators.",
+    "description_md": "Hailuo AI is a powerful video and image generator designed for content creators. Users can create stunning visuals from text or photos with ease. The platform offers various tools like Light Studio, Trending Creative Image Pack, and more to enhance your creative projects online.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Hailuo AI - Video & Image Generator",
+    "seo_description": "Create AI videos and images from text or photos. Join Hailuo CPP for exclusive benefits.",
+    "pros_jsonb": [
+      "User-friendly interface",
+      "Wide range of tools",
+      "AI-driven creation"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Subscription required for full features",
+      "Learning curve for advanced users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Hailuo AI free to use?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "$10/month or $50/year for full access."
+      },
+      {
+        "q": "Can I try before subscribing?",
+        "a": "Yes, sign up for a free trial."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "hyperwrite",
+    "name": "HyperWrite",
+    "vendor": "OthersideAI",
+    "website_url": "https://www.hyperwriteai.com",
+    "source_url": "https://www.hyperwriteai.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with limitations",
+    "short_desc": "AI writing assistant for content creation and research.",
+    "description_md": "HyperWrite is an AI writing assistant designed to help professionals, students, and creators generate content faster and smarter. It offers tools like AutoWrite, TypeAhead, Email Response, HyperChat, and Custom Tools tailored to various workflows.\n\nUse it to write paragraphs, get context-aware suggestions, create custom AI tools, or chat with the AI for research assistance.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "HyperWrite | AI Writing Assistant",
+    "seo_description": "AI writing assistant for content generation, research, and more. Use AutoWrite, TypeAhead, and Custom Tools.",
+    "pros_jsonb": [
+      "Advanced predictive writing",
+      "Customizable AI tools",
+      "Flexible AutoWrite feature"
+    ],
+    "cons_jsonb": [
+      "Limited free version",
+      "May require internet connection",
+      "Learning curve for some features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is HyperWrite free?",
+        "a": "Yes, it offers a free plan with limited features."
+      },
+      {
+        "q": "Can I use HyperWrite offline?",
+        "a": "Most features require an active internet connection."
+      },
+      {
+        "q": "How do I create custom AI tools?",
+        "a": "Use the Custom Tools feature to tailor workflows to your specific needs."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "invideo",
+    "name": "InVideo",
+    "vendor": "InVideo",
+    "website_url": "https://invideo.io",
+    "source_url": "https://invideo.io/",
+    "pricing": "paid",
+    "pricing_note": "$9/month starting price",
+    "short_desc": "AI-driven video creation tool for professionals.",
+    "description_md": "InVideo Agent One is an AI-powered video creation platform designed for serious creatives. It automates the video production process, allowing users to focus on their content while the AI handles editing and optimization. Ideal for film promos, performance ads, and microdramas.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "InVideo Agent One - AI Video Creation",
+    "seo_description": "Create & edit AI videos with Agent One. Save time, ensure consistency.",
+    "pros_jsonb": [
+      "AI automation saves time",
+      "Consistent project context",
+      "Versatile application across media types"
+    ],
+    "cons_jsonb": [
+      "High cost may be prohibitive",
+      "Requires internet connection",
+      "Limited free trial"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is InVideo Agent One suitable for beginners?",
+        "a": "Yes, but advanced features require experience."
+      },
+      {
+        "q": "Can I use my own images and videos with InVideo?",
+        "a": "Yes, you can import your media assets."
+      },
+      {
+        "q": "How much does InVideo cost?",
+        "a": "Paid plan starting at $9/month."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "jenni-ai",
+    "name": "Jenni AI",
+    "vendor": "Jenni AI",
+    "website_url": "https://jenni.ai",
+    "source_url": "https://jenni.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free basic plan available",
+    "short_desc": "AI academic writing and research tool for students and researchers.",
+    "description_md": "Jenni AI is an intelligent assistant designed for academics and researchers. It helps with essay creation, paper writing, and citation management, ensuring every claim can be traced back to its source. With a vast library of over 5,032 sources, Jenni streamlines the research process.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Jenni AI - Academic Research & Writing Tool",
+    "seo_description": "AI assistant for students and researchers. Write, cite, and manage academic papers with ease.",
+    "pros_jsonb": [
+      "Intelligent claims tracing",
+      "Large academic database",
+      "Free version available"
+    ],
+    "cons_jsonb": [
+      "Limited features in free plan",
+      "May require subscription for full access"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Jenni AI free?",
+        "a": "Yes, the basic version is free."
+      },
+      {
+        "q": "How many sources does it have?",
+        "a": "Over 5,032 academic sources."
+      },
+      {
+        "q": "Does it support all types of research papers?",
+        "a": "It supports a wide range but may not cover niche topics."
+      }
+    ],
+    "categories": [
+      "ai-writing"
+    ],
+    "primary_category": "ai-writing"
+  },
+  {
+    "slug": "kling",
+    "name": "Kling AI",
+    "vendor": "Kuaishou",
+    "website_url": "https://klingai.com",
+    "source_url": "https://kling.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free, advanced require subscription",
+    "short_desc": "AI-driven creative tool for images and videos.",
+    "description_md": "Kling AI is an advanced AI platform designed for generating imaginative visuals and animations. It supports complex storytelling through multimodal instructions and seamless transitions, offering a comprehensive suite of tools in one interface.\n\nWith the latest 3.0 model series, Kling AI redefines creative freedom by integrating audio and visual elements, ensuring consistency across multiple scenes.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Kling AI - Next-Gen Creative Studio",
+    "seo_description": "Generate imaginative images and videos with Kling AI's advanced generative AI tools.",
+    "pros_jsonb": [
+      "Multimodal instruction support",
+      "Seamless cross-task integration",
+      "High creative freedom"
+    ],
+    "cons_jsonb": [
+      "Complex setup required",
+      "Higher cost for advanced features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Kling AI free to use?",
+        "a": "Kling AI offers a freemium model with basic features available at no cost."
+      },
+      {
+        "q": "How does it handle complex scenes?",
+        "a": "VIDEO 3.0 supports intricate transitions and storyboards, ensuring consistency across multiple scenes."
+      },
+      {
+        "q": "Does it require technical skills?",
+        "a": "While user-friendly, some technical knowledge is beneficial for optimal use."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "lalal-ai",
+    "name": "LALAL.AI",
+    "vendor": "LALAL.AI",
+    "website_url": "https://www.lalal.ai",
+    "source_url": "https://www.lalal.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, paid for full features",
+    "short_desc": "AI-powered vocal and instrumental remover.",
+    "description_md": "LALAL.AI is an AI-driven tool for removing vocals and instrumentals from audio files quickly and accurately. Ideal for music producers, DJs, and content creators looking to isolate tracks or clean up recordings.\n\n* Supports various file formats and multiple stems.\n* Uses advanced transformer technology for high-quality results.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Vocal & Instrumental Remover | LALAL.AI",
+    "seo_description": "Remove vocals and instrumentals from any audio file with LALAL.AI. High-quality results in seconds.",
+    "pros_jsonb": [
+      "High accuracy",
+      "Quick processing",
+      "Supports multiple stems"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "No mobile app",
+      "Requires internet connection"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is LALAL.AI free to use?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Does it work on all file types?",
+        "a": "Most common audio formats are supported."
+      },
+      {
+        "q": "Can I use it offline?",
+        "a": "No, internet connection required."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "lindy",
+    "name": "Lindy",
+    "vendor": "Lindy",
+    "website_url": "https://www.lindy.ai",
+    "source_url": "https://www.lindy.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial with limited features.",
+    "short_desc": "AI executive assistant for managing inbox and scheduling.",
+    "description_md": "Lindy is an AI-driven executive assistant that automates tasks like email management, meeting preparation, and calendar organization to save you time. It integrates with various tools and services to enhance productivity.\n\nFeatures include proactive inbox management, meeting prep, flight booking, and more. Try it for free today.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Executive Assistant Lindy",
+    "seo_description": "Lindy saves 2 hours daily by managing inbox and scheduling. Try free now!",
+    "pros_jsonb": [
+      "Automates routine admin tasks",
+      "Enhances email and calendar efficiency",
+      "Integrates with multiple apps"
+    ],
+    "cons_jsonb": [
+      "May require initial setup time",
+      "Limited free plan features",
+      "Dependent on internet connectivity"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Lindy free to use?",
+        "a": "Yes, try it for free with limited features."
+      },
+      {
+        "q": "How does Lindy handle sensitive data?",
+        "a": "Lindy ensures data privacy and security through robust encryption."
+      },
+      {
+        "q": "Can I cancel my subscription?",
+        "a": "Absolutely, you can cancel at any time from your account settings."
+      }
+    ],
+    "categories": [
+      "automation",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "looka",
+    "name": "Looka",
+    "vendor": "Looka",
+    "website_url": "https://looka.com",
+    "source_url": "https://looka.com",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free, advanced options require subscription",
+    "short_desc": "AI-powered logo maker for quick brand identity creation.",
+    "description_md": "Looka is an AI-driven platform that simplifies the process of creating professional logos and complete brand kits. Users input their company name and style preferences, and Looka's advanced algorithms generate multiple logo options which can be customized with color, font, and layout. Additionally, it provides full brand kits including business cards, social media assets, and templates.",
+    "application_category": "WebApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "AI Logo Maker | Looka",
+    "seo_description": "Create professional logos and brand kits quickly with Looka's AI-powered design tool.",
+    "pros_jsonb": [
+      "AI-driven design",
+      "Customizable options",
+      "Quick turnaround",
+      "Comprehensive brand kits",
+      "Affordable pricing"
+    ],
+    "cons_jsonb": [
+      "Limited customization for advanced users",
+      "Dependent on AI accuracy",
+      "No human designer support",
+      "Subscription required"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Looka free to use?",
+        "a": "Yes, it offers a freemium model with basic features available for free."
+      },
+      {
+        "q": "How long does it take to create a logo?",
+        "a": "Looka typically generates logos within minutes."
+      },
+      {
+        "q": "Can I get human designer support?",
+        "a": "No, Looka is an AI-driven platform without human designers."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "magnific",
+    "name": "Magnific AI",
+    "vendor": "Magnific (Freepik)",
+    "website_url": "https://magnific.ai",
+    "source_url": "https://magnific.ai",
+    "pricing": "freemium",
+    "pricing_note": "Limited free tier, paid plans available",
+    "short_desc": "AI image upscaler and enhancer for detailed resolution boost.",
+    "description_md": "Magnific AI is an advanced tool that upscales images while adding realistic detail. It enhances photos, illustrations, and 3D renders, making them look crisp and professional. Beyond simple scaling, it offers creative controls to adjust texture, sharpness, and style.\n\nIt's widely used by designers, photographers, and AI artists for finishing and print-ready output.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Magnific AI - AI Image UpScaler",
+    "seo_description": "Advanced AI tool for image upscaling and enhancement. Boost resolution with realistic detail.",
+    "pros_jsonb": [
+      "Realistic detail addition",
+      "Creative control options",
+      "Versatile image types support"
+    ],
+    "cons_jsonb": [
+      "May require learning curve",
+      "Limited free tier available"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is it easy to use?",
+        "a": "Yes, with intuitive controls."
+      },
+      {
+        "q": "Does it work on all image types?",
+        "a": "Supports photos, illustrations, and 3D renders."
+      },
+      {
+        "q": "Can I try it for free?",
+        "a": "Yes, but limited features."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "mem",
+    "name": "Mem",
+    "vendor": "Mem Labs",
+    "website_url": "https://get.mem.ai",
+    "source_url": "https://get.mem.ai/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free plan available",
+    "short_desc": "AI-powered notes app for organizing thoughts and ideas.",
+    "description_md": "Mem is an AI-driven notes application that helps you organize your thoughts and ideas in one place. It remembers what you create and brings up relevant information when needed, making it easier to manage your tasks and projects. With Mem, you can dump your ideas, meetings, and research into the app, which then organizes them for you.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Mem AI Notes App",
+    "seo_description": "Organize thoughts with Mem's AI-driven notes app. Dump ideas, meetings, research—let Mem do the organizing.",
+    "pros_jsonb": [
+      "AI-driven organization",
+      "Voice input support",
+      "Meeting note-taking"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Learning curve for advanced features",
+      "Dependent on internet connection"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Mem free?",
+        "a": "Yes, with a limited free plan."
+      },
+      {
+        "q": "Can I use it offline?",
+        "a": "No, it requires an internet connection."
+      },
+      {
+        "q": "How does Mem learn my thinking pattern?",
+        "a": "Through your notes and interactions over time."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "motion",
+    "name": "Motion",
+    "vendor": "Motion",
+    "website_url": "https://www.usemotion.com",
+    "source_url": "https://www.usemotion.com/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $29/month per user",
+    "short_desc": "AI-powered productivity platform for teams and individuals.",
+    "description_md": "Motion is an AI-driven superapp designed for work, offering AI projects, tasks, calendar, meetings, docs, notes, reports, and workflows. Trusted by over 1 million users, it streamlines your daily tasks and boosts productivity.\n\n*AI Projects*: Automate project management with smart task allocation.\n*AI Tasks*: Stay on top of deadlines with intelligent reminders.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Productivity Platform | Motion",
+    "seo_description": "Motion: AI-powered superapp for work. Boost productivity with smart projects, tasks, and more.",
+    "pros_jsonb": [
+      "AI-driven automation",
+      "Comprehensive suite of tools",
+      "User testimonials"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "High cost for some features",
+      "Limited free tier"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Motion suitable for small teams?",
+        "a": "Yes, it supports individuals and teams of all sizes."
+      },
+      {
+        "q": "How does Motion save time?",
+        "a": "By automating tasks and streamlining workflows."
+      },
+      {
+        "q": "Can I try Motion for free?",
+        "a": "Yes, but with limited features."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "notebooklm",
+    "name": "NotebookLM",
+    "vendor": "Google",
+    "website_url": "https://notebooklm.google.com",
+    "source_url": "https://notebooklm.google.com",
+    "pricing": "freemium",
+    "pricing_note": "Limited free version available.",
+    "short_desc": "AI research and note-taking assistant by Google.",
+    "description_md": "NotebookLM is an AI-powered research and note-taking tool that grounds its responses in the sources you upload, such as documents, PDFs, slides, and web pages. It summarizes material, answers questions with citations, and provides a podcast-style summary through its Audio Overview feature.\n\nIt's valuable for students, researchers, and professionals who need to digest large amounts of information.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "NotebookLM - AI Research Assistant",
+    "seo_description": "AI-powered research tool by Google that grounds answers in your documents and sources.",
+    "pros_jsonb": [
+      "Integrates sources directly into responses",
+      "Podcast-style audio summaries",
+      "Cites original text"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Dependent on uploaded content quality",
+      "May require significant setup for large collections"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is NotebookLM free to use?",
+        "a": "Yes, but with limitations."
+      },
+      {
+        "q": "Can I upload any type of file?",
+        "a": "Supports documents, PDFs, slides, and web pages."
+      },
+      {
+        "q": "How does it handle large collections?",
+        "a": "May require optimization for extensive content."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "opus-clip",
+    "name": "Opus Clip",
+    "vendor": "Opus",
+    "website_url": "https://www.opus.pro",
+    "source_url": "https://www.opus.pro/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free plan available",
+    "short_desc": "AI-powered video clipping and editing tool.",
+    "description_md": "Opus Clip is an AI-driven platform that simplifies the process of creating high-quality viral clips from long videos. It supports various genres and can automatically resize content for different social media platforms in one click.\n\n*Effortlessly edit any type of video.*\n*Automatically optimize clips for multiple social networks.*",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Opus Clip: AI Video Clipping Tool",
+    "seo_description": "Create high-quality viral clips from long videos with Opus Clip. Supports multiple genres and optimizes for social media.",
+    "pros_jsonb": [
+      "AI-driven editing models",
+      "Supports diverse video genres",
+      "Automatic resizing for social media"
+    ],
+    "cons_jsonb": [
+      "Limited free plan features",
+      "May require subscription for advanced use"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Opus Clip free?",
+        "a": "Yes, but with limited features."
+      },
+      {
+        "q": "Can I edit any type of video?",
+        "a": "Yes, including vlogs, gaming, sports, and more."
+      },
+      {
+        "q": "How does it optimize for social media?",
+        "a": "Automatically resizes clips to fit various platforms."
+      }
+    ],
+    "categories": [
+      "ai-video"
+    ],
+    "primary_category": "ai-video"
+  },
+  {
+    "slug": "photoroom",
+    "name": "PhotoRoom",
+    "vendor": "PhotoRoom",
+    "website_url": "https://www.photoroom.com",
+    "source_url": "https://www.photoroom.com/",
+    "pricing": "freemium",
+    "pricing_note": "Starts free, paid plans available",
+    "short_desc": "AI-powered photo editor and listing studio for e-commerce.",
+    "description_md": "PhotoRoom is an AI-driven tool designed for e-commerce businesses and social media creators. It automates image creation, formats images for multiple marketplaces, and produces marketplace-ready listings at scale. With PhotoRoom, you can easily create professional-quality visuals without a photo studio.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Photo Editor for E-commerce",
+    "seo_description": "Automate image creation & listings with PhotoRoom. Perfect for e-commerce businesses.",
+    "pros_jsonb": [
+      "AI-powered batch editing",
+      "Automated image production",
+      "Marketplace sync capabilities"
+    ],
+    "cons_jsonb": [
+      "Requires API integration for full automation",
+      "Higher cost for enterprise features"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is PhotoRoom free?",
+        "a": "It offers a freemium model with paid plans."
+      },
+      {
+        "q": "Can I use it without coding?",
+        "a": "Yes, the web app is user-friendly."
+      },
+      {
+        "q": "Does it support multiple marketplaces?",
+        "a": "Yes, including Shopify and others."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "playground-ai",
+    "name": "Playground AI",
+    "vendor": "Playground",
+    "website_url": "https://playground.com",
+    "source_url": "https://playground.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with limitations",
+    "short_desc": "AI-driven design tool for logos, t-shirts, and social media graphics.",
+    "description_md": "Playground AI is an easy-to-use AI design platform that allows users to create custom designs like logos, t-shirts, and social media graphics without any design experience. With thousands of templates across 24 categories, users can customize their creations with ease. The tool supports features such as color, style, layout, and more through a simple text input.",
+    "application_category": "WebApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "AI Design Tool for Logos & T-Shirts",
+    "seo_description": "Create custom designs and graphics with Playground AI, the easy-to-use AI design platform.",
+    "pros_jsonb": [
+      "No design experience required",
+      "Thousands of customizable templates",
+      "AI-driven design suggestions"
+    ],
+    "cons_jsonb": [
+      "Limited advanced editing options",
+      "Templates may not suit all needs",
+      "Some features require in-app purchases"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Playground AI free to use?",
+        "a": "Yes, it offers a free plan with basic features."
+      },
+      {
+        "q": "Can I export my designs from Playground AI?",
+        "a": "Yes, you can download your designs as PNG or SVG files."
+      },
+      {
+        "q": "How many templates are available in Playground AI?",
+        "a": "There are over 24 categories with thousands of templates to choose from."
+      }
+    ],
+    "categories": [
+      "ai-images"
+    ],
+    "primary_category": "ai-images"
+  },
+  {
+    "slug": "podcastle",
+    "name": "Podcastle",
+    "vendor": "Podcastle",
+    "website_url": "https://podcastle.ai",
+    "source_url": "https://async.com/",
+    "pricing": "paid",
+    "pricing_note": "$11.99/mo",
+    "short_desc": "AI-driven video and audio editing platform.",
+    "description_md": "Podcastle is an AI-powered creative studio for video and audio content production. It offers chat-based video creation, remote recording, editing, subtitles, dubbing, and clip generation. Ideal for podcasters, creators, and storytellers looking to streamline their workflow with minimal technical skills required.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Podcastle - AI Video & Audio Editor",
+    "seo_description": "AI-driven video and audio editing for creators. Chat-based interface, unified workflow.",
+    "pros_jsonb": [
+      "Chat-based interface",
+      "AI handles complex tasks",
+      "Unified workflow for video and audio"
+    ],
+    "cons_jsonb": [
+      "Requires internet connection",
+      "Subscription model",
+      "Limited free trial"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is it easy to use?",
+        "a": "Yes, no experience needed."
+      },
+      {
+        "q": "Can I try it for free?",
+        "a": "Yes, but limited features."
+      },
+      {
+        "q": "Does it support multiple languages?",
+        "a": "Yes, 15 languages available."
+      }
+    ],
+    "categories": [
+      "ai-audio"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "reclaim",
+    "name": "Reclaim",
+    "vendor": "Reclaim.ai",
+    "website_url": "https://reclaim.ai",
+    "source_url": "https://reclaim.ai/",
+    "pricing": "paid",
+    "pricing_note": "Special new user offer available",
+    "short_desc": "AI-powered calendar for scheduling and time management.",
+    "description_md": "Reclaim is an AI-driven app that optimizes your schedule by automatically managing tasks, meetings, breaks, and habits. It integrates seamlessly with Google Calendar and Outlook to enhance productivity and free up more time for work and life.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Reclaim - AI Calendar for Work & Life",
+    "seo_description": "Save 30% on Reclaim's Starter & Business plans. Auto-schedule tasks, meetings, breaks, and habits.",
+    "pros_jsonb": [
+      "Automatically schedules tasks and meetings",
+      "Integrates with major calendars (Google & Outlook)",
+      "Enhances focus time and buffer time management"
+    ],
+    "cons_jsonb": [
+      "Limited free plan availability",
+      "May require some setup and adjustment",
+      "Primarily designed for teams, individual use may be limited"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Reclaim free to try?",
+        "a": "Yes, there's a free trial available."
+      },
+      {
+        "q": "Can I use it with my existing calendar?",
+        "a": "Yes, it integrates with Google and Outlook calendars."
+      },
+      {
+        "q": "How does AI defend my time?",
+        "a": "AI schedules tasks and meetings to maximize productivity."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "relevance-ai",
+    "name": "Relevance AI",
+    "vendor": "Relevance AI",
+    "website_url": "https://relevance.ai",
+    "source_url": "https://relevanceai.com/",
+    "pricing": "paid",
+    "pricing_note": "Varies based on features and usage.",
+    "short_desc": "Relevance AI for scalable AI agent management.",
+    "description_md": "Relevance AI is an enterprise platform designed for managing and scaling AI agents within organizations. It enables domain experts to build and govern AI-driven solutions, ensuring accountability and business impact at scale. Ideal for GTM and high-growth teams looking to automate processes and drive conversions.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Relevance AI - Enterprise Platform for Scalable AI Agents",
+    "seo_description": "Manage and scale AI agents with enterprise-grade governance. Built by domain experts.",
+    "pros_jsonb": [
+      "Enterprise-grade governance",
+      "Managed by domain experts",
+      "100+ integrations available"
+    ],
+    "cons_jsonb": [
+      "Complex setup process",
+      "Higher cost compared to alternatives"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Relevance AI free?",
+        "a": "No, it's a paid service."
+      },
+      {
+        "q": "Does it require technical expertise?",
+        "a": "Yes, domain experts are needed."
+      },
+      {
+        "q": "How many integrations does it offer?",
+        "a": "Over 100 integrations available."
+      }
+    ],
+    "categories": [
+      "automation"
+    ],
+    "primary_category": "automation"
+  },
+  {
+    "slug": "replit",
+    "name": "Replit",
+    "vendor": "Replit Inc.",
+    "website_url": "https://replit.com",
+    "source_url": "https://replit.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan has limitations.",
+    "short_desc": "Collaborative coding and AI-driven development platform.",
+    "description_md": "Replit is a cloud-based integrated development environment (IDE) that combines live coding, collaboration features, and AI assistance to streamline software development. It supports multiple programming languages and offers real-time collaboration tools for teams.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Replit - AI Coding & Collaboration",
+    "seo_description": "Build apps with AI in minutes. Collaborate live with Replit.",
+    "pros_jsonb": [
+      "Real-time collaboration",
+      "AI-driven code suggestions",
+      "Integrated development environment"
+    ],
+    "cons_jsonb": [
+      "Limited free plan",
+      "Browser-based, may lag on slower devices"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Replit free to use?",
+        "a": "Yes, with limitations."
+      },
+      {
+        "q": "Can I collaborate with others?",
+        "a": "Yes, real-time collaboration is supported."
+      },
+      {
+        "q": "Does it support multiple programming languages?",
+        "a": "Yes, including Python, JavaScript, and more."
+      }
+    ],
+    "categories": [
+      "ai-coding",
+      "productivity"
+    ],
+    "primary_category": "ai-coding"
+  },
+  {
+    "slug": "retool",
+    "name": "Retool",
+    "vendor": "Retool",
+    "website_url": "https://retool.com",
+    "source_url": "https://retool.com/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free plan available",
+    "short_desc": "Build internal tools with Retool’s unified engine.",
+    "description_md": "Retool is a powerful tool for building and deploying internal software quickly. Connect any database or API, leverage AI, and manage your apps from one place. Build applications that integrate seamlessly into your workflow without writing code.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Build Internal Tools with Retool",
+    "seo_description": "Create and deploy internal software quickly using Retool’s unified engine. Connect databases, APIs, and LLMs.",
+    "pros_jsonb": [
+      "Unified platform for app development",
+      "Integrates with various databases and APIs",
+      "Leverages AI to speed up development"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Requires some technical knowledge",
+      "Not suitable for external-facing apps"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Retool free?",
+        "a": "Yes, with a limited free plan."
+      },
+      {
+        "q": "Can I use Retool for external apps?",
+        "a": "No, it's primarily for internal tools."
+      },
+      {
+        "q": "Does Retool support AI?",
+        "a": "Yes, you can leverage AI throughout your business."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "scrapingbee",
+    "name": "ScrapingBee",
+    "vendor": "ScrapingBee",
+    "website_url": "https://www.scrapingbee.com",
+    "source_url": "https://www.scrapingbee.com/",
+    "pricing": "freemium",
+    "pricing_note": "1,000 free credits available",
+    "short_desc": "ScrapingBee is a web scraping API that handles proxies and headless browsers.",
+    "description_md": "ScrapingBee simplifies web scraping by managing proxies and anti-bot defenses. Easily extract data from websites using AI-powered extraction or JSON rules. Integrate with AI tools like ChatGPT for seamless data processing.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "ScrapingBee - Web Scraping API",
+    "seo_description": "Easily scrape websites without managing proxies. Integrate with AI tools for data extraction.",
+    "pros_jsonb": [
+      "Handles proxies and headless browsers",
+      "AI-powered data extraction",
+      "Easy to integrate"
+    ],
+    "cons_jsonb": [
+      "Limited free tier (1,000 credits)",
+      "Requires API knowledge",
+      "Pricing may be high for small projects"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is ScrapingBee free?",
+        "a": "Yes, with a limited free plan."
+      },
+      {
+        "q": "Can I use AI with ScrapingBee?",
+        "a": "Yes, integrate with AI tools like ChatGPT."
+      },
+      {
+        "q": "How do I sign up?",
+        "a": "Sign up via email or Google."
+      }
+    ],
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "speechify",
+    "name": "Speechify",
+    "vendor": "Speechify",
+    "website_url": "https://speechify.com",
+    "source_url": "https://speechify.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial available.",
+    "short_desc": "Speechify converts text into speech and supports voice typing.",
+    "description_md": "Speechify is a versatile AI tool that reads any text aloud with natural voices, supporting PDFs, web pages, and more. It also includes voice typing for hands-free input. Ideal for listening to books, articles, or documents anytime, anywhere.",
+    "application_category": "WebApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Speechify Text to Speech & Voice Typing",
+    "seo_description": "Convert text to speech with Speechify. Listen to books, PDFs, and more. Try free now!",
+    "pros_jsonb": [
+      "Natural-sounding voices",
+      "Supports multiple devices",
+      "Voice typing functionality"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "Some features require subscription",
+      "May have occasional glitches"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Speechify free?",
+        "a": "Yes, but some features are premium."
+      },
+      {
+        "q": "Does it work on all devices?",
+        "a": "Available for web, Chrome, iOS, Windows, Mac, and Android."
+      },
+      {
+        "q": "Can I use it offline?",
+        "a": "Most features require an internet connection."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "productivity"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "superhuman",
+    "name": "Superhuman",
+    "vendor": "Superhuman",
+    "website_url": "https://superhuman.com",
+    "source_url": "https://superhuman.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free trial, paid subscription for full features",
+    "short_desc": "Superhuman enhances email and productivity with AI.",
+    "description_md": "Superhuman is an AI-driven productivity suite that streamlines emails and documents across all apps. It offers advanced features like smart replies, context-aware suggestions, and a clean interface to boost efficiency and creativity in your daily work.",
+    "application_category": "WebApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Superhuman: AI Productivity Suite",
+    "seo_description": "Boost your productivity with Superhuman's AI-driven email management and document editing tools.",
+    "pros_jsonb": [
+      "AI-powered email management",
+      "Enhanced document editing",
+      "Unified inbox for better organization"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "Not all features are free",
+      "Limited mobile support"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Superhuman free?",
+        "a": "It offers a free trial, but some features require a paid subscription."
+      },
+      {
+        "q": "Does it work on mobile?",
+        "a": "Yes, but the app is not as feature-rich as the desktop version."
+      },
+      {
+        "q": "Can I use it with Gmail?",
+        "a": "Yes, Superhuman integrates seamlessly with Gmail and other email providers."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "surfer-seo",
+    "name": "Surfer SEO",
+    "vendor": "Surfer",
+    "website_url": "https://surferseo.com",
+    "source_url": "https://surferseo.com/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $99/month",
+    "short_desc": "AI-driven SEO tool for organic growth.",
+    "description_md": "Surfer SEO is an AI-powered platform designed for marketing and SEO teams aiming to enhance their online visibility across Google and other search engines. It offers advanced keyword research, content optimization, and competitive analysis features to boost organic traffic and rankings.\n\n* Track your brand's visibility in real-time.\n* Get personalized insights with AI-driven recommendations.\n* Stay ahead of competitors with comprehensive analytics.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI SEO Tool for Organic Growth",
+    "seo_description": "Track & improve your brand’s visibility with Surfer SEO. Get AI-driven insights and real-time analytics.",
+    "pros_jsonb": [
+      "AI-driven insights",
+      "Real-time tracking",
+      "Comprehensive analytics"
+    ],
+    "cons_jsonb": [
+      "Steep learning curve",
+      "High cost for some features",
+      "Limited free plan"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Surfer SEO free?",
+        "a": "Surfer offers a freemium model with limited features."
+      },
+      {
+        "q": "How does it compare to other SEO tools?",
+        "a": "Surfer stands out with its AI-driven insights and real-time tracking capabilities."
+      },
+      {
+        "q": "Can I try it before buying?",
+        "a": "Yes, there's a free trial available."
+      }
+    ],
+    "categories": [
+      "data-scraping"
+    ],
+    "primary_category": "data-scraping"
+  },
+  {
+    "slug": "tana",
+    "name": "Tana",
+    "vendor": "Tana",
+    "website_url": "https://tana.inc",
+    "source_url": "https://tana.inc/",
+    "pricing": "paid",
+    "pricing_note": "Starts at $29/user/month",
+    "short_desc": "AI-driven meeting platform for real-time task management.",
+    "description_md": "Tana is an agentic meeting platform where AI agents handle tasks like document creation and issue filing during video calls. It ensures all team members, including AI agents, stay in sync and turn meetings into productive outcomes.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.5,
+    "status": "published",
+    "seo_title": "Tana - AI Meeting Platform",
+    "seo_description": "AI-driven meeting platform for real-time task management. Start free trial now.",
+    "pros_jsonb": [
+      "AI-driven task automation",
+      "Real-time context sharing",
+      "Enhances meeting productivity"
+    ],
+    "cons_jsonb": [
+      "Limited integrations currently",
+      "Steep learning curve for new users",
+      "High cost compared to competitors"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Tana free?",
+        "a": "30-day free trial available."
+      },
+      {
+        "q": "What integrations does Tana support?",
+        "a": "Includes GitHub, Slack, HubSpot, and more."
+      },
+      {
+        "q": "Can I cancel my subscription?",
+        "a": "Yes, you can cancel anytime."
+      }
+    ],
+    "categories": [
+      "ai-writing",
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "tldv",
+    "name": "tl;dv",
+    "vendor": "tl;dv",
+    "website_url": "https://tldv.io",
+    "source_url": "https://tldv.io/",
+    "pricing": "free",
+    "pricing_note": "Free with limited features",
+    "short_desc": "AI-driven meeting note taker for team collaboration.",
+    "description_md": "tl;dv is an AI notetaker designed for team collaboration. It captures knowledge, finds answers, and automates meeting workflows. Post-meeting summaries are instantly sent to your preferred apps, ensuring no insights are missed.",
+    "application_category": "BusinessApplication",
+    "quality_score": 8.9,
+    "status": "published",
+    "seo_title": "AI Meeting Notetaker tl;dv",
+    "seo_description": "tl;dv - AI-driven meeting notetaking for teams. Free forever, GDPR & SOC2 compliant.",
+    "pros_jsonb": [
+      "AI-generated summaries",
+      "Instant post-meeting updates",
+      "Customizable note formats",
+      "Automated CRM integration",
+      "Free forever"
+    ],
+    "cons_jsonb": [
+      "Limited free plan features",
+      "Requires internet connection",
+      "May require setup for some users",
+      "No offline access"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is it free?",
+        "a": "Yes, free forever with limited features."
+      },
+      {
+        "q": "Does it work without an internet connection?",
+        "a": "Currently requires an internet connection."
+      },
+      {
+        "q": "Can I use it for personal notes?",
+        "a": "Primarily designed for team collaboration."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist",
+    "vendor": "Doist",
+    "website_url": "https://www.todoist.com",
+    "source_url": "https://www.todoist.com/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan limited; upgrade for advanced features.",
+    "short_desc": "Todoist is a powerful task management tool for individuals and teams.",
+    "description_md": "Todoist helps you organize your work and life with its intuitive interface and robust features. Capture tasks quickly, set priorities, and collaborate with team members seamlessly. Perfect for project management, time tracking, and habit formation.\n\n*Capture tasks at the speed of thought*\n*Prioritize and categorize projects easily*\n*Collaborate with teams in real-time*\n*Integrations with popular apps like Slack and Google Calendar*\n*Templates for various use cases*\n",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "Todoist - Task Management App",
+    "seo_description": "Organize your work and life with Todoist. Free plan available.",
+    "pros_jsonb": [
+      "User-friendly interface",
+      "Real-time collaboration",
+      "Extensive integrations"
+    ],
+    "cons_jsonb": [
+      "Limited free plan features",
+      "Some advanced features require Pro",
+      "Learning curve for new users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Todoist free?",
+        "a": "Yes, it offers a free plan with basic features."
+      },
+      {
+        "q": "Does Todoist have team collaboration?",
+        "a": "Yes, you can collaborate in real-time with team members."
+      },
+      {
+        "q": "Can I use Todoist on multiple devices?",
+        "a": "Yes, available on web and mobile apps."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "primary_category": "productivity"
+  },
+  {
+    "slug": "udio",
+    "name": "Udio",
+    "vendor": "Udio",
+    "website_url": "https://www.udio.com",
+    "source_url": "https://www.udio.com",
+    "pricing": "freemium",
+    "pricing_note": "Basic features free, advanced require subscription.",
+    "short_desc": "AI music generation tool for creating full songs.",
+    "description_md": "Udio is an AI music creation platform that generates complete, studio-quality songs from simple text prompts. Users describe a genre, mood, topic or lyrics and Udio produces tracks with realistic vocals, instrumentation and song structure. It supports extending clips, remixing and fine-grained control over style.\n\nPopular among hobbyists, content creators and musicians who want to prototype musical ideas quickly.",
+    "application_category": "MultimediaApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "AI Music Generation Tool - Udio",
+    "seo_description": "Create full songs with vocals and instrumentation using simple text prompts on Udio.",
+    "pros_jsonb": [
+      "AI-driven",
+      "Studio-quality output",
+      "Text-to-music conversion"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Cost for advanced features",
+      "Dependent on AI accuracy"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Udio free?",
+        "a": "It offers a freemium model with basic features."
+      },
+      {
+        "q": "How long does it take to generate music?",
+        "a": "Generates songs quickly from text prompts."
+      },
+      {
+        "q": "Can I use Udio for commercial projects?",
+        "a": "Yes, but check terms and conditions."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "ai-writing"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "v0",
+    "name": "v0",
+    "vendor": "Vercel",
+    "website_url": "https://v0.dev",
+    "source_url": "https://v0.app/",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with limitations.",
+    "short_desc": "v0 by Vercel - AI-driven full-stack web app builder.",
+    "description_md": "v0 by Vercel is an AI-powered platform for building full-stack web applications. It offers templates, design modes, and automatic integration with popular tools. Users can create, edit, and deploy apps quickly without coding knowledge.\n\nStart with pre-built components or use the prompt-based interface to generate code. Publish directly to Vercel for instant live deployment.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "v0 by Vercel - AI Web App Builder",
+    "seo_description": "Build full-stack web apps with AI. Start fast with templates, edit visually, and deploy instantly.",
+    "pros_jsonb": [
+      "AI-driven code generation",
+      "Visual design mode",
+      "Automatic integration with tools"
+    ],
+    "cons_jsonb": [
+      "Limited customization options",
+      "Requires internet connection",
+      "Free plan limitations"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is v0 free?",
+        "a": "Yes, but limited features in the free plan."
+      },
+      {
+        "q": "Can I use my own domain?",
+        "a": "Yes, you can connect your custom domain."
+      },
+      {
+        "q": "Does it require coding skills?",
+        "a": "No, it supports both coding and non-coding users."
+      }
+    ],
+    "categories": [
+      "no-code"
+    ],
+    "primary_category": "no-code"
+  },
+  {
+    "slug": "wellsaid",
+    "name": "WellSaid Labs",
+    "vendor": "WellSaid Labs",
+    "website_url": "https://wellsaidlabs.com",
+    "source_url": "https://www.wellsaid.io/",
+    "pricing": "freemium",
+    "pricing_note": "Limited free tier available",
+    "short_desc": "AI voice generator for professional-quality text-to-speech.",
+    "description_md": "WellSaid Labs offers a cutting-edge AI voice generation tool that creates human-like text-to-speech voices in various dialects and styles. With over 120 natural-sounding AI voices, it's perfect for businesses needing high-quality audio content. Try the free version today to see the difference.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.7,
+    "status": "published",
+    "seo_title": "AI Voice Generator | WellSaid Labs",
+    "seo_description": "Create professional-quality voice overs in any dialect or production style. Try WellSaid’s text-to-speech AI voices for free.",
+    "pros_jsonb": [
+      "Highly realistic AI voices",
+      "Built with real voice actors",
+      "Wide range of dialects and styles"
+    ],
+    "cons_jsonb": [
+      "Limited free tier",
+      "May require technical setup"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is the free trial available?",
+        "a": "Yes, try it for free."
+      },
+      {
+        "q": "How many voices are included in the free plan?",
+        "a": "Limited to a few voices."
+      },
+      {
+        "q": "Can I use these voices commercially?",
+        "a": "Yes, with proper licensing."
+      }
+    ],
+    "categories": [
+      "ai-audio",
+      "ai-writing"
+    ],
+    "primary_category": "ai-audio"
+  },
+  {
+    "slug": "windsurf",
+    "name": "Windsurf",
+    "vendor": "Codeium",
+    "website_url": "https://windsurf.com",
+    "source_url": "https://devin.ai/desktop",
+    "pricing": "freemium",
+    "pricing_note": "Free plan available with limitations.",
+    "short_desc": "Manage local and cloud agents from one surface.",
+    "description_md": "Devin Desktop is a unified interface for managing fleets of local and cloud agents. Plan, delegate, review, and ship tasks directly from your editor without switching contexts. Ideal for developers working with multiple environments and projects.",
+    "application_category": "DeveloperApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Devin Desktop - Manage Agents from One Surface",
+    "seo_description": "Unified interface for managing local & cloud agents. Plan, delegate, review tasks directly in your editor.",
+    "pros_jsonb": [
+      "Unified interface",
+      "Cross-platform support",
+      "Direct integration with editors"
+    ],
+    "cons_jsonb": [
+      "Limited to Codeium ecosystem",
+      "Learning curve for new users"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Devin Desktop free?",
+        "a": "It offers a free plan but requires payment for advanced features."
+      },
+      {
+        "q": "Can I use it with any editor?",
+        "a": "Yes, it integrates with popular editors like VSCode."
+      },
+      {
+        "q": "Does it support cloud agents?",
+        "a": "Yes, both local and cloud agents are supported."
+      }
+    ],
+    "categories": [
+      "ai-coding"
+    ],
+    "primary_category": "ai-coding"
+  },
+  {
+    "slug": "wordtune",
+    "name": "Wordtune",
+    "vendor": "AI21 Labs",
+    "website_url": "https://www.wordtune.com",
+    "source_url": "https://www.wordtune.com/",
+    "pricing": "free",
+    "pricing_note": "No credit card required",
+    "short_desc": "AI-powered writing assistant for perfecting your English.",
+    "description_md": "Wordtune is an AI writer that helps you rewrite, correct grammar, and perfect your English. Switch between formal and casual tones with ease, and enjoy advanced proofreading features to ensure accuracy before sending. Get started for free with no credit card required.",
+    "application_category": "SoftwareApplication",
+    "quality_score": 8.2,
+    "status": "published",
+    "seo_title": "Wordtune - AI Writing Assistant",
+    "seo_description": "Perfect your English with Wordtune's free AI writer for rewriting and grammar correction.",
+    "pros_jsonb": [
+      "Free to use",
+      "AI-driven rewriting suggestions",
+      "Contextual tone switching",
+      "Advanced grammar correction",
+      "Seamless integration"
+    ],
+    "cons_jsonb": [
+      "Limited features in the free version",
+      "May require some time for full customization",
+      "No mobile app available yet"
+    ],
+    "faq_jsonb": [
+      {
+        "q": "Is Wordtune free?",
+        "a": "Yes, get started with no credit card required."
+      },
+      {
+        "q": "Can I switch between formal and informal tones?",
+        "a": "Absolutely, just click a button to change the tone."
+      },
+      {
+        "q": "Does it work on mobile devices?",
+        "a": "Currently, only available on desktop. A mobile app is in development."
+      }
+    ],
+    "categories": [
+      "ai-writing"
     ],
     "primary_category": "ai-writing"
   }
