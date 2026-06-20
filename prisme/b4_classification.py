@@ -48,7 +48,16 @@ def taxonomy_slugs(taxonomy):
 SYSTEM_PROMPT = (
     "You are a precise classifier for an AI and SaaS tools directory. "
     "Given a tool description and a closed list of categories, "
-    "you assign the best matching category slugs. "
+    "assign the SINGLE best matching primary category, plus at most ONE "
+    "secondary category only when the tool clearly has a distinct second function. "
+    "Be conservative: prefer fewer, high-precision tags over many loose ones. "
+    "Critical rules: "
+    "(1) 'automation' is ONLY for genuine workflow/integration/orchestration "
+    "platforms (Zapier-style: connecting apps, building automated workflows). "
+    "Do NOT use 'automation' just because a tool 'automates' a task or mentions "
+    "workflows in marketing copy. "
+    "(2) Code editors, AI coding assistants, coding agents and dev IDEs -> 'ai-coding'. "
+    "(3) Tools that generate or edit video (text-to-video, avatars, clips) -> 'ai-video'. "
     "Return ONLY valid JSON with exactly these keys: "
     "primary (string slug or null), secondary (array of slugs, max 2), "
     "confidence (float 0 to 1). "
@@ -77,6 +86,9 @@ def build_prompt(raw, enriched, taxonomy):
         f"Description excerpt:\n{desc_snip}\n\n"
         "Available categories (use ONLY these slugs):\n"
         f"{cats_lines}\n\n"
+        "Reminders: 'automation' = workflow/integration platforms only; "
+        "coding/IDE/code-agent tools = 'ai-coding'; video generation/editing = 'ai-video'. "
+        "Use at most ONE secondary, and only if clearly warranted.\n\n"
         "Return JSON with keys: primary (slug or null), "
         "secondary (array of up to 2 slugs, excluding primary), "
         "confidence (float 0..1)."
@@ -160,6 +172,111 @@ def content_hash_for(raw, enriched, taxonomy_version):
 # Main
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Couche deterministe (le LLM local est faible : on verrouille les cas connus)
+# ---------------------------------------------------------------------------
+
+# 'automation' reserve aux vraies plateformes d'orchestration.
+AUTOMATION_WHITELIST = {
+    "zapier", "make", "n8n", "workato", "pipedream", "ifttt",
+    "activepieces", "gumloop", "bardeen", "lindy", "relevance-ai",
+}
+# Outils dont la categorie principale est certaine (override du LLM).
+CODING_SLUGS = {
+    "cursor", "devin", "windsurf", "github-copilot", "replit",
+}
+VIDEO_SLUGS = {
+    "runway", "synthesia", "heygen", "pika", "luma-dream-machine",
+    "kling", "capcut", "invideo", "d-id", "opus-clip", "hailuo",
+}
+# Cluster productivite (espaces de travail, notes, reunions, recherche) :
+# pas de meilleure niche dans la taxonomie fermee.
+PRIMARY_OVERRIDE = {
+    "airtable": "productivity", "notion": "productivity", "coda": "productivity",
+    "clickup": "productivity", "todoist": "productivity", "motion": "productivity",
+    "reclaim": "productivity", "superhuman": "productivity", "mem": "productivity",
+    "tana": "productivity", "notebooklm": "productivity", "fathom": "productivity",
+    "fireflies-ai": "productivity", "tldv": "productivity", "otter-ai": "productivity",
+    "consensus": "productivity", "elicit": "productivity",
+    # LLM generalistes : foyer ai-writing (sinon orphelins quand un tag ferme tombe)
+    "openai": "ai-writing", "claude": "ai-writing", "gemini": "ai-writing",
+    "mistral": "ai-writing", "deepseek": "ai-writing",
+    "microsoft-copilot": "ai-writing", "perplexity": "ai-writing",
+    # audio/podcast
+    "podcastle": "ai-audio",
+}
+
+
+def steer(slug, primary, secondary):
+    """Applique les overrides deterministes. Retourne (primary, secondary, forced)."""
+    forced = False
+    if slug in CODING_SLUGS:
+        primary = "ai-coding"; forced = True
+    elif slug in VIDEO_SLUGS:
+        primary = "ai-video"; forced = True
+    elif slug in PRIMARY_OVERRIDE:
+        primary = PRIMARY_OVERRIDE[slug]; forced = True
+
+    # Categories FERMEES : seuls les ensembles cures peuvent porter ces tags
+    # (le LLM local les colle a tort en secondaire un peu partout).
+    closed = {
+        "automation": AUTOMATION_WHITELIST,
+        "ai-coding":  CODING_SLUGS,
+        "ai-video":   VIDEO_SLUGS,
+    }
+    for cat, allowed in closed.items():
+        if slug not in allowed:
+            if primary == cat:
+                primary = None
+            secondary = [x for x in secondary if x != cat]
+
+    # repli : si plus de primary mais un secondaire dispo, le promouvoir
+    if primary is None and secondary:
+        primary = secondary[0]
+        secondary = secondary[1:]
+
+    # nettoyage : pas de doublon avec primary, max 2
+    secondary = [x for x in dict.fromkeys(secondary) if x and x != primary][:2]
+    return primary, secondary, forced
+
+
+def resteer_all(dry_run=False):
+    """Re-applique steer() sur tout le staging tool_categories, sans LLM."""
+    bytool = {}
+    for r in staging.iter_tool_categories():
+        bytool.setdefault(r["tool_slug"], []).append(r)
+    nb_changed = 0
+    for slug, rows in bytool.items():
+        valid = [r for r in rows if not r.get("is_unclassified") and r.get("category_slug")]
+        if not valid:
+            continue
+        prim_rows = [r for r in valid if r.get("is_primary")]
+        primary = prim_rows[0]["category_slug"] if prim_rows else valid[0]["category_slug"]
+        secondary = [r["category_slug"] for r in valid if r["category_slug"] != primary]
+        new_primary, new_secondary, _ = steer(slug, primary, secondary)
+        before = (primary, tuple(secondary))
+        after = (new_primary, tuple(new_secondary))
+        if before == after:
+            continue
+        nb_changed += 1
+        meta = valid[0]
+        conf = meta.get("confidence", 0.0)
+        chash = meta.get("content_hash", "")
+        cat_at = meta.get("classified_at", "")
+        print(f"[resteer] {slug}: {before} -> {after}")
+        if dry_run or new_primary is None:
+            if new_primary is None:
+                print(f"  ! {slug} sans primary apres steer -> laisse tel quel")
+            continue
+        out = [{"category_slug": new_primary, "is_primary": 1, "confidence": conf,
+                "is_unclassified": 0, "classified_at": cat_at, "content_hash": chash}]
+        for sec in new_secondary:
+            out.append({"category_slug": sec, "is_primary": 0, "confidence": conf,
+                        "is_unclassified": 0, "classified_at": cat_at, "content_hash": chash})
+        staging.replace_tool_categories(slug, out)
+    print(f"[resteer] {nb_changed} outil(s) modifie(s)." + (" (dry-run)" if dry_run else ""))
+
+
 def main():
     parser = argparse.ArgumentParser(description="Batch B4 classification")
     parser.add_argument("--dry-run",   action="store_true",
@@ -172,7 +289,15 @@ def main():
                         help="Min confidence to accept classification (default 0.45)")
     parser.add_argument("--force",     action="store_true",
                         help="Re-classify even if content_hash is unchanged")
+    parser.add_argument("--resteer",   action="store_true",
+                        help="Re-applique la couche deterministe (steer) sur le staging "
+                             "existant, SANS appeler le LLM. Rapide, pour propager un "
+                             "changement des ensembles cures.")
     args = parser.parse_args()
+
+    if args.resteer:
+        resteer_all(args.dry_run)
+        return
 
     fn_gen = fake_llm if args.dry_run else generer_json
 
@@ -241,6 +366,9 @@ def main():
         primary, secondary, confidence, is_unclassified = validate_classification(
             llm_out, valid_slugs, args.threshold
         )
+        # Couche deterministe (verrouille coding/video, purge automation hors whitelist)
+        primary, secondary, forced = steer(slug, primary, secondary)
+        is_unclassified = (primary is None) or (not forced and confidence < args.threshold)
 
         if is_unclassified:
             nb_unclassified += 1
