@@ -27,7 +27,8 @@
         }
       ],
       "seo_title_fr": "Activepieces - Automatisation no-code open source",
-      "seo_description_fr": "Automatisez vos flux entre applications et API avec Activepieces, une plateforme no-code open source."
+      "seo_description_fr": "Automatisez vos flux entre applications et API avec Activepieces, une plateforme no-code open source.",
+      "pricing_note_fr": "Forfait gratuit disponible"
     },
     "adobe-firefly": {
       "short_desc_fr": "Adobe Firefly pour la création de contenu par IA dans Creative Cloud.",
@@ -56,7 +57,8 @@
         }
       ],
       "seo_title_fr": "Adobe Firefly - IA pour les créatifs",
-      "seo_description_fr": "Générez images, effets de texte et vidéos avec les outils IA Adobe Firefly dans Creative Cloud."
+      "seo_description_fr": "Générez images, effets de texte et vidéos avec les outils IA Adobe Firefly dans Creative Cloud.",
+      "pricing_note_fr": "Inclus dans l'abonnement Adobe Creative Cloud"
     },
     "adobe-podcast": {
       "short_desc_fr": "Enregistrement et amélioration audio par IA pour les baladodiffusions.",
@@ -86,7 +88,8 @@
         }
       ],
       "seo_title_fr": "Adobe Podcast - Outils audio IA",
-      "seo_description_fr": "Enregistrement et amélioration audio par IA pour baladodiffusions. Multipiste, suppression du bruit."
+      "seo_description_fr": "Enregistrement et amélioration audio par IA pour baladodiffusions. Multipiste, suppression du bruit.",
+      "pricing_note_fr": "Forfait gratuit disponible avec limites."
     },
     "airtable": {
       "short_desc_fr": "Airtable pour la collaboration en temps réel et l'automatisation des flux.",
@@ -118,7 +121,8 @@
         }
       ],
       "seo_title_fr": "Airtable : Créez des flux IA",
-      "seo_description_fr": "Plus de 500 000 équipes utilisent Airtable pour collaborer et automatiser leurs flux. Commencez aujourd'hui !"
+      "seo_description_fr": "Plus de 500 000 équipes utilisent Airtable pour collaborer et automatiser leurs flux. Commencez aujourd'hui !",
+      "pricing_note_fr": "Forfait gratuit limité disponible."
     },
     "apify": {
       "short_desc_fr": "Apify, la place de marché d'outils IA et de scraping web.",
@@ -148,7 +152,8 @@
         }
       ],
       "seo_title_fr": "Apify : Place de marché d'outils IA",
-      "seo_description_fr": "Automatisez votre entreprise avec extraction web, suivi concurrentiel et intégrations. Plus de 41 799 outils."
+      "seo_description_fr": "Automatisez votre entreprise avec extraction web, suivi concurrentiel et intégrations. Plus de 41 799 outils.",
+      "pricing_note_fr": "Essai gratuit, abonnements payants"
     },
     "bardeen": {
       "short_desc_fr": "Outil de scraping web et de qualification de prospects par IA.",
@@ -178,7 +183,8 @@
         }
       ],
       "seo_title_fr": "Bardeen : Sourcing et qualification de prospects IA",
-      "seo_description_fr": "Trouvez, qualifiez et rejoignez vos clients potentiels avec les outils de scraping et d'IA de Bardeen."
+      "seo_description_fr": "Trouvez, qualifiez et rejoignez vos clients potentiels avec les outils de scraping et d'IA de Bardeen.",
+      "pricing_note_fr": "Forfait gratuit limité disponible"
     },
     "bolt-new": {
       "short_desc_fr": "Outil propulsé par IA pour créer des sites web et des applications.",
@@ -208,7 +214,8 @@
         }
       ],
       "seo_title_fr": "Bolt.new : Constructeur IA pour sites et apps",
-      "seo_description_fr": "Créez des applications web et sites impressionnants avec l'IA de Bolt. Essayez maintenant !"
+      "seo_description_fr": "Créez des applications web et sites impressionnants avec l'IA de Bolt. Essayez maintenant !",
+      "pricing_note_fr": "Forfait gratuit limité disponible."
     },
     "bright-data": {
       "short_desc_fr": "Bright Data propose des proxies et outils de scraping web pour l'extraction de données.",
@@ -238,7 +245,8 @@
         }
       ],
       "seo_title_fr": "Bright Data - Scraping web et proxies",
-      "seo_description_fr": "Accédez et extrayez des données de sites publics avec les outils de scraping complets de Bright Data."
+      "seo_description_fr": "Accédez et extrayez des données de sites publics avec les outils de scraping complets de Bright Data.",
+      "pricing_note_fr": "Gratuit au départ, puis forfaits payants offerts."
     },
     "browse-ai": {
       "short_desc_fr": "Scraper web et outil de surveillance no-code pour n'importe quel site.",
@@ -267,7 +275,8 @@
         }
       ],
       "seo_title_fr": "Scraper web no-code - Browse AI",
-      "seo_description_fr": "Extrayez et surveillez des données de n'importe quel site sans coder. Créez des flux automatisés facilement."
+      "seo_description_fr": "Extrayez et surveillez des données de n'importe quel site sans coder. Créez des flux automatisés facilement.",
+      "pricing_note_fr": "29 $/mois minimum"
     },
     "bubble": {
       "short_desc_fr": "Créez des applications web et mobiles avec l'outil no-code IA Bubble.",
@@ -297,7 +306,8 @@
         }
       ],
       "seo_title_fr": "Bubble : Constructeur d'applications no-code IA",
-      "seo_description_fr": "Créez des applications rapidement avec la plateforme no-code IA de Bubble."
+      "seo_description_fr": "Créez des applications rapidement avec la plateforme no-code IA de Bubble.",
+      "pricing_note_fr": "Fonctions de base gratuites, fonctions avancées payantes"
     },
     "canva": {
       "short_desc_fr": "Canva est un outil de conception graphique convivial.",
@@ -327,7 +337,8 @@
         }
       ],
       "seo_title_fr": "Canva : Outil de conception graphique",
-      "seo_description_fr": "Créez publications, présentations et plus avec l'outil de conception graphique gratuit Canva."
+      "seo_description_fr": "Créez publications, présentations et plus avec l'outil de conception graphique gratuit Canva.",
+      "pricing_note_fr": "Forfait gratuit disponible; fonctions premium sur abonnement"
     },
     "capcut": {
       "short_desc_fr": "Éditeur vidéo propulsé par IA pour créer du contenu sur les réseaux sociaux.",
@@ -357,7 +368,8 @@
         }
       ],
       "seo_title_fr": "CapCut - Éditeur vidéo IA",
-      "seo_description_fr": "Éditeur vidéo IA pour créer du contenu sur les réseaux sociaux. Essai gratuit disponible."
+      "seo_description_fr": "Éditeur vidéo IA pour créer du contenu sur les réseaux sociaux. Essai gratuit disponible.",
+      "pricing_note_fr": "Gratuit avec fonctions limitées"
     },
     "claude": {
       "short_desc_fr": "Claude par Anthropic pour résoudre des problèmes complexes.",
@@ -417,7 +429,8 @@
         }
       ],
       "seo_title_fr": "ClickUp - Application de productivité tout-en-un",
-      "seo_description_fr": "Maximisez votre productivité avec la suite d'outils et les agents IA de ClickUp. Gratuit à vie."
+      "seo_description_fr": "Maximisez votre productivité avec la suite d'outils et les agents IA de ClickUp. Gratuit à vie.",
+      "pricing_note_fr": "Forfait gratuit disponible; les fonctions supplémentaires exigent un forfait payant"
     },
     "clipdrop": {
       "short_desc_fr": "Outil de retouche d'image par IA de Stability AI.",
@@ -447,7 +460,8 @@
         }
       ],
       "seo_title_fr": "Clipdrop - Outil de retouche d'image IA",
-      "seo_description_fr": "Retouche d'image par IA : suppression d'arrière-plan, rééclairage et mise à l'échelle. Essayez Clipdrop !"
+      "seo_description_fr": "Retouche d'image par IA : suppression d'arrière-plan, rééclairage et mise à l'échelle. Essayez Clipdrop !",
+      "pricing_note_fr": "Essai gratuit disponible."
     },
     "coda": {
       "short_desc_fr": "Coda est un espace de travail collaboratif tout-en-un.",
@@ -477,7 +491,8 @@
         }
       ],
       "seo_title_fr": "Coda : Espace de travail collaboratif tout-en-un",
-      "seo_description_fr": "Plateforme unifiée combinant docs, feuilles de calcul, applications et IA pour un travail d'équipe efficace."
+      "seo_description_fr": "Plateforme unifiée combinant docs, feuilles de calcul, applications et IA pour un travail d'équipe efficace.",
+      "pricing_note_fr": "Forfait gratuit aux fonctions limitées"
     },
     "consensus": {
       "short_desc_fr": "Moteur de recherche académique alimenté par l'IA pour explorer des articles scientifiques.",
@@ -507,7 +522,8 @@
         }
       ],
       "seo_title_fr": "Moteur de recherche académique IA – Consensus",
-      "seo_description_fr": "Trouvez des insights issus de la recherche révisée par des pairs grâce au moteur de recherche académique IA de Consensus."
+      "seo_description_fr": "Trouvez des insights issus de la recherche révisée par des pairs grâce au moteur de recherche académique IA de Consensus.",
+      "pricing_note_fr": "Essai gratuit disponible; abonnement pour l'accès complet"
     },
     "copy-ai": {
       "short_desc_fr": "Automatisez vos tâches de mise en marché avec la plateforme IA de Copy.ai.",
@@ -537,7 +553,8 @@
         }
       ],
       "seo_title_fr": "Plateforme GTM IA | Copy.ai",
-      "seo_description_fr": "Préparez votre entreprise pour l'avenir avec la plateforme GTM IA de Copy.ai. Automatisez vos tâches et faites croître vos résultats."
+      "seo_description_fr": "Préparez votre entreprise pour l'avenir avec la plateforme GTM IA de Copy.ai. Automatisez vos tâches et faites croître vos résultats.",
+      "pricing_note_fr": "À partir de 99 $/mois"
     },
     "cursor": {
       "short_desc_fr": "Agent de codage IA pour développer des logiciels ambitieux.",
@@ -566,7 +583,8 @@
         }
       ],
       "seo_title_fr": "Cursor : Agent de codage IA",
-      "seo_description_fr": "Boostez votre efficacité avec Cursor, l'agent de codage IA pour les projets logiciels ambitieux."
+      "seo_description_fr": "Boostez votre efficacité avec Cursor, l'agent de codage IA pour les projets logiciels ambitieux.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "d-id": {
       "short_desc_fr": "Plateforme de création vidéo IA pour les humains numériques.",
@@ -598,7 +616,8 @@
         }
       ],
       "seo_title_fr": "D-ID – Plateforme de création vidéo IA",
-      "seo_description_fr": "Créez rapidement des vidéos d'humains numériques avec D-ID. Support multilingue et intégration API fluide."
+      "seo_description_fr": "Créez rapidement des vidéos d'humains numériques avec D-ID. Support multilingue et intégration API fluide.",
+      "pricing_note_fr": "Essai gratuit disponible; forfaits payants pour toutes les fonctions."
     },
     "deepseek": {
       "short_desc_fr": "DeepSeek – Modèles IA avancés pour le traitement du langage naturel et le codage.",
@@ -628,7 +647,8 @@
         }
       ],
       "seo_title_fr": "DeepSeek – Modèles IA pour TNL et codage",
-      "seo_description_fr": "Explorez les modèles IA avancés de DeepSeek, dont LLM et Coder. Performances de pointe en langage naturel et en codage."
+      "seo_description_fr": "Explorez les modèles IA avancés de DeepSeek, dont LLM et Coder. Performances de pointe en langage naturel et en codage.",
+      "pricing_note_fr": "Palier gratuit limité disponible"
     },
     "descript": {
       "short_desc_fr": "Outil de montage vidéo et audio propulsé par l'IA.",
@@ -658,7 +678,8 @@
         }
       ],
       "seo_title_fr": "Descript – Éditeur vidéo et balado IA",
-      "seo_description_fr": "Éditeur vidéo et balado propulsé par l'IA. Enregistrez, transcrivez, montez, publiez. Essai gratuit !"
+      "seo_description_fr": "Éditeur vidéo et balado propulsé par l'IA. Enregistrez, transcrivez, montez, publiez. Essai gratuit !",
+      "pricing_note_fr": "Forfait gratuit aux fonctions limitées."
     },
     "devin": {
       "short_desc_fr": "Agent de codage IA pour accélérer le développement logiciel.",
@@ -688,7 +709,8 @@
         }
       ],
       "seo_title_fr": "Devin – Agent de codage IA",
-      "seo_description_fr": "Ingénieur logiciel IA pour un développement plus rapide. Automatise la refactorisation et réduit les coûts."
+      "seo_description_fr": "Ingénieur logiciel IA pour un développement plus rapide. Automatise la refactorisation et réduit les coûts.",
+      "pricing_note_fr": "Des frais d'installation initiaux s'appliquent."
     },
     "diffbot": {
       "short_desc_fr": "Outil d'extraction et d'exploration de données web propulsé par l'IA.",
@@ -720,7 +742,8 @@
         }
       ],
       "seo_title_fr": "Diffbot – Extraction de données web IA",
-      "seo_description_fr": "Transformez le contenu web en données structurées avec l'outil IA de Diffbot."
+      "seo_description_fr": "Transformez le contenu web en données structurées avec l'outil IA de Diffbot.",
+      "pricing_note_fr": "Palier gratuit disponible; forfaits payants pour un usage plus important."
     },
     "elevenlabs": {
       "short_desc_fr": "Générateur de voix IA pour la synthèse vocale.",
@@ -749,7 +772,8 @@
         }
       ],
       "seo_title_fr": "ElevenLabs – Générateur de voix IA",
-      "seo_description_fr": "Créez des synthèses vocales réalistes avec ElevenLabs. Plus de 5 000 voix pour vos applications."
+      "seo_description_fr": "Créez des synthèses vocales réalistes avec ElevenLabs. Plus de 5 000 voix pour vos applications.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "elicit": {
       "short_desc_fr": "Outil IA pour rechercher et résumer des articles scientifiques.",
@@ -782,7 +806,8 @@
         }
       ],
       "seo_title_fr": "IA pour la recherche scientifique – Elicit",
-      "seo_description_fr": "Recherchez, résumez et extrayez des données de plus de 125 millions d'articles. Essayez Elicit !"
+      "seo_description_fr": "Recherchez, résumez et extrayez des données de plus de 125 millions d'articles. Essayez Elicit !",
+      "pricing_note_fr": "Essai gratuit disponible."
     },
     "fathom": {
       "short_desc_fr": "Outil de prise de notes de réunion IA pour équipes et individus.",
@@ -811,7 +836,8 @@
         }
       ],
       "seo_title_fr": "Fathom AI – Prise de notes de réunion",
-      "seo_description_fr": "Prise de notes de réunion IA pour équipes et individus. Restez concentré grâce aux résumés automatiques."
+      "seo_description_fr": "Prise de notes de réunion IA pour équipes et individus. Restez concentré grâce aux résumés automatiques.",
+      "pricing_note_fr": "Forfait gratuit disponible; les forfaits payants offrent plus de fonctions."
     },
     "firecrawl": {
       "short_desc_fr": "Outil d'exploration et d'extraction web pour les agents IA.",
@@ -840,7 +866,8 @@
         }
       ],
       "seo_title_fr": "Firecrawl – Outil d'exploration et d'extraction web",
-      "seo_description_fr": "Extrayez et interagissez avec le web à grande échelle grâce à Firecrawl. Idéal pour la recherche en IA/ML."
+      "seo_description_fr": "Extrayez et interagissez avec le web à grande échelle grâce à Firecrawl. Idéal pour la recherche en IA/ML.",
+      "pricing_note_fr": "2 mois gratuits, puis facturation annuelle"
     },
     "fireflies-ai": {
       "short_desc_fr": "Assistant IA pour les réunions et les courriels.",
@@ -872,7 +899,8 @@
         }
       ],
       "seo_title_fr": "Assistant IA pour réunions et courriels",
-      "seo_description_fr": "Fireflies.ai transcrit, résume et gère vos tâches issues de réunions, courriels et CRM. Haute précision, multilingue."
+      "seo_description_fr": "Fireflies.ai transcrit, résume et gère vos tâches issues de réunions, courriels et CRM. Haute précision, multilingue.",
+      "pricing_note_fr": "À partir de 20 $/mois par utilisateur"
     },
     "flutterflow": {
       "short_desc_fr": "Constructeur d'applications visuel pour mobile et web.",
@@ -902,7 +930,8 @@
         }
       ],
       "seo_title_fr": "FlutterFlow – Créez de belles applications",
-      "seo_description_fr": "Constructeur d'applications visuel pour développer rapidement des apps mobiles et web de haute qualité."
+      "seo_description_fr": "Constructeur d'applications visuel pour développer rapidement des apps mobiles et web de haute qualité.",
+      "pricing_note_fr": "Forfait gratuit disponible avec limites"
     },
     "flux": {
       "short_desc_fr": "Modèles FLUX pour l'intelligence visuelle et la conception générative.",
@@ -932,7 +961,8 @@
         }
       ],
       "seo_title_fr": "Black Forest Labs – Modèles IA FLUX",
-      "seo_description_fr": "Générez des visuels de haute qualité avec FLUX. Essai gratuit disponible."
+      "seo_description_fr": "Générez des visuels de haute qualité avec FLUX. Essai gratuit disponible.",
+      "pricing_note_fr": "Essai gratuit; fonctions payantes offertes."
     },
     "framer": {
       "short_desc_fr": "Framer est un créateur de sites web IA pour les professionnels.",
@@ -964,7 +994,8 @@
         }
       ],
       "seo_title_fr": "Framer : Créateur de sites web IA",
-      "seo_description_fr": "Créez des sites professionnels avec Framer, le créateur de sites IA sans code. Design, CMS, référencement et plus."
+      "seo_description_fr": "Créez des sites professionnels avec Framer, le créateur de sites IA sans code. Design, CMS, référencement et plus.",
+      "pricing_note_fr": "Forfait gratuit disponible"
     },
     "frase": {
       "short_desc_fr": "Frase automatise le référencement et la création de contenu.",
@@ -994,7 +1025,8 @@
         }
       ],
       "seo_title_fr": "Frase - Automatisation SEO et contenu IA",
-      "seo_description_fr": "Automatisez votre SEO avec Frase. Analysez la concurrence, générez du contenu optimisé et suivez votre visibilité sur Google, ChatGPT et Perplexity."
+      "seo_description_fr": "Automatisez votre SEO avec Frase. Analysez la concurrence, générez du contenu optimisé et suivez votre visibilité sur Google, ChatGPT et Perplexity.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "freepik": {
       "short_desc_fr": "Freepik offre des images générées par IA et une vaste bibliothèque de ressources graphiques.",
@@ -1023,7 +1055,8 @@
         }
       ],
       "seo_title_fr": "Freepik - Génération d'images IA et graphiques",
-      "seo_description_fr": "Freepik propose une vaste bibliothèque de ressources graphiques et des outils IA pour générer et retoucher des images."
+      "seo_description_fr": "Freepik propose une vaste bibliothèque de ressources graphiques et des outils IA pour générer et retoucher des images.",
+      "pricing_note_fr": "Contenu gratuit limité disponible"
     },
     "gamma": {
       "short_desc_fr": "Outil IA pour créer des présentations, des documents et des sites web.",
@@ -1057,7 +1090,8 @@
         }
       ],
       "seo_title_fr": "Gamma - IA pour présentations et documents",
-      "seo_description_fr": "Créez des présentations, documents et sites web professionnels avec Gamma. Création de contenu rapide et simple."
+      "seo_description_fr": "Créez des présentations, documents et sites web professionnels avec Gamma. Création de contenu rapide et simple.",
+      "pricing_note_fr": "Fonctions de base gratuites; les fonctions avancées exigent un abonnement."
     },
     "gemini": {
       "short_desc_fr": "Google Gemini pour la rédaction et la planification assistées par IA.",
@@ -1087,7 +1121,8 @@
         }
       ],
       "seo_title_fr": "Google Gemini - Assistant IA pour la rédaction",
-      "seo_description_fr": "Découvrez Gemini, l'assistant IA de Google pour la rédaction et la planification. Obtenez des solutions créatives dès maintenant!"
+      "seo_description_fr": "Découvrez Gemini, l'assistant IA de Google pour la rédaction et la planification. Obtenez des solutions créatives dès maintenant!",
+      "pricing_note_fr": "Accès gratuit limité disponible."
     },
     "github-copilot": {
       "short_desc_fr": "Assistant de code IA pour les développeurs.",
@@ -1116,7 +1151,8 @@
         }
       ],
       "seo_title_fr": "GitHub Copilot - Assistant de code IA",
-      "seo_description_fr": "Accélérez votre développement avec les suggestions IA de GitHub Copilot. Essayez-le maintenant!"
+      "seo_description_fr": "Accélérez votre développement avec les suggestions IA de GitHub Copilot. Essayez-le maintenant!",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "glide": {
       "short_desc_fr": "Créez des applications propulsées par IA sans coder.",
@@ -1145,7 +1181,8 @@
         }
       ],
       "seo_title_fr": "Glide : constructeur d'apps sans code",
-      "seo_description_fr": "Créez des applications IA personnalisées sans programmer. Essayez Glide gratuitement."
+      "seo_description_fr": "Créez des applications IA personnalisées sans programmer. Essayez Glide gratuitement.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "grammarly": {
       "short_desc_fr": "Assistant de rédaction IA pour la grammaire et le style.",
@@ -1175,7 +1212,8 @@
         }
       ],
       "seo_title_fr": "Grammarly : assistant de rédaction IA",
-      "seo_description_fr": "Améliorez votre écriture avec les suggestions en temps réel de Grammarly. Idéal pour les professionnels et les étudiants."
+      "seo_description_fr": "Améliorez votre écriture avec les suggestions en temps réel de Grammarly. Idéal pour les professionnels et les étudiants.",
+      "pricing_note_fr": "Version gratuite disponible; mise à niveau pour toutes les fonctions."
     },
     "gumloop": {
       "short_desc_fr": "Plateforme d'automatisation IA pour les tâches d'entreprise.",
@@ -1205,7 +1243,8 @@
         }
       ],
       "seo_title_fr": "Gumloop - Automatisation IA pour entreprises",
-      "seo_description_fr": "Créez et hébergez des agents IA pour automatiser vos tâches d'entreprise sans programmer. Analyse de données, support, CRM et plus."
+      "seo_description_fr": "Créez et hébergez des agents IA pour automatiser vos tâches d'entreprise sans programmer. Analyse de données, support, CRM et plus.",
+      "pricing_note_fr": "Contactez les ventes pour les détails de prix."
     },
     "hailuo": {
       "short_desc_fr": "Générez des vidéos et des images IA pour les créateurs de contenu.",
@@ -1235,7 +1274,8 @@
         }
       ],
       "seo_title_fr": "Hailuo AI - Générateur de vidéos et d'images",
-      "seo_description_fr": "Créez des vidéos et images IA à partir de textes ou de photos. Rejoignez Hailuo CPP pour des avantages exclusifs."
+      "seo_description_fr": "Créez des vidéos et images IA à partir de textes ou de photos. Rejoignez Hailuo CPP pour des avantages exclusifs.",
+      "pricing_note_fr": "10 $/mois après l'essai gratuit"
     },
     "heygen": {
       "short_desc_fr": "Générateur de vidéos IA pour créer des contenus percutants.",
@@ -1265,7 +1305,8 @@
         }
       ],
       "seo_title_fr": "HeyGen - Générateur de vidéos IA",
-      "seo_description_fr": "Créez des vidéos IA percutantes à partir de textes, images ou fichiers audio. Facile et gratuit."
+      "seo_description_fr": "Créez des vidéos IA percutantes à partir de textes, images ou fichiers audio. Facile et gratuit.",
+      "pricing_note_fr": "Forfait gratuit avec limites"
     },
     "hyperwrite": {
       "short_desc_fr": "Assistant de rédaction IA pour la création de contenu et la recherche.",
@@ -1295,7 +1336,8 @@
         }
       ],
       "seo_title_fr": "HyperWrite | Assistant de rédaction IA",
-      "seo_description_fr": "Assistant IA pour la création de contenu, la recherche et plus encore. Utilisez AutoWrite, TypeAhead et les outils personnalisés."
+      "seo_description_fr": "Assistant IA pour la création de contenu, la recherche et plus encore. Utilisez AutoWrite, TypeAhead et les outils personnalisés.",
+      "pricing_note_fr": "Forfait gratuit disponible avec limites"
     },
     "ideogram": {
       "short_desc_fr": "Modèle d'intelligence visuelle pour les équipes produit et créatives.",
@@ -1325,7 +1367,8 @@
         }
       ],
       "seo_title_fr": "Ideogram 4.0 - Modèle visuel IA en source ouverte",
-      "seo_description_fr": "Intelligence visuelle en source ouverte pour les produits, agents et équipes créatives. Niveaux API, MCP et application."
+      "seo_description_fr": "Intelligence visuelle en source ouverte pour les produits, agents et équipes créatives. Niveaux API, MCP et application.",
+      "pricing_note_fr": "Gratuit à utiliser; nécessite une configuration technique."
     },
     "ifttt": {
       "short_desc_fr": "Automatisez vos flux de travail entre applications et appareils.",
@@ -1354,7 +1397,8 @@
         }
       ],
       "seo_title_fr": "IFTTT - Automatisez vos apps et appareils",
-      "seo_description_fr": "Connectez plus de 1 000 applications et appareils pour automatiser vos tâches. Aucune programmation requise."
+      "seo_description_fr": "Connectez plus de 1 000 applications et appareils pour automatiser vos tâches. Aucune programmation requise.",
+      "pricing_note_fr": "Fonctions gratuites limitées; forfaits payants pour un usage avancé."
     },
     "invideo": {
       "short_desc_fr": "Outil de création vidéo IA pour les professionnels.",
@@ -1384,7 +1428,8 @@
         }
       ],
       "seo_title_fr": "InVideo Agent One - Création vidéo IA",
-      "seo_description_fr": "Créez et montez des vidéos IA avec Agent One. Gagnez du temps et assurez la cohérence de vos projets."
+      "seo_description_fr": "Créez et montez des vidéos IA avec Agent One. Gagnez du temps et assurez la cohérence de vos projets.",
+      "pricing_note_fr": "Prix de départ de 9 $/mois"
     },
     "jasper": {
       "short_desc_fr": "Plateforme d'automatisation marketing pilotée par IA.",
@@ -1413,7 +1458,8 @@
         }
       ],
       "seo_title_fr": "Automatisation marketing IA | Jasper",
-      "seo_description_fr": "Automatisez vos flux marketing de bout en bout avec les agents IA Jasper. Rapidité, contrôle et impact mesurable."
+      "seo_description_fr": "Automatisez vos flux marketing de bout en bout avec les agents IA Jasper. Rapidité, contrôle et impact mesurable.",
+      "pricing_note_fr": "À partir de 99 $/mois"
     },
     "jenni-ai": {
       "short_desc_fr": "Outil de rédaction académique et de recherche IA pour étudiants et chercheurs.",
@@ -1442,7 +1488,8 @@
         }
       ],
       "seo_title_fr": "Jenni AI - Outil de recherche et rédaction académique",
-      "seo_description_fr": "Assistant IA pour étudiants et chercheurs. Rédigez, citez et gérez vos articles académiques avec facilité."
+      "seo_description_fr": "Assistant IA pour étudiants et chercheurs. Rédigez, citez et gérez vos articles académiques avec facilité.",
+      "pricing_note_fr": "Forfait de base gratuit disponible"
     },
     "kling": {
       "short_desc_fr": "Outil créatif propulsé par l'IA pour images et vidéos.",
@@ -1471,7 +1518,8 @@
         }
       ],
       "seo_title_fr": "Kling AI - Studio créatif nouvelle génération",
-      "seo_description_fr": "Générez des images et vidéos imaginatifs avec les outils d'IA générative avancés de Kling AI."
+      "seo_description_fr": "Générez des images et vidéos imaginatifs avec les outils d'IA générative avancés de Kling AI.",
+      "pricing_note_fr": "Fonctions de base gratuites, les avancées exigent un abonnement"
     },
     "krea-ai": {
       "short_desc_fr": "Outil de génération et d'amélioration d'images en temps réel.",
@@ -1501,7 +1549,8 @@
         }
       ],
       "seo_title_fr": "Krea AI - Génération d'images en temps réel",
-      "seo_description_fr": "Générez et améliorez des images en temps réel avec Krea AI. Esquissez, tapez des invites, contrôlez le style."
+      "seo_description_fr": "Générez et améliorez des images en temps réel avec Krea AI. Esquissez, tapez des invites, contrôlez le style.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "lalal-ai": {
       "short_desc_fr": "Outil IA de suppression de voix et d'instruments.",
@@ -1531,7 +1580,8 @@
         }
       ],
       "seo_title_fr": "Suppresseur de voix et d'instruments IA | LALAL.AI",
-      "seo_description_fr": "Retirez voix et instruments de n'importe quel fichier audio avec LALAL.AI. Résultats de haute qualité en secondes."
+      "seo_description_fr": "Retirez voix et instruments de n'importe quel fichier audio avec LALAL.AI. Résultats de haute qualité en secondes.",
+      "pricing_note_fr": "Essai gratuit, payant pour toutes les fonctions"
     },
     "leonardo-ai": {
       "short_desc_fr": "Outil de génération d'images et d'art par l'IA.",
@@ -1561,7 +1611,8 @@
         }
       ],
       "seo_title_fr": "Leonardo.Ai - Génération d'images et d'art par IA",
-      "seo_description_fr": "Générez des images et œuvres d'art de haute qualité à partir d'invites textuelles avec Leonardo.Ai."
+      "seo_description_fr": "Générez des images et œuvres d'art de haute qualité à partir d'invites textuelles avec Leonardo.Ai.",
+      "pricing_note_fr": "À partir de 29 $/mois"
     },
     "lindy": {
       "short_desc_fr": "Assistante de direction IA pour gérer les courriels et l'agenda.",
@@ -1591,7 +1642,8 @@
         }
       ],
       "seo_title_fr": "Lindy - Assistante de direction IA",
-      "seo_description_fr": "Lindy vous fait gagner 2 heures par jour en gérant vos courriels et votre agenda. Essayez gratuitement !"
+      "seo_description_fr": "Lindy vous fait gagner 2 heures par jour en gérant vos courriels et votre agenda. Essayez gratuitement !",
+      "pricing_note_fr": "Essai gratuit aux fonctions limitées."
     },
     "looka": {
       "short_desc_fr": "Créateur de logos IA pour une identité de marque rapide et professionnelle.",
@@ -1624,7 +1676,8 @@
         }
       ],
       "seo_title_fr": "Créateur de logos IA | Looka",
-      "seo_description_fr": "Créez des logos professionnels et des kits de marque rapidement avec l'outil de design IA de Looka."
+      "seo_description_fr": "Créez des logos professionnels et des kits de marque rapidement avec l'outil de design IA de Looka.",
+      "pricing_note_fr": "Fonctions de base gratuites; les options avancées exigent un abonnement"
     },
     "lovable": {
       "short_desc_fr": "Créateur d'applications IA pour non-développeurs.",
@@ -1654,7 +1707,8 @@
         }
       ],
       "seo_title_fr": "Lovable - Créateur d'apps IA sans code",
-      "seo_description_fr": "Lovable transforme des invites en langage naturel en apps web full-stack. Sans code, édition et déploiement en direct."
+      "seo_description_fr": "Lovable transforme des invites en langage naturel en apps web full-stack. Sans code, édition et déploiement en direct.",
+      "pricing_note_fr": "Fonctions de base gratuites"
     },
     "luma-dream-machine": {
       "short_desc_fr": "Luma Dream Machine automatise les flux créatifs pour les équipes.",
@@ -1684,7 +1738,8 @@
         }
       ],
       "seo_title_fr": "Luma Dream Machine - Agents créatifs pour équipes",
-      "seo_description_fr": "Boostez la créativité de votre équipe avec Luma Dream Machine. Automatisez les flux, améliorez la collaboration."
+      "seo_description_fr": "Boostez la créativité de votre équipe avec Luma Dream Machine. Automatisez les flux, améliorez la collaboration.",
+      "pricing_note_fr": "À partir de 99 $/mois"
     },
     "magnific": {
       "short_desc_fr": "Agrandisseur et améliorateur d'images IA pour une résolution détaillée.",
@@ -1713,7 +1768,8 @@
         }
       ],
       "seo_title_fr": "Magnific AI - Agrandisseur d'images IA",
-      "seo_description_fr": "Outil IA avancé pour agrandir et améliorer les images. Boostez la résolution avec des détails réalistes."
+      "seo_description_fr": "Outil IA avancé pour agrandir et améliorer les images. Boostez la résolution avec des détails réalistes.",
+      "pricing_note_fr": "Palier gratuit limité; forfaits payants offerts"
     },
     "make": {
       "short_desc_fr": "Plateforme d'automatisation visuelle pour connecter des applications sans code.",
@@ -1746,7 +1802,8 @@
         }
       ],
       "seo_title_fr": "Make - Plateforme d'automatisation visuelle",
-      "seo_description_fr": "Automatisez vos flux sans code en connectant des milliers d'apps grâce à l'interface visuelle de Make."
+      "seo_description_fr": "Automatisez vos flux sans code en connectant des milliers d'apps grâce à l'interface visuelle de Make.",
+      "pricing_note_fr": "Le forfait gratuit a des limites."
     },
     "mem": {
       "short_desc_fr": "Application de notes IA pour organiser vos idées et réflexions.",
@@ -1776,7 +1833,8 @@
         }
       ],
       "seo_title_fr": "Mem - Application de notes IA",
-      "seo_description_fr": "Organisez vos idées avec l'app de notes IA Mem. Versez idées, réunions, recherches — Mem s'occupe du reste."
+      "seo_description_fr": "Organisez vos idées avec l'app de notes IA Mem. Versez idées, réunions, recherches — Mem s'occupe du reste.",
+      "pricing_note_fr": "Forfait gratuit limité disponible"
     },
     "microsoft-copilot": {
       "short_desc_fr": "Microsoft Copilot pour une assistance IA au quotidien.",
@@ -1806,7 +1864,8 @@
         }
       ],
       "seo_title_fr": "Microsoft Copilot : votre assistant IA",
-      "seo_description_fr": "Obtenez une assistance en temps réel avec Microsoft Copilot. Boostez votre productivité dès aujourd'hui !"
+      "seo_description_fr": "Obtenez une assistance en temps réel avec Microsoft Copilot. Boostez votre productivité dès aujourd'hui !",
+      "pricing_note_fr": "Essai gratuit, fonctions limitées."
     },
     "midjourney": {
       "short_desc_fr": "Outil IA pour générer des images artistiques à partir d'invites textuelles.",
@@ -1836,7 +1895,8 @@
         }
       ],
       "seo_title_fr": "Midjourney - Générateur d'images IA",
-      "seo_description_fr": "Générez des images artistiques à partir d'invites textuelles avec Midjourney. Accessible via Discord et le web."
+      "seo_description_fr": "Générez des images artistiques à partir d'invites textuelles avec Midjourney. Accessible via Discord et le web.",
+      "pricing_note_fr": "Essai gratuit, forfaits payants offerts."
     },
     "mistral": {
       "short_desc_fr": "Mistral AI pour des solutions IA personnalisées en entreprise.",
@@ -1866,7 +1926,8 @@
         }
       ],
       "seo_title_fr": "Mistral AI - Solutions IA personnalisées en entreprise",
-      "seo_description_fr": "Assistants et agents IA sur mesure pour la finance, la tech, la logistique et le secteur public. Modèles ouverts."
+      "seo_description_fr": "Assistants et agents IA sur mesure pour la finance, la tech, la logistique et le secteur public. Modèles ouverts.",
+      "pricing_note_fr": "Options freemium disponibles"
     },
     "motion": {
       "short_desc_fr": "Plateforme de productivité IA pour équipes et particuliers.",
@@ -1896,7 +1957,8 @@
         }
       ],
       "seo_title_fr": "Motion - Plateforme de productivité IA",
-      "seo_description_fr": "Motion : super-app de travail propulsée par l'IA. Boostez votre productivité avec projets, tâches intelligentes."
+      "seo_description_fr": "Motion : super-app de travail propulsée par l'IA. Boostez votre productivité avec projets, tâches intelligentes.",
+      "pricing_note_fr": "À partir de 29 $/mois par utilisateur"
     },
     "murf": {
       "short_desc_fr": "Générez des voix IA ultra-réalistes pour la création de contenu.",
@@ -1926,7 +1988,8 @@
         }
       ],
       "seo_title_fr": "Murf AI - Générateur de voix IA gratuit",
-      "seo_description_fr": "Générez des voix ultra-réalistes avec Murf AI pour la création de contenu. API rapide et options personnalisables."
+      "seo_description_fr": "Générez des voix ultra-réalistes avec Murf AI pour la création de contenu. API rapide et options personnalisables.",
+      "pricing_note_fr": "Essai gratuit, forfaits payants offerts"
     },
     "n8n": {
       "short_desc_fr": "n8n — automatisation de flux de travail par IA pour les équipes techniques.",
@@ -1956,7 +2019,8 @@
         }
       ],
       "seo_title_fr": "Automatisation de flux par IA — n8n",
-      "seo_description_fr": "Automatisez vos flux de travail avec l'IA et les options sans code. n8n pour les équipes techniques."
+      "seo_description_fr": "Automatisez vos flux de travail avec l'IA et les options sans code. n8n pour les équipes techniques.",
+      "pricing_note_fr": "À partir de 20 $/mois"
     },
     "notebooklm": {
       "short_desc_fr": "Assistant de recherche et de prise de notes par IA, signé Google.",
@@ -1986,7 +2050,8 @@
         }
       ],
       "seo_title_fr": "NotebookLM — Assistant de recherche par IA",
-      "seo_description_fr": "Outil de recherche IA de Google qui ancre ses réponses dans vos documents et sources."
+      "seo_description_fr": "Outil de recherche IA de Google qui ancre ses réponses dans vos documents et sources.",
+      "pricing_note_fr": "Version gratuite limitée disponible."
     },
     "notion": {
       "short_desc_fr": "Base de connaissances collaborative et outil de gestion de projets.",
@@ -2016,7 +2081,8 @@
         }
       ],
       "seo_title_fr": "Notion — Espace de travail IA pour les équipes",
-      "seo_description_fr": "Créez des agents personnalisés et automatisez vos tâches. Notion, l'espace de travail IA qui travaille pour vous."
+      "seo_description_fr": "Créez des agents personnalisés et automatisez vos tâches. Notion, l'espace de travail IA qui travaille pour vous.",
+      "pricing_note_fr": "Forfait gratuit aux fonctions limitées"
     },
     "octoparse": {
       "short_desc_fr": "Outil de collecte de données web sans code.",
@@ -2045,7 +2111,8 @@
         }
       ],
       "seo_title_fr": "Octoparse — Outil de capture web sans code",
-      "seo_description_fr": "Collectez des données structurées depuis des sites web sans programmer. Essayez gratuitement !"
+      "seo_description_fr": "Collectez des données structurées depuis des sites web sans programmer. Essayez gratuitement !",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "openai": {
       "short_desc_fr": "Plateforme de recherche et de déploiement en intelligence artificielle.",
@@ -2075,7 +2142,8 @@
         }
       ],
       "seo_title_fr": "OpenAI | Recherche et déploiement en IA",
-      "seo_description_fr": "Explorez la recherche IA de pointe, l'API ChatGPT et Codex pour les entreprises. Mission AGI sûre."
+      "seo_description_fr": "Explorez la recherche IA de pointe, l'API ChatGPT et Codex pour les entreprises. Mission AGI sûre.",
+      "pricing_note_fr": "Certains services sont payants."
     },
     "opus-clip": {
       "short_desc_fr": "Plateforme de découpage et de montage vidéo par IA.",
@@ -2104,7 +2172,8 @@
         }
       ],
       "seo_title_fr": "Opus Clip : outil de découpage vidéo par IA",
-      "seo_description_fr": "Créez des clips viraux de haute qualité à partir de longues vidéos avec Opus Clip. Multi-genres, optimisé pour les réseaux sociaux."
+      "seo_description_fr": "Créez des clips viraux de haute qualité à partir de longues vidéos avec Opus Clip. Multi-genres, optimisé pour les réseaux sociaux.",
+      "pricing_note_fr": "Forfait gratuit limité disponible"
     },
     "otter-ai": {
       "short_desc_fr": "Outil de transcription de réunions et de prise de notes par IA.",
@@ -2136,7 +2205,8 @@
         }
       ],
       "seo_title_fr": "Otter.ai — Preneur de notes de réunion par IA",
-      "seo_description_fr": "Transcription de réunions par IA avec notes en temps réel, résumés et points d'action. Commencez gratuitement !"
+      "seo_description_fr": "Transcription de réunions par IA avec notes en temps réel, résumés et points d'action. Commencez gratuitement !",
+      "pricing_note_fr": "Forfait gratuit disponible mais limité."
     },
     "perplexity": {
       "short_desc_fr": "Moteur de réponses par IA pour des informations précises et en temps réel.",
@@ -2195,7 +2265,8 @@
         }
       ],
       "seo_title_fr": "PhantomBuster — Extraction de prospects et automatisation",
-      "seo_description_fr": "Automatisez l'extraction de prospects avec la plateforme sans code de PhantomBuster. Constituez vos listes et automatisez la prospection."
+      "seo_description_fr": "Automatisez l'extraction de prospects avec la plateforme sans code de PhantomBuster. Constituez vos listes et automatisez la prospection.",
+      "pricing_note_fr": "Variable selon le forfait"
     },
     "photoroom": {
       "short_desc_fr": "Éditeur de photos par IA et studio de fiches produits pour le commerce en ligne.",
@@ -2224,7 +2295,8 @@
         }
       ],
       "seo_title_fr": "Éditeur de photos IA pour le commerce en ligne",
-      "seo_description_fr": "Automatisez la création d'images et de fiches produits avec PhotoRoom. Idéal pour les boutiques en ligne."
+      "seo_description_fr": "Automatisez la création d'images et de fiches produits avec PhotoRoom. Idéal pour les boutiques en ligne.",
+      "pricing_note_fr": "Gratuit au départ, forfaits payants offerts"
     },
     "pika": {
       "short_desc_fr": "Plateforme de création vidéo pilotée par l'IA.",
@@ -2254,7 +2326,8 @@
         }
       ],
       "seo_title_fr": "Pika — Création vidéo par IA",
-      "seo_description_fr": "Plateforme de création vidéo pilotée par l'IA avec flux automatisés et agents créatifs."
+      "seo_description_fr": "Plateforme de création vidéo pilotée par l'IA avec flux automatisés et agents créatifs.",
+      "pricing_note_fr": "9,99 $/mois"
     },
     "pipedream": {
       "short_desc_fr": "Automatisez vos flux de travail en connectant des API et des services.",
@@ -2283,7 +2356,8 @@
         }
       ],
       "seo_title_fr": "Pipedream — Automatisez vos flux de travail",
-      "seo_description_fr": "Créez des applications puissantes en connectant des API et des services avec Pipedream."
+      "seo_description_fr": "Créez des applications puissantes en connectant des API et des services avec Pipedream.",
+      "pricing_note_fr": "Forfait gratuit disponible; payant pour les fonctions avancées."
     },
     "play-ht": {
       "short_desc_fr": "Plateforme de synthèse vocale et de clonage de voix par IA.",
@@ -2312,7 +2386,8 @@
         }
       ],
       "seo_title_fr": "PlayHT — Synthèse vocale et clonage de voix par IA",
-      "seo_description_fr": "Transformez votre texte en discours naturel avec la plateforme avancée de génération vocale IA de PlayHT."
+      "seo_description_fr": "Transformez votre texte en discours naturel avec la plateforme avancée de génération vocale IA de PlayHT.",
+      "pricing_note_fr": "Palier gratuit limité disponible"
     },
     "playground-ai": {
       "short_desc_fr": "Outil de design par IA pour logos, t-shirts et visuels pour les médias sociaux.",
@@ -2342,7 +2417,8 @@
         }
       ],
       "seo_title_fr": "Outil de design IA pour logos et t-shirts",
-      "seo_description_fr": "Créez des designs et visuels personnalisés avec Playground AI, la plateforme de design par IA facile à utiliser."
+      "seo_description_fr": "Créez des designs et visuels personnalisés avec Playground AI, la plateforme de design par IA facile à utiliser.",
+      "pricing_note_fr": "Forfait gratuit disponible avec limites"
     },
     "podcastle": {
       "short_desc_fr": "Plateforme de montage vidéo et audio pilotée par l'IA.",
@@ -2372,7 +2448,8 @@
         }
       ],
       "seo_title_fr": "Podcastle — Éditeur vidéo et audio par IA",
-      "seo_description_fr": "Montage vidéo et audio par IA pour les créateurs. Interface par chat, flux de travail unifié."
+      "seo_description_fr": "Montage vidéo et audio par IA pour les créateurs. Interface par chat, flux de travail unifié.",
+      "pricing_note_fr": "11,99 $/mois"
     },
     "quillbot": {
       "short_desc_fr": "Outil IA de reformulation de texte et de vérification grammaticale.",
@@ -2402,7 +2479,8 @@
         }
       ],
       "seo_title_fr": "QuillBot — Paraphrase et vérification grammaticale IA",
-      "seo_description_fr": "Reformulez et améliorez vos textes avec les outils IA de QuillBot. Vérifiez la grammaire, paraphrasez et évitez le plagiat."
+      "seo_description_fr": "Reformulez et améliorez vos textes avec les outils IA de QuillBot. Vérifiez la grammaire, paraphrasez et évitez le plagiat.",
+      "pricing_note_fr": "Forfait gratuit limité disponible"
     },
     "reclaim": {
       "short_desc_fr": "Calendrier IA pour la planification et la gestion du temps.",
@@ -2432,7 +2510,8 @@
         }
       ],
       "seo_title_fr": "Reclaim - Calendrier IA pour le travail et la vie",
-      "seo_description_fr": "Économisez 30 % sur les forfaits Starter et Business de Reclaim. Planifiez automatiquement tâches, réunions, pauses et habitudes."
+      "seo_description_fr": "Économisez 30 % sur les forfaits Starter et Business de Reclaim. Planifiez automatiquement tâches, réunions, pauses et habitudes.",
+      "pricing_note_fr": "Offre spéciale pour les nouveaux utilisateurs"
     },
     "recraft": {
       "short_desc_fr": "Plateforme de design IA pour images et maquettes.",
@@ -2462,7 +2541,8 @@
         }
       ],
       "seo_title_fr": "Recraft AI - Plateforme de design",
-      "seo_description_fr": "Design IA pour images, maquettes et graphiques vectoriels. Essayez Recraft V4.1 maintenant !"
+      "seo_description_fr": "Design IA pour images, maquettes et graphiques vectoriels. Essayez Recraft V4.1 maintenant !",
+      "pricing_note_fr": "Abonnement requis"
     },
     "relevance-ai": {
       "short_desc_fr": "Relevance AI pour la gestion évolutive d'agents IA.",
@@ -2491,7 +2571,8 @@
         }
       ],
       "seo_title_fr": "Relevance AI - Plateforme entreprise agents IA",
-      "seo_description_fr": "Gérez et faites évoluer vos agents IA avec une gouvernance de niveau entreprise. Conçu par des experts métier."
+      "seo_description_fr": "Gérez et faites évoluer vos agents IA avec une gouvernance de niveau entreprise. Conçu par des experts métier.",
+      "pricing_note_fr": "Variable selon les fonctions et l'utilisation."
     },
     "replit": {
       "short_desc_fr": "Plateforme de développement collaboratif et assisté par IA.",
@@ -2520,7 +2601,8 @@
         }
       ],
       "seo_title_fr": "Replit - Programmation IA et collaboration",
-      "seo_description_fr": "Créez des applications avec l'IA en quelques minutes. Collaborez en direct avec Replit."
+      "seo_description_fr": "Créez des applications avec l'IA en quelques minutes. Collaborez en direct avec Replit.",
+      "pricing_note_fr": "Le forfait gratuit a des limites."
     },
     "resemble-ai": {
       "short_desc_fr": "Plateforme de clonage vocal et de génération vocale par IA.",
@@ -2550,7 +2632,8 @@
         }
       ],
       "seo_title_fr": "Resemble AI - Clonage vocal et génération vocale",
-      "seo_description_fr": "Créez des voix IA sur mesure et générez de la parole. Synthèse en temps réel, multilingue, outils de filigrane."
+      "seo_description_fr": "Créez des voix IA sur mesure et générez de la parole. Synthèse en temps réel, multilingue, outils de filigrane.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "retool": {
       "short_desc_fr": "Créez des outils internes avec le moteur unifié de Retool.",
@@ -2580,7 +2663,8 @@
         }
       ],
       "seo_title_fr": "Créez des outils internes avec Retool",
-      "seo_description_fr": "Concevez et déployez rapidement vos logiciels internes avec Retool. Connectez bases de données, API et LLM."
+      "seo_description_fr": "Concevez et déployez rapidement vos logiciels internes avec Retool. Connectez bases de données, API et LLM.",
+      "pricing_note_fr": "Forfait gratuit limité disponible"
     },
     "runway": {
       "short_desc_fr": "Outil IA pour simuler des mondes et des expériences.",
@@ -2610,7 +2694,8 @@
         }
       ],
       "seo_title_fr": "Runway - IA pour la simulation de mondes",
-      "seo_description_fr": "Plateforme IA avancée pour simuler des mondes et des expériences. Idéale pour les médias, la robotique et la recherche."
+      "seo_description_fr": "Plateforme IA avancée pour simuler des mondes et des expériences. Idéale pour les médias, la robotique et la recherche.",
+      "pricing_note_fr": "Tarification par abonnement"
     },
     "rytr": {
       "short_desc_fr": "Générateur de contenu IA pour le marketing et les réseaux sociaux.",
@@ -2640,7 +2725,8 @@
         }
       ],
       "seo_title_fr": "Rytr - Rédacteur IA pour le marketing",
-      "seo_description_fr": "Générez des textes publicitaires, courriels et publications avec l'outil de rédaction IA abordable de Rytr."
+      "seo_description_fr": "Générez des textes publicitaires, courriels et publications avec l'outil de rédaction IA abordable de Rytr.",
+      "pricing_note_fr": "Modèle à faible coût"
     },
     "scrapingbee": {
       "short_desc_fr": "ScrapingBee est une API d'extraction web qui gère les proxies et les navigateurs sans interface.",
@@ -2670,7 +2756,8 @@
         }
       ],
       "seo_title_fr": "ScrapingBee - API d'extraction web",
-      "seo_description_fr": "Extrayez des sites web sans gérer les proxies. Intégrez des outils IA pour l'extraction de données."
+      "seo_description_fr": "Extrayez des sites web sans gérer les proxies. Intégrez des outils IA pour l'extraction de données.",
+      "pricing_note_fr": "1 000 crédits gratuits offerts"
     },
     "softr": {
       "short_desc_fr": "Créez des applications web sur Airtable ou Google Sheets sans coder.",
@@ -2704,7 +2791,8 @@
         }
       ],
       "seo_title_fr": "Softr - Applications sans code sur Airtable",
-      "seo_description_fr": "Créez des apps web, portails clients et outils internes sans coder. Transformez Airtable ou Google Sheets en applications fonctionnelles."
+      "seo_description_fr": "Créez des apps web, portails clients et outils internes sans coder. Transformez Airtable ou Google Sheets en applications fonctionnelles.",
+      "pricing_note_fr": "Fonctions de base gratuites, fonctions avancées payantes"
     },
     "speechify": {
       "short_desc_fr": "Speechify convertit du texte en parole et prend en charge la saisie vocale.",
@@ -2734,7 +2822,8 @@
         }
       ],
       "seo_title_fr": "Speechify - Synthèse vocale et saisie vocale",
-      "seo_description_fr": "Convertissez du texte en parole avec Speechify. Écoutez des livres, PDF et plus encore. Essayez gratuitement !"
+      "seo_description_fr": "Convertissez du texte en parole avec Speechify. Écoutez des livres, PDF et plus encore. Essayez gratuitement !",
+      "pricing_note_fr": "Essai gratuit disponible."
     },
     "stability-ai": {
       "short_desc_fr": "Stability AI propose des outils d'IA générative de niveau professionnel pour la production de contenu.",
@@ -2764,7 +2853,8 @@
         }
       ],
       "seo_title_fr": "Stability AI - Partenaire créatif pour équipes",
-      "seo_description_fr": "Outils d'IA générative professionnels de Stability AI pour le marketing, les jeux et le divertissement. Commencez gratuitement."
+      "seo_description_fr": "Outils d'IA générative professionnels de Stability AI pour le marketing, les jeux et le divertissement. Commencez gratuitement.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "sudowrite": {
       "short_desc_fr": "Outil de rédaction IA pour la fiction avec le modèle Muse 1.5.",
@@ -2793,7 +2883,8 @@
         }
       ],
       "seo_title_fr": "Sudowrite - Partenaire IA pour la fiction",
-      "seo_description_fr": "Rédigez votre roman plus vite avec l'IA spécialisée en fiction de Sudowrite. Essayez-le et voyez pourquoi les grands auteurs l'adorent."
+      "seo_description_fr": "Rédigez votre roman plus vite avec l'IA spécialisée en fiction de Sudowrite. Essayez-le et voyez pourquoi les grands auteurs l'adorent.",
+      "pricing_note_fr": "Essai gratuit disponible"
     },
     "suno": {
       "short_desc_fr": "Générateur de musique IA pour créer des pistes originales.",
@@ -2822,7 +2913,8 @@
         }
       ],
       "seo_title_fr": "Générateur de musique IA | Suno",
-      "seo_description_fr": "Créez de la musique originale en quelques secondes avec le générateur IA de Suno. Gratuit, chansons de haute qualité."
+      "seo_description_fr": "Créez de la musique originale en quelques secondes avec le générateur IA de Suno. Gratuit, chansons de haute qualité.",
+      "pricing_note_fr": "Gratuit avec limites"
     },
     "superhuman": {
       "short_desc_fr": "Superhuman améliore la gestion des courriels et la productivité avec l'IA.",
@@ -2852,7 +2944,8 @@
         }
       ],
       "seo_title_fr": "Superhuman : Suite de productivité IA",
-      "seo_description_fr": "Boostez votre productivité avec la gestion des courriels et les outils d'édition IA de Superhuman."
+      "seo_description_fr": "Boostez votre productivité avec la gestion des courriels et les outils d'édition IA de Superhuman.",
+      "pricing_note_fr": "Essai gratuit; abonnement payant pour toutes les fonctions"
     },
     "surfer-seo": {
       "short_desc_fr": "Outil SEO assisté par IA pour la croissance organique.",
@@ -2882,7 +2975,8 @@
         }
       ],
       "seo_title_fr": "Outil SEO IA pour la croissance organique",
-      "seo_description_fr": "Suivez et améliorez la visibilité de votre marque avec Surfer SEO. Obtenez des recommandations IA et des analyses en temps réel."
+      "seo_description_fr": "Suivez et améliorez la visibilité de votre marque avec Surfer SEO. Obtenez des recommandations IA et des analyses en temps réel.",
+      "pricing_note_fr": "À partir de 99 $/mois"
     },
     "synthesia": {
       "short_desc_fr": "Outil de création vidéo par IA pour les entreprises.",
@@ -2912,7 +3006,8 @@
         }
       ],
       "seo_title_fr": "Plateforme vidéo IA pour les entreprises",
-      "seo_description_fr": "Créez des vidéos professionnelles rapidement avec les avatars et voix IA de Synthesia en 160+ langues."
+      "seo_description_fr": "Créez des vidéos professionnelles rapidement avec les avatars et voix IA de Synthesia en 160+ langues.",
+      "pricing_note_fr": "Forfait gratuit disponible; les forfaits payants offrent plus de fonctions."
     },
     "tana": {
       "short_desc_fr": "Plateforme de réunion assistée par IA pour la gestion des tâches en temps réel.",
@@ -2942,7 +3037,8 @@
         }
       ],
       "seo_title_fr": "Tana - Plateforme de réunion IA",
-      "seo_description_fr": "Plateforme de réunion IA pour la gestion des tâches en temps réel. Commencez votre essai gratuit."
+      "seo_description_fr": "Plateforme de réunion IA pour la gestion des tâches en temps réel. Commencez votre essai gratuit.",
+      "pricing_note_fr": "À partir de 29 $/utilisateur/mois"
     },
     "taskade": {
       "short_desc_fr": "Plateforme de gestion de tâches et de collaboration assistée par IA.",
@@ -2972,7 +3068,8 @@
         }
       ],
       "seo_title_fr": "Taskade - Espace de travail IA pour équipes",
-      "seo_description_fr": "Plateforme unifiée pour tâches, notes, cartes mentales et clavardage. Automatisez avec des agents IA."
+      "seo_description_fr": "Plateforme unifiée pour tâches, notes, cartes mentales et clavardage. Automatisez avec des agents IA.",
+      "pricing_note_fr": "Forfait gratuit disponible mais limité"
     },
     "tldv": {
       "short_desc_fr": "Outil de prise de notes de réunion par IA pour la collaboration d'équipe.",
@@ -3005,7 +3102,8 @@
         }
       ],
       "seo_title_fr": "tl;dv - Prise de notes IA pour réunions",
-      "seo_description_fr": "tl;dv - Prise de notes IA pour les équipes. Gratuit à vie, conforme RGPD et SOC2."
+      "seo_description_fr": "tl;dv - Prise de notes IA pour les équipes. Gratuit à vie, conforme RGPD et SOC2.",
+      "pricing_note_fr": "Gratuit avec fonctions limitées"
     },
     "todoist": {
       "short_desc_fr": "Todoist est un puissant outil de gestion des tâches pour les individus et les équipes.",
@@ -3035,7 +3133,8 @@
         }
       ],
       "seo_title_fr": "Todoist - Application de gestion des tâches",
-      "seo_description_fr": "Organisez votre travail et votre vie avec Todoist. Plan gratuit disponible."
+      "seo_description_fr": "Organisez votre travail et votre vie avec Todoist. Plan gratuit disponible.",
+      "pricing_note_fr": "Forfait gratuit limité; mise à niveau pour les fonctions avancées."
     },
     "udio": {
       "short_desc_fr": "Outil de génération musicale par IA pour créer des chansons complètes.",
@@ -3065,7 +3164,8 @@
         }
       ],
       "seo_title_fr": "Udio - Génération musicale par IA",
-      "seo_description_fr": "Créez des chansons complètes avec voix et instruments à partir de simples descriptions textuelles sur Udio."
+      "seo_description_fr": "Créez des chansons complètes avec voix et instruments à partir de simples descriptions textuelles sur Udio.",
+      "pricing_note_fr": "Fonctions de base gratuites; les avancées exigent un abonnement."
     },
     "v0": {
       "short_desc_fr": "v0 par Vercel - Constructeur d'applications web complètes assisté par IA.",
@@ -3095,7 +3195,8 @@
         }
       ],
       "seo_title_fr": "v0 par Vercel - Constructeur d'apps web IA",
-      "seo_description_fr": "Créez des apps web complètes avec l'IA. Démarrez vite avec des modèles, modifiez visuellement, déployez instantanément."
+      "seo_description_fr": "Créez des apps web complètes avec l'IA. Démarrez vite avec des modèles, modifiez visuellement, déployez instantanément.",
+      "pricing_note_fr": "Forfait gratuit disponible avec limites."
     },
     "webflow": {
       "short_desc_fr": "Concevez et créez des sites web avec l'éditeur visuel de Webflow.",
@@ -3125,7 +3226,8 @@
         }
       ],
       "seo_title_fr": "Webflow : Concevoir et créer des sites web",
-      "seo_description_fr": "Créez et optimisez vos sites web avec l'éditeur visuel de Webflow. Approuvé par plus de 300 000 équipes."
+      "seo_description_fr": "Créez et optimisez vos sites web avec l'éditeur visuel de Webflow. Approuvé par plus de 300 000 équipes.",
+      "pricing_note_fr": "À partir de 25 $/mois"
     },
     "wellsaid": {
       "short_desc_fr": "Générateur de voix IA pour une synthèse vocale de qualité professionnelle.",
@@ -3154,7 +3256,8 @@
         }
       ],
       "seo_title_fr": "Générateur de voix IA | WellSaid Labs",
-      "seo_description_fr": "Créez des voix professionnelles dans n'importe quel dialecte ou style. Essayez gratuitement les voix IA de WellSaid."
+      "seo_description_fr": "Créez des voix professionnelles dans n'importe quel dialecte ou style. Essayez gratuitement les voix IA de WellSaid.",
+      "pricing_note_fr": "Palier gratuit limité disponible"
     },
     "windsurf": {
       "short_desc_fr": "Gérez vos agents locaux et cloud depuis une interface unifiée.",
@@ -3183,7 +3286,8 @@
         }
       ],
       "seo_title_fr": "Devin Desktop - Gérez vos agents en un seul endroit",
-      "seo_description_fr": "Interface unifiée pour gérer vos agents locaux et cloud. Planifiez, déléguez et révisez depuis votre éditeur."
+      "seo_description_fr": "Interface unifiée pour gérer vos agents locaux et cloud. Planifiez, déléguez et révisez depuis votre éditeur.",
+      "pricing_note_fr": "Forfait gratuit disponible avec limites."
     },
     "wordtune": {
       "short_desc_fr": "Assistant de rédaction par IA pour perfectionner votre anglais.",
@@ -3215,7 +3319,8 @@
         }
       ],
       "seo_title_fr": "Wordtune - Assistant de rédaction IA",
-      "seo_description_fr": "Perfectionnez votre anglais avec l'assistant IA gratuit de Wordtune pour la reformulation et la correction."
+      "seo_description_fr": "Perfectionnez votre anglais avec l'assistant IA gratuit de Wordtune pour la reformulation et la correction.",
+      "pricing_note_fr": "Aucune carte de crédit requise"
     },
     "workato": {
       "short_desc_fr": "Workato connecte les agents IA à plus de 1 400 applications d'entreprise pour des flux de travail sécurisés et évolutifs.",
@@ -3245,7 +3350,8 @@
         }
       ],
       "seo_title_fr": "Workato - Plateforme d'intégration IA",
-      "seo_description_fr": "Connectez vos agents IA à plus de 1 400 applications pour des flux de travail sécurisés et évolutifs."
+      "seo_description_fr": "Connectez vos agents IA à plus de 1 400 applications pour des flux de travail sécurisés et évolutifs.",
+      "pricing_note_fr": "Variable selon les fonctions et l'échelle"
     },
     "writesonic": {
       "short_desc_fr": "Outil SEO assisté par IA pour l'optimisation de contenu et la croissance.",
@@ -3274,7 +3380,8 @@
         }
       ],
       "seo_title_fr": "Writesonic - Moteur SEO IA",
-      "seo_description_fr": "Boostez votre présence en ligne avec les outils SEO IA de Writesonic. Suivez, optimisez et croissez."
+      "seo_description_fr": "Boostez votre présence en ligne avec les outils SEO IA de Writesonic. Suivez, optimisez et croissez.",
+      "pricing_note_fr": "À partir de 99 $/mois"
     },
     "zapier": {
       "short_desc_fr": "Automatisez vos flux de travail entre applications avec Zapier.",
@@ -3303,7 +3410,8 @@
         }
       ],
       "seo_title_fr": "Zapier : Automatiser les flux IA",
-      "seo_description_fr": "Connectez plus de 9 000 applications avec Zapier. Commencez gratuitement dès aujourd'hui !"
+      "seo_description_fr": "Connectez plus de 9 000 applications avec Zapier. Commencez gratuitement dès aujourd'hui !",
+      "pricing_note_fr": "Forfait gratuit disponible"
     }
   },
   "categories": {
