@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-collect_logos.py - Chantier A : logos des outils (cascade Clearbit -> Google).
+collect_logos.py - Chantier A : logos des outils.
+Cascade : Clearbit -> DuckDuckGo (ip3, vrai logo HD) -> favicon Google.
 
 Lit les outils publies (slug, website_url, logo_url) depuis Supabase, derive le
-domaine depuis website_url, tente le logo Clearbit (logo.clearbit.com), sinon le
-favicon Google (google.com/s2/favicons). UPSERT du resultat dans tools.logo_url,
-puis revalidation ISR des fiches touchees (EN + FR) et de l'accueil.
+domaine depuis website_url, tente dans l'ordre : le logo Clearbit
+(logo.clearbit.com), puis l'icone DuckDuckGo (icons.duckduckgo.com/ip3, qui
+renvoie souvent l'apple-touch-icon HD), puis le favicon Google
+(google.com/s2/favicons, dernier recours). UPSERT du resultat dans
+tools.logo_url, puis revalidation ISR des fiches touchees (EN + FR) et de l'accueil.
 
 A lancer sur la machine Windows (le sandbox Cowork n'atteint pas Supabase /
-Clearbit / Google).
+Clearbit / DuckDuckGo / Google).
 
 Pre-requis dans prisme/.env : SUPABASE_URL, SUPABASE_SERVICE_KEY,
 REVALIDATE_SECRET, SITE_URL.
@@ -39,11 +42,15 @@ SITE_URL = os.environ.get("SITE_URL", "http://localhost:3000").rstrip("/")
 REVALIDATE_SECRET = os.environ.get("REVALIDATE_SECRET", "")
 
 CLEARBIT = "https://logo.clearbit.com/{domain}?size=128"
+DUCKDUCKGO = "https://icons.duckduckgo.com/ip3/{domain}.ico"
 GFAVICON = "https://www.google.com/s2/favicons?domain={domain}&sz=128"
 
-# Taille minimale (octets) pour considerer une image Clearbit comme reelle
-# (evite de stocker une page d'erreur ou une image vide).
+# Taille minimale (octets) pour considerer une image comme reelle (evite de
+# stocker une page d'erreur, une image vide ou un placeholder 1x1).
 MIN_IMAGE_BYTES = 100
+# DuckDuckGo renvoie une petite icone generique quand il ne connait pas le
+# domaine ; on exige un peu plus gros pour ne garder que les vrais logos HD.
+MIN_DDG_BYTES = 400
 
 
 def derive_domain(website_url):
@@ -58,7 +65,6 @@ def derive_domain(website_url):
         return None
     if netloc.startswith("www."):
         netloc = netloc[4:]
-    # retire un eventuel port
     return netloc.split(":")[0] or None
 
 
@@ -79,6 +85,18 @@ def probe_clearbit(session, domain):
     return None
 
 
+def probe_duckduckgo(session, domain):
+    """Retourne l'URL DuckDuckGo si elle renvoie une icone consequente, sinon None."""
+    url = DUCKDUCKGO.format(domain=domain)
+    try:
+        r = session.get(url, timeout=10, allow_redirects=True)
+    except Exception:
+        return None
+    if r.status_code == 200 and _is_image(r) and len(r.content) >= MIN_DDG_BYTES:
+        return url
+    return None
+
+
 def probe_google(session, domain):
     """Retourne l'URL favicon Google si 200 + image (globe par defaut accepte)."""
     url = GFAVICON.format(domain=domain)
@@ -92,10 +110,13 @@ def probe_google(session, domain):
 
 
 def resolve_logo(session, domain):
-    """Cascade : Clearbit puis favicon Google. Retourne (source, url) ou (None, None)."""
+    """Cascade Clearbit -> DuckDuckGo -> favicon Google. Retourne (source, url)."""
     cb = probe_clearbit(session, domain)
     if cb:
         return "clearbit", cb
+    ddg = probe_duckduckgo(session, domain)
+    if ddg:
+        return "duckduckgo", ddg
     gg = probe_google(session, domain)
     if gg:
         return "google", gg
@@ -120,7 +141,7 @@ def revalidate(paths):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Chantier A : logos Clearbit -> Google")
+    ap = argparse.ArgumentParser(description="Chantier A : logos Clearbit -> DuckDuckGo -> Google")
     ap.add_argument("--dry-run", action="store_true",
                     help="Montre le tableau outil -> source -> URL sans rien ecrire.")
     ap.add_argument("--only", type=str, default="",
@@ -159,35 +180,37 @@ def main():
     session.headers.update({"User-Agent": "YggNexus-logo-bot/1.0"})
 
     touched = []
-    nb_clearbit = nb_google = nb_none = nb_nodomain = 0
+    nb_clearbit = nb_ddg = nb_google = nb_none = nb_nodomain = 0
 
-    print(f"{'OUTIL':24} {'SOURCE':9} URL")
+    print(f"{'OUTIL':24} {'SOURCE':11} URL")
     print("-" * 80)
     for t in tools:
         slug = t["slug"]
         domain = derive_domain(t.get("website_url"))
         if not domain:
             nb_nodomain += 1
-            print(f"{slug:24} {'-':9} (pas de domaine, website_url={t.get('website_url')!r})")
+            print(f"{slug:24} {'-':11} (pas de domaine, website_url={t.get('website_url')!r})")
             continue
         source, url = resolve_logo(session, domain)
         if source == "clearbit":
             nb_clearbit += 1
+        elif source == "duckduckgo":
+            nb_ddg += 1
         elif source == "google":
             nb_google += 1
         else:
             nb_none += 1
-            print(f"{slug:24} {'-':9} (aucune image pour {domain})")
+            print(f"{slug:24} {'-':11} (aucune image pour {domain})")
             continue
 
-        print(f"{slug:24} {source:9} {url}")
+        print(f"{slug:24} {source:11} {url}")
 
         if not args.dry_run:
             sb.table("tools").update({"logo_url": url}).eq("slug", slug).execute()
             touched.append(slug)
 
     print("-" * 80)
-    print(f"[logos] clearbit={nb_clearbit}  google={nb_google}  "
+    print(f"[logos] clearbit={nb_clearbit}  duckduckgo={nb_ddg}  google={nb_google}  "
           f"aucune={nb_none}  sans_domaine={nb_nodomain}")
 
     if args.dry_run:
