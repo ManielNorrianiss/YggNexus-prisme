@@ -307,3 +307,61 @@ def iter_tool_categories(path=None):
     db = init_tool_categories(path)
     for row in db.execute("SELECT * FROM tool_categories ORDER BY tool_slug"):
         yield dict(row)
+
+
+# ---------------------------------------------------------------------------
+# tool_tagging helpers (added for b4_tagging)
+# ---------------------------------------------------------------------------
+
+def init_tool_tagging(path=None):
+    """Create tool_tagging table if it does not exist (idempotent)."""
+    db = connect(path)
+    db.execute("""
+        CREATE TABLE IF NOT EXISTS tool_tagging (
+            tool_slug    TEXT PRIMARY KEY,
+            facets_json  TEXT,
+            tags_json    TEXT,
+            tagged_at    TEXT,
+            content_hash TEXT
+        )
+    """)
+    db.commit()
+    return db
+
+
+def replace_tool_tagging(tool_slug, facets, tags, content_hash, path=None):
+    """Delete existing row for tool_slug then insert new row atomically.
+
+    facets     : dict {axis: [slug, ...]}
+    tags       : list of {"slug": ..., "label": ...}
+    content_hash: str
+    """
+    db = init_tool_tagging(path)
+    db.execute("DELETE FROM tool_tagging WHERE tool_slug=?", (tool_slug,))
+    db.execute("""
+        INSERT INTO tool_tagging (tool_slug, facets_json, tags_json, tagged_at, content_hash)
+        VALUES (?, ?, ?, datetime('now'), ?)
+    """, (
+        tool_slug,
+        json.dumps(facets,  ensure_ascii=False),
+        json.dumps(tags,    ensure_ascii=False),
+        content_hash,
+    ))
+    db.commit()
+
+
+def get_tool_tagging(tool_slug, path=None):
+    """Return {"facets": dict, "tags": list} for a given tool_slug.
+
+    Returns defaults (empty dict / empty list) if the slug has no tagging row.
+    """
+    db = init_tool_tagging(path)
+    row = db.execute(
+        "SELECT facets_json, tags_json FROM tool_tagging WHERE tool_slug=?",
+        (tool_slug,)
+    ).fetchone()
+    if not row:
+        return {"facets": {}, "tags": []}
+    facets = json.loads(row["facets_json"] or "{}")
+    tags   = json.loads(row["tags_json"]   or "[]")
+    return {"facets": facets, "tags": tags}

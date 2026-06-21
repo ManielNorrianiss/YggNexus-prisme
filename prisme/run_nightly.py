@@ -36,8 +36,10 @@ STEPS = [
     ("enrichissement", "b2_enrichissement.py",    True),
     ("dedup",          "b3_dedup.py",             False),
     # ("classification", "b4_classification.py",  False),  # retire : retrait des categories (2026-06-21)
+    ("tagging",        "b4_tagging.py",            False),
     ("export",         "export_tools.py",         True),
     ("publish",        "publish.py",              True),
+    ("sync_tags",      "sync_tags_facets.py",      False),
     ("embeddings",     "publish_embeddings.py",   True),
     ("liens",          "b5_liens.py",             False),
     # ("seo",            "b6_seo.py",               False),  # retire : retrait des categories (2026-06-21)

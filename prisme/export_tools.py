@@ -71,8 +71,11 @@ def build_entry(raw, enriched):
     cats = []
     primary = ""
 
+    slug = raw["slug"]
+    tagging = staging.get_tool_tagging(slug)
+
     entry = {
-        "slug":                 raw["slug"],
+        "slug":                 slug,
         "name":                 raw.get("name") or "",
         "vendor":               raw.get("vendor") or "",
         "website_url":          raw.get("website_url") or "",
@@ -91,6 +94,8 @@ def build_entry(raw, enriched):
         "faq_jsonb":            parse_json_field(enriched.get("faq_json"),  default=[]),
         "categories":           cats,
         "primary_category":     primary,
+        "facets":               tagging["facets"],
+        "tags":                 tagging["tags"],
     }
 
     # --- Modif 3 : filet SEO deterministe (si le LLM n'a pas produit les champs) ---

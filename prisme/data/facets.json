@@ -1,0 +1,28 @@
+{
+  "modality": [
+    {"slug": "text",       "label": "Text"},
+    {"slug": "image",      "label": "Image"},
+    {"slug": "audio",      "label": "Audio"},
+    {"slug": "video",      "label": "Video"},
+    {"slug": "code",       "label": "Code"},
+    {"slug": "data",       "label": "Data"},
+    {"slug": "3d",         "label": "3D"},
+    {"slug": "multimodal", "label": "Multimodal"}
+  ],
+  "function": [
+    {"slug": "generate",  "label": "Generate"},
+    {"slug": "edit",      "label": "Edit & Enhance"},
+    {"slug": "automate",  "label": "Automate"},
+    {"slug": "analyze",   "label": "Analyze & Research"},
+    {"slug": "chat",      "label": "Assist & Chat"},
+    {"slug": "build",     "label": "Build (No-Code)"}
+  ],
+  "audience": [
+    {"slug": "developers", "label": "Developers"},
+    {"slug": "marketing",  "label": "Marketing"},
+    {"slug": "creators",   "label": "Creators"},
+    {"slug": "business",   "label": "Business & Ops"},
+    {"slug": "research",   "label": "Research & Students"},
+    {"slug": "general",    "label": "General"}
+  ]
+}
