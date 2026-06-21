@@ -90,7 +90,7 @@ def main():
 
     from supabase import create_client
     sb = create_client(SUPABASE_URL, SERVICE_KEY)
-    paths = ["/", "/categories"]
+    paths = ["/"]  # categories retirees (2026-06-21)
     cat_slugs = set()
     run_id = f"publish-{int(time.time())}"
 
@@ -101,20 +101,21 @@ def main():
         slug = row["slug"]
         print(f"  upsert tool {slug} (id={tool_id})")
 
-        primary = item.get("primary_category")
-        for cat_slug in item.get("categories", []):
-            cat_slugs.add(cat_slug)
-            # --- Modif 3 : .limit(1) remplace .maybe_single() qui peut lever sur 0 ligne ---
-            res_cat = sb.table("categories").select("id").eq("slug", cat_slug).limit(1).execute()
-            if not res_cat.data:
-                print(f"    categorie inconnue, ignoree : {cat_slug}")
-                continue
-            cat_id = res_cat.data[0]["id"]
-            sb.table("tool_categories").upsert(
-                {"tool_id": tool_id, "category_id": cat_id,
-                 "is_primary": (cat_slug == primary)},
-                on_conflict="tool_id,category_id",
-            ).execute()
+        if False:  # categories retirees (2026-06-21)
+            primary = item.get("primary_category")
+            for cat_slug in item.get("categories", []):
+                cat_slugs.add(cat_slug)
+                # --- Modif 3 : .limit(1) remplace .maybe_single() qui peut lever sur 0 ligne ---
+                res_cat = sb.table("categories").select("id").eq("slug", cat_slug).limit(1).execute()
+                if not res_cat.data:
+                    print(f"    categorie inconnue, ignoree : {cat_slug}")
+                    continue
+                cat_id = res_cat.data[0]["id"]
+                sb.table("tool_categories").upsert(
+                    {"tool_id": tool_id, "category_id": cat_id,
+                     "is_primary": (cat_slug == primary)},
+                    on_conflict="tool_id,category_id",
+                ).execute()
 
         sb.table("changelog").insert(
             {"entity_type": "tool", "entity_id": tool_id,
@@ -123,28 +124,23 @@ def main():
 
         paths.append(f"/tools/{slug}")
 
-    # --- Revalidation des pages de regroupement (/best/<cat> et /categories/<cat>) ---
-    # Sans ca, apres une (re)classification ces pages restent en cache perime
-    # (revalidate=86400 cote frontend). On revalide toute categorie touchee par la
-    # publication ET, par securite, toutes les categories existantes dans Supabase
-    # (peu nombreuses) pour couvrir aussi les RETRAITS de categorie : un outil sorti
-    # d une categorie ne figure plus dans sa liste, mais sa vieille page de
-    # regroupement doit quand meme etre rafraichie.
-    try:
-        res_all = sb.table("categories").select("slug").execute()
-        for r in (res_all.data or []):
-            if r.get("slug"):
-                cat_slugs.add(r["slug"])
-    except Exception as e:
-        print(f"  (lecture des categories impossible, on garde les categories touchees : {e})")
+    # categories retirees (2026-06-21) — lecture Supabase categories + revalidation /best /categories desactivees
+    if False:  # categories retirees (2026-06-21)
+        # --- Revalidation des pages de regroupement (/best/<cat> et /categories/<cat>) ---
+        try:
+            res_all = sb.table("categories").select("slug").execute()
+            for r in (res_all.data or []):
+                if r.get("slug"):
+                    cat_slugs.add(r["slug"])
+        except Exception as e:
+            print(f"  (lecture des categories impossible, on garde les categories touchees : {e})")
 
-    for cat_slug in sorted(cat_slugs):
-        paths.append(f"/best/{cat_slug}")
-        paths.append(f"/categories/{cat_slug}")
+        for cat_slug in sorted(cat_slugs):
+            paths.append(f"/best/{cat_slug}")
+            paths.append(f"/categories/{cat_slug}")
 
     print("Publication terminee. Declenchement de la revalidation...")
-    print(f"  {len(set(paths))} chemin(s) a revalider "
-          f"(dont {len(cat_slugs)} categorie(s) -> /best + /categories).")
+    print(f"  {len(set(paths))} chemin(s) a revalider.")
     revalidate(paths)
 
 

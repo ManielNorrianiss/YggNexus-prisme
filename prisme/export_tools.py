@@ -67,32 +67,9 @@ def build_entry(raw, enriched):
             qs = qs / 10.0
         qs = round(max(0.0, min(10.0, qs)), 1)
 
-    # --- Modif 1 : categories depuis B4 (tool_categories) avec fallback sources.json ---
-    cats_raw = raw.get("categories_json")
-    cats_fallback = parse_json_field(cats_raw, default=[])
-    primary_fallback = raw.get("primary_category") or ""
-
-    b4_rows = staging.get_tool_categories(raw["slug"])
-    # Valid B4 = au moins une ligne is_unclassified=0 avec category_slug non vide
-    b4_valid = [
-        r for r in b4_rows
-        if not r.get("is_unclassified") and r.get("category_slug")
-    ]
-    if b4_valid:
-        seen = set()
-        cats = []
-        for r in b4_valid:
-            cs = r["category_slug"]
-            if cs not in seen:
-                seen.add(cs)
-                cats.append(cs)
-        # primary = ligne is_primary=1
-        primary_rows = [r for r in b4_valid if r.get("is_primary")]
-        primary = primary_rows[0]["category_slug"] if primary_rows else (cats[0] if cats else "")
-    else:
-        # Filet de securite : fallback sources.json
-        cats = cats_fallback
-        primary = primary_fallback
+    # categories retirees (2026-06-21)
+    cats = []
+    primary = ""
 
     entry = {
         "slug":                 raw["slug"],

@@ -132,11 +132,12 @@ def db_checks(tools, categories, tool_cat_rows, embed_tool_ids,
                 p.append(f"{t['slug']} -> quality_score invalide ({q!r})")
     sections.append(("Outils avec quality_score hors borne", p))
 
-    # 6. categories orphelines (aucun outil rattache)
-    used_cat_ids = {cid for cids in cats_by_tool.values() for cid in cids}
-    p = [f"{c['slug']} (id {c['id']})" for c in categories
-         if c["id"] not in used_cat_ids]
-    sections.append(("Categories publiees sans aucun outil", p))
+    if False:  # categories retirees (2026-06-21) — check orphelines desactive
+        # 6. categories orphelines (aucun outil rattache)
+        used_cat_ids = {cid for cids in cats_by_tool.values() for cid in cids}
+        p = [f"{c['slug']} (id {c['id']})" for c in categories
+             if c["id"] not in used_cat_ids]
+        sections.append(("Categories publiees sans aucun outil", p))
 
     # 7. fraicheur
     limite = now_dt - timedelta(days=stale_days)
@@ -176,8 +177,9 @@ def build_urls(site, tool_slugs, cat_slugs):
     """Construit la liste des URL internes a verifier."""
     urls = [site + "/"]
     urls += [f"{site}/tools/{s}" for s in tool_slugs]
-    urls += [f"{site}/categories/{s}" for s in cat_slugs]
-    urls += [f"{site}/best/{s}" for s in cat_slugs]
+    # categories retirees (2026-06-21) — /categories et /best retires (routes supprimees)
+    # urls += [f"{site}/categories/{s}" for s in cat_slugs]
+    # urls += [f"{site}/best/{s}" for s in cat_slugs]
     return urls
 
 

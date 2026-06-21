@@ -35,12 +35,12 @@ STEPS = [
     ("collecte",       "b1_collecte.py",         True),
     ("enrichissement", "b2_enrichissement.py",    True),
     ("dedup",          "b3_dedup.py",             False),
-    ("classification", "b4_classification.py",  False),
+    # ("classification", "b4_classification.py",  False),  # retire : retrait des categories (2026-06-21)
     ("export",         "export_tools.py",         True),
     ("publish",        "publish.py",              True),
     ("embeddings",     "publish_embeddings.py",   True),
     ("liens",          "b5_liens.py",             False),
-    ("seo",            "b6_seo.py",               False),
+    # ("seo",            "b6_seo.py",               False),  # retire : retrait des categories (2026-06-21)
     ("pages",          "b6_pages.py",             False),
     ("sante",          "b8_sante.py",             False),
 ]
