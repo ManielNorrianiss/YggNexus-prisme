@@ -20,6 +20,15 @@ import os
 from datetime import datetime
 from pathlib import Path
 
+# --- Durcissement UTF-8 (ajoute 2026-06-22) : evite UnicodeEncodeError cp1252 sous Windows ---
+os.environ.setdefault("PYTHONUTF8", "1")
+os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 # ---------------------------------------------------------------------------
 # Constantes
 # ---------------------------------------------------------------------------
@@ -110,6 +119,7 @@ def run_step(step_key, script_name, critical, stop_on_warning=False):
             text=True,
             encoding="utf-8",
             errors="replace",
+            env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
         )
     except Exception as exc:
         elapsed = (datetime.now() - start).total_seconds()
