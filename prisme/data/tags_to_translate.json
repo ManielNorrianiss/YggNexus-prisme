@@ -1,0 +1,7177 @@
+[
+  {
+    "id": 1631,
+    "slug": "3d-apps",
+    "name": "3D Apps"
+  },
+  {
+    "id": 563,
+    "slug": "3d-conversion",
+    "name": "3D Conversion"
+  },
+  {
+    "id": 130,
+    "slug": "3d-modeling",
+    "name": "3D Modeling"
+  },
+  {
+    "id": 1194,
+    "slug": "3d-rendering",
+    "name": "3D Rendering"
+  },
+  {
+    "id": 1533,
+    "slug": "academic-analysis",
+    "name": "Academic Analysis"
+  },
+  {
+    "id": 1579,
+    "slug": "academic-assistant",
+    "name": "Academic Assistant"
+  },
+  {
+    "id": 510,
+    "slug": "academic-insights",
+    "name": "Academic Insights"
+  },
+  {
+    "id": 1329,
+    "slug": "academic-literature",
+    "name": "Academic Literature"
+  },
+  {
+    "id": 322,
+    "slug": "academic-papers",
+    "name": "Academic Papers"
+  },
+  {
+    "id": 326,
+    "slug": "academic-research",
+    "name": "Academic Research"
+  },
+  {
+    "id": 168,
+    "slug": "academic-search",
+    "name": "Academic Search"
+  },
+  {
+    "id": 476,
+    "slug": "academic-source",
+    "name": "Academic Source"
+  },
+  {
+    "id": 190,
+    "slug": "academic-writing",
+    "name": "Academic Writing"
+  },
+  {
+    "id": 829,
+    "slug": "accessibility",
+    "name": "Accessibility"
+  },
+  {
+    "id": 1227,
+    "slug": "accessible-explanation",
+    "name": "Accessible Explanation"
+  },
+  {
+    "id": 877,
+    "slug": "accounting",
+    "name": "Accounting"
+  },
+  {
+    "id": 331,
+    "slug": "accounting-automation",
+    "name": "Accounting Automation"
+  },
+  {
+    "id": 1582,
+    "slug": "ad-automation",
+    "name": "Ad Automation"
+  },
+  {
+    "id": 932,
+    "slug": "advanced-r",
+    "name": "Advanced R"
+  },
+  {
+    "id": 1505,
+    "slug": "adversarial-tests",
+    "name": "Adversarial Tests"
+  },
+  {
+    "id": 861,
+    "slug": "advocacy",
+    "name": "Advocacy"
+  },
+  {
+    "id": 1559,
+    "slug": "aggregator",
+    "name": "Aggregator"
+  },
+  {
+    "id": 1019,
+    "slug": "ai-ad-generator",
+    "name": "AI Ad Generator"
+  },
+  {
+    "id": 617,
+    "slug": "ai-aesthetic-analysis",
+    "name": "AI Aesthetic Analysis"
+  },
+  {
+    "id": 414,
+    "slug": "ai-agent",
+    "name": "AI Agent"
+  },
+  {
+    "id": 1315,
+    "slug": "ai-agent-management",
+    "name": "AI Agent Management"
+  },
+  {
+    "id": 1219,
+    "slug": "ai-algorithms",
+    "name": "AI Algorithms"
+  },
+  {
+    "id": 493,
+    "slug": "ai-analysis",
+    "name": "AI Analysis"
+  },
+  {
+    "id": 1167,
+    "slug": "ai-animation",
+    "name": "AI Animation"
+  },
+  {
+    "id": 61,
+    "slug": "ai-answer-engine",
+    "name": "AI Answer Engine"
+  },
+  {
+    "id": 919,
+    "slug": "ai-api",
+    "name": "AI API"
+  },
+  {
+    "id": 143,
+    "slug": "ai-app-builder",
+    "name": "AI App Builder"
+  },
+  {
+    "id": 637,
+    "slug": "ai-apps",
+    "name": "AI Apps"
+  },
+  {
+    "id": 102,
+    "slug": "ai-art",
+    "name": "AI Art"
+  },
+  {
+    "id": 1310,
+    "slug": "ai-art-generator",
+    "name": "AI Art Generator"
+  },
+  {
+    "id": 43,
+    "slug": "ai-assistant",
+    "name": "AI Assistant"
+  },
+  {
+    "id": 956,
+    "slug": "ai-assisted-development",
+    "name": "AI Assisted Development"
+  },
+  {
+    "id": 132,
+    "slug": "ai-audio",
+    "name": "AI Audio"
+  },
+  {
+    "id": 1160,
+    "slug": "ai-audio-tour",
+    "name": "AI Audio Tour"
+  },
+  {
+    "id": 275,
+    "slug": "ai-avatar",
+    "name": "AI Avatar"
+  },
+  {
+    "id": 742,
+    "slug": "ai-benchmarks",
+    "name": "AI Benchmarks"
+  },
+  {
+    "id": 1484,
+    "slug": "ai-boilerplate",
+    "name": "AI Boilerplate"
+  },
+  {
+    "id": 655,
+    "slug": "ai-brainstorming",
+    "name": "AI Brainstorming"
+  },
+  {
+    "id": 1189,
+    "slug": "ai-business",
+    "name": "AI Business"
+  },
+  {
+    "id": 1622,
+    "slug": "ai-business-planning",
+    "name": "AI Business Planning"
+  },
+  {
+    "id": 539,
+    "slug": "ai-calling",
+    "name": "AI Calling"
+  },
+  {
+    "id": 450,
+    "slug": "ai-canvas",
+    "name": "AI Canvas"
+  },
+  {
+    "id": 808,
+    "slug": "ai-character-generation",
+    "name": "AI Character Generation"
+  },
+  {
+    "id": 244,
+    "slug": "ai-chat-apps",
+    "name": "AI Chat Apps"
+  },
+  {
+    "id": 251,
+    "slug": "ai-chatbot",
+    "name": "AI Chatbot"
+  },
+  {
+    "id": 1267,
+    "slug": "ai-code-assistant",
+    "name": "AI Code Assistant"
+  },
+  {
+    "id": 297,
+    "slug": "ai-code-review",
+    "name": "AI Code Review"
+  },
+  {
+    "id": 262,
+    "slug": "ai-code-suggestions",
+    "name": "AI Code Suggestions"
+  },
+  {
+    "id": 170,
+    "slug": "ai-coding-assistant",
+    "name": "AI Coding Assistant"
+  },
+  {
+    "id": 900,
+    "slug": "ai-coding-sessions",
+    "name": "AI Coding Sessions"
+  },
+  {
+    "id": 410,
+    "slug": "ai-collaboration",
+    "name": "AI Collaboration"
+  },
+  {
+    "id": 970,
+    "slug": "ai-coloring",
+    "name": "AI Coloring"
+  },
+  {
+    "id": 1326,
+    "slug": "ai-colorization",
+    "name": "AI Colorization"
+  },
+  {
+    "id": 734,
+    "slug": "ai-comic-generation",
+    "name": "AI Comic Generation"
+  },
+  {
+    "id": 314,
+    "slug": "ai-companion",
+    "name": "AI Companion"
+  },
+  {
+    "id": 545,
+    "slug": "ai-comparison",
+    "name": "AI Comparison"
+  },
+  {
+    "id": 664,
+    "slug": "ai-composer",
+    "name": "AI Composer"
+  },
+  {
+    "id": 731,
+    "slug": "ai-content",
+    "name": "AI Content"
+  },
+  {
+    "id": 304,
+    "slug": "ai-content-generation",
+    "name": "AI Content Generation"
+  },
+  {
+    "id": 1080,
+    "slug": "ai-content-verification",
+    "name": "AI Content Verification"
+  },
+  {
+    "id": 1043,
+    "slug": "ai-context",
+    "name": "AI Context"
+  },
+  {
+    "id": 466,
+    "slug": "ai-copilot",
+    "name": "AI Copilot"
+  },
+  {
+    "id": 875,
+    "slug": "ai-cost-tracking",
+    "name": "AI Cost Tracking"
+  },
+  {
+    "id": 709,
+    "slug": "ai-courses",
+    "name": "AI Courses"
+  },
+  {
+    "id": 175,
+    "slug": "ai-crawling",
+    "name": "AI Crawling"
+  },
+  {
+    "id": 128,
+    "slug": "ai-creation",
+    "name": "AI Creation"
+  },
+  {
+    "id": 1651,
+    "slug": "ai-creative-tool",
+    "name": "AI Creative Tool"
+  },
+  {
+    "id": 495,
+    "slug": "ai-customer-service",
+    "name": "AI Customer Service"
+  },
+  {
+    "id": 1183,
+    "slug": "ai-data-layer",
+    "name": "AI Data Layer"
+  },
+  {
+    "id": 1434,
+    "slug": "ai-data-management",
+    "name": "AI Data Management"
+  },
+  {
+    "id": 1032,
+    "slug": "ai-datasets",
+    "name": "AI Datasets"
+  },
+  {
+    "id": 917,
+    "slug": "ai-debate",
+    "name": "AI Debate"
+  },
+  {
+    "id": 597,
+    "slug": "ai-deployment",
+    "name": "AI Deployment"
+  },
+  {
+    "id": 113,
+    "slug": "ai-design",
+    "name": "AI Design"
+  },
+  {
+    "id": 910,
+    "slug": "ai-detection",
+    "name": "AI Detection"
+  },
+  {
+    "id": 988,
+    "slug": "ai-development",
+    "name": "AI Development"
+  },
+  {
+    "id": 1197,
+    "slug": "ai-directory",
+    "name": "AI Directory"
+  },
+  {
+    "id": 477,
+    "slug": "ai-document-generator",
+    "name": "AI Document Generator"
+  },
+  {
+    "id": 806,
+    "slug": "ai-documentation",
+    "name": "AI Documentation"
+  },
+  {
+    "id": 831,
+    "slug": "ai-drawing",
+    "name": "AI Drawing"
+  },
+  {
+    "id": 126,
+    "slug": "ai-driven",
+    "name": "AI Driven"
+  },
+  {
+    "id": 96,
+    "slug": "ai-editing",
+    "name": "AI Editing"
+  },
+  {
+    "id": 388,
+    "slug": "ai-engineering",
+    "name": "AI Engineering"
+  },
+  {
+    "id": 517,
+    "slug": "ai-enhancement",
+    "name": "AI Enhancement"
+  },
+  {
+    "id": 938,
+    "slug": "ai-ethics",
+    "name": "AI Ethics"
+  },
+  {
+    "id": 352,
+    "slug": "ai-evaluation",
+    "name": "AI Evaluation"
+  },
+  {
+    "id": 1055,
+    "slug": "ai-evolution",
+    "name": "AI Evolution"
+  },
+  {
+    "id": 1294,
+    "slug": "ai-examples",
+    "name": "AI Examples"
+  },
+  {
+    "id": 1574,
+    "slug": "ai-experimentation",
+    "name": "AI Experimentation"
+  },
+  {
+    "id": 1012,
+    "slug": "ai-explained",
+    "name": "AI Explained"
+  },
+  {
+    "id": 392,
+    "slug": "ai-feedback",
+    "name": "AI Feedback"
+  },
+  {
+    "id": 1108,
+    "slug": "ai-filmmaking",
+    "name": "AI Filmmaking"
+  },
+  {
+    "id": 468,
+    "slug": "ai-filtering",
+    "name": "AI Filtering"
+  },
+  {
+    "id": 264,
+    "slug": "ai-flashcard-generator",
+    "name": "AI Flashcard Generator"
+  },
+  {
+    "id": 850,
+    "slug": "ai-font-generator",
+    "name": "AI Font Generator"
+  },
+  {
+    "id": 255,
+    "slug": "ai-for-slides",
+    "name": "AI For Slides"
+  },
+  {
+    "id": 1584,
+    "slug": "ai-form-generator",
+    "name": "AI Form Generator"
+  },
+  {
+    "id": 311,
+    "slug": "ai-framework",
+    "name": "AI Framework"
+  },
+  {
+    "id": 964,
+    "slug": "ai-free",
+    "name": "AI Free"
+  },
+  {
+    "id": 1406,
+    "slug": "ai-friendly",
+    "name": "AI Friendly"
+  },
+  {
+    "id": 604,
+    "slug": "ai-fundamentals",
+    "name": "AI Fundamentals"
+  },
+  {
+    "id": 952,
+    "slug": "ai-gateway",
+    "name": "AI Gateway"
+  },
+  {
+    "id": 1443,
+    "slug": "ai-generalization",
+    "name": "AI Generalization"
+  },
+  {
+    "id": 92,
+    "slug": "ai-generative",
+    "name": "AI Generative"
+  },
+  {
+    "id": 1202,
+    "slug": "ai-glossary",
+    "name": "AI Glossary"
+  },
+  {
+    "id": 448,
+    "slug": "ai-governance",
+    "name": "AI Governance"
+  },
+  {
+    "id": 1180,
+    "slug": "ai-grief",
+    "name": "AI Grief"
+  },
+  {
+    "id": 124,
+    "slug": "ai-growth",
+    "name": "AI Growth"
+  },
+  {
+    "id": 1029,
+    "slug": "ai-hackathons",
+    "name": "AI Hackathons"
+  },
+  {
+    "id": 1147,
+    "slug": "ai-headshot",
+    "name": "AI Headshot"
+  },
+  {
+    "id": 778,
+    "slug": "ai-history",
+    "name": "AI History"
+  },
+  {
+    "id": 570,
+    "slug": "ai-hosted-podcast",
+    "name": "AI Hosted Podcast"
+  },
+  {
+    "id": 80,
+    "slug": "ai-image-generation",
+    "name": "AI Image Generation"
+  },
+  {
+    "id": 564,
+    "slug": "ai-image-to-3d",
+    "name": "AI Image To 3D"
+  },
+  {
+    "id": 867,
+    "slug": "ai-impact",
+    "name": "AI Impact"
+  },
+  {
+    "id": 1096,
+    "slug": "ai-in-education",
+    "name": "AI In Education"
+  },
+  {
+    "id": 319,
+    "slug": "ai-indexing",
+    "name": "AI Indexing"
+  },
+  {
+    "id": 921,
+    "slug": "ai-inference",
+    "name": "AI Inference"
+  },
+  {
+    "id": 968,
+    "slug": "ai-infrastructure",
+    "name": "AI Infrastructure"
+  },
+  {
+    "id": 689,
+    "slug": "ai-insights",
+    "name": "AI Insights"
+  },
+  {
+    "id": 934,
+    "slug": "ai-inspiration",
+    "name": "AI Inspiration"
+  },
+  {
+    "id": 187,
+    "slug": "ai-integration",
+    "name": "AI Integration"
+  },
+  {
+    "id": 1373,
+    "slug": "ai-interaction",
+    "name": "AI Interaction"
+  },
+  {
+    "id": 995,
+    "slug": "ai-interview-copilot",
+    "name": "AI Interview Copilot"
+  },
+  {
+    "id": 487,
+    "slug": "ai-interviewing",
+    "name": "AI Interviewing"
+  },
+  {
+    "id": 530,
+    "slug": "ai-jobs",
+    "name": "AI Jobs"
+  },
+  {
+    "id": 1478,
+    "slug": "ai-lawsuits",
+    "name": "AI Lawsuits"
+  },
+  {
+    "id": 1132,
+    "slug": "ai-lifecycle",
+    "name": "AI Lifecycle"
+  },
+  {
+    "id": 658,
+    "slug": "ai-logo-design",
+    "name": "AI Logo Design"
+  },
+  {
+    "id": 199,
+    "slug": "ai-logo-maker",
+    "name": "AI Logo Maker"
+  },
+  {
+    "id": 76,
+    "slug": "ai-marketing",
+    "name": "AI Marketing"
+  },
+  {
+    "id": 559,
+    "slug": "ai-mastering",
+    "name": "AI Mastering"
+  },
+  {
+    "id": 1048,
+    "slug": "ai-matching",
+    "name": "AI Matching"
+  },
+  {
+    "id": 229,
+    "slug": "ai-meeting",
+    "name": "AI Meeting"
+  },
+  {
+    "id": 94,
+    "slug": "ai-models",
+    "name": "AI Models"
+  },
+  {
+    "id": 533,
+    "slug": "ai-monitoring",
+    "name": "AI Monitoring"
+  },
+  {
+    "id": 381,
+    "slug": "ai-moodboard",
+    "name": "AI Moodboard"
+  },
+  {
+    "id": 118,
+    "slug": "ai-music",
+    "name": "AI Music"
+  },
+  {
+    "id": 1393,
+    "slug": "ai-music-generation",
+    "name": "AI Music Generation"
+  },
+  {
+    "id": 567,
+    "slug": "ai-news",
+    "name": "AI News"
+  },
+  {
+    "id": 1308,
+    "slug": "ai-note-taking",
+    "name": "AI Note Taking"
+  },
+  {
+    "id": 1200,
+    "slug": "ai-notes",
+    "name": "AI Notes"
+  },
+  {
+    "id": 1414,
+    "slug": "ai-optimization",
+    "name": "AI Optimization"
+  },
+  {
+    "id": 628,
+    "slug": "ai-outreach",
+    "name": "AI Outreach"
+  },
+  {
+    "id": 1616,
+    "slug": "ai-parody",
+    "name": "AI Parody"
+  },
+  {
+    "id": 89,
+    "slug": "ai-platform",
+    "name": "AI Platform"
+  },
+  {
+    "id": 258,
+    "slug": "ai-poetry",
+    "name": "AI Poetry"
+  },
+  {
+    "id": 577,
+    "slug": "ai-policy",
+    "name": "AI Policy"
+  },
+  {
+    "id": 430,
+    "slug": "ai-portraits",
+    "name": "AI Portraits"
+  },
+  {
+    "id": 378,
+    "slug": "ai-powered",
+    "name": "AI Powered"
+  },
+  {
+    "id": 994,
+    "slug": "ai-practice",
+    "name": "AI Practice"
+  },
+  {
+    "id": 99,
+    "slug": "ai-presentations",
+    "name": "AI Presentations"
+  },
+  {
+    "id": 207,
+    "slug": "ai-productivity",
+    "name": "AI Productivity"
+  },
+  {
+    "id": 400,
+    "slug": "ai-prompt-generator",
+    "name": "AI Prompt Generator"
+  },
+  {
+    "id": 1374,
+    "slug": "ai-prompt-hub",
+    "name": "AI Prompt Hub"
+  },
+  {
+    "id": 1371,
+    "slug": "ai-prompts",
+    "name": "AI Prompts"
+  },
+  {
+    "id": 163,
+    "slug": "ai-qualification",
+    "name": "AI Qualification"
+  },
+  {
+    "id": 1279,
+    "slug": "ai-quality",
+    "name": "AI Quality"
+  },
+  {
+    "id": 1613,
+    "slug": "ai-ready",
+    "name": "AI Ready"
+  },
+  {
+    "id": 717,
+    "slug": "ai-recommendations",
+    "name": "AI Recommendations"
+  },
+  {
+    "id": 782,
+    "slug": "ai-redesign",
+    "name": "AI Redesign"
+  },
+  {
+    "id": 1564,
+    "slug": "ai-reliability",
+    "name": "AI Reliability"
+  },
+  {
+    "id": 460,
+    "slug": "ai-renaming",
+    "name": "AI Renaming"
+  },
+  {
+    "id": 588,
+    "slug": "ai-renovation",
+    "name": "AI Renovation"
+  },
+  {
+    "id": 59,
+    "slug": "ai-research",
+    "name": "AI Research"
+  },
+  {
+    "id": 177,
+    "slug": "ai-research-assistant",
+    "name": "AI Research Assistant"
+  },
+  {
+    "id": 485,
+    "slug": "ai-revenue",
+    "name": "AI Revenue"
+  },
+  {
+    "id": 1385,
+    "slug": "ai-review",
+    "name": "AI Review"
+  },
+  {
+    "id": 1438,
+    "slug": "ai-roadmaps",
+    "name": "AI Roadmaps"
+  },
+  {
+    "id": 860,
+    "slug": "ai-safety",
+    "name": "AI Safety"
+  },
+  {
+    "id": 882,
+    "slug": "ai-sales",
+    "name": "AI Sales"
+  },
+  {
+    "id": 1423,
+    "slug": "ai-sandbox",
+    "name": "AI Sandbox"
+  },
+  {
+    "id": 217,
+    "slug": "ai-scheduling",
+    "name": "AI Scheduling"
+  },
+  {
+    "id": 613,
+    "slug": "ai-screening",
+    "name": "AI Screening"
+  },
+  {
+    "id": 115,
+    "slug": "ai-simulation",
+    "name": "AI Simulation"
+  },
+  {
+    "id": 791,
+    "slug": "ai-skills",
+    "name": "AI Skills"
+  },
+  {
+    "id": 974,
+    "slug": "ai-social-impact",
+    "name": "AI Social Impact"
+  },
+  {
+    "id": 1136,
+    "slug": "ai-social-network",
+    "name": "AI Social Network"
+  },
+  {
+    "id": 726,
+    "slug": "ai-solutions",
+    "name": "AI Solutions"
+  },
+  {
+    "id": 53,
+    "slug": "ai-speech",
+    "name": "AI Speech"
+  },
+  {
+    "id": 583,
+    "slug": "ai-story-generation",
+    "name": "AI Story Generation"
+  },
+  {
+    "id": 552,
+    "slug": "ai-storytelling",
+    "name": "AI Storytelling"
+  },
+  {
+    "id": 947,
+    "slug": "ai-strategy",
+    "name": "AI Strategy"
+  },
+  {
+    "id": 179,
+    "slug": "ai-summarization",
+    "name": "AI Summarization"
+  },
+  {
+    "id": 350,
+    "slug": "ai-systems",
+    "name": "AI Systems"
+  },
+  {
+    "id": 512,
+    "slug": "ai-tagging",
+    "name": "AI Tagging"
+  },
+  {
+    "id": 519,
+    "slug": "ai-task-management",
+    "name": "AI Task Management"
+  },
+  {
+    "id": 1635,
+    "slug": "ai-terminal",
+    "name": "AI Terminal"
+  },
+  {
+    "id": 796,
+    "slug": "ai-testing",
+    "name": "AI Testing"
+  },
+  {
+    "id": 852,
+    "slug": "ai-threat",
+    "name": "AI Threat"
+  },
+  {
+    "id": 1528,
+    "slug": "ai-timeline",
+    "name": "AI Timeline"
+  },
+  {
+    "id": 366,
+    "slug": "ai-title-generator",
+    "name": "AI Title Generator"
+  },
+  {
+    "id": 46,
+    "slug": "ai-tools",
+    "name": "AI Tools"
+  },
+  {
+    "id": 548,
+    "slug": "ai-tools-directory",
+    "name": "AI Tools Directory"
+  },
+  {
+    "id": 1014,
+    "slug": "ai-toonify",
+    "name": "AI Toonify"
+  },
+  {
+    "id": 633,
+    "slug": "ai-training",
+    "name": "AI Training"
+  },
+  {
+    "id": 1076,
+    "slug": "ai-translations",
+    "name": "AI Translations"
+  },
+  {
+    "id": 999,
+    "slug": "ai-transparency",
+    "name": "AI Transparency"
+  },
+  {
+    "id": 1420,
+    "slug": "ai-travel-planner",
+    "name": "AI Travel Planner"
+  },
+  {
+    "id": 662,
+    "slug": "ai-trends",
+    "name": "AI Trends"
+  },
+  {
+    "id": 631,
+    "slug": "ai-upscaling",
+    "name": "AI Upscaling"
+  },
+  {
+    "id": 121,
+    "slug": "ai-video",
+    "name": "AI Video"
+  },
+  {
+    "id": 1017,
+    "slug": "ai-video-editor",
+    "name": "AI Video Editor"
+  },
+  {
+    "id": 81,
+    "slug": "ai-video-generation",
+    "name": "AI Video Generation"
+  },
+  {
+    "id": 1084,
+    "slug": "ai-voice-generator",
+    "name": "AI Voice Generator"
+  },
+  {
+    "id": 594,
+    "slug": "ai-watermark-removal",
+    "name": "AI Watermark Removal"
+  },
+  {
+    "id": 86,
+    "slug": "ai-workflows",
+    "name": "AI Workflows"
+  },
+  {
+    "id": 1258,
+    "slug": "ai-workforce",
+    "name": "AI Workforce"
+  },
+  {
+    "id": 1235,
+    "slug": "ai-workload-management",
+    "name": "AI Workload Management"
+  },
+  {
+    "id": 1141,
+    "slug": "ai-workspace",
+    "name": "AI Workspace"
+  },
+  {
+    "id": 72,
+    "slug": "ai-writing",
+    "name": "AI Writing"
+  },
+  {
+    "id": 535,
+    "slug": "alerts",
+    "name": "Alerts"
+  },
+  {
+    "id": 1298,
+    "slug": "algorithm-analysis",
+    "name": "Algorithm Analysis"
+  },
+  {
+    "id": 1655,
+    "slug": "algorithmic",
+    "name": "Algorithmic"
+  },
+  {
+    "id": 218,
+    "slug": "analytics",
+    "name": "Analytics"
+  },
+  {
+    "id": 603,
+    "slug": "android-development",
+    "name": "Android Development"
+  },
+  {
+    "id": 193,
+    "slug": "animation",
+    "name": "Animation"
+  },
+  {
+    "id": 266,
+    "slug": "anki",
+    "name": "Anki"
+  },
+  {
+    "id": 1512,
+    "slug": "anonymization",
+    "name": "Anonymization"
+  },
+  {
+    "id": 307,
+    "slug": "anti-scraping",
+    "name": "Anti Scraping"
+  },
+  {
+    "id": 1206,
+    "slug": "ap-news",
+    "name": "Ap News"
+  },
+  {
+    "id": 2,
+    "slug": "api",
+    "name": "API"
+  },
+  {
+    "id": 705,
+    "slug": "api-analysis",
+    "name": "API Analysis"
+  },
+  {
+    "id": 1475,
+    "slug": "api-documentation",
+    "name": "API Documentation"
+  },
+  {
+    "id": 868,
+    "slug": "api-examples",
+    "name": "API Examples"
+  },
+  {
+    "id": 1358,
+    "slug": "api-first",
+    "name": "API First"
+  },
+  {
+    "id": 1314,
+    "slug": "api-gateway",
+    "name": "API Gateway"
+  },
+  {
+    "id": 954,
+    "slug": "api-generation",
+    "name": "API Generation"
+  },
+  {
+    "id": 63,
+    "slug": "api-integration",
+    "name": "API Integration"
+  },
+  {
+    "id": 953,
+    "slug": "api-management",
+    "name": "API Management"
+  },
+  {
+    "id": 446,
+    "slug": "api-monitoring",
+    "name": "API Monitoring"
+  },
+  {
+    "id": 1404,
+    "slug": "api-platform",
+    "name": "API Platform"
+  },
+  {
+    "id": 516,
+    "slug": "api-reference",
+    "name": "API Reference"
+  },
+  {
+    "id": 1470,
+    "slug": "api-security",
+    "name": "API Security"
+  },
+  {
+    "id": 1480,
+    "slug": "api-service",
+    "name": "API Service"
+  },
+  {
+    "id": 1133,
+    "slug": "api-standard",
+    "name": "API Standard"
+  },
+  {
+    "id": 377,
+    "slug": "api-testing",
+    "name": "API Testing"
+  },
+  {
+    "id": 50,
+    "slug": "app-building",
+    "name": "App Building"
+  },
+  {
+    "id": 1207,
+    "slug": "app-deployment",
+    "name": "App Deployment"
+  },
+  {
+    "id": 181,
+    "slug": "app-development",
+    "name": "App Development"
+  },
+  {
+    "id": 1347,
+    "slug": "appsec",
+    "name": "Appsec"
+  },
+  {
+    "id": 298,
+    "slug": "architecture",
+    "name": "Architecture"
+  },
+  {
+    "id": 1504,
+    "slug": "architecture-drift",
+    "name": "Architecture Drift"
+  },
+  {
+    "id": 406,
+    "slug": "archive-management",
+    "name": "Archive Management"
+  },
+  {
+    "id": 88,
+    "slug": "art",
+    "name": "Art"
+  },
+  {
+    "id": 509,
+    "slug": "art-and-tech",
+    "name": "Art And Tech"
+  },
+  {
+    "id": 273,
+    "slug": "art-creation",
+    "name": "Art Creation"
+  },
+  {
+    "id": 854,
+    "slug": "art-tools",
+    "name": "Art Tools"
+  },
+  {
+    "id": 973,
+    "slug": "article",
+    "name": "Article"
+  },
+  {
+    "id": 1213,
+    "slug": "artificial-intelligence",
+    "name": "Artificial Intelligence"
+  },
+  {
+    "id": 537,
+    "slug": "artist-directory",
+    "name": "Artist Directory"
+  },
+  {
+    "id": 611,
+    "slug": "artistic",
+    "name": "Artistic"
+  },
+  {
+    "id": 1198,
+    "slug": "arxiv",
+    "name": "Arxiv"
+  },
+  {
+    "id": 1415,
+    "slug": "ats",
+    "name": "Ats"
+  },
+  {
+    "id": 1410,
+    "slug": "ats-check",
+    "name": "Ats Check"
+  },
+  {
+    "id": 1498,
+    "slug": "auction-house",
+    "name": "Auction House"
+  },
+  {
+    "id": 1253,
+    "slug": "audio-briefing",
+    "name": "Audio Briefing"
+  },
+  {
+    "id": 54,
+    "slug": "audio-content",
+    "name": "Audio Content"
+  },
+  {
+    "id": 1495,
+    "slug": "audio-creation",
+    "name": "Audio Creation"
+  },
+  {
+    "id": 639,
+    "slug": "audio-design",
+    "name": "Audio Design"
+  },
+  {
+    "id": 194,
+    "slug": "audio-editing",
+    "name": "Audio Editing"
+  },
+  {
+    "id": 1168,
+    "slug": "audio-reactive",
+    "name": "Audio Reactive"
+  },
+  {
+    "id": 223,
+    "slug": "audio-reader",
+    "name": "Audio Reader"
+  },
+  {
+    "id": 1216,
+    "slug": "audio-research",
+    "name": "Audio Research"
+  },
+  {
+    "id": 1591,
+    "slug": "audio-separation",
+    "name": "Audio Separation"
+  },
+  {
+    "id": 97,
+    "slug": "audio-video",
+    "name": "Audio Video"
+  },
+  {
+    "id": 1336,
+    "slug": "augmented-reality",
+    "name": "Augmented Reality"
+  },
+  {
+    "id": 1500,
+    "slug": "autocomplete",
+    "name": "Autocomplete"
+  },
+  {
+    "id": 1392,
+    "slug": "automated",
+    "name": "Automated"
+  },
+  {
+    "id": 48,
+    "slug": "automation",
+    "name": "Automation"
+  },
+  {
+    "id": 277,
+    "slug": "avatar-generation",
+    "name": "Avatar Generation"
+  },
+  {
+    "id": 1127,
+    "slug": "awareness",
+    "name": "Awareness"
+  },
+  {
+    "id": 473,
+    "slug": "backend-as-a-service",
+    "name": "Backend As A Service"
+  },
+  {
+    "id": 751,
+    "slug": "backend-building-blocks",
+    "name": "Backend Building Blocks"
+  },
+  {
+    "id": 793,
+    "slug": "backend-integration",
+    "name": "Backend Integration"
+  },
+  {
+    "id": 813,
+    "slug": "background-music",
+    "name": "Background Music"
+  },
+  {
+    "id": 127,
+    "slug": "background-removal",
+    "name": "Background Removal"
+  },
+  {
+    "id": 625,
+    "slug": "background-tasks",
+    "name": "Background Tasks"
+  },
+  {
+    "id": 913,
+    "slug": "bayesian-statistics",
+    "name": "Bayesian Statistics"
+  },
+  {
+    "id": 592,
+    "slug": "beauty-enhancement",
+    "name": "Beauty Enhancement"
+  },
+  {
+    "id": 1081,
+    "slug": "beauty-rating",
+    "name": "Beauty Rating"
+  },
+  {
+    "id": 1185,
+    "slug": "beginner",
+    "name": "Beginner"
+  },
+  {
+    "id": 1154,
+    "slug": "behavioral-insights",
+    "name": "Behavioral Insights"
+  },
+  {
+    "id": 1065,
+    "slug": "benchmarking",
+    "name": "Benchmarking"
+  },
+  {
+    "id": 814,
+    "slug": "best-practices",
+    "name": "Best Practices"
+  },
+  {
+    "id": 417,
+    "slug": "bi-automation",
+    "name": "Bi Automation"
+  },
+  {
+    "id": 884,
+    "slug": "bi-tool",
+    "name": "Bi Tool"
+  },
+  {
+    "id": 692,
+    "slug": "bibliography",
+    "name": "Bibliography"
+  },
+  {
+    "id": 764,
+    "slug": "billing",
+    "name": "Billing"
+  },
+  {
+    "id": 1630,
+    "slug": "billionaire",
+    "name": "Billionaire"
+  },
+  {
+    "id": 1482,
+    "slug": "biochemical-networks",
+    "name": "Biochemical Networks"
+  },
+  {
+    "id": 762,
+    "slug": "blockchain-analysis",
+    "name": "Blockchain Analysis"
+  },
+  {
+    "id": 508,
+    "slug": "blog",
+    "name": "Blog"
+  },
+  {
+    "id": 1097,
+    "slug": "blog-series",
+    "name": "Blog Series"
+  },
+  {
+    "id": 449,
+    "slug": "blogging",
+    "name": "Blogging"
+  },
+  {
+    "id": 716,
+    "slug": "book-analysis",
+    "name": "Book Analysis"
+  },
+  {
+    "id": 1170,
+    "slug": "brain-computer-interface",
+    "name": "Brain Computer Interface"
+  },
+  {
+    "id": 640,
+    "slug": "brand-audio",
+    "name": "Brand Audio"
+  },
+  {
+    "id": 269,
+    "slug": "brand-consistency",
+    "name": "Brand Consistency"
+  },
+  {
+    "id": 200,
+    "slug": "branding",
+    "name": "Branding"
+  },
+  {
+    "id": 1331,
+    "slug": "browser-automation",
+    "name": "Browser Automation"
+  },
+  {
+    "id": 432,
+    "slug": "browser-based",
+    "name": "Browser Based"
+  },
+  {
+    "id": 472,
+    "slug": "browser-extension",
+    "name": "Browser Extension"
+  },
+  {
+    "id": 855,
+    "slug": "brushes-and-textures",
+    "name": "Brushes And Textures"
+  },
+  {
+    "id": 759,
+    "slug": "budget-alerts",
+    "name": "Budget Alerts"
+  },
+  {
+    "id": 1099,
+    "slug": "budget-management",
+    "name": "Budget Management"
+  },
+  {
+    "id": 630,
+    "slug": "bug-detection",
+    "name": "Bug Detection"
+  },
+  {
+    "id": 895,
+    "slug": "bug-fixing",
+    "name": "Bug Fixing"
+  },
+  {
+    "id": 1152,
+    "slug": "business-graphics",
+    "name": "Business Graphics"
+  },
+  {
+    "id": 949,
+    "slug": "business-insights",
+    "name": "Business Insights"
+  },
+  {
+    "id": 1024,
+    "slug": "calculators",
+    "name": "Calculators"
+  },
+  {
+    "id": 216,
+    "slug": "calendar-management",
+    "name": "Calendar Management"
+  },
+  {
+    "id": 959,
+    "slug": "call-automation",
+    "name": "Call Automation"
+  },
+  {
+    "id": 681,
+    "slug": "call-center",
+    "name": "Call Center"
+  },
+  {
+    "id": 795,
+    "slug": "call-management",
+    "name": "Call Management"
+  },
+  {
+    "id": 467,
+    "slug": "call-support",
+    "name": "Call Support"
+  },
+  {
+    "id": 1274,
+    "slug": "campaign-builder",
+    "name": "Campaign Builder"
+  },
+  {
+    "id": 673,
+    "slug": "career-acceleration",
+    "name": "Career Acceleration"
+  },
+  {
+    "id": 1554,
+    "slug": "career-change",
+    "name": "Career Change"
+  },
+  {
+    "id": 558,
+    "slug": "career-recommendations",
+    "name": "Career Recommendations"
+  },
+  {
+    "id": 1418,
+    "slug": "career-roadmap",
+    "name": "Career Roadmap"
+  },
+  {
+    "id": 1411,
+    "slug": "career-tools",
+    "name": "Career Tools"
+  },
+  {
+    "id": 691,
+    "slug": "case-studies",
+    "name": "Case Studies"
+  },
+  {
+    "id": 842,
+    "slug": "certificates",
+    "name": "Certificates"
+  },
+  {
+    "id": 967,
+    "slug": "challenges",
+    "name": "Challenges"
+  },
+  {
+    "id": 946,
+    "slug": "changelogs",
+    "name": "Changelogs"
+  },
+  {
+    "id": 930,
+    "slug": "chat-guide",
+    "name": "Chat Guide"
+  },
+  {
+    "id": 626,
+    "slug": "chat-interface",
+    "name": "Chat Interface"
+  },
+  {
+    "id": 471,
+    "slug": "chat-sharing",
+    "name": "Chat Sharing"
+  },
+  {
+    "id": 415,
+    "slug": "chatbot",
+    "name": "Chatbot"
+  },
+  {
+    "id": 853,
+    "slug": "chatbot-schemes",
+    "name": "Chatbot Schemes"
+  },
+  {
+    "id": 1293,
+    "slug": "chatgpt",
+    "name": "Chatgpt"
+  },
+  {
+    "id": 773,
+    "slug": "chatgpt-prompts",
+    "name": "Chatgpt Prompts"
+  },
+  {
+    "id": 1318,
+    "slug": "chord-generation",
+    "name": "Chord Generation"
+  },
+  {
+    "id": 1074,
+    "slug": "chrome-extension",
+    "name": "Chrome Extension"
+  },
+  {
+    "id": 1026,
+    "slug": "ci-cd",
+    "name": "Ci Cd"
+  },
+  {
+    "id": 887,
+    "slug": "cicd",
+    "name": "Ci/cd"
+  },
+  {
+    "id": 1656,
+    "slug": "cinematic-videos",
+    "name": "Cinematic Videos"
+  },
+  {
+    "id": 977,
+    "slug": "citation-analysis",
+    "name": "Citation Analysis"
+  },
+  {
+    "id": 475,
+    "slug": "citation-finder",
+    "name": "Citation Finder"
+  },
+  {
+    "id": 470,
+    "slug": "citation-generator",
+    "name": "Citation Generator"
+  },
+  {
+    "id": 191,
+    "slug": "citation-management",
+    "name": "Citation Management"
+  },
+  {
+    "id": 980,
+    "slug": "claims",
+    "name": "Claims"
+  },
+  {
+    "id": 260,
+    "slug": "cli",
+    "name": "CLI"
+  },
+  {
+    "id": 677,
+    "slug": "cli-tool",
+    "name": "CLI Tool"
+  },
+  {
+    "id": 355,
+    "slug": "clinical-notes",
+    "name": "Clinical Notes"
+  },
+  {
+    "id": 703,
+    "slug": "clip-generation",
+    "name": "Clip Generation"
+  },
+  {
+    "id": 1103,
+    "slug": "clips",
+    "name": "Clips"
+  },
+  {
+    "id": 969,
+    "slug": "cloud-browsers",
+    "name": "Cloud Browsers"
+  },
+  {
+    "id": 599,
+    "slug": "cloud-coding",
+    "name": "Cloud Coding"
+  },
+  {
+    "id": 757,
+    "slug": "cloud-costs",
+    "name": "Cloud Costs"
+  },
+  {
+    "id": 1046,
+    "slug": "cloud-deployment",
+    "name": "Cloud Deployment"
+  },
+  {
+    "id": 220,
+    "slug": "cloud-development",
+    "name": "Cloud Development"
+  },
+  {
+    "id": 237,
+    "slug": "cloud-fleet",
+    "name": "Cloud Fleet"
+  },
+  {
+    "id": 1558,
+    "slug": "cloud-infrastructure",
+    "name": "Cloud Infrastructure"
+  },
+  {
+    "id": 660,
+    "slug": "cloud-integration",
+    "name": "Cloud Integration"
+  },
+  {
+    "id": 1237,
+    "slug": "cloud-orchestration",
+    "name": "Cloud Orchestration"
+  },
+  {
+    "id": 464,
+    "slug": "cloud-platform",
+    "name": "Cloud Platform"
+  },
+  {
+    "id": 598,
+    "slug": "cloud-services",
+    "name": "Cloud Services"
+  },
+  {
+    "id": 708,
+    "slug": "cloud-training",
+    "name": "Cloud Training"
+  },
+  {
+    "id": 1268,
+    "slug": "code-analysis",
+    "name": "Code Analysis"
+  },
+  {
+    "id": 486,
+    "slug": "code-completion",
+    "name": "Code Completion"
+  },
+  {
+    "id": 890,
+    "slug": "code-digest",
+    "name": "Code Digest"
+  },
+  {
+    "id": 1667,
+    "slug": "code-editor",
+    "name": "Code Editor"
+  },
+  {
+    "id": 1472,
+    "slug": "code-evolution",
+    "name": "Code Evolution"
+  },
+  {
+    "id": 1405,
+    "slug": "code-formatting",
+    "name": "Code Formatting"
+  },
+  {
+    "id": 1454,
+    "slug": "code-friendly",
+    "name": "Code Friendly"
+  },
+  {
+    "id": 95,
+    "slug": "code-generation",
+    "name": "Code Generation"
+  },
+  {
+    "id": 899,
+    "slug": "code-history",
+    "name": "Code History"
+  },
+  {
+    "id": 1287,
+    "slug": "code-integration",
+    "name": "Code Integration"
+  },
+  {
+    "id": 755,
+    "slug": "code-optimization",
+    "name": "Code Optimization"
+  },
+  {
+    "id": 798,
+    "slug": "code-quality",
+    "name": "Code Quality"
+  },
+  {
+    "id": 1645,
+    "slug": "code-review",
+    "name": "Code Review"
+  },
+  {
+    "id": 1670,
+    "slug": "code-security",
+    "name": "Code Security"
+  },
+  {
+    "id": 667,
+    "slug": "code-skills",
+    "name": "Code Skills"
+  },
+  {
+    "id": 870,
+    "slug": "code-snippets",
+    "name": "Code Snippets"
+  },
+  {
+    "id": 185,
+    "slug": "code-suggestions",
+    "name": "Code Suggestions"
+  },
+  {
+    "id": 721,
+    "slug": "code-to-flow",
+    "name": "Code To Flow"
+  },
+  {
+    "id": 542,
+    "slug": "code-translation",
+    "name": "Code Translation"
+  },
+  {
+    "id": 1089,
+    "slug": "coding",
+    "name": "Coding"
+  },
+  {
+    "id": 1340,
+    "slug": "coding-agent",
+    "name": "Coding Agent"
+  },
+  {
+    "id": 219,
+    "slug": "coding-assistant",
+    "name": "Coding Assistant"
+  },
+  {
+    "id": 866,
+    "slug": "coding-behavior",
+    "name": "Coding Behavior"
+  },
+  {
+    "id": 672,
+    "slug": "coding-courses",
+    "name": "Coding Courses"
+  },
+  {
+    "id": 957,
+    "slug": "coding-environment",
+    "name": "Coding Environment"
+  },
+  {
+    "id": 815,
+    "slug": "coding-guides",
+    "name": "Coding Guides"
+  },
+  {
+    "id": 1380,
+    "slug": "coding-standard",
+    "name": "Coding Standard"
+  },
+  {
+    "id": 546,
+    "slug": "coding-tools",
+    "name": "Coding Tools"
+  },
+  {
+    "id": 1526,
+    "slug": "cognitive-systems",
+    "name": "Cognitive Systems"
+  },
+  {
+    "id": 55,
+    "slug": "collaboration",
+    "name": "Collaboration"
+  },
+  {
+    "id": 1619,
+    "slug": "collaboration-tools",
+    "name": "Collaboration Tools"
+  },
+  {
+    "id": 274,
+    "slug": "collaborative-design",
+    "name": "Collaborative Design"
+  },
+  {
+    "id": 1224,
+    "slug": "collaborative-platform",
+    "name": "Collaborative Platform"
+  },
+  {
+    "id": 1648,
+    "slug": "collaborative-whiteboard",
+    "name": "Collaborative Whiteboard"
+  },
+  {
+    "id": 67,
+    "slug": "collaborative-workspace",
+    "name": "Collaborative Workspace"
+  },
+  {
+    "id": 912,
+    "slug": "college-app",
+    "name": "College App"
+  },
+  {
+    "id": 1395,
+    "slug": "color-grading",
+    "name": "Color Grading"
+  },
+  {
+    "id": 1617,
+    "slug": "comedy",
+    "name": "Comedy"
+  },
+  {
+    "id": 735,
+    "slug": "comic-creator",
+    "name": "Comic Creator"
+  },
+  {
+    "id": 1243,
+    "slug": "comic-generation",
+    "name": "Comic Generation"
+  },
+  {
+    "id": 678,
+    "slug": "command-line",
+    "name": "Command Line"
+  },
+  {
+    "id": 636,
+    "slug": "community",
+    "name": "Community"
+  },
+  {
+    "id": 561,
+    "slug": "comparison",
+    "name": "Comparison"
+  },
+  {
+    "id": 1016,
+    "slug": "competition",
+    "name": "Competition"
+  },
+  {
+    "id": 738,
+    "slug": "competitor-tracking",
+    "name": "Competitor Tracking"
+  },
+  {
+    "id": 873,
+    "slug": "compilation",
+    "name": "Compilation"
+  },
+  {
+    "id": 695,
+    "slug": "complaint-tracking",
+    "name": "Complaint Tracking"
+  },
+  {
+    "id": 1023,
+    "slug": "completions",
+    "name": "Completions"
+  },
+  {
+    "id": 776,
+    "slug": "complex-data-analysis",
+    "name": "Complex Data Analysis"
+  },
+  {
+    "id": 328,
+    "slug": "compliance",
+    "name": "Compliance"
+  },
+  {
+    "id": 1450,
+    "slug": "components",
+    "name": "Components"
+  },
+  {
+    "id": 120,
+    "slug": "composition",
+    "name": "Composition"
+  },
+  {
+    "id": 590,
+    "slug": "composition-assistant",
+    "name": "Composition Assistant"
+  },
+  {
+    "id": 642,
+    "slug": "comprehensive-directory",
+    "name": "Comprehensive Directory"
+  },
+  {
+    "id": 1654,
+    "slug": "computational-knowledge",
+    "name": "Computational Knowledge"
+  },
+  {
+    "id": 1539,
+    "slug": "concise",
+    "name": "Concise"
+  },
+  {
+    "id": 652,
+    "slug": "concise-summary",
+    "name": "Concise Summary"
+  },
+  {
+    "id": 1536,
+    "slug": "conference-summary",
+    "name": "Conference Summary"
+  },
+  {
+    "id": 1527,
+    "slug": "conscious-ai",
+    "name": "Conscious AI"
+  },
+  {
+    "id": 1307,
+    "slug": "consulting",
+    "name": "Consulting"
+  },
+  {
+    "id": 339,
+    "slug": "content-analysis",
+    "name": "Content Analysis"
+  },
+  {
+    "id": 77,
+    "slug": "content-automation",
+    "name": "Content Automation"
+  },
+  {
+    "id": 100,
+    "slug": "content-creation",
+    "name": "Content Creation"
+  },
+  {
+    "id": 1664,
+    "slug": "content-curation",
+    "name": "Content Curation"
+  },
+  {
+    "id": 135,
+    "slug": "content-enhancement",
+    "name": "Content Enhancement"
+  },
+  {
+    "id": 413,
+    "slug": "content-extraction",
+    "name": "Content Extraction"
+  },
+  {
+    "id": 44,
+    "slug": "content-generation",
+    "name": "Content Generation"
+  },
+  {
+    "id": 926,
+    "slug": "content-insight",
+    "name": "Content Insight"
+  },
+  {
+    "id": 1479,
+    "slug": "content-law",
+    "name": "Content Law"
+  },
+  {
+    "id": 317,
+    "slug": "content-management",
+    "name": "Content Management"
+  },
+  {
+    "id": 368,
+    "slug": "content-marketing",
+    "name": "Content Marketing"
+  },
+  {
+    "id": 123,
+    "slug": "content-optimization",
+    "name": "Content Optimization"
+  },
+  {
+    "id": 1525,
+    "slug": "content-representation",
+    "name": "Content Representation"
+  },
+  {
+    "id": 1407,
+    "slug": "content-repurposing",
+    "name": "Content Repurposing"
+  },
+  {
+    "id": 1085,
+    "slug": "content-review",
+    "name": "Content Review"
+  },
+  {
+    "id": 305,
+    "slug": "content-scalability",
+    "name": "Content Scalability"
+  },
+  {
+    "id": 407,
+    "slug": "content-showcase",
+    "name": "Content Showcase"
+  },
+  {
+    "id": 3,
+    "slug": "content-team",
+    "name": "Content Teams"
+  },
+  {
+    "id": 1548,
+    "slug": "content-testing",
+    "name": "Content Testing"
+  },
+  {
+    "id": 745,
+    "slug": "content-writing",
+    "name": "Content Writing"
+  },
+  {
+    "id": 719,
+    "slug": "context-aware",
+    "name": "Context Aware"
+  },
+  {
+    "id": 433,
+    "slug": "context-capture",
+    "name": "Context Capture"
+  },
+  {
+    "id": 748,
+    "slug": "context-extraction",
+    "name": "Context Extraction"
+  },
+  {
+    "id": 1221,
+    "slug": "contextual-responses",
+    "name": "Contextual Responses"
+  },
+  {
+    "id": 1233,
+    "slug": "continuous-integration",
+    "name": "Continuous Integration"
+  },
+  {
+    "id": 864,
+    "slug": "contract-management",
+    "name": "Contract Management"
+  },
+  {
+    "id": 282,
+    "slug": "conversational-ai",
+    "name": "Conversational AI"
+  },
+  {
+    "id": 1282,
+    "slug": "conversion",
+    "name": "Conversion"
+  },
+  {
+    "id": 1383,
+    "slug": "cookbook",
+    "name": "Cookbook"
+  },
+  {
+    "id": 1540,
+    "slug": "copyright",
+    "name": "Copyright"
+  },
+  {
+    "id": 600,
+    "slug": "copyright-safe",
+    "name": "Copyright Safe"
+  },
+  {
+    "id": 874,
+    "slug": "cost-analysis",
+    "name": "Cost Analysis"
+  },
+  {
+    "id": 1325,
+    "slug": "cost-calculator",
+    "name": "Cost Calculator"
+  },
+  {
+    "id": 1045,
+    "slug": "cost-efficiency",
+    "name": "Cost Efficiency"
+  },
+  {
+    "id": 760,
+    "slug": "cost-estimation",
+    "name": "Cost Estimation"
+  },
+  {
+    "id": 1092,
+    "slug": "cost-management",
+    "name": "Cost Management"
+  },
+  {
+    "id": 756,
+    "slug": "cost-monitoring",
+    "name": "Cost Monitoring"
+  },
+  {
+    "id": 1060,
+    "slug": "cost-tracking",
+    "name": "Cost Tracking"
+  },
+  {
+    "id": 712,
+    "slug": "crafting",
+    "name": "Crafting"
+  },
+  {
+    "id": 648,
+    "slug": "creative",
+    "name": "Creative"
+  },
+  {
+    "id": 93,
+    "slug": "creative-cloud",
+    "name": "Creative Cloud"
+  },
+  {
+    "id": 1205,
+    "slug": "creative-coding",
+    "name": "Creative Coding"
+  },
+  {
+    "id": 1663,
+    "slug": "creative-exploration",
+    "name": "Creative Exploration"
+  },
+  {
+    "id": 541,
+    "slug": "creative-partner",
+    "name": "Creative Partner"
+  },
+  {
+    "id": 1177,
+    "slug": "creative-process",
+    "name": "Creative Process"
+  },
+  {
+    "id": 538,
+    "slug": "creative-resources",
+    "name": "Creative Resources"
+  },
+  {
+    "id": 632,
+    "slug": "creative-tools",
+    "name": "Creative Tools"
+  },
+  {
+    "id": 156,
+    "slug": "creative-workflows",
+    "name": "Creative Workflows"
+  },
+  {
+    "id": 584,
+    "slug": "creative-writing",
+    "name": "Creative Writing"
+  },
+  {
+    "id": 1316,
+    "slug": "crew-economy",
+    "name": "Crew Economy"
+  },
+  {
+    "id": 1264,
+    "slug": "critical-insights",
+    "name": "Critical Insights"
+  },
+  {
+    "id": 1300,
+    "slug": "critical-thinking",
+    "name": "Critical Thinking"
+  },
+  {
+    "id": 975,
+    "slug": "critique",
+    "name": "Critique"
+  },
+  {
+    "id": 144,
+    "slug": "crm",
+    "name": "CRM"
+  },
+  {
+    "id": 147,
+    "slug": "crm-integration",
+    "name": "CRM Integration"
+  },
+  {
+    "id": 544,
+    "slug": "cross-platform",
+    "name": "Cross Platform"
+  },
+  {
+    "id": 763,
+    "slug": "crypto-data",
+    "name": "Crypto Data"
+  },
+  {
+    "id": 1250,
+    "slug": "css-extraction",
+    "name": "CSS Extraction"
+  },
+  {
+    "id": 666,
+    "slug": "curated-collection",
+    "name": "Curated Collection"
+  },
+  {
+    "id": 587,
+    "slug": "curated-list",
+    "name": "Curated List"
+  },
+  {
+    "id": 1439,
+    "slug": "curriculum",
+    "name": "Curriculum"
+  },
+  {
+    "id": 154,
+    "slug": "custom-agents",
+    "name": "Custom Agents"
+  },
+  {
+    "id": 1626,
+    "slug": "custom-voices",
+    "name": "Custom Voices"
+  },
+  {
+    "id": 804,
+    "slug": "customer-experience",
+    "name": "Customer Experience"
+  },
+  {
+    "id": 362,
+    "slug": "customer-support",
+    "name": "Customer Support"
+  },
+  {
+    "id": 727,
+    "slug": "customizable",
+    "name": "Customizable"
+  },
+  {
+    "id": 110,
+    "slug": "customization",
+    "name": "Customization"
+  },
+  {
+    "id": 740,
+    "slug": "cvpr",
+    "name": "Cvpr"
+  },
+  {
+    "id": 1130,
+    "slug": "cybersecurity",
+    "name": "Cybersecurity"
+  },
+  {
+    "id": 821,
+    "slug": "cybersecurity-training",
+    "name": "Cybersecurity Training"
+  },
+  {
+    "id": 145,
+    "slug": "dashboard",
+    "name": "Dashboard"
+  },
+  {
+    "id": 45,
+    "slug": "data-analysis",
+    "name": "Data Analysis"
+  },
+  {
+    "id": 79,
+    "slug": "data-collection",
+    "name": "Data Collection"
+  },
+  {
+    "id": 624,
+    "slug": "data-driven",
+    "name": "Data Driven"
+  },
+  {
+    "id": 1433,
+    "slug": "data-driven-marketing",
+    "name": "Data Driven Marketing"
+  },
+  {
+    "id": 1131,
+    "slug": "data-exchange",
+    "name": "Data Exchange"
+  },
+  {
+    "id": 65,
+    "slug": "data-extraction",
+    "name": "Data Extraction"
+  },
+  {
+    "id": 1067,
+    "slug": "data-generation",
+    "name": "Data Generation"
+  },
+  {
+    "id": 942,
+    "slug": "data-governance",
+    "name": "Data Governance"
+  },
+  {
+    "id": 479,
+    "slug": "data-hiding",
+    "name": "Data Hiding"
+  },
+  {
+    "id": 1417,
+    "slug": "data-integration",
+    "name": "Data Integration"
+  },
+  {
+    "id": 418,
+    "slug": "data-platform",
+    "name": "Data Platform"
+  },
+  {
+    "id": 1036,
+    "slug": "data-protection",
+    "name": "Data Protection"
+  },
+  {
+    "id": 320,
+    "slug": "data-redaction",
+    "name": "Data Redaction"
+  },
+  {
+    "id": 605,
+    "slug": "data-science",
+    "name": "Data Science"
+  },
+  {
+    "id": 324,
+    "slug": "data-visualization",
+    "name": "Data Visualization"
+  },
+  {
+    "id": 532,
+    "slug": "database",
+    "name": "Database"
+  },
+  {
+    "id": 1606,
+    "slug": "database-interaction",
+    "name": "Database Interaction"
+  },
+  {
+    "id": 248,
+    "slug": "database-management",
+    "name": "Database Management"
+  },
+  {
+    "id": 1270,
+    "slug": "dataset",
+    "name": "Dataset"
+  },
+  {
+    "id": 1567,
+    "slug": "debugging",
+    "name": "Debugging"
+  },
+  {
+    "id": 657,
+    "slug": "decision-making",
+    "name": "Decision Making"
+  },
+  {
+    "id": 1261,
+    "slug": "decision-support",
+    "name": "Decision Support"
+  },
+  {
+    "id": 775,
+    "slug": "deep-learning",
+    "name": "Deep Learning"
+  },
+  {
+    "id": 1126,
+    "slug": "deepfake",
+    "name": "Deepfake"
+  },
+  {
+    "id": 700,
+    "slug": "defect-removal",
+    "name": "Defect Removal"
+  },
+  {
+    "id": 439,
+    "slug": "design",
+    "name": "Design"
+  },
+  {
+    "id": 928,
+    "slug": "design-assistant",
+    "name": "Design Assistant"
+  },
+  {
+    "id": 1134,
+    "slug": "design-platform",
+    "name": "Design Platform"
+  },
+  {
+    "id": 149,
+    "slug": "design-tools",
+    "name": "Design Tools"
+  },
+  {
+    "id": 425,
+    "slug": "desktop-organization",
+    "name": "Desktop Organization"
+  },
+  {
+    "id": 203,
+    "slug": "detail-enhancement",
+    "name": "Detail Enhancement"
+  },
+  {
+    "id": 1419,
+    "slug": "developer-resources",
+    "name": "Developer Resources"
+  },
+  {
+    "id": 1573,
+    "slug": "developer-sandbox",
+    "name": "Developer Sandbox"
+  },
+  {
+    "id": 1368,
+    "slug": "developer-tools",
+    "name": "Developer Tools"
+  },
+  {
+    "id": 1636,
+    "slug": "development",
+    "name": "Development"
+  },
+  {
+    "id": 1425,
+    "slug": "development-environment",
+    "name": "Development Environment"
+  },
+  {
+    "id": 348,
+    "slug": "devops",
+    "name": "Devops"
+  },
+  {
+    "id": 832,
+    "slug": "diagram-generation",
+    "name": "Diagram Generation"
+  },
+  {
+    "id": 1650,
+    "slug": "diagrams",
+    "name": "Diagrams"
+  },
+  {
+    "id": 551,
+    "slug": "dictation",
+    "name": "Dictation"
+  },
+  {
+    "id": 1159,
+    "slug": "dietary-needs",
+    "name": "Dietary Needs"
+  },
+  {
+    "id": 1430,
+    "slug": "diffusion-models",
+    "name": "Diffusion Models"
+  },
+  {
+    "id": 522,
+    "slug": "digital-art",
+    "name": "Digital Art"
+  },
+  {
+    "id": 803,
+    "slug": "digital-humans",
+    "name": "Digital Humans"
+  },
+  {
+    "id": 838,
+    "slug": "digital-trends",
+    "name": "Digital Trends"
+  },
+  {
+    "id": 524,
+    "slug": "directory",
+    "name": "Directory"
+  },
+  {
+    "id": 939,
+    "slug": "discourse",
+    "name": "Discourse"
+  },
+  {
+    "id": 1199,
+    "slug": "discussion",
+    "name": "Discussion"
+  },
+  {
+    "id": 1145,
+    "slug": "dna-testing",
+    "name": "Dna Testing"
+  },
+  {
+    "id": 1273,
+    "slug": "dnd-tools",
+    "name": "Dnd Tools"
+  },
+  {
+    "id": 290,
+    "slug": "document-analysis",
+    "name": "Document Analysis"
+  },
+  {
+    "id": 257,
+    "slug": "document-chat",
+    "name": "Document Chat"
+  },
+  {
+    "id": 1192,
+    "slug": "document-extraction",
+    "name": "Document Extraction"
+  },
+  {
+    "id": 856,
+    "slug": "document-generation",
+    "name": "Document Generation"
+  },
+  {
+    "id": 303,
+    "slug": "document-intelligence",
+    "name": "Document Intelligence"
+  },
+  {
+    "id": 68,
+    "slug": "document-management",
+    "name": "Document Management"
+  },
+  {
+    "id": 393,
+    "slug": "document-processing",
+    "name": "Document Processing"
+  },
+  {
+    "id": 416,
+    "slug": "documentation",
+    "name": "Documentation"
+  },
+  {
+    "id": 816,
+    "slug": "documentation-automation",
+    "name": "Documentation Automation"
+  },
+  {
+    "id": 1246,
+    "slug": "documentation-indexing",
+    "name": "Documentation Indexing"
+  },
+  {
+    "id": 526,
+    "slug": "domain-name",
+    "name": "Domain Name"
+  },
+  {
+    "id": 445,
+    "slug": "downtime-analysis",
+    "name": "Downtime Analysis"
+  },
+  {
+    "id": 141,
+    "slug": "drag-and-drop",
+    "name": "Drag And Drop"
+  },
+  {
+    "id": 1604,
+    "slug": "due-diligence",
+    "name": "Due Diligence"
+  },
+  {
+    "id": 1301,
+    "slug": "e2e-testing",
+    "name": "E2e Testing"
+  },
+  {
+    "id": 374,
+    "slug": "ecommerce",
+    "name": "Ecommerce"
+  },
+  {
+    "id": 615,
+    "slug": "ecommerce-images",
+    "name": "Ecommerce Images"
+  },
+  {
+    "id": 1173,
+    "slug": "economics",
+    "name": "Economics"
+  },
+  {
+    "id": 161,
+    "slug": "editing",
+    "name": "Editing"
+  },
+  {
+    "id": 1658,
+    "slug": "editing-tools",
+    "name": "Editing Tools"
+  },
+  {
+    "id": 635,
+    "slug": "education",
+    "name": "Education"
+  },
+  {
+    "id": 515,
+    "slug": "email-api",
+    "name": "Email API"
+  },
+  {
+    "id": 391,
+    "slug": "email-coaching",
+    "name": "Email Coaching"
+  },
+  {
+    "id": 753,
+    "slug": "email-composition",
+    "name": "Email Composition"
+  },
+  {
+    "id": 1361,
+    "slug": "email-delivery",
+    "name": "Email Delivery"
+  },
+  {
+    "id": 197,
+    "slug": "email-management",
+    "name": "Email Management"
+  },
+  {
+    "id": 1223,
+    "slug": "email-marketing",
+    "name": "Email Marketing"
+  },
+  {
+    "id": 225,
+    "slug": "email-productivity",
+    "name": "Email Productivity"
+  },
+  {
+    "id": 1640,
+    "slug": "embeddings",
+    "name": "Embeddings"
+  },
+  {
+    "id": 1181,
+    "slug": "emotional-impact",
+    "name": "Emotional Impact"
+  },
+  {
+    "id": 1231,
+    "slug": "end-to-end",
+    "name": "End To End"
+  },
+  {
+    "id": 682,
+    "slug": "end-to-end-testing",
+    "name": "End To End Testing"
+  },
+  {
+    "id": 1357,
+    "slug": "engagement",
+    "name": "Engagement"
+  },
+  {
+    "id": 299,
+    "slug": "engineering",
+    "name": "Engineering"
+  },
+  {
+    "id": 385,
+    "slug": "engineering-platform",
+    "name": "Engineering Platform"
+  },
+  {
+    "id": 566,
+    "slug": "enterprise",
+    "name": "Enterprise"
+  },
+  {
+    "id": 1259,
+    "slug": "enterprise-ai",
+    "name": "Enterprise AI"
+  },
+  {
+    "id": 746,
+    "slug": "enterprise-data",
+    "name": "Enterprise Data"
+  },
+  {
+    "id": 109,
+    "slug": "enterprise-solutions",
+    "name": "Enterprise Solutions"
+  },
+  {
+    "id": 690,
+    "slug": "enterprise-tech",
+    "name": "Enterprise Tech"
+  },
+  {
+    "id": 1510,
+    "slug": "entertainment",
+    "name": "Entertainment"
+  },
+  {
+    "id": 903,
+    "slug": "entertainment-platform",
+    "name": "Entertainment Platform"
+  },
+  {
+    "id": 507,
+    "slug": "entrepreneurship",
+    "name": "Entrepreneurship"
+  },
+  {
+    "id": 896,
+    "slug": "error-analysis",
+    "name": "Error Analysis"
+  },
+  {
+    "id": 292,
+    "slug": "error-detection",
+    "name": "Error Detection"
+  },
+  {
+    "id": 1594,
+    "slug": "esm-generation",
+    "name": "Esm Generation"
+  },
+  {
+    "id": 502,
+    "slug": "essay-assistant",
+    "name": "Essay Assistant"
+  },
+  {
+    "id": 1531,
+    "slug": "essay-writing",
+    "name": "Essay Writing"
+  },
+  {
+    "id": 1255,
+    "slug": "essays",
+    "name": "Essays"
+  },
+  {
+    "id": 1090,
+    "slug": "ethical-issues",
+    "name": "Ethical Issues"
+  },
+  {
+    "id": 943,
+    "slug": "ethics",
+    "name": "Ethics"
+  },
+  {
+    "id": 272,
+    "slug": "evaluation",
+    "name": "Evaluation"
+  },
+  {
+    "id": 835,
+    "slug": "exam-prep",
+    "name": "Exam Prep"
+  },
+  {
+    "id": 323,
+    "slug": "excel-analysis",
+    "name": "Excel Analysis"
+  },
+  {
+    "id": 1271,
+    "slug": "eye-shape-analysis",
+    "name": "Eye Shape Analysis"
+  },
+  {
+    "id": 1015,
+    "slug": "face-cartoonization",
+    "name": "Face Cartoonization"
+  },
+  {
+    "id": 1546,
+    "slug": "face-generation",
+    "name": "Face Generation"
+  },
+  {
+    "id": 576,
+    "slug": "face-swap",
+    "name": "Face Swap"
+  },
+  {
+    "id": 618,
+    "slug": "facial-analysis",
+    "name": "Facial Analysis"
+  },
+  {
+    "id": 62,
+    "slug": "factual-information",
+    "name": "Factual Information"
+  },
+  {
+    "id": 1519,
+    "slug": "fairness",
+    "name": "Fairness"
+  },
+  {
+    "id": 1146,
+    "slug": "family-history",
+    "name": "Family History"
+  },
+  {
+    "id": 941,
+    "slug": "fashion",
+    "name": "Fashion"
+  },
+  {
+    "id": 693,
+    "slug": "fashion-photography",
+    "name": "Fashion Photography"
+  },
+  {
+    "id": 841,
+    "slug": "fastai",
+    "name": "Fastai"
+  },
+  {
+    "id": 547,
+    "slug": "feature-matrix",
+    "name": "Feature Matrix"
+  },
+  {
+    "id": 621,
+    "slug": "feedback",
+    "name": "Feedback"
+  },
+  {
+    "id": 1565,
+    "slug": "feedback-loop",
+    "name": "Feedback Loop"
+  },
+  {
+    "id": 159,
+    "slug": "fiction",
+    "name": "Fiction"
+  },
+  {
+    "id": 1360,
+    "slug": "figma-integration",
+    "name": "Figma Integration"
+  },
+  {
+    "id": 459,
+    "slug": "file-management",
+    "name": "File Management"
+  },
+  {
+    "id": 881,
+    "slug": "filtering",
+    "name": "Filtering"
+  },
+  {
+    "id": 878,
+    "slug": "finance",
+    "name": "Finance"
+  },
+  {
+    "id": 1603,
+    "slug": "finance-automation",
+    "name": "Finance Automation"
+  },
+  {
+    "id": 1241,
+    "slug": "finance-news",
+    "name": "Finance News"
+  },
+  {
+    "id": 985,
+    "slug": "financial-assistance",
+    "name": "Financial Assistance"
+  },
+  {
+    "id": 846,
+    "slug": "financial-data",
+    "name": "Financial Data"
+  },
+  {
+    "id": 336,
+    "slug": "fine-tuning",
+    "name": "Fine Tuning"
+  },
+  {
+    "id": 1611,
+    "slug": "fix-broken-json",
+    "name": "Fix Broken Json"
+  },
+  {
+    "id": 455,
+    "slug": "flashcards",
+    "name": "Flashcards"
+  },
+  {
+    "id": 722,
+    "slug": "flowchart-generation",
+    "name": "Flowchart Generation"
+  },
+  {
+    "id": 1530,
+    "slug": "forecast-analysis",
+    "name": "Forecast Analysis"
+  },
+  {
+    "id": 1140,
+    "slug": "forex-crypto",
+    "name": "Forex Crypto"
+  },
+  {
+    "id": 987,
+    "slug": "form-automation",
+    "name": "Form Automation"
+  },
+  {
+    "id": 556,
+    "slug": "form-data",
+    "name": "Form Data"
+  },
+  {
+    "id": 1403,
+    "slug": "formatting",
+    "name": "Formatting"
+  },
+  {
+    "id": 279,
+    "slug": "formula-generator",
+    "name": "Formula Generator"
+  },
+  {
+    "id": 384,
+    "slug": "framework-agnostic",
+    "name": "Framework Agnostic"
+  },
+  {
+    "id": 1285,
+    "slug": "frameworks",
+    "name": "Frameworks"
+  },
+  {
+    "id": 1165,
+    "slug": "free",
+    "name": "Free"
+  },
+  {
+    "id": 440,
+    "slug": "free-resources",
+    "name": "Free Resources"
+  },
+  {
+    "id": 6,
+    "slug": "free-tier",
+    "name": "Free Tier"
+  },
+  {
+    "id": 857,
+    "slug": "free-tools",
+    "name": "Free Tools"
+  },
+  {
+    "id": 1050,
+    "slug": "freelance-proposals",
+    "name": "Freelance Proposals"
+  },
+  {
+    "id": 654,
+    "slug": "frontend",
+    "name": "Frontend"
+  },
+  {
+    "id": 1359,
+    "slug": "frontend-code",
+    "name": "Frontend Code"
+  },
+  {
+    "id": 807,
+    "slug": "frontend-editing",
+    "name": "Frontend Editing"
+  },
+  {
+    "id": 1117,
+    "slug": "frontend-testing",
+    "name": "Frontend Testing"
+  },
+  {
+    "id": 234,
+    "slug": "full-stack",
+    "name": "Full Stack"
+  },
+  {
+    "id": 684,
+    "slug": "funny-images",
+    "name": "Funny Images"
+  },
+  {
+    "id": 892,
+    "slug": "future-tech",
+    "name": "Future Tech"
+  },
+  {
+    "id": 741,
+    "slug": "gallery",
+    "name": "Gallery"
+  },
+  {
+    "id": 894,
+    "slug": "game-design",
+    "name": "Game Design"
+  },
+  {
+    "id": 1428,
+    "slug": "game-dev",
+    "name": "Game Dev"
+  },
+  {
+    "id": 837,
+    "slug": "gaming",
+    "name": "Gaming"
+  },
+  {
+    "id": 1580,
+    "slug": "gan",
+    "name": "Gan"
+  },
+  {
+    "id": 491,
+    "slug": "gateways",
+    "name": "Gateways"
+  },
+  {
+    "id": 902,
+    "slug": "gdpr-compliant",
+    "name": "Gdpr Compliant"
+  },
+  {
+    "id": 869,
+    "slug": "gemini-api",
+    "name": "Gemini API"
+  },
+  {
+    "id": 1034,
+    "slug": "genai-security",
+    "name": "Genai Security"
+  },
+  {
+    "id": 1144,
+    "slug": "genealogy",
+    "name": "Genealogy"
+  },
+  {
+    "id": 982,
+    "slug": "generative-art",
+    "name": "Generative Art"
+  },
+  {
+    "id": 1476,
+    "slug": "generative-audio",
+    "name": "Generative Audio"
+  },
+  {
+    "id": 839,
+    "slug": "generative-models",
+    "name": "Generative Models"
+  },
+  {
+    "id": 885,
+    "slug": "git",
+    "name": "Git"
+  },
+  {
+    "id": 889,
+    "slug": "git-analysis",
+    "name": "Git Analysis"
+  },
+  {
+    "id": 1586,
+    "slug": "github",
+    "name": "Github"
+  },
+  {
+    "id": 720,
+    "slug": "github-integration",
+    "name": "Github Integration"
+  },
+  {
+    "id": 1647,
+    "slug": "gitlab-integration",
+    "name": "Gitlab Integration"
+  },
+  {
+    "id": 454,
+    "slug": "google-chat",
+    "name": "Google Chat"
+  },
+  {
+    "id": 278,
+    "slug": "google-sheets",
+    "name": "Google Sheets"
+  },
+  {
+    "id": 1355,
+    "slug": "google-slides",
+    "name": "Google Slides"
+  },
+  {
+    "id": 208,
+    "slug": "google-workspace-integration",
+    "name": "Google Workspace Integration"
+  },
+  {
+    "id": 353,
+    "slug": "governance",
+    "name": "Governance"
+  },
+  {
+    "id": 329,
+    "slug": "government-contracts",
+    "name": "Government Contracts"
+  },
+  {
+    "id": 1289,
+    "slug": "government-services",
+    "name": "Government Services"
+  },
+  {
+    "id": 1639,
+    "slug": "gpt",
+    "name": "GPT"
+  },
+  {
+    "id": 1292,
+    "slug": "gpt-3",
+    "name": "GPT 3"
+  },
+  {
+    "id": 907,
+    "slug": "gpt-4",
+    "name": "GPT 4"
+  },
+  {
+    "id": 897,
+    "slug": "gpt-context",
+    "name": "GPT Context"
+  },
+  {
+    "id": 843,
+    "slug": "gpt-directory",
+    "name": "GPT Directory"
+  },
+  {
+    "id": 1196,
+    "slug": "gpt-models",
+    "name": "GPT Models"
+  },
+  {
+    "id": 1297,
+    "slug": "gpu-acceleration",
+    "name": "Gpu Acceleration"
+  },
+  {
+    "id": 659,
+    "slug": "gpu-deployment",
+    "name": "Gpu Deployment"
+  },
+  {
+    "id": 871,
+    "slug": "gpu-performance",
+    "name": "Gpu Performance"
+  },
+  {
+    "id": 71,
+    "slug": "grammar-check",
+    "name": "Grammar Check"
+  },
+  {
+    "id": 238,
+    "slug": "grammar-correction",
+    "name": "Grammar Correction"
+  },
+  {
+    "id": 862,
+    "slug": "grantmaking",
+    "name": "Grantmaking"
+  },
+  {
+    "id": 978,
+    "slug": "graph-analysis",
+    "name": "Graph Analysis"
+  },
+  {
+    "id": 165,
+    "slug": "graphic-design",
+    "name": "Graphic Design"
+  },
+  {
+    "id": 150,
+    "slug": "graphic-resources",
+    "name": "Graphic Resources"
+  },
+  {
+    "id": 90,
+    "slug": "gtm-automation",
+    "name": "Gtm Automation"
+  },
+  {
+    "id": 1091,
+    "slug": "guidance",
+    "name": "Guidance"
+  },
+  {
+    "id": 1284,
+    "slug": "guidelines",
+    "name": "Guidelines"
+  },
+  {
+    "id": 1429,
+    "slug": "hardware-recommendations",
+    "name": "Hardware Recommendations"
+  },
+  {
+    "id": 1391,
+    "slug": "hd-upgrade",
+    "name": "Hd Upgrade"
+  },
+  {
+    "id": 431,
+    "slug": "headshot-generation",
+    "name": "Headshot Generation"
+  },
+  {
+    "id": 990,
+    "slug": "headshots",
+    "name": "Headshots"
+  },
+  {
+    "id": 357,
+    "slug": "healthcare-automation",
+    "name": "Healthcare Automation"
+  },
+  {
+    "id": 436,
+    "slug": "high-quality-images",
+    "name": "High Quality Images"
+  },
+  {
+    "id": 923,
+    "slug": "high-speed",
+    "name": "High Speed"
+  },
+  {
+    "id": 489,
+    "slug": "hiring-assistant",
+    "name": "Hiring Assistant"
+  },
+  {
+    "id": 1161,
+    "slug": "historical-stories",
+    "name": "Historical Stories"
+  },
+  {
+    "id": 1222,
+    "slug": "history",
+    "name": "History"
+  },
+  {
+    "id": 483,
+    "slug": "hk-lottery",
+    "name": "Hk Lottery"
+  },
+  {
+    "id": 461,
+    "slug": "home-design",
+    "name": "Home Design"
+  },
+  {
+    "id": 404,
+    "slug": "homework-help",
+    "name": "Homework Help"
+  },
+  {
+    "id": 859,
+    "slug": "html-to-css",
+    "name": "HTML To CSS"
+  },
+  {
+    "id": 342,
+    "slug": "human-avatars",
+    "name": "Human Avatars"
+  },
+  {
+    "id": 972,
+    "slug": "human-centered-design",
+    "name": "Human Centered Design"
+  },
+  {
+    "id": 499,
+    "slug": "humanized-text",
+    "name": "Humanized Text"
+  },
+  {
+    "id": 1176,
+    "slug": "humor",
+    "name": "Humor"
+  },
+  {
+    "id": 1657,
+    "slug": "icons",
+    "name": "Icons"
+  },
+  {
+    "id": 172,
+    "slug": "ide",
+    "name": "IDE"
+  },
+  {
+    "id": 1621,
+    "slug": "ide-enhancement",
+    "name": "IDE Enhancement"
+  },
+  {
+    "id": 184,
+    "slug": "ide-integration",
+    "name": "IDE Integration"
+  },
+  {
+    "id": 1313,
+    "slug": "ide-support",
+    "name": "IDE Support"
+  },
+  {
+    "id": 656,
+    "slug": "idea-generation",
+    "name": "Idea Generation"
+  },
+  {
+    "id": 809,
+    "slug": "illustration",
+    "name": "Illustration"
+  },
+  {
+    "id": 1544,
+    "slug": "image-analysis",
+    "name": "Image Analysis"
+  },
+  {
+    "id": 375,
+    "slug": "image-enhancement",
+    "name": "Image Enhancement"
+  },
+  {
+    "id": 1164,
+    "slug": "image-enhancer",
+    "name": "Image Enhancer"
+  },
+  {
+    "id": 1576,
+    "slug": "image-prompts",
+    "name": "Image Prompts"
+  },
+  {
+    "id": 643,
+    "slug": "image-resizing",
+    "name": "Image Resizing"
+  },
+  {
+    "id": 1254,
+    "slug": "image-to-video",
+    "name": "Image To Video"
+  },
+  {
+    "id": 376,
+    "slug": "in-app-support",
+    "name": "In App Support"
+  },
+  {
+    "id": 608,
+    "slug": "in-depth-analysis",
+    "name": "In Depth Analysis"
+  },
+  {
+    "id": 349,
+    "slug": "inbox-organization",
+    "name": "Inbox Organization"
+  },
+  {
+    "id": 347,
+    "slug": "incident-response",
+    "name": "Incident Response"
+  },
+  {
+    "id": 1516,
+    "slug": "inclusive-language",
+    "name": "Inclusive Language"
+  },
+  {
+    "id": 569,
+    "slug": "indie-hacking",
+    "name": "Indie Hacking"
+  },
+  {
+    "id": 1276,
+    "slug": "industry-analysis",
+    "name": "Industry Analysis"
+  },
+  {
+    "id": 909,
+    "slug": "industry-use-cases",
+    "name": "Industry Use Cases"
+  },
+  {
+    "id": 661,
+    "slug": "infographic",
+    "name": "Infographic"
+  },
+  {
+    "id": 1524,
+    "slug": "infographic-generation",
+    "name": "Infographic Generation"
+  },
+  {
+    "id": 1321,
+    "slug": "information-theory",
+    "name": "Information Theory"
+  },
+  {
+    "id": 1249,
+    "slug": "inline-review",
+    "name": "Inline Review"
+  },
+  {
+    "id": 676,
+    "slug": "innovation",
+    "name": "Innovation"
+  },
+  {
+    "id": 665,
+    "slug": "insightful-writings",
+    "name": "Insightful Writings"
+  },
+  {
+    "id": 505,
+    "slug": "insights",
+    "name": "Insights"
+  },
+  {
+    "id": 819,
+    "slug": "insights-extraction",
+    "name": "Insights Extraction"
+  },
+  {
+    "id": 1309,
+    "slug": "insights-generation",
+    "name": "Insights Generation"
+  },
+  {
+    "id": 1460,
+    "slug": "instagram",
+    "name": "Instagram"
+  },
+  {
+    "id": 196,
+    "slug": "instrumental-removal",
+    "name": "Instrumental Removal"
+  },
+  {
+    "id": 979,
+    "slug": "insurance",
+    "name": "Insurance"
+  },
+  {
+    "id": 85,
+    "slug": "integration",
+    "name": "Integration"
+  },
+  {
+    "id": 1542,
+    "slug": "intellectual-property",
+    "name": "Intellectual Property"
+  },
+  {
+    "id": 1568,
+    "slug": "intelligence-analysis",
+    "name": "Intelligence Analysis"
+  },
+  {
+    "id": 1215,
+    "slug": "intelligence-index",
+    "name": "Intelligence Index"
+  },
+  {
+    "id": 1137,
+    "slug": "interaction-analysis",
+    "name": "Interaction Analysis"
+  },
+  {
+    "id": 1128,
+    "slug": "interactive",
+    "name": "Interactive"
+  },
+  {
+    "id": 1257,
+    "slug": "interactive-courses",
+    "name": "Interactive Courses"
+  },
+  {
+    "id": 1109,
+    "slug": "interactive-experience",
+    "name": "Interactive Experience"
+  },
+  {
+    "id": 553,
+    "slug": "interactive-fiction",
+    "name": "Interactive Fiction"
+  },
+  {
+    "id": 1442,
+    "slug": "interactive-flashcards",
+    "name": "Interactive Flashcards"
+  },
+  {
+    "id": 1529,
+    "slug": "interactive-history",
+    "name": "Interactive History"
+  },
+  {
+    "id": 1653,
+    "slug": "interactive-interface",
+    "name": "Interactive Interface"
+  },
+  {
+    "id": 1162,
+    "slug": "interactive-narratives",
+    "name": "Interactive Narratives"
+  },
+  {
+    "id": 117,
+    "slug": "interactive-simulation",
+    "name": "Interactive Simulation"
+  },
+  {
+    "id": 1642,
+    "slug": "interactive-tool",
+    "name": "Interactive Tool"
+  },
+  {
+    "id": 1461,
+    "slug": "interactive-tutorials",
+    "name": "Interactive Tutorials"
+  },
+  {
+    "id": 1489,
+    "slug": "interactive-voting",
+    "name": "Interactive Voting"
+  },
+  {
+    "id": 1388,
+    "slug": "interactive-widgets",
+    "name": "Interactive Widgets"
+  },
+  {
+    "id": 783,
+    "slug": "interior-design",
+    "name": "Interior Design"
+  },
+  {
+    "id": 222,
+    "slug": "internal-tools",
+    "name": "Internal Tools"
+  },
+  {
+    "id": 732,
+    "slug": "internet-impact",
+    "name": "Internet Impact"
+  },
+  {
+    "id": 669,
+    "slug": "interview-prep",
+    "name": "Interview Prep"
+  },
+  {
+    "id": 571,
+    "slug": "interview-tool",
+    "name": "Interview Tool"
+  },
+  {
+    "id": 528,
+    "slug": "investment",
+    "name": "Investment"
+  },
+  {
+    "id": 1337,
+    "slug": "iot-integration",
+    "name": "Iot Integration"
+  },
+  {
+    "id": 1421,
+    "slug": "itinerary-generator",
+    "name": "Itinerary Generator"
+  },
+  {
+    "id": 306,
+    "slug": "javascript",
+    "name": "Javascript"
+  },
+  {
+    "id": 1523,
+    "slug": "javascript-api",
+    "name": "Javascript API"
+  },
+  {
+    "id": 441,
+    "slug": "jira-integration",
+    "name": "Jira Integration"
+  },
+  {
+    "id": 423,
+    "slug": "job-applications",
+    "name": "Job Applications"
+  },
+  {
+    "id": 529,
+    "slug": "job-board",
+    "name": "Job Board"
+  },
+  {
+    "id": 372,
+    "slug": "job-search",
+    "name": "Job Search"
+  },
+  {
+    "id": 1002,
+    "slug": "journal",
+    "name": "Journal"
+  },
+  {
+    "id": 1174,
+    "slug": "journalism",
+    "name": "Journalism"
+  },
+  {
+    "id": 1608,
+    "slug": "json-formatter",
+    "name": "Json Formatter"
+  },
+  {
+    "id": 463,
+    "slug": "jupyter-notebooks",
+    "name": "Jupyter Notebooks"
+  },
+  {
+    "id": 227,
+    "slug": "keyword-research",
+    "name": "Keyword Research"
+  },
+  {
+    "id": 58,
+    "slug": "knowledge-base",
+    "name": "Knowledge Base"
+  },
+  {
+    "id": 1286,
+    "slug": "knowledge-capturing",
+    "name": "Knowledge Capturing"
+  },
+  {
+    "id": 312,
+    "slug": "knowledge-graph",
+    "name": "Knowledge Graph"
+  },
+  {
+    "id": 518,
+    "slug": "knowledge-integration",
+    "name": "Knowledge Integration"
+  },
+  {
+    "id": 358,
+    "slug": "knowledge-management",
+    "name": "Knowledge Management"
+  },
+  {
+    "id": 1005,
+    "slug": "kotlin",
+    "name": "Kotlin"
+  },
+  {
+    "id": 685,
+    "slug": "landscape-analysis",
+    "name": "Landscape Analysis"
+  },
+  {
+    "id": 1041,
+    "slug": "landscape-recap",
+    "name": "Landscape Recap"
+  },
+  {
+    "id": 1037,
+    "slug": "langchain",
+    "name": "Langchain"
+  },
+  {
+    "id": 386,
+    "slug": "language-analysis",
+    "name": "Language Analysis"
+  },
+  {
+    "id": 1551,
+    "slug": "language-generation",
+    "name": "Language Generation"
+  },
+  {
+    "id": 335,
+    "slug": "language-models",
+    "name": "Language Models"
+  },
+  {
+    "id": 397,
+    "slug": "large-language-models",
+    "name": "Large Language Models"
+  },
+  {
+    "id": 162,
+    "slug": "lead-generation",
+    "name": "Lead Generation"
+  },
+  {
+    "id": 1210,
+    "slug": "leaderboard",
+    "name": "Leaderboard"
+  },
+  {
+    "id": 457,
+    "slug": "learning",
+    "name": "Learning"
+  },
+  {
+    "id": 1319,
+    "slug": "learning-platform",
+    "name": "Learning Platform"
+  },
+  {
+    "id": 1013,
+    "slug": "learning-resources",
+    "name": "Learning Resources"
+  },
+  {
+    "id": 1477,
+    "slug": "legal-analysis",
+    "name": "Legal Analysis"
+  },
+  {
+    "id": 1541,
+    "slug": "legal-issues",
+    "name": "Legal Issues"
+  },
+  {
+    "id": 634,
+    "slug": "legal-tech",
+    "name": "Legal Tech"
+  },
+  {
+    "id": 865,
+    "slug": "legal-workflows",
+    "name": "Legal Workflows"
+  },
+  {
+    "id": 601,
+    "slug": "licensing",
+    "name": "Licensing"
+  },
+  {
+    "id": 1059,
+    "slug": "link-building",
+    "name": "Link Building"
+  },
+  {
+    "id": 422,
+    "slug": "linkedin",
+    "name": "Linkedin"
+  },
+  {
+    "id": 1506,
+    "slug": "linkedin-content",
+    "name": "Linkedin Content"
+  },
+  {
+    "id": 1459,
+    "slug": "linkedin-growth",
+    "name": "Linkedin Growth"
+  },
+  {
+    "id": 1356,
+    "slug": "linkedin-marketing",
+    "name": "Linkedin Marketing"
+  },
+  {
+    "id": 1384,
+    "slug": "literature-management",
+    "name": "Literature Management"
+  },
+  {
+    "id": 469,
+    "slug": "literature-review",
+    "name": "Literature Review"
+  },
+  {
+    "id": 580,
+    "slug": "live-audio-to-video",
+    "name": "Live Audio To Video"
+  },
+  {
+    "id": 315,
+    "slug": "live-chat",
+    "name": "Live Chat"
+  },
+  {
+    "id": 915,
+    "slug": "live-coding",
+    "name": "Live Coding"
+  },
+  {
+    "id": 996,
+    "slug": "live-interviews",
+    "name": "Live Interviews"
+  },
+  {
+    "id": 1488,
+    "slug": "live-polls",
+    "name": "Live Polls"
+  },
+  {
+    "id": 704,
+    "slug": "live-streaming",
+    "name": "Live Streaming"
+  },
+  {
+    "id": 1063,
+    "slug": "llama-index",
+    "name": "Llama Index"
+  },
+  {
+    "id": 490,
+    "slug": "llm",
+    "name": "LLM"
+  },
+  {
+    "id": 1366,
+    "slug": "llm-api",
+    "name": "LLM API"
+  },
+  {
+    "id": 239,
+    "slug": "llm-apps",
+    "name": "LLM Apps"
+  },
+  {
+    "id": 1543,
+    "slug": "llm-benchmarks",
+    "name": "LLM Benchmarks"
+  },
+  {
+    "id": 780,
+    "slug": "llm-evaluation",
+    "name": "LLM Evaluation"
+  },
+  {
+    "id": 1445,
+    "slug": "llm-finetuning",
+    "name": "LLM Finetuning"
+  },
+  {
+    "id": 891,
+    "slug": "llm-friendly",
+    "name": "LLM Friendly"
+  },
+  {
+    "id": 1022,
+    "slug": "llm-gateway",
+    "name": "LLM Gateway"
+  },
+  {
+    "id": 250,
+    "slug": "llm-integration",
+    "name": "LLM Integration"
+  },
+  {
+    "id": 395,
+    "slug": "llm-interaction",
+    "name": "LLM Interaction"
+  },
+  {
+    "id": 1563,
+    "slug": "llm-monitoring",
+    "name": "LLM Monitoring"
+  },
+  {
+    "id": 302,
+    "slug": "llm-optimization",
+    "name": "LLM Optimization"
+  },
+  {
+    "id": 966,
+    "slug": "llm-research",
+    "name": "LLM Research"
+  },
+  {
+    "id": 387,
+    "slug": "llm-tracing",
+    "name": "LLM Tracing"
+  },
+  {
+    "id": 1066,
+    "slug": "llm-training",
+    "name": "LLM Training"
+  },
+  {
+    "id": 1416,
+    "slug": "llms",
+    "name": "Llms"
+  },
+  {
+    "id": 1062,
+    "slug": "load-testing",
+    "name": "Load Testing"
+  },
+  {
+    "id": 905,
+    "slug": "local",
+    "name": "Local"
+  },
+  {
+    "id": 321,
+    "slug": "local-analytics",
+    "name": "Local Analytics"
+  },
+  {
+    "id": 1142,
+    "slug": "local-data",
+    "name": "Local Data"
+  },
+  {
+    "id": 1073,
+    "slug": "local-deployment",
+    "name": "Local Deployment"
+  },
+  {
+    "id": 800,
+    "slug": "local-generative",
+    "name": "Local Generative"
+  },
+  {
+    "id": 1004,
+    "slug": "local-run",
+    "name": "Local Run"
+  },
+  {
+    "id": 1075,
+    "slug": "localization",
+    "name": "Localization"
+  },
+  {
+    "id": 1052,
+    "slug": "logistics",
+    "name": "Logistics"
+  },
+  {
+    "id": 214,
+    "slug": "logo-design",
+    "name": "Logo Design"
+  },
+  {
+    "id": 201,
+    "slug": "logo-generation",
+    "name": "Logo Generation"
+  },
+  {
+    "id": 1446,
+    "slug": "lora",
+    "name": "Lora"
+  },
+  {
+    "id": 481,
+    "slug": "lottery-analysis",
+    "name": "Lottery Analysis"
+  },
+  {
+    "id": 922,
+    "slug": "low-cost",
+    "name": "Low Cost"
+  },
+  {
+    "id": 1220,
+    "slug": "lstm",
+    "name": "Lstm"
+  },
+  {
+    "id": 1245,
+    "slug": "mac-app",
+    "name": "Mac App"
+  },
+  {
+    "id": 261,
+    "slug": "machine-learning",
+    "name": "Machine Learning"
+  },
+  {
+    "id": 687,
+    "slug": "macos",
+    "name": "Macos"
+  },
+  {
+    "id": 1614,
+    "slug": "macos-integration",
+    "name": "Macos Integration"
+  },
+  {
+    "id": 1272,
+    "slug": "makeup-recommendations",
+    "name": "Makeup Recommendations"
+  },
+  {
+    "id": 851,
+    "slug": "malware",
+    "name": "Malware"
+  },
+  {
+    "id": 736,
+    "slug": "manga",
+    "name": "Manga"
+  },
+  {
+    "id": 1400,
+    "slug": "markdown",
+    "name": "Markdown"
+  },
+  {
+    "id": 1397,
+    "slug": "markdown-editor",
+    "name": "Markdown Editor"
+  },
+  {
+    "id": 737,
+    "slug": "market-analysis",
+    "name": "Market Analysis"
+  },
+  {
+    "id": 1242,
+    "slug": "market-insights",
+    "name": "Market Insights"
+  },
+  {
+    "id": 927,
+    "slug": "market-research",
+    "name": "Market Research"
+  },
+  {
+    "id": 122,
+    "slug": "marketing",
+    "name": "Marketing"
+  },
+  {
+    "id": 91,
+    "slug": "marketing-automation",
+    "name": "Marketing Automation"
+  },
+  {
+    "id": 1432,
+    "slug": "marketing-experiments",
+    "name": "Marketing Experiments"
+  },
+  {
+    "id": 1370,
+    "slug": "marketing-tool",
+    "name": "Marketing Tool"
+  },
+  {
+    "id": 514,
+    "slug": "marketplace",
+    "name": "Marketplace"
+  },
+  {
+    "id": 213,
+    "slug": "marketplace-ready",
+    "name": "Marketplace Ready"
+  },
+  {
+    "id": 1585,
+    "slug": "material-ui",
+    "name": "Material UI"
+  },
+  {
+    "id": 402,
+    "slug": "math-solver",
+    "name": "Math Solver"
+  },
+  {
+    "id": 1107,
+    "slug": "mcp-servers",
+    "name": "Mcp Servers"
+  },
+  {
+    "id": 1158,
+    "slug": "meal-planning",
+    "name": "Meal Planning"
+  },
+  {
+    "id": 1363,
+    "slug": "media-pitches",
+    "name": "Media Pitches"
+  },
+  {
+    "id": 1612,
+    "slug": "media-tokenization",
+    "name": "Media Tokenization"
+  },
+  {
+    "id": 1171,
+    "slug": "medical-technology",
+    "name": "Medical Technology"
+  },
+  {
+    "id": 1001,
+    "slug": "meeting-assistant",
+    "name": "Meeting Assistant"
+  },
+  {
+    "id": 146,
+    "slug": "meeting-automation",
+    "name": "Meeting Automation"
+  },
+  {
+    "id": 158,
+    "slug": "meeting-notes",
+    "name": "Meeting Notes"
+  },
+  {
+    "id": 408,
+    "slug": "meeting-summaries",
+    "name": "Meeting Summaries"
+  },
+  {
+    "id": 1387,
+    "slug": "meeting-transcription",
+    "name": "Meeting Transcription"
+  },
+  {
+    "id": 1155,
+    "slug": "mental-health",
+    "name": "Mental Health"
+  },
+  {
+    "id": 344,
+    "slug": "merchandise-generation",
+    "name": "Merchandise Generation"
+  },
+  {
+    "id": 914,
+    "slug": "merge-automation",
+    "name": "Merge Automation"
+  },
+  {
+    "id": 1000,
+    "slug": "metadata",
+    "name": "Metadata"
+  },
+  {
+    "id": 125,
+    "slug": "metrics",
+    "name": "Metrics"
+  },
+  {
+    "id": 1503,
+    "slug": "microservices",
+    "name": "Microservices"
+  },
+  {
+    "id": 1038,
+    "slug": "middleware",
+    "name": "Middleware"
+  },
+  {
+    "id": 1501,
+    "slug": "migration",
+    "name": "Migration"
+  },
+  {
+    "id": 1120,
+    "slug": "mind-mapping",
+    "name": "Mind Mapping"
+  },
+  {
+    "id": 1610,
+    "slug": "minification",
+    "name": "Minification"
+  },
+  {
+    "id": 1317,
+    "slug": "mission-execution",
+    "name": "Mission Execution"
+  },
+  {
+    "id": 701,
+    "slug": "ml",
+    "name": "ML"
+  },
+  {
+    "id": 1633,
+    "slug": "ml-experiment-tracking",
+    "name": "ML Experiment Tracking"
+  },
+  {
+    "id": 629,
+    "slug": "ml-platform",
+    "name": "ML Platform"
+  },
+  {
+    "id": 1265,
+    "slug": "ml-tools",
+    "name": "ML Tools"
+  },
+  {
+    "id": 1562,
+    "slug": "ml-trends",
+    "name": "ML Trends"
+  },
+  {
+    "id": 333,
+    "slug": "mobile-app",
+    "name": "Mobile App"
+  },
+  {
+    "id": 1305,
+    "slug": "mobile-dev",
+    "name": "Mobile Dev"
+  },
+  {
+    "id": 1335,
+    "slug": "mocap",
+    "name": "Mocap"
+  },
+  {
+    "id": 114,
+    "slug": "mockup-generation",
+    "name": "Mockup Generation"
+  },
+  {
+    "id": 1589,
+    "slug": "mockups",
+    "name": "Mockups"
+  },
+  {
+    "id": 1260,
+    "slug": "model-analysis",
+    "name": "Model Analysis"
+  },
+  {
+    "id": 1367,
+    "slug": "model-deployment",
+    "name": "Model Deployment"
+  },
+  {
+    "id": 1236,
+    "slug": "model-evaluation",
+    "name": "Model Evaluation"
+  },
+  {
+    "id": 725,
+    "slug": "model-integration",
+    "name": "Model Integration"
+  },
+  {
+    "id": 442,
+    "slug": "model-management",
+    "name": "Model Management"
+  },
+  {
+    "id": 565,
+    "slug": "model-testing",
+    "name": "Model Testing"
+  },
+  {
+    "id": 606,
+    "slug": "model-tracing",
+    "name": "Model Tracing"
+  },
+  {
+    "id": 1595,
+    "slug": "model-training",
+    "name": "Model Training"
+  },
+  {
+    "id": 765,
+    "slug": "monetization",
+    "name": "Monetization"
+  },
+  {
+    "id": 944,
+    "slug": "monitoring",
+    "name": "Monitoring"
+  },
+  {
+    "id": 1508,
+    "slug": "mood-based",
+    "name": "Mood Based"
+  },
+  {
+    "id": 1396,
+    "slug": "motion-graphics",
+    "name": "Motion Graphics"
+  },
+  {
+    "id": 1106,
+    "slug": "multi-engine",
+    "name": "Multi Engine"
+  },
+  {
+    "id": 612,
+    "slug": "multi-model",
+    "name": "Multi Model"
+  },
+  {
+    "id": 1229,
+    "slug": "multi-platform",
+    "name": "Multi Platform"
+  },
+  {
+    "id": 173,
+    "slug": "multilingual",
+    "name": "Multilingual"
+  },
+  {
+    "id": 155,
+    "slug": "multimedia",
+    "name": "Multimedia"
+  },
+  {
+    "id": 192,
+    "slug": "multimodal",
+    "name": "Multimodal"
+  },
+  {
+    "id": 1125,
+    "slug": "multimodal-training",
+    "name": "Multimodal Training"
+  },
+  {
+    "id": 1668,
+    "slug": "multiplayer",
+    "name": "Multiplayer"
+  },
+  {
+    "id": 983,
+    "slug": "music-distribution",
+    "name": "Music Distribution"
+  },
+  {
+    "id": 1590,
+    "slug": "music-editing",
+    "name": "Music Editing"
+  },
+  {
+    "id": 119,
+    "slug": "music-generation",
+    "name": "Music Generation"
+  },
+  {
+    "id": 936,
+    "slug": "music-production",
+    "name": "Music Production"
+  },
+  {
+    "id": 1462,
+    "slug": "music-recommendation",
+    "name": "Music Recommendation"
+  },
+  {
+    "id": 1114,
+    "slug": "music-synthesis",
+    "name": "Music Synthesis"
+  },
+  {
+    "id": 1149,
+    "slug": "name-generation",
+    "name": "Name Generation"
+  },
+  {
+    "id": 554,
+    "slug": "narrative-generation",
+    "name": "Narrative Generation"
+  },
+  {
+    "id": 792,
+    "slug": "narrative-writing",
+    "name": "Narrative Writing"
+  },
+  {
+    "id": 1413,
+    "slug": "natural-language",
+    "name": "Natural Language"
+  },
+  {
+    "id": 60,
+    "slug": "natural-language-processing",
+    "name": "Natural Language Processing"
+  },
+  {
+    "id": 1607,
+    "slug": "natural-language-query",
+    "name": "Natural Language Query"
+  },
+  {
+    "id": 1166,
+    "slug": "neural-networks",
+    "name": "Neural Networks"
+  },
+  {
+    "id": 1169,
+    "slug": "neural-tech",
+    "name": "Neural Tech"
+  },
+  {
+    "id": 789,
+    "slug": "neural-transfer",
+    "name": "Neural Transfer"
+  },
+  {
+    "id": 826,
+    "slug": "neuroscience",
+    "name": "Neuroscience"
+  },
+  {
+    "id": 674,
+    "slug": "news",
+    "name": "News"
+  },
+  {
+    "id": 651,
+    "slug": "news-aggregator",
+    "name": "News Aggregator"
+  },
+  {
+    "id": 1577,
+    "slug": "newsletter",
+    "name": "Newsletter"
+  },
+  {
+    "id": 1051,
+    "slug": "newsletter-repurposing",
+    "name": "Newsletter Repurposing"
+  },
+  {
+    "id": 710,
+    "slug": "nextjs",
+    "name": "Nextjs"
+  },
+  {
+    "id": 1497,
+    "slug": "nft",
+    "name": "Nft"
+  },
+  {
+    "id": 702,
+    "slug": "nlp",
+    "name": "NLP"
+  },
+  {
+    "id": 1641,
+    "slug": "nlp-exploration",
+    "name": "NLP Exploration"
+  },
+  {
+    "id": 1,
+    "slug": "no-code",
+    "name": "No-Code"
+  },
+  {
+    "id": 1598,
+    "slug": "nodejs",
+    "name": "Nodejs"
+  },
+  {
+    "id": 1328,
+    "slug": "note-taking",
+    "name": "Note Taking"
+  },
+  {
+    "id": 204,
+    "slug": "notes-app",
+    "name": "Notes App"
+  },
+  {
+    "id": 620,
+    "slug": "novel-analysis",
+    "name": "Novel Analysis"
+  },
+  {
+    "id": 399,
+    "slug": "object-removal",
+    "name": "Object Removal"
+  },
+  {
+    "id": 241,
+    "slug": "observability",
+    "name": "Observability"
+  },
+  {
+    "id": 394,
+    "slug": "ocr",
+    "name": "OCR"
+  },
+  {
+    "id": 1234,
+    "slug": "office-work",
+    "name": "Office Work"
+  },
+  {
+    "id": 364,
+    "slug": "offline-ai",
+    "name": "Offline AI"
+  },
+  {
+    "id": 901,
+    "slug": "offline-replay",
+    "name": "Offline Replay"
+  },
+  {
+    "id": 1269,
+    "slug": "offline-support",
+    "name": "Offline Support"
+  },
+  {
+    "id": 1303,
+    "slug": "online-compilation",
+    "name": "Online Compilation"
+  },
+  {
+    "id": 1248,
+    "slug": "online-course",
+    "name": "Online Course"
+  },
+  {
+    "id": 848,
+    "slug": "online-editor",
+    "name": "Online Editor"
+  },
+  {
+    "id": 644,
+    "slug": "online-image-editor",
+    "name": "Online Image Editor"
+  },
+  {
+    "id": 560,
+    "slug": "online-mastering",
+    "name": "Online Mastering"
+  },
+  {
+    "id": 610,
+    "slug": "online-presence",
+    "name": "Online Presence"
+  },
+  {
+    "id": 1412,
+    "slug": "online-resume",
+    "name": "Online Resume"
+  },
+  {
+    "id": 557,
+    "slug": "online-tool",
+    "name": "Online Tool"
+  },
+  {
+    "id": 998,
+    "slug": "ontology",
+    "name": "Ontology"
+  },
+  {
+    "id": 246,
+    "slug": "open-source",
+    "name": "Open Source"
+  },
+  {
+    "id": 1039,
+    "slug": "openapi",
+    "name": "Openapi"
+  },
+  {
+    "id": 268,
+    "slug": "optimization",
+    "name": "Optimization"
+  },
+  {
+    "id": 849,
+    "slug": "orchestration",
+    "name": "Orchestration"
+  },
+  {
+    "id": 228,
+    "slug": "organic-growth",
+    "name": "Organic Growth"
+  },
+  {
+    "id": 206,
+    "slug": "organization",
+    "name": "Organization"
+  },
+  {
+    "id": 1334,
+    "slug": "page-generation",
+    "name": "Page Generation"
+  },
+  {
+    "id": 549,
+    "slug": "pair-programming",
+    "name": "Pair Programming"
+  },
+  {
+    "id": 1226,
+    "slug": "papers-summary",
+    "name": "Papers Summary"
+  },
+  {
+    "id": 1330,
+    "slug": "papers-with-code",
+    "name": "Papers With Code"
+  },
+  {
+    "id": 134,
+    "slug": "paraphrasing",
+    "name": "Paraphrasing"
+  },
+  {
+    "id": 1401,
+    "slug": "paste",
+    "name": "Paste"
+  },
+  {
+    "id": 1399,
+    "slug": "pastebin",
+    "name": "Pastebin"
+  },
+  {
+    "id": 1473,
+    "slug": "pattern-recognition",
+    "name": "Pattern Recognition"
+  },
+  {
+    "id": 713,
+    "slug": "patterns",
+    "name": "Patterns"
+  },
+  {
+    "id": 1105,
+    "slug": "pay-as-you-go",
+    "name": "Pay As You Go"
+  },
+  {
+    "id": 256,
+    "slug": "pdf-analysis",
+    "name": "PDF Analysis"
+  },
+  {
+    "id": 805,
+    "slug": "pdf-chatbot",
+    "name": "PDF Chatbot"
+  },
+  {
+    "id": 986,
+    "slug": "pdf-filling",
+    "name": "PDF Filling"
+  },
+  {
+    "id": 361,
+    "slug": "pdf-summary",
+    "name": "PDF Summary"
+  },
+  {
+    "id": 1596,
+    "slug": "pdf-to-knowledge-base",
+    "name": "PDF To Knowledge Base"
+  },
+  {
+    "id": 1468,
+    "slug": "penetration-testing",
+    "name": "Penetration Testing"
+  },
+  {
+    "id": 1240,
+    "slug": "pentesting",
+    "name": "Pentesting"
+  },
+  {
+    "id": 301,
+    "slug": "performance-analysis",
+    "name": "Performance Analysis"
+  },
+  {
+    "id": 295,
+    "slug": "performance-engineering",
+    "name": "Performance Engineering"
+  },
+  {
+    "id": 1061,
+    "slug": "performance-testing",
+    "name": "Performance Testing"
+  },
+  {
+    "id": 1583,
+    "slug": "persona-matching",
+    "name": "Persona Matching"
+  },
+  {
+    "id": 1312,
+    "slug": "personal-ai",
+    "name": "Personal AI"
+  },
+  {
+    "id": 924,
+    "slug": "personal-assistant",
+    "name": "Personal Assistant"
+  },
+  {
+    "id": 1153,
+    "slug": "personality-analysis",
+    "name": "Personality Analysis"
+  },
+  {
+    "id": 316,
+    "slug": "personality-bot",
+    "name": "Personality Bot"
+  },
+  {
+    "id": 827,
+    "slug": "personalized",
+    "name": "Personalized"
+  },
+  {
+    "id": 686,
+    "slug": "personalized-characters",
+    "name": "Personalized Characters"
+  },
+  {
+    "id": 1352,
+    "slug": "personalized-design",
+    "name": "Personalized Design"
+  },
+  {
+    "id": 836,
+    "slug": "personalized-learning",
+    "name": "Personalized Learning"
+  },
+  {
+    "id": 1665,
+    "slug": "personalized-recommendations",
+    "name": "Personalized Recommendations"
+  },
+  {
+    "id": 596,
+    "slug": "personalized-speeches",
+    "name": "Personalized Speeches"
+  },
+  {
+    "id": 1082,
+    "slug": "personalized-tips",
+    "name": "Personalized Tips"
+  },
+  {
+    "id": 288,
+    "slug": "personas",
+    "name": "Personas"
+  },
+  {
+    "id": 1212,
+    "slug": "philosophy",
+    "name": "Philosophy"
+  },
+  {
+    "id": 699,
+    "slug": "photo-cleaning",
+    "name": "Photo Cleaning"
+  },
+  {
+    "id": 575,
+    "slug": "photo-customization",
+    "name": "Photo Customization"
+  },
+  {
+    "id": 398,
+    "slug": "photo-editing",
+    "name": "Photo Editing"
+  },
+  {
+    "id": 593,
+    "slug": "photo-editor",
+    "name": "Photo Editor"
+  },
+  {
+    "id": 212,
+    "slug": "photo-generation",
+    "name": "Photo Generation"
+  },
+  {
+    "id": 788,
+    "slug": "photo-to-art",
+    "name": "Photo To Art"
+  },
+  {
+    "id": 683,
+    "slug": "photo-to-caricature",
+    "name": "Photo To Caricature"
+  },
+  {
+    "id": 971,
+    "slug": "photo-to-coloring",
+    "name": "Photo To Coloring"
+  },
+  {
+    "id": 1349,
+    "slug": "photography",
+    "name": "Photography"
+  },
+  {
+    "id": 276,
+    "slug": "photorealistic",
+    "name": "Photorealistic"
+  },
+  {
+    "id": 1522,
+    "slug": "pixel-based",
+    "name": "Pixel Based"
+  },
+  {
+    "id": 1532,
+    "slug": "plagiarism",
+    "name": "Plagiarism"
+  },
+  {
+    "id": 420,
+    "slug": "plagiarism-checker",
+    "name": "Plagiarism Checker"
+  },
+  {
+    "id": 883,
+    "slug": "plain-english",
+    "name": "Plain English"
+  },
+  {
+    "id": 1534,
+    "slug": "plain-english-guide",
+    "name": "Plain English Guide"
+  },
+  {
+    "id": 101,
+    "slug": "planning-assistant",
+    "name": "Planning Assistant"
+  },
+  {
+    "id": 438,
+    "slug": "plant-photos",
+    "name": "Plant Photos"
+  },
+  {
+    "id": 1188,
+    "slug": "platform",
+    "name": "Platform"
+  },
+  {
+    "id": 1463,
+    "slug": "playlist-generator",
+    "name": "Playlist Generator"
+  },
+  {
+    "id": 1232,
+    "slug": "playwright",
+    "name": "Playwright"
+  },
+  {
+    "id": 1671,
+    "slug": "podcast-generation",
+    "name": "Podcast Generation"
+  },
+  {
+    "id": 1095,
+    "slug": "podcast-tools",
+    "name": "Podcast Tools"
+  },
+  {
+    "id": 215,
+    "slug": "podcasting",
+    "name": "Podcasting"
+  },
+  {
+    "id": 259,
+    "slug": "poem-generation",
+    "name": "Poem Generation"
+  },
+  {
+    "id": 1175,
+    "slug": "poetry",
+    "name": "Poetry"
+  },
+  {
+    "id": 1481,
+    "slug": "policy-discussions",
+    "name": "Policy Discussions"
+  },
+  {
+    "id": 1172,
+    "slug": "political-analysis",
+    "name": "Political Analysis"
+  },
+  {
+    "id": 1290,
+    "slug": "portal",
+    "name": "Portal"
+  },
+  {
+    "id": 1507,
+    "slug": "post-analytics",
+    "name": "Post Analytics"
+  },
+  {
+    "id": 474,
+    "slug": "ppt-generation",
+    "name": "Ppt Generation"
+  },
+  {
+    "id": 1354,
+    "slug": "pptx",
+    "name": "Pptx"
+  },
+  {
+    "id": 1364,
+    "slug": "pr-tools",
+    "name": "Pr Tools"
+  },
+  {
+    "id": 1018,
+    "slug": "prd-generation",
+    "name": "Prd Generation"
+  },
+  {
+    "id": 1435,
+    "slug": "precision",
+    "name": "Precision"
+  },
+  {
+    "id": 482,
+    "slug": "predictions",
+    "name": "Predictions"
+  },
+  {
+    "id": 1157,
+    "slug": "predictive-analytics",
+    "name": "Predictive Analytics"
+  },
+  {
+    "id": 254,
+    "slug": "presentation-automation",
+    "name": "Presentation Automation"
+  },
+  {
+    "id": 573,
+    "slug": "presentation-generator",
+    "name": "Presentation Generator"
+  },
+  {
+    "id": 1455,
+    "slug": "presentation-maker",
+    "name": "Presentation Maker"
+  },
+  {
+    "id": 1353,
+    "slug": "presentation-tool",
+    "name": "Presentation Tool"
+  },
+  {
+    "id": 1402,
+    "slug": "preview",
+    "name": "Preview"
+  },
+  {
+    "id": 562,
+    "slug": "pricing-analysis",
+    "name": "Pricing Analysis"
+  },
+  {
+    "id": 1365,
+    "slug": "pricing-comparison",
+    "name": "Pricing Comparison"
+  },
+  {
+    "id": 906,
+    "slug": "privacy",
+    "name": "Privacy"
+  },
+  {
+    "id": 1112,
+    "slug": "proactive-debugging",
+    "name": "Proactive Debugging"
+  },
+  {
+    "id": 1322,
+    "slug": "probabilistic-inference",
+    "name": "Probabilistic Inference"
+  },
+  {
+    "id": 568,
+    "slug": "product-discovery",
+    "name": "Product Discovery"
+  },
+  {
+    "id": 589,
+    "slug": "product-visualization",
+    "name": "Product Visualization"
+  },
+  {
+    "id": 443,
+    "slug": "production-environments",
+    "name": "Production Environments"
+  },
+  {
+    "id": 754,
+    "slug": "production-software",
+    "name": "Production Software"
+  },
+  {
+    "id": 107,
+    "slug": "productivity",
+    "name": "Productivity"
+  },
+  {
+    "id": 236,
+    "slug": "professional-audio",
+    "name": "Professional Audio"
+  },
+  {
+    "id": 991,
+    "slug": "professional-photos",
+    "name": "Professional Photos"
+  },
+  {
+    "id": 286,
+    "slug": "professional-portraits",
+    "name": "Professional Portraits"
+  },
+  {
+    "id": 1491,
+    "slug": "professional-suit",
+    "name": "Professional Suit"
+  },
+  {
+    "id": 478,
+    "slug": "professional-writing",
+    "name": "Professional Writing"
+  },
+  {
+    "id": 574,
+    "slug": "profile-pictures",
+    "name": "Profile Pictures"
+  },
+  {
+    "id": 715,
+    "slug": "programming",
+    "name": "Programming"
+  },
+  {
+    "id": 263,
+    "slug": "programming-assistant",
+    "name": "Programming Assistant"
+  },
+  {
+    "id": 933,
+    "slug": "programming-guide",
+    "name": "Programming Guide"
+  },
+  {
+    "id": 57,
+    "slug": "project-management",
+    "name": "Project Management"
+  },
+  {
+    "id": 761,
+    "slug": "project-planning",
+    "name": "Project Planning"
+  },
+  {
+    "id": 1077,
+    "slug": "prompt-analysis",
+    "name": "Prompt Analysis"
+  },
+  {
+    "id": 585,
+    "slug": "prompt-based",
+    "name": "Prompt Based"
+  },
+  {
+    "id": 1375,
+    "slug": "prompt-builder",
+    "name": "Prompt Builder"
+  },
+  {
+    "id": 240,
+    "slug": "prompt-engineering",
+    "name": "Prompt Engineering"
+  },
+  {
+    "id": 898,
+    "slug": "prompt-enhancement",
+    "name": "Prompt Enhancement"
+  },
+  {
+    "id": 511,
+    "slug": "prompt-generation",
+    "name": "Prompt Generation"
+  },
+  {
+    "id": 767,
+    "slug": "prompt-guides",
+    "name": "Prompt Guides"
+  },
+  {
+    "id": 389,
+    "slug": "prompt-management",
+    "name": "Prompt Management"
+  },
+  {
+    "id": 1104,
+    "slug": "prompt-optimization",
+    "name": "Prompt Optimization"
+  },
+  {
+    "id": 70,
+    "slug": "proofreading",
+    "name": "Proofreading"
+  },
+  {
+    "id": 916,
+    "slug": "prototyping",
+    "name": "Prototyping"
+  },
+  {
+    "id": 64,
+    "slug": "proxy-services",
+    "name": "Proxy Services"
+  },
+  {
+    "id": 718,
+    "slug": "publishing",
+    "name": "Publishing"
+  },
+  {
+    "id": 984,
+    "slug": "publishing-support",
+    "name": "Publishing Support"
+  },
+  {
+    "id": 1086,
+    "slug": "pull-request",
+    "name": "Pull Request"
+  },
+  {
+    "id": 1644,
+    "slug": "pull-request-analysis",
+    "name": "Pull Request Analysis"
+  },
+  {
+    "id": 711,
+    "slug": "punch-needle",
+    "name": "Punch Needle"
+  },
+  {
+    "id": 296,
+    "slug": "python",
+    "name": "Python"
+  },
+  {
+    "id": 1378,
+    "slug": "python-learning",
+    "name": "Python Learning"
+  },
+  {
+    "id": 777,
+    "slug": "python-library",
+    "name": "Python Library"
+  },
+  {
+    "id": 961,
+    "slug": "pytorch",
+    "name": "Pytorch"
+  },
+  {
+    "id": 1028,
+    "slug": "qa-automation",
+    "name": "Qa Automation"
+  },
+  {
+    "id": 743,
+    "slug": "quality-assurance",
+    "name": "Quality Assurance"
+  },
+  {
+    "id": 1047,
+    "slug": "quizzing",
+    "name": "Quizzing"
+  },
+  {
+    "id": 270,
+    "slug": "quotes",
+    "name": "Quotes"
+  },
+  {
+    "id": 1487,
+    "slug": "r-code",
+    "name": "R Code"
+  },
+  {
+    "id": 1382,
+    "slug": "r-graphics",
+    "name": "R Graphics"
+  },
+  {
+    "id": 714,
+    "slug": "r-language",
+    "name": "R Language"
+  },
+  {
+    "id": 1009,
+    "slug": "r-package",
+    "name": "R Package"
+  },
+  {
+    "id": 931,
+    "slug": "r-programming",
+    "name": "R Programming"
+  },
+  {
+    "id": 245,
+    "slug": "rag",
+    "name": "RAG"
+  },
+  {
+    "id": 1547,
+    "slug": "random-images",
+    "name": "Random Images"
+  },
+  {
+    "id": 1088,
+    "slug": "rapid-prototype",
+    "name": "Rapid Prototype"
+  },
+  {
+    "id": 1597,
+    "slug": "react",
+    "name": "React"
+  },
+  {
+    "id": 1449,
+    "slug": "react-ui",
+    "name": "React UI"
+  },
+  {
+    "id": 668,
+    "slug": "readme-generation",
+    "name": "Readme Generation"
+  },
+  {
+    "id": 504,
+    "slug": "real-time",
+    "name": "Real Time"
+  },
+  {
+    "id": 696,
+    "slug": "real-time-analysis",
+    "name": "Real Time Analysis"
+  },
+  {
+    "id": 221,
+    "slug": "real-time-collaboration",
+    "name": "Real Time Collaboration"
+  },
+  {
+    "id": 1398,
+    "slug": "real-time-preview",
+    "name": "Real Time Preview"
+  },
+  {
+    "id": 345,
+    "slug": "real-time-suggestions",
+    "name": "Real Time Suggestions"
+  },
+  {
+    "id": 993,
+    "slug": "real-time-support",
+    "name": "Real Time Support"
+  },
+  {
+    "id": 1662,
+    "slug": "reasoning",
+    "name": "Reasoning"
+  },
+  {
+    "id": 1344,
+    "slug": "recommendation-engines",
+    "name": "Recommendation Engines"
+  },
+  {
+    "id": 1509,
+    "slug": "recommendations",
+    "name": "Recommendations"
+  },
+  {
+    "id": 488,
+    "slug": "recruitment-automation",
+    "name": "Recruitment Automation"
+  },
+  {
+    "id": 822,
+    "slug": "red-team-exercises",
+    "name": "Red Team Exercises"
+  },
+  {
+    "id": 925,
+    "slug": "reddit-analysis",
+    "name": "Reddit Analysis"
+  },
+  {
+    "id": 1538,
+    "slug": "reference-guide",
+    "name": "Reference Guide"
+  },
+  {
+    "id": 1218,
+    "slug": "regex-generation",
+    "name": "Regex Generation"
+  },
+  {
+    "id": 330,
+    "slug": "regulation-management",
+    "name": "Regulation Management"
+  },
+  {
+    "id": 825,
+    "slug": "relaxation",
+    "name": "Relaxation"
+  },
+  {
+    "id": 1436,
+    "slug": "reliability",
+    "name": "Reliability"
+  },
+  {
+    "id": 609,
+    "slug": "reliable-information",
+    "name": "Reliable Information"
+  },
+  {
+    "id": 698,
+    "slug": "remediation",
+    "name": "Remediation"
+  },
+  {
+    "id": 1083,
+    "slug": "remixing",
+    "name": "Remixing"
+  },
+  {
+    "id": 1332,
+    "slug": "remote-access",
+    "name": "Remote Access"
+  },
+  {
+    "id": 582,
+    "slug": "remote-meetings",
+    "name": "Remote Meetings"
+  },
+  {
+    "id": 880,
+    "slug": "reporting",
+    "name": "Reporting"
+  },
+  {
+    "id": 863,
+    "slug": "research",
+    "name": "Research"
+  },
+  {
+    "id": 189,
+    "slug": "research-assistance",
+    "name": "Research Assistance"
+  },
+  {
+    "id": 1431,
+    "slug": "research-platform",
+    "name": "Research Platform"
+  },
+  {
+    "id": 1441,
+    "slug": "research-summaries",
+    "name": "Research Summaries"
+  },
+  {
+    "id": 452,
+    "slug": "research-tools",
+    "name": "Research Tools"
+  },
+  {
+    "id": 768,
+    "slug": "resources",
+    "name": "Resources"
+  },
+  {
+    "id": 1409,
+    "slug": "resume-analysis",
+    "name": "Résumé Analysis"
+  },
+  {
+    "id": 371,
+    "slug": "resume-builder",
+    "name": "Resume Builder"
+  },
+  {
+    "id": 1281,
+    "slug": "retail",
+    "name": "Retail"
+  },
+  {
+    "id": 1064,
+    "slug": "retrieval-augmented-generation",
+    "name": "Retrieval Augmented Generation"
+  },
+  {
+    "id": 1350,
+    "slug": "revenue-generation",
+    "name": "Revenue Generation"
+  },
+  {
+    "id": 380,
+    "slug": "revenue-growth",
+    "name": "Revenue Growth"
+  },
+  {
+    "id": 1560,
+    "slug": "reviews",
+    "name": "Reviews"
+  },
+  {
+    "id": 602,
+    "slug": "rights-cleared",
+    "name": "Rights Cleared"
+  },
+  {
+    "id": 1071,
+    "slug": "risk-analysis",
+    "name": "Risk Analysis"
+  },
+  {
+    "id": 540,
+    "slug": "robocaller",
+    "name": "Robocaller"
+  },
+  {
+    "id": 812,
+    "slug": "royalty-free",
+    "name": "Royalty Free"
+  },
+  {
+    "id": 1467,
+    "slug": "royalty-free-beats",
+    "name": "Royalty Free Beats"
+  },
+  {
+    "id": 579,
+    "slug": "royalty-free-songs",
+    "name": "Royalty Free Songs"
+  },
+  {
+    "id": 801,
+    "slug": "rpa",
+    "name": "Rpa"
+  },
+  {
+    "id": 707,
+    "slug": "runtime-decisions",
+    "name": "Runtime Decisions"
+  },
+  {
+    "id": 1669,
+    "slug": "rust",
+    "name": "Rust"
+  },
+  {
+    "id": 758,
+    "slug": "saas-analysis",
+    "name": "SAAS Analysis"
+  },
+  {
+    "id": 252,
+    "slug": "saas-support",
+    "name": "SAAS Support"
+  },
+  {
+    "id": 739,
+    "slug": "saastrigger",
+    "name": "Saastrigger"
+  },
+  {
+    "id": 527,
+    "slug": "sale",
+    "name": "Sale"
+  },
+  {
+    "id": 465,
+    "slug": "sales-assistant",
+    "name": "Sales Assistant"
+  },
+  {
+    "id": 332,
+    "slug": "sales-automation",
+    "name": "Sales Automation"
+  },
+  {
+    "id": 405,
+    "slug": "sales-support",
+    "name": "Sales Support"
+  },
+  {
+    "id": 1278,
+    "slug": "samplers",
+    "name": "Samplers"
+  },
+  {
+    "id": 1615,
+    "slug": "satirical",
+    "name": "Satirical"
+  },
+  {
+    "id": 198,
+    "slug": "scheduling",
+    "name": "Scheduling"
+  },
+  {
+    "id": 1011,
+    "slug": "scholarly-article",
+    "name": "Scholarly Article"
+  },
+  {
+    "id": 169,
+    "slug": "scholarly-literature",
+    "name": "Scholarly Literature"
+  },
+  {
+    "id": 1593,
+    "slug": "scholarly-search",
+    "name": "Scholarly Search"
+  },
+  {
+    "id": 1003,
+    "slug": "scholarship",
+    "name": "Scholarship"
+  },
+  {
+    "id": 845,
+    "slug": "scientific-illustrations",
+    "name": "Scientific Illustrations"
+  },
+  {
+    "id": 820,
+    "slug": "scientific-research",
+    "name": "Scientific Research"
+  },
+  {
+    "id": 1386,
+    "slug": "screening",
+    "name": "Screening"
+  },
+  {
+    "id": 1010,
+    "slug": "search",
+    "name": "Search"
+  },
+  {
+    "id": 283,
+    "slug": "search-assistant",
+    "name": "Search Assistant"
+  },
+  {
+    "id": 531,
+    "slug": "search-engine",
+    "name": "Search Engine"
+  },
+  {
+    "id": 1570,
+    "slug": "search-infrastructure",
+    "name": "Search Infrastructure"
+  },
+  {
+    "id": 728,
+    "slug": "secure",
+    "name": "Secure"
+  },
+  {
+    "id": 426,
+    "slug": "secure-data",
+    "name": "Secure Data"
+  },
+  {
+    "id": 139,
+    "slug": "security",
+    "name": "Security"
+  },
+  {
+    "id": 766,
+    "slug": "security-analysis",
+    "name": "Security Analysis"
+  },
+  {
+    "id": 1346,
+    "slug": "security-automation",
+    "name": "Security Automation"
+  },
+  {
+    "id": 1078,
+    "slug": "security-checker",
+    "name": "Security Checker"
+  },
+  {
+    "id": 1069,
+    "slug": "security-guidelines",
+    "name": "Security Guidelines"
+  },
+  {
+    "id": 823,
+    "slug": "security-posture",
+    "name": "Security Posture"
+  },
+  {
+    "id": 1239,
+    "slug": "security-testing",
+    "name": "Security Testing"
+  },
+  {
+    "id": 1566,
+    "slug": "self-healing",
+    "name": "Self Healing"
+  },
+  {
+    "id": 419,
+    "slug": "self-hosted",
+    "name": "Self Hosted"
+  },
+  {
+    "id": 1561,
+    "slug": "self-paced-learning",
+    "name": "Self Paced Learning"
+  },
+  {
+    "id": 1628,
+    "slug": "selfie-generator",
+    "name": "Selfie Generator"
+  },
+  {
+    "id": 997,
+    "slug": "semantics",
+    "name": "Semantics"
+  },
+  {
+    "id": 78,
+    "slug": "seo",
+    "name": "SEO"
+  },
+  {
+    "id": 494,
+    "slug": "seo-content",
+    "name": "SEO Content"
+  },
+  {
+    "id": 367,
+    "slug": "seo-friendly-titles",
+    "name": "SEO Friendly Titles"
+  },
+  {
+    "id": 140,
+    "slug": "seo-optimization",
+    "name": "SEO Optimization"
+  },
+  {
+    "id": 226,
+    "slug": "seo-tools",
+    "name": "SEO Tools"
+  },
+  {
+    "id": 840,
+    "slug": "serverless-computing",
+    "name": "Serverless Computing"
+  },
+  {
+    "id": 536,
+    "slug": "service-status",
+    "name": "Service Status"
+  },
+  {
+    "id": 769,
+    "slug": "service-update",
+    "name": "Service Update"
+  },
+  {
+    "id": 429,
+    "slug": "shift-automation",
+    "name": "Shift Automation"
+  },
+  {
+    "id": 1333,
+    "slug": "shopify",
+    "name": "Shopify"
+  },
+  {
+    "id": 940,
+    "slug": "shopping",
+    "name": "Shopping"
+  },
+  {
+    "id": 1217,
+    "slug": "signal-analysis",
+    "name": "Signal Analysis"
+  },
+  {
+    "id": 327,
+    "slug": "simplification",
+    "name": "Simplification"
+  },
+  {
+    "id": 622,
+    "slug": "simulation",
+    "name": "Simulation"
+  },
+  {
+    "id": 955,
+    "slug": "simulation-tools",
+    "name": "Simulation Tools"
+  },
+  {
+    "id": 337,
+    "slug": "sketch-to-image",
+    "name": "Sketch To Image"
+  },
+  {
+    "id": 1320,
+    "slug": "skill-development",
+    "name": "Skill Development"
+  },
+  {
+    "id": 285,
+    "slug": "skin-tone-correct",
+    "name": "Skin Tone Correct"
+  },
+  {
+    "id": 428,
+    "slug": "slack-integration",
+    "name": "Slack Integration"
+  },
+  {
+    "id": 1673,
+    "slug": "snippet-generator",
+    "name": "Snippet Generator"
+  },
+  {
+    "id": 434,
+    "slug": "snippet-management",
+    "name": "Snippet Management"
+  },
+  {
+    "id": 1299,
+    "slug": "social-impact",
+    "name": "Social Impact"
+  },
+  {
+    "id": 166,
+    "slug": "social-media",
+    "name": "Social Media"
+  },
+  {
+    "id": 1390,
+    "slug": "social-media-clips",
+    "name": "Social Media Clips"
+  },
+  {
+    "id": 1457,
+    "slug": "social-media-management",
+    "name": "Social Media Management"
+  },
+  {
+    "id": 171,
+    "slug": "software-development",
+    "name": "Software Development"
+  },
+  {
+    "id": 1027,
+    "slug": "software-maintenance",
+    "name": "Software Maintenance"
+  },
+  {
+    "id": 4,
+    "slug": "solo-founder",
+    "name": "Solo Founders"
+  },
+  {
+    "id": 965,
+    "slug": "songwriting",
+    "name": "Songwriting"
+  },
+  {
+    "id": 1115,
+    "slug": "sound-effects",
+    "name": "Sound Effects"
+  },
+  {
+    "id": 937,
+    "slug": "sound-libraries",
+    "name": "Sound Libraries"
+  },
+  {
+    "id": 824,
+    "slug": "soundscapes",
+    "name": "Soundscapes"
+  },
+  {
+    "id": 638,
+    "slug": "soundtrack",
+    "name": "Soundtrack"
+  },
+  {
+    "id": 456,
+    "slug": "spaced-repetition",
+    "name": "Spaced Repetition"
+  },
+  {
+    "id": 679,
+    "slug": "speech-recognition",
+    "name": "Speech Recognition"
+  },
+  {
+    "id": 958,
+    "slug": "spokesperson-videos",
+    "name": "Spokesperson Videos"
+  },
+  {
+    "id": 904,
+    "slug": "sports",
+    "name": "Sports"
+  },
+  {
+    "id": 280,
+    "slug": "spreadsheet",
+    "name": "Spreadsheet"
+  },
+  {
+    "id": 1262,
+    "slug": "sql-assistant",
+    "name": "SQL Assistant"
+  },
+  {
+    "id": 247,
+    "slug": "sql-generation",
+    "name": "SQL Generation"
+  },
+  {
+    "id": 555,
+    "slug": "sql-querying",
+    "name": "SQL Querying"
+  },
+  {
+    "id": 346,
+    "slug": "sre",
+    "name": "Sre"
+  },
+  {
+    "id": 1304,
+    "slug": "ssh-client",
+    "name": "Ssh Client"
+  },
+  {
+    "id": 799,
+    "slug": "stable-diffusion",
+    "name": "Stable Diffusion"
+  },
+  {
+    "id": 1201,
+    "slug": "stanford-courses",
+    "name": "Stanford Courses"
+  },
+  {
+    "id": 1150,
+    "slug": "startup",
+    "name": "Startup"
+  },
+  {
+    "id": 1485,
+    "slug": "startup-accelerator",
+    "name": "Startup Accelerator"
+  },
+  {
+    "id": 818,
+    "slug": "startup-insights",
+    "name": "Startup Insights"
+  },
+  {
+    "id": 1502,
+    "slug": "static-analysis",
+    "name": "Static Analysis"
+  },
+  {
+    "id": 1486,
+    "slug": "statistical-learning",
+    "name": "Statistical Learning"
+  },
+  {
+    "id": 1474,
+    "slug": "statistics",
+    "name": "Statistics"
+  },
+  {
+    "id": 770,
+    "slug": "status-notification",
+    "name": "Status Notification"
+  },
+  {
+    "id": 480,
+    "slug": "steganography",
+    "name": "Steganography"
+  },
+  {
+    "id": 403,
+    "slug": "step-by-step-solutions",
+    "name": "Step By Step Solutions"
+  },
+  {
+    "id": 1483,
+    "slug": "stochastic-modeling",
+    "name": "Stochastic Modeling"
+  },
+  {
+    "id": 151,
+    "slug": "stock-photos",
+    "name": "Stock Photos"
+  },
+  {
+    "id": 847,
+    "slug": "stock-research",
+    "name": "Stock Research"
+  },
+  {
+    "id": 160,
+    "slug": "story-smart",
+    "name": "Story Smart"
+  },
+  {
+    "id": 1049,
+    "slug": "streak-system",
+    "name": "Streak System"
+  },
+  {
+    "id": 176,
+    "slug": "structured-data",
+    "name": "Structured Data"
+  },
+  {
+    "id": 265,
+    "slug": "study-tools",
+    "name": "Study Tools"
+  },
+  {
+    "id": 790,
+    "slug": "stunning-images",
+    "name": "Stunning Images"
+  },
+  {
+    "id": 784,
+    "slug": "style-options",
+    "name": "Style Options"
+  },
+  {
+    "id": 1093,
+    "slug": "subscription-management",
+    "name": "Subscription Management"
+  },
+  {
+    "id": 340,
+    "slug": "summarization",
+    "name": "Summarization"
+  },
+  {
+    "id": 1053,
+    "slug": "supply-chain",
+    "name": "Supply Chain"
+  },
+  {
+    "id": 497,
+    "slug": "svg-generation",
+    "name": "Svg Generation"
+  },
+  {
+    "id": 1545,
+    "slug": "synthetic-content",
+    "name": "Synthetic Content"
+  },
+  {
+    "id": 670,
+    "slug": "system-design",
+    "name": "System Design"
+  },
+  {
+    "id": 614,
+    "slug": "systematic-reviews",
+    "name": "Systematic Reviews"
+  },
+  {
+    "id": 1283,
+    "slug": "tailwind-css",
+    "name": "Tailwind CSS"
+  },
+  {
+    "id": 421,
+    "slug": "task-automation",
+    "name": "Task Automation"
+  },
+  {
+    "id": 205,
+    "slug": "task-management",
+    "name": "Task Management"
+  },
+  {
+    "id": 1379,
+    "slug": "task-tracking",
+    "name": "Task Tracking"
+  },
+  {
+    "id": 1351,
+    "slug": "tattoo-generation",
+    "name": "Tattoo Generation"
+  },
+  {
+    "id": 675,
+    "slug": "tech",
+    "name": "Tech"
+  },
+  {
+    "id": 1263,
+    "slug": "tech-analysis",
+    "name": "Tech Analysis"
+  },
+  {
+    "id": 1030,
+    "slug": "tech-community",
+    "name": "Tech Community"
+  },
+  {
+    "id": 607,
+    "slug": "tech-news",
+    "name": "Tech News"
+  },
+  {
+    "id": 1518,
+    "slug": "tech-society",
+    "name": "Tech Society"
+  },
+  {
+    "id": 830,
+    "slug": "technical-diagrams",
+    "name": "Technical Diagrams"
+  },
+  {
+    "id": 501,
+    "slug": "technical-translations",
+    "name": "Technical Translations"
+  },
+  {
+    "id": 1182,
+    "slug": "technological-change",
+    "name": "Technological Change"
+  },
+  {
+    "id": 506,
+    "slug": "technology-trends",
+    "name": "Technology Trends"
+  },
+  {
+    "id": 572,
+    "slug": "telegram-bot",
+    "name": "Telegram Bot"
+  },
+  {
+    "id": 142,
+    "slug": "template-based",
+    "name": "Template Based"
+  },
+  {
+    "id": 1453,
+    "slug": "template-design",
+    "name": "Template Design"
+  },
+  {
+    "id": 1451,
+    "slug": "template-library",
+    "name": "Template Library"
+  },
+  {
+    "id": 401,
+    "slug": "template-suggestions",
+    "name": "Template Suggestions"
+  },
+  {
+    "id": 167,
+    "slug": "templates",
+    "name": "Templates"
+  },
+  {
+    "id": 962,
+    "slug": "tensor-debugging",
+    "name": "Tensor Debugging"
+  },
+  {
+    "id": 550,
+    "slug": "terminal",
+    "name": "Terminal"
+  },
+  {
+    "id": 1557,
+    "slug": "terminal-assistant",
+    "name": "Terminal Assistant"
+  },
+  {
+    "id": 1339,
+    "slug": "terminal-based",
+    "name": "Terminal Based"
+  },
+  {
+    "id": 876,
+    "slug": "terminal-tool",
+    "name": "Terminal Tool"
+  },
+  {
+    "id": 1203,
+    "slug": "terminology",
+    "name": "Terminology"
+  },
+  {
+    "id": 1515,
+    "slug": "terminology-update",
+    "name": "Terminology Update"
+  },
+  {
+    "id": 1306,
+    "slug": "test-automation",
+    "name": "Test Automation"
+  },
+  {
+    "id": 1230,
+    "slug": "testing",
+    "name": "Testing"
+  },
+  {
+    "id": 379,
+    "slug": "testing-platform",
+    "name": "Testing Platform"
+  },
+  {
+    "id": 484,
+    "slug": "text-automation",
+    "name": "Text Automation"
+  },
+  {
+    "id": 724,
+    "slug": "text-generation",
+    "name": "Text Generation"
+  },
+  {
+    "id": 1552,
+    "slug": "text-mining",
+    "name": "Text Mining"
+  },
+  {
+    "id": 1179,
+    "slug": "text-processing",
+    "name": "Text Processing"
+  },
+  {
+    "id": 1341,
+    "slug": "text-to-app",
+    "name": "Text To App"
+  },
+  {
+    "id": 87,
+    "slug": "text-to-image",
+    "name": "Text To Image"
+  },
+  {
+    "id": 1456,
+    "slug": "text-to-media",
+    "name": "Text To Media"
+  },
+  {
+    "id": 1311,
+    "slug": "text-to-multimodal",
+    "name": "Text To Multimodal"
+  },
+  {
+    "id": 111,
+    "slug": "text-to-speech",
+    "name": "Text To Speech"
+  },
+  {
+    "id": 1116,
+    "slug": "text-to-video",
+    "name": "Text To Video"
+  },
+  {
+    "id": 1256,
+    "slug": "thought-leadership",
+    "name": "Thought Leadership"
+  },
+  {
+    "id": 1035,
+    "slug": "threat-detection",
+    "name": "Threat Detection"
+  },
+  {
+    "id": 1129,
+    "slug": "threat-intelligence",
+    "name": "Threat Intelligence"
+  },
+  {
+    "id": 1369,
+    "slug": "time-tracking",
+    "name": "Time Tracking"
+  },
+  {
+    "id": 1054,
+    "slug": "timeline",
+    "name": "Timeline"
+  },
+  {
+    "id": 1555,
+    "slug": "tldraw",
+    "name": "Tldraw"
+  },
+  {
+    "id": 1556,
+    "slug": "tmux",
+    "name": "Tmux"
+  },
+  {
+    "id": 230,
+    "slug": "todo-app",
+    "name": "Todo App"
+  },
+  {
+    "id": 989,
+    "slug": "tool",
+    "name": "Tool"
+  },
+  {
+    "id": 525,
+    "slug": "tool-curation",
+    "name": "Tool Curation"
+  },
+  {
+    "id": 586,
+    "slug": "tool-discovery",
+    "name": "Tool Discovery"
+  },
+  {
+    "id": 1040,
+    "slug": "tool-insights",
+    "name": "Tool Insights"
+  },
+  {
+    "id": 950,
+    "slug": "tool-ranking",
+    "name": "Tool Ranking"
+  },
+  {
+    "id": 641,
+    "slug": "tool-selection",
+    "name": "Tool Selection"
+  },
+  {
+    "id": 774,
+    "slug": "topological-data-analysis",
+    "name": "Topological Data Analysis"
+  },
+  {
+    "id": 1569,
+    "slug": "traceability",
+    "name": "Traceability"
+  },
+  {
+    "id": 1138,
+    "slug": "trading-platform",
+    "name": "Trading Platform"
+  },
+  {
+    "id": 779,
+    "slug": "training",
+    "name": "Training"
+  },
+  {
+    "id": 729,
+    "slug": "training-content",
+    "name": "Training Content"
+  },
+  {
+    "id": 1204,
+    "slug": "transaction",
+    "name": "Transaction"
+  },
+  {
+    "id": 98,
+    "slug": "transcription",
+    "name": "Transcription"
+  },
+  {
+    "id": 1535,
+    "slug": "transformative-ai",
+    "name": "Transformative AI"
+  },
+  {
+    "id": 1056,
+    "slug": "transformer-evaluation",
+    "name": "Transformer Evaluation"
+  },
+  {
+    "id": 309,
+    "slug": "translation",
+    "name": "Translation"
+  },
+  {
+    "id": 1520,
+    "slug": "transparency",
+    "name": "Transparency"
+  },
+  {
+    "id": 1422,
+    "slug": "travel-assistant",
+    "name": "Travel Assistant"
+  },
+  {
+    "id": 293,
+    "slug": "trustworthiness-scores",
+    "name": "Trustworthiness Scores"
+  },
+  {
+    "id": 52,
+    "slug": "tts",
+    "name": "TTS"
+  },
+  {
+    "id": 1057,
+    "slug": "turing-completeness",
+    "name": "Turing Completeness"
+  },
+  {
+    "id": 1637,
+    "slug": "tutorial",
+    "name": "Tutorial"
+  },
+  {
+    "id": 750,
+    "slug": "typescript",
+    "name": "Typescript"
+  },
+  {
+    "id": 1581,
+    "slug": "ugc-generation",
+    "name": "Ugc Generation"
+  },
+  {
+    "id": 180,
+    "slug": "ui-builder",
+    "name": "UI Builder"
+  },
+  {
+    "id": 1251,
+    "slug": "ui-component-generator",
+    "name": "UI Component Generator"
+  },
+  {
+    "id": 653,
+    "slug": "ui-components",
+    "name": "UI Components"
+  },
+  {
+    "id": 1448,
+    "slug": "ui-design",
+    "name": "UI Design"
+  },
+  {
+    "id": 1006,
+    "slug": "ui-development",
+    "name": "UI Development"
+  },
+  {
+    "id": 334,
+    "slug": "ui-generation",
+    "name": "UI Generation"
+  },
+  {
+    "id": 1087,
+    "slug": "ui-prototyping",
+    "name": "UI Prototyping"
+  },
+  {
+    "id": 772,
+    "slug": "unified",
+    "name": "Unified"
+  },
+  {
+    "id": 749,
+    "slug": "unified-access",
+    "name": "Unified Access"
+  },
+  {
+    "id": 797,
+    "slug": "unit-testing",
+    "name": "Unit Testing"
+  },
+  {
+    "id": 1602,
+    "slug": "university-tools",
+    "name": "University Tools"
+  },
+  {
+    "id": 1184,
+    "slug": "unstructured-data",
+    "name": "Unstructured Data"
+  },
+  {
+    "id": 976,
+    "slug": "upsampling",
+    "name": "Upsampling"
+  },
+  {
+    "id": 513,
+    "slug": "upscaling",
+    "name": "Upscaling"
+  },
+  {
+    "id": 1440,
+    "slug": "upskilling",
+    "name": "Upskilling"
+  },
+  {
+    "id": 534,
+    "slug": "uptime",
+    "name": "Uptime"
+  },
+  {
+    "id": 444,
+    "slug": "uptime-monitoring",
+    "name": "Uptime Monitoring"
+  },
+  {
+    "id": 1123,
+    "slug": "url-redirection",
+    "name": "Url Redirection"
+  },
+  {
+    "id": 1295,
+    "slug": "use-cases",
+    "name": "Use Cases"
+  },
+  {
+    "id": 1572,
+    "slug": "user-experience",
+    "name": "User Experience"
+  },
+  {
+    "id": 1020,
+    "slug": "user-generated-content",
+    "name": "User Generated Content"
+  },
+  {
+    "id": 1291,
+    "slug": "user-interface",
+    "name": "User Interface"
+  },
+  {
+    "id": 1609,
+    "slug": "validation",
+    "name": "Validation"
+  },
+  {
+    "id": 1343,
+    "slug": "vector-database",
+    "name": "Vector Database"
+  },
+  {
+    "id": 1499,
+    "slug": "vector-editing",
+    "name": "Vector Editing"
+  },
+  {
+    "id": 496,
+    "slug": "vector-graphics",
+    "name": "Vector Graphics"
+  },
+  {
+    "id": 1571,
+    "slug": "vector-search",
+    "name": "Vector Search"
+  },
+  {
+    "id": 886,
+    "slug": "version-control",
+    "name": "Version Control"
+  },
+  {
+    "id": 811,
+    "slug": "video-analysis",
+    "name": "Video Analysis"
+  },
+  {
+    "id": 1632,
+    "slug": "video-apps",
+    "name": "Video Apps"
+  },
+  {
+    "id": 210,
+    "slug": "video-clipping",
+    "name": "Video Clipping"
+  },
+  {
+    "id": 1280,
+    "slug": "video-commerce",
+    "name": "Video Commerce"
+  },
+  {
+    "id": 591,
+    "slug": "video-creator",
+    "name": "Video Creator"
+  },
+  {
+    "id": 129,
+    "slug": "video-editing",
+    "name": "Video Editing"
+  },
+  {
+    "id": 183,
+    "slug": "video-generation",
+    "name": "Video Generation"
+  },
+  {
+    "id": 1618,
+    "slug": "video-hosting",
+    "name": "Video Hosting"
+  },
+  {
+    "id": 1021,
+    "slug": "video-marketing",
+    "name": "Video Marketing"
+  },
+  {
+    "id": 1191,
+    "slug": "video-synthesis",
+    "name": "Video Synthesis"
+  },
+  {
+    "id": 1452,
+    "slug": "viral-content",
+    "name": "Viral Content"
+  },
+  {
+    "id": 447,
+    "slug": "viral-posting",
+    "name": "Viral Posting"
+  },
+  {
+    "id": 1424,
+    "slug": "virtual-machine",
+    "name": "Virtual Machine"
+  },
+  {
+    "id": 1629,
+    "slug": "virtual-selfies",
+    "name": "Virtual Selfies"
+  },
+  {
+    "id": 858,
+    "slug": "visual-ai",
+    "name": "Visual AI"
+  },
+  {
+    "id": 1672,
+    "slug": "visual-content",
+    "name": "Visual Content"
+  },
+  {
+    "id": 382,
+    "slug": "visual-creation",
+    "name": "Visual Creation"
+  },
+  {
+    "id": 66,
+    "slug": "visual-design",
+    "name": "Visual Design"
+  },
+  {
+    "id": 893,
+    "slug": "visual-development",
+    "name": "Visual Development"
+  },
+  {
+    "id": 84,
+    "slug": "visual-editor",
+    "name": "Visual Editor"
+  },
+  {
+    "id": 73,
+    "slug": "visual-intelligence",
+    "name": "Visual Intelligence"
+  },
+  {
+    "id": 581,
+    "slug": "visual-presentations",
+    "name": "Visual Presentations"
+  },
+  {
+    "id": 619,
+    "slug": "visual-reports",
+    "name": "Visual Reports"
+  },
+  {
+    "id": 1151,
+    "slug": "visual-storytelling",
+    "name": "Visual Storytelling"
+  },
+  {
+    "id": 1118,
+    "slug": "visual-testing",
+    "name": "Visual Testing"
+  },
+  {
+    "id": 1121,
+    "slug": "visual-thinking",
+    "name": "Visual Thinking"
+  },
+  {
+    "id": 1643,
+    "slug": "visualize",
+    "name": "Visualize"
+  },
+  {
+    "id": 195,
+    "slug": "vocal-removal",
+    "name": "Vocal Removal"
+  },
+  {
+    "id": 1143,
+    "slug": "vocals",
+    "name": "Vocals"
+  },
+  {
+    "id": 794,
+    "slug": "voice-assistant",
+    "name": "Voice Assistant"
+  },
+  {
+    "id": 680,
+    "slug": "voice-automation",
+    "name": "Voice Automation"
+  },
+  {
+    "id": 786,
+    "slug": "voice-chat",
+    "name": "Voice Chat"
+  },
+  {
+    "id": 131,
+    "slug": "voice-cloning",
+    "name": "Voice Cloning"
+  },
+  {
+    "id": 51,
+    "slug": "voice-generation",
+    "name": "Voice Generation"
+  },
+  {
+    "id": 920,
+    "slug": "voice-synthesis",
+    "name": "Voice Synthesis"
+  },
+  {
+    "id": 1652,
+    "slug": "voice-to-text",
+    "name": "Voice To Text"
+  },
+  {
+    "id": 1624,
+    "slug": "voice-transformation",
+    "name": "Voice Transformation"
+  },
+  {
+    "id": 224,
+    "slug": "voice-typing",
+    "name": "Voice Typing"
+  },
+  {
+    "id": 520,
+    "slug": "voiceover",
+    "name": "Voiceover"
+  },
+  {
+    "id": 960,
+    "slug": "voip",
+    "name": "Voip"
+  },
+  {
+    "id": 1537,
+    "slug": "vs-code-compatible",
+    "name": "Vs Code Compatible"
+  },
+  {
+    "id": 1620,
+    "slug": "vs-code-extension",
+    "name": "Vs Code Extension"
+  },
+  {
+    "id": 1381,
+    "slug": "vscode-extension",
+    "name": "Vscode Extension"
+  },
+  {
+    "id": 1247,
+    "slug": "vulnerability-analysis",
+    "name": "Vulnerability Analysis"
+  },
+  {
+    "id": 1345,
+    "slug": "vulnerability-management",
+    "name": "Vulnerability Management"
+  },
+  {
+    "id": 1600,
+    "slug": "wasp-framework",
+    "name": "Wasp Framework"
+  },
+  {
+    "id": 1638,
+    "slug": "web-app-generator",
+    "name": "Web App Generator"
+  },
+  {
+    "id": 164,
+    "slug": "web-apps",
+    "name": "Web Apps"
+  },
+  {
+    "id": 1068,
+    "slug": "web-content",
+    "name": "Web Content"
+  },
+  {
+    "id": 833,
+    "slug": "web-crawling",
+    "name": "Web Crawling"
+  },
+  {
+    "id": 1098,
+    "slug": "web-data",
+    "name": "Web Data"
+  },
+  {
+    "id": 174,
+    "slug": "web-data-extraction",
+    "name": "Web Data Extraction"
+  },
+  {
+    "id": 1252,
+    "slug": "web-development",
+    "name": "Web Development"
+  },
+  {
+    "id": 360,
+    "slug": "web-extension",
+    "name": "Web Extension"
+  },
+  {
+    "id": 1124,
+    "slug": "web-navigation",
+    "name": "Web Navigation"
+  },
+  {
+    "id": 1323,
+    "slug": "web-page-generator",
+    "name": "Web Page Generator"
+  },
+  {
+    "id": 47,
+    "slug": "web-scraping",
+    "name": "Web Scraping"
+  },
+  {
+    "id": 412,
+    "slug": "web-search",
+    "name": "Web Search"
+  },
+  {
+    "id": 503,
+    "slug": "web-search-api",
+    "name": "Web Search API"
+  },
+  {
+    "id": 1659,
+    "slug": "web-testing",
+    "name": "Web Testing"
+  },
+  {
+    "id": 5,
+    "slug": "webhooks",
+    "name": "Webhooks"
+  },
+  {
+    "id": 462,
+    "slug": "website",
+    "name": "Website"
+  },
+  {
+    "id": 1186,
+    "slug": "website-analysis",
+    "name": "Website Analysis"
+  },
+  {
+    "id": 105,
+    "slug": "website-builder",
+    "name": "Website Builder"
+  },
+  {
+    "id": 363,
+    "slug": "website-copilot",
+    "name": "Website Copilot"
+  },
+  {
+    "id": 289,
+    "slug": "website-integration",
+    "name": "Website Integration"
+  },
+  {
+    "id": 308,
+    "slug": "website-protection",
+    "name": "Website Protection"
+  },
+  {
+    "id": 1666,
+    "slug": "well-being",
+    "name": "Well Being"
+  },
+  {
+    "id": 424,
+    "slug": "window-management",
+    "name": "Window Management"
+  },
+  {
+    "id": 1588,
+    "slug": "wireframes",
+    "name": "Wireframes"
+  },
+  {
+    "id": 351,
+    "slug": "workbench",
+    "name": "Workbench"
+  },
+  {
+    "id": 153,
+    "slug": "workflow",
+    "name": "Workflow"
+  },
+  {
+    "id": 49,
+    "slug": "workflow-automation",
+    "name": "Workflow Automation"
+  },
+  {
+    "id": 951,
+    "slug": "workflow-streamlining",
+    "name": "Workflow Streamlining"
+  },
+  {
+    "id": 56,
+    "slug": "workspace",
+    "name": "Workspace"
+  },
+  {
+    "id": 409,
+    "slug": "workspace-management",
+    "name": "Workspace Management"
+  },
+  {
+    "id": 116,
+    "slug": "world-modeling",
+    "name": "World Modeling"
+  },
+  {
+    "id": 1275,
+    "slug": "worldbuilding",
+    "name": "Worldbuilding"
+  },
+  {
+    "id": 69,
+    "slug": "writing-assistant",
+    "name": "Writing Assistant"
+  },
+  {
+    "id": 108,
+    "slug": "writing-helper",
+    "name": "Writing Helper"
+  },
+  {
+    "id": 911,
+    "slug": "writing-quality",
+    "name": "Writing Quality"
+  },
+  {
+    "id": 935,
+    "slug": "writing-tools",
+    "name": "Writing Tools"
+  },
+  {
+    "id": 1661,
+    "slug": "xai",
+    "name": "Xai"
+  },
+  {
+    "id": 1493,
+    "slug": "youtube-summarizer",
+    "name": "Youtube Summarizer"
+  },
+  {
+    "id": 1139,
+    "slug": "zero-fees",
+    "name": "Zero Fees"
+  }
+]
