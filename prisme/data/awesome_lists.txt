@@ -1,0 +1,14 @@
+# Listes GitHub "awesome AI tools" a moissonner par b0_discovery.py
+# 1 URL de README brut (raw.githubusercontent.com) par ligne. # = commentaire.
+# Ajoute librement de nouvelles listes ici, aucune modif de code requise.
+https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md
+https://raw.githubusercontent.com/steven2358/awesome-generative-ai/master/README.md
+https://raw.githubusercontent.com/eudk/awesome-ai-tools/main/README.md
+https://raw.githubusercontent.com/re50urces/Awesome-AI/main/README.md
+https://raw.githubusercontent.com/ai-collection/ai-collection/main/README.md
+https://raw.githubusercontent.com/altryne/awesome-ai-tools/main/README.md
+https://raw.githubusercontent.com/jamesmurdza/awesome-ai-devtools/main/README.md
+https://raw.githubusercontent.com/GitHubDaily/Awesome-AI-Tools/main/README.md
+https://raw.githubusercontent.com/best-of-lists/best-of-ai/main/README.md
+https://raw.githubusercontent.com/filipecalegario/awesome-generative-ai/main/README.md
+https://raw.githubusercontent.com/aimerou/awesome-ai-tools/main/README.md

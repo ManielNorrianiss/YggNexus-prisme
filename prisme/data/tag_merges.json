@@ -1,0 +1,2986 @@
+[
+  {
+    "canonical": {
+      "id": 420,
+      "slug": "plagiarism-checker",
+      "name": "Plagiarism Checker",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 136,
+        "slug": "plagiarism-detection",
+        "name": "Plagiarism Detection",
+        "tool_count": 1,
+        "score": 0.9405
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 45,
+      "slug": "data-analysis",
+      "name": "Data Analysis",
+      "tool_count": 13
+    },
+    "aliases": [
+      {
+        "id": 872,
+        "slug": "analysis",
+        "name": "Analysis",
+        "tool_count": 6,
+        "score": 0.9386
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 46,
+      "slug": "ai-tools",
+      "name": "AI Tools",
+      "tool_count": 16
+    },
+    "aliases": [
+      {
+        "id": 1634,
+        "slug": "ai-tool",
+        "name": "AI Tool",
+        "tool_count": 1,
+        "score": 0.9622
+      },
+      {
+        "id": 945,
+        "slug": "ai-coding-tools",
+        "name": "AI Coding Tools",
+        "tool_count": 3,
+        "score": 0.9324
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 47,
+      "slug": "web-scraping",
+      "name": "Web Scraping",
+      "tool_count": 11
+    },
+    "aliases": [
+      {
+        "id": 1646,
+        "slug": "webscraping",
+        "name": "Webscraping",
+        "tool_count": 1,
+        "score": 0.9705
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 48,
+      "slug": "automation",
+      "name": "Automation",
+      "tool_count": 124
+    },
+    "aliases": [
+      {
+        "id": 152,
+        "slug": "ai-automation",
+        "name": "AI Automation",
+        "tool_count": 4,
+        "score": 0.9421
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1,
+      "slug": "no-code",
+      "name": "No-Code",
+      "tool_count": 95
+    },
+    "aliases": [
+      {
+        "id": 1427,
+        "slug": "non-code",
+        "name": "Non Code",
+        "tool_count": 1,
+        "score": 0.9593
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 50,
+      "slug": "app-building",
+      "name": "App Building",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 186,
+        "slug": "app-builder",
+        "name": "App Builder",
+        "tool_count": 3,
+        "score": 0.9308
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 51,
+      "slug": "voice-generation",
+      "name": "Voice Generation",
+      "tool_count": 8
+    },
+    "aliases": [
+      {
+        "id": 595,
+        "slug": "speech-generation",
+        "name": "Speech Generation",
+        "tool_count": 1,
+        "score": 0.9625
+      },
+      {
+        "id": 235,
+        "slug": "ai-voice-generation",
+        "name": "AI Voice Generation",
+        "tool_count": 1,
+        "score": 0.9438
+      },
+      {
+        "id": 1466,
+        "slug": "sound-generation",
+        "name": "Sound Generation",
+        "tool_count": 2,
+        "score": 0.9376
+      },
+      {
+        "id": 521,
+        "slug": "audio-generation",
+        "name": "Audio Generation",
+        "tool_count": 5,
+        "score": 0.9318
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 53,
+      "slug": "ai-speech",
+      "name": "AI Speech",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 1625,
+        "slug": "ai-voice",
+        "name": "AI Voice",
+        "tool_count": 2,
+        "score": 0.9419
+      },
+      {
+        "id": 112,
+        "slug": "ai-voices",
+        "name": "AI Voices",
+        "tool_count": 1,
+        "score": 0.9398
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 54,
+      "slug": "audio-content",
+      "name": "Audio Content",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1408,
+        "slug": "audio",
+        "name": "Audio",
+        "tool_count": 1,
+        "score": 0.9326
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 55,
+      "slug": "collaboration",
+      "name": "Collaboration",
+      "tool_count": 15
+    },
+    "aliases": [
+      {
+        "id": 249,
+        "slug": "collaborative",
+        "name": "Collaborative",
+        "tool_count": 1,
+        "score": 0.9623
+      },
+      {
+        "id": 157,
+        "slug": "team-collaboration",
+        "name": "Team Collaboration",
+        "tool_count": 4,
+        "score": 0.9479
+      },
+      {
+        "id": 1444,
+        "slug": "community-collaboration",
+        "name": "Community Collaboration",
+        "tool_count": 1,
+        "score": 0.947
+      },
+      {
+        "id": 209,
+        "slug": "document-collaboration",
+        "name": "Document Collaboration",
+        "tool_count": 1,
+        "score": 0.9467
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 59,
+      "slug": "ai-research",
+      "name": "AI Research",
+      "tool_count": 19
+    },
+    "aliases": [
+      {
+        "id": 834,
+        "slug": "ai-study",
+        "name": "AI Study",
+        "tool_count": 1,
+        "score": 0.9309
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 72,
+      "slug": "ai-writing",
+      "name": "AI Writing",
+      "tool_count": 12
+    },
+    "aliases": [
+      {
+        "id": 133,
+        "slug": "ai-writing-assistant",
+        "name": "AI Writing Assistant",
+        "tool_count": 10,
+        "score": 0.9475
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 398,
+      "slug": "photo-editing",
+      "name": "Photo Editing",
+      "tool_count": 9
+    },
+    "aliases": [
+      {
+        "id": 74,
+        "slug": "image-editing",
+        "name": "Image Editing",
+        "tool_count": 6,
+        "score": 0.9713
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 85,
+      "slug": "integration",
+      "name": "Integration",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 75,
+        "slug": "integrations",
+        "name": "Integrations",
+        "tool_count": 6,
+        "score": 0.9855
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 80,
+      "slug": "ai-image-generation",
+      "name": "AI Image Generation",
+      "tool_count": 24
+    },
+    "aliases": [
+      {
+        "id": 341,
+        "slug": "ai-generated-images",
+        "name": "AI Generated Images",
+        "tool_count": 1,
+        "score": 0.9689
+      },
+      {
+        "id": 1163,
+        "slug": "ai-image-generator",
+        "name": "AI Image Generator",
+        "tool_count": 1,
+        "score": 0.9669
+      },
+      {
+        "id": 844,
+        "slug": "ai-figure-generation",
+        "name": "AI Figure Generation",
+        "tool_count": 1,
+        "score": 0.9482
+      },
+      {
+        "id": 103,
+        "slug": "image-generation",
+        "name": "Image Generation",
+        "tool_count": 22,
+        "score": 0.946
+      },
+      {
+        "id": 458,
+        "slug": "ai-generation",
+        "name": "AI Generation",
+        "tool_count": 3,
+        "score": 0.9375
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 100,
+      "slug": "content-creation",
+      "name": "Content Creation",
+      "tool_count": 38
+    },
+    "aliases": [
+      {
+        "id": 82,
+        "slug": "content-production",
+        "name": "Content Production",
+        "tool_count": 2,
+        "score": 0.9467
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1252,
+      "slug": "web-development",
+      "name": "Web Development",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 83,
+        "slug": "web-design",
+        "name": "Web Design",
+        "tool_count": 1,
+        "score": 0.9396
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 86,
+      "slug": "ai-workflows",
+      "name": "AI Workflows",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 369,
+        "slug": "ai-workflow",
+        "name": "AI Workflow",
+        "tool_count": 2,
+        "score": 0.9796
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 92,
+      "slug": "ai-generative",
+      "name": "AI Generative",
+      "tool_count": 10
+    },
+    "aliases": [
+      {
+        "id": 523,
+        "slug": "generative-ai",
+        "name": "Generative AI",
+        "tool_count": 6,
+        "score": 0.981
+      },
+      {
+        "id": 182,
+        "slug": "ai-generative-design",
+        "name": "AI Generative Design",
+        "tool_count": 1,
+        "score": 0.965
+      },
+      {
+        "id": 1238,
+        "slug": "ai-generate",
+        "name": "AI Generate",
+        "tool_count": 1,
+        "score": 0.957
+      },
+      {
+        "id": 188,
+        "slug": "ai-generative-art",
+        "name": "AI Generative Art",
+        "tool_count": 3,
+        "score": 0.9526
+      },
+      {
+        "id": 1627,
+        "slug": "ai-generative-tools",
+        "name": "AI Generative Tools",
+        "tool_count": 1,
+        "score": 0.9389
+      },
+      {
+        "id": 437,
+        "slug": "ai-generated",
+        "name": "AI Generated",
+        "tool_count": 3,
+        "score": 0.9381
+      },
+      {
+        "id": 785,
+        "slug": "ai-generators",
+        "name": "AI Generators",
+        "tool_count": 1,
+        "score": 0.9328
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 94,
+      "slug": "ai-models",
+      "name": "AI Models",
+      "tool_count": 11
+    },
+    "aliases": [
+      {
+        "id": 1549,
+        "slug": "ai-model",
+        "name": "AI Model",
+        "tool_count": 1,
+        "score": 0.9787
+      },
+      {
+        "id": 1214,
+        "slug": "ai-model-analysis",
+        "name": "AI Model Analysis",
+        "tool_count": 1,
+        "score": 0.9506
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 95,
+      "slug": "code-generation",
+      "name": "Code Generation",
+      "tool_count": 14
+    },
+    "aliases": [
+      {
+        "id": 1599,
+        "slug": "ai-code-generation",
+        "name": "AI Code Generation",
+        "tool_count": 1,
+        "score": 0.9319
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 96,
+      "slug": "ai-editing",
+      "name": "AI Editing",
+      "tool_count": 12
+    },
+    "aliases": [
+      {
+        "id": 318,
+        "slug": "ai-editor",
+        "name": "AI Editor",
+        "tool_count": 2,
+        "score": 0.9372
+      },
+      {
+        "id": 1389,
+        "slug": "ai-video-editing",
+        "name": "AI Video Editing",
+        "tool_count": 2,
+        "score": 0.9328
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 98,
+      "slug": "transcription",
+      "name": "Transcription",
+      "tool_count": 12
+    },
+    "aliases": [
+      {
+        "id": 310,
+        "slug": "voice-transcription",
+        "name": "Voice Transcription",
+        "tool_count": 1,
+        "score": 0.9347
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 102,
+      "slug": "ai-art",
+      "name": "AI Art",
+      "tool_count": 32
+    },
+    "aliases": [
+      {
+        "id": 1376,
+        "slug": "ai-painting",
+        "name": "AI Painting",
+        "tool_count": 1,
+        "score": 0.9344
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 143,
+      "slug": "ai-app-builder",
+      "name": "AI App Builder",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 104,
+        "slug": "ai-builder",
+        "name": "AI Builder",
+        "tool_count": 3,
+        "score": 0.9328
+      },
+      {
+        "id": 233,
+        "slug": "ai-web-builder",
+        "name": "AI Web Builder",
+        "tool_count": 1,
+        "score": 0.8791
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 105,
+      "slug": "website-builder",
+      "name": "Website Builder",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 354,
+        "slug": "website-building",
+        "name": "Website Building",
+        "tool_count": 1,
+        "score": 0.9313
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 43,
+      "slug": "ai-assistant",
+      "name": "AI Assistant",
+      "tool_count": 30
+    },
+    "aliases": [
+      {
+        "id": 106,
+        "slug": "ai-assistance",
+        "name": "AI Assistance",
+        "tool_count": 4,
+        "score": 0.9741
+      },
+      {
+        "id": 148,
+        "slug": "ai-assisted",
+        "name": "AI Assisted",
+        "tool_count": 6,
+        "score": 0.9612
+      },
+      {
+        "id": 242,
+        "slug": "ai-support",
+        "name": "AI Support",
+        "tool_count": 5,
+        "score": 0.9473
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 107,
+      "slug": "productivity",
+      "name": "Productivity",
+      "tool_count": 23
+    },
+    "aliases": [
+      {
+        "id": 411,
+        "slug": "team-productivity",
+        "name": "Team Productivity",
+        "tool_count": 3,
+        "score": 0.9323
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 110,
+      "slug": "customization",
+      "name": "Customization",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1058,
+        "slug": "personalization",
+        "name": "Personalization",
+        "tool_count": 1,
+        "score": 0.935
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 111,
+      "slug": "text-to-speech",
+      "name": "Text To Speech",
+      "tool_count": 12
+    },
+    "aliases": [
+      {
+        "id": 498,
+        "slug": "speech-to-text",
+        "name": "Speech To Text",
+        "tool_count": 5,
+        "score": 0.974
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 115,
+      "slug": "ai-simulation",
+      "name": "AI Simulation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1193,
+        "slug": "ai-animal-simulation",
+        "name": "AI Animal Simulation",
+        "tool_count": 1,
+        "score": 0.9388
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 117,
+      "slug": "interactive-simulation",
+      "name": "Interactive Simulation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1195,
+        "slug": "interactive-simulations",
+        "name": "Interactive Simulations",
+        "tool_count": 1,
+        "score": 0.9939
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 118,
+      "slug": "ai-music",
+      "name": "AI Music",
+      "tool_count": 20
+    },
+    "aliases": [
+      {
+        "id": 1464,
+        "slug": "ai-songs",
+        "name": "AI Songs",
+        "tool_count": 1,
+        "score": 0.9351
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 119,
+      "slug": "music-generation",
+      "name": "Music Generation",
+      "tool_count": 8
+    },
+    "aliases": [
+      {
+        "id": 231,
+        "slug": "song-generation",
+        "name": "Song Generation",
+        "tool_count": 4,
+        "score": 0.9562
+      },
+      {
+        "id": 647,
+        "slug": "melody-generation",
+        "name": "Melody Generation",
+        "tool_count": 2,
+        "score": 0.9475
+      },
+      {
+        "id": 232,
+        "slug": "music-creation",
+        "name": "Music Creation",
+        "tool_count": 4,
+        "score": 0.9411
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 120,
+      "slug": "composition",
+      "name": "Composition",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 663,
+        "slug": "music-composition",
+        "name": "Music Composition",
+        "tool_count": 1,
+        "score": 0.935
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 125,
+      "slug": "metrics",
+      "name": "Metrics",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 390,
+        "slug": "metrics-analysis",
+        "name": "Metrics Analysis",
+        "tool_count": 1,
+        "score": 0.9375
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 128,
+      "slug": "ai-creation",
+      "name": "AI Creation",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 1426,
+        "slug": "ai-game-creation",
+        "name": "AI Game Creation",
+        "tool_count": 1,
+        "score": 0.9433
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 135,
+      "slug": "content-enhancement",
+      "name": "Content Enhancement",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 267,
+        "slug": "ai-content-enhancement",
+        "name": "AI Content Enhancement",
+        "tool_count": 1,
+        "score": 0.9358
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1126,
+      "slug": "deepfake",
+      "name": "Deepfake",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 137,
+        "slug": "deepfake-detection",
+        "name": "Deepfake Detection",
+        "tool_count": 1,
+        "score": 0.9434
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 192,
+      "slug": "multimodal",
+      "name": "Multimodal",
+      "tool_count": 17
+    },
+    "aliases": [
+      {
+        "id": 138,
+        "slug": "multimodal-analysis",
+        "name": "Multimodal Analysis",
+        "tool_count": 1,
+        "score": 0.9321
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 139,
+      "slug": "security",
+      "name": "Security",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 1362,
+        "slug": "privacy-security",
+        "name": "Privacy Security",
+        "tool_count": 1,
+        "score": 0.9339
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 153,
+      "slug": "workflow",
+      "name": "Workflow",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 451,
+        "slug": "workflows",
+        "name": "Workflows",
+        "tool_count": 1,
+        "score": 0.9732
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 158,
+      "slug": "meeting-notes",
+      "name": "Meeting Notes",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 178,
+        "slug": "meeting-notetaking",
+        "name": "Meeting Notetaking",
+        "tool_count": 1,
+        "score": 0.9503
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 161,
+      "slug": "editing",
+      "name": "Editing",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1517,
+        "slug": "content-editing",
+        "name": "Content Editing",
+        "tool_count": 1,
+        "score": 0.9306
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 164,
+      "slug": "web-apps",
+      "name": "Web Apps",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 646,
+        "slug": "web-app",
+        "name": "Web App",
+        "tool_count": 1,
+        "score": 0.9495
+      },
+      {
+        "id": 1601,
+        "slug": "web-application",
+        "name": "Web Application",
+        "tool_count": 1,
+        "score": 0.9434
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 179,
+      "slug": "ai-summarization",
+      "name": "AI Summarization",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 1494,
+        "slug": "ai-summary",
+        "name": "AI Summary",
+        "tool_count": 1,
+        "score": 0.9587
+      },
+      {
+        "id": 1225,
+        "slug": "ai-research-summarization",
+        "name": "AI Research Summarization",
+        "tool_count": 1,
+        "score": 0.9397
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 183,
+      "slug": "video-generation",
+      "name": "Video Generation",
+      "tool_count": 9
+    },
+    "aliases": [
+      {
+        "id": 730,
+        "slug": "video-creation",
+        "name": "Video Creation",
+        "tool_count": 1,
+        "score": 0.9334
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 198,
+      "slug": "scheduling",
+      "name": "Scheduling",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1458,
+        "slug": "content-scheduling",
+        "name": "Content Scheduling",
+        "tool_count": 1,
+        "score": 0.9345
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 513,
+      "slug": "upscaling",
+      "name": "Upscaling",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 202,
+        "slug": "image-upscaling",
+        "name": "Image Upscaling",
+        "tool_count": 1,
+        "score": 0.9553
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 374,
+      "slug": "ecommerce",
+      "name": "Ecommerce",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 211,
+        "slug": "e-commerce",
+        "name": "E Commerce",
+        "tool_count": 1,
+        "score": 0.9677
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 212,
+      "slug": "photo-generation",
+      "name": "Photo Generation",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 435,
+        "slug": "photo-generator",
+        "name": "Photo Generator",
+        "tool_count": 1,
+        "score": 0.953
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 219,
+      "slug": "coding-assistant",
+      "name": "Coding Assistant",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 688,
+        "slug": "coding-assistance",
+        "name": "Coding Assistance",
+        "tool_count": 2,
+        "score": 0.9436
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 241,
+      "slug": "observability",
+      "name": "Observability",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 300,
+        "slug": "ai-observability",
+        "name": "AI Observability",
+        "tool_count": 3,
+        "score": 0.9313
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 362,
+      "slug": "customer-support",
+      "name": "Customer Support",
+      "tool_count": 7
+    },
+    "aliases": [
+      {
+        "id": 243,
+        "slug": "customer-service",
+        "name": "Customer Service",
+        "tool_count": 3,
+        "score": 0.9403
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 245,
+      "slug": "rag",
+      "name": "RAG",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 747,
+        "slug": "rag-framework",
+        "name": "RAG Framework",
+        "tool_count": 1,
+        "score": 0.9391
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 251,
+      "slug": "ai-chatbot",
+      "name": "AI Chatbot",
+      "tool_count": 13
+    },
+    "aliases": [
+      {
+        "id": 492,
+        "slug": "ai-chatbots",
+        "name": "AI Chatbots",
+        "tool_count": 2,
+        "score": 0.9713
+      },
+      {
+        "id": 281,
+        "slug": "ai-chat",
+        "name": "AI Chat",
+        "tool_count": 6,
+        "score": 0.9554
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1313,
+      "slug": "ide-support",
+      "name": "IDE Support",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1471,
+        "slug": "ide-assistant",
+        "name": "IDE Assistant",
+        "tool_count": 1,
+        "score": 0.9447
+      },
+      {
+        "id": 253,
+        "slug": "ide-assistants",
+        "name": "IDE Assistants",
+        "tool_count": 1,
+        "score": 0.9336
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 259,
+      "slug": "poem-generation",
+      "name": "Poem Generation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 963,
+        "slug": "lyrics-generation",
+        "name": "Lyrics Generation",
+        "tool_count": 1,
+        "score": 0.9322
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 261,
+      "slug": "machine-learning",
+      "name": "Machine Learning",
+      "tool_count": 24
+    },
+    "aliases": [
+      {
+        "id": 1033,
+        "slug": "machine-learning-resources",
+        "name": "Machine Learning Resources",
+        "tool_count": 1,
+        "score": 0.9463
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 988,
+      "slug": "ai-development",
+      "name": "AI Development",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 271,
+        "slug": "ai-agent-development",
+        "name": "AI Agent Development",
+        "tool_count": 1,
+        "score": 0.9371
+      },
+      {
+        "id": 1100,
+        "slug": "agent-development",
+        "name": "Agent Development",
+        "tool_count": 1,
+        "score": 0.8899
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 273,
+      "slug": "art-creation",
+      "name": "Art Creation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1101,
+        "slug": "art-generation",
+        "name": "Art Generation",
+        "tool_count": 1,
+        "score": 0.9381
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 276,
+      "slug": "photorealistic",
+      "name": "Photorealistic",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 338,
+        "slug": "photorealism",
+        "name": "Photorealism",
+        "tool_count": 1,
+        "score": 0.9553
+      },
+      {
+        "id": 343,
+        "slug": "photo-realistic",
+        "name": "Photo Realistic",
+        "tool_count": 1,
+        "score": 0.9419
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1147,
+      "slug": "ai-headshot",
+      "name": "AI Headshot",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 284,
+        "slug": "ai-headshots",
+        "name": "AI Headshots",
+        "tool_count": 1,
+        "score": 0.9912
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 333,
+      "slug": "mobile-app",
+      "name": "Mobile App",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 287,
+        "slug": "mobile-apps",
+        "name": "Mobile Apps",
+        "tool_count": 1,
+        "score": 0.945
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 290,
+      "slug": "document-analysis",
+      "name": "Document Analysis",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 1592,
+        "slug": "paper-analysis",
+        "name": "Paper Analysis",
+        "tool_count": 1,
+        "score": 0.938
+      },
+      {
+        "id": 1550,
+        "slug": "text-analysis",
+        "name": "Text Analysis",
+        "tool_count": 1,
+        "score": 0.931
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 533,
+      "slug": "ai-monitoring",
+      "name": "AI Monitoring",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 291,
+        "slug": "ai-model-monitoring",
+        "name": "AI Model Monitoring",
+        "tool_count": 1,
+        "score": 0.9582
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1414,
+      "slug": "ai-optimization",
+      "name": "AI Optimization",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 294,
+        "slug": "ai-code-optimization",
+        "name": "AI Code Optimization",
+        "tool_count": 1,
+        "score": 0.9365
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 298,
+      "slug": "architecture",
+      "name": "Architecture",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1208,
+        "slug": "architecture-design",
+        "name": "Architecture Design",
+        "tool_count": 1,
+        "score": 0.946
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 309,
+      "slug": "translation",
+      "name": "Translation",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 500,
+        "slug": "document-translation",
+        "name": "Document Translation",
+        "tool_count": 1,
+        "score": 0.9427
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 311,
+      "slug": "ai-framework",
+      "name": "AI Framework",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 1296,
+        "slug": "ai-frameworks",
+        "name": "AI Frameworks",
+        "tool_count": 1,
+        "score": 0.9813
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1010,
+      "slug": "search",
+      "name": "Search",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 313,
+        "slug": "document-search",
+        "name": "Document Search",
+        "tool_count": 1,
+        "score": 0.9573
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 324,
+      "slug": "data-visualization",
+      "name": "Data Visualization",
+      "tool_count": 7
+    },
+    "aliases": [
+      {
+        "id": 623,
+        "slug": "visualization",
+        "name": "Visualization",
+        "tool_count": 5,
+        "score": 0.9467
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1012,
+      "slug": "ai-explained",
+      "name": "AI Explained",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 325,
+        "slug": "ai-explanation",
+        "name": "AI Explanation",
+        "tool_count": 1,
+        "score": 0.9624
+      },
+      {
+        "id": 1660,
+        "slug": "ai-explainability",
+        "name": "AI Explainability",
+        "tool_count": 1,
+        "score": 0.9355
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 328,
+      "slug": "compliance",
+      "name": "Compliance",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 1514,
+        "slug": "privacy-compliance",
+        "name": "Privacy Compliance",
+        "tool_count": 1,
+        "score": 0.9303
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 335,
+      "slug": "language-models",
+      "name": "Language Models",
+      "tool_count": 7
+    },
+    "aliases": [
+      {
+        "id": 1008,
+        "slug": "language-modeling",
+        "name": "Language Modeling",
+        "tool_count": 2,
+        "score": 0.9843
+      },
+      {
+        "id": 1553,
+        "slug": "language-model",
+        "name": "Language Model",
+        "tool_count": 1,
+        "score": 0.9834
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 340,
+      "slug": "summarization",
+      "name": "Summarization",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 359,
+        "slug": "content-summarization",
+        "name": "Content Summarization",
+        "tool_count": 1,
+        "score": 0.944
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 352,
+      "slug": "ai-evaluation",
+      "name": "AI Evaluation",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 781,
+        "slug": "ai-assessment",
+        "name": "AI Assessment",
+        "tool_count": 1,
+        "score": 0.9571
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 170,
+      "slug": "ai-coding-assistant",
+      "name": "AI Coding Assistant",
+      "tool_count": 36
+    },
+    "aliases": [
+      {
+        "id": 752,
+        "slug": "ai-assisted-coding",
+        "name": "AI Assisted Coding",
+        "tool_count": 1,
+        "score": 0.9528
+      },
+      {
+        "id": 356,
+        "slug": "ai-coding",
+        "name": "AI Coding",
+        "tool_count": 9,
+        "score": 0.938
+      },
+      {
+        "id": 1111,
+        "slug": "ai-code-analysis",
+        "name": "AI Code Analysis",
+        "tool_count": 1,
+        "score": 0.9049
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1179,
+      "slug": "text-processing",
+      "name": "Text Processing",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 365,
+        "slug": "word-processing",
+        "name": "Word Processing",
+        "tool_count": 1,
+        "score": 0.9305
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 419,
+      "slug": "self-hosted",
+      "name": "Self Hosted",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 370,
+        "slug": "self-hostable",
+        "name": "Self Hostable",
+        "tool_count": 1,
+        "score": 0.9653
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 517,
+      "slug": "ai-enhancement",
+      "name": "AI Enhancement",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 373,
+        "slug": "ai-enrichment",
+        "name": "AI Enrichment",
+        "tool_count": 1,
+        "score": 0.9327
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 414,
+      "slug": "ai-agent",
+      "name": "AI Agent",
+      "tool_count": 9
+    },
+    "aliases": [
+      {
+        "id": 383,
+        "slug": "ai-agents",
+        "name": "AI Agents",
+        "tool_count": 5,
+        "score": 0.9794
+      },
+      {
+        "id": 802,
+        "slug": "agents",
+        "name": "Agents",
+        "tool_count": 2,
+        "score": 0.8973
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 715,
+      "slug": "programming",
+      "name": "Programming",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 396,
+        "slug": "programming-language",
+        "name": "Programming Language",
+        "tool_count": 1,
+        "score": 0.9361
+      },
+      {
+        "id": 543,
+        "slug": "programming-languages",
+        "name": "Programming Languages",
+        "tool_count": 2,
+        "score": 0.9275
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 397,
+      "slug": "large-language-models",
+      "name": "Large Language Models",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 1094,
+        "slug": "large-language-model",
+        "name": "Large Language Model",
+        "tool_count": 1,
+        "score": 0.9866
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 400,
+      "slug": "ai-prompt-generator",
+      "name": "AI Prompt Generator",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1007,
+        "slug": "ai-prompt-generation",
+        "name": "AI Prompt Generation",
+        "tool_count": 2,
+        "score": 0.9656
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 422,
+      "slug": "linkedin",
+      "name": "Linkedin",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1492,
+        "slug": "linkedin-profile",
+        "name": "Linkedin Profile",
+        "tool_count": 1,
+        "score": 0.9311
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 426,
+      "slug": "secure-data",
+      "name": "Secure Data",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1513,
+        "slug": "data-safety",
+        "name": "Data Safety",
+        "tool_count": 1,
+        "score": 0.937
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 795,
+      "slug": "call-management",
+      "name": "Call Management",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 427,
+        "slug": "on-call-management",
+        "name": "On Call Management",
+        "tool_count": 1,
+        "score": 0.9492
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 439,
+      "slug": "design",
+      "name": "Design",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 981,
+        "slug": "product-design",
+        "name": "Product Design",
+        "tool_count": 1,
+        "score": 0.9407
+      },
+      {
+        "id": 1209,
+        "slug": "building-design",
+        "name": "Building Design",
+        "tool_count": 1,
+        "score": 0.9403
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 724,
+      "slug": "text-generation",
+      "name": "Text Generation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 453,
+        "slug": "ai-text-generation",
+        "name": "AI Text Generation",
+        "tool_count": 1,
+        "score": 0.9341
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 457,
+      "slug": "learning",
+      "name": "Learning",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 810,
+        "slug": "language-learning",
+        "name": "Language Learning",
+        "tool_count": 1,
+        "score": 0.9439
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 487,
+      "slug": "ai-interviewing",
+      "name": "AI Interviewing",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 992,
+        "slug": "ai-interview-assistant",
+        "name": "AI Interview Assistant",
+        "tool_count": 1,
+        "score": 0.9559
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 493,
+      "slug": "ai-analysis",
+      "name": "AI Analysis",
+      "tool_count": 16
+    },
+    "aliases": [
+      {
+        "id": 771,
+        "slug": "ai-analytics",
+        "name": "AI Analytics",
+        "tool_count": 3,
+        "score": 0.9467
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 506,
+      "slug": "technology-trends",
+      "name": "Technology Trends",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 817,
+        "slug": "tech-trends",
+        "name": "Tech Trends",
+        "tool_count": 1,
+        "score": 0.9935
+      },
+      {
+        "id": 1042,
+        "slug": "trends",
+        "name": "Trends",
+        "tool_count": 1,
+        "score": 0.9461
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 528,
+      "slug": "investment",
+      "name": "Investment",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1605,
+        "slug": "investment-analysis",
+        "name": "Investment Analysis",
+        "tool_count": 1,
+        "score": 0.9345
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 557,
+      "slug": "online-tool",
+      "name": "Online Tool",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1122,
+        "slug": "online-tools",
+        "name": "Online Tools",
+        "tool_count": 1,
+        "score": 0.9629
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 583,
+      "slug": "ai-story-generation",
+      "name": "AI Story Generation",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1190,
+        "slug": "story-generation",
+        "name": "Story Generation",
+        "tool_count": 1,
+        "score": 0.9388
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 597,
+      "slug": "ai-deployment",
+      "name": "AI Deployment",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1072,
+        "slug": "ai-model-deployment",
+        "name": "AI Model Deployment",
+        "tool_count": 1,
+        "score": 0.9441
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 990,
+      "slug": "headshots",
+      "name": "Headshots",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 616,
+        "slug": "headshot-photography",
+        "name": "Headshot Photography",
+        "tool_count": 1,
+        "score": 0.9375
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 622,
+      "slug": "simulation",
+      "name": "Simulation",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1110,
+        "slug": "data-simulation",
+        "name": "Data Simulation",
+        "tool_count": 1,
+        "score": 0.9361
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1059,
+      "slug": "link-building",
+      "name": "Link Building",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 627,
+        "slug": "backlink-building",
+        "name": "Backlink Building",
+        "tool_count": 1,
+        "score": 0.9698
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 632,
+      "slug": "creative-tools",
+      "name": "Creative Tools",
+      "tool_count": 8
+    },
+    "aliases": [
+      {
+        "id": 1377,
+        "slug": "creative-tool",
+        "name": "Creative Tool",
+        "tool_count": 1,
+        "score": 0.9653
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 633,
+      "slug": "ai-training",
+      "name": "AI Training",
+      "tool_count": 5
+    },
+    "aliases": [
+      {
+        "id": 671,
+        "slug": "ai-learning",
+        "name": "AI Learning",
+        "tool_count": 1,
+        "score": 0.9383
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 637,
+      "slug": "ai-apps",
+      "name": "AI Apps",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 908,
+        "slug": "ai-applications",
+        "name": "AI Applications",
+        "tool_count": 2,
+        "score": 0.9373
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 639,
+      "slug": "audio-design",
+      "name": "Audio Design",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1465,
+        "slug": "sound-design",
+        "name": "Sound Design",
+        "tool_count": 1,
+        "score": 0.9615
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1590,
+      "slug": "music-editing",
+      "name": "Music Editing",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 645,
+        "slug": "multimedia-editing",
+        "name": "Multimedia Editing",
+        "tool_count": 1,
+        "score": 0.9305
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1544,
+      "slug": "image-analysis",
+      "name": "Image Analysis",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 649,
+        "slug": "image-processing",
+        "name": "Image Processing",
+        "tool_count": 1,
+        "score": 0.9436
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 375,
+      "slug": "image-enhancement",
+      "name": "Image Enhancement",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 650,
+        "slug": "video-enhancement",
+        "name": "Video Enhancement",
+        "tool_count": 2,
+        "score": 0.9379
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 676,
+      "slug": "innovation",
+      "name": "Innovation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 948,
+        "slug": "innovation-research",
+        "name": "Innovation Research",
+        "tool_count": 1,
+        "score": 0.9463
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 677,
+      "slug": "cli-tool",
+      "name": "CLI Tool",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 706,
+        "slug": "cli-tools",
+        "name": "CLI Tools",
+        "tool_count": 1,
+        "score": 0.9782
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1413,
+      "slug": "natural-language",
+      "name": "Natural Language",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 694,
+        "slug": "natural-language-coding",
+        "name": "Natural Language Coding",
+        "tool_count": 1,
+        "score": 0.9353
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1279,
+      "slug": "ai-quality",
+      "name": "AI Quality",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 697,
+        "slug": "ai-quality-control",
+        "name": "AI Quality Control",
+        "tool_count": 1,
+        "score": 0.9328
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 701,
+      "slug": "ml",
+      "name": "ML",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1521,
+        "slug": "ml-library",
+        "name": "ML Library",
+        "tool_count": 1,
+        "score": 0.9347
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1268,
+      "slug": "code-analysis",
+      "name": "Code Analysis",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 723,
+        "slug": "visual-code-analysis",
+        "name": "Visual Code Analysis",
+        "tool_count": 1,
+        "score": 0.9356
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1090,
+      "slug": "ethical-issues",
+      "name": "Ethical Issues",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 733,
+        "slug": "ethical-considerations",
+        "name": "Ethical Considerations",
+        "tool_count": 1,
+        "score": 0.9368
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 742,
+      "slug": "ai-benchmarks",
+      "name": "AI Benchmarks",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1437,
+        "slug": "ai-model-benchmarks",
+        "name": "AI Model Benchmarks",
+        "tool_count": 1,
+        "score": 0.9616
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1247,
+      "slug": "vulnerability-analysis",
+      "name": "Vulnerability Analysis",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1079,
+        "slug": "vulnerability-assessment",
+        "name": "Vulnerability Assessment",
+        "tool_count": 1,
+        "score": 0.9738
+      },
+      {
+        "id": 744,
+        "slug": "vulnerability-detection",
+        "name": "Vulnerability Detection",
+        "tool_count": 1,
+        "score": 0.9399
+      },
+      {
+        "id": 1113,
+        "slug": "security-vulnerability-detection",
+        "name": "Security Vulnerability Detection",
+        "tool_count": 1,
+        "score": 0.922
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 766,
+      "slug": "security-analysis",
+      "name": "Security Analysis",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1469,
+        "slug": "security-assessment",
+        "name": "Security Assessment",
+        "tool_count": 1,
+        "score": 0.9548
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 970,
+      "slug": "ai-coloring",
+      "name": "AI Coloring",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 828,
+        "slug": "ai-color-palette",
+        "name": "AI Color Palette",
+        "tool_count": 1,
+        "score": 0.9354
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 938,
+      "slug": "ai-ethics",
+      "name": "AI Ethics",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 1211,
+        "slug": "ethical-ai",
+        "name": "Ethical AI",
+        "tool_count": 3,
+        "score": 0.9848
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 858,
+      "slug": "visual-ai",
+      "name": "Visual AI",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1342,
+        "slug": "ai-visuals",
+        "name": "AI Visuals",
+        "tool_count": 1,
+        "score": 0.9687
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 860,
+      "slug": "ai-safety",
+      "name": "AI Safety",
+      "tool_count": 3
+    },
+    "aliases": [
+      {
+        "id": 1070,
+        "slug": "ai-security",
+        "name": "AI Security",
+        "tool_count": 1,
+        "score": 0.9473
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1060,
+      "slug": "cost-tracking",
+      "name": "Cost Tracking",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 879,
+        "slug": "expense-tracking",
+        "name": "Expense Tracking",
+        "tool_count": 1,
+        "score": 0.9466
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 881,
+      "slug": "filtering",
+      "name": "Filtering",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1044,
+        "slug": "data-filtering",
+        "name": "Data Filtering",
+        "tool_count": 1,
+        "score": 0.9368
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 882,
+      "slug": "ai-sales",
+      "name": "AI Sales",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1302,
+        "slug": "sales-ai",
+        "name": "Sales AI",
+        "tool_count": 1,
+        "score": 0.9743
+      },
+      {
+        "id": 1496,
+        "slug": "ai-sales-assistant",
+        "name": "AI Sales Assistant",
+        "tool_count": 1,
+        "score": 0.9451
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1380,
+      "slug": "coding-standard",
+      "name": "Coding Standard",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 888,
+        "slug": "coding-standards",
+        "name": "Coding Standards",
+        "tool_count": 1,
+        "score": 0.9854
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 892,
+      "slug": "future-tech",
+      "name": "Future Tech",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 918,
+        "slug": "future-of-technology",
+        "name": "Future Of Technology",
+        "tool_count": 1,
+        "score": 0.9773
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 894,
+      "slug": "game-design",
+      "name": "Game Design",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1266,
+        "slug": "game-development",
+        "name": "Game Development",
+        "tool_count": 1,
+        "score": 0.9417
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 920,
+      "slug": "voice-synthesis",
+      "name": "Voice Synthesis",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1119,
+        "slug": "speech-synthesis",
+        "name": "Speech Synthesis",
+        "tool_count": 1,
+        "score": 0.9579
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 926,
+      "slug": "content-insight",
+      "name": "Content Insight",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1288,
+        "slug": "insight-to-content",
+        "name": "Insight To Content",
+        "tool_count": 1,
+        "score": 0.951
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1371,
+      "slug": "ai-prompts",
+      "name": "AI Prompts",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1372,
+        "slug": "ai-prompt",
+        "name": "AI Prompt",
+        "tool_count": 1,
+        "score": 0.9761
+      },
+      {
+        "id": 929,
+        "slug": "ai-prompting",
+        "name": "AI Prompting",
+        "tool_count": 2,
+        "score": 0.9672
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 982,
+      "slug": "generative-art",
+      "name": "Generative Art",
+      "tool_count": 9
+    },
+    "aliases": [
+      {
+        "id": 787,
+        "slug": "art-generative",
+        "name": "Art Generative",
+        "tool_count": 1,
+        "score": 0.9903
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 947,
+      "slug": "ai-strategy",
+      "name": "AI Strategy",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1623,
+        "slug": "strategy",
+        "name": "Strategy",
+        "tool_count": 1,
+        "score": 0.9309
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 953,
+      "slug": "api-management",
+      "name": "API Management",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1511,
+        "slug": "api-key-management",
+        "name": "API Key Management",
+        "tool_count": 1,
+        "score": 0.9463
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 989,
+      "slug": "tool",
+      "name": "Tool",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1025,
+        "slug": "tools",
+        "name": "Tools",
+        "tool_count": 1,
+        "score": 0.9498
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1370,
+      "slug": "marketing-tool",
+      "name": "Marketing Tool",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1031,
+        "slug": "marketing-tools",
+        "name": "Marketing Tools",
+        "tool_count": 1,
+        "score": 0.9642
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1116,
+      "slug": "text-to-video",
+      "name": "Text To Video",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 1575,
+        "slug": "video-to-text",
+        "name": "Video To Text",
+        "tool_count": 1,
+        "score": 0.9886
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1083,
+      "slug": "remixing",
+      "name": "Remixing",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1135,
+        "slug": "remix",
+        "name": "Remix",
+        "tool_count": 1,
+        "score": 0.9755
+      },
+      {
+        "id": 1394,
+        "slug": "song-remixing",
+        "name": "Song Remixing",
+        "tool_count": 1,
+        "score": 0.9656
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1109,
+      "slug": "interactive-experience",
+      "name": "Interactive Experience",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1338,
+        "slug": "interactive-experiences",
+        "name": "Interactive Experiences",
+        "tool_count": 1,
+        "score": 0.9867
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1213,
+      "slug": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "tool_count": 2
+    },
+    "aliases": [
+      {
+        "id": 1578,
+        "slug": "ai-intelligence",
+        "name": "AI Intelligence",
+        "tool_count": 1,
+        "score": 0.9571
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1357,
+      "slug": "engagement",
+      "name": "Engagement",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1228,
+        "slug": "engagement-analysis",
+        "name": "Engagement Analysis",
+        "tool_count": 1,
+        "score": 0.9398
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1340,
+      "slug": "coding-agent",
+      "name": "Coding Agent",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1244,
+        "slug": "coding-agents",
+        "name": "Coding Agents",
+        "tool_count": 1,
+        "score": 0.9752
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1546,
+      "slug": "face-generation",
+      "name": "Face Generation",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1148,
+        "slug": "portrait-generation",
+        "name": "Portrait Generation",
+        "tool_count": 1,
+        "score": 0.9429
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1173,
+      "slug": "economics",
+      "name": "Economics",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1156,
+        "slug": "economic-analysis",
+        "name": "Economic Analysis",
+        "tool_count": 1,
+        "score": 0.9335
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1164,
+      "slug": "image-enhancer",
+      "name": "Image Enhancer",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1327,
+        "slug": "photo-enhancement",
+        "name": "Photo Enhancement",
+        "tool_count": 1,
+        "score": 0.9359
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1667,
+      "slug": "code-editor",
+      "name": "Code Editor",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1178,
+        "slug": "code-editing",
+        "name": "Code Editing",
+        "tool_count": 1,
+        "score": 0.9364
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1613,
+      "slug": "ai-ready",
+      "name": "AI Ready",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1187,
+        "slug": "ai-readiness",
+        "name": "AI Readiness",
+        "tool_count": 1,
+        "score": 0.9426
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1263,
+      "slug": "tech-analysis",
+      "name": "Tech Analysis",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 578,
+        "slug": "technology-analysis",
+        "name": "Technology Analysis",
+        "tool_count": 1,
+        "score": 0.9837
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1299,
+      "slug": "social-impact",
+      "name": "Social Impact",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1277,
+        "slug": "societal-impact",
+        "name": "Societal Impact",
+        "tool_count": 1,
+        "score": 0.9775
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 140,
+      "slug": "seo-optimization",
+      "name": "SEO Optimization",
+      "tool_count": 6
+    },
+    "aliases": [
+      {
+        "id": 1324,
+        "slug": "seo-optimized",
+        "name": "SEO Optimized",
+        "tool_count": 1,
+        "score": 0.9448
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1540,
+      "slug": "copyright",
+      "name": "Copyright",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1348,
+        "slug": "copyright-protection",
+        "name": "Copyright Protection",
+        "tool_count": 1,
+        "score": 0.9414
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1353,
+      "slug": "presentation-tool",
+      "name": "Presentation Tool",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1490,
+        "slug": "presentation-tools",
+        "name": "Presentation Tools",
+        "tool_count": 1,
+        "score": 0.9569
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1448,
+      "slug": "ui-design",
+      "name": "UI Design",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 1587,
+        "slug": "ux-design",
+        "name": "UX Design",
+        "tool_count": 1,
+        "score": 0.9402
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1450,
+      "slug": "components",
+      "name": "Components",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1447,
+        "slug": "react-components",
+        "name": "React Components",
+        "tool_count": 1,
+        "score": 0.935
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 1588,
+      "slug": "wireframes",
+      "name": "Wireframes",
+      "tool_count": 1
+    },
+    "aliases": [
+      {
+        "id": 1649,
+        "slug": "wireframing",
+        "name": "Wireframing",
+        "tool_count": 1,
+        "score": 0.962
+      }
+    ]
+  },
+  {
+    "canonical": {
+      "id": 240,
+      "slug": "prompt-engineering",
+      "name": "Prompt Engineering",
+      "tool_count": 4
+    },
+    "aliases": [
+      {
+        "id": 1102,
+        "slug": "ai-prompt-engineering",
+        "name": "AI Prompt Engineering",
+        "tool_count": 1,
+        "score": 0.9448
+      }
+    ]
+  }
+]
