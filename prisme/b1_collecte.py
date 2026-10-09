@@ -9,12 +9,15 @@ Usage:
     python b1_collecte.py --dry-run
     python b1_collecte.py --limit 3
     python b1_collecte.py --only n8n
+    python b1_collecte.py --workers 8
+    python b1_collecte.py --run-id 20260701T120000Z
 """
 import argparse
 import hashlib
 import json
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -34,6 +37,7 @@ except ImportError:
     _REQUESTS = False
 
 import staging
+import memoire_prisme
 
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -122,11 +126,136 @@ def sha256(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def collect_one(src, dry_run):
+    """
+    Travail effectue par chaque worker : fetch + extraction seulement.
+    Ne touche PAS a staging (ecritures reservees au fil principal).
+    L'echec d'une page ne doit jamais lever -- toujours retourner un dict.
+
+    Retourne un dict:
+        {"slug", "status": "collected"|"skipped"|"error",
+         "row": dict|None, "message": str}
+    """
+    slug = src["slug"]
+    url  = src["website_url"]
+
+    if dry_run:
+        return {"slug": slug, "status": "skipped", "row": None,
+                "message": "[dry-run] skip fetch, upsert ignore"}
+
+    try:
+        html, final_url = fetch_page(url)
+    except Exception as e:
+        return {"slug": slug, "status": "error", "row": None,
+                "message": f"ERREUR fetch: {e}"}
+
+    h = sha256(html)
+    existing = staging.get_raw(slug)
+    if existing and existing.get("source_hash") == h:
+        return {"slug": slug, "status": "skipped", "row": None,
+                "message": "inchange (hash identique), skip"}
+
+    try:
+        title, meta_desc, raw_text = extract(html)
+    except Exception as e:
+        return {"slug": slug, "status": "error", "row": None,
+                "message": f"ERREUR extraction: {e}"}
+
+    cats = src.get("categories", [])
+    row = {
+        "slug":             slug,
+        "name":             src.get("name", slug),
+        "vendor":           src.get("vendor", ""),
+        "website_url":      url,
+        "source_url":       final_url,
+        "source_hash":      h,
+        "raw_title":        title,
+        "raw_meta_desc":    meta_desc,
+        "raw_text":         raw_text,
+        "categories_json":  json.dumps(cats),
+        "primary_category": src.get("primary_category", ""),
+        "status":           "draft",
+        "collected_at":     datetime.now(timezone.utc).isoformat(),
+    }
+    return {"slug": slug, "status": "collected", "row": row,
+            "message": f"collecte: title={title[:60]!r}"}
+
+
+def run_collecte(sources, workers, dry_run, run_id=None, log_fn=None):
+    """
+    Distribue sources sur un ThreadPoolExecutor (workers threads) pour les
+    requetes HTTP + extraction. Les ecritures en staging (upsert_raw) se
+    font depuis le fil principal, sequentiellement, a mesure que les
+    resultats arrivent. L'echec d'une page (fetch/extraction) ne tue jamais
+    le lot -- il est compte comme erreur et le traitement continue.
+
+    Les echecs de fetch/extraction sont journalises dans run_log sous le
+    type d'evenement 'page_morte' (si log_fn est fourni et dry_run=False).
+
+    Retourne (nb_collect, nb_skip, nb_error).
+    """
+    total = len(sources)
+    nb_collect = 0
+    nb_skip = 0
+    nb_error = 0
+    done = 0
+    t_debut = time.time()
+
+    workers = max(1, workers)
+
+    def _consigner(type_evenement, detail, slug=None, niveau="erreur"):
+        if log_fn is not None:
+            try:
+                log_fn(run_id=run_id, etape="b1", type_evenement=type_evenement,
+                       detail=detail, slug=slug, niveau=niveau)
+            except Exception:
+                pass
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {
+            executor.submit(collect_one, src, dry_run): src["slug"]
+            for src in sources
+        }
+        for future in as_completed(futures):
+            slug = futures[future]
+            try:
+                res = future.result()
+            except Exception as e:
+                res = {"slug": slug, "status": "error", "row": None,
+                       "message": f"ERREUR inattendue: {e}"}
+
+            done += 1
+            elapsed = max(time.time() - t_debut, 1e-9)
+            vitesse = done / elapsed
+
+            print(f"[B1] ({done}/{total}, {vitesse:.2f}/s) {res['slug']}: {res['message']}")
+
+            if res["status"] == "collected":
+                staging.upsert_raw(res["row"])
+                nb_collect += 1
+            elif res["status"] == "skipped":
+                if not dry_run:
+                    nb_skip += 1
+                else:
+                    nb_collect += 1
+            else:
+                nb_error += 1
+                if not dry_run:
+                    _consigner("page_morte", res["message"], slug=res["slug"])
+
+    return nb_collect, nb_skip, nb_error
+
+
 def main():
     parser = argparse.ArgumentParser(description="Batch B1 collecte")
     parser.add_argument("--dry-run", action="store_true", help="N'ecrit pas en staging")
     parser.add_argument("--limit", type=int, default=0, help="Nombre max d'outils a traiter")
     parser.add_argument("--only", type=str, default="", help="Traiter seulement ce slug")
+    parser.add_argument("--workers", type=int, default=None,
+                        help="Nombre de fils paralleles pour les requetes HTTP "
+                             "(defaut: valeur apprise dans data/parametres_appris.json, sinon 8)")
+    parser.add_argument("--run-id", type=str, default="",
+                        help="Identifiant de run partage (defaut: horodatage genere)")
     args = parser.parse_args()
 
     sources = load_sources()
@@ -138,65 +267,30 @@ def main():
         sources = sources[: args.limit]
 
     staging.init_db()
+    staging.init_memoire()
 
-    nb_collect = 0
-    nb_skip = 0
-    nb_error = 0
+    params_appris = memoire_prisme.charger_parametres()
+    workers = args.workers if args.workers is not None else int(params_appris.get("b1_workers", 8))
 
-    for src in sources:
-        slug = src["slug"]
-        url  = src["website_url"]
-        print(f"[B1] {slug} <- {url}")
+    run_id = args.run_id or datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
-        if args.dry_run:
-            print(f"  [dry-run] skip fetch, upsert ignore")
-            nb_collect += 1
-            continue
+    log_fn = None if args.dry_run else staging.log_evenement
 
-        try:
-            html, final_url = fetch_page(url)
-        except Exception as e:
-            print(f"  ERREUR fetch: {e}")
-            nb_error += 1
-            time.sleep(SLEEP_BETWEEN)
-            continue
+    if not args.dry_run:
+        staging.log_evenement(run_id, "b1", "debut",
+                               f"{len(sources)} source(s) a traiter, workers={workers}",
+                               niveau="info")
 
-        h = sha256(html)
-        existing = staging.get_raw(slug)
-        if existing and existing.get("source_hash") == h:
-            print(f"  inchange (hash identique), skip")
-            nb_skip += 1
-            time.sleep(SLEEP_BETWEEN)
-            continue
+    print(f"[B1] run_id={run_id} {len(sources)} source(s) a traiter, workers={workers}")
 
-        try:
-            title, meta_desc, raw_text = extract(html)
-        except Exception as e:
-            print(f"  ERREUR extraction: {e}")
-            nb_error += 1
-            time.sleep(SLEEP_BETWEEN)
-            continue
+    nb_collect, nb_skip, nb_error = run_collecte(
+        sources, workers, args.dry_run, run_id=run_id, log_fn=log_fn
+    )
 
-        cats = src.get("categories", [])
-        row = {
-            "slug":             slug,
-            "name":             src.get("name", slug),
-            "vendor":           src.get("vendor", ""),
-            "website_url":      url,
-            "source_url":       final_url,
-            "source_hash":      h,
-            "raw_title":        title,
-            "raw_meta_desc":    meta_desc,
-            "raw_text":         raw_text,
-            "categories_json":  json.dumps(cats),
-            "primary_category": src.get("primary_category", ""),
-            "status":           "draft",
-            "collected_at":     datetime.now(timezone.utc).isoformat(),
-        }
-        staging.upsert_raw(row)
-        print(f"  collecte: title={title[:60]!r}")
-        nb_collect += 1
-        time.sleep(SLEEP_BETWEEN)
+    if not args.dry_run:
+        staging.log_evenement(run_id, "b1", "fin",
+                               f"{nb_collect} collecte(s), {nb_skip} inchange(s), {nb_error} erreur(s)",
+                               niveau="info")
 
     print(f"\n[B1] Resume: {nb_collect} collecte(s), {nb_skip} inchange(s), {nb_error} erreur(s).")
 

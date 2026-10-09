@@ -43,6 +43,7 @@ LOGS_DIR = ROOT / "logs"
 STEPS = [
     ("collecte",       "b1_collecte.py",         True),
     ("enrichissement", "b2_enrichissement.py",    True),
+    ("juge_qualite",   "b2b_juge.py",             False),  # juge local de qualite (score+nom), non critique
     ("dedup",          "b3_dedup.py",             False),
     # ("classification", "b4_classification.py",  False),  # retire : retrait des categories (2026-06-21)
     ("tagging",        "b4_tagging.py",            False),
@@ -53,7 +54,11 @@ STEPS = [
     ("liens",          "b5_liens.py",             False),
     # ("seo",            "b6_seo.py",               False),  # retire : retrait des categories (2026-06-21)
     ("pages",          "b6_pages.py",             False),
+    ("indexnow",       "indexnow.py",             False),
     ("sante",          "b8_sante.py",             False),
+    ("kit",            "b9_submission_kit.py",    False),
+    ("oracle",         "oracle_nightly.py",        False),  # Oracle Livre du Savoir Fleau (sync Drive -> rebuild -> etancheite -> deploy)
+    ("apprentissage",  "apprendre_nightly.py",     False),  # memoire d'erreurs + auto-ajustement des parametres du Prisme
 ]
 
 STEP_KEYS = [s[0] for s in STEPS]

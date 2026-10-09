@@ -28,6 +28,16 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 import staging
 
+try:
+    import numpy as np
+    _NUMPY = True
+except ImportError:
+    _NUMPY = False
+
+# Nombre min. de vecteurs a partir duquel on bascule sur la version
+# vectorisee numpy (matrice x matrice) plutot que la double boucle Python.
+VECTORISE_SEUIL = 30
+
 
 # ---------------------------------------------------------------------------
 # Union-Find
@@ -91,6 +101,50 @@ def cosine(v1, v2):
     if n1 == 0.0 or n2 == 0.0:
         return 0.0
     return dot / (n1 * n2)
+
+
+def _cosine_pairs_vectorise(emb_slugs, embs, threshold):
+    """
+    Version numpy (matrice x matrice) de la double boucle de similarite
+    cosine. Regroupe les vecteurs par dimension (seules les paires de meme
+    dimension sont comparees, comme dans la version scalaire), calcule une
+    matrice de similarite par groupe, puis ne garde que les paires >= seuil.
+    Retourne un dict {(slug_a, slug_b) triees: score} -- comportement
+    identique a la boucle Python d'origine.
+    """
+    embed_pairs = {}
+
+    # Regrouper les slugs par dimension d'embedding (memes contraintes que
+    # la comparaison scalaire : ea["dim"] != eb["dim"] => ignore).
+    par_dim = {}
+    for slug in emb_slugs:
+        dim = embs[slug]["dim"]
+        par_dim.setdefault(dim, []).append(slug)
+
+    for dim, groupe_slugs in par_dim.items():
+        if len(groupe_slugs) < 2:
+            continue
+        mat = np.array([embs[s]["vec"] for s in groupe_slugs], dtype=float)
+        norms = np.linalg.norm(mat, axis=1, keepdims=True)
+        norms_safe = np.where(norms == 0, 1.0, norms)
+        mat_norm = mat / norms_safe
+        sim_mat = mat_norm @ mat_norm.T
+
+        # Vecteurs nuls -> similarite forcee a 0.0 (comme cosine() scalaire).
+        nuls = (norms.flatten() == 0)
+        nul_mask = nuls[:, None] | nuls[None, :]
+        sim_mat = np.where(nul_mask, 0.0, sim_mat)
+
+        n = len(groupe_slugs)
+        # Ne garder que le triangle superieur (i < j) au-dessus du seuil.
+        iu, ju = np.triu_indices(n, k=1)
+        scores = sim_mat[iu, ju]
+        garde = scores >= threshold
+        for i, j, score in zip(iu[garde], ju[garde], scores[garde]):
+            a, b = sorted([groupe_slugs[int(i)], groupe_slugs[int(j)]])
+            embed_pairs[(a, b)] = float(score)
+
+    return embed_pairs
 
 
 def load_tools(limit=None):
@@ -172,17 +226,21 @@ def detect_groups(raws, enriched, threshold, limit=None):
     embed_pairs = {}  # (a,b) -> score
 
     emb_slugs = list(embs.keys())
-    for i in range(len(emb_slugs)):
-        for j in range(i + 1, len(emb_slugs)):
-            a, b = emb_slugs[i], emb_slugs[j]
-            ea, eb = embs[a], embs[b]
-            if ea["dim"] != eb["dim"]:
-                continue
-            score = cosine(ea["vec"], eb["vec"])
-            if score >= threshold:
-                ka, kb = sorted([a, b])
-                embed_pairs[(ka, kb)] = score
-                uf.union(a, b)
+    if _NUMPY and len(emb_slugs) >= VECTORISE_SEUIL:
+        embed_pairs = _cosine_pairs_vectorise(emb_slugs, embs, threshold)
+    else:
+        for i in range(len(emb_slugs)):
+            for j in range(i + 1, len(emb_slugs)):
+                a, b = emb_slugs[i], emb_slugs[j]
+                ea, eb = embs[a], embs[b]
+                if ea["dim"] != eb["dim"]:
+                    continue
+                score = cosine(ea["vec"], eb["vec"])
+                if score >= threshold:
+                    ka, kb = sorted([a, b])
+                    embed_pairs[(ka, kb)] = score
+    for (a, b) in embed_pairs:
+        uf.union(a, b)
 
     # Construire reasons et scores par paire detectee
     all_pairs = domain_pairs | set(embed_pairs.keys())
