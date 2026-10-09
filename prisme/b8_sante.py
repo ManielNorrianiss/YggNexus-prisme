@@ -93,12 +93,14 @@ def db_checks(tools, categories, tool_cat_rows, embed_tool_ids,
     # 1. sans categorie
     p = [f"{t['slug']} (id {t['id']})" for t in tools
          if not cats_by_tool.get(t["id"])]
-    sections.append(("Outils publies sans categorie", p))
+    if False:  # categories retirees (2026-06-21) — controle desactive
+        sections.append(("Outils publies sans categorie", p))
 
     # 2. sans categorie primaire (mais avec au moins une categorie)
     p = [f"{t['slug']} (id {t['id']})" for t in tools
          if cats_by_tool.get(t["id"]) and not primary_by_tool.get(t["id"])]
-    sections.append(("Outils sans categorie primaire", p))
+    if False:  # categories retirees (2026-06-21) — controle desactive
+        sections.append(("Outils sans categorie primaire", p))
 
     # 3. sans embedding
     p = [f"{t['slug']} (id {t['id']})" for t in tools
@@ -221,27 +223,39 @@ def render_report(sections, now_dt, site, crawled):
 # Acces Supabase
 # ---------------------------------------------------------------------------
 
+def _fetch_all(query_builder, page=1000):
+    """Pagine par .range() : Supabase plafonne chaque reponse a 1000 lignes
+    (max-rows), donc .limit(100000) seul tronque silencieusement."""
+    rows, start = [], 0
+    while True:
+        chunk = query_builder.range(start, start + page - 1).execute().data or []
+        rows.extend(chunk)
+        if len(chunk) < page:
+            return rows
+        start += page
+
+
 def fetch_from_supabase():
     """Lit tools/categories/tool_categories/embeddings publies depuis Supabase."""
     from supabase import create_client
     sb = create_client(SUPABASE_URL, SERVICE_KEY)
 
-    tools = sb.table("tools").select(
+    tools = _fetch_all(sb.table("tools").select(
         "id, slug, seo_title, seo_description, description_md, "
         "quality_score, updated_at"
-    ).eq("status", "published").limit(10000).execute().data or []
+    ).eq("status", "published").order("id"))
 
-    categories = sb.table("categories").select(
+    categories = _fetch_all(sb.table("categories").select(
         "id, slug"
-    ).eq("status", "published").limit(10000).execute().data or []
+    ).eq("status", "published").order("id"))
 
-    tool_cat = sb.table("tool_categories").select(
+    tool_cat = _fetch_all(sb.table("tool_categories").select(
         "tool_id, category_id, is_primary"
-    ).limit(100000).execute().data or []
+    ).order("tool_id"))
 
-    emb = sb.table("embeddings").select(
+    emb = _fetch_all(sb.table("embeddings").select(
         "entity_id"
-    ).eq("entity_type", "tool").limit(100000).execute().data or []
+    ).eq("entity_type", "tool").order("entity_id"))
     embed_ids = {r["entity_id"] for r in emb}
 
     return tools, categories, tool_cat, embed_ids
