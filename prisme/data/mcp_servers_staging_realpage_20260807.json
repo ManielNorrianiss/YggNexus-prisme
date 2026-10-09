@@ -1,0 +1,420 @@
+{
+ "generated_from": "registry_real_page_20260807.json",
+ "dry_run": true,
+ "count_raw": 30,
+ "count_unique": 15,
+ "dropped": 15,
+ "records": [
+  {
+   "slug": "ac-inference-sh-mcp",
+   "name": "ac.inference.sh/mcp",
+   "description": "ac.inference.sh/mcp MCP server",
+   "author": "ac.inference.sh",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "2.0.1",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-07-27T00:00:00Z"
+  },
+  {
+   "slug": "ac-tandem-docs-mcp",
+   "name": "ac.tandem/docs-mcp",
+   "description": "ac.tandem/docs-mcp MCP server",
+   "author": "ac.tandem",
+   "repo_url": "https://github.com/frumu-ai/tandem",
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "0.3.2",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-04-22T00:00:00Z"
+  },
+  {
+   "slug": "ag-hood-name-service",
+   "name": "ag.hood/name-service",
+   "description": "ag.hood/name-service MCP server",
+   "author": "ag.hood",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "0.1.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-07-10T00:00:00Z"
+  },
+  {
+   "slug": "agency-goji-goji",
+   "name": "agency.goji/goji",
+   "description": "agency.goji/goji MCP server",
+   "author": "agency.goji",
+   "repo_url": "https://github.com/goji-agency/website",
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "1.0.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-08-03T00:00:00Z"
+  },
+  {
+   "slug": "agency-kesey-pretrip",
+   "name": "agency.kesey/pretrip",
+   "description": "agency.kesey/pretrip MCP server",
+   "author": "agency.kesey",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": "npm",
+   "package_types": [
+    "npm"
+   ],
+   "transport": "stdio",
+   "transports": [
+    "stdio"
+   ],
+   "capabilities": [
+    "stdio"
+   ],
+   "hosting": "local",
+   "version": "1.0.1",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-07-26T00:00:00Z"
+  },
+  {
+   "slug": "agency-lona-trading",
+   "name": "agency.lona/trading",
+   "description": "agency.lona/trading MCP server",
+   "author": "agency.lona",
+   "repo_url": "https://github.com/mindsightventures/lona",
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "2.0.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-02-24T00:00:00Z"
+  },
+  {
+   "slug": "ai-1325-mcp",
+   "name": "ai.1325/mcp",
+   "description": "ai.1325/mcp MCP server",
+   "author": "ai.1325",
+   "repo_url": "https://github.com/1325ai/1325ai",
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "0.1.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-07-10T00:00:00Z"
+  },
+  {
+   "slug": "ai-aarna-atars-mcp",
+   "name": "ai.aarna/atars-mcp",
+   "description": "ai.aarna/atars-mcp MCP server",
+   "author": "ai.aarna",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "0.1.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-03-10T00:00:00Z"
+  },
+  {
+   "slug": "ai-abmeter-abmeter",
+   "name": "ai.abmeter/abmeter",
+   "description": "ai.abmeter/abmeter MCP server",
+   "author": "ai.abmeter",
+   "repo_url": "https://github.com/abmeter/abmeter",
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "0.1.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-04-19T00:00:00Z"
+  },
+  {
+   "slug": "ai-adadvisor-mcp-server",
+   "name": "ai.adadvisor/mcp-server",
+   "description": "ai.adadvisor/mcp-server MCP server",
+   "author": "ai.adadvisor",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "1.0.1",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-02-28T00:00:00Z"
+  },
+  {
+   "slug": "ai-adeu-adeu",
+   "name": "ai.adeu/adeu",
+   "description": "ai.adeu/adeu MCP server",
+   "author": "ai.adeu",
+   "repo_url": "https://github.com/dealfluence/adeu",
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": "npm",
+   "package_types": [
+    "npm"
+   ],
+   "transport": "stdio",
+   "transports": [
+    "stdio"
+   ],
+   "capabilities": [
+    "stdio"
+   ],
+   "hosting": "local",
+   "version": "1.7.1",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-05-16T00:00:00Z"
+  },
+  {
+   "slug": "ai-adramp-google-ads",
+   "name": "ai.adramp/google-ads",
+   "description": "ai.adramp/google-ads MCP server",
+   "author": "ai.adramp",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "1.0.3",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-03-20T00:00:00Z"
+  },
+  {
+   "slug": "ai-adside-adside",
+   "name": "ai.adside/adside",
+   "description": "ai.adside/adside MCP server",
+   "author": "ai.adside",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "1.0.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-07-16T00:00:00Z"
+  },
+  {
+   "slug": "ai-adweave-meta-ads-mcp",
+   "name": "ai.adweave/meta-ads-mcp",
+   "description": "ai.adweave/meta-ads-mcp MCP server",
+   "author": "ai.adweave",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": null,
+   "package_types": [],
+   "transport": "streamable-http",
+   "transports": [
+    "streamable-http"
+   ],
+   "capabilities": [
+    "streamable-http"
+   ],
+   "hosting": "remote",
+   "version": "1.0.0",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-04-10T00:00:00Z"
+  },
+  {
+   "slug": "ai-aetherwealth-mcp",
+   "name": "ai.aetherwealth/mcp",
+   "description": "ai.aetherwealth/mcp MCP server",
+   "author": "ai.aetherwealth",
+   "repo_url": null,
+   "registry_source": "modelcontextprotocol.io",
+   "package_type": "npm",
+   "package_types": [
+    "npm"
+   ],
+   "transport": "stdio",
+   "transports": [
+    "stdio"
+   ],
+   "capabilities": [
+    "stdio"
+   ],
+   "hosting": "local",
+   "version": "0.2.13",
+   "website_url": null,
+   "license": null,
+   "stars": null,
+   "weekly_downloads": null,
+   "quality_score": null,
+   "status": "active",
+   "is_latest": true,
+   "published_at": "2026-08-03T00:00:00Z"
+  }
+ ]
+}

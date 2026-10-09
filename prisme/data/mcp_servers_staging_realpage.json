@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "source": "registry.modelcontextprotocol.io",
+    "mode": "dry-run fixture reelle 2026-07-20",
+    "count": 9
+  },
+  "servers": [
+    {
+      "slug": "ac-inference-sh-mcp",
+      "name": "ac.inference.sh/mcp",
+      "description": "Run 150+ AI apps - image, video, audio, LLMs, 3D and more.",
+      "author": "ac.inference.sh",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.1",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-04-13T17:33:26.613537Z"
+    },
+    {
+      "slug": "ac-tandem-docs-mcp",
+      "name": "ac.tandem/docs-mcp",
+      "description": "Remote MCP server for Tandem docs, install guides, SDKs.",
+      "author": "ac.tandem",
+      "repo_url": "https://github.com/frumu-ai/tandem",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "0.3.2",
+      "website_url": "https://tandem.ac/docs-mcp",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "agency-lona-trading",
+      "name": "agency.lona/trading",
+      "description": "AI-powered trading strategy development: backtesting, market data, and portfolio analysis",
+      "author": "agency.lona",
+      "repo_url": "https://github.com/mindsightventures/lona",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "2.0.0",
+      "website_url": "https://lona.agency",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "ai-adeu-adeu",
+      "name": "ai.adeu/adeu",
+      "description": "Automated DOCX Redlining Engine",
+      "author": "ai.adeu",
+      "repo_url": "https://github.com/dealfluence/adeu",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": "npm",
+      "package_types": [
+        "npm"
+      ],
+      "transport": "stdio",
+      "transports": [
+        "stdio"
+      ],
+      "capabilities": [
+        "stdio"
+      ],
+      "hosting": "local",
+      "version": "1.7.1",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "ai-adadvisor-mcp-server",
+      "name": "ai.adadvisor/mcp-server",
+      "description": "Query Meta Ads performance data.",
+      "author": "ai.adadvisor",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.1",
+      "website_url": "https://www.adadvisor.ai",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "ai-aliengiraffe-spotdb",
+      "name": "ai.aliengiraffe/spotdb",
+      "description": "Ephemeral data sandbox for AI workflows with guardrails and security",
+      "author": "ai.aliengiraffe",
+      "repo_url": "https://github.com/aliengiraffe/spotdb",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": "oci",
+      "package_types": [
+        "oci"
+      ],
+      "transport": "stdio",
+      "transports": [
+        "stdio"
+      ],
+      "capabilities": [
+        "stdio"
+      ],
+      "hosting": "local",
+      "version": "0.1.0",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "ai-agentrapay-agentra",
+      "name": "ai.agentrapay/agentra",
+      "description": "Identity oracle and trust layer for autonomous AI agents.",
+      "author": "ai.agentrapay",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "transport": "sse",
+      "transports": [
+        "sse"
+      ],
+      "capabilities": [
+        "sse"
+      ],
+      "hosting": "remote",
+      "version": "1.0.0",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "ai-agenttrust-mcp-server",
+      "name": "ai.agenttrust/mcp-server",
+      "description": "Identity, trust, and A2A orchestration for autonomous AI agents.",
+      "author": "ai.agenttrust",
+      "repo_url": "https://github.com/agenttrust/mcp-server",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": "npm",
+      "package_types": [
+        "npm"
+      ],
+      "transport": "stdio",
+      "transports": [
+        "stdio"
+      ],
+      "capabilities": [
+        "stdio"
+      ],
+      "hosting": "local",
+      "version": "1.1.1",
+      "website_url": "https://agenttrust.ai",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": null
+    },
+    {
+      "slug": "ai-agenticshelf-graffeo",
+      "name": "ai.agenticshelf/graffeo",
+      "description": "Live MCP catalog for Graffeo Coffee Roasting.",
+      "author": "ai.agenticshelf",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.0",
+      "website_url": "https://www.graffeo.com",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "deprecated",
+      "is_latest": false,
+      "published_at": null
+    }
+  ]
+}

@@ -1,0 +1,700 @@
+{
+ "servers": [
+  {
+   "server": {
+    "name": "ac.inference.sh/mcp",
+    "description": "ac.inference.sh/mcp MCP server",
+    "version": "1.0.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     },
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-04-13T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ac.inference.sh/mcp",
+    "description": "ac.inference.sh/mcp MCP server",
+    "version": "1.0.1",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     },
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-04-13T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ac.inference.sh/mcp",
+    "description": "ac.inference.sh/mcp MCP server",
+    "version": "2.0.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     },
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-07-20T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ac.inference.sh/mcp",
+    "description": "ac.inference.sh/mcp MCP server",
+    "version": "2.0.1",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-07-27T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ac.tandem/docs-mcp",
+    "description": "ac.tandem/docs-mcp MCP server",
+    "version": "0.3.0",
+    "repository": {
+     "url": "https://github.com/frumu-ai/tandem",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-04-02T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ac.tandem/docs-mcp",
+    "description": "ac.tandem/docs-mcp MCP server",
+    "version": "0.3.1",
+    "repository": {
+     "url": "https://github.com/frumu-ai/tandem",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-04-02T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ac.tandem/docs-mcp",
+    "description": "ac.tandem/docs-mcp MCP server",
+    "version": "0.3.2",
+    "repository": {
+     "url": "https://github.com/frumu-ai/tandem",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-04-22T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ag.hood/name-service",
+    "description": "ag.hood/name-service MCP server",
+    "version": "0.1.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-07-10T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "agency.goji/goji",
+    "description": "agency.goji/goji MCP server",
+    "version": "1.0.0",
+    "repository": {
+     "url": "https://github.com/goji-agency/website",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-08-03T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "agency.kesey/pretrip",
+    "description": "agency.kesey/pretrip MCP server",
+    "version": "1.0.1",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "agency.kesey/pretrip",
+      "version": "1.0.1",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-07-26T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "agency.lona/trading",
+    "description": "agency.lona/trading MCP server",
+    "version": "2.0.0",
+    "repository": {
+     "url": "https://github.com/mindsightventures/lona",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-02-24T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.1325/mcp",
+    "description": "ai.1325/mcp MCP server",
+    "version": "0.1.0",
+    "repository": {
+     "url": "https://github.com/1325ai/1325ai",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-07-10T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aarna/atars-mcp",
+    "description": "ai.aarna/atars-mcp MCP server",
+    "version": "0.1.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-03-10T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.abmeter/abmeter",
+    "description": "ai.abmeter/abmeter MCP server",
+    "version": "0.1.0",
+    "repository": {
+     "url": "https://github.com/abmeter/abmeter",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-04-19T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adadvisor/mcp-server",
+    "description": "ai.adadvisor/mcp-server MCP server",
+    "version": "1.0.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-02-28T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adadvisor/mcp-server",
+    "description": "ai.adadvisor/mcp-server MCP server",
+    "version": "1.0.1",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-02-28T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adeu/adeu",
+    "description": "ai.adeu/adeu MCP server",
+    "version": "1.5.2",
+    "repository": {
+     "url": "https://github.com/dealfluence/adeu",
+     "source": "github"
+    },
+    "packages": [
+     {
+      "registryType": "pypi",
+      "identifier": "ai.adeu/adeu",
+      "version": "1.5.2",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-05-05T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adeu/adeu",
+    "description": "ai.adeu/adeu MCP server",
+    "version": "1.7.1",
+    "repository": {
+     "url": "https://github.com/dealfluence/adeu",
+     "source": "github"
+    },
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.adeu/adeu",
+      "version": "1.7.1",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-05-16T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adramp/google-ads",
+    "description": "ai.adramp/google-ads MCP server",
+    "version": "1.0.0",
+    "repository": {
+     "url": "https://github.com/stylemi-co/adramp",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "sse",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-03-20T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adramp/google-ads",
+    "description": "ai.adramp/google-ads MCP server",
+    "version": "1.0.1",
+    "repository": {
+     "url": "https://github.com/stylemi-co/adramp",
+     "source": "github"
+    },
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-03-20T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adramp/google-ads",
+    "description": "ai.adramp/google-ads MCP server",
+    "version": "1.0.2",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-03-20T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adramp/google-ads",
+    "description": "ai.adramp/google-ads MCP server",
+    "version": "1.0.3",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-03-20T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adside/adside",
+    "description": "ai.adside/adside MCP server",
+    "version": "1.0.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-07-16T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.adweave/meta-ads-mcp",
+    "description": "ai.adweave/meta-ads-mcp MCP server",
+    "version": "1.0.0",
+    "remotes": [
+     {
+      "type": "streamable-http",
+      "url": "https://example.invalid/mcp"
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-04-10T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aetherwealth/mcp",
+    "description": "ai.aetherwealth/mcp MCP server",
+    "version": "0.2.0",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.aetherwealth/mcp",
+      "version": "0.2.0",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-07-17T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aetherwealth/mcp",
+    "description": "ai.aetherwealth/mcp MCP server",
+    "version": "0.2.11",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.aetherwealth/mcp",
+      "version": "0.2.11",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-07-31T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aetherwealth/mcp",
+    "description": "ai.aetherwealth/mcp MCP server",
+    "version": "0.2.13",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.aetherwealth/mcp",
+      "version": "0.2.13",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": true,
+     "publishedAt": "2026-08-03T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aetherwealth/mcp",
+    "description": "ai.aetherwealth/mcp MCP server",
+    "version": "0.2.2",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.aetherwealth/mcp",
+      "version": "0.2.2",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-07-24T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aetherwealth/mcp",
+    "description": "ai.aetherwealth/mcp MCP server",
+    "version": "0.2.7",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.aetherwealth/mcp",
+      "version": "0.2.7",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-07-29T00:00:00Z"
+    }
+   }
+  },
+  {
+   "server": {
+    "name": "ai.aetherwealth/mcp",
+    "description": "ai.aetherwealth/mcp MCP server",
+    "version": "0.2.9",
+    "packages": [
+     {
+      "registryType": "npm",
+      "identifier": "ai.aetherwealth/mcp",
+      "version": "0.2.9",
+      "transport": {
+       "type": "stdio"
+      }
+     }
+    ]
+   },
+   "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+     "status": "active",
+     "isLatest": false,
+     "publishedAt": "2026-07-30T00:00:00Z"
+    }
+   }
+  }
+ ],
+ "metadata": {
+  "nextCursor": "ai.aetherwealth/mcp:0.2.9",
+  "count": 30
+ }
+}

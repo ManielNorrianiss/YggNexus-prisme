@@ -1,0 +1,12 @@
+{
+  "probe_date": "2026-08-11",
+  "endpoint": "https://registry.modelcontextprotocol.io/v0/servers",
+  "http_status": "200 OK",
+  "page_size_returned": 30,
+  "limit_requested": "30 (defaut - parametre limit refuse par la contrainte de provenance web_fetch)",
+  "next_cursor": "ai.aetherwealth/mcp:0.2.11",
+  "schema_version_observee": "2025-12-11",
+  "premier_serveur": "ac.inference.sh/mcp",
+  "dernier_serveur": "ai.aetherwealth/mcp",
+  "note": "Sonde legere. La page brute complete n'est pas resauvegardee: identique en structure aux pages 20260807/08/09 deja en data/. Pagination cursor impossible depuis le bac a sable."
+}

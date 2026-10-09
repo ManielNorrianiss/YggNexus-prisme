@@ -5,6 +5,7 @@
       "name": "Activepieces",
       "short_desc": "Activepieces automates workflows between apps and APIs.",
       "description_md": "Activepieces is an open-source no-code automation platform that connects applications and APIs through visual flows. It supports AI steps and custom pieces written in TypeScript, making it a flexible alternative to Zapier for building automated workflows.\n\nIt can be self-hosted or used in the cloud, offering both free and paid plans.",
+      "pricing_note": "Free plan available",
       "pros_jsonb": [
         "Open-source",
         "Supports AI steps",
@@ -36,6 +37,7 @@
       "name": "Adobe Firefly",
       "short_desc": "Adobe Firefly for AI-generated content in Creative Cloud.",
       "description_md": "Adobe Firefly is a generative AI tool that helps creatives generate images, text effects, vectors and video from prompts. Trained on licensed and public-domain content, it integrates seamlessly into Photoshop, Illustrator, and Express via Generative Fill and related features.",
+      "pricing_note": "Included in Adobe Creative Cloud subscription",
       "pros_jsonb": [
         "Integrates with Adobe Creative Cloud",
         "Generates high-quality AI art and design elements",
@@ -67,6 +69,7 @@
       "name": "Adobe Podcast",
       "short_desc": "AI-powered audio recording and enhancement for podcasts.",
       "description_md": "Adobe Podcast is a suite of AI tools designed for creators and podcasters. It offers multitrack browser-based recording, speech enhancement to remove noise and echo, and transcript-based editing to streamline post-production processes.\n\nIdeal for anyone looking to produce high-quality spoken audio content with ease.",
+      "pricing_note": "Free plan available with limitations.",
       "pros_jsonb": [
         "AI-powered speech enhancement",
         "Multitrack browser-based recording",
@@ -99,6 +102,7 @@
       "name": "Airtable",
       "short_desc": "Airtable for real-time collaboration and workflow automation.",
       "description_md": "Airtable is a powerful no-code platform that enables teams to build enterprise-ready AI workflows, apps, and agents in minutes. Unify data, automate tasks, and streamline processes without coding knowledge. Trusted by over 500,000 leading teams for seamless collaboration and productivity gains.",
+      "pricing_note": "Limited free plan available.",
       "pros_jsonb": [
         "No code required",
         "Real-time collaboration",
@@ -133,6 +137,7 @@
       "name": "Apify",
       "short_desc": "Apify marketplace for AI tools and web scraping.",
       "description_md": "Apify offers a vast collection of trusted tools for automating business processes, including real-time web data extraction, competitor tracking, lead generation, and app integration. With over 41,799 tools available, users can find and deploy actors to perform specific tasks like TikTok scraping or Google Maps data extraction.",
+      "pricing_note": "Free trial, paid subscriptions",
       "pros_jsonb": [
         "Large selection of trusted tools",
         "Real-time web data extraction capabilities",
@@ -165,6 +170,7 @@
       "name": "Bardeen",
       "short_desc": "Web scraper and AI lead qualification tool.",
       "description_md": "Bardeen is a SaaS tool that sources leads through web scraping, qualifies them with AI, and enriches contact information for outreach. Use built-in scrapers or create your own to find potential customers across the internet.",
+      "pricing_note": "Limited free plan available",
       "pros_jsonb": [
         "AI-driven lead qualification",
         "Customizable web scraping templates",
@@ -197,6 +203,7 @@
       "name": "Bolt.new",
       "short_desc": "AI-driven tool for building websites and apps.",
       "description_md": "Bolt.new is an AI builder that allows you to create stunning web applications and websites by simply chatting with the AI. It supports various design systems like Material UI, Chakra UI, and more. Bolt does the heavy lifting, enabling you to focus on your vision without dealing with coding errors.",
+      "pricing_note": "Limited free plan available.",
       "pros_jsonb": [
         "AI-driven",
         "Supports multiple design systems",
@@ -229,6 +236,7 @@
       "name": "Bright Data",
       "short_desc": "Bright Data offers proxies and web scraping tools for data extraction.",
       "description_md": "Bright Data is an all-in-one platform providing proxies, web scrapers, datasets, and AI tools. It enables users to access, extract, and interact with public websites, offering structured, reliable, real-time or historical data at petabyte scale. The Scraper Studio allows for easy creation of data pipelines from any website.",
+      "pricing_note": "Starts free, then paid plans available.",
       "pros_jsonb": [
         "Comprehensive suite of web scraping tools",
         "Large dataset marketplace",
@@ -261,6 +269,7 @@
       "name": "Browse AI",
       "short_desc": "No-code web scraper and monitor for any website.",
       "description_md": "Browse AI is the #1 no-code platform for scraping and monitoring data from websites. Easily build AI scrapers by pointing and clicking, or use built-in features like dynamic content capture and proxy management to extract complex data. Monitor changes and export data into APIs or integrations with over 7,000 tools.",
+      "pricing_note": "$29/month minimum",
       "pros_jsonb": [
         "No coding required",
         "Dynamic content support",
@@ -292,6 +301,7 @@
       "name": "Bubble",
       "short_desc": "Build web & mobile apps with Bubble's no-code AI tool.",
       "description_md": "Bubble is a no-code platform that allows users to build web and mobile applications using AI-driven automation. It offers visual design tools, database management, logic building, and privacy rules for quick app development from idea to launch.",
+      "pricing_note": "Basic features free, advanced paid",
       "pros_jsonb": [
         "AI-driven automation",
         "Visual design tools",
@@ -324,6 +334,7 @@
       "name": "Canva",
       "short_desc": "Canva is a user-friendly graphic design tool.",
       "description_md": "Canva is an online graphic design platform that allows users to create social media posts, presentations, posters, videos, and more using AI-powered tools like Magic Eraser and Magic Write. It offers templates, animations, and brand kits for professional designs.\n\n*AI Presentations*\n*Social Video*\n*Print Shop*\n*AI 2.0 Tools*\n*Magic Layers*\n*Brand Kit*\n*Animations*",
+      "pricing_note": "Free plan available with premium features for subscription",
       "pros_jsonb": [
         "User-friendly interface",
         "Wide range of templates and tools",
@@ -356,6 +367,7 @@
       "name": "CapCut",
       "short_desc": "AI-powered video editor for creating social media content.",
       "description_md": "CapCut is an AI-driven video editing tool that simplifies the creation of engaging videos for platforms like YouTube and Instagram. It offers smart templates, text-to-speech functionality, and advanced AI tools to generate visuals and videos from text or images.",
+      "pricing_note": "Free with limited features",
       "pros_jsonb": [
         "AI-powered features",
         "Free online version available",
@@ -388,6 +400,7 @@
       "name": "Claude",
       "short_desc": "Claude by Anthropic for complex problem-solving tasks.",
       "description_md": "Claude is an AI assistant designed for tackling complex challenges, analyzing data, writing code, and solving difficult problems. It serves as a thinking partner to help with big, bold, and bewildering tasks.\n\nUse Claude to develop unique voices, write content, analyze data, or brainstorm ideas.",
+      "pricing_note": "",
       "pros_jsonb": [
         "Versatile for various problem-solving tasks",
         "Friendly and conversational interface",
@@ -420,6 +433,7 @@
       "name": "ClickUp",
       "short_desc": "All-in-one productivity platform with AI and automation.",
       "description_md": "ClickUp is an all-in-one productivity tool that combines task management, document collaboration, goal setting, and communication in one app. It leverages AI agents and workflows to enhance efficiency and automate tasks. Users can customize their workspace and access features like projects, chat, brain (AI), time tracking, calendar, docs, whiteboards, sprints, and automations.",
+      "pricing_note": "Free plan available, additional features require paid plans",
       "pros_jsonb": [
         "Comprehensive suite of productivity tools",
         "Integrates AI agents for automation",
@@ -452,6 +466,7 @@
       "name": "Clipdrop",
       "short_desc": "AI-driven image editing tool by Stability AI.",
       "description_md": "Clipdrop is a powerful suite of AI tools for image editing and generation, including background removal, relighting, upscaling, and text-to-image conversion via Stable Diffusion. Available as a web app, API, and plugins, it streamlines the design and marketing processes with quick and efficient visual edits.",
+      "pricing_note": "Free trial available.",
       "pros_jsonb": [
         "AI-powered features",
         "Versatile editing options",
@@ -484,6 +499,7 @@
       "name": "Coda",
       "short_desc": "Coda is an all-in-one collaborative workspace.",
       "description_md": "Coda integrates the flexibility of docs, structure of spreadsheets, power of applications, and intelligence of AI. It brings teams and tools together for a more organized workday, replacing multiple apps with one seamless platform.",
+      "pricing_note": "Free plan with limited features",
       "pros_jsonb": [
         "Unified interface for documents, spreadsheets, and applications",
         "Real-time collaboration features",
@@ -516,6 +532,7 @@
       "name": "Consensus",
       "short_desc": "AI-powered academic search engine for research papers.",
       "description_md": "Consensus is an AI-driven academic search tool that provides evidence-based conclusions directly from peer-reviewed scientific literature. It surfaces key findings with citations and a consensus meter, ensuring trustworthy answers for researchers, students, clinicians, and professionals.\n\nInstead of returning links, Consensus reads across millions of papers to surface evidence-backed insights.",
+      "pricing_note": "Free trial available, subscription for full access",
       "pros_jsonb": [
         "Evidence-based conclusions",
         "Citations provided",
@@ -548,6 +565,7 @@
       "name": "Copy.ai",
       "short_desc": "Automate GTM tasks with Copy.ai’s AI platform.",
       "description_md": "Future-proof your business with the first-ever GTM AI platform from Copy.ai. Automate hundreds of repetitive tasks and scale success by unifying data, connecting teams, and eliminating bloat. Codify best practices and drive every use case with a single, AI-native solution.",
+      "pricing_note": "Starts at $99/month",
       "pros_jsonb": [
         "Unified AI solution for all GTM use cases",
         "Automates tedious, repetitive tasks",
@@ -580,6 +598,7 @@
       "name": "Cursor",
       "short_desc": "AI coding agent for building ambitious software.",
       "description_md": "Cursor is an AI coding assistant designed to enhance productivity in software development. It offers a desktop and CLI interface, helping with tasks like code generation, mission control, and project management. Ideal for developers looking to streamline their workflow.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Enhances developer productivity",
         "Supports multiple interfaces (Desktop & CLI)",
@@ -611,6 +630,7 @@
       "name": "D-ID",
       "short_desc": "AI-driven video creation platform for digital humans.",
       "description_md": "D-ID is a leading AI-generated video creation platform that enables organizations to create high-quality content in minutes. It supports multilingual interactions and seamless API integration, making it easy to scale messaging across various channels.\n\n* Speed & simplicity: Quickly customize avatars and videos to fit your brand identity.\n* Multilingual support: Create content in over 120 languages for global audiences.",
+      "pricing_note": "Free trial available, paid plans for full features.",
       "pros_jsonb": [
         "Speed & simplicity",
         "Multilingual support",
@@ -645,6 +665,7 @@
       "name": "DeepSeek",
       "short_desc": "DeepSeek - Advanced AI models for natural language and coding tasks.",
       "description_md": "DeepSeek is a cutting-edge AI tool that offers advanced models like DeepSeek-LLM and DeepSeek-Coder. These models are designed to handle complex natural language processing and code generation tasks, providing state-of-the-art performance in both areas.\n\nDeveloped by the DeepSeek team, these models leverage proprietary training frameworks and extensive computational resources.",
+      "pricing_note": "Limited free tier available",
       "pros_jsonb": [
         "State-of-the-art performance",
         "Open-source availability",
@@ -677,6 +698,7 @@
       "name": "Descript",
       "short_desc": "AI-powered video and audio editing tool.",
       "description_md": "Descript is an AI-driven platform for creating and editing videos and podcasts. It allows users to record, transcribe, edit, and publish content directly within the application. With features like automated design and script generation, it simplifies the creation process for both individuals and teams.",
+      "pricing_note": "Free plan with limited features.",
       "pros_jsonb": [
         "AI-assisted editing",
         "Integrated transcription",
@@ -709,6 +731,7 @@
       "name": "Devin",
       "short_desc": "AI coding agent for faster software development.",
       "description_md": "Devin is an AI coding assistant designed to help developers build better software faster. It automates repetitive tasks and refactoring processes, allowing teams to focus on innovation. Parallel cloud agents ensure efficient handling of large-scale projects, significantly reducing engineering time and costs.",
+      "pricing_note": "Initial setup fee applies.",
       "pros_jsonb": [
         "Automates repetitive tasks",
         "Improves engineering efficiency",
@@ -741,6 +764,7 @@
       "name": "Diffbot",
       "short_desc": "AI-driven web data extraction and crawling tool.",
       "description_md": "Diffbot transforms unstructured web content into structured data using AI, computer vision, and machine learning. Extract data types including organizations, news & articles, retail products, and discussions with over 246M companies and 1.6B+ articles in its Knowledge Graph.",
+      "pricing_note": "Free tier available, paid plans for larger usage.",
       "pros_jsonb": [
         "AI-driven",
         "Extensive data coverage",
@@ -775,6 +799,7 @@
       "name": "ElevenLabs",
       "short_desc": "AI voice generator for text-to-speech applications.",
       "description_md": "ElevenLabs offers an AI voice generation platform with over 5,000 voices in 70+ languages. Ideal for creating lifelike speech in various applications like customer service, content creation, and audiobooks. Secure APIs and SDKs included.\n\nAccess a wide range of expressive voices tailored for different use cases such as narration, persuasion, and social media.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Large voice library",
         "Multi-language support",
@@ -806,6 +831,7 @@
       "name": "Elicit",
       "short_desc": "AI tool for searching and summarizing scientific papers.",
       "description_md": "Elicit is an AI-driven platform that helps researchers find, summarize, and extract data from over 125 million academic papers. It supports quick answers or comprehensive reviews, making research more efficient. Try now to see how Elicit can enhance your evidence-based approach in science.\n\nFeatures include advanced search capabilities, automatic report generation, and a user-friendly interface.",
+      "pricing_note": "Free trial available.",
       "pros_jsonb": [
         "Advanced AI search",
         "Automated report generation",
@@ -841,6 +867,7 @@
       "name": "Fathom",
       "short_desc": "AI-driven meeting notetaker for teams and individuals.",
       "description_md": "Fathom AI Notetaker automatically captures and summarizes your meetings, allowing you to stay focused on the conversation. With integrations into ChatGPT and Claude, Fathom ensures you never miss critical moments. Suitable for teams of all sizes, it provides a shared source of truth across customer conversations.",
+      "pricing_note": "Free plan available, paid plans offer more features.",
       "pros_jsonb": [
         "Automatically captures meeting notes",
         "Integrates with popular AI tools",
@@ -872,6 +899,7 @@
       "name": "Firecrawl",
       "short_desc": "Web scraping and crawling tool for AI agents.",
       "description_md": "Firecrawl is a powerful context API designed for searching, scraping, and interacting with the web at scale. It offers clean Markdown or structured data outputs, making it ideal for AI/ML research and development. With features like Research Index and open-source support, Firecrawl simplifies web interaction for developers.",
+      "pricing_note": "2 months free, then paid annually",
       "pros_jsonb": [
         "Scalable for large-scale projects",
         "Provides clean Markdown and JSON outputs",
@@ -903,6 +931,7 @@
       "name": "Fireflies.ai",
       "short_desc": "AI assistant for meetings and emails.",
       "description_md": "Fireflies.ai is an AI-driven tool that transcribes, summarizes, and manages tasks from meetings, emails, chats, and CRMs. It offers high accuracy, multi-language support, and comprehensive summaries to streamline your workflow.",
+      "pricing_note": "Starts at $20/month per user",
       "pros_jsonb": [
         "High transcription accuracy",
         "Multi-language support",
@@ -937,6 +966,7 @@
       "name": "FlutterFlow",
       "short_desc": "Visual app builder for mobile and web apps.",
       "description_md": "FlutterFlow is a visual development platform that enables rapid creation of high-quality applications across multiple platforms. Utilize pre-designed UI elements and a visual Action Flow Editor to build complex logic without coding. Test, customize, and integrate third-party services seamlessly to launch your app faster.",
+      "pricing_note": "Free plan available with limitations",
       "pros_jsonb": [
         "Visual drag-and-drop interface",
         "Quick prototyping and development",
@@ -969,6 +999,7 @@
       "name": "FLUX",
       "short_desc": "FLUX models for visual intelligence and generative design.",
       "description_md": "Black Forest Labs' FLUX is a cutting-edge AI tool designed for generating high-quality images and videos with precise controls. It allows users to create consistent, photorealistic content from imagination to image, making it ideal for product visualization, marketing, and creative projects.",
+      "pricing_note": "Free trial, paid features available.",
       "pros_jsonb": [
         "Highly detailed and realistic output",
         "Precision controls for editing",
@@ -1001,6 +1032,7 @@
       "name": "Framer",
       "short_desc": "Framer is an AI-powered website builder for professionals.",
       "description_md": "Framer is a no-code AI website builder that allows designers and developers to create professional websites with ease. It features a design canvas, CMS content management, SEO optimization, collaboration tools, and rapid publishing capabilities.\n\nDesign freely using the intuitive interface, manage your site's content through an integrated CMS, and optimize for search engines. Collaborate seamlessly with team members and publish your website quickly.",
+      "pricing_note": "Free plan available",
       "pros_jsonb": [
         "AI-driven design",
         "Integrated CMS",
@@ -1035,6 +1067,7 @@
       "name": "Frase",
       "short_desc": "Frase automates SEO and content creation.",
       "description_md": "Frase is an AI-driven platform that analyzes your market, generates optimized content, and tracks your visibility on Google, ChatGPT, and Perplexity. It provides actionable insights to improve your online presence and rank higher in search results.\n\nKey features include competitor analysis, SEO brief creation with GEO optimization, and continuous monitoring of your content's performance.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Automated content generation",
         "Competitor analysis tool",
@@ -1067,6 +1100,7 @@
       "name": "Freepik",
       "short_desc": "Freepik offers AI-generated images and a vast library of graphic resources.",
       "description_md": "Freepik is an all-in-one platform for designers and marketers that combines a massive collection of stock photos, vectors, icons, and templates with advanced AI tools. Utilize text prompts to generate images, upscale visuals, remove backgrounds, or create videos quickly and efficiently.\n\nThe platform supports various use cases, from content creation to marketing campaigns, providing users with the flexibility to enhance their projects with high-quality graphics.",
+      "pricing_note": "Limited free content available",
       "pros_jsonb": [
         "Large library of graphic resources",
         "AI tools for image generation and editing",
@@ -1098,6 +1132,7 @@
       "name": "Gamma",
       "short_desc": "AI tool for creating presentations, documents and websites.",
       "description_md": "Gamma is an AI-powered platform that transforms simple prompts or outlines into professional presentations, documents, and webpages. It automates layout, design, and image handling while allowing flexible editing through card-based blocks. Export options include PDF and PowerPoint.",
+      "pricing_note": "Basic features free; advanced require subscription.",
       "pros_jsonb": [
         "AI-driven content creation",
         "Flexible editing interface",
@@ -1134,6 +1169,7 @@
       "name": "Google Gemini",
       "short_desc": "Google Gemini for AI writing and planning.",
       "description_md": "Google Gemini is an AI assistant designed to help with writing, planning, brainstorming, and more. It leverages generative AI to provide creative solutions and insights.\n\nGemini can assist in generating content, suggesting ideas, and optimizing your projects. Its advanced natural language processing capabilities make it a valuable tool for professionals across various industries.",
+      "pricing_note": "Limited free access available.",
       "pros_jsonb": [
         "Generates high-quality content",
         "Enhances creativity and productivity",
@@ -1166,6 +1202,7 @@
       "name": "GitHub Copilot",
       "short_desc": "AI code assistant for developers",
       "description_md": "GitHub Copilot is an AI pair programmer that suggests code directly in your editor. It accelerates development by offering whole lines or functions, enhancing productivity and creativity.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Increases coding speed",
         "Enhances code quality",
@@ -1197,6 +1234,7 @@
       "name": "Glide",
       "short_desc": "Build AI-powered apps without coding.",
       "description_md": "Glide is a no-code app builder that transforms spreadsheets into intelligent applications. Easily create custom workflows and automate manual tasks with AI integration. Ideal for businesses needing quick, adaptable software solutions.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "No code required",
         "AI-driven automation",
@@ -1228,6 +1266,7 @@
       "name": "Grammarly",
       "short_desc": "AI-powered writing assistant for grammar and style.",
       "description_md": "Grammarly enhances your writing with real-time suggestions, improving clarity, tone, and structure. Perfect for students, professionals, and anyone looking to refine their text across various platforms.\n\nFeatures include paragraph rewrites, tone adjustments, proofreading tools, and AI detection of generated content. Trusted by millions, Grammarly ensures your writing is clear, professional, and effective.",
+      "pricing_note": "Free version available, upgrade for full features.",
       "pros_jsonb": [
         "Real-time suggestions",
         "Improves clarity and flow",
@@ -1260,6 +1299,7 @@
       "name": "Gumloop",
       "short_desc": "AI automation platform for business tasks.",
       "description_md": "Gumloop is an AI automation framework that enables teams to build and host custom agents without coding. Automate tasks like data analysis, support ticket management, CRM updates, meeting prep, and call analysis with minimal setup.",
+      "pricing_note": "Contact sales for pricing details.",
       "pros_jsonb": [
         "No-code platform",
         "Customizable agents for various business needs",
@@ -1292,6 +1332,7 @@
       "name": "Hailuo AI",
       "short_desc": "Generate AI videos and images for creators.",
       "description_md": "Hailuo AI is a powerful video and image generator designed for content creators. Users can create stunning visuals from text or photos with ease. The platform offers various tools like Light Studio, Trending Creative Image Pack, and more to enhance your creative projects online.",
+      "pricing_note": "$10/month after free trial",
       "pros_jsonb": [
         "User-friendly interface",
         "Wide range of tools",
@@ -1324,6 +1365,7 @@
       "name": "HeyGen",
       "short_desc": "AI video generator for creating stunning videos.",
       "description_md": "HeyGen is an AI video generator that allows you to create professional-quality videos from text, images, or audio inputs. Turn your ideas into share-ready videos in minutes without any production skills required. Perfect for content creators and businesses looking to produce engaging multimedia content quickly.",
+      "pricing_note": "Free plan with limitations",
       "pros_jsonb": [
         "Easy to use",
         "No editing skills needed",
@@ -1356,6 +1398,7 @@
       "name": "HyperWrite",
       "short_desc": "AI writing assistant for content creation and research.",
       "description_md": "HyperWrite is an AI writing assistant designed to help professionals, students, and creators generate content faster and smarter. It offers tools like AutoWrite, TypeAhead, Email Response, HyperChat, and Custom Tools tailored to various workflows.\n\nUse it to write paragraphs, get context-aware suggestions, create custom AI tools, or chat with the AI for research assistance.",
+      "pricing_note": "Free plan available with limitations",
       "pros_jsonb": [
         "Advanced predictive writing",
         "Customizable AI tools",
@@ -1388,6 +1431,7 @@
       "name": "Ideogram",
       "short_desc": "Visual intelligence model for product workflows and creative teams.",
       "description_md": "Ideogram 4.0 is an open-source visual intelligence model designed for products, agents, and creative teams. It offers API integration, MCP for agents, and a user-friendly app for direct image creation with high fidelity and editing controls.",
+      "pricing_note": "Free to use; requires technical setup.",
       "pros_jsonb": [
         "Open-source",
         "High prompt fidelity",
@@ -1420,6 +1464,7 @@
       "name": "IFTTT",
       "short_desc": "Automate workflows between apps and devices.",
       "description_md": "IFTTT connects over 1,000 services to automate tasks. Create Applets with triggers and actions without coding. Easily manage your automations for business or home use.",
+      "pricing_note": "Limited free features; paid plans available for advanced use.",
       "pros_jsonb": [
         "No code required",
         "Extensive app integration",
@@ -1451,6 +1496,7 @@
       "name": "InVideo",
       "short_desc": "AI-driven video creation tool for professionals.",
       "description_md": "InVideo Agent One is an AI-powered video creation platform designed for serious creatives. It automates the video production process, allowing users to focus on their content while the AI handles editing and optimization. Ideal for film promos, performance ads, and microdramas.",
+      "pricing_note": "$9/month starting price",
       "pros_jsonb": [
         "AI automation saves time",
         "Consistent project context",
@@ -1483,6 +1529,7 @@
       "name": "Jasper",
       "short_desc": "AI-driven marketing automation platform.",
       "description_md": "Jasper automates end-to-end marketing workflows with AI agents, optimizing content and campaigns for maximum impact. It integrates advanced language models and context-aware intelligence to streamline marketing processes.\n\nFeatures include GEO & AI optimization, purpose-built agents, and content pipelines, enabling marketers to deliver scalable, brand-governed content.",
+      "pricing_note": "Starts at $99/month",
       "pros_jsonb": [
         "AI-driven automation",
         "End-to-end workflow management",
@@ -1514,6 +1561,7 @@
       "name": "Jenni AI",
       "short_desc": "AI academic writing and research tool for students and researchers.",
       "description_md": "Jenni AI is an intelligent assistant designed for academics and researchers. It helps with essay creation, paper writing, and citation management, ensuring every claim can be traced back to its source. With a vast library of over 5,032 sources, Jenni streamlines the research process.",
+      "pricing_note": "Free basic plan available",
       "pros_jsonb": [
         "Intelligent claims tracing",
         "Large academic database",
@@ -1545,6 +1593,7 @@
       "name": "Kling AI",
       "short_desc": "AI-driven creative tool for images and videos.",
       "description_md": "Kling AI is an advanced AI platform designed for generating imaginative visuals and animations. It supports complex storytelling through multimodal instructions and seamless transitions, offering a comprehensive suite of tools in one interface.\n\nWith the latest 3.0 model series, Kling AI redefines creative freedom by integrating audio and visual elements, ensuring consistency across multiple scenes.",
+      "pricing_note": "Basic features free, advanced require subscription",
       "pros_jsonb": [
         "Multimodal instruction support",
         "Seamless cross-task integration",
@@ -1576,6 +1625,7 @@
       "name": "Krea AI",
       "short_desc": "Real-time image generation and enhancement tool.",
       "description_md": "Krea AI is a generative image platform that allows users to sketch or type prompts and see results update live. It supports style control, composition adjustments, and upscaling for high-resolution outputs. Ideal for concept art, marketing visuals, and rapid iteration.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Real-time generation",
         "Style and composition control",
@@ -1608,6 +1658,7 @@
       "name": "LALAL.AI",
       "short_desc": "AI-powered vocal and instrumental remover.",
       "description_md": "LALAL.AI is an AI-driven tool for removing vocals and instrumentals from audio files quickly and accurately. Ideal for music producers, DJs, and content creators looking to isolate tracks or clean up recordings.\n\n* Supports various file formats and multiple stems.\n* Uses advanced transformer technology for high-quality results.",
+      "pricing_note": "Free trial, paid for full features",
       "pros_jsonb": [
         "High accuracy",
         "Quick processing",
@@ -1640,6 +1691,7 @@
       "name": "Leonardo AI",
       "short_desc": "AI-driven image and art generation tool.",
       "description_md": "Leonardo.Ai is a generative AI platform for creating high-quality images and art from text prompts. It offers fine-tuned models, real-time canvas editing, and advanced control tools, making it ideal for game assets, concept art, and marketing visuals.",
+      "pricing_note": "Starts at $29/month",
       "pros_jsonb": [
         "High-quality image generation",
         "Fine-tuned and custom models available",
@@ -1672,6 +1724,7 @@
       "name": "Lindy",
       "short_desc": "AI executive assistant for managing inbox and scheduling.",
       "description_md": "Lindy is an AI-driven executive assistant that automates tasks like email management, meeting preparation, and calendar organization to save you time. It integrates with various tools and services to enhance productivity.\n\nFeatures include proactive inbox management, meeting prep, flight booking, and more. Try it for free today.",
+      "pricing_note": "Free trial with limited features.",
       "pros_jsonb": [
         "Automates routine admin tasks",
         "Enhances email and calendar efficiency",
@@ -1704,6 +1757,7 @@
       "name": "Looka",
       "short_desc": "AI-powered logo maker for quick brand identity creation.",
       "description_md": "Looka is an AI-driven platform that simplifies the process of creating professional logos and complete brand kits. Users input their company name and style preferences, and Looka's advanced algorithms generate multiple logo options which can be customized with color, font, and layout. Additionally, it provides full brand kits including business cards, social media assets, and templates.",
+      "pricing_note": "Basic features free, advanced options require subscription",
       "pros_jsonb": [
         "AI-driven design",
         "Customizable options",
@@ -1739,6 +1793,7 @@
       "name": "Lovable",
       "short_desc": "AI app builder for non-coders",
       "description_md": "Lovable is an AI app builder that turns natural-language prompts into full-stack web apps with no coding required. It generates frontend, backend and database wiring, supports live editing and deployment, ideal for founders and teams aiming to ship software quickly.",
+      "pricing_note": "Basic features free",
       "pros_jsonb": [
         "No coding needed",
         "Full-stack generation",
@@ -1771,6 +1826,7 @@
       "name": "Luma Dream Machine",
       "short_desc": "Luma Dream Machine automates creative workflows for teams.",
       "description_md": "Luma Dream Machine is a SaaS tool that enhances team productivity by embedding creative agents into your workflow. These agents plan, generate, iterate, and refine content with full context across all stages of creative work, enabling faster collaboration and higher output.\n\nCreative Agents: Embedded in workflows to advance projects end-to-end with shared context.\nShared Context: Synced across every format and workflow for seamless teamwork.",
+      "pricing_note": "Starts at $99/month",
       "pros_jsonb": [
         "Enhances team productivity",
         "Automates creative processes",
@@ -1803,6 +1859,7 @@
       "name": "Magnific AI",
       "short_desc": "AI image upscaler and enhancer for detailed resolution boost.",
       "description_md": "Magnific AI is an advanced tool that upscales images while adding realistic detail. It enhances photos, illustrations, and 3D renders, making them look crisp and professional. Beyond simple scaling, it offers creative controls to adjust texture, sharpness, and style.\n\nIt's widely used by designers, photographers, and AI artists for finishing and print-ready output.",
+      "pricing_note": "Limited free tier, paid plans available",
       "pros_jsonb": [
         "Realistic detail addition",
         "Creative control options",
@@ -1834,6 +1891,7 @@
       "name": "Make",
       "short_desc": "Visual automation platform for connecting apps without code.",
       "description_md": "Make is a visual no-code/low-code automation platform that connects thousands of applications and APIs through drag-and-drop scenarios. Teams can automate complex workflows by routing, filtering, iterating, and aggregating data across multiple steps without writing any code.",
+      "pricing_note": "Free plan has limitations.",
       "pros_jsonb": [
         "Visual interface",
         "Connects many apps",
@@ -1869,6 +1927,7 @@
       "name": "Mem",
       "short_desc": "AI-powered notes app for organizing thoughts and ideas.",
       "description_md": "Mem is an AI-driven notes application that helps you organize your thoughts and ideas in one place. It remembers what you create and brings up relevant information when needed, making it easier to manage your tasks and projects. With Mem, you can dump your ideas, meetings, and research into the app, which then organizes them for you.",
+      "pricing_note": "Limited free plan available",
       "pros_jsonb": [
         "AI-driven organization",
         "Voice input support",
@@ -1901,6 +1960,7 @@
       "name": "Microsoft Copilot",
       "short_desc": "Microsoft Copilot for AI assistance",
       "description_md": "Microsoft Copilot is an AI tool designed to assist users in various tasks such as writing emails, creating documents, and generating code snippets. It offers real-time suggestions and feedback to enhance productivity.",
+      "pricing_note": "Free trial, limited features.",
       "pros_jsonb": [
         "Real-time suggestions",
         "Enhances productivity",
@@ -1933,6 +1993,7 @@
       "name": "Midjourney",
       "short_desc": "AI tool for generating artistic images from text prompts.",
       "description_md": "Midjourney is a generative AI that transforms natural-language text into high-quality, artistic images. Accessible via Discord and web app, it offers controls for aspect ratio, style, and variations. Ideal for designers, artists, and marketers seeking creative visuals.",
+      "pricing_note": "Free trial, paid plans available.",
       "pros_jsonb": [
         "Highly artistic output",
         "User-friendly interface",
@@ -1965,6 +2026,7 @@
       "name": "Mistral AI",
       "short_desc": "Mistral AI for custom enterprise-level AI solutions.",
       "description_md": "Mistral AI provides powerful AI platforms for enterprises to customize and deploy advanced AI assistants, agents, and services. Tailored for financial services, technology, logistics, and public sectors, it accelerates innovation and problem-solving with open models.",
+      "pricing_note": "Freemium options available",
       "pros_jsonb": [
         "Customizable AI solutions",
         "Open-source models available",
@@ -1997,6 +2059,7 @@
       "name": "Motion",
       "short_desc": "AI-powered productivity platform for teams and individuals.",
       "description_md": "Motion is an AI-driven superapp designed for work, offering AI projects, tasks, calendar, meetings, docs, notes, reports, and workflows. Trusted by over 1 million users, it streamlines your daily tasks and boosts productivity.\n\n*AI Projects*: Automate project management with smart task allocation.\n*AI Tasks*: Stay on top of deadlines with intelligent reminders.",
+      "pricing_note": "Starts at $29/month per user",
       "pros_jsonb": [
         "AI-driven automation",
         "Comprehensive suite of tools",
@@ -2029,6 +2092,7 @@
       "name": "Murf AI",
       "short_desc": "Generate ultra-realistic AI voices for content creation.",
       "description_md": "Murf AI is a powerful text-to-speech tool that creates natural and lifelike voices for podcasting, audiobooks, video voiceovers, and more. With its fast API and customizable options, it supports over 10 million users across various industries.\n\nFeatures include ultra-realistic voice generation, customizable settings, and instant AI dubbing.",
+      "pricing_note": "Free trial, paid plans available",
       "pros_jsonb": [
         "Ultra-realistic voices",
         "Fast API for text-to-speech",
@@ -2061,6 +2125,7 @@
       "name": "n8n",
       "short_desc": "n8n - AI-driven workflow automation for technical teams.",
       "description_md": "n8n is an AI-powered workflow automation platform designed for technical teams. It combines no-code flexibility with advanced coding capabilities, enabling users to automate complex business processes quickly and efficiently. With n8n, you can easily integrate various services, generate customer insights, and manage security incidents.",
+      "pricing_note": "Starts at $20/month",
       "pros_jsonb": [
         "AI-driven automation",
         "No-code and code options",
@@ -2093,6 +2158,7 @@
       "name": "NotebookLM",
       "short_desc": "AI research and note-taking assistant by Google.",
       "description_md": "NotebookLM is an AI-powered research and note-taking tool that grounds its responses in the sources you upload, such as documents, PDFs, slides, and web pages. It summarizes material, answers questions with citations, and provides a podcast-style summary through its Audio Overview feature.\n\nIt's valuable for students, researchers, and professionals who need to digest large amounts of information.",
+      "pricing_note": "Limited free version available.",
       "pros_jsonb": [
         "Integrates sources directly into responses",
         "Podcast-style audio summaries",
@@ -2125,6 +2191,7 @@
       "name": "Notion",
       "short_desc": "Collaborative knowledge base and project management tool.",
       "description_md": "Notion is a versatile workspace that combines note-taking, task management, and database features. It supports custom agents for automation, integrates with various apps, and offers a unified platform for teams to collaborate efficiently.",
+      "pricing_note": "Free plan with limited features",
       "pros_jsonb": [
         "Unified interface",
         "Custom agent creation",
@@ -2157,6 +2224,7 @@
       "name": "Octoparse",
       "short_desc": "No-code web scraping tool for data collection.",
       "description_md": "Octoparse is a user-friendly web scraping tool that allows anyone to collect structured data from websites without coding. It offers templates, auto-detection features, and support for dynamic content like infinite scrolling and CAPTCHAs.\n\nEasily scrape any website with just point-and-click functionality.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "No-code interface",
         "Supports complex web pages",
@@ -2188,6 +2256,7 @@
       "name": "OpenAI",
       "short_desc": "AI research and deployment platform.",
       "description_md": "OpenAI is a leading AI research lab focused on developing safe and beneficial artificial general intelligence. It offers various tools for researchers and businesses, including the ChatGPT API and Codex. Explore advanced AI capabilities designed to enhance productivity and innovation across multiple domains.",
+      "pricing_note": "Some services require payment.",
       "pros_jsonb": [
         "Advanced AI research",
         "Safe and beneficial AGI mission",
@@ -2220,6 +2289,7 @@
       "name": "Opus Clip",
       "short_desc": "AI-powered video clipping and editing tool.",
       "description_md": "Opus Clip is an AI-driven platform that simplifies the process of creating high-quality viral clips from long videos. It supports various genres and can automatically resize content for different social media platforms in one click.\n\n*Effortlessly edit any type of video.*\n*Automatically optimize clips for multiple social networks.*",
+      "pricing_note": "Limited free plan available",
       "pros_jsonb": [
         "AI-driven editing models",
         "Supports diverse video genres",
@@ -2251,6 +2321,7 @@
       "name": "Otter.ai",
       "short_desc": "AI-powered meeting transcription and notetaking tool.",
       "description_md": "Otter.ai is an AI-driven meeting notetaker that transcribes meetings in real-time, generates summaries, and tracks action items. It enhances productivity by turning conversations into searchable knowledge. Suitable for teams of all sizes, Otter supports Mac and Windows devices and offers a free plan.",
+      "pricing_note": "Free plan available but limited.",
       "pros_jsonb": [
         "Real-time transcription",
         "Automated summaries",
@@ -2285,6 +2356,7 @@
       "name": "Perplexity",
       "short_desc": "AI-powered answer engine for accurate and real-time information.",
       "description_md": "Perplexity is an AI tool that provides quick, reliable answers to any question. It uses advanced natural language processing to ensure accuracy and relevance in its responses.\n\nIdeal for researchers, students, or anyone needing instant access to factual information.",
+      "pricing_note": "",
       "pros_jsonb": [
         "Highly accurate",
         "Real-time updates",
@@ -2316,6 +2388,7 @@
       "name": "PhantomBuster",
       "short_desc": "Automate lead extraction and outreach with PhantomBuster.",
       "description_md": "PhantomBuster is a code-free data extraction and automation platform that scrapes profiles from LinkedIn and other sites, enriches contact data, and automates outreach sequences. Ideal for sales and growth teams looking to build lead lists and automate prospecting.",
+      "pricing_note": "Varies by plan",
       "pros_jsonb": [
         "Code-free operation",
         "Automates lead extraction and outreach",
@@ -2348,6 +2421,7 @@
       "name": "PhotoRoom",
       "short_desc": "AI-powered photo editor and listing studio for e-commerce.",
       "description_md": "PhotoRoom is an AI-driven tool designed for e-commerce businesses and social media creators. It automates image creation, formats images for multiple marketplaces, and produces marketplace-ready listings at scale. With PhotoRoom, you can easily create professional-quality visuals without a photo studio.",
+      "pricing_note": "Starts free, paid plans available",
       "pros_jsonb": [
         "AI-powered batch editing",
         "Automated image production",
@@ -2379,6 +2453,7 @@
       "name": "Pika",
       "short_desc": "AI-driven video creation platform.",
       "description_md": "Pika is an AI-powered tool for creating and automating video workflows. Users can generate creative content using agents, scenes, and effects. Perfect for trend-following or unique video creations.",
+      "pricing_note": "$9.99/month",
       "pros_jsonb": [
         "AI automation",
         "Creative agent generation",
@@ -2411,6 +2486,7 @@
       "name": "Pipedream",
       "short_desc": "Automate workflows by connecting APIs and services.",
       "description_md": "Pipedream is a no-code/low-code platform that enables users to build automated workflows by connecting various APIs, databases, and services. It supports both code-based and visual flow creation for integrating different applications and automating tasks with AI agents.",
+      "pricing_note": "Free plan available, paid for advanced features.",
       "pros_jsonb": [
         "No-code/low-code interface",
         "Extensive API library",
@@ -2442,6 +2518,7 @@
       "name": "PlayHT",
       "short_desc": "AI text-to-speech and voice cloning platform.",
       "description_md": "PlayHT is an AI-driven text-to-speech and voice generation tool that creates natural-sounding voices in multiple languages and accents. It supports voice cloning for realistic audio content, podcasts, IVR systems, and conversational AI applications.\n\nFeatures include a user-friendly API and real-time voice agent product.",
+      "pricing_note": "Limited free tier available",
       "pros_jsonb": [
         "Ultra-realistic voice cloning",
         "Supports many languages and accents",
@@ -2473,6 +2550,7 @@
       "name": "Playground AI",
       "short_desc": "AI-driven design tool for logos, t-shirts, and social media graphics.",
       "description_md": "Playground AI is an easy-to-use AI design platform that allows users to create custom designs like logos, t-shirts, and social media graphics without any design experience. With thousands of templates across 24 categories, users can customize their creations with ease. The tool supports features such as color, style, layout, and more through a simple text input.",
+      "pricing_note": "Free plan available with limitations",
       "pros_jsonb": [
         "No design experience required",
         "Thousands of customizable templates",
@@ -2505,6 +2583,7 @@
       "name": "Podcastle",
       "short_desc": "AI-driven video and audio editing platform.",
       "description_md": "Podcastle is an AI-powered creative studio for video and audio content production. It offers chat-based video creation, remote recording, editing, subtitles, dubbing, and clip generation. Ideal for podcasters, creators, and storytellers looking to streamline their workflow with minimal technical skills required.",
+      "pricing_note": "$11.99/mo",
       "pros_jsonb": [
         "Chat-based interface",
         "AI handles complex tasks",
@@ -2537,6 +2616,7 @@
       "name": "QuillBot",
       "short_desc": "AI tool for text rephrasing and grammar checking.",
       "description_md": "QuillBot is an AI writing assistant that helps users rewrite sentences in various tones and lengths, fix grammar and punctuation, check plagiarism, and generate citations. Ideal for students, writers, and professionals looking to polish their text.\n\nIt offers a range of features including paraphrasing, summarization, grammar correction, and citation generation.",
+      "pricing_note": "Limited free plan available",
       "pros_jsonb": [
         "Versatile AI tools",
         "Improves writing quality",
@@ -2569,6 +2649,7 @@
       "name": "Reclaim",
       "short_desc": "AI-powered calendar for scheduling and time management.",
       "description_md": "Reclaim is an AI-driven app that optimizes your schedule by automatically managing tasks, meetings, breaks, and habits. It integrates seamlessly with Google Calendar and Outlook to enhance productivity and free up more time for work and life.",
+      "pricing_note": "Special new user offer available",
       "pros_jsonb": [
         "Automatically schedules tasks and meetings",
         "Integrates with major calendars (Google & Outlook)",
@@ -2601,6 +2682,7 @@
       "name": "Recraft",
       "short_desc": "AI-driven design platform for images and mockups.",
       "description_md": "Recraft is an advanced text-to-image AI tool designed for designers, creatives, sellers, and teams. It offers photorealistic image generation, vector graphics, custom styles, and more. Beyond prompt accuracy, it delivers a real design vision in every generation.\n\nStart creating with Recraft V4.1, the most advanced model to date.",
+      "pricing_note": "Subscription required",
       "pros_jsonb": [
         "Photorealistic image generation",
         "Vector graphics support",
@@ -2633,6 +2715,7 @@
       "name": "Relevance AI",
       "short_desc": "Relevance AI for scalable AI agent management.",
       "description_md": "Relevance AI is an enterprise platform designed for managing and scaling AI agents within organizations. It enables domain experts to build and govern AI-driven solutions, ensuring accountability and business impact at scale. Ideal for GTM and high-growth teams looking to automate processes and drive conversions.",
+      "pricing_note": "Varies based on features and usage.",
       "pros_jsonb": [
         "Enterprise-grade governance",
         "Managed by domain experts",
@@ -2664,6 +2747,7 @@
       "name": "Replit",
       "short_desc": "Collaborative coding and AI-driven development platform.",
       "description_md": "Replit is a cloud-based integrated development environment (IDE) that combines live coding, collaboration features, and AI assistance to streamline software development. It supports multiple programming languages and offers real-time collaboration tools for teams.",
+      "pricing_note": "Free plan has limitations.",
       "pros_jsonb": [
         "Real-time collaboration",
         "AI-driven code suggestions",
@@ -2695,6 +2779,7 @@
       "name": "Resemble AI",
       "short_desc": "AI voice cloning and speech generation platform.",
       "description_md": "Resemble AI is a powerful tool for creating custom AI voices and generating speech from text. It supports real-time synthesis, multilingual dubbing, and includes tools to watermark and detect AI-generated audio.\n\nIdeal for gaming, media production, accessibility, and more, Resemble AI offers a comprehensive suite of features designed to enhance voice cloning projects.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Customizable AI voices",
         "Real-time speech synthesis",
@@ -2727,6 +2812,7 @@
       "name": "Retool",
       "short_desc": "Build internal tools with Retool’s unified engine.",
       "description_md": "Retool is a powerful tool for building and deploying internal software quickly. Connect any database or API, leverage AI, and manage your apps from one place. Build applications that integrate seamlessly into your workflow without writing code.",
+      "pricing_note": "Limited free plan available",
       "pros_jsonb": [
         "Unified platform for app development",
         "Integrates with various databases and APIs",
@@ -2759,6 +2845,7 @@
       "name": "Runway",
       "short_desc": "AI tool for simulating worlds and experiences.",
       "description_md": "Runway is an AI platform focused on developing General World Models that simulate various environments and scenarios. It offers tools for media and entertainment, robotics, and research in interactive world simulation. Ideal for organizations aiming to advance their industries through cutting-edge AI technologies.",
+      "pricing_note": "Subscription-based pricing",
       "pros_jsonb": [
         "Advanced world modeling capabilities",
         "State-of-the-art motion quality and visual fidelity",
@@ -2791,6 +2878,7 @@
       "name": "Rytr",
       "short_desc": "AI-driven content generator for marketing and social media.",
       "description_md": "Rytr is an AI writing tool designed for generating short-form content like ad copy, emails, product descriptions, and social posts. It offers a variety of templates, tones, and languages to cater to different needs. With its low-cost pricing model, it's popular among solo marketers and small businesses.",
+      "pricing_note": "Low-cost model",
       "pros_jsonb": [
         "Affordable",
         "Multiple use-case templates",
@@ -2823,6 +2911,7 @@
       "name": "ScrapingBee",
       "short_desc": "ScrapingBee is a web scraping API that handles proxies and headless browsers.",
       "description_md": "ScrapingBee simplifies web scraping by managing proxies and anti-bot defenses. Easily extract data from websites using AI-powered extraction or JSON rules. Integrate with AI tools like ChatGPT for seamless data processing.",
+      "pricing_note": "1,000 free credits available",
       "pros_jsonb": [
         "Handles proxies and headless browsers",
         "AI-powered data extraction",
@@ -2855,6 +2944,7 @@
       "name": "Softr",
       "short_desc": "Build web apps on Airtable or Google Sheets without coding.",
       "description_md": "Softr is a no-code app builder that transforms Airtable and Google Sheets into functional web applications, client portals, internal tools, and directories with drag-and-drop blocks, user authentication, permissions, and payments. Non-developers can quickly ship apps using its intuitive interface.",
+      "pricing_note": "Basic features free, advanced paid",
       "pros_jsonb": [
         "No coding required",
         "Drag-and-drop interface",
@@ -2891,6 +2981,7 @@
       "name": "Speechify",
       "short_desc": "Speechify converts text into speech and supports voice typing.",
       "description_md": "Speechify is a versatile AI tool that reads any text aloud with natural voices, supporting PDFs, web pages, and more. It also includes voice typing for hands-free input. Ideal for listening to books, articles, or documents anytime, anywhere.",
+      "pricing_note": "Free trial available.",
       "pros_jsonb": [
         "Natural-sounding voices",
         "Supports multiple devices",
@@ -2923,6 +3014,7 @@
       "name": "Stability AI",
       "short_desc": "Stability AI offers professional-grade generative AI tools for content production.",
       "description_md": "Stability AI is an enterprise-ready creative partner, providing high-quality image and video generation tools tailored for marketing, gaming, and entertainment. With Stability AI, teams can produce on-brand assets, build immersive worlds, and streamline the creative process without technical barriers.\n\n* Image and video generation\n* Customization and managed hosting\n* Support for real-world outcomes",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Professional-grade tools",
         "Customizable solutions",
@@ -2955,6 +3047,7 @@
       "name": "Sudowrite",
       "short_desc": "AI writing tool for fiction with Muse 1.5 model.",
       "description_md": "Sudowrite is an AI writing partner designed specifically for fiction writers. With its advanced story-smart capabilities, it helps users craft compelling narratives faster and more efficiently. Try the free version today to experience its non-judgmental support and innovative features.",
+      "pricing_note": "Free trial available",
       "pros_jsonb": [
         "Specialized for fiction writing",
         "Advanced story-smart AI model (Muse 1.5)",
@@ -2986,6 +3079,7 @@
       "name": "Suno",
       "short_desc": "AI music generator for creating original tracks.",
       "description_md": "Suno is an AI music generation tool that allows users to create stunning original songs in seconds with just a simple prompt or advanced editing tools. Perfect for musicians, producers, and anyone looking to make their own masterpieces.\n\n* Accessible to all skill levels\n* High-quality song creation\n* Free to use",
+      "pricing_note": "Free with limitations",
       "pros_jsonb": [
         "High-quality music generation",
         "Free to use",
@@ -3017,6 +3111,7 @@
       "name": "Superhuman",
       "short_desc": "Superhuman enhances email and productivity with AI.",
       "description_md": "Superhuman is an AI-driven productivity suite that streamlines emails and documents across all apps. It offers advanced features like smart replies, context-aware suggestions, and a clean interface to boost efficiency and creativity in your daily work.",
+      "pricing_note": "Free trial, paid subscription for full features",
       "pros_jsonb": [
         "AI-powered email management",
         "Enhanced document editing",
@@ -3049,6 +3144,7 @@
       "name": "Surfer SEO",
       "short_desc": "AI-driven SEO tool for organic growth.",
       "description_md": "Surfer SEO is an AI-powered platform designed for marketing and SEO teams aiming to enhance their online visibility across Google and other search engines. It offers advanced keyword research, content optimization, and competitive analysis features to boost organic traffic and rankings.\n\n* Track your brand's visibility in real-time.\n* Get personalized insights with AI-driven recommendations.\n* Stay ahead of competitors with comprehensive analytics.",
+      "pricing_note": "Starts at $99/month",
       "pros_jsonb": [
         "AI-driven insights",
         "Real-time tracking",
@@ -3081,6 +3177,7 @@
       "name": "Synthesia",
       "short_desc": "AI video creation tool for businesses.",
       "description_md": "Synthesia is an AI video platform that enables businesses to create professional videos quickly and easily from text. Utilize advanced avatars and voiceovers in over 160 languages for training, marketing, sales enablement, operations, internal communications, employee training, compliance, and more.",
+      "pricing_note": "Free plan available, paid plans offer more features.",
       "pros_jsonb": [
         "Enterprise-ready",
         "Easy video creation",
@@ -3113,6 +3210,7 @@
       "name": "Tana",
       "short_desc": "AI-driven meeting platform for real-time task management.",
       "description_md": "Tana is an agentic meeting platform where AI agents handle tasks like document creation and issue filing during video calls. It ensures all team members, including AI agents, stay in sync and turn meetings into productive outcomes.",
+      "pricing_note": "Starts at $29/user/month",
       "pros_jsonb": [
         "AI-driven task automation",
         "Real-time context sharing",
@@ -3145,6 +3243,7 @@
       "name": "Taskade",
       "short_desc": "AI-driven task management and collaboration platform.",
       "description_md": "Taskade is an AI-powered workspace that integrates tasks, notes, mind maps, and chat for seamless project management and team collaboration. It allows users to build custom AI agents, automate workflows, and work in real-time across multiple views.\n\nIdeal for teams looking to enhance productivity with AI assistance.",
+      "pricing_note": "Free plan available but limited",
       "pros_jsonb": [
         "Unified platform for tasks, notes, and mind maps",
         "AI agent integration for automation",
@@ -3177,6 +3276,7 @@
       "name": "tl;dv",
       "short_desc": "AI-driven meeting note taker for team collaboration.",
       "description_md": "tl;dv is an AI notetaker designed for team collaboration. It captures knowledge, finds answers, and automates meeting workflows. Post-meeting summaries are instantly sent to your preferred apps, ensuring no insights are missed.",
+      "pricing_note": "Free with limited features",
       "pros_jsonb": [
         "AI-generated summaries",
         "Instant post-meeting updates",
@@ -3212,6 +3312,7 @@
       "name": "Todoist",
       "short_desc": "Todoist is a powerful task management tool for individuals and teams.",
       "description_md": "Todoist helps you organize your work and life with its intuitive interface and robust features. Capture tasks quickly, set priorities, and collaborate with team members seamlessly. Perfect for project management, time tracking, and habit formation.\n\n*Capture tasks at the speed of thought*\n*Prioritize and categorize projects easily*\n*Collaborate with teams in real-time*\n*Integrations with popular apps like Slack and Google Calendar*\n*Templates for various use cases*\n",
+      "pricing_note": "Free plan limited; upgrade for advanced features.",
       "pros_jsonb": [
         "User-friendly interface",
         "Real-time collaboration",
@@ -3244,6 +3345,7 @@
       "name": "Udio",
       "short_desc": "AI music generation tool for creating full songs.",
       "description_md": "Udio is an AI music creation platform that generates complete, studio-quality songs from simple text prompts. Users describe a genre, mood, topic or lyrics and Udio produces tracks with realistic vocals, instrumentation and song structure. It supports extending clips, remixing and fine-grained control over style.\n\nPopular among hobbyists, content creators and musicians who want to prototype musical ideas quickly.",
+      "pricing_note": "Basic features free, advanced require subscription.",
       "pros_jsonb": [
         "AI-driven",
         "Studio-quality output",
@@ -3276,6 +3378,7 @@
       "name": "v0",
       "short_desc": "v0 by Vercel - AI-driven full-stack web app builder.",
       "description_md": "v0 by Vercel is an AI-powered platform for building full-stack web applications. It offers templates, design modes, and automatic integration with popular tools. Users can create, edit, and deploy apps quickly without coding knowledge.\n\nStart with pre-built components or use the prompt-based interface to generate code. Publish directly to Vercel for instant live deployment.",
+      "pricing_note": "Free plan available with limitations.",
       "pros_jsonb": [
         "AI-driven code generation",
         "Visual design mode",
@@ -3308,6 +3411,7 @@
       "name": "Webflow",
       "short_desc": "Design and build websites with Webflow’s visual editor.",
       "description_md": "Webflow is a web development platform that allows designers and developers to create, manage, and optimize websites using a visual interface. It includes features like design systems, content management, SEO optimization, and analytics.\n\nWith Webflow AEO, you can also rank in AI search engines. Trusted by over 300k teams.",
+      "pricing_note": "Starts at $25/month",
       "pros_jsonb": [
         "Visual drag-and-drop editor",
         "Built-in SEO tools",
@@ -3340,6 +3444,7 @@
       "name": "WellSaid Labs",
       "short_desc": "AI voice generator for professional-quality text-to-speech.",
       "description_md": "WellSaid Labs offers a cutting-edge AI voice generation tool that creates human-like text-to-speech voices in various dialects and styles. With over 120 natural-sounding AI voices, it's perfect for businesses needing high-quality audio content. Try the free version today to see the difference.",
+      "pricing_note": "Limited free tier available",
       "pros_jsonb": [
         "Highly realistic AI voices",
         "Built with real voice actors",
@@ -3371,6 +3476,7 @@
       "name": "Windsurf",
       "short_desc": "Manage local and cloud agents from one surface.",
       "description_md": "Devin Desktop is a unified interface for managing fleets of local and cloud agents. Plan, delegate, review, and ship tasks directly from your editor without switching contexts. Ideal for developers working with multiple environments and projects.",
+      "pricing_note": "Free plan available with limitations.",
       "pros_jsonb": [
         "Unified interface",
         "Cross-platform support",
@@ -3402,6 +3508,7 @@
       "name": "Wordtune",
       "short_desc": "AI-powered writing assistant for perfecting your English.",
       "description_md": "Wordtune is an AI writer that helps you rewrite, correct grammar, and perfect your English. Switch between formal and casual tones with ease, and enjoy advanced proofreading features to ensure accuracy before sending. Get started for free with no credit card required.",
+      "pricing_note": "No credit card required",
       "pros_jsonb": [
         "Free to use",
         "AI-driven rewriting suggestions",
@@ -3436,6 +3543,7 @@
       "name": "Workato",
       "short_desc": "Workato connects AI agents with over 1400 business apps for secure and scalable workflows.",
       "description_md": "Workato is an enterprise-grade integration platform that enables the seamless connection of artificial intelligence (AI) agents to more than 1,400 business applications. It provides a trusted orchestration layer ensuring predictability, scalability, and security in agentic AI workflows. Built on the #1 iPaaS, Workato supports various departments with unified management.",
+      "pricing_note": "Varies based on features and scale",
       "pros_jsonb": [
         "Extensive app integration",
         "Secure and scalable",
@@ -3468,6 +3576,7 @@
       "name": "Writesonic",
       "short_desc": "AI-driven SEO tool for content optimization and growth.",
       "description_md": "Writesonic is an AI search growth engine designed to enhance your online visibility through SEO, AEO, and GEO strategies. It helps track multiple platforms, optimize content, and measure the impact on traffic and revenue.",
+      "pricing_note": "Starts at $99/month",
       "pros_jsonb": [
         "AI-driven insights for content optimization",
         "Comprehensive platform tracking",
@@ -3499,6 +3608,7 @@
       "name": "Zapier",
       "short_desc": "Automate workflows across apps with Zapier.",
       "description_md": "Zapier is an AI-driven automation platform that connects over 9,000 applications. Automate tasks, manage access, and scale your operations without coding. Start free with email or Google accounts.",
+      "pricing_note": "Free plan available",
       "pros_jsonb": [
         "Integrates over 9,000 apps",
         "No-code automation for teams",
@@ -3598,6 +3708,2758 @@
       "seo_intro_md": "Boost your productivity with this curated list of AI and SaaS tools designed for real-time collaboration, project management, and automation. Whether you're looking to streamline workflows or enhance meeting efficiency, these tools offer a range of features from task management to transcription and presentation creation. Choose the one that best fits your needs by exploring their unique capabilities.",
       "seo_title": "AI & SaaS Productivity Tools",
       "seo_description": "Discover AI-driven productivity tools for collaboration, project management, and automation. Find the perfect fit for your workflow."
+    }
+  ],
+  "alternatives": [
+    {
+      "tool_slug": "wellsaid",
+      "alternative_slug": "murf",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "wellsaid",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.753)"
+    },
+    {
+      "tool_slug": "wellsaid",
+      "alternative_slug": "speechify",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "wellsaid",
+      "alternative_slug": "play-ht",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "superhuman",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.736)"
+    },
+    {
+      "tool_slug": "superhuman",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.733)"
+    },
+    {
+      "tool_slug": "superhuman",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "superhuman",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.724)"
+    },
+    {
+      "tool_slug": "superhuman",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.710)"
+    },
+    {
+      "tool_slug": "udio",
+      "alternative_slug": "suno",
+      "reason": "semantic similarity (cosine 0.846)"
+    },
+    {
+      "tool_slug": "udio",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.760)"
+    },
+    {
+      "tool_slug": "udio",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "udio",
+      "alternative_slug": "lalal-ai",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "udio",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "v0",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "v0",
+      "alternative_slug": "retool",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "v0",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.749)"
+    },
+    {
+      "tool_slug": "v0",
+      "alternative_slug": "bubble",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "v0",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "wordtune",
+      "alternative_slug": "grammarly",
+      "reason": "semantic similarity (cosine 0.795)"
+    },
+    {
+      "tool_slug": "wordtune",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.786)"
+    },
+    {
+      "tool_slug": "wordtune",
+      "alternative_slug": "speechify",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "wordtune",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.749)"
+    },
+    {
+      "tool_slug": "wordtune",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "windsurf",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.782)"
+    },
+    {
+      "tool_slug": "windsurf",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.682)"
+    },
+    {
+      "tool_slug": "windsurf",
+      "alternative_slug": "flutterflow",
+      "reason": "semantic similarity (cosine 0.670)"
+    },
+    {
+      "tool_slug": "windsurf",
+      "alternative_slug": "mistral",
+      "reason": "semantic similarity (cosine 0.662)"
+    },
+    {
+      "tool_slug": "windsurf",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.660)"
+    },
+    {
+      "tool_slug": "grammarly",
+      "alternative_slug": "wordtune",
+      "reason": "semantic similarity (cosine 0.795)"
+    },
+    {
+      "tool_slug": "grammarly",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "grammarly",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "grammarly",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.721)"
+    },
+    {
+      "tool_slug": "grammarly",
+      "alternative_slug": "speechify",
+      "reason": "semantic similarity (cosine 0.714)"
+    },
+    {
+      "tool_slug": "quillbot",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.785)"
+    },
+    {
+      "tool_slug": "quillbot",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.777)"
+    },
+    {
+      "tool_slug": "quillbot",
+      "alternative_slug": "wordtune",
+      "reason": "semantic similarity (cosine 0.749)"
+    },
+    {
+      "tool_slug": "quillbot",
+      "alternative_slug": "grammarly",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "quillbot",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "luma-dream-machine",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.731)"
+    },
+    {
+      "tool_slug": "luma-dream-machine",
+      "alternative_slug": "pipedream",
+      "reason": "semantic similarity (cosine 0.715)"
+    },
+    {
+      "tool_slug": "luma-dream-machine",
+      "alternative_slug": "notion",
+      "reason": "semantic similarity (cosine 0.705)"
+    },
+    {
+      "tool_slug": "luma-dream-machine",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.702)"
+    },
+    {
+      "tool_slug": "luma-dream-machine",
+      "alternative_slug": "tldv",
+      "reason": "semantic similarity (cosine 0.693)"
+    },
+    {
+      "tool_slug": "cursor",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.793)"
+    },
+    {
+      "tool_slug": "cursor",
+      "alternative_slug": "microsoft-copilot",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "cursor",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "cursor",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.731)"
+    },
+    {
+      "tool_slug": "cursor",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "d-id",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.792)"
+    },
+    {
+      "tool_slug": "d-id",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "d-id",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "d-id",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "d-id",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "hyperwrite",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.800)"
+    },
+    {
+      "tool_slug": "hyperwrite",
+      "alternative_slug": "wordtune",
+      "reason": "semantic similarity (cosine 0.786)"
+    },
+    {
+      "tool_slug": "hyperwrite",
+      "alternative_slug": "jenni-ai",
+      "reason": "semantic similarity (cosine 0.786)"
+    },
+    {
+      "tool_slug": "hyperwrite",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.785)"
+    },
+    {
+      "tool_slug": "hyperwrite",
+      "alternative_slug": "writesonic",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "jenni-ai",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.786)"
+    },
+    {
+      "tool_slug": "jenni-ai",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "jenni-ai",
+      "alternative_slug": "elicit",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "jenni-ai",
+      "alternative_slug": "wordtune",
+      "reason": "semantic similarity (cosine 0.721)"
+    },
+    {
+      "tool_slug": "jenni-ai",
+      "alternative_slug": "consensus",
+      "reason": "semantic similarity (cosine 0.714)"
+    },
+    {
+      "tool_slug": "looka",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.783)"
+    },
+    {
+      "tool_slug": "looka",
+      "alternative_slug": "recraft",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "looka",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "looka",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "looka",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.722)"
+    },
+    {
+      "tool_slug": "magnific",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.796)"
+    },
+    {
+      "tool_slug": "magnific",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "magnific",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "magnific",
+      "alternative_slug": "recraft",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "magnific",
+      "alternative_slug": "krea-ai",
+      "reason": "semantic similarity (cosine 0.752)"
+    },
+    {
+      "tool_slug": "notebooklm",
+      "alternative_slug": "notion",
+      "reason": "semantic similarity (cosine 0.692)"
+    },
+    {
+      "tool_slug": "notebooklm",
+      "alternative_slug": "mem",
+      "reason": "semantic similarity (cosine 0.691)"
+    },
+    {
+      "tool_slug": "notebooklm",
+      "alternative_slug": "tldv",
+      "reason": "semantic similarity (cosine 0.691)"
+    },
+    {
+      "tool_slug": "notebooklm",
+      "alternative_slug": "otter-ai",
+      "reason": "semantic similarity (cosine 0.681)"
+    },
+    {
+      "tool_slug": "notebooklm",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.663)"
+    },
+    {
+      "tool_slug": "opus-clip",
+      "alternative_slug": "capcut",
+      "reason": "semantic similarity (cosine 0.789)"
+    },
+    {
+      "tool_slug": "opus-clip",
+      "alternative_slug": "clipdrop",
+      "reason": "semantic similarity (cosine 0.781)"
+    },
+    {
+      "tool_slug": "opus-clip",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "opus-clip",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "opus-clip",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "relevance-ai",
+      "alternative_slug": "mistral",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "relevance-ai",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "relevance-ai",
+      "alternative_slug": "jasper",
+      "reason": "semantic similarity (cosine 0.721)"
+    },
+    {
+      "tool_slug": "relevance-ai",
+      "alternative_slug": "openai",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "relevance-ai",
+      "alternative_slug": "workato",
+      "reason": "semantic similarity (cosine 0.719)"
+    },
+    {
+      "tool_slug": "retool",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.790)"
+    },
+    {
+      "tool_slug": "retool",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.773)"
+    },
+    {
+      "tool_slug": "retool",
+      "alternative_slug": "softr",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "retool",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "retool",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "scrapingbee",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.793)"
+    },
+    {
+      "tool_slug": "scrapingbee",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.772)"
+    },
+    {
+      "tool_slug": "scrapingbee",
+      "alternative_slug": "phantombuster",
+      "reason": "semantic similarity (cosine 0.771)"
+    },
+    {
+      "tool_slug": "scrapingbee",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "scrapingbee",
+      "alternative_slug": "bright-data",
+      "reason": "semantic similarity (cosine 0.764)"
+    },
+    {
+      "tool_slug": "surfer-seo",
+      "alternative_slug": "writesonic",
+      "reason": "semantic similarity (cosine 0.810)"
+    },
+    {
+      "tool_slug": "surfer-seo",
+      "alternative_slug": "frase",
+      "reason": "semantic similarity (cosine 0.783)"
+    },
+    {
+      "tool_slug": "surfer-seo",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "surfer-seo",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "surfer-seo",
+      "alternative_slug": "jasper",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "tldv",
+      "alternative_slug": "otter-ai",
+      "reason": "semantic similarity (cosine 0.798)"
+    },
+    {
+      "tool_slug": "notion",
+      "alternative_slug": "mem",
+      "reason": "semantic similarity (cosine 0.715)"
+    },
+    {
+      "tool_slug": "notion",
+      "alternative_slug": "luma-dream-machine",
+      "reason": "semantic similarity (cosine 0.705)"
+    },
+    {
+      "tool_slug": "notion",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.699)"
+    },
+    {
+      "tool_slug": "notion",
+      "alternative_slug": "coda",
+      "reason": "semantic similarity (cosine 0.698)"
+    },
+    {
+      "tool_slug": "notion",
+      "alternative_slug": "notebooklm",
+      "reason": "semantic similarity (cosine 0.692)"
+    },
+    {
+      "tool_slug": "make",
+      "alternative_slug": "pipedream",
+      "reason": "semantic similarity (cosine 0.781)"
+    },
+    {
+      "tool_slug": "make",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "make",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "make",
+      "alternative_slug": "zapier",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "make",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "copy-ai",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.758)"
+    },
+    {
+      "tool_slug": "copy-ai",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.733)"
+    },
+    {
+      "tool_slug": "copy-ai",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.721)"
+    },
+    {
+      "tool_slug": "copy-ai",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.712)"
+    },
+    {
+      "tool_slug": "copy-ai",
+      "alternative_slug": "relevance-ai",
+      "reason": "semantic similarity (cosine 0.712)"
+    },
+    {
+      "tool_slug": "activepieces",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "activepieces",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "activepieces",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.758)"
+    },
+    {
+      "tool_slug": "activepieces",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "activepieces",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "clipdrop",
+      "alternative_slug": "opus-clip",
+      "reason": "semantic similarity (cosine 0.781)"
+    },
+    {
+      "tool_slug": "clipdrop",
+      "alternative_slug": "capcut",
+      "reason": "semantic similarity (cosine 0.770)"
+    },
+    {
+      "tool_slug": "clipdrop",
+      "alternative_slug": "magnific",
+      "reason": "semantic similarity (cosine 0.750)"
+    },
+    {
+      "tool_slug": "clipdrop",
+      "alternative_slug": "freepik",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "clipdrop",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "krea-ai",
+      "alternative_slug": "kling",
+      "reason": "semantic similarity (cosine 0.838)"
+    },
+    {
+      "tool_slug": "krea-ai",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.779)"
+    },
+    {
+      "tool_slug": "krea-ai",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "krea-ai",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "krea-ai",
+      "alternative_slug": "magnific",
+      "reason": "semantic similarity (cosine 0.752)"
+    },
+    {
+      "tool_slug": "pipedream",
+      "alternative_slug": "make",
+      "reason": "semantic similarity (cosine 0.781)"
+    },
+    {
+      "tool_slug": "pipedream",
+      "alternative_slug": "zapier",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "pipedream",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "pipedream",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "pipedream",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.744)"
+    },
+    {
+      "tool_slug": "bubble",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.788)"
+    },
+    {
+      "tool_slug": "bubble",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.778)"
+    },
+    {
+      "tool_slug": "bubble",
+      "alternative_slug": "softr",
+      "reason": "semantic similarity (cosine 0.776)"
+    },
+    {
+      "tool_slug": "bubble",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "bubble",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "coda",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.709)"
+    },
+    {
+      "tool_slug": "coda",
+      "alternative_slug": "tana",
+      "reason": "semantic similarity (cosine 0.705)"
+    },
+    {
+      "tool_slug": "coda",
+      "alternative_slug": "workato",
+      "reason": "semantic similarity (cosine 0.704)"
+    },
+    {
+      "tool_slug": "coda",
+      "alternative_slug": "notion",
+      "reason": "semantic similarity (cosine 0.698)"
+    },
+    {
+      "tool_slug": "coda",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.692)"
+    },
+    {
+      "tool_slug": "ideogram",
+      "alternative_slug": "krea-ai",
+      "reason": "semantic similarity (cosine 0.710)"
+    },
+    {
+      "tool_slug": "ideogram",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "ideogram",
+      "alternative_slug": "kling",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "ideogram",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "ideogram",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.707)"
+    },
+    {
+      "tool_slug": "phantombuster",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.771)"
+    },
+    {
+      "tool_slug": "phantombuster",
+      "alternative_slug": "bardeen",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "phantombuster",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.741)"
+    },
+    {
+      "tool_slug": "phantombuster",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "phantombuster",
+      "alternative_slug": "bright-data",
+      "reason": "semantic similarity (cosine 0.719)"
+    },
+    {
+      "tool_slug": "play-ht",
+      "alternative_slug": "murf",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "play-ht",
+      "alternative_slug": "wellsaid",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "play-ht",
+      "alternative_slug": "elevenlabs",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "play-ht",
+      "alternative_slug": "speechify",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "play-ht",
+      "alternative_slug": "resemble-ai",
+      "reason": "semantic similarity (cosine 0.703)"
+    },
+    {
+      "tool_slug": "apify",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "apify",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "apify",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "apify",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "apify",
+      "alternative_slug": "bardeen",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "openai",
+      "alternative_slug": "mistral",
+      "reason": "semantic similarity (cosine 0.764)"
+    },
+    {
+      "tool_slug": "openai",
+      "alternative_slug": "workato",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "openai",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "openai",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.723)"
+    },
+    {
+      "tool_slug": "openai",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.723)"
+    },
+    {
+      "tool_slug": "bright-data",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.764)"
+    },
+    {
+      "tool_slug": "bright-data",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "bright-data",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "bright-data",
+      "alternative_slug": "apify",
+      "reason": "semantic similarity (cosine 0.731)"
+    },
+    {
+      "tool_slug": "bright-data",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "ifttt",
+      "alternative_slug": "zapier",
+      "reason": "semantic similarity (cosine 0.752)"
+    },
+    {
+      "tool_slug": "ifttt",
+      "alternative_slug": "make",
+      "reason": "semantic similarity (cosine 0.722)"
+    },
+    {
+      "tool_slug": "ifttt",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.711)"
+    },
+    {
+      "tool_slug": "ifttt",
+      "alternative_slug": "retool",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "ifttt",
+      "alternative_slug": "n8n",
+      "reason": "semantic similarity (cosine 0.704)"
+    },
+    {
+      "tool_slug": "octoparse",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "octoparse",
+      "alternative_slug": "bright-data",
+      "reason": "semantic similarity (cosine 0.722)"
+    },
+    {
+      "tool_slug": "octoparse",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.717)"
+    },
+    {
+      "tool_slug": "octoparse",
+      "alternative_slug": "phantombuster",
+      "reason": "semantic similarity (cosine 0.714)"
+    },
+    {
+      "tool_slug": "octoparse",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.689)"
+    },
+    {
+      "tool_slug": "webflow",
+      "alternative_slug": "flutterflow",
+      "reason": "semantic similarity (cosine 0.809)"
+    },
+    {
+      "tool_slug": "webflow",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "webflow",
+      "alternative_slug": "pipedream",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "webflow",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.711)"
+    },
+    {
+      "tool_slug": "webflow",
+      "alternative_slug": "photoroom",
+      "reason": "semantic similarity (cosine 0.697)"
+    },
+    {
+      "tool_slug": "resemble-ai",
+      "alternative_slug": "murf",
+      "reason": "semantic similarity (cosine 0.764)"
+    },
+    {
+      "tool_slug": "resemble-ai",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "resemble-ai",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "resemble-ai",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.724)"
+    },
+    {
+      "tool_slug": "resemble-ai",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "rytr",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.800)"
+    },
+    {
+      "tool_slug": "rytr",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.777)"
+    },
+    {
+      "tool_slug": "rytr",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.762)"
+    },
+    {
+      "tool_slug": "rytr",
+      "alternative_slug": "writesonic",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "rytr",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "firecrawl",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.779)"
+    },
+    {
+      "tool_slug": "firecrawl",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.772)"
+    },
+    {
+      "tool_slug": "firecrawl",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "firecrawl",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "firecrawl",
+      "alternative_slug": "bardeen",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "adobe-podcast",
+      "alternative_slug": "podcastle",
+      "reason": "semantic similarity (cosine 0.852)"
+    },
+    {
+      "tool_slug": "adobe-podcast",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.811)"
+    },
+    {
+      "tool_slug": "adobe-podcast",
+      "alternative_slug": "murf",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "adobe-podcast",
+      "alternative_slug": "opus-clip",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "adobe-podcast",
+      "alternative_slug": "adobe-firefly",
+      "reason": "semantic similarity (cosine 0.753)"
+    },
+    {
+      "tool_slug": "github-copilot",
+      "alternative_slug": "microsoft-copilot",
+      "reason": "semantic similarity (cosine 0.861)"
+    },
+    {
+      "tool_slug": "github-copilot",
+      "alternative_slug": "cursor",
+      "reason": "semantic similarity (cosine 0.793)"
+    },
+    {
+      "tool_slug": "github-copilot",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "github-copilot",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.758)"
+    },
+    {
+      "tool_slug": "github-copilot",
+      "alternative_slug": "pipedream",
+      "reason": "semantic similarity (cosine 0.744)"
+    },
+    {
+      "tool_slug": "hailuo",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.831)"
+    },
+    {
+      "tool_slug": "hailuo",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.792)"
+    },
+    {
+      "tool_slug": "hailuo",
+      "alternative_slug": "krea-ai",
+      "reason": "semantic similarity (cosine 0.779)"
+    },
+    {
+      "tool_slug": "hailuo",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.776)"
+    },
+    {
+      "tool_slug": "hailuo",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.775)"
+    },
+    {
+      "tool_slug": "clickup",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.772)"
+    },
+    {
+      "tool_slug": "clickup",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "clickup",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.737)"
+    },
+    {
+      "tool_slug": "clickup",
+      "alternative_slug": "lindy",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "clickup",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "stability-ai",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.775)"
+    },
+    {
+      "tool_slug": "stability-ai",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.768)"
+    },
+    {
+      "tool_slug": "stability-ai",
+      "alternative_slug": "krea-ai",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "stability-ai",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "stability-ai",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "workato",
+      "alternative_slug": "zapier",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "workato",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.744)"
+    },
+    {
+      "tool_slug": "workato",
+      "alternative_slug": "openai",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "workato",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.731)"
+    },
+    {
+      "tool_slug": "workato",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "midjourney",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "midjourney",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "midjourney",
+      "alternative_slug": "magnific",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "midjourney",
+      "alternative_slug": "kling",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "midjourney",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "taskade",
+      "alternative_slug": "retool",
+      "reason": "semantic similarity (cosine 0.790)"
+    },
+    {
+      "tool_slug": "taskade",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "taskade",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "taskade",
+      "alternative_slug": "zapier",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "taskade",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "airtable",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "airtable",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "airtable",
+      "alternative_slug": "make",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "airtable",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "airtable",
+      "alternative_slug": "zapier",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "zapier",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "zapier",
+      "alternative_slug": "pipedream",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "zapier",
+      "alternative_slug": "make",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "zapier",
+      "alternative_slug": "ifttt",
+      "reason": "semantic similarity (cosine 0.752)"
+    },
+    {
+      "tool_slug": "zapier",
+      "alternative_slug": "workato",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "fireflies-ai",
+      "alternative_slug": "adobe-firefly",
+      "reason": "semantic similarity (cosine 0.797)"
+    },
+    {
+      "tool_slug": "fireflies-ai",
+      "alternative_slug": "microsoft-copilot",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "fireflies-ai",
+      "alternative_slug": "tldv",
+      "reason": "semantic similarity (cosine 0.763)"
+    },
+    {
+      "tool_slug": "fireflies-ai",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "fireflies-ai",
+      "alternative_slug": "tana",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "framer",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.777)"
+    },
+    {
+      "tool_slug": "framer",
+      "alternative_slug": "softr",
+      "reason": "semantic similarity (cosine 0.776)"
+    },
+    {
+      "tool_slug": "framer",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.762)"
+    },
+    {
+      "tool_slug": "framer",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "framer",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "bardeen",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.760)"
+    },
+    {
+      "tool_slug": "bardeen",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "bardeen",
+      "alternative_slug": "phantombuster",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "bardeen",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "bardeen",
+      "alternative_slug": "apify",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "glide",
+      "alternative_slug": "softr",
+      "reason": "semantic similarity (cosine 0.801)"
+    },
+    {
+      "tool_slug": "glide",
+      "alternative_slug": "bubble",
+      "reason": "semantic similarity (cosine 0.788)"
+    },
+    {
+      "tool_slug": "glide",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "glide",
+      "alternative_slug": "make",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "glide",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "elevenlabs",
+      "alternative_slug": "wellsaid",
+      "reason": "semantic similarity (cosine 0.824)"
+    },
+    {
+      "tool_slug": "elevenlabs",
+      "alternative_slug": "murf",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "elevenlabs",
+      "alternative_slug": "speechify",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "elevenlabs",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "elevenlabs",
+      "alternative_slug": "play-ht",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "deepseek",
+      "alternative_slug": "resemble-ai",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "deepseek",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.718)"
+    },
+    {
+      "tool_slug": "deepseek",
+      "alternative_slug": "runway",
+      "reason": "semantic similarity (cosine 0.715)"
+    },
+    {
+      "tool_slug": "deepseek",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.714)"
+    },
+    {
+      "tool_slug": "deepseek",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.710)"
+    },
+    {
+      "tool_slug": "descript",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.811)"
+    },
+    {
+      "tool_slug": "descript",
+      "alternative_slug": "podcastle",
+      "reason": "semantic similarity (cosine 0.786)"
+    },
+    {
+      "tool_slug": "descript",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.773)"
+    },
+    {
+      "tool_slug": "descript",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "descript",
+      "alternative_slug": "opus-clip",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "gamma",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.750)"
+    },
+    {
+      "tool_slug": "gamma",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.744)"
+    },
+    {
+      "tool_slug": "gamma",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "gamma",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "gamma",
+      "alternative_slug": "elicit",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "gemini",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.753)"
+    },
+    {
+      "tool_slug": "gemini",
+      "alternative_slug": "gamma",
+      "reason": "semantic similarity (cosine 0.738)"
+    },
+    {
+      "tool_slug": "gemini",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "gemini",
+      "alternative_slug": "microsoft-copilot",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "gemini",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.716)"
+    },
+    {
+      "tool_slug": "lovable",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "lovable",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "lovable",
+      "alternative_slug": "bolt-new",
+      "reason": "semantic similarity (cosine 0.737)"
+    },
+    {
+      "tool_slug": "lovable",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "lovable",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.734)"
+    },
+    {
+      "tool_slug": "microsoft-copilot",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.861)"
+    },
+    {
+      "tool_slug": "microsoft-copilot",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "microsoft-copilot",
+      "alternative_slug": "cursor",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "microsoft-copilot",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.736)"
+    },
+    {
+      "tool_slug": "microsoft-copilot",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.734)"
+    },
+    {
+      "tool_slug": "mistral",
+      "alternative_slug": "openai",
+      "reason": "semantic similarity (cosine 0.764)"
+    },
+    {
+      "tool_slug": "mistral",
+      "alternative_slug": "relevance-ai",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "mistral",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "mistral",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.737)"
+    },
+    {
+      "tool_slug": "mistral",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.733)"
+    },
+    {
+      "tool_slug": "murf",
+      "alternative_slug": "wellsaid",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "murf",
+      "alternative_slug": "play-ht",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "murf",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "murf",
+      "alternative_slug": "elevenlabs",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "murf",
+      "alternative_slug": "resemble-ai",
+      "reason": "semantic similarity (cosine 0.764)"
+    },
+    {
+      "tool_slug": "recraft",
+      "alternative_slug": "magnific",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "recraft",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.752)"
+    },
+    {
+      "tool_slug": "recraft",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "recraft",
+      "alternative_slug": "looka",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "recraft",
+      "alternative_slug": "runway",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "gumloop",
+      "alternative_slug": "softr",
+      "reason": "semantic similarity (cosine 0.796)"
+    },
+    {
+      "tool_slug": "gumloop",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "gumloop",
+      "alternative_slug": "bubble",
+      "reason": "semantic similarity (cosine 0.778)"
+    },
+    {
+      "tool_slug": "gumloop",
+      "alternative_slug": "retool",
+      "reason": "semantic similarity (cosine 0.773)"
+    },
+    {
+      "tool_slug": "gumloop",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "claude",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "claude",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.722)"
+    },
+    {
+      "tool_slug": "claude",
+      "alternative_slug": "cursor",
+      "reason": "semantic similarity (cosine 0.712)"
+    },
+    {
+      "tool_slug": "claude",
+      "alternative_slug": "microsoft-copilot",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "claude",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.702)"
+    },
+    {
+      "tool_slug": "leonardo-ai",
+      "alternative_slug": "magnific",
+      "reason": "semantic similarity (cosine 0.796)"
+    },
+    {
+      "tool_slug": "leonardo-ai",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "leonardo-ai",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "leonardo-ai",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "leonardo-ai",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "runway",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "runway",
+      "alternative_slug": "flux",
+      "reason": "semantic similarity (cosine 0.738)"
+    },
+    {
+      "tool_slug": "runway",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "runway",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "runway",
+      "alternative_slug": "recraft",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "suno",
+      "alternative_slug": "udio",
+      "reason": "semantic similarity (cosine 0.846)"
+    },
+    {
+      "tool_slug": "suno",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "suno",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.740)"
+    },
+    {
+      "tool_slug": "suno",
+      "alternative_slug": "lalal-ai",
+      "reason": "semantic similarity (cosine 0.716)"
+    },
+    {
+      "tool_slug": "suno",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.709)"
+    },
+    {
+      "tool_slug": "synthesia",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.818)"
+    },
+    {
+      "tool_slug": "synthesia",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.804)"
+    },
+    {
+      "tool_slug": "synthesia",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.792)"
+    },
+    {
+      "tool_slug": "synthesia",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.792)"
+    },
+    {
+      "tool_slug": "synthesia",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "writesonic",
+      "alternative_slug": "surfer-seo",
+      "reason": "semantic similarity (cosine 0.810)"
+    },
+    {
+      "tool_slug": "writesonic",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "writesonic",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "writesonic",
+      "alternative_slug": "frase",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "writesonic",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "jasper",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "jasper",
+      "alternative_slug": "apify",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "jasper",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "jasper",
+      "alternative_slug": "surfer-seo",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "jasper",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "n8n",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.741)"
+    },
+    {
+      "tool_slug": "n8n",
+      "alternative_slug": "pipedream",
+      "reason": "semantic similarity (cosine 0.738)"
+    },
+    {
+      "tool_slug": "n8n",
+      "alternative_slug": "airtable",
+      "reason": "semantic similarity (cosine 0.734)"
+    },
+    {
+      "tool_slug": "n8n",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "n8n",
+      "alternative_slug": "workato",
+      "reason": "semantic similarity (cosine 0.723)"
+    },
+    {
+      "tool_slug": "adobe-firefly",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.797)"
+    },
+    {
+      "tool_slug": "adobe-firefly",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.753)"
+    },
+    {
+      "tool_slug": "adobe-firefly",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.753)"
+    },
+    {
+      "tool_slug": "adobe-firefly",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "adobe-firefly",
+      "alternative_slug": "krea-ai",
+      "reason": "semantic similarity (cosine 0.749)"
+    },
+    {
+      "tool_slug": "softr",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.801)"
+    },
+    {
+      "tool_slug": "softr",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.796)"
+    },
+    {
+      "tool_slug": "softr",
+      "alternative_slug": "bubble",
+      "reason": "semantic similarity (cosine 0.776)"
+    },
+    {
+      "tool_slug": "softr",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.776)"
+    },
+    {
+      "tool_slug": "softr",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "freepik",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.768)"
+    },
+    {
+      "tool_slug": "freepik",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.762)"
+    },
+    {
+      "tool_slug": "freepik",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "freepik",
+      "alternative_slug": "adobe-firefly",
+      "reason": "semantic similarity (cosine 0.749)"
+    },
+    {
+      "tool_slug": "freepik",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "heygen",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.831)"
+    },
+    {
+      "tool_slug": "heygen",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.804)"
+    },
+    {
+      "tool_slug": "heygen",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.763)"
+    },
+    {
+      "tool_slug": "heygen",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "heygen",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "otter-ai",
+      "alternative_slug": "tldv",
+      "reason": "semantic similarity (cosine 0.798)"
+    },
+    {
+      "tool_slug": "otter-ai",
+      "alternative_slug": "fathom",
+      "reason": "semantic similarity (cosine 0.778)"
+    },
+    {
+      "tool_slug": "otter-ai",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.758)"
+    },
+    {
+      "tool_slug": "otter-ai",
+      "alternative_slug": "tana",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "otter-ai",
+      "alternative_slug": "mem",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "sudowrite",
+      "alternative_slug": "hyperwrite",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "sudowrite",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "sudowrite",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.722)"
+    },
+    {
+      "tool_slug": "sudowrite",
+      "alternative_slug": "rytr",
+      "reason": "semantic similarity (cosine 0.713)"
+    },
+    {
+      "tool_slug": "sudowrite",
+      "alternative_slug": "wordtune",
+      "reason": "semantic similarity (cosine 0.706)"
+    },
+    {
+      "tool_slug": "pika",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.799)"
+    },
+    {
+      "tool_slug": "pika",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "pika",
+      "alternative_slug": "freepik",
+      "reason": "semantic similarity (cosine 0.768)"
+    },
+    {
+      "tool_slug": "pika",
+      "alternative_slug": "kling",
+      "reason": "semantic similarity (cosine 0.763)"
+    },
+    {
+      "tool_slug": "pika",
+      "alternative_slug": "heygen",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "bolt-new",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.777)"
+    },
+    {
+      "tool_slug": "bolt-new",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "bolt-new",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "bolt-new",
+      "alternative_slug": "retool",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "bolt-new",
+      "alternative_slug": "softr",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "canva",
+      "alternative_slug": "playground-ai",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "canva",
+      "alternative_slug": "looka",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "canva",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.719)"
+    },
+    {
+      "tool_slug": "canva",
+      "alternative_slug": "adobe-firefly",
+      "reason": "semantic similarity (cosine 0.715)"
+    },
+    {
+      "tool_slug": "canva",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.710)"
+    },
+    {
+      "tool_slug": "browse-ai",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.793)"
+    },
+    {
+      "tool_slug": "browse-ai",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.779)"
+    },
+    {
+      "tool_slug": "browse-ai",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.779)"
+    },
+    {
+      "tool_slug": "browse-ai",
+      "alternative_slug": "apify",
+      "reason": "semantic similarity (cosine 0.766)"
+    },
+    {
+      "tool_slug": "browse-ai",
+      "alternative_slug": "bubble",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "devin",
+      "alternative_slug": "windsurf",
+      "reason": "semantic similarity (cosine 0.782)"
+    },
+    {
+      "tool_slug": "devin",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.758)"
+    },
+    {
+      "tool_slug": "devin",
+      "alternative_slug": "cursor",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "devin",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.747)"
+    },
+    {
+      "tool_slug": "devin",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "elicit",
+      "alternative_slug": "consensus",
+      "reason": "semantic similarity (cosine 0.782)"
+    },
+    {
+      "tool_slug": "elicit",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.744)"
+    },
+    {
+      "tool_slug": "elicit",
+      "alternative_slug": "gamma",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "elicit",
+      "alternative_slug": "jenni-ai",
+      "reason": "semantic similarity (cosine 0.725)"
+    },
+    {
+      "tool_slug": "elicit",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.722)"
+    },
+    {
+      "tool_slug": "fathom",
+      "alternative_slug": "tldv",
+      "reason": "semantic similarity (cosine 0.795)"
+    },
+    {
+      "tool_slug": "fathom",
+      "alternative_slug": "otter-ai",
+      "reason": "semantic similarity (cosine 0.778)"
+    },
+    {
+      "tool_slug": "fathom",
+      "alternative_slug": "tana",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "fathom",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.754)"
+    },
+    {
+      "tool_slug": "fathom",
+      "alternative_slug": "mem",
+      "reason": "semantic similarity (cosine 0.719)"
+    },
+    {
+      "tool_slug": "capcut",
+      "alternative_slug": "opus-clip",
+      "reason": "semantic similarity (cosine 0.789)"
+    },
+    {
+      "tool_slug": "capcut",
+      "alternative_slug": "clipdrop",
+      "reason": "semantic similarity (cosine 0.770)"
+    },
+    {
+      "tool_slug": "capcut",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.753)"
+    },
+    {
+      "tool_slug": "capcut",
+      "alternative_slug": "podcastle",
+      "reason": "semantic similarity (cosine 0.737)"
+    },
+    {
+      "tool_slug": "capcut",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "consensus",
+      "alternative_slug": "elicit",
+      "reason": "semantic similarity (cosine 0.782)"
+    },
+    {
+      "tool_slug": "consensus",
+      "alternative_slug": "diffbot",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "consensus",
+      "alternative_slug": "perplexity",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "consensus",
+      "alternative_slug": "jenni-ai",
+      "reason": "semantic similarity (cosine 0.714)"
+    },
+    {
+      "tool_slug": "consensus",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "diffbot",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.779)"
+    },
+    {
+      "tool_slug": "diffbot",
+      "alternative_slug": "firecrawl",
+      "reason": "semantic similarity (cosine 0.767)"
+    },
+    {
+      "tool_slug": "diffbot",
+      "alternative_slug": "scrapingbee",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "diffbot",
+      "alternative_slug": "apify",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "diffbot",
+      "alternative_slug": "bright-data",
+      "reason": "semantic similarity (cosine 0.757)"
+    },
+    {
+      "tool_slug": "flutterflow",
+      "alternative_slug": "webflow",
+      "reason": "semantic similarity (cosine 0.809)"
+    },
+    {
+      "tool_slug": "flutterflow",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "flutterflow",
+      "alternative_slug": "bubble",
+      "reason": "semantic similarity (cosine 0.727)"
+    },
+    {
+      "tool_slug": "flutterflow",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.723)"
+    },
+    {
+      "tool_slug": "flutterflow",
+      "alternative_slug": "v0",
+      "reason": "semantic similarity (cosine 0.718)"
+    },
+    {
+      "tool_slug": "frase",
+      "alternative_slug": "surfer-seo",
+      "reason": "semantic similarity (cosine 0.783)"
+    },
+    {
+      "tool_slug": "frase",
+      "alternative_slug": "writesonic",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "frase",
+      "alternative_slug": "jasper",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "frase",
+      "alternative_slug": "framer",
+      "reason": "semantic similarity (cosine 0.711)"
+    },
+    {
+      "tool_slug": "frase",
+      "alternative_slug": "browse-ai",
+      "reason": "semantic similarity (cosine 0.700)"
+    },
+    {
+      "tool_slug": "flux",
+      "alternative_slug": "runway",
+      "reason": "semantic similarity (cosine 0.738)"
+    },
+    {
+      "tool_slug": "flux",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "flux",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "flux",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "flux",
+      "alternative_slug": "adobe-firefly",
+      "reason": "semantic similarity (cosine 0.721)"
+    },
+    {
+      "tool_slug": "invideo",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.818)"
+    },
+    {
+      "tool_slug": "invideo",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.799)"
+    },
+    {
+      "tool_slug": "invideo",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.776)"
+    },
+    {
+      "tool_slug": "invideo",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "invideo",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.768)"
+    },
+    {
+      "tool_slug": "kling",
+      "alternative_slug": "krea-ai",
+      "reason": "semantic similarity (cosine 0.838)"
+    },
+    {
+      "tool_slug": "kling",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.763)"
+    },
+    {
+      "tool_slug": "kling",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.756)"
+    },
+    {
+      "tool_slug": "kling",
+      "alternative_slug": "hailuo",
+      "reason": "semantic similarity (cosine 0.751)"
+    },
+    {
+      "tool_slug": "kling",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.749)"
+    },
+    {
+      "tool_slug": "lalal-ai",
+      "alternative_slug": "udio",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "lalal-ai",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.736)"
+    },
+    {
+      "tool_slug": "lalal-ai",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.735)"
+    },
+    {
+      "tool_slug": "lalal-ai",
+      "alternative_slug": "podcastle",
+      "reason": "semantic similarity (cosine 0.719)"
+    },
+    {
+      "tool_slug": "lalal-ai",
+      "alternative_slug": "resemble-ai",
+      "reason": "semantic similarity (cosine 0.717)"
+    },
+    {
+      "tool_slug": "lindy",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "lindy",
+      "alternative_slug": "tana",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "lindy",
+      "alternative_slug": "reclaim",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "lindy",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.728)"
+    },
+    {
+      "tool_slug": "lindy",
+      "alternative_slug": "otter-ai",
+      "reason": "semantic similarity (cosine 0.726)"
+    },
+    {
+      "tool_slug": "motion",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.787)"
+    },
+    {
+      "tool_slug": "motion",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.772)"
+    },
+    {
+      "tool_slug": "motion",
+      "alternative_slug": "glide",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "motion",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.738)"
+    },
+    {
+      "tool_slug": "motion",
+      "alternative_slug": "superhuman",
+      "reason": "semantic similarity (cosine 0.736)"
+    },
+    {
+      "tool_slug": "playground-ai",
+      "alternative_slug": "looka",
+      "reason": "semantic similarity (cosine 0.783)"
+    },
+    {
+      "tool_slug": "playground-ai",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.769)"
+    },
+    {
+      "tool_slug": "playground-ai",
+      "alternative_slug": "leonardo-ai",
+      "reason": "semantic similarity (cosine 0.765)"
+    },
+    {
+      "tool_slug": "playground-ai",
+      "alternative_slug": "freepik",
+      "reason": "semantic similarity (cosine 0.762)"
+    },
+    {
+      "tool_slug": "playground-ai",
+      "alternative_slug": "runway",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "podcastle",
+      "alternative_slug": "adobe-podcast",
+      "reason": "semantic similarity (cosine 0.852)"
+    },
+    {
+      "tool_slug": "podcastle",
+      "alternative_slug": "descript",
+      "reason": "semantic similarity (cosine 0.786)"
+    },
+    {
+      "tool_slug": "podcastle",
+      "alternative_slug": "synthesia",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "podcastle",
+      "alternative_slug": "invideo",
+      "reason": "semantic similarity (cosine 0.745)"
+    },
+    {
+      "tool_slug": "podcastle",
+      "alternative_slug": "pika",
+      "reason": "semantic similarity (cosine 0.744)"
+    },
+    {
+      "tool_slug": "perplexity",
+      "alternative_slug": "consensus",
+      "reason": "semantic similarity (cosine 0.720)"
+    },
+    {
+      "tool_slug": "perplexity",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.708)"
+    },
+    {
+      "tool_slug": "perplexity",
+      "alternative_slug": "stability-ai",
+      "reason": "semantic similarity (cosine 0.707)"
+    },
+    {
+      "tool_slug": "perplexity",
+      "alternative_slug": "elicit",
+      "reason": "semantic similarity (cosine 0.704)"
+    },
+    {
+      "tool_slug": "perplexity",
+      "alternative_slug": "resemble-ai",
+      "reason": "semantic similarity (cosine 0.702)"
+    },
+    {
+      "tool_slug": "mem",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "mem",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "mem",
+      "alternative_slug": "otter-ai",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "mem",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "mem",
+      "alternative_slug": "quillbot",
+      "reason": "semantic similarity (cosine 0.721)"
+    },
+    {
+      "tool_slug": "photoroom",
+      "alternative_slug": "freepik",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "photoroom",
+      "alternative_slug": "magnific",
+      "reason": "semantic similarity (cosine 0.737)"
+    },
+    {
+      "tool_slug": "photoroom",
+      "alternative_slug": "gamma",
+      "reason": "semantic similarity (cosine 0.730)"
+    },
+    {
+      "tool_slug": "photoroom",
+      "alternative_slug": "midjourney",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "photoroom",
+      "alternative_slug": "adobe-firefly",
+      "reason": "semantic similarity (cosine 0.729)"
+    },
+    {
+      "tool_slug": "reclaim",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.734)"
+    },
+    {
+      "tool_slug": "reclaim",
+      "alternative_slug": "lindy",
+      "reason": "semantic similarity (cosine 0.732)"
+    },
+    {
+      "tool_slug": "reclaim",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.704)"
+    },
+    {
+      "tool_slug": "reclaim",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.700)"
+    },
+    {
+      "tool_slug": "reclaim",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.699)"
+    },
+    {
+      "tool_slug": "replit",
+      "alternative_slug": "devin",
+      "reason": "semantic similarity (cosine 0.738)"
+    },
+    {
+      "tool_slug": "replit",
+      "alternative_slug": "github-copilot",
+      "reason": "semantic similarity (cosine 0.733)"
+    },
+    {
+      "tool_slug": "replit",
+      "alternative_slug": "podcastle",
+      "reason": "semantic similarity (cosine 0.713)"
+    },
+    {
+      "tool_slug": "replit",
+      "alternative_slug": "gumloop",
+      "reason": "semantic similarity (cosine 0.703)"
+    },
+    {
+      "tool_slug": "replit",
+      "alternative_slug": "d-id",
+      "reason": "semantic similarity (cosine 0.701)"
+    },
+    {
+      "tool_slug": "speechify",
+      "alternative_slug": "wordtune",
+      "reason": "semantic similarity (cosine 0.761)"
+    },
+    {
+      "tool_slug": "speechify",
+      "alternative_slug": "wellsaid",
+      "reason": "semantic similarity (cosine 0.748)"
+    },
+    {
+      "tool_slug": "speechify",
+      "alternative_slug": "elevenlabs",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "speechify",
+      "alternative_slug": "murf",
+      "reason": "semantic similarity (cosine 0.742)"
+    },
+    {
+      "tool_slug": "speechify",
+      "alternative_slug": "play-ht",
+      "reason": "semantic similarity (cosine 0.739)"
+    },
+    {
+      "tool_slug": "tana",
+      "alternative_slug": "tldv",
+      "reason": "semantic similarity (cosine 0.777)"
+    },
+    {
+      "tool_slug": "tana",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.759)"
+    },
+    {
+      "tool_slug": "tana",
+      "alternative_slug": "fathom",
+      "reason": "semantic similarity (cosine 0.755)"
+    },
+    {
+      "tool_slug": "tana",
+      "alternative_slug": "otter-ai",
+      "reason": "semantic similarity (cosine 0.746)"
+    },
+    {
+      "tool_slug": "tana",
+      "alternative_slug": "lindy",
+      "reason": "semantic similarity (cosine 0.743)"
+    },
+    {
+      "tool_slug": "todoist",
+      "alternative_slug": "motion",
+      "reason": "semantic similarity (cosine 0.711)"
+    },
+    {
+      "tool_slug": "todoist",
+      "alternative_slug": "ifttt",
+      "reason": "semantic similarity (cosine 0.694)"
+    },
+    {
+      "tool_slug": "todoist",
+      "alternative_slug": "clickup",
+      "reason": "semantic similarity (cosine 0.693)"
+    },
+    {
+      "tool_slug": "todoist",
+      "alternative_slug": "taskade",
+      "reason": "semantic similarity (cosine 0.692)"
+    },
+    {
+      "tool_slug": "todoist",
+      "alternative_slug": "notion",
+      "reason": "semantic similarity (cosine 0.689)"
+    },
+    {
+      "tool_slug": "wellsaid",
+      "alternative_slug": "elevenlabs",
+      "reason": "semantic similarity (cosine 0.824)"
+    },
+    {
+      "tool_slug": "tldv",
+      "alternative_slug": "fathom",
+      "reason": "semantic similarity (cosine 0.795)"
+    },
+    {
+      "tool_slug": "tldv",
+      "alternative_slug": "tana",
+      "reason": "semantic similarity (cosine 0.777)"
+    },
+    {
+      "tool_slug": "tldv",
+      "alternative_slug": "fireflies-ai",
+      "reason": "semantic similarity (cosine 0.763)"
+    },
+    {
+      "tool_slug": "tldv",
+      "alternative_slug": "activepieces",
+      "reason": "semantic similarity (cosine 0.725)"
     }
   ]
 }

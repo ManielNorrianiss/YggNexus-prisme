@@ -1,0 +1,496 @@
+{
+  "source": "modelcontextprotocol.io",
+  "endpoint": "file:///sessions/nice-beautiful-hypatia/mnt/Emperor/YggNexus/prisme/data/registry_real_page_20260809.json",
+  "fetched": 30,
+  "unique": 15,
+  "duplicates_dropped": 15,
+  "github_enriched": 0,
+  "records": [
+    {
+      "slug": "ac-inference-sh-mcp",
+      "name": "ac.inference.sh/mcp",
+      "description": "run any ai model. compose agents, stack knowledge, connect tools. one api, pay per run.",
+      "author": "ac.inference.sh",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://api.inference.sh/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "2.0.1",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-07-27T10:44:51.359634Z"
+    },
+    {
+      "slug": "ac-tandem-docs-mcp",
+      "name": "ac.tandem/docs-mcp",
+      "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+      "author": "ac.tandem",
+      "repo_url": "https://github.com/frumu-ai/tandem",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://tandem.ac/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "0.3.2",
+      "website_url": "https://tandem.ac/docs-mcp",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-04-22T21:06:34.500049Z"
+    },
+    {
+      "slug": "ag-hood-name-service",
+      "name": "ag.hood/name-service",
+      "description": "Resolve .hood names on Robinhood Chain — forward/reverse, text records, availability & pricing.",
+      "author": "ag.hood",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://www.hood.ag/api/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "0.1.0",
+      "website_url": "https://www.hood.ag/docs",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-07-10T04:58:06.628668Z"
+    },
+    {
+      "slug": "agency-goji-goji",
+      "name": "agency.goji/goji",
+      "description": "AEO, SEO, web and brand answers from a Melbourne agency's published glossary, guides and pricing.",
+      "author": "agency.goji",
+      "repo_url": "https://github.com/goji-agency/website",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://mcp.goji.agency/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.0",
+      "website_url": "https://goji.agency",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-08-03T10:29:06.593837Z"
+    },
+    {
+      "slug": "agency-kesey-pretrip",
+      "name": "agency.kesey/pretrip",
+      "description": "Screen regulated-health marketing copy against source-cited rulesets, all 50 states.",
+      "author": "agency.kesey",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": "npm",
+      "package_types": [
+        "npm"
+      ],
+      "package_ids": [
+        "npm:pretrip-mcp"
+      ],
+      "package_identifier": "pretrip-mcp",
+      "remote_urls": [],
+      "transport": "stdio",
+      "transports": [
+        "stdio"
+      ],
+      "capabilities": [
+        "stdio"
+      ],
+      "hosting": "local",
+      "version": "1.0.1",
+      "website_url": "https://scan.kesey.agency/developers/",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-07-26T18:03:21.463557Z"
+    },
+    {
+      "slug": "agency-lona-trading",
+      "name": "agency.lona/trading",
+      "description": "AI-powered trading strategy development: backtesting, market data, and portfolio analysis",
+      "author": "agency.lona",
+      "repo_url": "https://github.com/mindsightventures/lona",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://mcp.lona.agency/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "2.0.0",
+      "website_url": "https://lona.agency",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-02-24T00:07:27.525636Z"
+    },
+    {
+      "slug": "ai-1325-mcp",
+      "name": "ai.1325/mcp",
+      "description": "Verified directory of 44,000+ Black-owned U.S. businesses. Search, maps, loyalty rewards.",
+      "author": "ai.1325",
+      "repo_url": "https://github.com/1325ai/1325ai",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://agoclnqfyinwjxdmjnns.supabase.co/functions/v1/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "0.1.0",
+      "website_url": "https://1325.ai",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-07-10T05:01:17.106808Z"
+    },
+    {
+      "slug": "ai-aarna-atars-mcp",
+      "name": "ai.aarna/atars-mcp",
+      "description": "Crypto market signals, technical indicators, and sentiment analysis for AI agents.",
+      "author": "ai.aarna",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://mcp.aarna.ai/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "0.1.0",
+      "website_url": "https://mcp.aarna.ai/mcp",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-03-10T11:09:59.15927Z"
+    },
+    {
+      "slug": "ai-abmeter-abmeter",
+      "name": "ai.abmeter/abmeter",
+      "description": "Feature flagging and A/B testing platform with AI-first experimentation workflows.",
+      "author": "ai.abmeter",
+      "repo_url": "https://github.com/abmeter/abmeter",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://mcp.abmeter.ai"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "0.1.0",
+      "website_url": "https://abmeter.ai",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-04-19T18:11:04.905549Z"
+    },
+    {
+      "slug": "ai-adadvisor-mcp-server",
+      "name": "ai.adadvisor/mcp-server",
+      "description": "Query Meta Ads performance data — accounts, campaigns, ad sets, ads, metrics & settings.",
+      "author": "ai.adadvisor",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://api.adadvisor.ai/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.1",
+      "website_url": "https://www.adadvisor.ai/docs/user-guide/getting-started-with-mcp?utm_source=mcp-registry",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-02-28T13:09:52.236521Z"
+    },
+    {
+      "slug": "ai-adeu-adeu",
+      "name": "ai.adeu/adeu",
+      "description": "Automated DOCX Redlining Engine",
+      "author": "ai.adeu",
+      "repo_url": "https://github.com/dealfluence/adeu",
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": "npm",
+      "package_types": [
+        "npm"
+      ],
+      "package_ids": [
+        "npm:@adeu/mcp-server"
+      ],
+      "package_identifier": "@adeu/mcp-server",
+      "remote_urls": [],
+      "transport": "stdio",
+      "transports": [
+        "stdio"
+      ],
+      "capabilities": [
+        "stdio"
+      ],
+      "hosting": "local",
+      "version": "1.7.1",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-05-16T13:54:48.18266Z"
+    },
+    {
+      "slug": "ai-adramp-google-ads",
+      "name": "ai.adramp/google-ads",
+      "description": "Google Ads MCP server — manage campaigns, keywords, and metrics.",
+      "author": "ai.adramp",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://mcp.adramp.ai"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.3",
+      "website_url": "https://adramp.ai",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-03-20T11:16:36.853329Z"
+    },
+    {
+      "slug": "ai-adside-adside",
+      "name": "ai.adside/adside",
+      "description": "AI agents that manage paid ads on Meta, LinkedIn, and Google Ads from any MCP client.",
+      "author": "ai.adside",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://api.adside.ai/mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.0",
+      "website_url": "https://www.adside.ai",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-07-16T19:48:48.148514Z"
+    },
+    {
+      "slug": "ai-adweave-meta-ads-mcp",
+      "name": "ai.adweave/meta-ads-mcp",
+      "description": "Meta Ads MCP server with 47 tools for campaigns, creatives, audiences, and insights.",
+      "author": "ai.adweave",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": null,
+      "package_types": [],
+      "package_ids": [],
+      "package_identifier": null,
+      "remote_urls": [
+        "https://mcp.adweave.ai/meta-ads-mcp"
+      ],
+      "transport": "streamable-http",
+      "transports": [
+        "streamable-http"
+      ],
+      "capabilities": [
+        "streamable-http"
+      ],
+      "hosting": "remote",
+      "version": "1.0.0",
+      "website_url": null,
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-04-10T16:46:57.731179Z"
+    },
+    {
+      "slug": "ai-aetherwealth-mcp",
+      "name": "ai.aetherwealth/mcp",
+      "description": "Aether Wealth MCP for AI assistants: trades, alerts, market data, macro calendar & indicators.",
+      "author": "ai.aetherwealth",
+      "repo_url": null,
+      "registry_source": "modelcontextprotocol.io",
+      "package_type": "npm",
+      "package_types": [
+        "npm"
+      ],
+      "package_ids": [
+        "npm:@aetherwealth/mcp"
+      ],
+      "package_identifier": "@aetherwealth/mcp",
+      "remote_urls": [],
+      "transport": "stdio",
+      "transports": [
+        "stdio"
+      ],
+      "capabilities": [
+        "stdio"
+      ],
+      "hosting": "local",
+      "version": "0.2.14",
+      "website_url": "https://aetherwealth.ai/mcp",
+      "license": null,
+      "stars": null,
+      "weekly_downloads": null,
+      "quality_score": null,
+      "status": "active",
+      "is_latest": true,
+      "published_at": "2026-08-08T11:13:36.874775Z"
+    }
+  ]
+}

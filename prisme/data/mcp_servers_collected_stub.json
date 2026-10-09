@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "source": "stub_data",
+    "count": 3,
+    "mode": "test"
+  },
+  "servers": [
+    {
+      "slug": "file-system-mcp-server",
+      "name": "File System MCP Server",
+      "description": "Filesystem operations and management",
+      "author": "Claude Team",
+      "repo_url": "https://github.com/anthropics/mcp-server-filesystem",
+      "registry_source": "official_registry",
+      "package_type": "npm",
+      "transport": "stdio",
+      "capabilities": [
+        "read",
+        "write",
+        "list"
+      ],
+      "hosting": "local",
+      "stars": 0,
+      "weekly_downloads": 0,
+      "license": null
+    },
+    {
+      "slug": "postgresql-mcp-server",
+      "name": "PostgreSQL MCP Server",
+      "description": "Database operations for PostgreSQL",
+      "author": "CloudFlare",
+      "repo_url": "https://github.com/cloudflare/mcp-server-postgres",
+      "registry_source": "official_registry",
+      "package_type": "docker",
+      "transport": "http",
+      "capabilities": [
+        "query",
+        "execute",
+        "introspect"
+      ],
+      "hosting": "remote",
+      "stars": 0,
+      "weekly_downloads": 0,
+      "license": null
+    },
+    {
+      "slug": "web-scraper",
+      "name": "Web Scraper",
+      "description": "Web content extraction and scraping",
+      "author": "YggNexus Contributors",
+      "repo_url": "https://github.com/example/mcp-web-scraper",
+      "registry_source": "official_registry",
+      "package_type": "npm",
+      "transport": "stdio",
+      "capabilities": [
+        "fetch",
+        "parse",
+        "extract"
+      ],
+      "hosting": "local",
+      "stars": 0,
+      "weekly_downloads": 0,
+      "license": null
+    }
+  ]
+}
