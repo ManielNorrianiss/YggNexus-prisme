@@ -21,8 +21,7 @@ Avant de repondre, lis tes memoires YggNexus : `yggnexus-repos`, `yggnexus-pipel
 - b1_collecte insere en status=draft ; la run de nuit republie -> verifier l'etat reel avec prisme/etat_sources.py.
 
 ## A finir / menage
-- Supprimer dans Supabase les Edge Functions semantic-search et reindex-tools (deployees mais inutiles, l'approche Edge a ete abandonnee).
-- del les fichiers obsoletes : prisme/embed_search_openai.py, database/migration_search_embeddings_openai.sql.
+- Menage Edge Functions + fichiers OpenAI obsoletes : FAIT (2026-06-19).
 - Recherche : seuil de similarite optionnel dans match_tools (renvoie toujours match_count resultats). Re-lancer embed_search_jina.py apres ajout d'outils.
 
 ## Prochaines etapes (on priorise ensemble)
