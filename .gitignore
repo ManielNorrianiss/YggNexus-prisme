@@ -28,3 +28,9 @@ prisme/logs/
 # --- OS ---
 .DS_Store
 Thumbs.db
+
+# --- Residus temporaires ---
+.fuse_hidden*
+*.db-shm
+*.db-wal
+*.bak.*
