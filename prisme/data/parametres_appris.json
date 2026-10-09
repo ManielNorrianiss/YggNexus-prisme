@@ -1,0 +1,619 @@
+{
+  "b2_workers": 5,
+  "b2_timeout": 120,
+  "b1_workers": 8,
+  "taille_vague": 0,
+  "derniere_maj": "2026-10-08T09:07:08.508851+00:00",
+  "historique": [
+    {
+      "run_id": "20260702T023855Z",
+      "date": "2026-07-02T02:53:33.485030+00:00",
+      "ajustements": [
+        {
+          "parametre": "b2_workers",
+          "avant": 4,
+          "apres": 5,
+          "raison": "taux d'erreur b2 quasi nul (0%) -> augmentation d'un cran"
+        }
+      ],
+      "total_evenements": 2
+    },
+    {
+      "run_id": "20260702T071835Z",
+      "date": "2026-07-02T10:11:58.641990+00:00",
+      "ajustements": [
+        {
+          "parametre": "b2_model (recommandation, non applique)",
+          "avant": "modele courant",
+          "apres": "qwen2.5:14b-instruct",
+          "raison": "part de verdicts 'reprendre' du juge b2b elevee (37% > 30%) -> recommandation de passer b2 a qwen2.5:14b-instruct (a appliquer manuellement)"
+        }
+      ],
+      "total_evenements": 2923
+    },
+    {
+      "run_id": "20260703T084411Z",
+      "date": "2026-07-03T12:10:55.993925+00:00",
+      "ajustements": [],
+      "total_evenements": 2784
+    },
+    {
+      "run_id": "20260704T072528Z",
+      "date": "2026-07-04T09:45:04.889970+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260705T071511Z",
+      "date": "2026-07-05T09:17:14.191913+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260706T071555Z",
+      "date": "2026-07-06T09:31:51.865615+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260707T072004Z",
+      "date": "2026-07-07T09:24:12.939637+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260708T072017Z",
+      "date": "2026-07-08T09:32:58.168520+00:00",
+      "ajustements": [],
+      "total_evenements": 7
+    },
+    {
+      "run_id": "20260709T071939Z",
+      "date": "2026-07-09T09:23:29.577990+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260710T071958Z",
+      "date": "2026-07-10T09:26:23.908475+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260711T071816Z",
+      "date": "2026-07-11T09:14:50.723117+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260712T071439Z",
+      "date": "2026-07-12T09:06:21.881004+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260713T071825Z",
+      "date": "2026-07-13T09:20:13.512941+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260714T071917Z",
+      "date": "2026-07-14T09:06:30.618851+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260715T072113Z",
+      "date": "2026-07-15T09:21:09.710105+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260717T071749Z",
+      "date": "2026-07-17T09:58:42.137001+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260718T071144Z",
+      "date": "2026-07-18T09:24:47.593057+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260719T071018Z",
+      "date": "2026-07-19T09:37:43.264142+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260720T071026Z",
+      "date": "2026-07-20T09:35:14.136066+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260721T071303Z",
+      "date": "2026-07-21T09:26:52.360501+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260722T071224Z",
+      "date": "2026-07-22T09:25:17.716368+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260723T071215Z",
+      "date": "2026-07-23T09:28:48.847532+00:00",
+      "ajustements": [],
+      "total_evenements": 8
+    },
+    {
+      "run_id": "20260724T071207Z",
+      "date": "2026-07-24T09:24:09.195905+00:00",
+      "ajustements": [],
+      "total_evenements": 7
+    },
+    {
+      "run_id": "20260725T072450Z",
+      "date": "2026-07-25T11:25:12.785875+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260726T071003Z",
+      "date": "2026-07-26T09:22:53.007611+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260727T070954Z",
+      "date": "2026-07-27T09:20:49.641987+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260728T071305Z",
+      "date": "2026-07-28T09:40:39.280635+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260729T071147Z",
+      "date": "2026-07-29T09:22:29.930649+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260730T071253Z",
+      "date": "2026-07-30T09:37:42.017341+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260731T071237Z",
+      "date": "2026-07-31T09:28:34.136431+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260801T071213Z",
+      "date": "2026-08-01T09:30:13.505391+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260802T071024Z",
+      "date": "2026-08-02T09:26:01.401208+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260803T071011Z",
+      "date": "2026-08-03T09:37:36.027011+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260804T071231Z",
+      "date": "2026-08-04T09:44:41.093754+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260805T071257Z",
+      "date": "2026-08-05T09:30:49.572727+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260805T071257Z",
+      "date": "2026-08-05T16:52:52.073816+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260806T071213Z",
+      "date": "2026-08-06T09:44:15.414075+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260807T071207Z",
+      "date": "2026-08-07T09:21:37.231166+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260808T071159Z",
+      "date": "2026-08-08T09:24:22.660931+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260809T071026Z",
+      "date": "2026-08-09T09:25:49.921796+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260810T071013Z",
+      "date": "2026-08-10T09:22:19.844311+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260811T071204Z",
+      "date": "2026-08-11T09:26:05.255460+00:00",
+      "ajustements": [],
+      "total_evenements": 4
+    },
+    {
+      "run_id": "20260812T071214Z",
+      "date": "2026-08-12T09:40:27.079586+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260814T071626Z",
+      "date": "2026-08-14T10:06:33.849967+00:00",
+      "ajustements": [
+        {
+          "parametre": "b2_model (recommandation, non applique)",
+          "avant": "modele courant",
+          "apres": "qwen2.5:14b-instruct",
+          "raison": "part de verdicts 'reprendre' du juge b2b elevee (38% > 30%) -> recommandation de passer b2 a qwen2.5:14b-instruct (a appliquer manuellement)"
+        }
+      ],
+      "total_evenements": 8
+    },
+    {
+      "run_id": "20260815T084405Z",
+      "date": "2026-08-15T10:56:42.901652+00:00",
+      "ajustements": [],
+      "total_evenements": 9
+    },
+    {
+      "run_id": "20260816T070939Z",
+      "date": "2026-08-16T09:22:38.356880+00:00",
+      "ajustements": [],
+      "total_evenements": 4
+    },
+    {
+      "run_id": "20260817T070904Z",
+      "date": "2026-08-17T09:37:18.337596+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260818T071213Z",
+      "date": "2026-08-18T09:35:25.803223+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260819T071225Z",
+      "date": "2026-08-19T09:26:51.520852+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260820T071212Z",
+      "date": "2026-08-20T09:34:01.868696+00:00",
+      "ajustements": [],
+      "total_evenements": 4
+    },
+    {
+      "run_id": "20260821T071255Z",
+      "date": "2026-08-21T09:48:28.919347+00:00",
+      "ajustements": [],
+      "total_evenements": 4
+    },
+    {
+      "run_id": "20260822T071053Z",
+      "date": "2026-08-22T09:29:09.522866+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260823T070933Z",
+      "date": "2026-08-23T09:21:06.138415+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260824T070959Z",
+      "date": "2026-08-24T09:23:11.574813+00:00",
+      "ajustements": [],
+      "total_evenements": 4
+    },
+    {
+      "run_id": "20260825T071139Z",
+      "date": "2026-08-25T09:33:31.054437+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260826T071155Z",
+      "date": "2026-08-26T09:36:36.293795+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260827T071355Z",
+      "date": "2026-08-27T09:33:11.855782+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260828T071243Z",
+      "date": "2026-08-28T10:03:35.650543+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260829T072332Z",
+      "date": "2026-08-29T10:02:48.397018+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260830T070948Z",
+      "date": "2026-08-30T09:23:24.532373+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260831T071013Z",
+      "date": "2026-08-31T09:29:07.301255+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260901T071132Z",
+      "date": "2026-09-01T09:30:19.533876+00:00",
+      "ajustements": [
+        {
+          "parametre": "b2_model (recommandation, non applique)",
+          "avant": "modele courant",
+          "apres": "qwen2.5:14b-instruct",
+          "raison": "part de verdicts 'reprendre' du juge b2b elevee (33% > 30%) -> recommandation de passer b2 a qwen2.5:14b-instruct (a appliquer manuellement)"
+        }
+      ],
+      "total_evenements": 6
+    },
+    {
+      "run_id": "20260902T071123Z",
+      "date": "2026-09-02T09:24:52.954749+00:00",
+      "ajustements": [],
+      "total_evenements": 7
+    },
+    {
+      "run_id": "20260903T071116Z",
+      "date": "2026-09-03T09:32:05.347557+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260904T071120Z",
+      "date": "2026-09-04T09:28:07.699913+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260905T071030Z",
+      "date": "2026-09-05T09:25:19.025238+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260906T070947Z",
+      "date": "2026-09-06T09:25:12.387234+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260907T070929Z",
+      "date": "2026-09-07T09:25:30.351949+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260908T071137Z",
+      "date": "2026-09-08T09:12:29.872062+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260909T071023Z",
+      "date": "2026-09-09T09:15:11.475890+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260911T071207Z",
+      "date": "2026-09-11T09:17:28.534904+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260912T070942Z",
+      "date": "2026-09-12T09:09:30.070741+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260913T070828Z",
+      "date": "2026-09-13T09:06:41.374516+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260914T070855Z",
+      "date": "2026-09-14T09:08:01.634841+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260915T071020Z",
+      "date": "2026-09-15T09:17:15.028119+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260917T071204Z",
+      "date": "2026-09-17T09:06:38.316927+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260918T070958Z",
+      "date": "2026-09-18T09:07:30.263255+00:00",
+      "ajustements": [],
+      "total_evenements": 8
+    },
+    {
+      "run_id": "20260919T070939Z",
+      "date": "2026-09-19T09:12:24.072002+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260920T070835Z",
+      "date": "2026-09-20T09:06:34.029223+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260921T070821Z",
+      "date": "2026-09-21T09:02:57.466194+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260922T070937Z",
+      "date": "2026-09-22T09:10:03.933058+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260923T070950Z",
+      "date": "2026-09-23T09:10:21.135523+00:00",
+      "ajustements": [],
+      "total_evenements": 8
+    },
+    {
+      "run_id": "20260924T070950Z",
+      "date": "2026-09-24T09:12:17.916377+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260925T071014Z",
+      "date": "2026-09-25T09:18:22.017019+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20260926T070922Z",
+      "date": "2026-09-26T09:05:56.200734+00:00",
+      "ajustements": [],
+      "total_evenements": 4
+    },
+    {
+      "run_id": "20260927T070757Z",
+      "date": "2026-09-27T09:05:49.583567+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260928T070804Z",
+      "date": "2026-09-28T09:04:53.085118+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260929T071007Z",
+      "date": "2026-09-29T09:12:19.383636+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20260930T071014Z",
+      "date": "2026-09-30T09:15:17.572229+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20261001T071020Z",
+      "date": "2026-10-01T09:34:34.051703+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20261002T071003Z",
+      "date": "2026-10-02T09:12:40.622996+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    },
+    {
+      "run_id": "20261003T070924Z",
+      "date": "2026-10-03T09:09:34.614300+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20261004T070810Z",
+      "date": "2026-10-04T09:10:38.705315+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20261005T070827Z",
+      "date": "2026-10-05T09:19:34.242231+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20261006T070936Z",
+      "date": "2026-10-06T09:12:31.050254+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20261007T070957Z",
+      "date": "2026-10-07T09:12:08.067454+00:00",
+      "ajustements": [],
+      "total_evenements": 1
+    },
+    {
+      "run_id": "20261008T070959Z",
+      "date": "2026-10-08T09:07:08.508571+00:00",
+      "ajustements": [],
+      "total_evenements": 5
+    }
+  ]
+}
