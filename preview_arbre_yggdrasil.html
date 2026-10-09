@@ -1,0 +1,89 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YggNexus — Aperçu Yggdrasil v6</title>
+<style>
+html,body{margin:0;height:100%;background:#0B0F17;overflow:hidden;font-family:Inter,system-ui,sans-serif}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+.brand{position:fixed;left:24px;top:22px;color:#E5E7EB;font-family:Syne,sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em;z-index:2}
+.brand b{background:linear-gradient(90deg,#3B82F6,#22D3EE,#22C55E);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hud{position:fixed;left:0;right:0;bottom:64px;text-align:center;color:#94A3B8;font-size:13px;pointer-events:none;z-index:2}.hud b{color:#22D3EE}
+.panel{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:3;display:flex;align-items:center;gap:12px;background:rgba(17,23,38,.85);border:1px solid #1E293B;border-radius:12px;padding:8px 14px;color:#94A3B8;font-size:13px;backdrop-filter:blur(6px)}
+.panel input{width:220px;accent-color:#22D3EE}.panel span{color:#E5E7EB;font-family:Syne,sans-serif;min-width:42px;text-align:right}
+</style></head><body>
+<div class="brand">Ygg<b>Nexus</b></div>
+<canvas id="c"></canvas>
+<div class="hud">Yggdrasil · canopée + circuit + pastilles · <b>maintiens le clic</b> = surcharge</div>
+<div class="panel">Dévoilement (data du site) <input id="rev" type="range" min="0.1" max="1" step="0.01" value="0.46"><span id="revv">0.46</span></div>
+<script>
+const cv=document.getElementById('c'),g=cv.getContext('2d');let w,h,dpr,reveal=0.46;
+const blue=[59,130,246],cyan=[34,211,238],green=[34,197,94],fg=[229,231,235],cycle=[blue,cyan,green];
+const MAXD=7,TRUNK=120,MAXS=20,SPACING=1.6;let limbs=[],strand=[],children=[],leaves=[],foliage=[],circuit=[],pads=[];
+let pulses=[],sparks=[],nextPulse=.3,growthT=0,charge=0,lastBloom=0;const mouse={down:false};
+function lerp(a,b,t){return[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];}
+function paletteAt(ph){const n=cycle.length,p=(((ph%1)+1)%1)*n,i=Math.floor(p),f=p-i;return lerp(cycle[i%n],cycle[(i+1)%n],f);}
+const rgba=(c,a)=>`rgba(${c[0]|0},${c[1]|0},${c[2]|0},${a})`;
+function mulberry32(s){return function(){s|=0;s=(s+0x6d2b79f5)|0;let t=Math.imul(s^(s>>>15),1|s);t=(t+Math.imul(t^(t>>>7),61|t))^t;return((t^(t>>>14))>>>0)/4294967296;};}
+function buildTree(){limbs=[];foliage=[];const rnd=mulberry32(20260622);
+ function grow(parent,depth,isRoot,len,wdt,dir){if(depth>MAXD)return;
+  const nKids=depth===0?1:isRoot?(depth<=4&&rnd()<.55?3:2):(depth>=3&&rnd()<.5?3:2);
+  const spread=isRoot?(.62+rnd()*.5):(.46+rnd()*.42);
+  for(let k=0;k<nKids;k++){let ax;if(depth===0)ax=0;else if(nKids===1)ax=(rnd()-.5)*.4;else{const base=(k/(nKids-1)-.5)*2;ax=base*spread+(rnd()-.5)*.32;}
+   ax+=-dir*(isRoot?.04:.11)*(1-depth/(MAXD+2));const idx=limbs.length;
+   limbs.push({parent,ax,len:len*(isRoot?.70+rnd()*.26:.64+rnd()*.28),w:wdt*.78,depth:depth+1,isRoot,absBase:false,phase:rnd()*Math.PI*2,curl:(rnd()-.5)*.85,sx:0,sy:0,ex:0,ey:0,absA:0,grow:0});
+   grow(idx,depth+1,isRoot,limbs[idx].len,limbs[idx].w,dir);}}
+ const tu=limbs.length;limbs.push({parent:-1,ax:-Math.PI/2,len:TRUNK,w:22,depth:0,isRoot:false,absBase:true,phase:0,curl:0,sx:0,sy:0,ex:0,ey:0,absA:0,grow:0});grow(tu,0,false,TRUNK,22,-1);
+ const td=limbs.length;limbs.push({parent:-1,ax:Math.PI/2,len:TRUNK*.7,w:18,depth:0,isRoot:true,absBase:true,phase:Math.PI,curl:0,sx:0,sy:0,ex:0,ey:0,absA:0,grow:0});grow(td,0,true,TRUNK*.7,18,1);
+ children=limbs.map(()=>[]);for(let i=0;i<limbs.length;i++){const p=limbs[i].parent;if(p>=0)children[p].push(i);}
+ leaves=[];for(let i=0;i<limbs.length;i++)if(children[i].length===0)leaves.push(i);
+ const sub=new Array(limbs.length).fill(0);for(let i=limbs.length-1;i>=0;i--){if(children[i].length===0)sub[i]=1;else{let sl=0;for(const c of children[i])sl+=sub[c];sub[i]=sl;}}
+ strand=limbs.map((_,i)=>Math.max(1,Math.min(MAXS,Math.round(Math.pow(sub[i],0.6)))));
+ const rnf=mulberry32(7777);for(let i=0;i<limbs.length;i++){const L=limbs[i];if(L.isRoot||L.depth<4)continue;const tip=children[i].length===0;const n=tip?5+Math.floor(rnf()*5):(L.depth>=6?2+Math.floor(rnf()*2):0);
+  for(let j=0;j<n;j++)foliage.push({li:i,along:-.15+rnf()*.5,perp:(rnf()-.5)*1.3,r:1.5+rnf()*3.0,phase:rnf()*Math.PI*2,sp:1.1+rnf()*1.9,bias:.5+rnf()*.22});}}
+function buildCircuit(){circuit=[];pads=[];const rnd=mulberry32(99001);
+ for(const sgn of[-1,1]){const n=6+Math.floor(rnd()*3);for(let i=0;i<n;i++){const y0=(-.15+(i/(n-1))*1.15)*TRUNK*.95,x0=sgn*(14+rnd()*10),reach=sgn*(TRUNK*2.2+rnd()*TRUNK*2.6);
+   const pts=[[x0,y0]];let x=x0,y=y0;const jogs=1+Math.floor(rnd()*2),seg=(reach-x0)/(jogs+1);
+   for(let j=0;j<jogs;j++){x+=seg*(.7+rnd()*.5);pts.push([x,y]);y+=(rnd()-.5)*TRUNK*.5;pts.push([x,y]);}pts.push([reach,y]);circuit.push({pts,pr:1.6+rnd()*1.8,phase:rnd()*6.28});}}
+ for(let i=0;i<5;i++)pads.push({x:(i%2?1:-1)*(11+rnd()*5),y:-(.16+i*.12)*TRUNK,r:3+rnd()*2,phase:rnd()*6.28});}
+function spawnPulse(){const tr=[];for(let i=0;i<limbs.length;i++)if(limbs[i].absBase)tr.push(i);pulses.push({li:tr[Math.floor(Math.random()*tr.length)],t:0,sp:.5+Math.random()*.4});}
+const TREE_H=TRUNK*3.4+TRUNK;
+function camera(){const sf=(h*.92)/TREE_H,sc=sf*3.0;return{scale:sc+(sf-sc)*Math.max(0,Math.min(1,reveal)),ox:w/2,oy:h*.56};}
+function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;cv.width=w*dpr|0;cv.height=h*dpr|0;g.setTransform(dpr,0,0,dpr,0,0);}
+function frame(dt,time){g.clearRect(0,0,w,h);const drift=time/36,{scale,ox,oy}=camera();const X=x=>ox+x*scale,Y=y=>oy+y*scale;
+ growthT=Math.min(1,growthT+dt/2.8);charge+=(mouse.down?.7:-.85)*dt;charge=Math.max(0,Math.min(1,charge));
+ g.globalCompositeOperation='lighter';g.lineCap='round';g.lineJoin='round';
+ const cr=Math.min(1,growthT*2.2);
+ for(const tr of circuit){const col=paletteAt(drift+tr.pts[0][1]*.0014+.42),a=(.12+.05*Math.sin(time*.8+tr.phase))*(.7+charge*.6)*cr;
+  g.strokeStyle=rgba(col,a);g.lineWidth=Math.max(.5,tr.pr*scale*.5);g.beginPath();const last=Math.max(1,Math.floor(tr.pts.length*cr));g.moveTo(X(tr.pts[0][0]),Y(tr.pts[0][1]));for(let i=1;i<last;i++)g.lineTo(X(tr.pts[i][0]),Y(tr.pts[i][1]));g.stroke();
+  if(cr>=1){const p=tr.pts[tr.pts.length-1],R=(2+charge*2)*Math.max(1,scale),ha=g.createRadialGradient(X(p[0]),Y(p[1]),0,X(p[0]),Y(p[1]),R);ha.addColorStop(0,rgba(lerp(col,fg,.4),.7*a*6));ha.addColorStop(1,rgba(col,0));g.fillStyle=ha;g.beginPath();g.arc(X(p[0]),Y(p[1]),R,0,Math.PI*2);g.fill();}}
+ for(let i=0;i<limbs.length;i++){const L=limbs[i];const sway=(.006+L.depth*.010)*Math.sin(time*1.1+L.phase)*(1+charge*.8);const pa=L.parent<0?0:limbs[L.parent].absA;L.absA=(L.absBase?L.ax:pa+L.ax)+sway;
+  const sx=L.parent<0?0:limbs[L.parent].ex,sy=L.parent<0?0:limbs[L.parent].ey;L.grow=Math.max(0,Math.min(1,growthT*(MAXD+1)-L.depth));L.sx=sx;L.sy=sy;L.ex=sx+Math.cos(L.absA)*L.len*L.grow;L.ey=sy+Math.sin(L.absA)*L.len*L.grow;}
+ const flw=Math.max(.6,1.0+scale*.16);
+ for(let i=0;i<limbs.length;i++){const L=limbs[i];if(L.grow<=0)continue;if(L.parent>=0&&limbs[L.parent].grow<1)continue;
+  const off=L.isRoot?.52:.12,col=paletteAt(drift+(L.sx+L.sy)*.0011+off),tb=Math.min(1,.32+(L.depth/(MAXD+1))*.10+charge*.4),cnt=strand[i];
+  const dx=L.ex-L.sx,dy=L.ey-L.sy,len=Math.hypot(dx,dy)||1,px=-dy/len,py=dx/len,mx=(L.sx+L.ex)/2,my=(L.sy+L.ey)/2;
+  g.strokeStyle=rgba(col,tb);g.lineWidth=flw;
+  for(let sN=0;sN<cnt;sN++){const o=(sN-(cnt-1)/2)*SPACING,oX=px*o,oY=py*o;g.beginPath();g.moveTo(X(L.sx+oX),Y(L.sy+oY));g.quadraticCurveTo(X(mx+oX-dy*L.curl),Y(my+oY+dx*L.curl),X(L.ex+oX),Y(L.ey+oY));g.stroke();}}
+ for(const lf of foliage){const L=limbs[lf.li];if(L.grow<1)continue;const ca=Math.cos(L.absA),sa=Math.sin(L.absA),flut=Math.sin(time*lf.sp+lf.phase)*.06,along=lf.along+flut;
+  const px=L.ex+(ca*along-sa*(lf.perp+flut))*L.len,py=L.ey+(sa*along+ca*(lf.perp+flut))*L.len,x=X(px),y=Y(py);
+  const tw=.55+.45*Math.sin(time*lf.sp*.7+lf.phase),a=(.16+tw*.16)*(.7+charge*.6),col=paletteAt(drift+(px+py)*.0011+lf.bias),R=lf.r*Math.max(1,scale)*(1+charge*.5);
+  g.fillStyle=rgba(col,a*.7);g.beginPath();g.arc(x,y,R*1.9,0,Math.PI*2);g.fill();g.fillStyle=rgba(lerp(col,fg,.3),Math.min(1,a+.25));g.beginPath();g.arc(x,y,R*.8,0,Math.PI*2);g.fill();}
+ if(dt>0){nextPulse-=dt;const rate=.5-charge*.42;if(nextPulse<=0){const b=1+Math.floor(charge*4);for(let k=0;k<b;k++)spawnPulse();nextPulse=Math.max(.05,rate*(.6+Math.random()*.8));}
+  for(let i=pulses.length-1;i>=0;i--){const p=pulses[i],L=limbs[p.li];p.t+=(p.sp*dt)/(L.len/100);if(p.t>=1){const kids=children[p.li];if(L.grow>=1&&kids.length>0){p.li=kids[Math.floor(Math.random()*kids.length)];p.t=0;}else{sparks.push({x:L.ex,y:L.ey,vx:(Math.random()-.5)*30,vy:(Math.random()-.5)*30,t:0,life:.5+Math.random()*.4,c:paletteAt(drift+(L.ex+L.ey)*.0011+.4)});pulses.splice(i,1);}}}
+  if(pulses.length>400)pulses=pulses.slice(-400);}
+ for(const p of pulses){const L=limbs[p.li];if(L.grow<=0)continue;const wx=L.sx+(L.ex-L.sx)*p.t,wy=L.sy+(L.ey-L.sy)*p.t,x=X(wx),y=Y(wy),col=paletteAt(drift+(wx+wy)*.0011),R=(2.4+charge*2)*Math.max(1,scale*.8);
+  const ha=g.createRadialGradient(x,y,0,x,y,R);ha.addColorStop(0,rgba(fg,.95));ha.addColorStop(.4,rgba(col,.7));ha.addColorStop(1,rgba(col,0));g.fillStyle=ha;g.beginPath();g.arc(x,y,R,0,Math.PI*2);g.fill();}
+ for(let i=sparks.length-1;i>=0;i--){const s=sparks[i];s.t+=dt;if(s.t>s.life){sparks.splice(i,1);continue;}s.x+=s.vx*dt;s.y+=s.vy*dt;g.fillStyle=rgba(s.c,1-s.t/s.life);g.beginPath();g.arc(X(s.x),Y(s.y),1.5,0,Math.PI*2);g.fill();}
+ for(const pd of pads){if(growthT<.5)continue;const x=X(pd.x),y=Y(pd.y),tw=.6+.4*Math.sin(time*2.0+pd.phase),col=paletteAt(drift+.5),R=pd.r*Math.max(1,scale)*(1+charge*.6);
+  const ha=g.createRadialGradient(x,y,0,x,y,R*2.2);ha.addColorStop(0,rgba(lerp(col,fg,.4),(.5+charge*.4)*tw));ha.addColorStop(1,rgba(col,0));g.fillStyle=ha;g.beginPath();g.arc(x,y,R*2.2,0,Math.PI*2);g.fill();
+  g.fillStyle=rgba(fg,.8*tw);g.beginPath();g.arc(x,y,Math.max(1,R*.4),0,Math.PI*2);g.fill();}
+ {const x=X(0),y=Y(0),pulse=1+.08*Math.sin(time*2.2),R=(18+charge*24)*Math.max(1,scale)*pulse,col=paletteAt(drift+.4);
+  const ha=g.createRadialGradient(x,y,0,x,y,R);ha.addColorStop(0,rgba(fg,.9));ha.addColorStop(.35,rgba(lerp(col,fg,.3),.6+charge*.3));ha.addColorStop(1,rgba(col,0));g.fillStyle=ha;g.beginPath();g.arc(x,y,R,0,Math.PI*2);g.fill();}
+ if(charge>.92&&time-lastBloom>.7){lastBloom=time;for(const lf of foliage){const L=limbs[lf.li];if(L.grow<1)continue;sparks.push({x:L.ex,y:L.ey,vx:(Math.random()-.5)*60,vy:(Math.random()-.5)*60,t:0,life:.6+Math.random()*.5,c:paletteAt(drift+(L.ex+L.ey)*.0011+.45)});}}
+ g.globalCompositeOperation='source-over';}
+let prev=0;function loop(tms){const time=tms/1000,dt=prev===0?0:Math.min(.05,time-prev);prev=time;frame(dt,time);requestAnimationFrame(loop);}
+resize();buildTree();buildCircuit();requestAnimationFrame(loop);
+addEventListener('resize',resize);
+addEventListener('mousedown',()=>mouse.down=true);addEventListener('mouseup',()=>mouse.down=false);
+addEventListener('touchstart',()=>mouse.down=true,{passive:true});addEventListener('touchend',()=>mouse.down=false);
+const rev=document.getElementById('rev'),revv=document.getElementById('revv');rev.addEventListener('input',()=>{reveal=parseFloat(rev.value);revv.textContent=reveal.toFixed(2);});rev.addEventListener('mousedown',e=>e.stopPropagation());
+</script></body></html>

@@ -1,0 +1,161 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YggNexus — Aperçu A2 (/tools)</title>
+<style>
+:root{--bg:#0B0F17;--surface:#111726;--surface2:#0d1320;--line:#1E293B;--text:#E5E7EB;--muted:#94A3B8;--blue:#3B82F6;--cyan:#22D3EE;--green:#22C55E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 80px}
+h1{font-family:Syne,sans-serif;font-size:30px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+/* topbar */
+.topbar{display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.search{position:relative;flex:1;min-width:240px}
+.search input{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--text);padding:10px 12px 10px 34px;font-size:14px;outline:none}
+.search span{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px}
+.seg button{border:0;background:transparent;color:var(--muted);font:inherit;font-size:14px;font-weight:600;padding:6px 12px;border-radius:8px;cursor:pointer}
+.seg button.on{background:var(--blue);color:#fff}
+/* count + chips */
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:20px}
+.bar .n{color:var(--muted);font-size:14px}.bar .n strong{color:var(--text);font-family:Syne,sans-serif}
+.pipe{color:var(--line)}
+.chip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;border:1px solid;padding:4px 12px;font-size:14px;background:transparent;cursor:pointer}
+.chip.on{border-color:rgba(59,130,246,.6);background:rgba(59,130,246,.15);color:var(--text)}
+.chip.off{border-color:var(--line);background:var(--surface);color:var(--muted)}
+.clear{color:var(--blue);font-weight:600;font-size:14px;background:0;border:0;cursor:pointer}
+/* body grid */
+.grid{display:grid;grid-template-columns:16rem 1fr;gap:32px}
+aside h3{font-family:Syne,sans-serif;font-size:14px;margin:0 0 8px}
+aside .group{margin-bottom:24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.rating{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:4px}
+.rating button{border:0;background:transparent;color:var(--muted);font:inherit;font-size:14px;font-weight:600;padding:6px 12px;border-radius:8px;cursor:pointer}
+.rating button.on{background:var(--blue);color:#fff}
+aside input.tagq{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;color:var(--text);padding:7px 12px;font-size:14px;margin-bottom:12px;outline:none}
+.more{margin-top:12px;color:var(--blue);font-weight:600;font-size:14px;background:0;border:0;cursor:pointer}
+/* results */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(min-width:1024px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{display:flex;flex-direction:column;gap:12px;border:1px solid var(--line);background:var(--surface);border-radius:16px;padding:20px;text-decoration:none;color:inherit;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:rgba(59,130,246,.6);box-shadow:0 12px 40px rgba(59,130,246,.15)}
+.chead{display:flex;align-items:center;gap:12px}
+.mono{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:Syne,sans-serif;font-weight:700;color:#fff}
+.cname{font-family:Syne,sans-serif;font-weight:700}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px}
+.tag{border:1px solid var(--line);background:var(--surface2);border-radius:999px;padding:2px 9px;font-size:11px;color:var(--muted)}
+.badge{border:1px solid var(--line);background:var(--surface2);border-radius:999px;padding:2px 9px;font-size:11px;font-weight:600;color:var(--muted)}
+.desc{color:var(--muted);font-size:14px;margin:0}
+.foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:12px;margin-top:auto}
+.star{color:var(--cyan)}.score strong{color:var(--text);font-family:Syne,sans-serif}
+.go{color:var(--blue);font-weight:600;font-size:14px}
+.note{margin-top:36px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+</style></head><body><div class="wrap">
+<h1>Outils IA</h1>
+<p class="sub">Parcours, filtre et compare l'annuaire.</p>
+
+<div class="topbar">
+  <div class="search"><span>⌕</span><input placeholder="Chercher un outil…"></div>
+  <div class="seg"><button class="on">Pertinence</button><button>Mieux notés</button><button>Récents</button></div>
+</div>
+
+<div class="bar">
+  <span class="n"><strong>42</strong> affichés</span>
+  <span class="pipe">|</span>
+  <button class="chip on">Gratuit ✕</button>
+  <button class="chip on">Génération d'images ✕</button>
+  <button class="chip on">★ 8+ ✕</button>
+  <button class="clear">Tout effacer</button>
+</div>
+
+<div class="grid">
+  <aside>
+    <div class="group"><h3>Prix</h3><div class="chips">
+      <button class="chip on">Gratuit ✕</button><button class="chip off">Freemium</button>
+      <button class="chip off">Payant</button><button class="chip off">Source ouverte</button></div></div>
+    <div class="group"><h3>Fonction</h3><div class="chips">
+      <button class="chip on">Génération d'images</button><button class="chip off">Écriture</button>
+      <button class="chip off">Code</button><button class="chip off">Audio</button><button class="chip off">Vidéo</button></div></div>
+    <div class="group"><h3>Public cible</h3><div class="chips">
+      <button class="chip off">Développeurs</button><button class="chip off">Créateurs</button><button class="chip off">Entreprises</button></div></div>
+    <div class="group"><h3>Note min.</h3><div class="rating">
+      <button>Toutes</button><button>★ 7+</button><button class="on">★ 8+</button></div></div>
+    <div class="group"><h3>Tags</h3>
+      <input class="tagq" placeholder="Chercher un tag…">
+      <div class="chips">
+        <button class="chip off">api 38</button><button class="chip off">no-code 31</button>
+        <button class="chip off">open source 27</button><button class="chip off">chatgpt 24</button>
+        <button class="chip off">temps réel 19</button><button class="chip off">gratuit 17</button>
+        <button class="chip off">collaboration 14</button><button class="chip off">sdk 12</button></div>
+      <button class="more">+ Voir plus</button></div>
+  </aside>
+
+  <div class="cards">
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#3B82F6">M</div><span class="cname">Midjourney</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">art</span><span class="tag">payant</span></div>
+      <div class="tagrow"><span class="badge">Freemium</span></div>
+      <p class="desc">Génération d'images de haute qualité par prompt.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>9.4</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#22D3EE">D</div><span class="cname">DALL·E 3</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">openai</span><span class="tag">api</span></div>
+      <div class="tagrow"><span class="badge">Payant</span></div>
+      <p class="desc">Création d'images intégrée à ChatGPT.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>9.1</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#22C55E">S</div><span class="cname">Stable Diffusion</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">open source</span><span class="tag">local</span></div>
+      <div class="tagrow"><span class="badge">Source ouverte</span></div>
+      <p class="desc">Modèle ouvert, exécutable localement.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.9</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#6366F1">L</div><span class="cname">Leonardo AI</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">jeu</span><span class="tag">assets</span></div>
+      <div class="tagrow"><span class="badge">Freemium</span></div>
+      <p class="desc">Assets visuels pour le jeu et le design.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.7</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#0EA5E9">I</div><span class="cname">Ideogram</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">typographie</span></div>
+      <div class="tagrow"><span class="badge">Gratuit</span></div>
+      <p class="desc">Spécialiste du texte lisible dans l'image.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.6</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#14B8A6">F</div><span class="cname">Flux</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">open source</span></div>
+      <div class="tagrow"><span class="badge">Source ouverte</span></div>
+      <p class="desc">Modèle ouvert rapide et précis.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.5</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#8B5CF6">A</div><span class="cname">Adobe Firefly</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">entreprise</span><span class="tag">api</span></div>
+      <div class="tagrow"><span class="badge">Payant</span></div>
+      <p class="desc">Génératif sûr pour usage commercial.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.4</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#06B6D4">R</div><span class="cname">Recraft</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">vecteur</span><span class="tag">ui</span></div>
+      <div class="tagrow"><span class="badge">Freemium</span></div>
+      <p class="desc">Vecteurs et icônes générés par IA.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.2</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+    <a class="card">
+      <div class="chead"><div class="mono" style="background:#2563EB">K</div><span class="cname">Krea</span></div>
+      <div class="tagrow"><span class="tag">image</span><span class="tag">temps réel</span></div>
+      <div class="tagrow"><span class="badge">Freemium</span></div>
+      <p class="desc">Génération temps réel au pinceau.</p>
+      <div class="foot"><span class="score"><span class="star">★</span> <strong>8.0</strong> <span style="opacity:.5">/10</span></span><span class="go">Explorer →</span></div>
+    </a>
+  </div>
+</div>
+
+<p class="note">Aperçu autonome A2 — palette verrouillée. Topbar : recherche (nom + desc + tags) · tri en segments instantané · compteur live. Sidebar rétractable (drawer « Filtres (n) » sur mobile) : Prix → Fonction → Public cible en multi-sélection, note seuil simple ★7+/★8+, boîte Tags repliée + cherchable (~12 plus fréquents avec compteur, « + Voir plus »). Chips de filtres actifs retirables + « Tout effacer ». Chaque facette = un param URL (partage/SEO/back-forward). Données ici = exemples; en prod elles viennent de getAllToolFacets/getAllToolTags. Cartes : logo, nom, max 3 tags, badge prix, note, Explorer.</p>
+</div></body></html>

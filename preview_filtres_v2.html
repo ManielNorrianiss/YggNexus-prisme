@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YggNexus — Maquette filtres v2</title>
+<style>
+  :root{
+    --bg:#0f1115; --surface:#171a21; --surface-2:#1e222b; --line:#2a2f3a;
+    --text:#eef0f4; --muted:#9aa3b2; --blue:#4f7cff; --blue-soft:rgba(79,124,255,.15);
+    --green:#3ecf8e; --radius:14px;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--text); line-height:1.45;}
+  a{color:inherit;}
+  header.top{
+    padding:18px 24px; border-bottom:1px solid var(--line); position:sticky; top:0;
+    background:rgba(15,17,21,.92); backdrop-filter:blur(8px); z-index:40;
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+  }
+  header.top h1{font-size:1.05rem; margin:0; font-weight:700;}
+  header.top .tag{font-size:.72rem; color:var(--muted); border:1px solid var(--line); padding:2px 8px; border-radius:999px;}
+
+  .layout{display:grid; grid-template-columns: 260px 1fr; gap:24px; max-width:1280px; margin:0 auto; padding:20px 24px 60px;}
+
+  /* -------- colonne facettes desktop -------- */
+  aside.facets{
+    align-self:start; position:sticky; top:70px;
+    display:flex; flex-direction:column; gap:18px;
+    max-height:calc(100vh - 90px); overflow-y:auto; padding-right:4px;
+  }
+  .facet-group{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:14px;}
+  .facet-group h3{margin:0 0 10px; font-size:.82rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); font-weight:700;}
+  .facet-search{
+    width:100%; margin-bottom:8px; padding:7px 10px; border-radius:8px; border:1px solid var(--line);
+    background:var(--surface-2); color:var(--text); font-size:.85rem;
+  }
+  .facet-search:focus{outline:none; border-color:var(--blue);}
+  .facet-list{display:flex; flex-direction:column; gap:2px; max-height:220px; overflow-y:auto;}
+  .facet-list.short{max-height:none;}
+  .facet-opt{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:6px 8px; border-radius:8px; cursor:pointer; font-size:.86rem; color:var(--text);
+    border:1px solid transparent; user-select:none;
+  }
+  .facet-opt:hover{background:var(--surface-2);}
+  .facet-opt.on{background:var(--blue-soft); border-color:rgba(79,124,255,.4);}
+  .facet-opt .cb{
+    width:15px; height:15px; border-radius:4px; border:1.5px solid var(--line); flex:none;
+    display:inline-flex; align-items:center; justify-content:center; font-size:10px; color:#fff;
+  }
+  .facet-opt.on .cb{background:var(--blue); border-color:var(--blue);}
+  .facet-opt .lbl{flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .facet-opt .cnt{color:var(--muted); font-size:.78rem; flex:none;}
+  .facet-opt.zero{opacity:.35; pointer-events:none;}
+  .facet-more{margin-top:6px; background:none; border:none; color:var(--blue); font-size:.8rem; cursor:pointer; padding:4px 8px;}
+
+  /* -------- zone principale -------- */
+  main{min-width:0;}
+  .searchbar{position:relative; margin-bottom:14px;}
+  .searchbar input{
+    width:100%; padding:11px 14px 11px 38px; border-radius:12px; border:1px solid var(--line);
+    background:var(--surface); color:var(--text); font-size:.92rem;
+  }
+  .searchbar input:focus{outline:none; border-color:var(--blue);}
+  .searchbar svg{position:absolute; left:12px; top:50%; transform:translateY(-50%); width:16px; height:16px; color:var(--muted);}
+
+  .active-bar{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:14px; min-height:34px;}
+  .result-count{font-size:.88rem; color:var(--muted);}
+  .result-count strong{color:var(--text); font-family:inherit;}
+  .chip{
+    display:inline-flex; align-items:center; gap:6px; background:var(--blue-soft); border:1px solid rgba(79,124,255,.4);
+    color:var(--text); border-radius:999px; padding:5px 8px 5px 12px; font-size:.8rem; cursor:pointer;
+  }
+  .chip button{background:none; border:none; color:var(--text); opacity:.7; cursor:pointer; font-size:.9rem; line-height:1; padding:2px;}
+  .chip button:hover{opacity:1;}
+  .clear-all{
+    background:none; border:1px solid var(--line); color:var(--blue); border-radius:999px; padding:5px 12px;
+    font-size:.8rem; cursor:pointer; font-weight:600;
+  }
+  .clear-all:hover{border-color:var(--blue);}
+
+  .toolbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:16px; flex-wrap:wrap;}
+  .sort select{
+    background:var(--surface); border:1px solid var(--line); color:var(--text); border-radius:10px;
+    padding:7px 10px; font-size:.85rem;
+  }
+  .mobile-filter-btn{display:none;}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(230px,1fr)); gap:14px;}
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:14px;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .card .top-row{display:flex; align-items:center; gap:10px;}
+  .logo{width:34px; height:34px; border-radius:9px; background:var(--surface-2); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.9rem; color:var(--blue); flex:none;}
+  .card h4{margin:0; font-size:.95rem;}
+  .card p{margin:0; font-size:.82rem; color:var(--muted); flex:1;}
+  .card .meta{display:flex; align-items:center; justify-content:space-between; font-size:.76rem; margin-top:4px;}
+  .badge{border-radius:999px; padding:2px 9px; font-size:.72rem; font-weight:600;}
+  .badge.free{background:rgba(62,207,142,.15); color:var(--green);}
+  .badge.freemium{background:rgba(255,193,71,.15); color:#ffc147;}
+  .badge.paid{background:rgba(255,108,108,.15); color:#ff8484;}
+  .badge.open{background:rgba(79,124,255,.15); color:var(--blue);}
+  .score{color:var(--muted);}
+
+  .empty{
+    grid-column:1/-1; text-align:center; padding:60px 20px; border:1px dashed var(--line); border-radius:var(--radius);
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+  }
+  .empty .icon{font-size:2rem;}
+  .empty p{margin:0; color:var(--muted); max-width:420px;}
+  .empty .suggestion{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:6px;}
+  .empty .suggestion button{
+    background:var(--blue-soft); border:1px solid rgba(79,124,255,.4); color:var(--text); border-radius:999px;
+    padding:6px 12px; font-size:.82rem; cursor:pointer;
+  }
+
+  /* -------- overlay + tiroir mobile -------- */
+  .overlay{display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:60;}
+  .drawer{
+    display:none; position:fixed; left:0; right:0; bottom:0; z-index:70; background:var(--surface);
+    border-top:1px solid var(--line); border-radius:18px 18px 0 0; max-height:82vh; overflow-y:auto;
+    padding:16px 16px 90px;
+  }
+  .drawer.open, .overlay.open{display:block;}
+  .drawer-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; position:sticky; top:0; background:var(--surface); padding-bottom:8px;}
+  .drawer-head h3{margin:0; font-size:1rem;}
+  .drawer-head button{background:none; border:none; color:var(--muted); font-size:1.3rem; cursor:pointer;}
+  .drawer-apply{
+    position:fixed; left:0; right:0; bottom:0; z-index:75; display:none; padding:12px 16px;
+    background:var(--surface); border-top:1px solid var(--line);
+  }
+  .drawer-apply button{
+    width:100%; background:var(--blue); color:#fff; border:none; border-radius:12px; padding:13px; font-size:.95rem; font-weight:700; cursor:pointer;
+  }
+
+  /* -------- responsive : sous 860px, tiroir plein ecran au lieu de colonne -------- */
+  @media (max-width:860px){
+    .layout{grid-template-columns:1fr; padding:14px 14px 90px;}
+    aside.facets{display:none;}
+    .mobile-filter-btn{
+      display:inline-flex; align-items:center; gap:8px; background:var(--surface); border:1px solid var(--line);
+      color:var(--text); border-radius:12px; padding:9px 14px; font-size:.85rem; font-weight:600; cursor:pointer;
+    }
+    .mobile-filter-btn .dot{
+      background:var(--blue); color:#fff; border-radius:999px; min-width:18px; height:18px; font-size:.72rem;
+      display:inline-flex; align-items:center; justify-content:center; padding:0 5px;
+    }
+    .drawer.open{display:block;}
+    .drawer.open ~ .drawer-apply{display:block;}
+    .grid{grid-template-columns:repeat(auto-fill, minmax(150px,1fr));}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>YggNexus · Catalogue d'outils</h1>
+  <span class="tag">maquette filtres v2 — démo statique</span>
+</header>
+
+<div class="layout">
+
+  <!-- ============ COLONNE FACETTES (desktop) ============ -->
+  <aside class="facets" id="facetsAside">
+
+    <div class="facet-group">
+      <h3>Prix</h3>
+      <div class="facet-list short" data-facet="price"></div>
+    </div>
+
+    <div class="facet-group">
+      <h3>Catégorie</h3>
+      <input class="facet-search" placeholder="Chercher une catégorie…" data-search-for="category">
+      <div class="facet-list" data-facet="category"></div>
+    </div>
+
+    <div class="facet-group">
+      <h3>Fonction</h3>
+      <div class="facet-list short" data-facet="function"></div>
+    </div>
+
+    <div class="facet-group">
+      <h3>Public</h3>
+      <div class="facet-list short" data-facet="audience"></div>
+    </div>
+
+    <div class="facet-group">
+      <h3>Note minimale</h3>
+      <div class="facet-list short" data-facet="rating"></div>
+    </div>
+
+    <div class="facet-group">
+      <h3>Tags</h3>
+      <input class="facet-search" placeholder="Chercher un tag…" data-search-for="tags">
+      <div class="facet-list" data-facet="tags"></div>
+      <button class="facet-more" data-more-for="tags">+ Voir plus</button>
+    </div>
+
+  </aside>
+
+  <!-- ============ ZONE PRINCIPALE ============ -->
+  <main>
+    <div class="searchbar">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="17" y1="17" x2="13" y2="13"/></svg>
+      <input id="q" type="search" placeholder="Chercher un outil par nom, description ou tag…">
+    </div>
+
+    <div class="toolbar">
+      <button class="mobile-filter-btn" id="openDrawer">
+        ▤ Filtres <span class="dot" id="mobileCount">0</span>
+      </button>
+      <div class="sort">
+        <select id="sortSelect">
+          <option value="relevance">Trier par : Pertinence</option>
+          <option value="score">Trier par : Mieux notés</option>
+          <option value="recent">Trier par : Récents</option>
+          <option value="name">Trier par : Nom (A–Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="active-bar" id="activeBar"></div>
+
+    <div class="grid" id="grid"></div>
+  </main>
+</div>
+
+<!-- ============ TIROIR MOBILE (un seul, tous les filtres dedans) ============ -->
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Filtres</h3>
+    <button id="closeDrawer" aria-label="Fermer">×</button>
+  </div>
+
+  <div class="facet-group">
+    <h3>Prix</h3>
+    <div class="facet-list short" data-facet="price" data-mobile="1"></div>
+  </div>
+  <div class="facet-group">
+    <h3>Catégorie</h3>
+    <input class="facet-search" placeholder="Chercher une catégorie…" data-search-for="category" data-mobile="1">
+    <div class="facet-list" data-facet="category" data-mobile="1"></div>
+  </div>
+  <div class="facet-group">
+    <h3>Fonction</h3>
+    <div class="facet-list short" data-facet="function" data-mobile="1"></div>
+  </div>
+  <div class="facet-group">
+    <h3>Public</h3>
+    <div class="facet-list short" data-facet="audience" data-mobile="1"></div>
+  </div>
+  <div class="facet-group">
+    <h3>Note minimale</h3>
+    <div class="facet-list short" data-facet="rating" data-mobile="1"></div>
+  </div>
+  <div class="facet-group">
+    <h3>Tags</h3>
+    <input class="facet-search" placeholder="Chercher un tag…" data-search-for="tags" data-mobile="1">
+    <div class="facet-list" data-facet="tags" data-mobile="1"></div>
+    <button class="facet-more" data-more-for="tags" data-mobile="1">+ Voir plus</button>
+  </div>
+</div>
+<div class="drawer-apply">
+  <button id="applyDrawer">Voir les résultats</button>
+</div>
+
+<script>
+/* ============================================================
+   Données bidon — une trentaine d'outils IA/SaaS fictifs
+   ============================================================ */
+const TOOLS = [
+  {name:"Scriptoria", cat:"redaction", fn:"generation-texte", aud:"marketeurs", price:"freemium", tags:["copywriting","seo","blog"], score:9.1},
+  {name:"PixelForge AI", cat:"image", fn:"generation-image", aud:"designers", price:"paid", tags:["design","branding","illustration"], score:8.7},
+  {name:"CodeWisp", cat:"dev", fn:"generation-code", aud:"developpeurs", price:"freemium", tags:["autocompletion","refactor","tests"], score:9.4},
+  {name:"NoteHive", cat:"productivite", fn:"organisation", aud:"equipes", price:"free", tags:["notes","wiki","collaboration"], score:8.2},
+  {name:"VoxTranscribe", cat:"audio", fn:"transcription", aud:"journalistes", price:"freemium", tags:["audio","sous-titres","reunion"], score:8.9},
+  {name:"ClipSage", cat:"video", fn:"montage-video", aud:"createurs", price:"paid", tags:["montage","shorts","youtube"], score:8.5},
+  {name:"DataLoom", cat:"analytique", fn:"visualisation-donnees", aud:"analystes", price:"paid", tags:["dashboard","bi","rapport"], score:9.0},
+  {name:"ChatRelay", cat:"support", fn:"chatbot", aud:"pme", price:"freemium", tags:["support-client","automatisation","faq"], score:7.8},
+  {name:"LegalMind", cat:"juridique", fn:"analyse-contrat", aud:"avocats", price:"paid", tags:["contrat","conformite","revision"], score:8.6},
+  {name:"BudgetPilot", cat:"finance", fn:"prevision-financiere", aud:"pme", price:"freemium", tags:["budget","comptabilite","previsions"], score:7.9},
+  {name:"RecruitLens", cat:"rh", fn:"tri-cv", aud:"recruteurs", price:"paid", tags:["cv","entrevue","talent"], score:8.0},
+  {name:"StudyBuddy AI", cat:"education", fn:"tutorat", aud:"etudiants", price:"free", tags:["apprentissage","quiz","langues"], score:8.3},
+  {name:"PromptForge", cat:"dev", fn:"gestion-prompts", aud:"developpeurs", price:"open_source", tags:["prompt","api","llm"], score:8.8},
+  {name:"SocialPulse", cat:"marketing", fn:"planification-reseaux", aud:"marketeurs", price:"freemium", tags:["reseaux-sociaux","planification","analytics"], score:8.1},
+  {name:"MeetingEcho", cat:"productivite", fn:"resume-reunion", aud:"equipes", price:"freemium", tags:["reunion","resume","action-items"], score:8.4},
+  {name:"BrandVoice", cat:"redaction", fn:"generation-texte", aud:"marketeurs", price:"paid", tags:["branding","ton","copywriting"], score:7.7},
+  {name:"PixelPolish", cat:"image", fn:"retouche-image", aud:"designers", price:"freemium", tags:["retouche","upscale","design"], score:8.2},
+  {name:"CodeSentry", cat:"dev", fn:"revue-code", aud:"developpeurs", price:"paid", tags:["securite","revue","tests"], score:9.2},
+  {name:"TaskHarbor", cat:"productivite", fn:"organisation", aud:"equipes", price:"free", tags:["taches","kanban","collaboration"], score:7.6},
+  {name:"EchoDub", cat:"audio", fn:"synthese-vocale", aud:"createurs", price:"paid", tags:["voix","doublage","podcast"], score:8.6},
+  {name:"FrameCraft", cat:"video", fn:"generation-video", aud:"createurs", price:"paid", tags:["generation","effets","shorts"], score:8.9},
+  {name:"MetricMuse", cat:"analytique", fn:"visualisation-donnees", aud:"analystes", price:"open_source", tags:["dashboard","open-source","sql"], score:8.0},
+  {name:"HelpDeskGenie", cat:"support", fn:"chatbot", aud:"pme", price:"paid", tags:["support-client","tickets","automatisation"], score:7.5},
+  {name:"ContractIQ", cat:"juridique", fn:"analyse-contrat", aud:"avocats", price:"paid", tags:["contrat","risque","conformite"], score:8.7},
+  {name:"LedgerSense", cat:"finance", fn:"prevision-financiere", aud:"pme", price:"paid", tags:["comptabilite","budget","tresorerie"], score:7.4},
+  {name:"HireSignal", cat:"rh", fn:"tri-cv", aud:"recruteurs", price:"freemium", tags:["cv","talent","screening"], score:7.9},
+  {name:"LinguaLoop", cat:"education", fn:"tutorat", aud:"etudiants", price:"freemium", tags:["langues","quiz","apprentissage"], score:8.5},
+  {name:"OpenPrompt Lab", cat:"dev", fn:"gestion-prompts", aud:"developpeurs", price:"open_source", tags:["prompt","llm","open-source"], score:8.3},
+  {name:"CampaignForge", cat:"marketing", fn:"planification-reseaux", aud:"marketeurs", price:"paid", tags:["campagne","analytics","publicite"], score:7.8},
+  {name:"StandupBot", cat:"productivite", fn:"resume-reunion", aud:"equipes", price:"free", tags:["standup","action-items","async"], score:7.3},
+];
+
+const LABELS = {
+  price:{free:"Gratuit", freemium:"Freemium", paid:"Payant", open_source:"Source ouverte"},
+  cat:{redaction:"Rédaction", image:"Image", dev:"Développement", productivite:"Productivité", audio:"Audio", video:"Vidéo", analytique:"Analytique", support:"Support client", juridique:"Juridique", finance:"Finance", rh:"Ressources humaines", education:"Éducation", marketing:"Marketing"},
+  fn:{"generation-texte":"Génération de texte","generation-image":"Génération d'image","generation-code":"Génération de code","organisation":"Organisation","transcription":"Transcription","montage-video":"Montage vidéo","visualisation-donnees":"Visualisation de données","chatbot":"Chatbot","analyse-contrat":"Analyse de contrat","prevision-financiere":"Prévision financière","tri-cv":"Tri de CV","tutorat":"Tutorat","gestion-prompts":"Gestion de prompts","planification-reseaux":"Planification réseaux","resume-reunion":"Résumé de réunion","retouche-image":"Retouche d'image","revue-code":"Revue de code","synthese-vocale":"Synthèse vocale","generation-video":"Génération vidéo"},
+  aud:{marketeurs:"Marketeurs", designers:"Designers", developpeurs:"Développeurs", equipes:"Équipes", journalistes:"Journalistes", createurs:"Créateurs", analystes:"Analystes", pme:"PME", avocats:"Avocats", recruteurs:"Recruteurs", etudiants:"Étudiants"},
+};
+
+/* ============================================================
+   État — reflete dans l'URL (?q=&price=&category=&fn=&aud=&min=&tags=&sort=)
+   ============================================================ */
+const state = {
+  q:"", price:new Set(), category:new Set(), fn:new Set(), aud:new Set(),
+  minRating:0, tags:new Set(), sort:"relevance",
+};
+
+function readStateFromUrl(){
+  const p = new URLSearchParams(location.search);
+  state.q = p.get("q") || "";
+  for (const k of ["price","category","fn","aud","tags"]){
+    const v = p.get(k);
+    if (v) state[k] = new Set(v.split(","));
+  }
+  state.minRating = Number(p.get("min")||0) || 0;
+  state.sort = p.get("sort") || "relevance";
+}
+function writeStateToUrl(){
+  const p = new URLSearchParams();
+  if (state.q) p.set("q", state.q);
+  for (const k of ["price","category","fn","aud","tags"]){
+    if (state[k].size) p.set(k, [...state[k]].join(","));
+  }
+  if (state.minRating) p.set("min", state.minRating);
+  if (state.sort !== "relevance") p.set("sort", state.sort);
+  const qs = p.toString();
+  history.replaceState(null, "", location.pathname + (qs?"?"+qs:""));
+}
+
+/* recherche instantanee locale (par section) */
+const listSearch = { category:"", tags:"" };
+let tagsExpanded = false;
+const TAGS_COLLAPSED = 10;
+
+function matches(tool, exclude){
+  if (exclude!=="price" && state.price.size && !state.price.has(tool.price)) return false;
+  if (exclude!=="category" && state.category.size && !state.category.has(tool.cat)) return false;
+  if (exclude!=="fn" && state.fn.size && !state.fn.has(tool.fn)) return false;
+  if (exclude!=="aud" && state.aud.size && !state.aud.has(tool.aud)) return false;
+  if (exclude!=="rating" && state.minRating && tool.score < state.minRating) return false;
+  if (exclude!=="tags" && state.tags.size){
+    let any=false; for(const t of state.tags) if(tool.tags.includes(t)) any=true;
+    if(!any) return false;
+  }
+  if (exclude!=="q" && state.q){
+    const q=state.q.toLowerCase();
+    const hay=(tool.name+" "+tool.tags.join(" ")).toLowerCase();
+    if(!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function countsFor(kind, key){
+  const m = new Map();
+  for (const t of TOOLS){
+    if (!matches(t, kind)) continue;
+    if (kind==="tags"){ for(const tg of t.tags) m.set(tg,(m.get(tg)||0)+1); continue; }
+    const v = t[key];
+    m.set(v,(m.get(v)||0)+1);
+  }
+  return m;
+}
+
+function ratingCount(min){
+  return TOOLS.filter(t=>matches(t,"rating") && t.score>=min).length;
+}
+
+function toggle(setName, val){
+  const s = state[setName];
+  s.has(val) ? s.delete(val) : s.add(val);
+  render();
+}
+
+function buildOptionRow(active, label, count, zero, onClick){
+  const row = document.createElement("div");
+  row.className = "facet-opt" + (active?" on":"") + (zero && !active ? " zero":"");
+  row.innerHTML = `<span class="cb">${active?"✓":""}</span><span class="lbl">${label}</span><span class="cnt">${count}</span>`;
+  row.addEventListener("click", onClick);
+  return row;
+}
+
+function renderFacetList(container, kind, key, labelMap, opts){
+  opts = opts || {};
+  container.innerHTML = "";
+  const counts = countsFor(kind, key);
+  let entries;
+  if (kind==="tags"){
+    entries = [...new Set(TOOLS.flatMap(t=>t.tags))].map(v=>({v, label:v, count:counts.get(v)||0}));
+  } else {
+    entries = [...new Set(TOOLS.map(t=>t[key]))].map(v=>({v, label:(labelMap&&labelMap[v])||v, count:counts.get(v)||0}));
+  }
+  entries.sort((a,b)=> b.count-a.count || a.label.localeCompare(b.label));
+
+  const search = listSearch[kind];
+  if (search) entries = entries.filter(e=>e.label.toLowerCase().includes(search.toLowerCase()));
+
+  const activeSet = state[kind==="tags"?"tags":kind];
+  if (opts.collapsible && !tagsExpanded && !search){
+    const shown = entries.filter(e=>e.count>0 || activeSet.has(e.v)).slice(0, TAGS_COLLAPSED);
+    const rest = entries.filter(e=>e.count>0 || activeSet.has(e.v)).slice(TAGS_COLLAPSED);
+    entries = shown;
+    container.dataset.hasMore = rest.length>0 ? "1":"0";
+  } else {
+    entries = entries.filter(e=>e.count>0 || activeSet.has(e.v));
+    container.dataset.hasMore = "0";
+  }
+
+  for (const e of entries){
+    const active = activeSet.has(e.v);
+    container.appendChild(buildOptionRow(active, e.label, e.count, e.count===0, ()=>toggle(kind==="tags"?"tags":kind, e.v)));
+  }
+  if (entries.length===0){
+    const empty = document.createElement("div");
+    empty.style.cssText = "padding:8px; font-size:.8rem; color:var(--muted);";
+    empty.textContent = "Aucun résultat.";
+    container.appendChild(empty);
+  }
+}
+
+function renderRating(container){
+  container.innerHTML = "";
+  [0,7,8,9].forEach(v=>{
+    const active = state.minRating===v;
+    const label = v===0 ? "Toutes" : ("★ " + v + "+");
+    const count = v===0 ? TOOLS.filter(t=>matches(t,"rating")).length : ratingCount(v);
+    const row = buildOptionRow(active, label, count, false, ()=>{ state.minRating=v; render(); });
+    container.appendChild(row);
+  });
+}
+
+function renderAllFacetLists(){
+  document.querySelectorAll('[data-facet="price"]').forEach(el=>renderFacetList(el,"price","price",LABELS.price));
+  document.querySelectorAll('[data-facet="category"]').forEach(el=>renderFacetList(el,"category","cat",LABELS.cat));
+  document.querySelectorAll('[data-facet="function"]').forEach(el=>renderFacetList(el,"fn","fn",LABELS.fn));
+  document.querySelectorAll('[data-facet="audience"]').forEach(el=>renderFacetList(el,"aud","aud",LABELS.aud));
+  document.querySelectorAll('[data-facet="rating"]').forEach(renderRating);
+  document.querySelectorAll('[data-facet="tags"]').forEach(el=>renderFacetList(el,"tags",null,null,{collapsible:true}));
+  document.querySelectorAll('[data-more-for="tags"]').forEach(btn=>{
+    const list = btn.parentElement.querySelector('[data-facet="tags"]');
+    btn.style.display = list && list.dataset.hasMore==="1" ? "inline-block" : "none";
+    btn.textContent = tagsExpanded ? "Voir moins" : "+ Voir plus";
+  });
+}
+
+function activeChips(){
+  const chips = [];
+  for (const p of state.price) chips.push({label:LABELS.price[p], remove:()=>{state.price.delete(p); render();}});
+  for (const c of state.category) chips.push({label:LABELS.cat[c]||c, remove:()=>{state.category.delete(c); render();}});
+  for (const f of state.fn) chips.push({label:LABELS.fn[f]||f, remove:()=>{state.fn.delete(f); render();}});
+  for (const a of state.aud) chips.push({label:LABELS.aud[a]||a, remove:()=>{state.aud.delete(a); render();}});
+  for (const t of state.tags) chips.push({label:t, remove:()=>{state.tags.delete(t); render();}});
+  if (state.minRating) chips.push({label:"★ "+state.minRating+"+", remove:()=>{state.minRating=0; render();}});
+  if (state.q) chips.push({label:'"'+state.q+'"', remove:()=>{state.q=""; document.getElementById("q").value=""; render();}});
+  return chips;
+}
+
+function renderActiveBar(filteredCount){
+  const bar = document.getElementById("activeBar");
+  bar.innerHTML = "";
+  const count = document.createElement("span");
+  count.className = "result-count";
+  count.innerHTML = `<strong>${filteredCount}</strong> outil${filteredCount>1?"s":""} affiché${filteredCount>1?"s":""}`;
+  bar.appendChild(count);
+
+  const chips = activeChips();
+  for (const c of chips){
+    const chip = document.createElement("span");
+    chip.className = "chip";
+    chip.innerHTML = `${c.label} <button aria-label="Retirer">×</button>`;
+    chip.querySelector("button").addEventListener("click", c.remove);
+    bar.appendChild(chip);
+  }
+  if (chips.length){
+    const clear = document.createElement("button");
+    clear.className = "clear-all";
+    clear.textContent = "Tout effacer";
+    clear.addEventListener("click", clearAll);
+    bar.appendChild(clear);
+  }
+  document.getElementById("mobileCount").textContent = chips.length;
+}
+
+function clearAll(){
+  state.price.clear(); state.category.clear(); state.fn.clear(); state.aud.clear();
+  state.tags.clear(); state.minRating=0; state.q=""; document.getElementById("q").value="";
+  render();
+}
+
+function removeLastFilter(){
+  const chips = activeChips();
+  if (chips.length) chips[chips.length-1].remove();
+}
+
+function initials(name){ return name.split(" ").map(w=>w[0]).slice(0,2).join("").toUpperCase(); }
+function priceBadgeClass(p){ return {free:"free",freemium:"freemium",paid:"paid",open_source:"open"}[p]; }
+
+function renderGrid(list){
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  if (list.length===0){
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.innerHTML = `
+      <div class="icon">🔍</div>
+      <p><strong>Aucun outil ne correspond à cette combinaison de filtres.</strong><br>Essaie de retirer le dernier filtre ajouté, ou repars de zéro.</p>
+      <div class="suggestion">
+        <button id="btnRemoveLast">Retirer le dernier filtre</button>
+        <button id="btnClearAll">Tout effacer</button>
+      </div>`;
+    grid.appendChild(empty);
+    empty.querySelector("#btnRemoveLast").addEventListener("click", ()=>{ removeLastFilter(); render(); });
+    empty.querySelector("#btnClearAll").addEventListener("click", clearAll);
+    return;
+  }
+  for (const t of list){
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="top-row">
+        <div class="logo">${initials(t.name)}</div>
+        <h4>${t.name}</h4>
+      </div>
+      <p>${LABELS.cat[t.cat]} · ${LABELS.fn[t.fn]}</p>
+      <div class="meta">
+        <span class="badge ${priceBadgeClass(t.price)}">${LABELS.price[t.price]}</span>
+        <span class="score">★ ${t.score.toFixed(1)}</span>
+      </div>`;
+    grid.appendChild(card);
+  }
+}
+
+function sortList(list){
+  const l = [...list];
+  if (state.sort==="score") l.sort((a,b)=>b.score-a.score);
+  else if (state.sort==="name") l.sort((a,b)=>a.name.localeCompare(b.name));
+  else if (state.sort==="recent") l.sort(()=>0); // demo: ordre stable
+  return l;
+}
+
+function render(){
+  writeStateToUrl();
+  renderAllFacetLists();
+  const filtered = sortList(TOOLS.filter(t=>matches(t)));
+  renderActiveBar(filtered.length);
+  renderGrid(filtered);
+}
+
+/* ============================================================
+   Bind evenements
+   ============================================================ */
+document.getElementById("q").addEventListener("input", (e)=>{ state.q = e.target.value; render(); });
+document.getElementById("sortSelect").addEventListener("change", (e)=>{ state.sort = e.target.value; render(); });
+
+document.body.addEventListener("input", (e)=>{
+  if (e.target.matches('[data-search-for]')){
+    const kind = e.target.dataset.searchFor;
+    listSearch[kind] = e.target.value;
+    renderAllFacetLists();
+  }
+});
+document.body.addEventListener("click", (e)=>{
+  if (e.target.matches('[data-more-for="tags"]')){
+    tagsExpanded = !tagsExpanded;
+    renderAllFacetLists();
+  }
+});
+
+/* tiroir mobile */
+const overlay = document.getElementById("overlay");
+const drawer = document.getElementById("drawer");
+function openDrawer(){ overlay.classList.add("open"); drawer.classList.add("open"); document.querySelector(".drawer-apply").style.display="block"; }
+function closeDrawerFn(){ overlay.classList.remove("open"); drawer.classList.remove("open"); document.querySelector(".drawer-apply").style.display="none"; }
+document.getElementById("openDrawer").addEventListener("click", openDrawer);
+document.getElementById("closeDrawer").addEventListener("click", closeDrawerFn);
+document.getElementById("applyDrawer").addEventListener("click", closeDrawerFn);
+overlay.addEventListener("click", closeDrawerFn);
+
+/* init : relit l'URL au chargement, pour qu'un lien partage garde la selection */
+readStateFromUrl();
+document.getElementById("q").value = state.q;
+document.getElementById("sortSelect").value = state.sort;
+render();
+</script>
+</body>
+</html>

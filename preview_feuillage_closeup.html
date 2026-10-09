@@ -1,0 +1,77 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YggNexus — Gros plan feuillage</title>
+<style>
+html,body{margin:0;height:100%;background:#0B0F17;overflow:hidden;font-family:Inter,system-ui,sans-serif}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+.hud{position:fixed;left:0;right:0;bottom:22px;text-align:center;color:#94A3B8;font-size:13px;pointer-events:none;z-index:2}
+.hud b{color:#22D3EE}
+.panel{position:fixed;left:50%;bottom:52px;transform:translateX(-50%);z-index:3;display:flex;align-items:center;gap:10px;background:rgba(17,23,38,.85);border:1px solid #1E293B;border-radius:12px;padding:7px 13px;color:#94A3B8;font-size:13px;backdrop-filter:blur(6px)}
+.panel input{width:180px;accent-color:#22D3EE}.panel span{color:#E5E7EB;font-family:Syne,sans-serif;min-width:34px;text-align:right}
+</style></head><body>
+<canvas id="c"></canvas>
+<div class="panel">Zoom <input id="z" type="range" min="2" max="9" step="0.1" value="5"><span id="zv">5.0</span></div>
+<div class="hud">Gros plan canopée · scintillement + balancement · <b>maintiens le clic</b> = surcharge</div>
+<script>
+const cv=document.getElementById('c'),g=cv.getContext('2d');let w,h,dpr,zoom=5;
+const blue=[59,130,246],cyan=[34,211,238],green=[34,197,94],fg=[229,231,235],cycle=[blue,cyan,green];
+const MAXD=7,TRUNK=120,MAXS=22,SPACING=1.7;let limbs=[],children=[],leaves=[],foliage=[],strand=[];let pulses=[],sparks=[],nextPulse=.3;
+let growthT=1,charge=0,lastBloom=0;const mouse={down:false};let focal={x:0,y:-260};
+function lerp(a,b,t){return[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];}
+function paletteAt(ph){const n=cycle.length,p=(((ph%1)+1)%1)*n,i=Math.floor(p),f=p-i;return lerp(cycle[i%n],cycle[(i+1)%n],f);}
+const rgba=(c,a)=>`rgba(${c[0]|0},${c[1]|0},${c[2]|0},${a})`;
+function mulberry32(s){return function(){s|=0;s=(s+0x6d2b79f5)|0;let t=Math.imul(s^(s>>>15),1|s);t=(t+Math.imul(t^(t>>>7),61|t))^t;return((t^(t>>>14))>>>0)/4294967296;};}
+function buildTree(){limbs=[];foliage=[];const rnd=mulberry32(20260622);
+ function grow(parent,depth,isRoot,len,wdt,dir){if(depth>MAXD)return;const nKids=depth===0?1:(depth>=3&&rnd()<.45?3:2);const spread=.46+rnd()*.40;
+  for(let k=0;k<nKids;k++){let ax;if(depth===0)ax=0;else if(nKids===1)ax=(rnd()-.5)*.4;else{const base=(k/(nKids-1)-.5)*2;ax=base*spread+(rnd()-.5)*.30;}
+   ax+=-dir*0.10*(1-depth/(MAXD+2));const idx=limbs.length;
+   limbs.push({parent,ax,len:len*(.62+rnd()*.30),w:wdt*.78,depth:depth+1,isRoot,absBase:false,phase:rnd()*Math.PI*2,curl:(rnd()-.5)*.7,sx:0,sy:0,ex:0,ey:0,absA:0,grow:1});
+   grow(idx,depth+1,isRoot,limbs[idx].len,limbs[idx].w,dir);}}
+ const tu=limbs.length;limbs.push({parent:-1,ax:-Math.PI/2,len:TRUNK,w:22,depth:0,isRoot:false,absBase:true,phase:0,curl:0,sx:0,sy:0,ex:0,ey:0,absA:0,grow:1});grow(tu,0,false,TRUNK,22,-1);
+ const td=limbs.length;limbs.push({parent:-1,ax:Math.PI/2,len:TRUNK*.8,w:18,depth:0,isRoot:true,absBase:true,phase:Math.PI,curl:0,sx:0,sy:0,ex:0,ey:0,absA:0,grow:1});grow(td,0,true,TRUNK*.8,18,1);
+ children=limbs.map(()=>[]);for(let i=0;i<limbs.length;i++){const p=limbs[i].parent;if(p>=0)children[p].push(i);}
+ leaves=[];for(let i=0;i<limbs.length;i++)if(children[i].length===0)leaves.push(i);
+ const subLeaves=new Array(limbs.length).fill(0);for(let i=limbs.length-1;i>=0;i--){if(children[i].length===0)subLeaves[i]=1;else{let sl=0;for(const c of children[i])sl+=subLeaves[c];subLeaves[i]=sl;}}
+ strand=limbs.map((_,i)=>Math.max(1,Math.min(MAXS,Math.round(Math.pow(subLeaves[i],0.62)))));
+ for(let i=0;i<limbs.length;i++){const L=limbs[i];if(L.isRoot||L.depth<5)continue;const tip=children[i].length===0;const n=tip?5+Math.floor(rnd()*4):2+Math.floor(rnd()*2);
+  for(let j=0;j<n;j++)foliage.push({li:i,along:-.1+rnd()*.45,perp:(rnd()-.5)*.9,r:1.6+rnd()*2.6,phase:rnd()*Math.PI*2,sp:1.2+rnd()*1.8,bias:.5+rnd()*.22});}}
+function poseStatic(){for(let i=0;i<limbs.length;i++){const L=limbs[i];const pa=L.parent<0?0:limbs[L.parent].absA;L.absA=(L.absBase?L.ax:pa+L.ax);const sx=L.parent<0?0:limbs[L.parent].ex,sy=L.parent<0?0:limbs[L.parent].ey;L.sx=sx;L.sy=sy;L.ex=sx+Math.cos(L.absA)*L.len;L.ey=sy+Math.sin(L.absA)*L.len;}}
+function pickFocal(){poseStatic();// un amas de feuilles dans le coin haut-droit de la couronne
+ let best=null;for(const lf of foliage){const L=limbs[lf.li];if(L.ey<-150&&L.ex>40){if(!best||L.ey<best.ey)best={x:L.ex,y:L.ey,ey:L.ey};}}
+ if(best)focal={x:best.x,y:best.y};}
+function spawnPulseNear(){// pulse partant d'une branche proche du focal pour qu'on voie l'énergie passer
+ let cand=[];for(let i=0;i<limbs.length;i++){const L=limbs[i];if(L.isRoot)continue;const d=Math.hypot((L.sx+L.ex)/2-focal.x,(L.sy+L.ey)/2-focal.y);if(d<220&&children[i].length>0)cand.push(i);}
+ if(cand.length)pulses.push({li:cand[Math.floor(Math.random()*cand.length)],t:0,sp:.4+Math.random()*.4});}
+function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;cv.width=w*dpr|0;cv.height=h*dpr|0;g.setTransform(dpr,0,0,dpr,0,0);}
+function frame(dt,time){g.clearRect(0,0,w,h);const drift=time/36;const scale=zoom,ox=w/2-focal.x*scale,oy=h*.5-focal.y*scale;const X=x=>ox+x*scale,Y=y=>oy+y*scale;
+ charge+=(mouse.down?.7:-.85)*dt;charge=Math.max(0,Math.min(1,charge));
+ for(let i=0;i<limbs.length;i++){const L=limbs[i];const sway=(.006+L.depth*.010)*Math.sin(time*1.1+L.phase)*(1+charge*.8);const pa=L.parent<0?0:limbs[L.parent].absA;L.absA=(L.absBase?L.ax:pa+L.ax)+sway;
+  const sx=L.parent<0?0:limbs[L.parent].ex,sy=L.parent<0?0:limbs[L.parent].ey;L.sx=sx;L.sy=sy;L.ex=sx+Math.cos(L.absA)*L.len;L.ey=sy+Math.sin(L.absA)*L.len;}
+ g.globalCompositeOperation='lighter';g.lineCap='round';
+ const flw=Math.max(.6,1.0+scale*.18);
+ for(let i=0;i<limbs.length;i++){const L=limbs[i];if(L.grow<=0)continue;if(L.parent>=0&&limbs[L.parent].grow<1)continue;
+  const off=L.isRoot?.62:0,col=paletteAt(drift+(L.sx+L.sy)*.0011+off),tb=Math.min(1,.34+(L.depth/(MAXD+1))*.10+charge*.4),cnt=strand[i];
+  const dx=L.ex-L.sx,dy=L.ey-L.sy,len=Math.hypot(dx,dy)||1,px=-dy/len,py=dx/len,mx=(L.sx+L.ex)/2,my=(L.sy+L.ey)/2;
+  g.strokeStyle=rgba(col,tb);g.lineWidth=flw;
+  for(let sN=0;sN<cnt;sN++){const o=(sN-(cnt-1)/2)*SPACING,ox=px*o,oy=py*o;g.beginPath();g.moveTo(X(L.sx+ox),Y(L.sy+oy));g.quadraticCurveTo(X(mx+ox-dy*L.curl),Y(my+oy+dx*L.curl),X(L.ex+ox),Y(L.ey+oy));g.stroke();}}
+ for(const lf of foliage){const L=limbs[lf.li];const ca=Math.cos(L.absA),sa=Math.sin(L.absA),flut=Math.sin(time*lf.sp+lf.phase)*.06,along=lf.along+flut;
+  const px=L.ex+(ca*along-sa*(lf.perp+flut))*L.len,py=L.ey+(sa*along+ca*(lf.perp+flut))*L.len,x=X(px),y=Y(py);
+  const tw=.55+.45*Math.sin(time*lf.sp*.7+lf.phase),a=(.16+tw*.16)*(.7+charge*.6),col=paletteAt(drift+(px+py)*.0011+lf.bias),R=lf.r*scale*.5*(1+charge*.5);
+  g.fillStyle=rgba(col,a*.7);g.beginPath();g.arc(x,y,R*1.9,0,Math.PI*2);g.fill();
+  g.fillStyle=rgba(lerp(col,fg,.3),Math.min(1,a+.25));g.beginPath();g.arc(x,y,R*.8,0,Math.PI*2);g.fill();}
+ nextPulse-=dt;if(nextPulse<=0){const b=1+Math.floor(charge*4);for(let k=0;k<b;k++)spawnPulseNear();nextPulse=Math.max(.06,(.5-charge*.4)*(.5+Math.random()*.7));}
+ for(let i=pulses.length-1;i>=0;i--){const p=pulses[i],L=limbs[p.li];p.t+=(p.sp*dt)/(L.len/100);
+  if(p.t>=1){const kids=children[p.li];if(kids.length>0){p.li=kids[Math.floor(Math.random()*kids.length)];p.t=0;}else{sparks.push({x:L.ex,y:L.ey,vx:(Math.random()-.5)*30,vy:(Math.random()-.5)*30,t:0,life:.5+Math.random()*.4,c:paletteAt(drift+(L.ex+L.ey)*.0011+.4)});pulses.splice(i,1);}}}
+ if(pulses.length>300)pulses=pulses.slice(-300);
+ for(const p of pulses){const L=limbs[p.li];const wx=L.sx+(L.ex-L.sx)*p.t,wy=L.sy+(L.ey-L.sy)*p.t,x=X(wx),y=Y(wy),col=paletteAt(drift+(wx+wy)*.0011),R=(2.4+charge*2)*scale*.5;
+  const ha=g.createRadialGradient(x,y,0,x,y,R);ha.addColorStop(0,rgba(fg,.95));ha.addColorStop(.4,rgba(col,.7));ha.addColorStop(1,rgba(col,0));g.fillStyle=ha;g.beginPath();g.arc(x,y,R,0,Math.PI*2);g.fill();}
+ for(let i=sparks.length-1;i>=0;i--){const s=sparks[i];s.t+=dt;if(s.t>s.life){sparks.splice(i,1);continue;}s.x+=s.vx*dt;s.y+=s.vy*dt;g.fillStyle=rgba(s.c,1-s.t/s.life);g.beginPath();g.arc(X(s.x),Y(s.y),1.6,0,Math.PI*2);g.fill();}
+ if(charge>.92&&time-lastBloom>.7){lastBloom=time;for(const lf of foliage){const L=limbs[lf.li];sparks.push({x:L.ex,y:L.ey,vx:(Math.random()-.5)*60,vy:(Math.random()-.5)*60,t:0,life:.6+Math.random()*.5,c:paletteAt(drift+(L.ex+L.ey)*.0011+.45)});}}
+ g.globalCompositeOperation='source-over';}
+let prev=0;function loop(tms){const time=tms/1000,dt=prev===0?0:Math.min(.05,time-prev);prev=time;frame(dt,time);requestAnimationFrame(loop);}
+resize();buildTree();pickFocal();requestAnimationFrame(loop);
+addEventListener('resize',resize);
+addEventListener('mousedown',()=>mouse.down=true);addEventListener('mouseup',()=>mouse.down=false);
+addEventListener('touchstart',()=>mouse.down=true,{passive:true});addEventListener('touchend',()=>mouse.down=false);
+const z=document.getElementById('z'),zv=document.getElementById('zv');z.addEventListener('input',()=>{zoom=parseFloat(z.value);zv.textContent=zoom.toFixed(1);});z.addEventListener('mousedown',e=>e.stopPropagation());
+</script></body></html>
