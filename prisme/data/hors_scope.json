@@ -1,0 +1,442 @@
+{
+  "_note": "Fiches exclues du catalogue. export_tools.py les exporte en status archived chaque nuit. Retirer une ligne pour republier la fiche.",
+  "date": "2026-10-24",
+  "auteur": "Claude, session de nuit",
+  "slugs": [
+    {
+      "slug": "aaronhertzmann",
+      "nom": "Aaron Hertzmann's Blog",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "bernardmarr",
+      "nom": "A Simple Guide To The History Of Generative AI | Bernard Marr",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "com",
+      "nom": "Como o texto gerado por Inteligência Artificial está envenenando a Internet",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "eladgil",
+      "nom": "Early days of AI",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "forbes",
+      "nom": "Armed With ChatGPT, Cybercriminals Build Malware And Plot Fake Girl Bots",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "geekwire",
+      "nom": "New study on coding behavior raises questions about impact of AI on software dev",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "ieee",
+      "nom": "\"AI for Good\" Campaigns Are the Wrong Approach",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "nytimes",
+      "nom": "A Coming",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "sebastianraschka",
+      "nom": "Practical Tips for Finetuning LLMs Using LoRA (Low",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "techcrunch",
+      "nom": "Nightshade, the tool that ‘poisons’ data, gives artists a fighting chance agains",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "theatlantic",
+      "nom": "Will ChatGPT Kill the Student Essay? | The Atlantic",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "theverge",
+      "nom": "The copyright conundrum of AI art",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "thinkwee",
+      "nom": "Multi",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "time",
+      "nom": "I Taught for Most of My Career. I Quit Because of ChatGPT | TIME",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "turingpost",
+      "nom": "The Story of AI Winters and What it Teaches Us Today",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "wired",
+      "nom": "AI's New Creative Streak Sparks a Silicon Valley Gold Rush",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "apnews",
+      "nom": "Artificial intelligence technology behind ChatGPT was built in Iowa",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "aimodels",
+      "nom": "Transforming 2D Images into 3D with the AdaMPI AI Model",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "aisnakeoil",
+      "nom": "Licensing is neither feasible nor effective for addressing AI risks",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "analyticsvidhya",
+      "nom": "60+ Generative AI Terms You Must Know By Heart",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "arstechnica",
+      "nom": "A jargon",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "bdtechtalks",
+      "nom": "StreamingLLM gives language models unlimited context",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "betterprogramming",
+      "nom": "Optimize Your Chatbot’s Conversational Intelligence Using GPT",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "blog",
+      "nom": "An early look our AI Music experiment",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "bsky",
+      "nom": "The Most Thoughtful Writing about Generative AI by Eryk Salvaggi",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "businessinsider",
+      "nom": "AI Scams, Spam, Hacking, Are Ruining the Internet",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "cifs",
+      "nom": "ChatGPT And The Mass Production Of Office Work",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "com-br",
+      "nom": "O ChatGPT é o momento “Jurassic Park” da inteligência artificial",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "databricks",
+      "nom": "Free Dolly | The Databricks Blog",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "datadriveninvestor",
+      "nom": "60 ChatGPT Prompts for Data Science (Tried, Tested, and Rated)",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "deloitte",
+      "nom": "Responsible enterprise decisions with knowledge",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "disconnect",
+      "nom": "The ChatGPT revolution is another tech fantasy",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "fastcompanybrasil",
+      "nom": "Who is Afraid of Frankenstein? And of Generative AI? | Fast Company Brasil",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "ft",
+      "nom": "We must stop AI replicating the problems of surveillance capitalism",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "gritdaily",
+      "nom": "Will AI’s Next Wave of Super Intelligence Replace Human Ingenuity? It’s Complica",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "hackaday",
+      "nom": "Why LLaMa Is A Big Deal | Hackaday",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "harvard",
+      "nom": "How AI Fails Us: Ethical Challenges in Artificial Intelligence",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "interconnected",
+      "nom": "Adobe should make a boring app for prompt engineers (Interconnected)",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "langchain-dev",
+      "nom": "Sharing LangSmith Benchmarks",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "latent",
+      "nom": "The Four Wars of the AI Stack (Dec 2023 Recap)",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "marginalrevolution",
+      "nom": "AI Worship | Marginal REVOLUTION",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "markcarrigan",
+      "nom": "Some thoughts about generative AI and the future of education – Mark Carrigan",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "marktechpost",
+      "nom": "Top Large Language Models (LLMs) in 2023 | MarkTechPost",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "nature",
+      "nom": "Understanding how personality traits, experiences, and attitudes shape negative",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "newleftreview",
+      "nom": "Hito Steyerl, Mean Images, NLR 140/141, March–June 2023",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "newyorker",
+      "nom": "Appreciating the Poetic Misunderstandings of A.I. Art | The New Yorker",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "novelai",
+      "nom": "NovelAI Improvements on Stable Diffusion | by NovelAI | Oct, 2022 | Medium",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "org-br",
+      "nom": "Recommendations for the advancement of artificial intelligence in Brazil – ABC",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "scientificamerican",
+      "nom": "New Training Method Helps AI Generalize like People Do",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "stackdiary",
+      "nom": "The shady world of Brave selling copyrighted data for AI training",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "stanford",
+      "nom": "How Large Language Models Will Transform Science, Society, and AI",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "technologyreview",
+      "nom": "It’s time to retire the term “user”",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "theguardian",
+      "nom": "Five takeaways from UK’s AI safety summit at Bletchley Park | Artificial intelli",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "tiktok",
+      "nom": "Visual intuition for diffusion models and AI art. #stablediffusionart #aiart #ai",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "towardsdatascience",
+      "nom": "Despite Their Feats, Large Language Models Still Haven't Contributed to Linguist",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "ufpe",
+      "nom": "Utilizando redes adversárias generativas (GANs) como agente de apoio à inspiraçã",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "vice",
+      "nom": "ChatGPT Is a Bullshit Generator Waging Class War",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "stablediffusionfrivolous",
+      "nom": "Stable Diffusion Frivolous · Because lawsuits based on ignorance deserve a respo",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "briansolis",
+      "nom": "GenAI Prism Infographic by Brian Solis",
+      "raison": "article, billet ou nouvelle"
+    },
+    {
+      "slug": "co-nz",
+      "nom": "R for Data Science by Hadley Wickham and Garrett Grolemund",
+      "raison": "livre"
+    },
+    {
+      "slug": "gumroad-com",
+      "nom": "The Art of ChatGPT Prompting",
+      "raison": "livre"
+    },
+    {
+      "slug": "hadley",
+      "nom": "Advanced R by Hadley Wickham",
+      "raison": "livre"
+    },
+    {
+      "slug": "nostarch",
+      "nom": "Python Crash Course by Eric Matthes",
+      "raison": "livre"
+    },
+    {
+      "slug": "nyupress",
+      "nom": "Algorithms of Oppression by Safiya Umoja Noble",
+      "raison": "livre"
+    },
+    {
+      "slug": "org",
+      "nom": "Information Theory Inference Learning",
+      "raison": "livre"
+    },
+    {
+      "slug": "r-graphics",
+      "nom": "R Graphics Cookbook by Winston Chang",
+      "raison": "livre"
+    },
+    {
+      "slug": "socviz",
+      "nom": "Data Visualization Book",
+      "raison": "livre"
+    },
+    {
+      "slug": "statlearning",
+      "nom": "An Introduction to Statistical Learning with Applications in R by Gareth James,",
+      "raison": "livre"
+    },
+    {
+      "slug": "themlbook",
+      "nom": "The Hundred",
+      "raison": "livre"
+    },
+    {
+      "slug": "manning",
+      "nom": "Build a Large Language Model (From Scratch)",
+      "raison": "livre"
+    },
+    {
+      "slug": "springer",
+      "nom": "Pattern Recognition and Machine Learning by Christopher M. Bishop",
+      "raison": "livre"
+    },
+    {
+      "slug": "tidytextmining",
+      "nom": "Text Mining with R by Julia Silge and David Robinson",
+      "raison": "livre"
+    },
+    {
+      "slug": "appliedaicourse",
+      "nom": "Applied AI Course",
+      "raison": "cours en ligne"
+    },
+    {
+      "slug": "coursera",
+      "nom": "Andrew Ng’s Machine Learning at Stanford University",
+      "raison": "cours en ligne"
+    },
+    {
+      "slug": "fast",
+      "nom": "Jeremy Howard’s Fast.ai & Data Institute Certificates",
+      "raison": "cours en ligne"
+    },
+    {
+      "slug": "py4e",
+      "nom": "Python for Everybody",
+      "raison": "cours en ligne"
+    },
+    {
+      "slug": "udacity",
+      "nom": "Sebastian Thrun’s Introduction To Machine Learning",
+      "raison": "cours en ligne"
+    },
+    {
+      "slug": "udemy",
+      "nom": "Learning Python for Data Analysis and Visualization by Jose Portilla",
+      "raison": "cours en ligne"
+    },
+    {
+      "slug": "clickup-com",
+      "nom": "AI Tool Master List",
+      "raison": "guide ou liste de ressources"
+    },
+    {
+      "slug": "dallery",
+      "nom": "DALL·Ery GALL·Ery Resources",
+      "raison": "guide ou liste de ressources"
+    },
+    {
+      "slug": "felixsanz",
+      "nom": "Complete Guide to Samplers in Stable Diffusion",
+      "raison": "guide ou liste de ressources"
+    },
+    {
+      "slug": "rentry-co",
+      "nom": "Voldy Guide",
+      "raison": "guide ou liste de ressources"
+    },
+    {
+      "slug": "deci",
+      "nom": "The Ultimate Guide to LLM Evaluation | Deci",
+      "raison": "guide ou liste de ressources"
+    },
+    {
+      "slug": "berkeley",
+      "nom": "Generative AI Resources for Berkeley Law Faculty & Staff",
+      "raison": "guide ou liste de ressources"
+    },
+    {
+      "slug": "hatroid",
+      "nom": "Syn Feather Sweater / STRELITZIA – HATRA E STORE",
+      "raison": "site sans outil (boutique, portfolio, organisme)"
+    },
+    {
+      "slug": "memo",
+      "nom": "Learning to See – Memo Akten | Mehmet Selim Akten | The Mega Super Awesome Visua",
+      "raison": "site sans outil (boutique, portfolio, organisme)"
+    },
+    {
+      "slug": "safe",
+      "nom": "AI Risks that Could Lead to Catastrophe | CAIS",
+      "raison": "site sans outil (boutique, portfolio, organisme)"
+    }
+  ]
+}

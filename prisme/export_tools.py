@@ -26,6 +26,27 @@ import staging
 
 PRICING_ENUM = {"free", "freemium", "paid", "open_source", "unknown"}
 DEFAULT_OUT = ROOT / "data" / "tools.json"
+# Fiches hors scope (articles, livres, cours, nouvelles...) : toujours exportees
+# en status archived, quel que soit leur etat dans staging. Liste tenue a la main.
+HORS_SCOPE_PATH = ROOT / "data" / "hors_scope.json"
+
+
+def load_hors_scope(path=HORS_SCOPE_PATH):
+    """Retourne l'ensemble des slugs hors scope (fichier absent ou invalide : ensemble vide)."""
+    if not path.exists():
+        return set()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"[export] AVERTISSEMENT : {path.name} illisible ({exc}), ignore")
+        return set()
+    items = data.get("slugs", []) if isinstance(data, dict) else data
+    out = set()
+    for it in items:
+        slug = it.get("slug") if isinstance(it, dict) else it
+        if slug:
+            out.add(str(slug))
+    return out
 
 
 def load_existing(path):
@@ -165,6 +186,17 @@ def main():
         final = list(merged.values())
     else:
         final = list(entries_staging.values()) + list(dup_entries.values())
+
+    # --- Modif 4 : fiches hors scope forcees en archived (data/hors_scope.json) ---
+    hors_scope = load_hors_scope()
+    hors_scope_n = 0
+    for e in final:
+        if e.get("slug") in hors_scope and e.get("status") != "archived":
+            e["status"] = "archived"
+            hors_scope_n += 1
+    entries_staging = {k: v for k, v in entries_staging.items() if k not in hors_scope}
+    if hors_scope:
+        print(f"[export] hors scope : {len(hors_scope)} slug(s) dans la liste, {hors_scope_n} passe(s) en archived")
 
     if args.dry_run:
         published_n = len(entries_staging)
