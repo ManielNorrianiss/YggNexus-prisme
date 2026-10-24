@@ -46,13 +46,36 @@ def slugify(value):
     return value.strip("-") or "unknown"
 
 
-def http_get_json(url, token=None, timeout=30):
+RETRY_WAITS = [5, 15, 30, 60, 120, 180]  # secondes entre essais (environ 7 min au total)
+
+
+def http_get_json_once(url, token=None, timeout=60):
     headers = {"User-Agent": USER_AGENT, "Accept": "application/json"}
     if token:
         headers["Authorization"] = "Bearer " + token
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
+
+def http_get_json(url, token=None, timeout=60, retries=True):
+    """GET JSON avec reprises sur erreur reseau ou 5xx/429.
+    Les 4xx (sauf 429) sont definitives : aucune reprise."""
+    waits = RETRY_WAITS if retries else []
+    for attempt in range(len(waits) + 1):
+        try:
+            return http_get_json_once(url, token=token, timeout=timeout)
+        except urllib.error.HTTPError as e:
+            if e.code != 429 and e.code < 500:
+                raise
+            err = "HTTP " + str(e.code)
+        except Exception as e:
+            err = type(e).__name__ + ": " + str(e)
+        if attempt >= len(waits):
+            raise RuntimeError("echec apres " + str(attempt + 1) + " essais (" + err + ")")
+        w = waits[attempt]
+        sys.stderr.write("  reseau : " + err[:120] + " | nouvel essai dans " + str(w) + " s\n")
+        time.sleep(w)
 
 
 def resolve_endpoint(base, limit):
@@ -72,29 +95,81 @@ def resolve_endpoint(base, limit):
     raise RuntimeError("aucun endpoint /servers exploitable (" + str(last_err) + ")")
 
 
+CHECKPOINT_RAW = os.path.join(DATA_DIR, "mcp_collecte_en_cours.jsonl")
+CHECKPOINT_STATE = os.path.join(DATA_DIR, "mcp_collecte_en_cours.state.json")
+
+
+def _load_checkpoint():
+    """Reprend une collecte interrompue : (endpoint, cursor, page, raw) ou None."""
+    if not (os.path.exists(CHECKPOINT_RAW) and os.path.exists(CHECKPOINT_STATE)):
+        return None
+    try:
+        with open(CHECKPOINT_STATE, "r", encoding="utf-8") as f:
+            st = json.load(f)
+        raw = []
+        with open(CHECKPOINT_RAW, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    raw.append(json.loads(line))
+        return st.get("endpoint"), st.get("cursor"), int(st.get("page") or 0), raw
+    except Exception as e:
+        sys.stderr.write("checkpoint illisible, collecte reprise du debut (" + str(e) + ")\n")
+        return None
+
+
+def _save_state(endpoint, cursor, page):
+    tmp = CHECKPOINT_STATE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump({"endpoint": endpoint, "cursor": cursor, "page": page}, f)
+    os.replace(tmp, CHECKPOINT_STATE)
+
+
+def _clear_checkpoint():
+    for path in (CHECKPOINT_RAW, CHECKPOINT_STATE):
+        try:
+            os.remove(path)
+        except OSError:
+            pass
+
+
 def fetch_all(base, limit, max_pages):
-    endpoint = resolve_endpoint(base, limit)
-    raw = []
-    cursor = None
-    page = 0
-    while True:
-        params = {"limit": str(limit)}
-        if cursor:
-            params["cursor"] = cursor
-        url = endpoint + "?" + urllib.parse.urlencode(params)
-        data = http_get_json(url)
-        servers = data.get("servers") or []
-        raw.extend(servers)
-        page += 1
-        meta = data.get("metadata") or {}
-        cursor = meta.get("nextCursor") or meta.get("next_cursor")
-        sys.stderr.write("page " + str(page) + ": +" + str(len(servers)) +
-                         " (cumul " + str(len(raw)) + ")\n")
-        if not cursor:
-            break
-        if max_pages and page >= max_pages:
-            break
-        time.sleep(0.2)
+    """Collecte toutes les pages. Chaque page est sauvee sur disque au fur et a
+    mesure : si la collecte plante, le prochain lancement reprend la ou elle
+    s'est arretee au lieu de tout recommencer."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    cp = _load_checkpoint()
+    if cp and cp[1]:
+        endpoint, cursor, page, raw = cp
+        sys.stderr.write("REPRISE de la collecte interrompue : page " + str(page) +
+                         ", " + str(len(raw)) + " entrees deja sur disque\n")
+    else:
+        _clear_checkpoint()
+        endpoint = resolve_endpoint(base, limit)
+        cursor, page, raw = None, 0, []
+    with open(CHECKPOINT_RAW, "a", encoding="utf-8") as out:
+        while True:
+            params = {"limit": str(limit)}
+            if cursor:
+                params["cursor"] = cursor
+            url = endpoint + "?" + urllib.parse.urlencode(params)
+            data = http_get_json(url)
+            servers = data.get("servers") or []
+            for srv in servers:
+                out.write(json.dumps(srv, ensure_ascii=False) + "\n")
+            out.flush()
+            raw.extend(servers)
+            page += 1
+            meta = data.get("metadata") or {}
+            cursor = meta.get("nextCursor") or meta.get("next_cursor")
+            _save_state(endpoint, cursor, page)
+            sys.stderr.write("page " + str(page) + ": +" + str(len(servers)) +
+                             " (cumul " + str(len(raw)) + ")\n")
+            if not cursor:
+                break
+            if max_pages and page >= max_pages:
+                break
+            time.sleep(0.2)
     return endpoint, raw
 
 
@@ -270,7 +345,7 @@ def enrich_github(records, token, limit=None):
         owner, repo = gh
         api = "https://api.github.com/repos/" + owner + "/" + repo
         try:
-            data = http_get_json(api, token=token)
+            data = http_get_json(api, token=token, retries=False)
             r["stars"] = data.get("stargazers_count")
             lic = data.get("license") or {}
             r["license"] = lic.get("spdx_id") or lic.get("key")
@@ -414,6 +489,8 @@ def main():
     }
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+    if not args.from_file:
+        _clear_checkpoint()
 
     print("FETCHED " + str(fetched) + " servers from " + endpoint)
     print("UNIQUE " + str(len(kept)) + " after dedup (dropped " + str(dropped) + ")")
