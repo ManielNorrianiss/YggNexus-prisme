@@ -14,7 +14,7 @@ echo ================================================
 echo.
 echo [1/2] Collecte du registre officiel (toutes les pages)...
 echo.
-python b1_mcp.py --limit 100 --max-pages 0 --enrich-github
+python b1_mcp.py --limit 100 --max-pages 0
 if errorlevel 1 goto erreur
 
 echo.

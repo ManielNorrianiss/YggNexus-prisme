@@ -276,7 +276,12 @@ def enrich_github(records, token, limit=None):
             r["license"] = lic.get("spdx_id") or lic.get("key")
             enriched += 1
         except Exception as e:
-            sys.stderr.write("github skip " + owner + "/" + repo + ": " + str(e) + "\n")
+            msg = str(e)
+            if "403" in msg and "rate limit" in msg.lower():
+                sys.stderr.write("github: plafond de requetes atteint apres " + str(enriched)
+                                 + " enrichis, arret de l'enrichissement (collecte conservee)\n")
+                break
+            sys.stderr.write("github skip " + owner + "/" + repo + ": " + msg + "\n")
         count += 1
         time.sleep(0.7)
     return enriched
