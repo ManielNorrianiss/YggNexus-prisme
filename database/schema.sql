@@ -71,6 +71,8 @@ CREATE TABLE IF NOT EXISTS tools (
     rating_value     NUMERIC(2,1),
     rating_count     INTEGER,
     application_category TEXT,
+    kind             TEXT NOT NULL DEFAULT 'tool' CHECK (kind IN ('tool', 'agent', 'skill')),
+    platform         TEXT,
     source_url       TEXT,
     source_hash      TEXT,
     quality_score    NUMERIC(4,2),

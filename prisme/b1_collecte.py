@@ -174,6 +174,7 @@ def collect_one(src, dry_run):
         "raw_text":         raw_text,
         "categories_json":  json.dumps(cats),
         "primary_category": src.get("primary_category", ""),
+        "kind_hint":        src.get("kind_hint"),
         "status":           "draft",
         "collected_at":     datetime.now(timezone.utc).isoformat(),
     }

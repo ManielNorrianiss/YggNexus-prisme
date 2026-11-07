@@ -43,6 +43,29 @@ def domain_of(url):
     return net[4:] if net.startswith("www.") else net
 
 
+def key_of(url):
+    """Cle de deduplication : chemin de depot pour GitHub, domaine sinon."""
+    from b0_discovery import github_key
+    return github_key(url) or domain_of(url)
+
+
+def slug_from_key(key, used, kind=None):
+    """Slug lisible pour un depot ou un dossier GitHub.
+    Skill : github.com/obra/superpowers/tree/main/skills/tdd -> tdd-skill, puis obra-tdd-skill.
+    Agent : github.com/run-llama/llama_index -> llama-index ; None si ce slug existe deja
+    (probable doublon d'un outil deja au catalogue sous son site officiel)."""
+    parts = key.split("/")
+    owner = slugify(parts[1] if len(parts) > 1 else "")
+    last = slugify(parts[-1]) or owner
+    if kind == "skill":
+        last = last if last.endswith("skill") else f"{last}-skill"
+        for cand in (last, f"{owner}-{last}"):
+            if cand and cand not in used:
+                return cand
+        return None
+    return last if last and last not in used else None
+
+
 def slug_from_domain(domain):
     parts = [p for p in domain.split(".") if p]
     base = parts[-2] if len(parts) >= 2 else (parts[0] if parts else domain)
@@ -74,7 +97,7 @@ def supabase_published():
     sb = create_client(url, key)
     rows = sb.table("tools").select("slug, website_url").execute().data or []
     return ({r["slug"] for r in rows},
-            {domain_of(r.get("website_url") or "") for r in rows} - {""})
+            {key_of(r.get("website_url") or "") for r in rows} - {""})
 
 
 def alive(url):
@@ -109,7 +132,7 @@ def main():
     print(f"{len(cands)} candidat(s), {len(existing)} source(s) existante(s)")
 
     used_slugs = {s["slug"] for s in existing}
-    used_domains = {domain_of(s.get("website_url") or "") for s in existing} - {""}
+    used_domains = {key_of(s.get("website_url") or "") for s in existing} - {""}
 
     if args.check_supabase:
         sb_slugs, sb_domains = supabase_published()
@@ -126,7 +149,7 @@ def main():
     new_entries = []
     nb_dup_domain = nb_dup_slug = nb_lowcred = nb_dead = 0
     for c in cands:
-        dom = c.get("domain") or domain_of(c.get("website_url") or "")
+        dom = c.get("key") or c.get("domain") or domain_of(c.get("website_url") or "")
         if not dom:
             continue
         if cred(c) < args.min_lists:
@@ -135,7 +158,13 @@ def main():
         if dom in used_domains:
             nb_dup_domain += 1
             continue
-        slug = slug_from_domain(dom)
+        if c.get("key"):
+            slug = slug_from_key(dom, used_slugs, c.get("kind_hint"))
+            if not slug:
+                nb_dup_slug += 1
+                continue
+        else:
+            slug = slug_from_domain(dom)
         if slug in used_slugs:
             slug2 = f"{slug}-{dom.split('.')[-1]}"
             if slug2 in used_slugs:
@@ -156,6 +185,7 @@ def main():
             "website_url": url,
             "categories": [],
             "primary_category": "",
+            **({"kind_hint": c["kind_hint"]} if c.get("kind_hint") in ("agent", "skill") else {}),
             "_cred": cred(c),
         })
         used_slugs.add(slug)
