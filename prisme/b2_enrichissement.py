@@ -39,11 +39,12 @@ MAX_SORTIE_FAUTIVE_TRONQUEE = 500  # caracteres inclus dans le prompt de reprise
 
 SYSTEM_PROMPT = (
     "You are a factual technical writer for a SaaS/AI tools directory. "
-    "Your task is to produce a JSON object describing a software tool. "
+    "Your task is to produce a JSON object describing a software tool, an AI agent "
+    "or a skill for an AI assistant. "
     "Write ONLY in English. Be factual, concise and neutral. "
     "Return ONLY valid JSON with exactly these keys: "
     "short_desc, description_md, pros, cons, faq, seo_title, seo_description, "
-    "application_category, pricing, pricing_note, quality_score. "
+    "application_category, pricing, pricing_note, quality_score, kind, platform. "
     "No markdown fences, no extra keys, no comments."
 )
 
@@ -118,6 +119,11 @@ def build_prompt(raw):
     title      = raw.get("raw_title", "")
     meta       = raw.get("raw_meta_desc", "")
     text_snip  = (raw.get("raw_text") or "")[:1000]
+    hint       = raw.get("kind_hint") or ""
+    indice_type = (
+        f"Source hint: this entry comes from a curated list of AI {hint}s "
+        "(confirm or correct with the 'kind' key).\n" if hint in KIND_ENUM else ""
+    )
     avertissement_nom = (
         "\nNote: the tool name above was auto-derived from the domain and may be "
         "inaccurate -- infer the real product name from the page title/text if possible.\n"
@@ -130,7 +136,7 @@ def build_prompt(raw):
         f"Page title: {title}\n"
         f"Meta description: {meta}\n"
         f"Page text snippet: {text_snip}\n"
-        f"{avertissement_nom}\n"
+        f"{avertissement_nom}{indice_type}\n"
         "Produce the JSON object as instructed. Rules:\n"
         "- short_desc: max 160 characters, one sentence.\n"
         "- description_md: 2-3 paragraphs in Markdown.\n"
@@ -144,7 +150,25 @@ def build_prompt(raw):
         "- pricing: exactly one of: free, freemium, paid, open_source, unknown.\n"
         "- pricing_note: short string (max 80 chars).\n"
         "- quality_score: number from 0.0 to 10.0 (one decimal, e.g. 8.5).\n"
+        "- kind: exactly one of: tool, agent, skill. 'agent' = software that takes a goal "
+        "and carries out multi-step work autonomously (not a mere framework or library to "
+        "build agents: that is a 'tool'). 'skill' = a packaged capability installed into an "
+        "AI assistant (Claude skill, custom GPT, Gemini gem, assistant plugin). "
+        "Everything else = 'tool'.\n"
+        "- platform: for an agent or skill, the host it runs on, lowercase "
+        "(claude, chatgpt, gemini, copilot, standalone, multi); empty string for a tool.\n"
     )
+
+
+KIND_ENUM = ("tool", "agent", "skill")
+
+
+def normalise_kind(valeur, indice=None):
+    """Type valide ; repli sur l'indice de la source, puis 'tool'. Fonction pure."""
+    k = str(valeur or "").lower().strip()
+    if k in KIND_ENUM:
+        return k
+    return indice if indice in KIND_ENUM else "tool"
 
 
 def fake_llm(prompt, system, modele=None, timeout=120, _appel=None):
@@ -169,6 +193,8 @@ def fake_llm(prompt, system, modele=None, timeout=120, _appel=None):
         "pricing": "freemium",
         "pricing_note": "Free tier available, paid plans from $10/mo",
         "quality_score": 7.5,
+        "kind": "tool",
+        "platform": "",
     }
 
 
@@ -191,9 +217,12 @@ def content_hash_for(raw):
     return sha256(parts)
 
 
-def validate_enriched(d):
+def validate_enriched(d, kind_hint=None):
     """Valide et normalise les champs issus du LLM."""
     result = {}
+    result["kind"]                = normalise_kind(d.get("kind"), kind_hint)
+    plat = re.sub(r"[^a-z0-9 .-]", "", str(d.get("platform") or "").lower()).strip()[:40]
+    result["platform"]            = plat if result["kind"] != "tool" and plat else None
     result["short_desc"]          = str(d.get("short_desc") or "")[:160]
     result["description_md"]      = str(d.get("description_md") or "")
     result["pros_json"]           = d.get("pros") if isinstance(d.get("pros"), list) else []
@@ -337,7 +366,7 @@ def enrich_one(raw, chash, fn_gen, fn_embed, model, run_id=None, log_fn=None):
                     "error": f"ERREUR sortie LLM invalide (apres reprise): {message_invalide_retry}",
                     "validated": None, "vec": None, "chash": chash}
 
-    validated = validate_enriched(llm_out)
+    validated = validate_enriched(llm_out, kind_hint=raw.get("kind_hint"))
     validated["slug"]         = slug
     validated["content_hash"] = chash
     validated["enriched_at"]  = datetime.now(timezone.utc).isoformat()

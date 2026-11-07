@@ -93,8 +93,25 @@ def init_db(path=None):
         CREATE INDEX IF NOT EXISTS idx_tool_embeddings_content_hash
             ON tool_embeddings(content_hash);
     """)
+    _ajouter_colonnes(db)
     db.commit()
     return db
+
+
+# Colonnes ajoutees apres coup (2026-11-06 : agents et skills).
+# SQLite n'a pas ADD COLUMN IF NOT EXISTS : on verifie via PRAGMA table_info.
+_COLONNES_AJOUTEES = {
+    "raw_tools": [("kind_hint", "TEXT")],
+    "enriched_tools": [("kind", "TEXT"), ("platform", "TEXT")],
+}
+
+
+def _ajouter_colonnes(db):
+    for table, cols in _COLONNES_AJOUTEES.items():
+        existantes = {r[1] for r in db.execute(f"PRAGMA table_info({table})")}
+        for nom, typ in cols:
+            if nom not in existantes:
+                db.execute(f"ALTER TABLE {table} ADD COLUMN {nom} {typ}")
 
 
 def upsert_raw(d, path=None):
@@ -107,8 +124,8 @@ def upsert_raw(d, path=None):
         INSERT INTO raw_tools
             (slug, name, vendor, website_url, source_url, source_hash,
              raw_title, raw_meta_desc, raw_text, categories_json,
-             primary_category, status, collected_at)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+             primary_category, status, collected_at, kind_hint)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         ON CONFLICT(slug) DO UPDATE SET
             name=excluded.name, vendor=excluded.vendor,
             website_url=excluded.website_url, source_url=excluded.source_url,
@@ -116,12 +133,14 @@ def upsert_raw(d, path=None):
             raw_meta_desc=excluded.raw_meta_desc, raw_text=excluded.raw_text,
             categories_json=excluded.categories_json,
             primary_category=excluded.primary_category,
-            status=excluded.status, collected_at=excluded.collected_at
+            status=excluded.status, collected_at=excluded.collected_at,
+            kind_hint=excluded.kind_hint
     """, (
         d.get("slug"), d.get("name"), d.get("vendor"), d.get("website_url"),
         d.get("source_url"), d.get("source_hash"), d.get("raw_title"),
         d.get("raw_meta_desc"), d.get("raw_text"), cats,
         d.get("primary_category"), d.get("status", "draft"), d.get("collected_at"),
+        d.get("kind_hint"),
     ))
     db.commit()
 
@@ -146,13 +165,14 @@ def upsert_raw_many(rows, path=None):
             d.get("source_url"), d.get("source_hash"), d.get("raw_title"),
             d.get("raw_meta_desc"), d.get("raw_text"), cats,
             d.get("primary_category"), d.get("status", "draft"), d.get("collected_at"),
+            d.get("kind_hint"),
         ))
     db.executemany("""
         INSERT INTO raw_tools
             (slug, name, vendor, website_url, source_url, source_hash,
              raw_title, raw_meta_desc, raw_text, categories_json,
-             primary_category, status, collected_at)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+             primary_category, status, collected_at, kind_hint)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         ON CONFLICT(slug) DO UPDATE SET
             name=excluded.name, vendor=excluded.vendor,
             website_url=excluded.website_url, source_url=excluded.source_url,
@@ -160,7 +180,8 @@ def upsert_raw_many(rows, path=None):
             raw_meta_desc=excluded.raw_meta_desc, raw_text=excluded.raw_text,
             categories_json=excluded.categories_json,
             primary_category=excluded.primary_category,
-            status=excluded.status, collected_at=excluded.collected_at
+            status=excluded.status, collected_at=excluded.collected_at,
+            kind_hint=excluded.kind_hint
     """, params)
     db.commit()
 
@@ -190,8 +211,9 @@ def upsert_enriched(d, path=None):
         INSERT INTO enriched_tools
             (slug, short_desc, description_md, pros_json, cons_json, faq_json,
              seo_title, seo_description, application_category,
-             pricing, pricing_note, quality_score, content_hash, enriched_at)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+             pricing, pricing_note, quality_score, content_hash, enriched_at,
+             kind, platform)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         ON CONFLICT(slug) DO UPDATE SET
             short_desc=excluded.short_desc, description_md=excluded.description_md,
             pros_json=excluded.pros_json, cons_json=excluded.cons_json,
@@ -200,12 +222,14 @@ def upsert_enriched(d, path=None):
             application_category=excluded.application_category,
             pricing=excluded.pricing, pricing_note=excluded.pricing_note,
             quality_score=excluded.quality_score, content_hash=excluded.content_hash,
-            enriched_at=excluded.enriched_at
+            enriched_at=excluded.enriched_at,
+            kind=excluded.kind, platform=excluded.platform
     """, (
         d.get("slug"), d.get("short_desc"), d.get("description_md"),
         pros, cons, faq, d.get("seo_title"), d.get("seo_description"),
         d.get("application_category"), d.get("pricing"), d.get("pricing_note"),
         d.get("quality_score"), d.get("content_hash"), d.get("enriched_at"),
+        d.get("kind"), d.get("platform"),
     ))
     db.commit()
 

@@ -12,6 +12,15 @@ Usage :
     python b0_discovery.py --dry-run     # montre le compte par liste, n'ecrit rien
     python b0_discovery.py               # ecrit data/candidates.json
     python b0_discovery.py --out data/candidates_github.json
+    python b0_discovery.py --agents-skills   # listes d'agents et de skills
+                                             # (data/awesome_lists_agents_skills.txt)
+                                             # -> data/candidates_agents_skills.json
+
+Mode --agents-skills : chaque ligne de liste est prefixee du type attendu
+("agent <url>" ou "skill <url>"). Les depots GitHub sont alors acceptes et
+dedupliques par chemin de depot (pas par domaine), car la plupart des agents
+et des skills vivent sur github.com. Chaque candidat porte "kind_hint" ; le
+type final est confirme par le thrall d'enrichissement (b2).
 """
 import argparse
 import json
@@ -48,6 +57,24 @@ PLATFORM_BLOCK = {
     "apps.apple.com", "play.google.com", "patreon.com", "ko-fi.com",
     "producthunt.com", "wikipedia.org", "google.com", "notion.site",
 }
+
+# Listes d'agents et de skills (repli si data/awesome_lists_agents_skills.txt absent).
+AGENT_SKILL_LISTS = [
+    ("agent", "https://raw.githubusercontent.com/kyrolabs/awesome-agents/main/README.md"),
+    ("agent", "https://raw.githubusercontent.com/Jenqyang/Awesome-AI-Agents/main/README.md"),
+    ("skill", "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/README.md"),
+    ("skill", "https://raw.githubusercontent.com/travisvn/awesome-claude-skills/main/README.md"),
+]
+KINDS = ("tool", "agent", "skill")
+
+# Libelles de liens qui pointent vers de la doc ou un reseau, pas vers l'objet lui-meme.
+NAME_BLOCK = {
+    "github", "documentation", "docs", "paper", "blog", "website", "discord",
+    "twitter", "linkedin", "facebook", "youtube", "demo", "video", "arxiv",
+}
+
+# Sous-domaines de documentation : jamais un agent en soi.
+DOC_SUBS = {"docs", "doc", "support", "help", "blog", "learn", "developers", "platform"}
 
 # Sous-domaines de tracking/affiliation a reduire au domaine racine.
 TRACK_SUBS = {"affiliate", "get", "try", "go", "ref", "partner", "link",
@@ -86,23 +113,62 @@ def is_tool_domain(domain):
     return not any(domain == b or domain.endswith("." + b) for b in PLATFORM_BLOCK)
 
 
-def harvest_text(text, source, into):
+def github_key(url):
+    """Cle stable d'un lien GitHub : github.com/owner/repo[/tree/<branche>/<chemin>].
+    None si ce n'est pas un depot (profil, page de recherche, etc.). Fonction pure."""
+    try:
+        p = urlparse(url)
+    except Exception:
+        return None
+    net = p.netloc.lower().split(":")[0]
+    if net.startswith("www."):
+        net = net[4:]
+    if net != "github.com":
+        return None
+    parts = [x for x in p.path.split("/") if x]
+    if len(parts) < 2 or parts[0] in {"topics", "search", "orgs", "sponsors", "marketplace"}:
+        return None
+    if len(parts) > 2 and parts[2] in {"tree", "blob"}:
+        parts[2] = "tree"  # blob/ et tree/ designent le meme dossier de skill
+    else:
+        parts = parts[:2]
+    return "github.com/" + "/".join(parts).lower().rstrip("/")
+
+
+def harvest_text(text, source, into, kind="tool"):
     added = 0
     for name, url in parse_links(text):
-        d = clean_domain(url)
-        if not is_tool_domain(d):
-            continue
-        if d in into:
-            into[d]["sources"].append(source)
+        key = None
+        if kind != "tool":
+            if name.strip().lower() in NAME_BLOCK:
+                continue
+            key = github_key(url)
+        if key:
+            website = "https://" + key
+        elif kind == "skill":
+            continue  # une skill vit dans un depot ; le reste = doc, blogue, annonces
+        else:
+            d = clean_domain(url)
+            if not is_tool_domain(d):
+                continue
+            if kind != "tool" and d.split(".")[0] in DOC_SUBS:
+                continue
+            key, website = d, f"https://{d}"
+        if key in into:
+            into[key]["sources"].append(source)
             continue
         # nom propre : retire les suffixes parasites
-        nm = re.sub(r"\s*[-—:].*$", "", name).strip() or d
-        into[d] = {
-            "domain": d,
+        nm = re.sub(r"\s*[-—:].*$", "", name).strip() or key
+        entry = {
+            "domain": key.split("/")[0],
             "name": nm[:80],
-            "website_url": f"https://{d}",
+            "website_url": website,
             "sources": [source],
         }
+        if kind != "tool":
+            entry["key"] = key
+            entry["kind_hint"] = kind
+        into[key] = entry
         added += 1
     return added
 
@@ -129,23 +195,49 @@ def load_list_urls():
     return AWESOME_LISTS
 
 
+def load_agent_skill_lists():
+    """(kind, url) depuis data/awesome_lists_agents_skills.txt ("agent <url>" par ligne),
+    sinon AGENT_SKILL_LISTS."""
+    f = ROOT / "data" / "awesome_lists_agents_skills.txt"
+    if f.exists():
+        out = []
+        for line in f.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = line.split(None, 1)
+            if len(parts) == 2 and parts[0] in KINDS:
+                out.append((parts[0], parts[1].strip()))
+        if out:
+            return out
+    return AGENT_SKILL_LISTS
+
+
 def main():
     ap = argparse.ArgumentParser(description="B0 discovery (GitHub awesome lists)")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--out", default=str(ROOT / "data" / "candidates.json"))
+    ap.add_argument("--out", default=None)
+    ap.add_argument("--agents-skills", action="store_true",
+                    help="Moissonne les listes d'agents et de skills (kind_hint)")
     args = ap.parse_args()
+    if args.out is None:
+        args.out = str(ROOT / "data" / (
+            "candidates_agents_skills.json" if args.agents_skills else "candidates.json"))
 
     candidates = {}
-    lists = load_list_urls()
+    if args.agents_skills:
+        lists = load_agent_skill_lists()
+    else:
+        lists = [("tool", u) for u in load_list_urls()]
     print(f"[B0] {len(lists)} liste(s) a moissonner")
-    for url in lists:
+    for kind, url in lists:
         name = url.split("/")[3] + "/" + url.split("/")[4]  # owner/repo
         try:
             text = fetch(url)
         except Exception as e:
             print(f"[B0] SKIP {name} ({e})")
             continue
-        n = harvest_text(text, name, candidates)
+        n = harvest_text(text, name, candidates, kind=kind)
         print(f"[B0] {name}: +{n} nouveaux (total {len(candidates)})")
         time.sleep(1.0)
 

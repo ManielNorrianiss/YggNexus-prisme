@@ -32,7 +32,34 @@ TOOL_FIELDS = [
     "pricing", "pricing_note", "short_desc", "description_md",
     "application_category", "quality_score", "status",
     "seo_title", "seo_description", "pros_jsonb", "cons_jsonb", "faq_jsonb",
+    "kind", "platform",
 ]
+
+# Colonnes de database/migration_tool_kind.sql. Tant que la migration n'est pas
+# appliquee, on les retire de l'envoi au lieu de casser la publication nocturne.
+KIND_FIELDS = ("kind", "platform")
+_kind_disponible = True
+
+
+def _colonne_absente(err):
+    msg = str(err)
+    return "PGRST204" in msg or ("column" in msg and any(f"'{c}'" in msg for c in KIND_FIELDS))
+
+
+def upsert_tool(sb, row):
+    """Upsert d'un outil ; retombe sans kind/platform si la migration manque."""
+    global _kind_disponible
+    if not _kind_disponible:
+        row = {k: v for k, v in row.items() if k not in KIND_FIELDS}
+    try:
+        return sb.table("tools").upsert(row, on_conflict="slug").execute()
+    except Exception as e:
+        if _kind_disponible and _colonne_absente(e):
+            _kind_disponible = False
+            print("  ATTENTION : colonnes kind/platform absentes, applique "
+                  "database/migration_tool_kind.sql. Publication sans le type.")
+            return upsert_tool(sb, row)
+        raise
 
 
 def load_tools():
@@ -90,13 +117,13 @@ def main():
 
     from supabase import create_client
     sb = create_client(SUPABASE_URL, SERVICE_KEY)
-    paths = ["/"]  # categories retirees (2026-06-21)
+    paths = ["/", "/tools"]  # categories retirees (2026-06-21)
     cat_slugs = set()
     run_id = f"publish-{int(time.time())}"
 
     for item in tools:
         row = tool_row(item)
-        res = sb.table("tools").upsert(row, on_conflict="slug").execute()
+        res = upsert_tool(sb, row)
         tool_id = res.data[0]["id"]
         slug = row["slug"]
         print(f"  upsert tool {slug} (id={tool_id})")
@@ -123,6 +150,8 @@ def main():
         ).execute()
 
         paths.append(f"/tools/{slug}")
+        if item.get("kind") in ("agent", "skill"):
+            paths.append(f"/{item['kind']}s")
 
     # categories retirees (2026-06-21) — lecture Supabase categories + revalidation /best /categories desactivees
     if False:  # categories retirees (2026-06-21)

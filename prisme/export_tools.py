@@ -107,6 +107,8 @@ def build_entry(raw, enriched):
         "description_md":       enriched.get("description_md") or "",
         "application_category": enriched.get("application_category") or "",
         "quality_score":        qs,
+        "kind":                 enriched.get("kind") or "tool",
+        "platform":             enriched.get("platform") or None,
         "status":               raw.get("status") or "draft",
         "seo_title":            enriched.get("seo_title") or "",
         "seo_description":      enriched.get("seo_description") or "",

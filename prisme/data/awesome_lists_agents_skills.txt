@@ -1,0 +1,7 @@
+# Listes d'agents et de skills pour b0_discovery.py --agents-skills
+# Format : <type> <url du README brut>   (type = agent ou skill)
+# Le type est une indication ; b2_enrichissement le confirme ou le corrige.
+agent https://raw.githubusercontent.com/kyrolabs/awesome-agents/main/README.md
+agent https://raw.githubusercontent.com/Jenqyang/Awesome-AI-Agents/main/README.md
+skill https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/README.md
+skill https://raw.githubusercontent.com/travisvn/awesome-claude-skills/main/README.md
