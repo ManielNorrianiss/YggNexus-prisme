@@ -26,8 +26,10 @@ Usage:
     python b5_liens.py --sans-llm
 """
 import argparse
+import json
 import os
 import sys
+from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -45,6 +47,8 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SERVICE_KEY  = os.environ.get("SUPABASE_SERVICE_KEY", "")
 
 MAX_LEN_RAISON = 140
+PAGE_LECTURE = 1000
+DOSSIER_TRACES = ROOT.parent / "exports" / "b5"
 
 SYSTEM_PROMPT_RAISON = (
     "You write short, factual one-sentence comparisons between two SaaS/AI "
@@ -105,12 +109,44 @@ def clamp_similarity(val):
 
 def load_tools(sb):
     """Return list of published tools: [{id, slug, name, pricing,
-    pricing_note, application_category}, ...]."""
-    res = sb.table("tools") \
-            .select("id,slug,name,pricing,pricing_note,application_category") \
-            .eq("status", "published") \
-            .execute()
-    return res.data if (res is not None and res.data) else []
+    pricing_note, application_category}, ...]. Pagine jusqu'au bout
+    (PostgREST plafonne chaque reponse a 1000 lignes)."""
+    tools = []
+    offset = 0
+    while True:
+        res = sb.table("tools") \
+                .select("id,slug,name,pricing,pricing_note,application_category") \
+                .eq("status", "published") \
+                .order("id") \
+                .range(offset, offset + PAGE_LECTURE - 1) \
+                .execute()
+        batch = res.data if (res is not None and res.data) else []
+        tools.extend(batch)
+        if len(batch) < PAGE_LECTURE:
+            break
+        offset += PAGE_LECTURE
+    return tools
+
+
+def load_paires_existantes(sb):
+    """Return l'ensemble {(tool_id, alternative_id)} deja presentes dans
+    alternatives. Lecture seule, paginee."""
+    paires = set()
+    offset = 0
+    while True:
+        res = sb.table("alternatives") \
+                .select("tool_id,alternative_id") \
+                .order("tool_id") \
+                .order("alternative_id") \
+                .range(offset, offset + PAGE_LECTURE - 1) \
+                .execute()
+        batch = res.data if (res is not None and res.data) else []
+        for row in batch:
+            paires.add((row["tool_id"], row["alternative_id"]))
+        if len(batch) < PAGE_LECTURE:
+            break
+        offset += PAGE_LECTURE
+    return paires
 
 
 def load_embeddings(sb, model):
@@ -218,6 +254,35 @@ def _category_label(application_category):
     return label or "ai/saas"
 
 
+def couper_raison(texte, max_len=MAX_LEN_RAISON):
+    """
+    Ramene une raison dans max_len caracteres sans jamais couper un mot :
+    garde la derniere phrase complete qui tient ; sinon coupe au dernier
+    espace, retire la ponctuation pendante et termine par un point.
+    """
+    texte = " ".join((texte or "").split())
+    if len(texte) <= max_len:
+        return texte
+    morceau = texte[:max_len]
+    # derniere fin de phrase qui tient (suivie d'un espace dans le texte
+    # complet, pour ne pas couper "3.5")
+    fin = -1
+    for i, c in enumerate(morceau):
+        if c in ".!?" and texte[i + 1:i + 2] == " ":
+            fin = i
+    if fin >= max_len // 4:
+        return texte[:fin + 1]
+    # il faut garder une place pour le point final
+    limite = max_len - 1
+    morceau = texte[:limite]
+    if texte[limite] != " ":
+        coupe = morceau.rfind(" ")
+        if coupe > 0:
+            morceau = morceau[:coupe]
+    morceau = morceau.rstrip(" ,;:-(&/")
+    return (morceau + ".") if morceau else texte[:limite] + "."
+
+
 def raison_gabarit(tool, alt_tool):
     """
     Construit une raison courte (<=140 caracteres) sans LLM, a partir des
@@ -241,7 +306,7 @@ def raison_gabarit(tool, alt_tool):
     else:
         raison = f"{base}; {alt_tool.get('name', 'it')} is {prix_alt} while {tool.get('name', 'the main tool')} is {prix_tool}."
 
-    return raison[:MAX_LEN_RAISON]
+    return couper_raison(raison)
 
 
 def raison_llm(fn_gen, tool, alt_tool, model, timeout=60):
@@ -268,7 +333,7 @@ def raison_llm(fn_gen, tool, alt_tool, model, timeout=60):
     raison = raison.strip()
     if _contient_terme_interdit(raison):
         raise LLMError("raison LLM contient un terme interdit (cosine/similarity)")
-    return raison[:MAX_LEN_RAISON]
+    return couper_raison(raison)
 
 
 def _contient_terme_interdit(texte):
@@ -361,6 +426,39 @@ def write_alternatives(sb, tool_id, tool_slug, alts, dry_run, raisons=None):
     return len(rows)
 
 
+def ajouter_paires_absentes(sb, lignes, dry_run, dossier_traces=None, horodatage=None):
+    """
+    Mode --ajouts-seulement : insere les lignes (dicts tool_id, alternative_id,
+    similarity, reason). N'appelle jamais delete ni update. Ecrit un fichier
+    de trace JSON listant exactement les paires inserees (hors dry-run).
+    Retourne (nb_inserees, chemin_trace ou None).
+    """
+    if dry_run or not lignes:
+        return 0, None
+    dossier = Path(dossier_traces or DOSSIER_TRACES)
+    dossier.mkdir(parents=True, exist_ok=True)
+    horodatage = horodatage or datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    chemin = dossier / f"ajouts_{horodatage}.json"
+    trace = {
+        "etape": "b5_liens --ajouts-seulement",
+        "horodatage": horodatage,
+        "table": "alternatives",
+        "paires": [],
+    }
+    nb = 0
+    for i in range(0, len(lignes), 200):
+        lot = lignes[i:i + 200]
+        sb.table("alternatives").insert(lot).execute()
+        nb += len(lot)
+        # trace ecrite apres chaque lot reussi : meme si un lot echoue plus
+        # loin, ce qui est deja entre en base est consigne
+        trace["paires"].extend(
+            {"tool_id": r["tool_id"], "alternative_id": r["alternative_id"]} for r in lot
+        )
+        chemin.write_text(json.dumps(trace, indent=1), encoding="utf-8")
+    return nb, chemin
+
+
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
@@ -383,6 +481,10 @@ def parse_args():
                         help="Nb de fils paralleles pour la generation des raisons (defaut: 4)")
     parser.add_argument("--sans-llm",   action="store_true",
                         help="Desactive le LLM pour les raisons -- gabarit uniquement.")
+    parser.add_argument("--ajouts-seulement", action="store_true",
+                        help="N'insere que les paires (outil, alternative) absentes de "
+                             "alternatives : aucun delete, aucune mise a jour. Ecrit la "
+                             "liste des paires inserees dans exports/b5/.")
     return parser.parse_args()
 
 
@@ -463,6 +565,37 @@ def main():
 
     if args.limit > 0:
         to_process = to_process[:args.limit]
+
+    # 6b. Mode ajouts seulement : on ne garde que les paires absentes
+    if args.ajouts_seulement:
+        existantes = load_paires_existantes(sb)
+        print(f"[B5] --ajouts-seulement : {len(existantes)} paire(s) deja presente(s) (lecture seule).")
+        nouvelles = []  # (tool_id, slug, alt_id, alt_slug, sim)
+        for tool_id, slug, name, _ in to_process:
+            for alt_id, alt_slug, sim in alternatives_map.get(tool_id, []):
+                if (tool_id, alt_id) not in existantes:
+                    nouvelles.append((tool_id, slug, alt_id, alt_slug, sim))
+        outils_touches = {n[0] for n in nouvelles}
+        print(f"[B5] {len(nouvelles)} paire(s) a ajouter pour {len(outils_touches)} outil(s).")
+        paires = [(n[0], n[2]) for n in nouvelles]
+        if args.sans_llm:
+            fn_gen, model_raison = None, None
+        else:
+            fn_gen, model_raison = generer_json, modele_pour("arbitre")
+        raisons = generer_raisons_paire(fn_gen, tools_index, paires, model_raison,
+                                         args.sans_llm, args.workers)
+        lignes = [{"tool_id": n[0], "alternative_id": n[2], "similarity": n[4],
+                   "reason": raisons.get((n[0], n[2]), "")} for n in nouvelles]
+        if args.dry_run:
+            for n in nouvelles[:5]:
+                print(f"  [dry-run] {n[1]} -> {n[3]} sim={n[4]} "
+                      f"reason=\"{raisons.get((n[0], n[2]), '')}\"")
+        nb, chemin = ajouter_paires_absentes(sb, lignes, args.dry_run)
+        mode_label = "[dry-run] " if args.dry_run else ""
+        print(f"\n[B5] {mode_label}Resume ajouts : {len(nouvelles)} paire(s), "
+              f"{len(outils_touches)} outil(s), {nb} inseree(s)."
+              + (f" Trace : {chemin}" if chemin else ""))
+        return
 
     # 7. Generer les raisons (LLM role arbitre en parallele, ou gabarit si --sans-llm)
     paires = []
