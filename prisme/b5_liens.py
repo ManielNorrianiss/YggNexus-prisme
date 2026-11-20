@@ -391,6 +391,12 @@ def raison_gabarit(tool, alt_tool):
     else:
         raison = f"{base}; {alt_tool.get('name', 'it')} is {prix_alt} while {nom_tool} is {prix_tool}."
 
+    # Phrase trop longue (noms longs) : on laisse tomber la proposition sur le
+    # prix plutot que de la couper en plein milieu ("... is of unknown pricing
+    # while.").
+    if len(" ".join(raison.split())) > MAX_LEN_RAISON:
+        raison = f"{base}."
+
     return couper_raison(raison)
 
 
@@ -439,6 +445,11 @@ def raison_gabarit_fr(tool, alt_tool):
         raison = f"{base}, tous deux {prix_alt[1]}."
     else:
         raison = f"{base} ; {nom_alt} est {prix_alt[0]} alors que {nom_tool} est {prix_tool[0]}."
+
+    # Meme regle qu'en anglais : plutot la phrase de base entiere qu'une
+    # proposition sur le prix coupee en plein milieu.
+    if len(" ".join(raison.split())) > MAX_LEN_RAISON_FR:
+        raison = f"{base}."
 
     return couper_raison(raison, MAX_LEN_RAISON_FR)
 
@@ -611,6 +622,20 @@ def write_alternatives(sb, tool_id, tool_slug, alts, dry_run, raisons=None):
     return len(rows)
 
 
+def filtrer_exclues(nouvelles, slugs_exclus):
+    """
+    Retire des paires a ajouter celles dont l'outil ou l'alternative porte un
+    slug exclu (option --exclure : fiches publiees qui ne sont pas des outils).
+    nouvelles : liste de (tool_id, slug, alt_id, alt_slug, sim).
+    Retourne (paires_gardees, nb_ecartees).
+    """
+    exclus = {s.strip() for s in (slugs_exclus or []) if s and s.strip()}
+    if not exclus:
+        return list(nouvelles), 0
+    gardees = [n for n in nouvelles if n[1] not in exclus and n[3] not in exclus]
+    return gardees, len(nouvelles) - len(gardees)
+
+
 def ajouter_paires_absentes(sb, lignes, dry_run, dossier_traces=None, horodatage=None):
     """
     Mode --ajouts-seulement : insere les lignes (dicts tool_id, alternative_id,
@@ -670,6 +695,9 @@ def parse_args():
                         help="N'insere que les paires (outil, alternative) absentes de "
                              "alternatives : aucun delete, aucune mise a jour. Ecrit la "
                              "liste des paires inserees dans exports/b5/.")
+    parser.add_argument("--exclure", type=str, default="",
+                        help="Avec --ajouts-seulement : slugs separes par des virgules ; "
+                             "aucune paire touchant un de ces slugs n'est ajoutee.")
     parser.add_argument("--montrer", action="store_true",
                         help="Avec --ajouts-seulement --dry-run : affiche chaque paire a "
                              "ajouter (noms, categories imprimees, raisons) et ecrit "
@@ -764,6 +792,9 @@ def main():
             for alt_id, alt_slug, sim in alternatives_map.get(tool_id, []):
                 if (tool_id, alt_id) not in existantes:
                     nouvelles.append((tool_id, slug, alt_id, alt_slug, sim))
+        nouvelles, nb_exclues = filtrer_exclues(nouvelles, args.exclure.split(","))
+        if nb_exclues:
+            print(f"[B5] --exclure : {nb_exclues} paire(s) ecartee(s).")
         outils_touches = {n[0] for n in nouvelles}
         print(f"[B5] {len(nouvelles)} paire(s) a ajouter pour {len(outils_touches)} outil(s).")
         paires = [(n[0], n[2]) for n in nouvelles]
