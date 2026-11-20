@@ -1,0 +1,303 @@
+{
+ "etape": "b5_liens --ajouts-seulement",
+ "horodatage": "2026-11-20_095532",
+ "table": "alternatives",
+ "paires": [
+  {
+   "tool_id": 72,
+   "alternative_id": 1783
+  },
+  {
+   "tool_id": 74,
+   "alternative_id": 2286
+  },
+  {
+   "tool_id": 432,
+   "alternative_id": 796
+  },
+  {
+   "tool_id": 549,
+   "alternative_id": 433
+  },
+  {
+   "tool_id": 804,
+   "alternative_id": 808
+  },
+  {
+   "tool_id": 811,
+   "alternative_id": 349
+  },
+  {
+   "tool_id": 825,
+   "alternative_id": 819
+  },
+  {
+   "tool_id": 1296,
+   "alternative_id": 2043
+  },
+  {
+   "tool_id": 1311,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 1313,
+   "alternative_id": 1853
+  },
+  {
+   "tool_id": 1338,
+   "alternative_id": 1406
+  },
+  {
+   "tool_id": 1339,
+   "alternative_id": 1394
+  },
+  {
+   "tool_id": 1364,
+   "alternative_id": 1732
+  },
+  {
+   "tool_id": 1370,
+   "alternative_id": 1813
+  },
+  {
+   "tool_id": 1374,
+   "alternative_id": 1380
+  },
+  {
+   "tool_id": 1380,
+   "alternative_id": 1289
+  },
+  {
+   "tool_id": 1380,
+   "alternative_id": 1374
+  },
+  {
+   "tool_id": 1380,
+   "alternative_id": 1959
+  },
+  {
+   "tool_id": 1380,
+   "alternative_id": 1281
+  },
+  {
+   "tool_id": 1391,
+   "alternative_id": 1766
+  },
+  {
+   "tool_id": 1396,
+   "alternative_id": 1733
+  },
+  {
+   "tool_id": 1430,
+   "alternative_id": 2207
+  },
+  {
+   "tool_id": 1440,
+   "alternative_id": 341
+  },
+  {
+   "tool_id": 1782,
+   "alternative_id": 1793
+  },
+  {
+   "tool_id": 1783,
+   "alternative_id": 103
+  },
+  {
+   "tool_id": 1804,
+   "alternative_id": 1765
+  },
+  {
+   "tool_id": 1818,
+   "alternative_id": 1737
+  },
+  {
+   "tool_id": 1848,
+   "alternative_id": 836
+  },
+  {
+   "tool_id": 1854,
+   "alternative_id": 1363
+  },
+  {
+   "tool_id": 1864,
+   "alternative_id": 1867
+  },
+  {
+   "tool_id": 1867,
+   "alternative_id": 1306
+  },
+  {
+   "tool_id": 1873,
+   "alternative_id": 1440
+  },
+  {
+   "tool_id": 1883,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 1889,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 1895,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 1926,
+   "alternative_id": 1311
+  },
+  {
+   "tool_id": 1926,
+   "alternative_id": 1893
+  },
+  {
+   "tool_id": 1954,
+   "alternative_id": 349
+  },
+  {
+   "tool_id": 1968,
+   "alternative_id": 1890
+  },
+  {
+   "tool_id": 1985,
+   "alternative_id": 1330
+  },
+  {
+   "tool_id": 2011,
+   "alternative_id": 1406
+  },
+  {
+   "tool_id": 2011,
+   "alternative_id": 832
+  },
+  {
+   "tool_id": 2030,
+   "alternative_id": 438
+  },
+  {
+   "tool_id": 2034,
+   "alternative_id": 1287
+  },
+  {
+   "tool_id": 2036,
+   "alternative_id": 1287
+  },
+  {
+   "tool_id": 2055,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 2056,
+   "alternative_id": 1433
+  },
+  {
+   "tool_id": 2079,
+   "alternative_id": 2080
+  },
+  {
+   "tool_id": 2145,
+   "alternative_id": 819
+  },
+  {
+   "tool_id": 2150,
+   "alternative_id": 833
+  },
+  {
+   "tool_id": 2160,
+   "alternative_id": 1892
+  },
+  {
+   "tool_id": 2166,
+   "alternative_id": 1774
+  },
+  {
+   "tool_id": 2171,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 2195,
+   "alternative_id": 1383
+  },
+  {
+   "tool_id": 2197,
+   "alternative_id": 2171
+  },
+  {
+   "tool_id": 2201,
+   "alternative_id": 2209
+  },
+  {
+   "tool_id": 2263,
+   "alternative_id": 2077
+  },
+  {
+   "tool_id": 2274,
+   "alternative_id": 1299
+  },
+  {
+   "tool_id": 2278,
+   "alternative_id": 1394
+  },
+  {
+   "tool_id": 2287,
+   "alternative_id": 1809
+  },
+  {
+   "tool_id": 2288,
+   "alternative_id": 1281
+  },
+  {
+   "tool_id": 2307,
+   "alternative_id": 2051
+  },
+  {
+   "tool_id": 2315,
+   "alternative_id": 797
+  },
+  {
+   "tool_id": 2321,
+   "alternative_id": 2385
+  },
+  {
+   "tool_id": 2341,
+   "alternative_id": 1304
+  },
+  {
+   "tool_id": 2385,
+   "alternative_id": 1926
+  },
+  {
+   "tool_id": 2413,
+   "alternative_id": 1312
+  },
+  {
+   "tool_id": 2424,
+   "alternative_id": 1775
+  },
+  {
+   "tool_id": 2456,
+   "alternative_id": 1281
+  },
+  {
+   "tool_id": 2458,
+   "alternative_id": 1281
+  },
+  {
+   "tool_id": 2467,
+   "alternative_id": 1410
+  },
+  {
+   "tool_id": 2475,
+   "alternative_id": 1732
+  },
+  {
+   "tool_id": 2486,
+   "alternative_id": 2161
+  },
+  {
+   "tool_id": 2508,
+   "alternative_id": 1926
+  }
+ ]
+}
