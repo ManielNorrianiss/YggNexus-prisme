@@ -47,6 +47,19 @@ DEFAULT_OUT = os.path.join(DATA_DIR, "bridges_staging.json")
 DEFAULT_THRESHOLD = 0.35
 DEFAULT_MAX_ALTERNATIVES = 5
 
+# Filtres de bruit pour le Jaccard des descriptions (mesures sur la collecte
+# de 59 297 serveurs, cf. rapport) :
+#  - un jeton present dans plus de 1 % des descriptions (592 sur 59 297) est
+#    du jargon de domaine (agents, search, x402, usdc, paid...) et ne dit rien
+#    de la parente de deux serveurs ; la frequence n'est mesuree que si la
+#    collecte compte au moins 2000 serveurs (sinon elle ne veut rien dire) ;
+#  - une description d'au moins 2 proprietaires differents est un gabarit ;
+#  - une description qui annonce un retrait est ecartee ;
+#  - il faut au moins 4 jetons significatifs apres filtre pour porter un sens.
+DF_MAX_RATIO = 0.01
+DF_MIN_CORPUS = 2000
+MIN_DESC_TOKENS = 4
+
 # Poids par signal de detection SaaS (du plus sur au moins sur).
 DOMAIN_WEIGHT = 1.0
 NAME_WEIGHT = 0.9
@@ -93,7 +106,7 @@ SAAS_CATALOG = [
     ("aws", ["amazon web services", "aws"]),
     ("vercel", ["vercel"]),
     ("twilio", ["twilio"]),
-    ("openai", ["openai", "open ai"]),
+    ("openai", ["openai"]),
     ("anthropic", ["anthropic"]),
     ("exa", ["exa"]),
     ("tavily", ["tavily"]),
@@ -147,33 +160,139 @@ def extract_domain(url):
     return netloc
 
 
+# Jetons d'hebergement de code et de domaine de premier niveau : ils decrivent
+# ou le serveur est publie, pas de quoi il parle. "io.github.quelquun/outil"
+# n'a rien a voir avec github.
+CODE_HOSTS = set(["github", "gitlab", "bitbucket", "codeberg", "sourcehut"])
+TLD_TOKENS = set([
+    "com", "io", "ai", "org", "net", "dev", "app", "co", "edu", "gov", "xyz",
+    "me", "sh", "so", "tech", "cloud", "site", "online", "info", "biz",
+    "software", "page", "pages", "run",
+])
+
+# Espaces de noms de plateformes d'hebergement, en domaine inverse
+# (app.vercel.mon-site = mon-site.vercel.app) : le couple n'est pas le proprietaire.
+HOSTING_NAMESPACE_PAIRS = set([
+    ("app", "vercel"), ("app", "netlify"), ("app", "onrender"), ("app", "railway"),
+    ("app", "replit"), ("dev", "workers"), ("dev", "pages"), ("dev", "fly"),
+    ("app", "streamlit"), ("me", "glitch"), ("com", "herokuapp"),
+])
+
+# Domaines de depot ou d'hebergement : le site pointe vers le depot ou vers
+# la plateforme, pas vers le SaaS. Pour ces suffixes, on ne regarde que les
+# etiquettes qui precedent (ex. "mon-stripe-outil.vercel.app" -> stripe oui,
+# vercel non). Le domaine nu d'un depot (github.com) n'est aucun signal.
+HOSTING_DOMAIN_SUFFIXES = (
+    "github.com", "github.io", "gitlab.com", "gitlab.io", "bitbucket.org",
+    "vercel.app", "netlify.app", "pages.dev", "workers.dev", "herokuapp.com",
+    "onrender.com", "fly.dev", "railway.app", "replit.app", "replit.dev",
+    "glitch.me", "ngrok.io", "ngrok-free.app", "azurewebsites.net",
+    "web.app", "firebaseapp.com", "streamlit.app", "huggingface.co",
+    "readthedocs.io", "gitbook.io", "notion.site", "carrd.co",
+)
+# Sous-domaines propres du depot qui restent un vrai signal (docs.github.com).
+HOSTING_REAL_SUBDOMAINS = ("docs.", "api.", "cli.", "support.", "resources.")
+
+_CODE_HOST_URL_RE = re.compile(
+    r"https?://(?:www\.)?(?:github|gitlab|bitbucket)\.(?:com|org|io)\S*", re.I)
+
+
+def split_name(name):
+    """'espace.de.noms/nom-du-serveur' -> (espace de noms, nom du serveur)."""
+    name = (name or "").strip()
+    if "/" in name:
+        ns, srv = name.split("/", 1)
+        return ns, srv
+    return "", name
+
+
+def owner_tokens(namespace):
+    """Proprietaire d'un espace de noms en domaine inverse, sans l'hebergement.
+    io.github.quelquun -> quelquun ; com.stripe -> stripe ; ai.adramp ->
+    adramp ; br.com -> (rien)."""
+    parts = [p for p in (namespace or "").lower().split(".") if p]
+    # Hebergeur de code : on retire le couple (io|com).github et consorts.
+    if len(parts) >= 2 and parts[1] in CODE_HOSTS:
+        parts = parts[2:]
+    elif len(parts) >= 2 and (parts[0], parts[1]) in HOSTING_NAMESPACE_PAIRS:
+        parts = parts[2:]
+    # Domaine de premier niveau en tete et en queue (io, com, ai, uk, co...),
+    # etiquette par etiquette : "mon-site" n'est pas le suffixe "site".
+    def est_tld(tok):
+        return tok in TLD_TOKENS or (len(tok) == 2 and tok.isalpha())
+    while parts and est_tld(parts[0]):
+        parts = parts[1:]
+    while parts and est_tld(parts[-1]):
+        parts = parts[:-1]
+    tokens = []
+    for part in parts:
+        tokens.extend(t for t in re.split(r"[^a-z0-9]+", part) if t)
+    return tokens
+
+
+def clean_slug_tokens(slug):
+    """Jetons du slug sans le prefixe d'hebergement (io-github-, com-gitlab-)."""
+    parts = [p for p in re.split(r"[^a-z0-9]+", (slug or "").lower()) if p]
+    if len(parts) >= 2 and (parts[1] in CODE_HOSTS or (parts[0], parts[1]) in HOSTING_NAMESPACE_PAIRS):
+        parts = parts[2:]
+    return parts
+
+
+def domain_for_detection(domain_raw):
+    """Domaine a comparer aux alias, ou '' si le site n'est qu'un depot ou une
+    plateforme d'hebergement. Pour une plateforme, ne garde que les etiquettes
+    qui precedent le suffixe."""
+    d = (domain_raw or "").lower()
+    if not d:
+        return ""
+    for suf in HOSTING_DOMAIN_SUFFIXES:
+        if d == suf:
+            return ""
+        if d.endswith("." + suf):
+            prefix = d[: -(len(suf) + 1)]
+            if suf in ("github.com", "gitlab.com") and (prefix + ".").startswith(HOSTING_REAL_SUBDOMAINS):
+                return d
+            return prefix
+    return d
+
+
+def _contains(haystack_pad, alias):
+    alias_norm = normalize_pad(alias)
+    return bool(alias_norm and haystack_pad and alias_norm in haystack_pad)
+
+
 def detect_saas(record):
     """
-    Cherche un SaaS connu dans le domaine, puis le nom/slug, puis la
-    description du serveur MCP. Retourne (saas_slug, evidence, weight) ou
-    None. Priorite globale : domaine > nom/slug > description.
+    Cherche un SaaS connu dans le domaine du site, puis le nom du serveur, le
+    proprietaire et le slug (sans la partie hebergement), puis la description.
+    Retourne (saas_slug, evidence, weight) ou None. Priorite globale :
+    domaine > nom/proprietaire/slug > description. Recherche par jetons
+    complets, jamais en sous-chaine au milieu d'un mot.
     """
     domain_raw = extract_domain(record.get("website_url"))
-    hs_domain = normalize_pad(domain_raw)
-    hs_name_slug = normalize_pad((record.get("name") or "") + " " + (record.get("slug") or ""))
-    hs_desc = normalize_pad(record.get("description"))
+    hs_domain = normalize_pad(domain_for_detection(domain_raw))
+
+    namespace, srv = split_name(record.get("name"))
+    owner = owner_tokens(namespace)
+    slug_tokens = clean_slug_tokens(record.get("slug"))
+    hs_name = normalize_pad(" ".join([srv] + owner + slug_tokens))
+
+    desc = _CODE_HOST_URL_RE.sub(" ", record.get("description") or "")
+    hs_desc = normalize_pad(desc)
 
     for saas_slug, aliases in SAAS_CATALOG:
         for alias in aliases:
-            alias_norm = normalize_pad(alias)
-            if alias_norm and hs_domain and alias_norm in hs_domain:
+            if _contains(hs_domain, alias):
                 return saas_slug, "domain:" + domain_raw, DOMAIN_WEIGHT
 
     for saas_slug, aliases in SAAS_CATALOG:
         for alias in aliases:
-            alias_norm = normalize_pad(alias)
-            if alias_norm and hs_name_slug and alias_norm in hs_name_slug:
+            if _contains(hs_name, alias):
                 return saas_slug, "name:" + alias, NAME_WEIGHT
 
     for saas_slug, aliases in SAAS_CATALOG:
         for alias in aliases:
-            alias_norm = normalize_pad(alias)
-            if alias_norm and hs_desc and alias_norm in hs_desc:
+            if _contains(hs_desc, alias):
                 return saas_slug, "desc:" + alias, DESC_WEIGHT
 
     return None
@@ -196,6 +315,73 @@ def jaccard(tokens_a, tokens_b):
     if not union:
         return 0.0
     return len(inter) / float(len(union))
+
+
+RETIREMENT_RE = re.compile(
+    r"^\s*(retired|deprecated|moved to|this (server|package|project|repo|repository|mcp)"
+    r" (has been|is|was) (moved|deprecated|retired|archived))", re.I)
+
+
+def normalize_description(description):
+    return " ".join(re.findall(r"[a-z0-9]+", (description or "").lower()))
+
+
+def is_retirement_description(description):
+    return bool(RETIREMENT_RE.match(description or ""))
+
+
+def filtered_description_tokens(records, df_max_ratio=DF_MAX_RATIO,
+                                min_tokens=MIN_DESC_TOKENS):
+    """Jetons de description par slug, sans le bruit : jetons trop frequents,
+    descriptions de gabarit (partagees par plusieurs proprietaires, ou
+    annonce de retrait), descriptions trop pauvres. Un serveur ecarte recoit
+    un ensemble vide (il n'entre dans aucun lien desc-jaccard). Retourne
+    (tokens_by_slug, stats)."""
+    raw = {}
+    for r in records:
+        raw.setdefault(r["slug"], description_tokens(r.get("description")))
+
+    owners_by_desc = {}
+    for r in records:
+        norm = normalize_description(r.get("description"))
+        if norm:
+            owners_by_desc.setdefault(norm, set()).add(
+                split_name(r.get("name"))[0].lower() or r["slug"])
+
+    df = {}
+    for toks in raw.values():
+        for t in toks:
+            df[t] = df.get(t, 0) + 1
+    n = len(raw)
+    too_frequent = set()
+    if n >= DF_MIN_CORPUS:
+        limit = df_max_ratio * n
+        too_frequent = set(t for t, c in df.items() if c > limit)
+
+    stats = {"jetons_trop_frequents": len(too_frequent), "gabarits": 0,
+             "retraits": 0, "trop_courts": 0}
+    out = {}
+    seen = set()
+    for r in records:
+        slug = r["slug"]
+        if slug in seen:
+            continue
+        seen.add(slug)
+        desc = r.get("description")
+        if is_retirement_description(desc):
+            stats["retraits"] += 1
+            out[slug] = set()
+            continue
+        if len(owners_by_desc.get(normalize_description(desc), ())) >= 2:
+            stats["gabarits"] += 1
+            out[slug] = set()
+            continue
+        toks = raw[slug] - too_frequent
+        if len(toks) < min_tokens:
+            stats["trop_courts"] += 1
+            toks = set()
+        out[slug] = toks
+    return out, stats
 
 
 # ---------------------------------------------------------------------------
@@ -357,15 +543,17 @@ def _jaccard_pairs(slugs, tokens_by_slug, wraps, threshold, max_alternatives):
     return pairs
 
 
-def build_alternative_of(records, wraps, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES):
+def build_alternative_of(records, wraps, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES,
+                         tokens_by_slug=None):
     """Ponts alternative_of sans produit cartesien. Chaque serveur garde au
     plus max_alternatives partenaires de meme SaaS et au plus
     max_alternatives partenaires par Jaccard ; un pont existe s'il figure
     dans la liste d'au moins un des deux serveurs."""
     slugs = sorted(set(r["slug"] for r in records))
-    tokens_by_slug = {}
-    for r in records:
-        tokens_by_slug.setdefault(r["slug"], description_tokens(r.get("description")))
+    if tokens_by_slug is None:
+        tokens_by_slug = {}
+        for r in records:
+            tokens_by_slug.setdefault(r["slug"], description_tokens(r.get("description")))
 
     groups = {}
     for slug in slugs:
@@ -409,7 +597,8 @@ def build_depends_on(records):
     return bridges
 
 
-def build_bridges(records, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES):
+def build_bridges(records, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES,
+                  filtrer_bruit=True):
     seen_slugs = set()
     kept = []
     for r in records:
@@ -418,7 +607,10 @@ def build_bridges(records, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES)
             kept.append(r)
     records = kept
     wraps, wraps_bridges = build_wraps(records)
-    alt_bridges = build_alternative_of(records, wraps, threshold, max_alternatives)
+    tokens = None
+    if filtrer_bruit:
+        tokens, _ = filtered_description_tokens(records)
+    alt_bridges = build_alternative_of(records, wraps, threshold, max_alternatives, tokens)
     dep_bridges = build_depends_on(records)
 
     all_bridges = wraps_bridges + alt_bridges + dep_bridges
