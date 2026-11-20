@@ -25,9 +25,12 @@ Usage:
     python b8_sante.py --stale-days 60
     python b8_sante.py --fail-threshold 5
     python b8_sante.py --limit 50        # limite le nombre de pages crawlees
+    python b8_sante.py --source staging  # lit staging.db (lecture seule, aucun reseau)
 """
 import argparse
+import json
 import os
+import sqlite3
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -45,6 +48,7 @@ SERVICE_KEY  = os.environ.get("SUPABASE_SERVICE_KEY", "")
 SITE_URL     = os.environ.get("SITE_URL", "http://localhost:3000").rstrip("/")
 
 EXPORTS_DIR = ROOT.parent / "exports" / "health"
+STAGING_DB = ROOT / "staging.db"
 
 
 # ---------------------------------------------------------------------------
@@ -262,6 +266,149 @@ def fetch_from_supabase():
 
 
 # ---------------------------------------------------------------------------
+# Source staging.db (lecture seule, aucun reseau)
+# ---------------------------------------------------------------------------
+
+def fetch_from_staging(db_path=None):
+    """
+    Lit la base locale de preparation en LECTURE SEULE (mode=ro).
+    Retourne (tools, categories, tool_cat, embed_ids, brut) : memes formes que
+    fetch_from_supabase (id = slug), plus `brut`, un dict de lignes pour
+    staging_checks.
+    """
+    chemin = Path(db_path or STAGING_DB)
+    if not chemin.exists():
+        raise FileNotFoundError(f"staging.db introuvable : {chemin}")
+    con = sqlite3.connect(f"file:{chemin.as_posix()}?mode=ro", uri=True)
+    con.row_factory = sqlite3.Row
+    try:
+        tools = [dict(r, id=r["slug"]) for r in con.execute(
+            "SELECT slug, seo_title, seo_description, description_md, "
+            "quality_score, enriched_at AS updated_at FROM enriched_tools "
+            "ORDER BY slug")]
+        tool_cat = [{"tool_id": r["tool_slug"], "category_id": r["category_slug"],
+                     "is_primary": bool(r["is_primary"])}
+                    for r in con.execute(
+                        "SELECT tool_slug, category_slug, is_primary "
+                        "FROM tool_categories")]
+        categories = [{"id": c, "slug": c} for c in
+                      sorted({r["category_id"] for r in tool_cat})]
+        emb = [dict(r) for r in con.execute(
+            "SELECT slug, model, dim, embedding_json FROM tool_embeddings")]
+        embed_ids = {e["slug"] for e in emb}
+        brut = {
+            "raw": [dict(r) for r in con.execute(
+                "SELECT slug, status, echecs FROM raw_tools")],
+            "embeddings": emb,
+            "tagging": [r["tool_slug"] for r in con.execute(
+                "SELECT tool_slug FROM tool_tagging")],
+            "dedup": [dict(r) for r in con.execute(
+                "SELECT slug, canonical_slug FROM dedup_map")],
+        }
+    finally:
+        con.close()
+    return tools, categories, tool_cat, embed_ids, brut
+
+
+def staging_checks(tools, tool_cat, brut):
+    """
+    Controles propres a staging.db (fonctions PURES). Retourne une liste de
+    sections (titre, [problemes]).
+    """
+    sections = []
+    slugs_enrichis = {t["slug"] for t in tools}
+    slugs_bruts = {r["slug"] for r in brut["raw"]}
+
+    sections.append(("Fiches enrichies sans ligne brute",
+                     sorted(slugs_enrichis - slugs_bruts)))
+    sections.append(("Lignes brutes sans fiche enrichie",
+                     sorted(slugs_bruts - slugs_enrichis)))
+
+    p = sorted({f"{r['tool_id']} -> {r['category_id']}" for r in tool_cat
+                if r["tool_id"] not in slugs_enrichis})
+    sections.append(("Classements pointant vers un outil inconnu", p))
+
+    sections.append(("Outils enrichis sans etiquetage",
+                     sorted(slugs_enrichis - set(brut["tagging"]))))
+
+    # embeddings : orphelins, JSON illisible, dimension incoherente
+    p = []
+    dims = {}
+    for e in brut["embeddings"]:
+        if e["slug"] not in slugs_enrichis:
+            p.append(f"{e['slug']} -> embedding sans fiche enrichie")
+        try:
+            v = json.loads(e.get("embedding_json") or "null")
+        except (TypeError, ValueError):
+            p.append(f"{e['slug']} -> embedding_json illisible")
+            continue
+        if not isinstance(v, list) or not v:
+            p.append(f"{e['slug']} -> embedding vide")
+            continue
+        dims.setdefault(len(v), []).append(e["slug"])
+        if e.get("dim") not in (None, len(v)):
+            p.append(f"{e['slug']} -> dim declaree {e.get('dim')} != {len(v)}")
+    if len(dims) > 1:
+        majoritaire = max(dims, key=lambda d: len(dims[d]))
+        for d, lst in dims.items():
+            if d != majoritaire:
+                p += [f"{s} -> dimension {d} (majoritaire : {majoritaire})"
+                      for s in lst]
+    sections.append(("Embeddings incoherents", p))
+
+    # doublons : canonique absent ou boucle
+    canon = {r["slug"]: r["canonical_slug"] for r in brut["dedup"]}
+    p = []
+    for s, c in canon.items():
+        if canon.get(c) == s:
+            p.append(f"{s} <-> {c} -> boucle de doublons")
+        elif c not in slugs_bruts:
+            p.append(f"{s} -> canonique {c} absent")
+    sections.append(("Doublons : canonique absent ou boucle", sorted(p)))
+
+    # titres SEO en double
+    vus = {}
+    for t in tools:
+        k = (t.get("seo_title") or "").strip().lower()
+        if k:
+            vus.setdefault(k, []).append(t["slug"])
+    p = [f"{', '.join(sorted(v))} -> meme seo_title"
+         for v in vus.values() if len(v) > 1]
+    sections.append(("Titres SEO en double", sorted(p)))
+    return sections
+
+
+def main_staging(args):
+    """Rapport de sante sur staging.db : aucun reseau, aucune ecriture en base."""
+    now_dt = datetime.now(timezone.utc)
+    print("[B8] lecture staging.db (lecture seule)...")
+    tools, categories, tool_cat, embed_ids, brut = fetch_from_staging()
+    print(f"[B8] {len(tools)} outils, {len(categories)} categories, "
+          f"{len(tool_cat)} classements, {len(embed_ids)} embeddings.")
+    sections = db_checks(tools, categories, tool_cat, embed_ids,
+                         args.stale_days, now_dt)
+    sections += staging_checks(tools, tool_cat, brut)
+    total, report = render_report(sections, now_dt, "staging.db", False)
+    report = report.replace("Crawl : non (--no-crawl)",
+                            "Crawl : non (source staging)")
+    if not args.dry_run:
+        EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
+        out = EXPORTS_DIR / f"{now_dt.date()}_staging.md"
+        out.write_text(report, encoding="utf-8")
+        print(f"[B8] rapport ecrit : {out}")
+    else:
+        print("[B8] --dry-run : rapport non ecrit. Apercu :\n")
+        print(report)
+    print(f"\n[B8] Resume : {total} probleme(s).")
+    for titre, p in sections:
+        flag = "ok" if not p else f"!! {len(p)}"
+        print(f"   [{flag}] {titre}")
+    if args.fail_threshold and total > args.fail_threshold:
+        print(f"[B8] total ({total}) > seuil ({args.fail_threshold}) -> sortie 1.")
+        sys.exit(1)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -277,7 +424,21 @@ def main():
                              "(0 = jamais echouer).")
     parser.add_argument("--limit", type=int, default=0,
                         help="Limite le nombre de pages crawlees.")
+    parser.add_argument("--source", choices=("supabase", "staging"),
+                        default="supabase",
+                        help="supabase (defaut : lecture + crawl du site) ou "
+                             "staging (staging.db en lecture seule, sans reseau).")
     args = parser.parse_args()
+
+    # Console Windows (cp1252) : le rapport contient des emojis (--dry-run).
+    for flux in (sys.stdout, sys.stderr):
+        try:
+            flux.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
+
+    if args.source == "staging":
+        return main_staging(args)
 
     if not SUPABASE_URL or not SERVICE_KEY:
         sys.exit("SUPABASE_URL et SUPABASE_SERVICE_KEY requis dans prisme/.env.")
