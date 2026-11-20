@@ -24,6 +24,7 @@ Usage:
     python b5_liens.py --model nomic-embed-text
     python b5_liens.py --workers 4
     python b5_liens.py --sans-llm
+    python b5_liens.py --ajouts-seulement --dry-run --montrer --sans-llm
 """
 import argparse
 import json
@@ -47,6 +48,7 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SERVICE_KEY  = os.environ.get("SUPABASE_SERVICE_KEY", "")
 
 MAX_LEN_RAISON = 140
+MAX_LEN_RAISON_FR = 180  # le francais est plus long que l'anglais
 PAGE_LECTURE = 1000
 DOSSIER_TRACES = ROOT.parent / "exports" / "b5"
 
@@ -107,15 +109,66 @@ def clamp_similarity(val):
 # Data loading from Supabase
 # ---------------------------------------------------------------------------
 
+def load_categories_principales(sb):
+    """Return {tool_id: slug de la categorie principale du site}.
+
+    Regle : la categorie principale d'un outil est la ligne de tool_categories
+    dont is_primary vaut true (colonne posee par publish.py : is_primary =
+    (cat_slug == primary_category)), jointe a categories par category_id pour
+    le slug. Un outil sans ligne is_primary n'a pas de categorie principale :
+    il est absent du dict. Si, par erreur, un outil avait plusieurs lignes
+    is_primary, on garde celle dont category_id est le plus petit (ordre
+    deterministe). Lecture seule, paginee."""
+    slug_par_cat = {}
+    offset = 0
+    while True:
+        res = sb.table("categories") \
+                .select("id,slug") \
+                .order("id") \
+                .range(offset, offset + PAGE_LECTURE - 1) \
+                .execute()
+        batch = res.data if (res is not None and res.data) else []
+        for row in batch:
+            slug_par_cat[row["id"]] = row.get("slug") or ""
+        if len(batch) < PAGE_LECTURE:
+            break
+        offset += PAGE_LECTURE
+
+    principales = {}
+    offset = 0
+    while True:
+        res = sb.table("tool_categories") \
+                .select("tool_id,category_id,is_primary") \
+                .eq("is_primary", True) \
+                .order("tool_id") \
+                .order("category_id") \
+                .range(offset, offset + PAGE_LECTURE - 1) \
+                .execute()
+        batch = res.data if (res is not None and res.data) else []
+        for row in batch:
+            slug = slug_par_cat.get(row["category_id"], "")
+            if slug and row["tool_id"] not in principales:
+                principales[row["tool_id"]] = slug
+        if len(batch) < PAGE_LECTURE:
+            break
+        offset += PAGE_LECTURE
+    return principales
+
+
 def load_tools(sb):
     """Return list of published tools: [{id, slug, name, pricing,
-    pricing_note, application_category}, ...]. Pagine jusqu'au bout
-    (PostgREST plafonne chaque reponse a 1000 lignes)."""
+    pricing_note, categorie_site}, ...]. Pagine jusqu'au bout
+    (PostgREST plafonne chaque reponse a 1000 lignes).
+
+    categorie_site : slug de la categorie principale du site (voir
+    load_categories_principales), '' si l'outil n'en a pas. Le champ libre
+    tools.application_category n'est plus lu : ce n'est pas la categorie du
+    site (audit du 2026-11-20)."""
     tools = []
     offset = 0
     while True:
         res = sb.table("tools") \
-                .select("id,slug,name,pricing,pricing_note,application_category") \
+                .select("id,slug,name,pricing,pricing_note") \
                 .eq("status", "published") \
                 .order("id") \
                 .range(offset, offset + PAGE_LECTURE - 1) \
@@ -125,6 +178,9 @@ def load_tools(sb):
         if len(batch) < PAGE_LECTURE:
             break
         offset += PAGE_LECTURE
+    principales = load_categories_principales(sb)
+    for t in tools:
+        t["categorie_site"] = principales.get(t.get("id"), "")
     return tools
 
 
@@ -237,21 +293,39 @@ def _pricing_label(pricing):
     return mapping.get((pricing or "").strip().lower(), "of unknown pricing")
 
 
-def _category_label(application_category):
+# Libelles des neuf categories du site (taxonomie : data/taxonomy.json), un seul
+# tableau. "en" : libelle de gabarit (repris de LIBELLE_SITE de
+# b5_audit_categories.py). "fr" : nom que le site affiche deja en francais
+# (CATEGORY_NAME_FR de frontend/lib/localize.ts), accents en \u pour garder
+# ce fichier en ASCII.
+CATEGORIES_SITE = {
+    "ai-writing":    {"en": "AI writing",        "fr": "R\u00e9daction IA"},
+    "automation":    {"en": "automation",        "fr": "Automatisation"},
+    "ai-images":     {"en": "AI image",          "fr": "Images IA"},
+    "ai-audio":      {"en": "AI audio",          "fr": "Audio IA"},
+    "data-scraping": {"en": "data and scraping", "fr": "Donn\u00e9es & Scraping"},
+    "productivity":  {"en": "productivity",      "fr": "Productivit\u00e9"},
+    "no-code":       {"en": "no-code",           "fr": "No-Code"},
+    "ai-coding":     {"en": "AI coding",         "fr": "Codage IA"},
+    "ai-video":      {"en": "AI video",          "fr": "Vid\u00e9o IA"},
+}
+
+
+def _category_label(categorie_site, langue="en"):
     """
-    Deduit un libelle de categorie lisible a partir de application_category
-    (ex: 'BusinessApplication' -> 'business'). Repli generique si vide.
+    Libelle de la categorie du site pour un slug de la taxonomie ('ai-video'
+    -> 'AI video' en anglais, 'Vid\u00e9o IA' en francais). Chaine vide si le slug
+    est vide ou inconnu : l'appelant n'ecrit alors aucun libelle.
     """
-    if not application_category:
-        return "ai/saas"
-    # Decoupe CamelCase en mots minuscules ("BusinessApplication" -> "business application")
-    import re
-    mots = re.findall(r"[A-Z][a-z]*|[a-z]+", application_category)
-    if not mots:
-        return "ai/saas"
-    label = " ".join(mots).lower()
-    label = label.replace(" application", "").strip()
-    return label or "ai/saas"
+    entree = CATEGORIES_SITE.get((categorie_site or "").strip())
+    if not entree:
+        return ""
+    return entree["fr" if langue == "fr" else "en"]
+
+
+def _un(libelle):
+    """Article indefini anglais : 'an' devant une voyelle ('an AI video'), sinon 'a'."""
+    return "an" if libelle[:1].lower() in "aeiou" else "a"
 
 
 def couper_raison(texte, max_len=MAX_LEN_RAISON):
@@ -289,24 +363,84 @@ def raison_gabarit(tool, alt_tool):
     categories/pricing des deux outils. Ne contient jamais 'cosine' ni
     'similarity' -- passe le filtre frontend /semantic similarity|cosine/i.
 
-    tool, alt_tool : dict avec au moins name, pricing, application_category.
+    tool, alt_tool : dict avec au moins name, pricing, categorie_site (slug de
+    la categorie principale du site, '' si aucune). Quand une categorie manque,
+    la phrase ne porte ni parenthese ni libelle pour cet outil.
     """
-    cat_tool = _category_label(tool.get("application_category"))
-    cat_alt = _category_label(alt_tool.get("application_category"))
+    cat_tool = _category_label(tool.get("categorie_site"))
+    cat_alt = _category_label(alt_tool.get("categorie_site"))
     prix_tool = _pricing_label(tool.get("pricing"))
     prix_alt = _pricing_label(alt_tool.get("pricing"))
+    nom_tool = tool.get("name", "the main tool")
+    nom_alt = alt_tool.get("name", "This tool")
 
-    if cat_tool == cat_alt:
-        base = f"Both are {cat_tool} tools"
+    if cat_tool and cat_alt:
+        if cat_tool == cat_alt:
+            base = f"Both are {cat_tool} tools"
+        else:
+            base = f"{nom_alt} is {_un(cat_alt)} {cat_alt} tool, unlike {nom_tool} ({cat_tool})"
+    elif cat_alt:
+        base = f"{nom_alt} is {_un(cat_alt)} {cat_alt} alternative to {nom_tool}"
+    elif cat_tool:
+        base = f"{nom_alt} is an alternative to {nom_tool} ({cat_tool})"
     else:
-        base = f"{alt_tool.get('name', 'This tool')} is a {cat_alt} tool, unlike {tool.get('name', 'the main tool')} ({cat_tool})"
+        base = f"{nom_alt} is an alternative to {nom_tool}"
 
     if prix_tool == prix_alt:
         raison = f"{base}, both {prix_alt}."
     else:
-        raison = f"{base}; {alt_tool.get('name', 'it')} is {prix_alt} while {tool.get('name', 'the main tool')} is {prix_tool}."
+        raison = f"{base}; {alt_tool.get('name', 'it')} is {prix_alt} while {nom_tool} is {prix_tool}."
 
     return couper_raison(raison)
+
+
+# Prix en francais : (singulier, pluriel) par valeur de l'enum pricing_model.
+PRIX_FR = {
+    "free": ("gratuit", "gratuits"),
+    "freemium": ("freemium", "freemium"),
+    "paid": ("payant", "payants"),
+    "open_source": ("libre", "libres"),
+    "unknown": ("\u00e0 prix inconnu", "\u00e0 prix inconnu"),
+}
+
+
+def _prix_fr(pricing):
+    return PRIX_FR.get((pricing or "").strip().lower(), PRIX_FR["unknown"])
+
+
+def raison_gabarit_fr(tool, alt_tool):
+    """
+    Pendant francais de raison_gabarit (colonne alternatives.reason_fr), meme
+    logique : libelle de la categorie du site quand elle existe, rien (ni
+    parenthese ni guillemets) quand elle manque. Max MAX_LEN_RAISON_FR.
+    """
+    cat_tool = _category_label(tool.get("categorie_site"), "fr")
+    cat_alt = _category_label(alt_tool.get("categorie_site"), "fr")
+    prix_tool = _prix_fr(tool.get("pricing"))
+    prix_alt = _prix_fr(alt_tool.get("pricing"))
+    nom_tool = tool.get("name", "l'outil principal")
+    nom_alt = alt_tool.get("name", "Cet outil")
+    g, d = "\u00ab ", " \u00bb"
+
+    if cat_tool and cat_alt:
+        if cat_tool == cat_alt:
+            base = f"Les deux sont des outils de la cat\u00e9gorie {g}{cat_tool}{d}"
+        else:
+            base = (f"{nom_alt} rel\u00e8ve de la cat\u00e9gorie {g}{cat_alt}{d}, "
+                    f"contrairement \u00e0 {nom_tool} ({g}{cat_tool}{d})")
+    elif cat_alt:
+        base = f"{nom_alt}, de la cat\u00e9gorie {g}{cat_alt}{d}, est une alternative \u00e0 {nom_tool}"
+    elif cat_tool:
+        base = f"{nom_alt} est une alternative \u00e0 {nom_tool} ({g}{cat_tool}{d})"
+    else:
+        base = f"{nom_alt} est une alternative \u00e0 {nom_tool}"
+
+    if prix_tool == prix_alt:
+        raison = f"{base}, tous deux {prix_alt[1]}."
+    else:
+        raison = f"{base} ; {nom_alt} est {prix_alt[0]} alors que {nom_tool} est {prix_tool[0]}."
+
+    return couper_raison(raison, MAX_LEN_RAISON_FR)
 
 
 def raison_llm(fn_gen, tool, alt_tool, model, timeout=60):
@@ -315,13 +449,14 @@ def raison_llm(fn_gen, tool, alt_tool, model, timeout=60):
     LLMError si Ollama est injoignable / sortie invalide -- l'appelant
     doit retomber sur raison_gabarit en cas d'echec.
     """
+    def _fiche(t):
+        cat = _category_label(t.get("categorie_site"))
+        morceaux = ([f"category: {cat}"] if cat else []) + [f"pricing: {_pricing_label(t.get('pricing'))}"]
+        return f"{t.get('name', '')} ({', '.join(morceaux)})"
+
     prompt = (
-        f"Main tool: {tool.get('name', '')} "
-        f"(category: {_category_label(tool.get('application_category'))}, "
-        f"pricing: {_pricing_label(tool.get('pricing'))})\n"
-        f"Alternative tool: {alt_tool.get('name', '')} "
-        f"(category: {_category_label(alt_tool.get('application_category'))}, "
-        f"pricing: {_pricing_label(alt_tool.get('pricing'))})\n\n"
+        f"Main tool: {_fiche(tool)}\n"
+        f"Alternative tool: {_fiche(alt_tool)}\n\n"
         "Write the one-sentence reason (JSON key \"reason\")."
     )
     sortie = fn_gen(prompt, SYSTEM_PROMPT_RAISON, modele=model, timeout=timeout)
@@ -380,6 +515,56 @@ def generer_raisons_paire(fn_gen, tools_index, paires, model, sans_llm, workers)
             resultat[paire] = raison
 
     return resultat
+
+
+def generer_raisons_fr_paire(tools_index, paires):
+    """{(tool_id, alt_id): raison francaise} par gabarit (jamais de LLM)."""
+    return {(t, a): raison_gabarit_fr(tools_index.get(t, {}), tools_index.get(a, {}))
+            for (t, a) in paires}
+
+
+def construire_apercu(nouvelles, tools_index, raisons, raisons_fr):
+    """
+    Lignes d'apercu du mode --ajouts-seulement : pour chaque paire a ajouter,
+    le nom des deux outils, la categorie imprimee de chacun ('aucune' si
+    l'outil n'a pas de categorie du site) et les deux raisons completes.
+    nouvelles : liste de (tool_id, slug, alt_id, alt_slug, sim).
+    """
+    def _cat(t):
+        return _category_label(t.get("categorie_site")) or "aucune"
+
+    apercu = []
+    for tool_id, slug, alt_id, alt_slug, sim in nouvelles:
+        t = tools_index.get(tool_id, {})
+        a = tools_index.get(alt_id, {})
+        apercu.append({
+            "outil": t.get("name", slug),
+            "outil_slug": slug,
+            "categorie_outil": _cat(t),
+            "alternative": a.get("name", alt_slug),
+            "alternative_slug": alt_slug,
+            "categorie_alternative": _cat(a),
+            "similarity": sim,
+            "reason": raisons.get((tool_id, alt_id), ""),
+            "reason_fr": raisons_fr.get((tool_id, alt_id), ""),
+        })
+    return apercu
+
+
+def ecrire_apercu(apercu, dossier=None, horodatage=None):
+    """Ecrit exports/b5/apercu_<horodatage>.json (fichier local, aucune
+    ecriture en base). Retourne le chemin."""
+    dossier = Path(dossier or DOSSIER_TRACES)
+    dossier.mkdir(parents=True, exist_ok=True)
+    horodatage = horodatage or datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    chemin = dossier / f"apercu_{horodatage}.json"
+    chemin.write_text(json.dumps({
+        "etape": "b5_liens --ajouts-seulement --montrer",
+        "horodatage": horodatage,
+        "nb_paires": len(apercu),
+        "paires": apercu,
+    }, indent=1, ensure_ascii=False), encoding="utf-8")
+    return chemin
 
 
 # ---------------------------------------------------------------------------
@@ -485,6 +670,10 @@ def parse_args():
                         help="N'insere que les paires (outil, alternative) absentes de "
                              "alternatives : aucun delete, aucune mise a jour. Ecrit la "
                              "liste des paires inserees dans exports/b5/.")
+    parser.add_argument("--montrer", action="store_true",
+                        help="Avec --ajouts-seulement --dry-run : affiche chaque paire a "
+                             "ajouter (noms, categories imprimees, raisons) et ecrit "
+                             "exports/b5/apercu_<horodatage>.json. Sans effet en reel.")
     return parser.parse_args()
 
 
@@ -584,9 +773,23 @@ def main():
             fn_gen, model_raison = generer_json, modele_pour("arbitre")
         raisons = generer_raisons_paire(fn_gen, tools_index, paires, model_raison,
                                          args.sans_llm, args.workers)
+        raisons_fr = generer_raisons_fr_paire(tools_index, paires)
         lignes = [{"tool_id": n[0], "alternative_id": n[2], "similarity": n[4],
-                   "reason": raisons.get((n[0], n[2]), "")} for n in nouvelles]
-        if args.dry_run:
+                   "reason": raisons.get((n[0], n[2]), ""),
+                   "reason_fr": raisons_fr.get((n[0], n[2]), "")} for n in nouvelles]
+        if args.dry_run and args.montrer:
+            apercu = construire_apercu(nouvelles, tools_index, raisons, raisons_fr)
+            for i, ligne in enumerate(apercu, 1):
+                print(f"  [apercu {i}/{len(apercu)}] {ligne['outil']} ({ligne['categorie_outil']}) "
+                      f"-> {ligne['alternative']} ({ligne['categorie_alternative']}) "
+                      f"sim={ligne['similarity']}")
+                print(f"      EN : {ligne['reason']}")
+                print(f"      FR : {ligne['reason_fr']}")
+            sans_cat = sum(1 for l in apercu if "aucune" in (l["categorie_outil"], l["categorie_alternative"]))
+            print(f"[B5] Apercu : {len(apercu)} paire(s) a ajouter, dont {sans_cat} "
+                  f"avec au moins un outil sans categorie du site.")
+            print(f"[B5] Apercu ecrit : {ecrire_apercu(apercu)}")
+        elif args.dry_run:
             for n in nouvelles[:5]:
                 print(f"  [dry-run] {n[1]} -> {n[3]} sim={n[4]} "
                       f"reason=\"{raisons.get((n[0], n[2]), '')}\"")

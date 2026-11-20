@@ -76,7 +76,7 @@ def test_load_tools_exactement_une_page_pleine_lit_la_suivante():
     outils = [{"id": i} for i in range(1000)]
     sb = FauxClient({"tools": outils})
     assert len(b5.load_tools(sb)) == 1000
-    assert len(sb.lectures) == 2
+    assert len([1 for t, _p in sb.lectures if t == "tools"]) == 2
 
 
 def test_couper_raison_courte_inchangee():
@@ -119,8 +119,8 @@ def test_raison_llm_longue_est_coupee_proprement():
 
 def _outils_et_sim():
     return [
-        {"id": 1, "slug": "a", "name": "A", "pricing": "free", "application_category": "X"},
-        {"id": 2, "slug": "b", "name": "B", "pricing": "free", "application_category": "X"},
+        {"id": 1, "slug": "a", "name": "A", "pricing": "free", "categorie_site": "productivity"},
+        {"id": 2, "slug": "b", "name": "B", "pricing": "free", "categorie_site": "productivity"},
     ]
 
 

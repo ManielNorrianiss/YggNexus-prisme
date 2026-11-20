@@ -13,9 +13,9 @@ import b5_liens as b5
 
 FILTRE_FRONTEND = re.compile(r"semantic similarity|cosine", re.IGNORECASE)
 
-TOOL = {"name": "Acme Writer", "pricing": "freemium", "application_category": "BusinessApplication"}
-ALT_MEME_CATEGORIE = {"name": "Scribe AI", "pricing": "open_source", "application_category": "BusinessApplication"}
-ALT_AUTRE_CATEGORIE = {"name": "PixelGen", "pricing": "paid", "application_category": "MultimediaApplication"}
+TOOL = {"name": "Acme Writer", "pricing": "freemium", "categorie_site": "productivity"}
+ALT_MEME_CATEGORIE = {"name": "Scribe AI", "pricing": "open_source", "categorie_site": "productivity"}
+ALT_AUTRE_CATEGORIE = {"name": "PixelGen", "pricing": "paid", "categorie_site": "ai-video"}
 
 
 # ---------------------------------------------------------------------------
