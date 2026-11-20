@@ -55,6 +55,19 @@ def test_exclure_ecarte_les_paires_qui_touchent_un_slug():
     assert nb == 2
 
 
+def test_sans_fr_n_envoie_pas_reason_fr():
+    nouvelles = [(5, "pika", 6, "krea", 0.77)]
+    raisons = {(5, 6): "Both are AI image tools, both freemium."}
+    raisons_fr = {(5, 6): "Les deux sont des outils."}
+    avec = b5_liens.construire_lignes(nouvelles, raisons, raisons_fr, True)
+    sans = b5_liens.construire_lignes(nouvelles, raisons, raisons_fr, False)
+    assert avec == [{"tool_id": 5, "alternative_id": 6, "similarity": 0.77,
+                     "reason": "Both are AI image tools, both freemium.",
+                     "reason_fr": "Les deux sont des outils."}]
+    assert sans == [{"tool_id": 5, "alternative_id": 6, "similarity": 0.77,
+                     "reason": "Both are AI image tools, both freemium."}]
+
+
 def test_exclure_vide_ne_change_rien():
     nouvelles = [(5, "pika", 6, "krea", 0.77)]
     assert b5_liens.filtrer_exclues(nouvelles, [""]) == (nouvelles, 0)

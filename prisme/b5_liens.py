@@ -622,6 +622,23 @@ def write_alternatives(sb, tool_id, tool_slug, alts, dry_run, raisons=None):
     return len(rows)
 
 
+def construire_lignes(nouvelles, raisons, raisons_fr, avec_fr=True):
+    """
+    Lignes a inserer dans alternatives pour le mode --ajouts-seulement.
+    avec_fr=False (option --sans-fr) : la colonne reason_fr n'est pas envoyee,
+    comme B5 l'a toujours fait (en production, aucune ligne ne la remplit au
+    2026-11-20).
+    """
+    lignes = []
+    for n in nouvelles:
+        ligne = {"tool_id": n[0], "alternative_id": n[2], "similarity": n[4],
+                 "reason": raisons.get((n[0], n[2]), "")}
+        if avec_fr:
+            ligne["reason_fr"] = raisons_fr.get((n[0], n[2]), "")
+        lignes.append(ligne)
+    return lignes
+
+
 def filtrer_exclues(nouvelles, slugs_exclus):
     """
     Retire des paires a ajouter celles dont l'outil ou l'alternative porte un
@@ -695,6 +712,9 @@ def parse_args():
                         help="N'insere que les paires (outil, alternative) absentes de "
                              "alternatives : aucun delete, aucune mise a jour. Ecrit la "
                              "liste des paires inserees dans exports/b5/.")
+    parser.add_argument("--sans-fr", action="store_true",
+                        help="Avec --ajouts-seulement : n'envoie pas reason_fr (anglais "
+                             "seulement, comme les lignes deja en ligne).")
     parser.add_argument("--exclure", type=str, default="",
                         help="Avec --ajouts-seulement : slugs separes par des virgules ; "
                              "aucune paire touchant un de ces slugs n'est ajoutee.")
@@ -805,9 +825,7 @@ def main():
         raisons = generer_raisons_paire(fn_gen, tools_index, paires, model_raison,
                                          args.sans_llm, args.workers)
         raisons_fr = generer_raisons_fr_paire(tools_index, paires)
-        lignes = [{"tool_id": n[0], "alternative_id": n[2], "similarity": n[4],
-                   "reason": raisons.get((n[0], n[2]), ""),
-                   "reason_fr": raisons_fr.get((n[0], n[2]), "")} for n in nouvelles]
+        lignes = construire_lignes(nouvelles, raisons, raisons_fr, not args.sans_fr)
         if args.dry_run and args.montrer:
             apercu = construire_apercu(nouvelles, tools_index, raisons, raisons_fr)
             for i, ligne in enumerate(apercu, 1):
