@@ -20,7 +20,7 @@ if errorlevel 1 goto erreur
 echo.
 echo [2/2] Construction du graphe pont...
 echo.
-python b5_bridges_mcp.py
+python b5_bridges_mcp.py --in data\mcp_servers_staging.json
 if errorlevel 1 goto erreur
 
 echo.

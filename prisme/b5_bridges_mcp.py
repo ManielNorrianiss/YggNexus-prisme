@@ -25,7 +25,7 @@ Supabase. Le fichier de sortie (--out) est un JSON local dans prisme/data/,
 jamais publie automatiquement.
 
 Usage:
-  python b5_bridges_mcp.py                          # dry-run, fichier realpage le plus recent
+  python b5_bridges_mcp.py                          # dry-run, collecte fraiche (sinon realpage le plus recent)
   python b5_bridges_mcp.py --in data/mon_staging.json
   python b5_bridges_mcp.py --threshold 0.4
   python b5_bridges_mcp.py --no-dry-run --out data/bridges_staging.json
@@ -34,7 +34,7 @@ Usage:
 
 import argparse
 import glob
-import itertools
+import math
 import json
 import os
 import re
@@ -45,6 +45,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 DEFAULT_OUT = os.path.join(DATA_DIR, "bridges_staging.json")
 DEFAULT_THRESHOLD = 0.35
+DEFAULT_MAX_ALTERNATIVES = 5
 
 # Poids par signal de detection SaaS (du plus sur au moins sur).
 DOMAIN_WEIGHT = 1.0
@@ -238,29 +239,154 @@ def build_wraps(records):
     return wraps, bridges
 
 
-def build_alternative_of(records, wraps, threshold):
-    bridges = []
-    tokens_by_slug = {r["slug"]: description_tokens(r.get("description")) for r in records}
-    for rec_a, rec_b in itertools.combinations(records, 2):
-        slug_a, slug_b = rec_a["slug"], rec_b["slug"]
-        if slug_a > slug_b:
-            slug_a, slug_b = slug_b, slug_a
+def _prefix_length(size, threshold):
+    """Longueur du prefixe indexe pour garantir de trouver tout couple dont
+    le Jaccard est >= threshold (filtrage par prefixe, exact)."""
+    need = int(math.ceil(threshold * size - 1e-9))
+    return max(1, min(size, size - need + 1))
 
-        wrap_a = wraps.get(slug_a)
-        wrap_b = wraps.get(slug_b)
-        if wrap_a and wrap_b and wrap_a[0] == wrap_b[0]:
-            bridges.append(make_bridge(
-                "mcp_server", slug_a, "mcp_server", slug_b,
-                "alternative_of", 1.0, "same-saas:" + wrap_a[0],
-            ))
+
+def _trim(partners, max_alternatives):
+    partners.sort(key=lambda p: (-p[0], p[1]))
+    del partners[max_alternatives:]
+
+
+def _same_saas_pairs(groups, tokens_by_slug, max_alternatives):
+    """Pour chaque SaaS, chaque membre garde ses meilleurs partenaires
+    (similarite de description decroissante, puis slug). Retourne un
+    dictionnaire {(slug_a, slug_b): saas} avec slug_a < slug_b."""
+    pairs = {}
+    for saas, members in groups.items():
+        members = sorted(members)
+        size = len(members)
+        if size < 2:
             continue
+        if size - 1 <= max_alternatives:
+            for i in range(size):
+                for j in range(i + 1, size):
+                    pairs[(members[i], members[j])] = saas
+            continue
+        # Index inverse de jetons dans le groupe. Les jetons presents chez
+        # trop de membres ne servent pas a trouver des candidats : ils sont
+        # ignores ici seulement, le score reste calcule sur les ensembles
+        # complets.
+        cap = max(50, size // 10)
+        postings = {}
+        for slug in members:
+            for tok in tokens_by_slug[slug]:
+                postings.setdefault(tok, []).append(slug)
+        for slug in members:
+            toks = tokens_by_slug[slug]
+            cands = set()
+            for tok in toks:
+                plist = postings[tok]
+                if len(plist) <= cap:
+                    cands.update(plist)
+            cands.discard(slug)
+            scored = [(jaccard(toks, tokens_by_slug[o]), o) for o in cands]
+            scored.sort(key=lambda p: (-p[0], p[1]))
+            chosen = [o for _, o in scored[:max_alternatives]]
+            if len(chosen) < max_alternatives:
+                taken = set(chosen)
+                taken.add(slug)
+                for o in members:
+                    if len(chosen) >= max_alternatives:
+                        break
+                    if o not in taken:
+                        chosen.append(o)
+            for o in chosen:
+                key = (slug, o) if slug < o else (o, slug)
+                pairs[key] = saas
+    return pairs
 
-        score = jaccard(tokens_by_slug.get(slug_a, set()), tokens_by_slug.get(slug_b, set()))
-        if score >= threshold:
-            bridges.append(make_bridge(
-                "mcp_server", slug_a, "mcp_server", slug_b,
-                "alternative_of", score, "desc-jaccard:" + format(round(score, 2), ".2f"),
-            ))
+
+def _jaccard_pairs(slugs, tokens_by_slug, wraps, threshold, max_alternatives):
+    """Couples (slug_a < slug_b) dont le Jaccard de description est >= seuil,
+    limites aux max_alternatives meilleurs partenaires de chaque serveur.
+    Index inverse sur le prefixe des jetons les plus rares (filtrage par
+    prefixe) : aucun produit cartesien. Retourne {(a, b): score}."""
+    df = {}
+    for slug in slugs:
+        for tok in tokens_by_slug[slug]:
+            df[tok] = df.get(tok, 0) + 1
+    ordered = {}
+    for slug in slugs:
+        ordered[slug] = sorted(tokens_by_slug[slug], key=lambda t: (df[t], t))
+
+    index = {}
+    partners = {}
+    prune_at = max(50 * max_alternatives, 200)
+    for slug in slugs:
+        toks = tokens_by_slug[slug]
+        size = len(toks)
+        if size == 0:
+            continue
+        prefix = ordered[slug][:_prefix_length(size, threshold)]
+        cands = set()
+        for tok in prefix:
+            plist = index.get(tok)
+            if plist:
+                cands.update(plist)
+        my_saas = wraps.get(slug, (None,))[0]
+        for other in cands:
+            o_toks = tokens_by_slug[other]
+            o_size = len(o_toks)
+            if o_size < threshold * size or size < threshold * o_size:
+                continue
+            if my_saas is not None and wraps.get(other, (None,))[0] == my_saas:
+                continue
+            score = jaccard(toks, o_toks)
+            if score < threshold:
+                continue
+            partners.setdefault(slug, []).append((score, other))
+            theirs = partners.setdefault(other, [])
+            theirs.append((score, slug))
+            if len(theirs) > prune_at:
+                _trim(theirs, max_alternatives)
+        if len(partners.get(slug, ())) > prune_at:
+            _trim(partners[slug], max_alternatives)
+        for tok in prefix:
+            index.setdefault(tok, []).append(slug)
+
+    pairs = {}
+    for slug, lst in partners.items():
+        _trim(lst, max_alternatives)
+        for score, other in lst:
+            key = (slug, other) if slug < other else (other, slug)
+            pairs[key] = score
+    return pairs
+
+
+def build_alternative_of(records, wraps, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES):
+    """Ponts alternative_of sans produit cartesien. Chaque serveur garde au
+    plus max_alternatives partenaires de meme SaaS et au plus
+    max_alternatives partenaires par Jaccard ; un pont existe s'il figure
+    dans la liste d'au moins un des deux serveurs."""
+    slugs = sorted(set(r["slug"] for r in records))
+    tokens_by_slug = {}
+    for r in records:
+        tokens_by_slug.setdefault(r["slug"], description_tokens(r.get("description")))
+
+    groups = {}
+    for slug in slugs:
+        w = wraps.get(slug)
+        if w:
+            groups.setdefault(w[0], []).append(slug)
+
+    saas_pairs = _same_saas_pairs(groups, tokens_by_slug, max_alternatives)
+    jac_pairs = _jaccard_pairs(slugs, tokens_by_slug, wraps, threshold, max_alternatives)
+
+    bridges = []
+    for (a, b), saas in sorted(saas_pairs.items()):
+        bridges.append(make_bridge(
+            "mcp_server", a, "mcp_server", b,
+            "alternative_of", 1.0, "same-saas:" + saas,
+        ))
+    for (a, b), score in sorted(jac_pairs.items()):
+        bridges.append(make_bridge(
+            "mcp_server", a, "mcp_server", b,
+            "alternative_of", score, "desc-jaccard:" + format(round(score, 2), ".2f"),
+        ))
     return bridges
 
 
@@ -283,10 +409,16 @@ def build_depends_on(records):
     return bridges
 
 
-def build_bridges(records, threshold):
-    records = [r for r in records if isinstance(r, dict) and r.get("slug")]
+def build_bridges(records, threshold, max_alternatives=DEFAULT_MAX_ALTERNATIVES):
+    seen_slugs = set()
+    kept = []
+    for r in records:
+        if isinstance(r, dict) and r.get("slug") and r["slug"] not in seen_slugs:
+            seen_slugs.add(r["slug"])
+            kept.append(r)
+    records = kept
     wraps, wraps_bridges = build_wraps(records)
-    alt_bridges = build_alternative_of(records, wraps, threshold)
+    alt_bridges = build_alternative_of(records, wraps, threshold, max_alternatives)
     dep_bridges = build_depends_on(records)
 
     all_bridges = wraps_bridges + alt_bridges + dep_bridges
@@ -307,6 +439,9 @@ def build_bridges(records, threshold):
 # ---------------------------------------------------------------------------
 
 def find_default_input():
+    collecte = os.path.join(DATA_DIR, "mcp_servers_staging.json")
+    if os.path.exists(collecte):
+        return collecte
     pattern = os.path.join(DATA_DIR, "mcp_servers_staging_realpage_*.json")
     candidates = sorted(glob.glob(pattern))
     if not candidates:
@@ -447,11 +582,13 @@ def main():
         description="Batch B5 bridges MCP (dry-run local) - YggNexus"
     )
     ap.add_argument("--in", dest="in_path", default=None,
-                    help="fichier staging JSON (defaut: mcp_servers_staging_realpage_*.json le plus recent)")
+                    help="fichier staging JSON (defaut: data/mcp_servers_staging.json, sinon le realpage le plus recent)")
     ap.add_argument("--out", default=DEFAULT_OUT,
                     help="fichier bridges de sortie (defaut: data/bridges_staging.json)")
     ap.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD,
                     help="seuil de Jaccard pour alternative_of (defaut: 0.35)")
+    ap.add_argument("--max-alternatives", type=int, default=DEFAULT_MAX_ALTERNATIVES,
+                    help="plafond de partenaires alternative_of gardes par serveur (defaut: 5)")
     ap.add_argument("--dry-run", dest="dry_run", action=argparse.BooleanOptionalAction,
                     default=True,
                     help="n'ecrit pas --out, imprime seulement les compteurs (actif par defaut)")
@@ -460,6 +597,10 @@ def main():
 
     if args.self_test:
         return self_test()
+
+    if args.threshold <= 0 or args.max_alternatives < 1:
+        sys.stderr.write("ERREUR: --threshold doit etre > 0 et --max-alternatives >= 1\n")
+        return 2
 
     in_path = args.in_path or find_default_input()
     if not in_path or not os.path.exists(in_path):
@@ -472,7 +613,7 @@ def main():
         sys.stderr.write("ERREUR lecture staging: " + type(e).__name__ + ": " + str(e) + "\n")
         return 2
 
-    bridges, wraps = build_bridges(records, args.threshold)
+    bridges, wraps = build_bridges(records, args.threshold, args.max_alternatives)
 
     counts = {}
     for b in bridges:
@@ -481,6 +622,7 @@ def main():
     print("IN " + in_path)
     print("RECORDS " + str(len(records)))
     print("SEUIL jaccard " + str(args.threshold))
+    print("PLAFOND alternatives par serveur " + str(args.max_alternatives))
     for rel in ("wraps", "alternative_of", "depends_on"):
         print(rel.upper() + " " + str(counts.get(rel, 0)))
     print("TOTAL bridges " + str(len(bridges)))
@@ -493,6 +635,7 @@ def main():
     payload = {
         "source_file": in_path,
         "threshold": args.threshold,
+        "max_alternatives": args.max_alternatives,
         "generated": len(bridges),
         "by_relation": counts,
         "bridges": bridges,

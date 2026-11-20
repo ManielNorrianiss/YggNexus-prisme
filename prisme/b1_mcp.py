@@ -297,27 +297,34 @@ def normalize(entry):
     }
 
 
-def dedup(records):
+def dedup_detail(records):
+    """Retourne (gardes, ecartes_par_nom, ecartes_par_depot)."""
     seen_repo = set()
     seen_name = set()
     kept = []
-    dropped = 0
+    by_name = 0
+    by_repo = 0
     records = sorted(records, key=lambda r: (0 if r.get("is_latest") else 1))
     for r in records:
         name = (r.get("name") or "").strip().lower()
         repo = (r.get("repo_url") or "").strip().lower().rstrip("/")
         if name and name in seen_name:
-            dropped += 1
+            by_name += 1
             continue
         if repo and repo in seen_repo:
-            dropped += 1
+            by_repo += 1
             continue
         if name:
             seen_name.add(name)
         if repo:
             seen_repo.add(repo)
         kept.append(r)
-    return kept, dropped
+    return kept, by_name, by_repo
+
+
+def dedup(records):
+    kept, by_name, by_repo = dedup_detail(records)
+    return kept, by_name + by_repo
 
 
 def parse_github_owner_repo(url):
@@ -469,7 +476,8 @@ def main():
 
     fetched = len(raw)
     records = [normalize(e) for e in raw]
-    kept, dropped = dedup(records)
+    kept, dup_name, dup_repo = dedup_detail(records)
+    dropped = dup_name + dup_repo
 
     enriched = 0
     if args.enrich_github:
@@ -484,6 +492,8 @@ def main():
         "fetched": fetched,
         "unique": len(kept),
         "duplicates_dropped": dropped,
+        "duplicates_by_name": dup_name,
+        "duplicates_by_repo": dup_repo,
         "github_enriched": enriched,
         "records": kept,
     }
@@ -494,6 +504,7 @@ def main():
 
     print("FETCHED " + str(fetched) + " servers from " + endpoint)
     print("UNIQUE " + str(len(kept)) + " after dedup (dropped " + str(dropped) + ")")
+    print("DEDUP par nom " + str(dup_name) + ", par depot " + str(dup_repo))
     if args.enrich_github:
         print("GITHUB enriched " + str(enriched))
     print("WROTE " + args.out)

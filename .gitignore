@@ -35,3 +35,7 @@ Thumbs.db
 *.db-wal
 *.bak.*
 exports/health/*.md
+
+# --- Collecte MCP locale (lourde, regenerable) ---
+prisme/data/mcp_servers_staging.json
+prisme/data/bridges_staging.json
